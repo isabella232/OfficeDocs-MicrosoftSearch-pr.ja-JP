@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
 description: Office 365 の要件とするために必要なサブスクリプションは、Microsoft の検索を有効にします。
-ms.openlocfilehash: 1e1ebd167ed91767d849187979cfe673273d9715
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 1cab7b7617eb965e1130f6b56c3a0169259f5b8e
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379004"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442282"
 ---
 # <a name="requirements-for-microsoft-search"></a>Microsoft Search の要件
 
@@ -68,7 +68,25 @@ Microsoft の検索を有効にする Office 365 テナントの要件があり�
 - フランス
     
 - ドイツ
+  
+- スペイン
     
+- メキシコ
+    
+- イタリア
+    
+- ブラジル
+    
+- オランダ
+    
+- ロシア
+    
+- 日本
+
+- 中国
+ 
+現時点では、Microsoft Search では、英語に最適です。他の言語を完全にサポートを準備中です。
+
 製品を有効にすると、Microsoft Search 管理者またはユーザーの場所の要件はありません。それを有効にする方法の詳細については、 [Microsoft Search のクイック セットアップ](quick-set-up.md)を参照してください。 
 
   

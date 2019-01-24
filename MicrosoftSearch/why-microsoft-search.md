@@ -14,18 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: なぜ Microsoft Search では、現代のワークプ レースのインテリジェントなエンタープライズ検索について説明します。
-ms.openlocfilehash: 79a2974d036ea71b7b2d17bc8598f6070209c8b5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: c75670a14f2d5382aa7dccbf38d65584a291d93f
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379041"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442298"
 ---
 # <a name="why-microsoft-search"></a>なぜマイクロソフトの検索
 
 組織の検索情報を Microsoft Search での方法の人を変換します。 
   
 このエンタープライズ検索は、ワークプ レースの関連性の高い検索結果を提供することで生産性の向上と時間の節約を発生します。Microsoft Search は、企業、学校、または組織から情報を取得するセキュリティで保護-などのファイル、会社のデータ、ユーザー情報、およびサイト-公開 web の結果だけでなく、1 つのエクスペリエンスに表示されます。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
 ## <a name="save-time-with-intelligent-search"></a>インテリジェントな検索による時間を節約します。
 
