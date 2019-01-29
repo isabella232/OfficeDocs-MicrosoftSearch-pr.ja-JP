@@ -1,5 +1,5 @@
 ---
-title: セットの既定のブラウザー
+title: 既定のブラウザーの設定
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 description: Microsoft の検索を使用して、会社の既定のブラウザーを構成する方法について説明します。
-ms.openlocfilehash: 13a0a878b3288abeb7b07defdab839a158adc2ac
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379038"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612475"
 ---
-# <a name="set-default-browser"></a>セットの既定のブラウザー
+# <a name="set-default-browser"></a>既定のブラウザーの設定
 
 既定のブラウザー、既定の検索エンジン、および既定のホーム ページを構成するがように、Microsoft 検索機能、複数の使用法をお勧めを見つけてより滑らかなエクスペリエンスを提供します。
   

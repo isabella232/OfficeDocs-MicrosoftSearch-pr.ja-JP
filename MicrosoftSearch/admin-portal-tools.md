@@ -1,5 +1,5 @@
 ---
-title: 管理ポータル ツール
+title: 管理ポータルのツール
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: 作成し、結果をインポートする Microsoft の検索ツールの概要について、自動的にサインインし、任意の場所から検索
-ms.openlocfilehash: e885760a85ebacecb2987fc1ec4e125115f00f5d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379034"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612381"
 ---
-# <a name="admin-portal-tools"></a>管理ポータル ツール
+# <a name="admin-portal-tools"></a>管理ポータルのツール
 
 Microsoft 検索の管理ポータルには、ツールおよびリソースの管理者、エディター、およびユーザー用に設計されたが含まれています。
   

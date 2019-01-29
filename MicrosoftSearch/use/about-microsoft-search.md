@@ -7,18 +7,18 @@ ms.date: 12/18/2018
 ms.audience: Consumer/IW
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
 description: すべての情報を見つけることができる Microsoft Search を使用する場合の概要を取得します。
-ms.openlocfilehash: 4f3f33fd8de78b32f532343000002609e9c2c5c9
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379002"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612377"
 ---
 # <a name="about-microsoft-search"></a>マイクロソフトの検索について
 

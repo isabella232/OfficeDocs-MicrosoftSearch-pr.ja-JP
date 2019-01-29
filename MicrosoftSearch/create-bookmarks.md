@@ -1,5 +1,5 @@
 ---
-title: ブックマークを作成します。
+title: ブックマークの作成
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
 description: ブックマークまたはユーザー、Microsoft の検索作業の結果に追加するブラウザーの拡張機能を作成します。
-ms.openlocfilehash: 6ea1a25a81bdbeed40d54b3dfb3fcf12008a57ab
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379027"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612411"
 ---
-# <a name="create-bookmarks"></a>ブックマークを作成します。
+# <a name="create-bookmarks"></a>ブックマークの作成
 
 ブックマークをすれば、重要なリソース、サイト、およびツールをすばやく検索します。各ブックマークには、タイトル、URL、およびそれをトリガーするためのキーワードのセットが含まれています。
   

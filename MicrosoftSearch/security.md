@@ -7,19 +7,19 @@ ms.date: 9/12/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: 権限のあるユーザーに情報を提供する Microsoft の検索を使用しているときに、エンタープライズ ・ データとユーザーを保護します。
-ms.openlocfilehash: 65cf1d49e32edbb8061a06f8da7ba644c2145e24
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 5f59e0e2969ef829d7c14b07ecb47d645cc63013
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379035"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612523"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search のセキュリティ
 

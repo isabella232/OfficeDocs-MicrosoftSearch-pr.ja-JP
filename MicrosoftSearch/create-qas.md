@@ -7,19 +7,19 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
 description: Microsoft 検索のよく寄せられる質問への回答を作成する方法は作業の結果
-ms.openlocfilehash: 20b676e1d5d2f9dd39f4b8d0338a2ec9c9df9d62
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 9713608450688a0841aa64d1f3198183b10e05ee
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379039"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612499"
 ---
 # <a name="create-qas"></a>Q&As を作成します。
 

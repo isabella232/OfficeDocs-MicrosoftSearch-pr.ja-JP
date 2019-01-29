@@ -1,5 +1,5 @@
 ---
-title: 管理用ポータルについて
+title: 管理ポータルについて
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 description: ポータル機能の管理の概要を取得し、マイクロソフトの検索に使用できるアクセス許可のアクセス
-ms.openlocfilehash: 1bb219798a68553bd359ba15452cb4bb4ae74cbf
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 3b1a0173a12d921a789ccf1c01e788f9abae2916
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378998"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612451"
 ---
-# <a name="about-the-admin-portal"></a>管理用ポータルについて
+# <a name="about-the-admin-portal"></a>管理ポータルについて
 
 Microsoft Search では、Bing を使用して SharePoint サイトとファイル、内部の web サイト、人、Office 365 のグループ、および複数の組織を検索することができます。管理ポータルを使用すると、Microsoft の検索のすべての側面を管理できます。
   
@@ -35,7 +35,7 @@ Microsoft 検索管理ポータルは、これらの領域の周囲に分かれ�
     
     Bing の結果の先頭に置くことによって、重要なツールと、組織内のリソースを検索する人のために昇格した結果を作成します。
     
-- [Q&As](create-and-manage-qas.md)
+- [Q&A](create-and-manage-qas.md)
     
     組織の最もよく寄せられる質問に答える
     
@@ -47,7 +47,7 @@ Microsoft 検索管理ポータルは、これらの領域の周囲に分かれ�
     
     管理者と、エディターのポータルへのアクセスを管理し、提供または組織内で Microsoft Search へのアクセスを制限
     
-- [コンテンツの設定](content-settings.md)
+- [コンテンツ設定](content-settings.md)
     
     Bing の Microsoft の検索結果の外観を制御します。
     
@@ -55,7 +55,7 @@ Microsoft 検索管理ポータルは、これらの領域の周囲に分かれ�
     
     ブラウザーの拡張機能およびその他のツールを使用して、作成、コンテンツをインポートして、ユーザーがサインインし、Bing の作業の結果を検索するメッセージが表示回数を最小限に抑える
     
-- [接続サービス](connected-services.md)
+- [接続済みサービス](connected-services.md)
     
     マイクロソフトの検索結果に含めるとする情報とデータ ソースを選択します。
     
