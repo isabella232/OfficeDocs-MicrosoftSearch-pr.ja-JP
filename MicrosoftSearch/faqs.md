@@ -13,133 +13,133 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
-description: エンタープライズ検索および Microsoft の検索についてよく寄せられる質問への回答します。
+description: エンタープライズ検索と Microsoft Search についてよく寄せられる質問に対する回答です
 ms.openlocfilehash: ed4179262dc20a441ce5e3acadc895bacb271fa9
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612511"
 ---
-# <a name="faqs"></a><span data-ttu-id="f7efe-103">FAQ</span><span class="sxs-lookup"><span data-stu-id="f7efe-103">FAQs</span></span>
+# <a name="faqs"></a><span data-ttu-id="729e3-103">FAQ</span><span class="sxs-lookup"><span data-stu-id="729e3-103">FAQs</span></span>
 
-<span data-ttu-id="f7efe-104">これらは、ある組織とユーザーを管理して、Microsoft Search を使用してのよく寄せられる質問です。</span><span class="sxs-lookup"><span data-stu-id="f7efe-104">These are the frequently asked questions that organizations and users have about administering and using Microsoft Search.</span></span>
+<span data-ttu-id="729e3-104">組織やユーザーから Microsoft Search の管理や使用についてよく寄せられる質問は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="729e3-104">These are the frequently asked questions that organizations and users have about administering and using Microsoft Search.</span></span>
   
-## <a name="whats-the-value-proposition-for-microsoft-search"></a><span data-ttu-id="f7efe-105">Microsoft Search のバリュー ・ プロポジションとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-105">What's the value proposition for Microsoft Search?</span></span>
+## <a name="whats-the-value-proposition-for-microsoft-search"></a><span data-ttu-id="729e3-105">Microsoft Search にはどんな価値提供がありますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-105">What's the value proposition for Microsoft Search?</span></span>
 
-<span data-ttu-id="f7efe-p101">Microsoft Search は、作業時間と web コンテンツの両方を検索するのにはセキュリティで保護された方法です。このような web や企業間の統合には、マイクロソフトではできるだけです。コンプライアンス関連の情報は、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-p101">Microsoft Search is a secure way to search both your work and web content. This kind of integration across web and enterprise is only available with Microsoft. For compliance-related information, see [Security for Microsoft Search](security.md).</span></span>
+<span data-ttu-id="729e3-p101">Microsoft Search は、作業と Web コンテンツの両方をセキュリティに保護された方法で検索します。このような Web とエンタープライズ全体の統合が可能なのは、Microsoft だけです。コンプライアンス関連の情報については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-p101">Microsoft Search is a secure way to search both your work and web content. This kind of integration across web and enterprise is only available with Microsoft. For compliance-related information, see [Security for Microsoft Search](security.md).</span></span>
   
-## <a name="what-microsoft-search-features-are-available-now"></a><span data-ttu-id="f7efe-109">マイクロソフトの検索機能があるようになりましたでしょうか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-109">What Microsoft Search features are available now?</span></span>
+## <a name="what-microsoft-search-features-are-available-now"></a><span data-ttu-id="729e3-109">現在利用できる Microsoft Search の機能にはどんなものがありますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-109">What Microsoft Search features are available now?</span></span>
 
-<span data-ttu-id="f7efe-110">一覧は、 [Microsoft の検索の機能](features.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-110">For a complete list, see [Features of Microsoft Search](features.md).</span></span>
+<span data-ttu-id="729e3-110">すべての機能の一覧については、「[Microsoft Search の機能](features.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-110">For a complete list, see [Features of Microsoft Search](features.md).</span></span>
   
-## <a name="does-microsoft-search-support-advanced-query-understanding"></a><span data-ttu-id="f7efe-111">Microsoft 検索サポートの高度なクエリについてですか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-111">Does Microsoft Search support advanced query understanding?</span></span>
+## <a name="does-microsoft-search-support-advanced-query-understanding"></a><span data-ttu-id="729e3-111">Microsoft Search は高度なサポート クエリの理解をサポートしますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-111">Does Microsoft Search support advanced query understanding?</span></span>
 
-<span data-ttu-id="f7efe-p102">はい、Microsoft Search では、大規模な語句のクエリの意図を解析します。この機能では、AI を使用して、余分な語句の一般的なユーザーに追加のクエリに影響を与えない、検索の目的について説明します。たとえば、' について詳しく知る方法は、自分のパスワードを変更してください' を検索するときは、重要度の低いから単語を抽出クエリおよび [パスワードの変更' のように該当するものに基づくトリガー</span><span class="sxs-lookup"><span data-stu-id="f7efe-p102">Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for 'tell me more about how to change my password please' we extract the less important words from the query and trigger based on the relevant ones like 'change password.'</span></span>
+<span data-ttu-id="729e3-p102">はい。Microsoft Search は、長いフレーズからクエリの意図を解析します。この機能は、AI を使ってユーザーがよく使う検索の意図に影響しない余分なフレーズの一般的なものを学習します。たとえば、ユーザーが「パスワードの変更方法について詳しく教えてください」と検索した場合、クエリから重要度の低いワードを抽出し、「パスワード変更」などの関連のあるワードに基づいてトリガーします。</span><span class="sxs-lookup"><span data-stu-id="729e3-p102">Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't impact their search intent. For example, when a user searches for 'tell me more about how to change my password please' we extract the less important words from the query and trigger based on the relevant ones like 'change password.'</span></span>
   
-<span data-ttu-id="f7efe-115">この機能では、管理ポータルでのキーワードの設定はオーバーライドされません。</span><span class="sxs-lookup"><span data-stu-id="f7efe-115">This feature will not override keywords set in the Admin portal.</span></span>
+<span data-ttu-id="729e3-115">この機能により、管理ポータルで設定されたキーワードが無効になることはありません。</span><span class="sxs-lookup"><span data-stu-id="729e3-115">This feature will not override keywords set in the Admin portal.</span></span>
   
-## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a><span data-ttu-id="f7efe-116">Microsoft Search は、ファイル、オンプレミスとクラウドを検索しますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-116">Does Microsoft Search search for files on-premises as well as the cloud?</span></span>
+## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a><span data-ttu-id="729e3-116">Microsoft Search は、オンプレミスでもクラウドでもファイルの検索を行いますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-116">Does Microsoft Search search for files on-premises as well as the cloud?</span></span>
 
-<span data-ttu-id="f7efe-p103">SharePoint Online 上に存在するドキュメントを検索する Microsoft 検索のサポート、OneDrive ハイブリッドと比べ、ビジネスの設置型 SharePoint と SharePoint Online の最も一般的な Office ファイルの種類。設置型のコンテンツを検索するには SharePoint Online で、Microsoft Search を使用して、設置型のコンテンツを検索できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="f7efe-p103">Microsoft Search supports searching for documents that live on SharePoint Online, OneDrive for Business, as well as over hybrid on-premises SharePoint and SharePoint Online for the most common Office file types. If you can search on-premises content in SharePoint Online, you should be able to find on-premises content using Microsoft Search.</span></span> 
+<span data-ttu-id="729e3-p103">Microsoft Search は、最も一般的な種類の Office ファイルを対象に SharePoint Online、OneDrive for Business に加え、ハイブリッド オンプレミスの SharePoint と SharePoint Online にあるドキュメントの検索もサポートします。SharePoint Online でオンプレミス コンテンツを検索できるなら、Microsoft Search でオンプレミス コンテンツが検索できるはずです。</span><span class="sxs-lookup"><span data-stu-id="729e3-p103">Microsoft Search supports searching for documents that live on SharePoint Online, OneDrive for Business, as well as over hybrid on-premises SharePoint and SharePoint Online for the most common Office file types. If you can search on-premises content in SharePoint Online, you should be able to find on-premises content using Microsoft Search.</span></span> 
   
-## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a><span data-ttu-id="f7efe-119">Microsoft Search は、他のエンタープライズ検索のエクスペリエンスを置き換えますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-119">Does Microsoft Search replace other enterprise search experiences?</span></span>
+## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a><span data-ttu-id="729e3-119">Microsoft Search は、その他のエンタープライズ検索エクスペリエンスの代わりになりますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-119">Does Microsoft Search replace other enterprise search experiences?</span></span>
 
-<span data-ttu-id="f7efe-p104">Microsoft Search は、複数のソースからの結果をまとめて表示する補完的なソリューションです。サポートされているファイルの種類とソースの詳細については、次のよく寄せられる質問を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-p104">Microsoft Search is a complementary offering that brings together results from multiple sources. For more information about supported file types and sources, see the next FAQ.</span></span>
+<span data-ttu-id="729e3-p104">Microsoft Search は、複数のソースからの結果をまとめて提示する補完的なサービスです。サポートされているファイルの種類とソースの詳細については、次のよく寄せられる質問を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-p104">Microsoft Search is a complementary offering that brings together results from multiple sources. For more information about supported file types and sources, see the next FAQ.</span></span>
   
-## <a name="what-file-types-and-sources-does-microsoft-search-support"></a><span data-ttu-id="f7efe-122">どのようなファイルの種類とソースは Microsoft サポート情報の検索ですか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-122">What file types and sources does Microsoft Search support?</span></span>
+## <a name="what-file-types-and-sources-does-microsoft-search-support"></a><span data-ttu-id="729e3-122">Microsoft Search はどんなファイルの種類とソースをサポートしますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-122">What file types and sources does Microsoft Search support?</span></span>
 
-<span data-ttu-id="f7efe-123">コンテンツ ソースをサポートします。</span><span class="sxs-lookup"><span data-stu-id="f7efe-123">We support the following content sources:</span></span>
+<span data-ttu-id="729e3-123">次のコンテンツ ソースをサポートします。</span><span class="sxs-lookup"><span data-stu-id="729e3-123">We support the following content sources:</span></span>
   
-- <span data-ttu-id="f7efe-124">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="f7efe-124">SharePoint Online</span></span>
+- <span data-ttu-id="729e3-124">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="729e3-124">SharePoint Online</span></span>
     
-- <span data-ttu-id="f7efe-125">ハイブリッドの SharePoint (設置型 + SPO)</span><span class="sxs-lookup"><span data-stu-id="f7efe-125">Hybrid SharePoint (on-premises + SPO)</span></span>
+- <span data-ttu-id="729e3-125">ハイブリッド SharePoint (オンプレミス + SPO)</span><span class="sxs-lookup"><span data-stu-id="729e3-125">Hybrid SharePoint (on-premises + SPO)</span></span>
     
-- <span data-ttu-id="f7efe-126">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="f7efe-126">OneDrive for Business</span></span>
+- <span data-ttu-id="729e3-126">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="729e3-126">OneDrive for Business</span></span>
     
-<span data-ttu-id="f7efe-127">次のファイルの種類は、ファイルの検索に提示され、ユーザーとグループの [ファイル] タブが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f7efe-127">The following file types are surfaced in file search and appear on the Files tab for People and Groups:</span></span>
+<span data-ttu-id="729e3-127">ファイル検索に表示され、ユーザーとグループの [ファイル] タブに表示されるのは次の種類のファイルです。</span><span class="sxs-lookup"><span data-stu-id="729e3-127">The following file types are surfaced in file search and appear on the Files tab for People and Groups:</span></span>
   
-- <span data-ttu-id="f7efe-128">Word</span><span class="sxs-lookup"><span data-stu-id="f7efe-128">Word</span></span>
+- <span data-ttu-id="729e3-128">Word</span><span class="sxs-lookup"><span data-stu-id="729e3-128">Word</span></span>
     
-- <span data-ttu-id="f7efe-129">Excel</span><span class="sxs-lookup"><span data-stu-id="f7efe-129">Excel</span></span>
+- <span data-ttu-id="729e3-129">Excel</span><span class="sxs-lookup"><span data-stu-id="729e3-129">Excel</span></span>
     
-- <span data-ttu-id="f7efe-130">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="f7efe-130">PowerPoint</span></span>
+- <span data-ttu-id="729e3-130">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="729e3-130">PowerPoint</span></span>
     
-- <span data-ttu-id="f7efe-131">OneNote</span><span class="sxs-lookup"><span data-stu-id="f7efe-131">OneNote</span></span>
+- <span data-ttu-id="729e3-131">OneNote</span><span class="sxs-lookup"><span data-stu-id="729e3-131">OneNote</span></span>
     
-- <span data-ttu-id="f7efe-132">PDF</span><span class="sxs-lookup"><span data-stu-id="f7efe-132">PDF</span></span>
+- <span data-ttu-id="729e3-132">PDF</span><span class="sxs-lookup"><span data-stu-id="729e3-132">PDF</span></span>
     
-## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a><span data-ttu-id="f7efe-133">マイクロソフトの検索のためには、コンプライアンスとセキュリティの手段は何ですか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-133">What compliance and trust measures are in place for Microsoft Search?</span></span>
+## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a><span data-ttu-id="729e3-133">Microsoft Search のコンプライアンスと信頼性の対策にはどんなものがありますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-133">What compliance and trust measures are in place for Microsoft Search?</span></span>
 
-<span data-ttu-id="f7efe-134">コンプライアンスおよびセキュリティ対策については、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-134">For information about compliance and trust measures, see [Security for Microsoft Search](security.md).</span></span>
+<span data-ttu-id="729e3-134">コンプライアンスと信頼性対策の詳細については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-134">For information about compliance and trust measures, see [Security for Microsoft Search](security.md).</span></span>
   
-## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a><span data-ttu-id="f7efe-135">Office 365 コンプライアンス階層と分類についての情報はどこで入手できますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-135">Where can I get info about Office 365 compliance tiers/categories?</span></span>
+## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a><span data-ttu-id="729e3-135">Office 365 コンプライアンス階層/カテゴリに関する情報はどこで入手できますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-135">Where can I get info about Office 365 compliance tiers/categories?</span></span>
 
-<span data-ttu-id="f7efe-136">詳細は、[業界標準や規制のコンプライアンス ・ フレームワーク](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf)(PDF ダウンロード) にあります。</span><span class="sxs-lookup"><span data-stu-id="f7efe-136">Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download).</span></span> 
+<span data-ttu-id="729e3-136">「[業界標準と規制に関するコンプライアンス フレームワーク](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf)」(PDF ダウンロード) で詳細を入手できます。</span><span class="sxs-lookup"><span data-stu-id="729e3-136">Details can be found in the [Compliance Framework for Industry Standards and Regulations](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF download).</span></span> 
   
-## <a name="how-does-microsoft-search-keep-results-secure"></a><span data-ttu-id="f7efe-137">方法は Microsoft の検索を保持して結果セキュリティで保護されたでしょうか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-137">How does Microsoft Search keep results secure?</span></span>
+## <a name="how-does-microsoft-search-keep-results-secure"></a><span data-ttu-id="729e3-137">Microsoft Search の結果はどのようにセキュリティ保護を保っていますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-137">How does Microsoft Search keep results secure?</span></span>
 
-<span data-ttu-id="f7efe-138">Microsoft Search が、結果を保持する方法についての情報をセキュリティで保護、[マイクロソフトの検索のためのセキュリティ](security.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-138">For information about how Microsoft Search keeps your results secure, see [Security for Microsoft Search](security.md).</span></span>
+<span data-ttu-id="729e3-138">Microsoft Search の結果のセキュリティ保護方法については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-138">For information about how Microsoft Search keeps your results secure, see [Security for Microsoft Search](security.md).</span></span>
   
-## <a name="what-are-the-content-sources-for-the-people-card"></a><span data-ttu-id="f7efe-139">人カードのコンテンツのソースを挙げてください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-139">What are the content sources for the people card?</span></span>
+## <a name="what-are-the-content-sources-for-the-people-card"></a><span data-ttu-id="729e3-139">連絡先カードのコンテンツ ソースを教えてください。</span><span class="sxs-lookup"><span data-stu-id="729e3-139">What are the content sources for the people card?</span></span>
 
-<span data-ttu-id="f7efe-140">人のカードでは、Azure Active Directory、Exchange Online では、および SharePoint Online から情報を派生します。</span><span class="sxs-lookup"><span data-stu-id="f7efe-140">The people card derives information from Azure Active Directory, Exchange Online, and SharePoint Online.</span></span>
+<span data-ttu-id="729e3-140">連絡先カードは、Azure Active Directory、Exchange Online、SharePoint Online から情報を得ています。</span><span class="sxs-lookup"><span data-stu-id="729e3-140">The people card derives information from Azure Active Directory, Exchange Online, and SharePoint Online.</span></span>
   
-## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a><span data-ttu-id="f7efe-141">Microsoft Search のユーザーはマイクロソフトの特典の獲得でしょうか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-141">Do Microsoft Search users earn Microsoft Rewards?</span></span>
+## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a><span data-ttu-id="729e3-141">Microsoft Search のユーザーは Microsoft Rewards を獲得しますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-141">Do Microsoft Search users earn Microsoft Rewards?</span></span>
 
-<span data-ttu-id="f7efe-142">Microsoft Search の検索では、報酬ポイントを獲得していないと、ユーザーの Microsoft アカウントに関連付けられていることはありません。</span><span class="sxs-lookup"><span data-stu-id="f7efe-142">Microsoft Search searches do not earn Rewards points and are never associated with a user's Microsoft account.</span></span>
+<span data-ttu-id="729e3-142">Microsoft Search での検索では、Rewards ポイントは獲得できず、ユーザーの Microsoft アカウントに関連付けられていることはありません。</span><span class="sxs-lookup"><span data-stu-id="729e3-142">Microsoft Search searches do not earn Rewards points and are never associated with a user's Microsoft account.</span></span>
   
-## <a name="does-microsoft-search-respect-existing-file-permissions"></a><span data-ttu-id="f7efe-143">Microsoft Search は、既存ファイルのアクセス許可を尊重しますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-143">Does Microsoft Search respect existing file permissions?</span></span>
+## <a name="does-microsoft-search-respect-existing-file-permissions"></a><span data-ttu-id="729e3-143">Microsoft Search は、既存のファイルのアクセス許可を考慮しますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-143">Does Microsoft Search respect existing file permissions?</span></span>
 
-<span data-ttu-id="f7efe-p105">Microsoft Search では、ソースからのセキュリティによるトリミングを尊重します。ユーザーへのアクセスがある情報のみを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-p105">Microsoft Search respects security trimming from the source. Users can only see information they have access to.</span></span>
+<span data-ttu-id="729e3-p105">Microsoft Search では、ソースからのセキュリティ トリミングを尊重します。ユーザーがアクセス権を持っている情報のみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="729e3-p105">Microsoft Search respects security trimming from the source. Users can only see information they have access to.</span></span>
   
-## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a><span data-ttu-id="f7efe-146">ユーザーのクエリを保護する方法、web 上の共有からでしょうか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-146">How are user queries protected from sharing on the web?</span></span>
+## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a><span data-ttu-id="729e3-146">ユーザーのクエリは、Web 上の共有からどのように保護されていますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-146">How are user queries protected from sharing on the web?</span></span>
 
-<span data-ttu-id="f7efe-147">ユーザーのクエリを保護する方法については、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-147">For information about how user queries are protected, see [Security for Microsoft Search](security.md).</span></span>
+<span data-ttu-id="729e3-147">ユーザーのクエリの保護方法については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-147">For information about how user queries are protected, see [Security for Microsoft Search](security.md).</span></span>
   
-## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a><span data-ttu-id="f7efe-148">広告の種類は Microsoft Search のユーザーですか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-148">What types of advertising do Microsoft Search users see?</span></span>
+## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a><span data-ttu-id="729e3-148">Microsoft Search のユーザーに表示される広告にはどんな種類がありますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-148">What types of advertising do Microsoft Search users see?</span></span>
 
-<span data-ttu-id="f7efe-149">広告については、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-149">For information about advertising, see [Security for Microsoft Search](security.md).</span></span>
+<span data-ttu-id="729e3-149">広告についての情報は、「[Microsoft Search のセキュリティ](security.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-149">For information about advertising, see [Security for Microsoft Search](security.md).</span></span>
   
-## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a><span data-ttu-id="f7efe-150">Microsoft の検索を有効にするのには最低限の要件は?</span><span class="sxs-lookup"><span data-stu-id="f7efe-150">What are the minimum requirements to enable Microsoft Search?</span></span>
+## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a><span data-ttu-id="729e3-150">Microsoft Search を有効にする最小要件は何ですか。</span><span class="sxs-lookup"><span data-stu-id="729e3-150">What are the minimum requirements to enable Microsoft Search?</span></span>
 
-<span data-ttu-id="f7efe-151">要件の詳細については、 [Microsoft の検索のための要件](requirements.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-151">For information about requirements, see [Requirements for Microsoft Search](requirements.md).</span></span>
+<span data-ttu-id="729e3-151">要件についての情報は、「[Microsoft Search の要件](requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-151">For information about requirements, see [Requirements for Microsoft Search](requirements.md).</span></span>
   
-## <a name="how-does-microsoft-search-use-azure-active-directory"></a><span data-ttu-id="f7efe-152">Microsoft Search が Azure Active Directory を使用する方法</span><span class="sxs-lookup"><span data-stu-id="f7efe-152">How does Microsoft Search use Azure Active Directory?</span></span>
+## <a name="how-does-microsoft-search-use-azure-active-directory"></a><span data-ttu-id="729e3-152">Microsoft Search では Azure Active Directory をどのように利用しますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-152">How does Microsoft Search use Azure Active Directory?</span></span>
 
-<span data-ttu-id="f7efe-p106">Microsoft Search では、Azure Active Directory を使用して認証し、企業のデータへのアクセスを承認します。Microsoft Search では、すべてのマイクロソフト製品の間でのプラクティスの標準の処理 id に準拠します。つまり、ユーザーが自動的に署名シングル サインオンを使用します。</span><span class="sxs-lookup"><span data-stu-id="f7efe-p106">Microsoft Search uses Azure Active Directory to authenticate and authorize access to your company's data. Microsoft Search conforms to the identity handling practices standard across all Microsoft products. This means your users may be automatically signed in through single sign-on.</span></span> 
+<span data-ttu-id="729e3-p106">Microsoft Search では、会社のデータの認証とアクセスの承認のために Azure Active Directory を使用します。Microsoft Search は、すべての Microsoft 製品にかかる ID 処理のプラクティス標準に準拠します。したがって、ユーザーがシングル サインオンにより自動的にサインインする場合があります。</span><span class="sxs-lookup"><span data-stu-id="729e3-p106">Microsoft Search uses Azure Active Directory to authenticate and authorize access to your company's data. Microsoft Search conforms to the identity handling practices standard across all Microsoft products. This means your users may be automatically signed in through single sign-on.</span></span> 
   
-## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a><span data-ttu-id="f7efe-156">設定する方法は Bing の既定の検索プロバイダーとしてユーザーのでしょうか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-156">How do I set Bing as the default search provider for my users?</span></span>
+## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a><span data-ttu-id="729e3-156">ユーザーの既存の検索プロバイダーとして Bing を設定する方法を教えてください。</span><span class="sxs-lookup"><span data-stu-id="729e3-156">How do I set Bing as the default search provider for my users?</span></span>
 
-<span data-ttu-id="f7efe-157">については、[既定の検索エンジンを設定](set-default-search-engine.md)、[既定のホーム ページを設定](set-default-homepage.md)すると、および[既定のブラウザーの設定](set-default-browser.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-157">For information about this, see [Set default search engine](set-default-search-engine.md), [Set default homepage](set-default-homepage.md), and [Set default browser](set-default-browser.md).</span></span>
+<span data-ttu-id="729e3-157">この情報については、「[既定の検索エンジンの設定](set-default-search-engine.md)」、「[既定のホーム ページの設定](set-default-homepage.md)」、「[既定のブラウザーの設定](set-default-browser.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-157">For information about this, see [Set default search engine](set-default-search-engine.md), [Set default homepage](set-default-homepage.md), and [Set default browser](set-default-browser.md).</span></span>
   
-## <a name="does-microsoft-search-provide-search-results-across-tenants"></a><span data-ttu-id="f7efe-158">Microsoft Search は、テナント間で検索結果を提供しますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-158">Does Microsoft Search provide search results across tenants?</span></span>
+## <a name="does-microsoft-search-provide-search-results-across-tenants"></a><span data-ttu-id="729e3-158">Microsoft Search はテナント間の検索結果を提供しますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-158">Does Microsoft Search provide search results across tenants?</span></span>
 
-<span data-ttu-id="f7efe-159">いいえ、テナントまたは共有のテナント間のアクセスはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="f7efe-159">No, cross tenant or shared tenant access is not supported.</span></span> 
+<span data-ttu-id="729e3-159">いいえ、テナント間や共有テナントのアクセスはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="729e3-159">No, cross tenant or shared tenant access is not supported.</span></span> 
   
-## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a><span data-ttu-id="f7efe-160">キーワードと予約済みキーワードのヘルプはどこで入手できますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-160">Where can I get help with keywords and reserved keywords?</span></span>
+## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a><span data-ttu-id="729e3-160">キーワードと予約済みキーワードについてのヘルプはどこで得られますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-160">Where can I get help with keywords and reserved keywords?</span></span>
 
-<span data-ttu-id="f7efe-161">キーワードと予約済みキーワードを使用する方法の詳細については、[コンテンツの計画](plan-your-content.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-161">For information about using keywords and reserved keywords, see [Plan your content](plan-your-content.md).</span></span>
+<span data-ttu-id="729e3-161">キーワードと予約済みキーワードの使い方については、「[コンテンツの計画](plan-your-content.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-161">For information about using keywords and reserved keywords, see [Plan your content](plan-your-content.md).</span></span>
   
-## <a name="which-office-365-skus-are-supported"></a><span data-ttu-id="f7efe-162">どの Office 365 Sku がサポートされますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-162">Which Office 365 SKUs are supported?</span></span>
+## <a name="which-office-365-skus-are-supported"></a><span data-ttu-id="729e3-162">どの Office 365 SKU がサポートされていますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-162">Which Office 365 SKUs are supported?</span></span>
 
-<span data-ttu-id="f7efe-163">Sku がサポートされている方法については、 [Microsoft の検索のための要件](requirements.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-163">For information about supported SKUs, see [Requirements for Microsoft Search](requirements.md).</span></span>
+<span data-ttu-id="729e3-163">サポートされている SKU については、「[Microsoft Search の要件](requirements.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-163">For information about supported SKUs, see [Requirements for Microsoft Search](requirements.md).</span></span>
   
-## <a name="is-microsoft-search-gdpr-compliant"></a><span data-ttu-id="f7efe-164">Microsoft 検索 GDPR は準拠していませんか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-164">Is Microsoft Search GDPR compliant?</span></span>
+## <a name="is-microsoft-search-gdpr-compliant"></a><span data-ttu-id="729e3-164">Microsoft Search は GDPR に準拠しますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-164">Is Microsoft Search GDPR compliant?</span></span>
 
-<span data-ttu-id="f7efe-165">GDPR のコンプライアンスについては、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7efe-165">For information about GDPR compliance, see [Security for Microsoft Search](security.md).</span></span>
+<span data-ttu-id="729e3-165">GDPR 準拠についての情報は、「[Microsoft Search のセキュリティ](security.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="729e3-165">For information about GDPR compliance, see [Security for Microsoft Search](security.md).</span></span>
   
-## <a name="why-am-i-signed-into-bing-automatically"></a><span data-ttu-id="f7efe-166">理由は自分で署名 Bing に自動的にしますか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-166">Why am I signed into Bing automatically?</span></span>
+## <a name="why-am-i-signed-into-bing-automatically"></a><span data-ttu-id="729e3-166">なぜ自動的に Bing にサインインされるのですか。</span><span class="sxs-lookup"><span data-stu-id="729e3-166">Why am I signed into Bing automatically?</span></span>
 
-<span data-ttu-id="f7efe-p107">Microsoft Search は、自動的に作業内容を使用してサインインするか、Office 365 アプリケーション、または Windows の 10 にサインインしたときにアカウントを学校に AAD シングル サインオンを使用します。いつでもサインアウトすることができます。</span><span class="sxs-lookup"><span data-stu-id="f7efe-p107">Microsoft Search uses AAD single sign-on to automatically sign you in with your work or school account when you've signed in to an Office 365 app, or Windows 10. You can sign out at any time.</span></span>
+<span data-ttu-id="729e3-p107">Microsoft Search では、Office 365 アプリや Windows 10 にサインインすると、AAD のシングル サインオンを使って自動的に職場または学校のアカウントにサインインされます。</span><span class="sxs-lookup"><span data-stu-id="729e3-p107">Microsoft Search uses AAD single sign-on to automatically sign you in with your work or school account when you've signed in to an Office 365 app, or Windows 10. You can sign out at any time.</span></span>
   
-## <a name="what-is-bing-for-business"></a><span data-ttu-id="f7efe-169">Bing は、ビジネスは何ですか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-169">What is Bing for business?</span></span>
+## <a name="what-is-bing-for-business"></a><span data-ttu-id="729e3-169">ビジネス向け Bing とは何ですか。</span><span class="sxs-lookup"><span data-stu-id="729e3-169">What is Bing for business?</span></span>
 
-<span data-ttu-id="f7efe-170">Microsoft Search は、ビジネスの Bing を以前呼び出されました。</span><span class="sxs-lookup"><span data-stu-id="f7efe-170">Microsoft Search was previously called Bing for business.</span></span>
+<span data-ttu-id="729e3-170">Microsoft Search は、以前ビジネス向け Bing と呼ばれていました。</span><span class="sxs-lookup"><span data-stu-id="729e3-170">Microsoft Search was previously called Bing for business.</span></span>
   
-## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a><span data-ttu-id="f7efe-171">方法は Microsoft Search を注文結果カードのすべての結果カルーセルですか。</span><span class="sxs-lookup"><span data-stu-id="f7efe-171">How does Microsoft Search order result cards in the All results carousel?</span></span>
+## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a><span data-ttu-id="729e3-171">Microsoft Search は、すべての結果のカルーセルで結果カードをどのように順序付けしますか。</span><span class="sxs-lookup"><span data-stu-id="729e3-171">How does Microsoft Search order result cards in the All results carousel?</span></span>
 
-<span data-ttu-id="f7efe-172">Microsoft Search では、関連性に基づいて結果のカードを注文するのにはインテリジェントなランク付けのアルゴリズムを使用します。</span><span class="sxs-lookup"><span data-stu-id="f7efe-172">Microsoft Search uses intelligent ranking algorithms to order result cards based on relevance.</span></span>
+<span data-ttu-id="729e3-172">Microsoft Search では、インテリジェント ランキング アルゴリズムを使って結果カードを関連性に従って順序付けします。</span><span class="sxs-lookup"><span data-stu-id="729e3-172">Microsoft Search uses intelligent ranking algorithms to order result cards based on relevance.</span></span>
 
   
 
