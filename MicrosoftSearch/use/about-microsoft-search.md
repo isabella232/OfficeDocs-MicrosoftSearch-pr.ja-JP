@@ -1,5 +1,5 @@
 ---
-title: マイクロソフトの検索について
+title: Microsoft Search について
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,57 +12,57 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
-description: すべての情報を見つけることができる Microsoft Search を使用する場合の概要を取得します。
+description: Microsoft Search を使用する際に、検索できるすべての情報に関する概要を取得します
 ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612377"
 ---
-# <a name="about-microsoft-search"></a>マイクロソフトの検索について
+# <a name="about-microsoft-search"></a>Microsoft Search について
 
-マイクロソフトの検索が簡単に検索をもたらす作業し、web エクスペリエンスの 1 つにまとめる。任意のブラウザーで、どのデバイスに適切なタイミングで適切な情報を取得する単純な高速、強力、かつ安全な方法で Microsoft Search を使用します。
+Microsoft Search を使用すると、検索作業と Web を 1 つのエクスペリエンスに簡単にまとめることができます。任意のデバイスの任意のブラウザーで、適切なタイミングで適切な情報を取得するためのシンプル、高速、強力、そしてより安全な方法を確立するために Microsoft Search を使用します。
   
-検索しているかどうかのユーザー、ファイル、組織図、内部サイトとリソース、またはよく寄せられる質問への回答、迅速な回答を得るには、生産性を向上させ、作業の 1 日に Microsoft Search を使用して、手際よく作業できます。作業の結果を取得するには、 [bing.com/business](https://www.bing.com/business)に移動、作業や学校のアカウント、および検索を使用してサインインします。 
+人、ファイル、組織図、内部サイトやリソース、よく寄せられる質問に対する回答など、何を検索するかに関わらず、1 日中 Microsoft Search を使用して、迅速に回答を得ることができ、生産性が向上され、よりスマートに仕事を行えます。検索結果を得るには、[bing.com/business](https://www.bing.com/business) に移動し、職場または学校のアカウントでサインインして、検索します。 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2W?autoplay=false]
 
-## <a name="what-you-can-find"></a>何が見つけることができます。
+## <a name="what-you-can-find"></a>検索できる内容
   
-検索するには、Microsoft Search を使用します。
+Microsoft Search を使用すると、以下を検索できます。
   
-- [People](find-people-and-groups.md)
+- [ユーザー](find-people-and-groups.md)
     
-    連絡先情報、今後の会議を一緒にある場合、組織図の詳細情報、グループ メンバーシップ、およびその他のファイルを簡単に検索します。
+    連絡先情報、参加する予定されている会議、組織図の詳細、グループのメンバーシップ、その他のファイルを簡単に見つけることができます。
     
 - [グループ](find-people-and-groups.md)
     
-    名またはメンバーでグループを検索する、ユーザーが属するグループを表示および共有のコンテンツを参照
+    グループを名前またはメンバーで検索し、その人が所属するグループを調査して、共有のコンテンツを参照します。
     
 - [リソースとツール](find-resources-tools-and-more.md)
     
-    内部リソース、ツール、およびその詳細を簡単に見つける
+    内部リソース、ツールなどを簡単に見つけることができます。
     
 - [SharePoint サイト](find-sharepoint-sites.md)
     
-    グループや仕事仲間を表示する権限があることによって作成された SharePoint サイト、SharePoint サイトを検索します。
+    自分の SharePoint サイト、または自分に表示するアクセス許可が付与されているグループや同僚によって作成された SharePoint サイトを検索できます。
     
 - [ファイル](find-files.md)
     
-    独自のファイルをすばやく検索するかを表示または編集する権限のある共同作業者がコンテンツを作成
+    自分のファイル、自分に表示または編集するアクセス許可が付与されている同僚によって作成されたコンテンツをすばやく検索できます。
     
 - [会話](find-conversations.md)
     
-    プライベート、マイクロソフトのチームまたはマイクロソフト Yammer の会話または表示する権限がある同僚との会話を検索します。
+    プライベートの Microsoft Teams または Microsoft Yammer の会話、または自分に表示するアクセス許可が付与された同僚との会話を検索します。
     
 - [場所](find-locations.md)
     
-    マップの結果を検索し、建物、オフィス、キャンパス、および、複数のアドレスに簡単に方向を取得するを確認して近くにあります。    
+    建物、オフィス、キャンパスなどの住所と地図上の位置を検索します。道順や近くにあるものも簡単に確認できます。    
     
-のみを表示できます、職場、学校のアカウントを使用して Bing にサインインしているときに結果を操作します。これは、web、SharePoint、およびその他の Office 365 アプリケーションの [Outlook へのサインインに使用する同じアカウントです。 
+職場または学校のアカウントで Bing にサインインしているときのみ、検索結果を表示できます。これは、Outlook on the web、SharePoint、およびその他の Office 365 アプリにサインインする際に使用するのと同じアカウントです。 
   
-マイクロソフトのみ返されます情報とファイルを表示するアクセス許可があります。ファイルや情報を作成するとファイルを共有した、またはより大きなグループを含む、またはフォルダーまたはアクセスする権限がある場所に格納されているために、アクセス許可が存在することがあります。
+Microsoft Search は、表示するアクセス許可が付与されている情報やファイルのみを返します。自分がファイルや情報を作成した場合、それらが自分と共有されている、または自分が所属する大きなグループで共有されている場合、または自分がアクセスする権限が付与されているフォルダーや場所に保存されている場合に、アクセス許可を持ちます。
 
   
 

@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search では、生産性の向上し、組織の関連性の高い検索結果を提供することにより時間を節約する、エンタープライズ検索機能
+description: Microsoft Search は、組織にとってより関連性の高い検索結果を提供し、生産性の向上や時間の節約につながるエンタープライズ検索を可能にします
 ms.openlocfilehash: 1a50ff7a0ae3c2b86f3051ad4eeecb38a8a602a9
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612357"
@@ -45,9 +45,9 @@ ms.locfileid: "29612357"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>なぜマイクロソフトの検索</h2>
-                        <p>生産性の向上し、組織の関連性の高い検索結果を提供することにより時間を節約する、エンタープライズ検索機能を取得します。</p>
-                        <p><a href="why-microsoft-search.md">方法を確認する</a></p>
+                        <h2>Microsoft Search を使用する利点</h2>
+                        <p>組織にとってより関連性の高い検索結果を提供し、生産性の向上や時間の節約につながるエンタープライズ検索を可能にします</p>
+                        <p><a href="why-microsoft-search.md">理由を確認する</a></p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "29612357"
     </li>
 </ul>
 
-<h2>おすすめトピック</h2>
+<h2>おすすめのトピック</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -69,8 +69,8 @@ ms.locfileid: "29612357"
                     </div>
                     <div class="cardText">
                         <h3>主な機能</h3>
-                        <p>管理者グループおよびユーザーは、どのようなことがわかりますを検索する場合などに使用された機能を参照してください。</p>
-                        <p><a href="features.md">詳細については、以下を参照してください。</a></p>
+                        <p>検索対象など、管理者やユーザーが利用できる検索機能を確認します</p>
+                        <p><a href="features.md">詳細情報</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "29612357"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>クイック設定の管理</h3>
-                        <p>Microsoft の検索を有効にし、次の 4 つの簡単な手順で、組織用に構成する方法についてください。</p>
-                        <p><a href="quick-set-up.md">今すぐ開始します。</a></p>
+                        <h3>管理者クイック セットアップ</h3>
+                        <p>Microsoft Search を有効にして組織用に構成するための 4 つの簡単な手順を確認します</p>
+                        <p><a href="quick-set-up.md">今すぐ開始する</a></p>
                     </div>
                 </div>
             </div>
@@ -105,8 +105,8 @@ ms.locfileid: "29612357"
                     </div>
                     <div class="cardText">
                         <h3>FAQ</h3>
-                        <p>いくつかの Microsoft の検索についてよく寄せられる質問への回答します。</p>
-                        <p><a href="faqs.md">FAQ を参照します。</a></p>
+                        <p>Microsoft Search に関してよく寄せられる一部の質問への回答を参照します</p>
+                        <p><a href="faqs.md">FAQ を参照する</a></p>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@ ms.locfileid: "29612357"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Microsoft Search を使用して、</h2>
-                        <p>Microsoft Search は、情報を検索する、生産性の向上、および仕事をより効率的に、シンプルで高速、かつより安全な方法</p>
-                        <p><a href="use/about-microsoft-search.md">方法を確認する</a></p>
+                        <h2>Microsoft Search を使用する</h2>
+                        <p>Microsoft Search を使用すると簡単にすばやく、そして安全に情報を検索でき、生産性の向上やよりスマートな作業につながります</p>
+                        <p><a href="use/about-microsoft-search.md">詳細を確認する</a></p>
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@ ms.locfileid: "29612357"
                     <div class="cardText">
                         <p><a href="quick-set-up.md">クイック セットアップ</a></p>
                         <p><a href="connected-services.md">接続済みサービス</a></p>
-                        <p><a href="set-up-microsoft-search.md">マイクロソフトの検索を設定します。</a></p>
+                        <p><a href="set-up-microsoft-search.md">Microsoft Search のセットアップ</a></p>
                     </div>
                 </div>
             </div>

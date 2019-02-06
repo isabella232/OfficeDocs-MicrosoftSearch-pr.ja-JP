@@ -13,51 +13,51 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
-description: エンタープライズ検索および Microsoft の検索についてよく寄せられる質問への回答します。
+description: エンタープライズ検索と Microsoft Search についてよく寄せられる質問に対する回答です
 ms.openlocfilehash: ed4179262dc20a441ce5e3acadc895bacb271fa9
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612511"
 ---
 # <a name="faqs"></a>FAQ
 
-これらは、ある組織とユーザーを管理して、Microsoft Search を使用してのよく寄せられる質問です。
+組織やユーザーから Microsoft Search の管理や使用についてよく寄せられる質問は次のとおりです。
   
-## <a name="whats-the-value-proposition-for-microsoft-search"></a>Microsoft Search のバリュー ・ プロポジションとは何ですか。
+## <a name="whats-the-value-proposition-for-microsoft-search"></a>Microsoft Search にはどんな価値提供がありますか。
 
-Microsoft Search は、作業時間と web コンテンツの両方を検索するのにはセキュリティで保護された方法です。このような web や企業間の統合には、マイクロソフトではできるだけです。コンプライアンス関連の情報は、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。
+Microsoft Search は、作業と Web コンテンツの両方をセキュリティに保護された方法で検索します。このような Web とエンタープライズ全体の統合が可能なのは、Microsoft だけです。コンプライアンス関連の情報については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。
   
-## <a name="what-microsoft-search-features-are-available-now"></a>マイクロソフトの検索機能があるようになりましたでしょうか。
+## <a name="what-microsoft-search-features-are-available-now"></a>現在利用できる Microsoft Search の機能にはどんなものがありますか。
 
-一覧は、 [Microsoft の検索の機能](features.md)を参照してください。
+すべての機能の一覧については、「[Microsoft Search の機能](features.md)」を参照してください。
   
-## <a name="does-microsoft-search-support-advanced-query-understanding"></a>Microsoft 検索サポートの高度なクエリについてですか。
+## <a name="does-microsoft-search-support-advanced-query-understanding"></a>Microsoft Search は高度なサポート クエリの理解をサポートしますか。
 
-はい、Microsoft Search では、大規模な語句のクエリの意図を解析します。この機能では、AI を使用して、余分な語句の一般的なユーザーに追加のクエリに影響を与えない、検索の目的について説明します。たとえば、' について詳しく知る方法は、自分のパスワードを変更してください' を検索するときは、重要度の低いから単語を抽出クエリおよび [パスワードの変更' のように該当するものに基づくトリガー
+はい。Microsoft Search は、長いフレーズからクエリの意図を解析します。この機能は、AI を使ってユーザーがよく使う検索の意図に影響しない余分なフレーズの一般的なものを学習します。たとえば、ユーザーが「パスワードの変更方法について詳しく教えてください」と検索した場合、クエリから重要度の低いワードを抽出し、「パスワード変更」などの関連のあるワードに基づいてトリガーします。
   
-この機能では、管理ポータルでのキーワードの設定はオーバーライドされません。
+この機能により、管理ポータルで設定されたキーワードが無効になることはありません。
   
-## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a>Microsoft Search は、ファイル、オンプレミスとクラウドを検索しますか。
+## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a>Microsoft Search は、オンプレミスでもクラウドでもファイルの検索を行いますか。
 
-SharePoint Online 上に存在するドキュメントを検索する Microsoft 検索のサポート、OneDrive ハイブリッドと比べ、ビジネスの設置型 SharePoint と SharePoint Online の最も一般的な Office ファイルの種類。設置型のコンテンツを検索するには SharePoint Online で、Microsoft Search を使用して、設置型のコンテンツを検索できる必要があります。 
+Microsoft Search は、最も一般的な種類の Office ファイルを対象に SharePoint Online、OneDrive for Business に加え、ハイブリッド オンプレミスの SharePoint と SharePoint Online にあるドキュメントの検索もサポートします。SharePoint Online でオンプレミス コンテンツを検索できるなら、Microsoft Search でオンプレミス コンテンツが検索できるはずです。 
   
-## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a>Microsoft Search は、他のエンタープライズ検索のエクスペリエンスを置き換えますか。
+## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a>Microsoft Search は、その他のエンタープライズ検索エクスペリエンスの代わりになりますか。
 
-Microsoft Search は、複数のソースからの結果をまとめて表示する補完的なソリューションです。サポートされているファイルの種類とソースの詳細については、次のよく寄せられる質問を参照してください。
+Microsoft Search は、複数のソースからの結果をまとめて提示する補完的なサービスです。サポートされているファイルの種類とソースの詳細については、次のよく寄せられる質問を参照してください。
   
-## <a name="what-file-types-and-sources-does-microsoft-search-support"></a>どのようなファイルの種類とソースは Microsoft サポート情報の検索ですか。
+## <a name="what-file-types-and-sources-does-microsoft-search-support"></a>Microsoft Search はどんなファイルの種類とソースをサポートしますか。
 
-コンテンツ ソースをサポートします。
+次のコンテンツ ソースをサポートします。
   
 - SharePoint Online
     
-- ハイブリッドの SharePoint (設置型 + SPO)
+- ハイブリッド SharePoint (オンプレミス + SPO)
     
 - OneDrive for Business
     
-次のファイルの種類は、ファイルの検索に提示され、ユーザーとグループの [ファイル] タブが表示されます。
+ファイル検索に表示され、ユーザーとグループの [ファイル] タブに表示されるのは次の種類のファイルです。
   
 - Word
     
@@ -69,77 +69,77 @@ Microsoft Search は、複数のソースからの結果をまとめて表示す
     
 - PDF
     
-## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a>マイクロソフトの検索のためには、コンプライアンスとセキュリティの手段は何ですか。
+## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a>Microsoft Search のコンプライアンスと信頼性の対策にはどんなものがありますか。
 
-コンプライアンスおよびセキュリティ対策については、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。
+コンプライアンスと信頼性対策の詳細については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。
   
-## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a>Office 365 コンプライアンス階層と分類についての情報はどこで入手できますか。
+## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a>Office 365 コンプライアンス階層/カテゴリに関する情報はどこで入手できますか。
 
-詳細は、[業界標準や規制のコンプライアンス ・ フレームワーク](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf)(PDF ダウンロード) にあります。 
+「[業界標準と規制に関するコンプライアンス フレームワーク](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf)」(PDF ダウンロード) で詳細を入手できます。 
   
-## <a name="how-does-microsoft-search-keep-results-secure"></a>方法は Microsoft の検索を保持して結果セキュリティで保護されたでしょうか。
+## <a name="how-does-microsoft-search-keep-results-secure"></a>Microsoft Search の結果はどのようにセキュリティ保護を保っていますか。
 
-Microsoft Search が、結果を保持する方法についての情報をセキュリティで保護、[マイクロソフトの検索のためのセキュリティ](security.md)を参照してください。
+Microsoft Search の結果のセキュリティ保護方法については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。
   
-## <a name="what-are-the-content-sources-for-the-people-card"></a>人カードのコンテンツのソースを挙げてください。
+## <a name="what-are-the-content-sources-for-the-people-card"></a>連絡先カードのコンテンツ ソースを教えてください。
 
-人のカードでは、Azure Active Directory、Exchange Online では、および SharePoint Online から情報を派生します。
+連絡先カードは、Azure Active Directory、Exchange Online、SharePoint Online から情報を得ています。
   
-## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a>Microsoft Search のユーザーはマイクロソフトの特典の獲得でしょうか。
+## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a>Microsoft Search のユーザーは Microsoft Rewards を獲得しますか。
 
-Microsoft Search の検索では、報酬ポイントを獲得していないと、ユーザーの Microsoft アカウントに関連付けられていることはありません。
+Microsoft Search での検索では、Rewards ポイントは獲得できず、ユーザーの Microsoft アカウントに関連付けられていることはありません。
   
-## <a name="does-microsoft-search-respect-existing-file-permissions"></a>Microsoft Search は、既存ファイルのアクセス許可を尊重しますか。
+## <a name="does-microsoft-search-respect-existing-file-permissions"></a>Microsoft Search は、既存のファイルのアクセス許可を考慮しますか。
 
-Microsoft Search では、ソースからのセキュリティによるトリミングを尊重します。ユーザーへのアクセスがある情報のみを参照してください。
+Microsoft Search では、ソースからのセキュリティ トリミングを尊重します。ユーザーがアクセス権を持っている情報のみが表示されます。
   
-## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a>ユーザーのクエリを保護する方法、web 上の共有からでしょうか。
+## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a>ユーザーのクエリは、Web 上の共有からどのように保護されていますか。
 
-ユーザーのクエリを保護する方法については、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。
+ユーザーのクエリの保護方法については、「[Microsoft Search のセキュリティ](security.md)」を参照してください。
   
-## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a>広告の種類は Microsoft Search のユーザーですか。
+## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a>Microsoft Search のユーザーに表示される広告にはどんな種類がありますか。
 
-広告については、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。
+広告についての情報は、「[Microsoft Search のセキュリティ](security.md)」を参照してください。
   
-## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a>Microsoft の検索を有効にするのには最低限の要件は?
+## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a>Microsoft Search を有効にする最小要件は何ですか。
 
-要件の詳細については、 [Microsoft の検索のための要件](requirements.md)を参照してください。
+要件についての情報は、「[Microsoft Search の要件](requirements.md)」を参照してください。
   
-## <a name="how-does-microsoft-search-use-azure-active-directory"></a>Microsoft Search が Azure Active Directory を使用する方法
+## <a name="how-does-microsoft-search-use-azure-active-directory"></a>Microsoft Search では Azure Active Directory をどのように利用しますか。
 
-Microsoft Search では、Azure Active Directory を使用して認証し、企業のデータへのアクセスを承認します。Microsoft Search では、すべてのマイクロソフト製品の間でのプラクティスの標準の処理 id に準拠します。つまり、ユーザーが自動的に署名シングル サインオンを使用します。 
+Microsoft Search では、会社のデータの認証とアクセスの承認のために Azure Active Directory を使用します。Microsoft Search は、すべての Microsoft 製品にかかる ID 処理のプラクティス標準に準拠します。したがって、ユーザーがシングル サインオンにより自動的にサインインする場合があります。 
   
-## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a>設定する方法は Bing の既定の検索プロバイダーとしてユーザーのでしょうか。
+## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a>ユーザーの既存の検索プロバイダーとして Bing を設定する方法を教えてください。
 
-については、[既定の検索エンジンを設定](set-default-search-engine.md)、[既定のホーム ページを設定](set-default-homepage.md)すると、および[既定のブラウザーの設定](set-default-browser.md)を参照してください。
+この情報については、「[既定の検索エンジンの設定](set-default-search-engine.md)」、「[既定のホーム ページの設定](set-default-homepage.md)」、「[既定のブラウザーの設定](set-default-browser.md)」を参照してください。
   
-## <a name="does-microsoft-search-provide-search-results-across-tenants"></a>Microsoft Search は、テナント間で検索結果を提供しますか。
+## <a name="does-microsoft-search-provide-search-results-across-tenants"></a>Microsoft Search はテナント間の検索結果を提供しますか。
 
-いいえ、テナントまたは共有のテナント間のアクセスはサポートされません。 
+いいえ、テナント間や共有テナントのアクセスはサポートされていません。 
   
-## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a>キーワードと予約済みキーワードのヘルプはどこで入手できますか。
+## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a>キーワードと予約済みキーワードについてのヘルプはどこで得られますか。
 
-キーワードと予約済みキーワードを使用する方法の詳細については、[コンテンツの計画](plan-your-content.md)を参照してください。
+キーワードと予約済みキーワードの使い方については、「[コンテンツの計画](plan-your-content.md)」を参照してください。
   
-## <a name="which-office-365-skus-are-supported"></a>どの Office 365 Sku がサポートされますか。
+## <a name="which-office-365-skus-are-supported"></a>どの Office 365 SKU がサポートされていますか。
 
-Sku がサポートされている方法については、 [Microsoft の検索のための要件](requirements.md)を参照してください。
+サポートされている SKU については、「[Microsoft Search の要件](requirements.md)」を参照してください。
   
-## <a name="is-microsoft-search-gdpr-compliant"></a>Microsoft 検索 GDPR は準拠していませんか。
+## <a name="is-microsoft-search-gdpr-compliant"></a>Microsoft Search は GDPR に準拠しますか。
 
-GDPR のコンプライアンスについては、 [Microsoft の検索のためのセキュリティ](security.md)を参照してください。
+GDPR 準拠についての情報は、「[Microsoft Search のセキュリティ](security.md)」を参照してください。
   
-## <a name="why-am-i-signed-into-bing-automatically"></a>理由は自分で署名 Bing に自動的にしますか。
+## <a name="why-am-i-signed-into-bing-automatically"></a>なぜ自動的に Bing にサインインされるのですか。
 
-Microsoft Search は、自動的に作業内容を使用してサインインするか、Office 365 アプリケーション、または Windows の 10 にサインインしたときにアカウントを学校に AAD シングル サインオンを使用します。いつでもサインアウトすることができます。
+Microsoft Search では、Office 365 アプリや Windows 10 にサインインすると、AAD のシングル サインオンを使って自動的に職場または学校のアカウントにサインインされます。
   
-## <a name="what-is-bing-for-business"></a>Bing は、ビジネスは何ですか。
+## <a name="what-is-bing-for-business"></a>ビジネス向け Bing とは何ですか。
 
-Microsoft Search は、ビジネスの Bing を以前呼び出されました。
+Microsoft Search は、以前ビジネス向け Bing と呼ばれていました。
   
-## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a>方法は Microsoft Search を注文結果カードのすべての結果カルーセルですか。
+## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a>Microsoft Search は、すべての結果のカルーセルで結果カードをどのように順序付けしますか。
 
-Microsoft Search では、関連性に基づいて結果のカードを注文するのにはインテリジェントなランク付けのアルゴリズムを使用します。
+Microsoft Search では、インテリジェント ランキング アルゴリズムを使って結果カードを関連性に従って順序付けします。
 
   
 

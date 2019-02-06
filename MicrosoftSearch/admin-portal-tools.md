@@ -13,37 +13,37 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
-description: 作成し、結果をインポートする Microsoft の検索ツールの概要について、自動的にサインインし、任意の場所から検索
+description: 結果を作成したりインポートしたり、自動的にサインインしたり、どこからでも検索したりできるようにする Microsoft Search ツールの概要
 ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612381"
 ---
 # <a name="admin-portal-tools"></a>管理ポータルのツール
 
-Microsoft 検索の管理ポータルには、ツールおよびリソースの管理者、エディター、およびユーザー用に設計されたが含まれています。
+Microsoft Search 管理ポータルには、管理者、編集者、ユーザーのために設計されたツールやリソースが含まれています。以下に例を示します。
   
 - コンテンツ作成者のブラウザー拡張機能
     
-    利用な管理者と編集者、サイトまたはページへの移動だけで簡単に[ブックマークを作成](create-bookmarks.md)し[Q&As](create-qas.md)クロムまたはエッジの拡張機能を使用してください。 
+    管理者と編集者が使用できます。Chrome または Edge の拡張機能を使用して、サイトまたはページに移動するだけで、簡単に[ブックマーク](create-bookmarks.md)や [Q & A](create-qas.md) を作成できます。 
     
-- Bing 検索の拡張機能で Microsoft の検索
+- Bing 検索での Microsoft Search の拡張機能
     
-    クロムまたはエッジの拡張子は、Microsoft Search 企業を簡単にアクセス検索であなたのサイトまたはページを離れることがなく、承認されたユーザーが使用可能です。
+    権限が付与されたユーザーが使用できます。Chrome または Edge の拡張機能を使用して、現在表示しているページやサイトから離れずに、Microsoft Search エンタープライズ検索にすばやくアクセスできます。
     
-- Windows 10 と AAD 符号拡張であるクロムの
+- Chrome 向けの Windows 10 と AAD サインイン拡張機能
     
-    承認されたユーザーが、使用可能にサインインすると、Azure Active Directory と簡単に認証するためにクロムの拡張機能には、Office 365 や Bing などのサイトがサポートされています。この拡張機能を導入することをお勧めすると[シングル サインオンをテスト](test-single-sign-on.md)します。
+    権限が付与されたユーザーが使用できます。Chrome の拡張機能を使用して、Office 365 や Bing などのサポートされているサイトにサインインするときに、Azure Active Directory で簡単に認証できます。[シングル サインオンをテストする](test-single-sign-on.md)ときに、この拡張機能をデプロイすることをお勧めします。
     
-- ブックマークとして SharePoint の上位のクエリをインポートします。
+- ブックマークとしてよく使用される SharePoint クエリをインポートする
     
-    管理者は、可能では、ドラフトのしおりとして[SharePoint の上位のクエリをインポート](import-sharepoint-promoted-results-and-top-queries.md)するには、この PowerShell スクリプトを使用します。スクリプトをダウンロードし、要件、例、および使用可能なパラメーターについての情報については README ファイルを開きます。 
+    管理者が使用できます。この PowerShell スクリプトを使用して、ドラフト ブックマークとして [SharePoint のよく使用されるクエリをインポートする](import-sharepoint-promoted-results-and-top-queries.md)ことができます。スクリプトをダウンロードして、要件、サンプル、使用可能なパラメーターについて README ファイルを開きます。 
     
-- ブックマークとして SharePoint 昇格の結果クエリのルールをインポートします。
+- ブックマークとして SharePoint の昇格結果クエリ ルールをインポートする
     
-    管理者、 [SharePoint の昇格の結果をインポート](import-sharepoint-promoted-results-and-top-queries.md)し、最上位のクエリの場合、またはのおすすめコンテンツを推奨されるブックマークとしてご利用いただけます。 
+    管理者が使用できます。おすすめのブックマークとして、[SharePoint の昇格結果](import-sharepoint-promoted-results-and-top-queries.md)、よく使用されるクエリ、またはおすすめコンテンツをインポートします。 
 
   
 

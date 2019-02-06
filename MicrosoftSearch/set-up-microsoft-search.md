@@ -1,5 +1,5 @@
 ---
-title: マイクロソフトの検索を設定します。
+title: Microsoft Search のセットアップ
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,53 +13,53 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
-description: 組織に Microsoft Search を配置する必要がある情報のすべて
+description: Microsoft Search を組織にデプロイするために必要なすべての情報
 ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612403"
 ---
-# <a name="set-up-microsoft-search"></a>マイクロソフトの検索を設定します。
+# <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
-Office 365 の一部として、Microsoft 365 の管理ページで有効にすると、Microsoft Search を容易に導入します。有効にすると、セットアップを行うために必要なロゴ、名前、および色を設定し、ユーザー アクセスを提供するクイック構成だけです。承認されたユーザーは、Bing に職場、学校のアカウントでサインインし、検索する際に、作業の結果を取得します。
+Office 365 の一部として、Microsoft 365 管理センターを有効にすることで Microsoft Search を簡単にデプロイできます。有効にすると、ロゴ、名前、色を設定して、ユーザーにアクセス権を付与するためのクイック構成を行うだけでセットアップが完了します。その後、承認されたユーザーは職場または学校アカウントを使用して Bing にサインインでき、検索時に作業結果が表示されるようになります。
 
 - [クイック セットアップ](quick-set-up.md)
     
-    Microsoft の検索を簡単に有効にするのには 4 つの手順を実行します。
+    4 つの手順を実行して、簡単に Microsoft Search を有効にします
 
 - [コンテンツ設定](content-settings.md)
     
-    マイクロソフトの検索結果の外観を制御します。
+    Microsoft Search の検索結果の外観を制御します
     
-- [ユーザーを追加する](add-users.md)
+- [ユーザーの追加](add-users.md)
     
-    管理者と、エディターのポータルへのアクセスを管理し、提供または組織内で Microsoft Search へのアクセスを制限
+    管理者やエディターのポータルへのアクセスを管理して、組織内の Microsoft Search へのアクセスを付与または制限します
     
 - [管理ポータルのツール](admin-portal-tools.md)
     
-    ブラウザーの拡張機能およびその他のツールを使用して、作成、コンテンツをインポートして、ユーザーがサインインし、Bing の作業の結果を検索するメッセージが表示回数を最小限に抑える
+    ブラウザー拡張機能などのツールを使用すると、コンテンツの作成とインポートを行い、ユーザーにサインインを求める回数を最小限に抑え、Bing で作業結果を確認することができます
     
-- [シングル サインオンをテスト](test-single-sign-on.md)
+- [シングル サインオンのテスト](test-single-sign-on.md)
     
-    サインインを促す時間の数を減らす
+    サインインするようユーザーに求める回数を減らします
     
-- [既定の検索エンジンとして設定 Bing](set-default-search-engine.md) [ホームページ](set-default-homepage.md)、および[既定のブラウザーを構成します。](set-default-browser.md)
+- [既定の検索エンジン](set-default-search-engine.md)や[ホーム ページ](set-default-homepage.md)として Bing を設定し、[既定のブラウザーを構成](set-default-browser.md)する
     
-    ユーザーを支援、以上簡単にマイクロソフトの検索機能を検出、使用法をお勧め、スムーズな操作を提供
+    ユーザーが Microsoft Search 機能を容易に把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます
     
-- [DNS サーバーを構成して](advanced-dns-configuration.md)、[ネットワーク接続を管理します。](manage-network-connections.md)
+- [DNS サーバーの構成](advanced-dns-configuration.md)および[ネットワーク接続の管理](manage-network-connections.md)
     
-    ユーザーが接続できるマイクロソフト検索して、Bing を識別し、サインインしていることを確認します。
+    ユーザーが Microsoft Search に接続できることと、Bing でそのユーザーの識別とサインインができることを確認します
 
-- [イントラネットに検索ボックスを追加します。](add-a-search-box-to-your-intranet-site.md)
+- [イントラネットへの検索ボックスの追加](add-a-search-box-to-your-intranet-site.md)
 
-    関連する検索候補と結果の迅速なアクセスをユーザーに提供します。
+    関連する検索候補と検索結果にユーザーがすばやくアクセスできるようにします
 
 - [コンテンツの計画](plan-your-content.md)
     
-    最も頻繁に検索され、それらの最良の結果の型を決定するどのサイト、ツール、およびリソースを検出します。
+    最もよく検索されるサイト、ツール、リソースを調査して、それに対する最適な結果の種類を特定します
 
   
 

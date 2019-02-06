@@ -1,5 +1,5 @@
 ---
-title: 既定のホームページの設定
+title: 既定のホーム ページの設定
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,101 +13,101 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
-description: Bing を Microsoft の検索を使用して、会社の既定のホーム ページとして設定する方法について説明します。
+description: Microsoft Search を使用して、会社の既定のホーム ページとして Bing を設定する方法について説明します。
 ms.openlocfilehash: db0611ebd7f4a8344664825bbb42025f3bb36486
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612491"
 ---
-# <a name="set-default-homepage"></a>既定のホームページの設定
+# <a name="set-default-homepage"></a>既定のホーム ページの設定
 
-既定のブラウザー、既定の検索エンジン、および既定のホーム ページを構成するがように、Microsoft 検索機能、複数の使用法をお勧めを見つけてより滑らかなエクスペリエンスを提供します。
+既定のブラウザー、検索エンジン、ホーム ページを構成すると、ユーザーが Microsoft Search 機能を把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます。
   
-組織の既定のホーム ページを設定するのには以下の手順を実行します。
+組織の既定のホーム ページを設定するには、以下の手順を実行します。
   
 ## <a name="internet-explorer"></a>Internet Explorer
 
-### <a name="internet-explorer-50-or-later"></a>5.0 またはそれ以降の Internet Explorer
+### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 以降
 
-1. グループ ポリシー管理コンソール (gpmc.msc) を開き、任意の既存のポリシーを編集または新規に作成するのに切り替えます。
+1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
     
-2. **Configuration\Preferences\Control パネル]、[internet のユーザーの設定**に移動します。
+2. **[ユーザーの構成]、[基本設定]、[コントロール パネルの設定]、[インターネットの設定]** の順に移動します。
     
-3. **インターネットの設定**を右クリックし、 **Internet Explorer 10**を選択します。
+3. **[インターネットの設定]** を右クリックして、**[Internet Explorer 10]** を選択します。
     
     > [!NOTE]
-    > Internet Explorer 11 に同じ設定を適用すると、11 の Internet Explorer の設定を適用するのには、Internet Explorer 10 のオプションを選択する必要があります。 
+    > Internet Explorer 11 には Internet Explorer 10 と同じ設定が適用されるため、Internet Explorer 11 に適用するオプションは Internet Explorer 10 で選択する必要があります。 
   
-4. 赤い下線が表示されている設定は、ターゲット マシン上で緑色で下線付きで表示する設定が構成されている間、ターゲット ・ マシン上で構成されていません。下線を変更するには、以下のファンクション キーを使用します。
+4. 赤い下線が引かれた設定はターゲット マシンで構成されていていないことを意味し、緑色の下線が引かれた設定はターゲット マシンで構成されていることを意味します。下線を変更するには、次のファンクション キーを使用します。
     
-    F5 - 現在のタブ上のすべての設定を有効にします。
+    F5 キー: 現在のタブのすべての設定を有効にする
     
-    F6 キーを押して、現在選択されている設定を有効にする-
+    F6 キー: 現在選択されている設定を有効にする
     
-    F7: 現在選択されている設定を無効にします。
+    F7 キー: 現在選択されている設定を無効にする
     
-    F8 キーの現在のタブ上のすべての設定を無効にします。
+    F8 キー: 現在のタブのすべての設定を無効にする
     
-5. 何かを構成する前にすべての設定を無効にするのには、 **f8 キー**を押します。画面は、次のようになります。 
+5. **F8** キーを押して、構成を行う前にすべての設定を無効にします。画面は次のようになります。 
     
-    ![インターネット エクスプ ローラーの 10 のプロパティ] ダイアログ ボックス](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
+    ![Internet Explorer 10 プロパティのダイアログ](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
-6. ホーム ページの設定に、 **f6 キー**を押すし、入力してください。`https://www.bing.com/business?form=BFBSPR`
+6. ホーム ページの設定で **F6** キーを押して、「`https://www.bing.com/business?form=BFBSPR`」と入力します。
     
-7. 適切なドメインにリンクすることによって、結果の GPO を適用します。
+7. 作成された GPO を適切なドメインにリンクさせて適用します。
     
 > [!NOTE]
-> ユーザーがこのポリシーの設定後、ホーム ページを変更できます。 
+> ユーザーは、このポリシーを設定後にホーム ページを変更できます。 
   
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
-### <a name="windows-10-version-1511-or-later"></a>1511 またはそれ以降のバージョンである Windows 10
+### <a name="windows-10-version-1511-or-later"></a>Windows 10 バージョン 1511 以降
 
-1. グループ ポリシー管理コンソール (gpmc.msc) を開き、任意の既存のポリシーを編集または新規に作成するのに切り替えます。
+1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
     
-2. **管理用テンプレート \windows コンポーネント Components\Microsoft の端**に移動します。
+2. **[管理用テンプレート]、[Windows コンポーネント]、[Microsoft Edge]** の順に移動します。
     
-1. **構成の開始ページ**をダブルクリックし、 **[有効**] に設定し、入力`https://www.bing.com/business`
+1. **[スタート ページを構成する]** をダブルクリックして **[Enabled (有効)]** に設定し、「`https://www.bing.com/business`」と入力します
     
-3. 適切なドメインにリンクすることによって、結果の GPO を適用します。
+3. 作成された GPO を適切なドメインにリンクさせて適用します。
     
 > [!CAUTION]
-> ユーザーはこのポリシーを設定した後検索プロバイダーを変更することはできません。 
+> ユーザーは、このポリシーを設定後に検索プロバイダーを変更することはできません。 
   
 ## <a name="google-chrome"></a>Google Chrome
 
-### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 またはそれ以降
+### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 以降
 
-ADMX ファイルと異なるバージョンの Windows 用の最新の ADMX ファイルの管理に Windows のサポートの記事は、[マイクロソフトのサポートを](https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)ご覧ください。
+異なるバージョンの Windows に関する ADMX ファイルと最新の ADMX ファイルの管理方法を記載した Windows サポート記事については、[Microsoft サポート](https://support.microsoft.com/ja-JP/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)をご確認ください。
 
-最新 Google ポリシー ファイル、 [Google Chrome のエンタープライズのヘルプ](https://support.google.com/chrome/a/answer/187202)で確認する必要もあります。
+また、最新の Google ポリシー ファイルについては [Google Chrome エンタープライズ ヘルプ](https://support.google.com/chrome/a/answer/187202)を参照してください。
   
-GPMC 内でこのセクションで説明する設定が見つからない場合は、適切な ADMX をダウンロードして、[中央ストア](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)にコピーします。コント ローラー上の中央のストアは、次の命名規則を含むフォルダーです。
+このセクションに示されている設定が GPMC 内に見つからない場合、適切な ADMX をダウンロードし、[中央ストア](https://docs.microsoft.com/ja-JP/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)にコピーします。コントローラーの中央ストアは 1 つのフォルダーで、以下の名前付け規則を使用します。
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
-各ドメイン コント ローラー ハンドルに別のフォルダーが表示されます。コマンド ・ プロンプトから ADMX ファイルをコピーするのには、次のコマンドを使用できます。
+コントローラーが処理するドメインごとに異なるフォルダーが必要です。以下のコマンドを使用すると、コマンド プロンプトから ADMX ファイルをコピーできます。
   
  `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
   
-1. グループ ポリシー管理コンソール (gpmc.msc) を開き、任意の既存のポリシーを編集または新規に作成するのに切り替えます。
+1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
     
-2. 両方の*ユーザーまたはコンピューターの構成*の**管理用テンプレート**] セクションで次のフォルダーが表示されるかどうかを確認: Google Chrome と Google Chrome を既定の設定 (ユーザーは無視できます)。
+2. *[ユーザーの構成] と [コンピューターの構成]* の両方の **[管理用テンプレート]** セクションに [Google Chrome] フォルダーと [Google Chrome - 既定の設定] フォルダー (ユーザーによる上書き可能) が表示されていることを確認します。
     
-   - 最初のセクションの設定が固定されており、ローカルの管理者は、それらを変更するのにはできません。
+   - 最初のセクションの設定は固定されているため、ローカル管理者は設定を変更することはできません。
     
-   - 後者のポリシーのセクションの設定は、ブラウザーの設定でユーザーが変更できます。かどうか、ユーザーは、既定の設定をオーバーライドできますを決定する必要があります。次の手順で、組織のポリシーとニーズに対応するフォルダーの設定で変更します。次の手順は、Google のクロムの既定値として既定の設定を使用します。
+   - ポリシーの後半のセクションの設定は、ユーザーがブラウザーの設定で変更できます。ユーザーが既定の設定を上書き可能かどうかを決定する必要があります。次の手順で、組織のポリシーとニーズに対応するフォルダーの設定を変更します。以下の手順では、既定で [Google Chrome - 既定の設定] を使用します。
     
-3. 移動**&lt;コンピューターとユーザーの構成&gt;\Administrative Templates\Google クロムのデフォルトの Settings\Home ページ**。
+3. **&lt;[コンピューターの構成] または [ユーザーの構成]&gt;、[管理用テンプレート]、[Google Chrome - 既定の設定]、[ホーム ページ]** の順に移動します。
     
-4. **ホーム ページに新しいタブ ページを使用して**をダブルクリックし、 **[有効**] に設定します。
+4. **[Use New Tab Page as homepage (新しいタブ ページをホーム ページとして使用する)]** をダブルクリックして、**[Enabled (有効)]** に設定します。
     
-5. 移動**&lt;コンピューターとユーザーの構成&gt;\Administrative Templates\Google クロム ・ Settings\New] タブの既定のページ**。
+5. **&lt;[コンピューターの構成] または [ユーザーの構成]&gt;、[管理用テンプレート]、[Google Chrome - 既定の設定]、[新しいタブ ページ]** の順に移動します。
     
-6. **構成新しいタブ ページの URL**] をダブルクリックし、 **[有効**] に設定し、入力`https://www.bing.com/business?form=BFBSPR`
+6. **[Configure the New Tab Page URL (新しいタブ ページを URL として構成する)]** をダブルクリックして、**[Enabled (有効)]** に設定し、「`https://www.bing.com/business?form=BFBSPR`」と入力します
     
-7. 適切なドメインにリンクすることによって、結果の GPO を適用します。
+7. 作成された GPO を適切なドメインにリンクさせて適用します。
     
-ユーザーはこのポリシーを設定した後、ホーム ページを変更することになります。
+ユーザーは、このポリシーを設定後にホーム ページを変更することができます。

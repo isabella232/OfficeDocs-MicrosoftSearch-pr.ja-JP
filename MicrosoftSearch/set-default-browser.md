@@ -13,27 +13,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
-description: Microsoft の検索を使用して、会社の既定のブラウザーを構成する方法について説明します。
+description: Microsoft Search を使用して、会社の既定のブラウザーを構成する方法について説明します。
 ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612475"
 ---
 # <a name="set-default-browser"></a>既定のブラウザーの設定
 
-既定のブラウザー、既定の検索エンジン、および既定のホーム ページを構成するがように、Microsoft 検索機能、複数の使用法をお勧めを見つけてより滑らかなエクスペリエンスを提供します。
+既定のブラウザー、検索エンジン、ホームページを構成すると、ユーザーが Microsoft Search 機能を把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます。
   
-組織の既定のブラウザーを設定するのには以下の手順を実行します。
+組織の既定のブラウザーを設定するには、以下の手順を実行します。
   
-## <a name="windows-8-and-above"></a>Windows 8 以降
+## <a name="windows-8-and-above"></a>Windows 8 以上
 
-既定のブラウザーとして Internet Explorer または Microsoft のエッジを設定するには、次の手順を実行します。
+Internet Explorer または Microsoft Edge を既定のブラウザーとして設定するには、以下のいずれかのステップを実行します。
   
-### <a name="create-default-associations-file"></a>デフォルトの関連付けファイルを作成します。
+### <a name="create-default-associations-file"></a>既定の関連付けファイルの作成
 
-1. 管理の PowerShell コンソールを開きます。
+1. 管理者 PowerShell コンソールを開きます。
     
 2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
     
@@ -41,13 +41,13 @@ ms.locfileid: "29612475"
     
 4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-次の手順は、ドメイン コント ローラーの SYSVOL フォルダーの既定の関連付けのファイルを作成してください。
+これらの手順では、ドメイン コントローラーの SYSVOL フォルダーに既定の関連付けファイルを作成します。
   
-### <a name="add-or-edit-the-default-associations-file"></a>追加または既定の関連付けのファイルを編集します。
+### <a name="add-or-edit-the-default-associations-file"></a>既定の関連付けファイルの追加または編集
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
     
-2. (.Htm、.html、http、https) は、次のエントリを編集し、必要ない場合は、他のエントリを削除します。
+2. 以下のエントリ (.htm、.html、http、https) を編集し、必要ない場合はその他のエントリを削除します。
     
   - **Microsoft Edge**
     
@@ -67,38 +67,38 @@ ms.locfileid: "29612475"
   
      `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
     
-3. グループ ポリシー管理コンソール (gpmc.msc) を開き、任意の既存のポリシーを編集または新規に作成するのに切り替えます。
+3. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
     
-1. **コンピューターの構成 \ 管理用テンプレート Components\File エクスプ ローラー**に移動します。
+1. **[コンピューターの構成]、[管理用テンプレート]、[Windows コンポーネント]、[エクスプローラー]** と移動します。
     
-2. **既定の関連付けの構成ファイルの設定**] をダブルクリック、 **[有効**] に設定し、AppAssoc.xml へのパスを入力 (たとえば %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)
+2. **[既定の関連付け構成ファイルを設定する]** をダブルクリックして、**[有効]** に設定して、AppAssoc.xml へのパス (たとえば %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml) を入力します。
     
-4. 適切なドメインにリンクすることによって、結果の GPO を適用します。
+4. 作成された GPO を適切なドメインにリンクさせて適用します。
     
-ユーザーはこのポリシーを設定した後にブラウザーを変更することになります。
+ユーザーは、このポリシーの設定後にブラウザーを変更することができます。
   
 ## <a name="windows-7"></a>Windows 7
 
-1. GPO の設定を使用するローカル コンピューターを構成します。
+1. GPO を設定するのに使用するローカル マシンを構成します。
     
-1. **コントロール Panel\Programs\Default Programs\Set の既定のプログラム**を開くし、Internet Explorer を既定として設定します。 
+1. **[コントロール パネル]、[プログラム]、[既定のプログラム]、[既定のプログラムを設定する]** を開き、Internet Explorer を既定として設定します。 
     
-2. グループ ポリシー管理コンソール (gpmc.msc) を開き、任意の既存のポリシーを編集または新規に作成するのに切り替えます。
+2. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
     
-1. 移動**\<コンピューター/ユーザー\> Configuration\Policies\Preferences\Windows 設定**。
+1. **[\<コンピューター/ユーザー\> の構成]、[ポリシー]、[基本設定]、[Windows の設定]** と移動します。
     
-2. **Registry\New**を右クリックし、[**レジストリ ウィザード**] を選択します。
+2. **[レジストリ]、[新規]** を右クリックし、**[レジストリ ウィザード]** を選択します。
     
-3. レジストリのブラウザーのウィンドウからは、**ローカル コンピューター**を選択し、[**次へ**] をクリックします。
+3. [レジストリ ブラウザー] ウィンドウで、**[ローカル コンピューター]** を選択し、**[次へ]** をクリックします。
     
-4. **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https**に移動し、ProgId の値を選択します。値は次のような外観を確認します。 
+4. **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** に移動し、ProgId の値を選択します。次のような値になっていることを確認します。 
     
-    ![ProgID の値を選択して [文字列の編集](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
+    ![[文字列の編集] で ProgID 値を選択する](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
   
-5. **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https**に移動し、ProgId の値を選択します。行います。 値が、いずれかのようになっていることを確認して下 
+5. **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** に移動し、ProgId の値を選択します。次のような値になっていることを確認します。 
     
-    ![編集文字列での HTTPS のプログラム Id を選択します](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
+    ![[文字列の編集] で HTTPS の ProgID を選択する](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
-3. 適切なドメインにリンクすることによって、結果の GPO を適用します。
+3. 作成された GPO を適切なドメインにリンクさせて適用します。
     
-ユーザーはこのポリシーを設定した後にブラウザーを変更することになります。
+ユーザーは、このポリシーの設定後にブラウザーを変更することができます。

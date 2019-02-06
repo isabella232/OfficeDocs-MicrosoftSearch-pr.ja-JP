@@ -13,47 +13,47 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
-description: Office 365 の要件とするために必要なサブスクリプションは、Microsoft の検索を有効にします。
+description: Microsoft Search を有効にするために必要な Office 365 の要件とサブスクリプション
 ms.openlocfilehash: e90013eb2b76a4a4f4fff2e8b91f3bc6e48a4f2b
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612467"
 ---
 # <a name="requirements-for-microsoft-search"></a>Microsoft Search の要件
 
-Microsoft の検索を有効にする Office 365 テナントの要件があります。 
+Microsoft Search を有効にするための Office 365 テナント要件があります。 
   
 - Azure Active Directory
     
-- SharePoint Online (ハイブリッド)
+- SharePoint Online (またはハイブリッド)
     
 - Exchange Online
     
-- 以下のサポートされている Sku のいずれかの office 365 サブスクリプションです。これらのサブスクリプションの 1 つのアクティブなユーザー アカウントだけでは、Microsoft Search を使用できます。
+- 以下のサポートされている SKU のいずれかの Office 365 サブスクリプション。これらのサブスクリプションのいずれかを使用するアクティブなユーザー アカウントのみが、Microsoft Search を使用できます。
     
   - Business Essentials
     
   - Business Premium
     
-  - Office 365 の F1
+  - Office 365 F1
     
-  - Office 365 E1 または E2 と E3/E5
+  - Office 365 E1/E2/E3/E5
     
   - Microsoft 365 Business
     
-  - Microsoft 365 エンタープライズ F1/E3/E5
+  - Microsoft 365 Enterprise F1/E3/E5
     
-  - 教職員 A3 と A5 の Microsoft 365 教育
+  - Microsoft 365 Education for Faculty A3/A5
     
-  - 教職員 A1/A1 プラスと A3 と A5 の office 365 の教育
+  - Office 365 Education for Faculty A1/A1 Plus/A3/A5
     
-  - E1 と E3 の教職員向けの office 365 の教育
+  - Office 365 Education for Faculty E1/E3
     
-  - Office 365 の非営利団体 NPBE/NPBP/NPE1/NPE3/NPE5
+  - Office 365 for Non-Profits NPBE/NPBP/NPE1/NPE3/NPE5
     
-組織の Microsoft の検索を有効にするには、Office 365 テナントと大域管理者がこれらの場所のいずれかにする必要があります。
+組織に対して Microsoft Search を有効にするには、Office 365 テナントとグローバル管理者が以下のいずれかの場所に配置されている必要があります。
   
 - 米国
     
@@ -63,7 +63,7 @@ Microsoft の検索を有効にする Office 365 テナントの要件があり�
     
 - インド
     
-- イギリス
+- 英国
     
 - フランス
     
@@ -85,9 +85,9 @@ Microsoft の検索を有効にする Office 365 テナントの要件があり�
 
 - 中国
  
-現時点では、Microsoft Search では、英語に最適です。他の言語を完全にサポートを準備中です。
+現在のところ、Microsoft Search は英語版に対して最適化されています。他の言語のフル サポートは近日中にご利用になれます。
 
-製品を有効にすると、Microsoft Search 管理者またはユーザーの場所の要件はありません。それを有効にする方法の詳細については、 [Microsoft Search のクイック セットアップ](quick-set-up.md)を参照してください。 
+この製品を有効にすると、Microsoft Search の管理者やユーザーの場所の要件はなくなります。詳細については、「[Microsoft Search のクイック セットアップ](quick-set-up.md)」をご覧ください。 
 
   
 

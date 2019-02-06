@@ -13,31 +13,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
-description: Microsoft Search と Office 365 にサインインするのには、Windows の 10 人のユーザーが表示されたら、時間の数を減らす
+description: Windows 10 ユーザーに対して Microsoft Search と Office 365 にサインインを求めるメッセージが表示される回数を減らします
 ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612359"
 ---
 # <a name="test-single-sign-on"></a>シングル サインオンのテスト
 
-シングル サインオンのユーザーがサインインするように求められます回数が減少します。シングル サインオンのユーザーの小さなグループでテストすると、ブロック構成に関する問題を識別するのに役立ちます。 
+シングル サインオンによって、サインインを求めるメッセージがユーザーに表示される回数を減らします。少人数のユーザー グループでシングル サインオンをテストすると、構成を妨げている問題を特定するのに役立ちます。 
   
-Windows 10 には、クロムのユーザーのシングル サインオンが機能する、Windows 10 と AAD 符号拡張であるクロムがインストールされています。 
+Windows 10 における Chrome ユーザーの場合、シングル サインオンが機能するのは、Chrome 向けの Windows 10 と AAD サインイン拡張機能がインストールされている場合のみです。 
   
-## <a name="download-the-windows-10-and-aad-sign-in-extension-for-chrome"></a>クロムの Windows 10 と AAD 符号の拡張機能をダウンロードします。
+## <a name="download-the-windows-10-and-aad-sign-in-extension-for-chrome"></a>Chrome 向けの Windows 10 と AAD サインイン拡張機能をダウンロードする
 
-この拡張機能を自動的にインストールするのにはグループ ポリシーを作成することをお勧めします。
+この拡張機能を自動インストールするためのグループ ポリシーを作成することをお勧めします。
   
-1. Microsoft 検索の管理ポータルに移動します。
+1. Microsoft Search 管理ポータルに移動します
     
-2. ナビゲーション ウィンドウで [**ツール**] をクリックします
+2. ナビゲーション ウィンドウで、**[ツール]** をクリックします
     
-3. ツールの一覧ダウンロード**Windows 10 とクロムのサインイン用の拡張子を AAD**
+3. ツールの一覧で、**[Chrome 向けの Windows 10 と AAD サインイン拡張機能]** をダウンロードします
     
-4. クロム 10 の Windows ユーザーと拡張機能を共有します。
+4. Windows 10 の Chrome ユーザーと拡張機能を共有します
 
   
 

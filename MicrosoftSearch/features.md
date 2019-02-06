@@ -1,5 +1,5 @@
 ---
-title: Microsoft 検索の機能
+title: Microsoft Search の機能
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,80 +13,80 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
-description: 管理者とエンド ・ ユーザーの Microsoft Search のキーの機能には、ブックマーク、Q&As、および管理およびデータの分析が含まれます。
+description: 管理者とエンド ユーザーの主要な Microsoft Search 機能は、ブックマーク、Q&A、管理、データ分析です
 ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612432"
 ---
-# <a name="features-of-microsoft-search"></a>Microsoft 検索の機能
+# <a name="features-of-microsoft-search"></a>Microsoft Search の機能
 
-## <a name="key-admin-features-include"></a>キー管理機能は次のとおりです。
+## <a name="key-admin-features-include"></a>主要な管理者機能には以下のものがあります。
 
-- [企業ブックマーク](create-and-manage-bookmarks.md)
+- [エンタープライズ ブックマーク](create-and-manage-bookmarks.md)
     
-    サイト、ツール、およびその他の情報を企業内を検索します。
+    サイト、ツールなどのエンタープライズ内の情報を検索します
     
-- [エンタープライズ Q&As](create-and-manage-qas.md)
+- [エンタープライズ Q&A](create-and-manage-qas.md)
     
-    組織の最もよく寄せられる質問に答える
+    組織で最もよく寄せられる質問に回答します
     
-- [ブックマーク](bulk-create-bookmarks.md)と[Q&As](bulk-create-qas.md)インポートし、エクスポート
+- [ブックマーク](bulk-create-bookmarks.md)と [Q&A](bulk-create-qas.md) のインポートとエクスポートを行います
     
-    作成し、一括インポート、エクスポート、および編集と更新の効率化します。
+    インポート、エクスポート、編集を一括で実行して、作成と更新を合理化します
 
 - [場所](locations.md)
     
-    アドレスを検索し、組織の建物、オフィス、およびマップ上の他のワークスペースを検索します。
+    組織の建物、オフィス、他のワークスペースの住所と地図上の位置を確認します
     
 - [管理](set-up-microsoft-search.md)
     
-    構成、コンテンツの作成し、検索キーワードと語句の定義
+    コンテンツの構成と作成を行い、検索キーワードや検索語句を定義します
     
 - [ユーザーとアクセス許可](add-users.md)
     
-    グローバル管理者またはマイクロソフトの検索の管理者が Microsoft Search 構成、編集者、コンテンツの作成や Microsoft 検索へのアクセス権を持っているエンド ・ ユーザーを管理するその他の管理者を承認します。
+    全体管理者または Microsoft Search 管理者は、Microsoft Search 構成を管理する追加の管理者、コンテンツを作成するエディター、Microsoft Search へのアクセス権を持つユーザーを承認します。
     
 - [分析](get-insights.md) 
     
-    組織が Microsoft Search を使用する方法を理解します。 
+    組織での Microsoft Search の使用方法を理解します 
     
-## <a name="key-end-user-features-include"></a>エンド ・ ユーザーのキーの機能は次のとおりです。
+## <a name="key-end-user-features-include"></a>主要なエンドユーザー機能には以下のものがあります。
 
-- [People](use/find-people-and-groups.md)
+- [ユーザー](use/find-people-and-groups.md)
     
-    人を検索して、上で作業するいるとそれらに連絡する方法はそれぞれの役割を理解します。
+    ユーザーを見つけて、社内での役割、作業内容、連絡先について理解します
     
 - [組織図](use/find-people-and-groups.md)
     
-    企業内の個人の場所を理解して、ピア、管理、および直接報告者を簡単に参照
+    社内におけるユーザーの場所を理解し、同僚、管理、直属の部下を簡単に確認できます
     
 - [ファイル](use/find-files.md)
     
-    SharePoint とビジネスの OneDrive に保存されているコンテキストと関連のファイルを検索します。
+    SharePoint と OneDrive for Business に保存されているコンテキスト ファイルと関連するファイルを検索します
     
 - [Office 365 グループ](use/find-people-and-groups.md)
     
-    名またはメンバーでグループを検索する、ユーザーが属するグループを表示および共有のコンテンツを参照
+    グループを名前またはメンバーで検索し、ユーザーが所属するグループを調査して、共有のコンテンツを参照します
     
 - [リソースとツール](use/find-resources-tools-and-more.md)
     
-    内部と外部のリソース、ツール、およびその他の必要な情報を簡単に検索へのリンクを取得します。
+    内部および外部のリソース、ツールへのリンクを取得して、必要な情報を簡単に見つけます
     
 - [SharePoint サイト](use/find-sharepoint-sites.md)
     
-    サイトの名前で検索または、ユーザーまたはグループの結果を参照してください。
+    サイトを名前で検索して、ユーザーまたはグループの結果を確認します
     
 - [チームと Yammer の会話](use/find-conversations.md)
     
-    パブリックからのコンテキストと関連する結果とグループの会話を検索します。
+    パブリックとグループの会話からコンテキストおよび関連する結果を見つけます
 
 - [場所](use/find-locations.md)
     
-    アドレスを検索し、建物、オフィス、キャンパス、および複数の結果をマップ
+    建物、オフィス、キャンパスなどの住所と地図上の位置を確認します
     
-- 最初の実行経験
+- 初回実行時エクスペリエンス
     
-    ユーザー Microsoft 検索して、Bing に移動する、最初に情報と、作業の結果の種類を使用して検索する際に紹介することが表示されます。
+    ユーザーが初めて Microsoft Search にサインインして Bing を使用するときに、それを使う方法と、検索時に表示される作業結果の種類に関する情報が表示されます

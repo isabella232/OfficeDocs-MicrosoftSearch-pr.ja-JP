@@ -1,5 +1,5 @@
 ---
-title: クイックの Microsoft の検索の設定
+title: Microsoft Search のクイック セットアップ
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,75 +13,75 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
-description: 有効にして、Microsoft Search を使用するために必要な 4 つの簡単な手順について説明します。
+description: Microsoft Search を有効にして、使用するために必要な 4 つの簡単な手順について説明します。
 ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612358"
 ---
-# <a name="quick-set-up-for-microsoft-search"></a>クイックの Microsoft の検索の設定
+# <a name="quick-set-up-for-microsoft-search"></a>Microsoft Search のクイック セットアップ
 
-Web の最良のことで時間を節約し、組織に作業します。
+組織に最も適した Web と処理を用意することで時間を節約します。
   
-## <a name="step-1-turn-on-microsoft-search"></a>手順 1: は、Microsoft の検索を有効にします。
+## <a name="step-1-turn-on-microsoft-search"></a>手順 1: Microsoft Search をオンにする
 
-1. Microsoft 365 管理センターのナビゲーション メニューの [**設定**] に移動\>**サービス&amp;アドイン**
+1. Microsoft 365 管理センターのナビゲーション メニューで、**[設定]** \> **[サービス &amp; アドイン]** と移動します。
     
-2. **Microsoft Search**サービスをクリックします。 
+2. **Microsoft Search** サービスをクリックします。 
     
-3. 右側のウィンドウで**Microsoft の検索をアクティブにする**を有効に
+3. 右側のウィンドウで、**[Microsoft Search を有効にする]** をオンにします。
     
-4. **[保存]** をクリックします。
+4. **[保存]** をクリックします
     
-5. [**開始**] をクリックします。
+5. **[作業の開始]** をクリックします。
   
-かかる残りのセットアップ手順を完了するのには Microsoft の検索の管理ポータルにします。
+これで、Microsoft Search 管理ポータルに移動します。残りのセットアップ手順を実行します。
     
-## <a name="step-2-enable-connected-services"></a>ステップ 2: 接続されているサービスを有効にします。
+## <a name="step-2-enable-connected-services"></a>手順 2: 接続済みサービスを有効にする
 
-別の Microsoft のサービス間での情報の curates を企業全体の検索機能を取得します。
+異なる Microsoft サービス間で情報をキュレーションする完全なエンタープライズ検索エクスペリエンスを実装します。
   
-1. [Microsoft 検索の管理ポータル](https://www.bingforbusiness.com/admin)に移動します。
+1. [Microsoft Search 管理ポータル](https://www.bingforbusiness.com/admin)に移動します。
     
-2. ナビゲーション ウィンドウ内の [**接続されているサービス**] をクリックします
+2. ナビゲーション ウィンドウで、**[接続済みサービス]** をクリックします。
     
-    接続されている各サービスに関連付けられているコンテンツについては、[接続されているサービス](connected-services.md)を参照してください。
+    それぞれの接続済みサービスに関連付けられているコンテンツについては、「[接続済みサービス](connected-services.md)」をご覧ください。
     
-3. 、の各サービスに接続する**を**クリックします。
+3. 接続するサービスの **[オン]** をクリックします。
     
-    人の検索を有効にするのには、最大で 48 時間がかかります。
+    人の検索には、アクティブ化するまで最大 48 時間かかる場合があります。
     
-## <a name="step-3-customize-content-settings"></a>手順 3: コンテンツの設定をカスタマイズします。
+## <a name="step-3-customize-content-settings"></a>手順 3: コンテンツ設定をカスタマイズする
 
-コンテンツの設定では、作業の結果を得るのための使い慣れたルック アンド フィールを確認します。 
+コンテンツ設定で、使い慣れたルック アンド フィールで検索結果を表示するように設定できます。 
   
-1. ナビゲーション ウィンドウで [**コンテンツの設定**] をクリックします
+1. ナビゲーション ウィンドウで、**[コンテンツ設定]** をクリックします。
     
-2. 各設定に関する詳細については、[コンテンツの設定](content-settings.md)を参照してください。
+2. 各設定の詳細については、「[コンテンツ設定](content-settings.md)」をご覧ください。
     
-## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>ステップ 4: インポートのおすすめコンテンツとして提案されているブックマーク
+## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>手順 4: おすすめコンテンツを推奨ブックマークとしてインポートする
 
-組織のおすすめコンテンツが SharePoint で設定された場合、簡単に Microsoft Search にインポートすることができます。インポート ツールでは、sharepoint.com と sharepoint.com/search のサイト コレクションがサポートされています。 
+SharePoint でおすすめコンテンツが設定されている場合、Microsoft Search にそれらを簡単にインポートすることができます。このインポート ツールは、sharepoint.com と sharepoint.com/search のサイト コレクションでサポートされています。 
   
-1. ナビゲーション ウィンドウで [**ツール**] をクリックします
+1. ナビゲーション ウィンドウで、**[ツール]** をクリックします
     
-2. インポート SharePoint 昇格結果クエリ規則のブックマーク ツールとして、[**インポート**] をクリックします
+2. ブックマーク ルーツとして SharePoint の昇格結果クエリ ルールをインポートする場合は、**[インポート]** をクリックします。
     
-    、のインポート中に [スケジュール済] ステータスが表示されます。必要な時間は、インポートするおすすめコンテンツの数によって異なります。
+    インポートしている間、スケジュール済み状態が表示されます。必要な時間は、インポートしているおすすめコンテンツの数によって異なります。
     
-3. 詳細については、[管理ポータルのツール](admin-portal-tools.md)を参照してください。
+3. 詳細については、「[管理ポータル ツール](admin-portal-tools.md)」をご覧ください。
     
-このクイック セットアップと[ユーザーの追加](add-users.md)が完了したら、Bing.com と作業の結果を検索する] に移動します。 
+このクイック セットアップを完了し、[ユーザーを追加した](add-users.md)後、Bing.com に移動し、検索結果を得るために検索することができます。 
   
-## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Microsoft 検索管理ポータルへの表示
+## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Microsoft Search 管理ポータルを取得する方法
 
-いつでも管理ポータルに取得します。
+管理ポータルを取得するには、任意のタイミングで以下を実行します。
   
-- [マイクロソフト検索の確認](https://www.bing.com/business/explore)] ページに移動し、[**管理ログイン**] をクリックしてください
+- [Microsoft Search 探索ページ](https://www.bing.com/business/explore)に移動し、**[管理者ログイン]** をクリックします。
     
-- Microsoft 365 管理センターの左側のウィンドウで、**管理センター**に移動\> **Microsoft 検索**
+- Microsoft 365 管理センターの左側のウィンドウで、**[管理センター]** \> **[Microsoft Search]** と移動します。
 
   
 
