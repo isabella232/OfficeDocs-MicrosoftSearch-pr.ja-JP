@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search では、生産性の向上し、組織の関連性の高い検索結果を提供することにより時間を節約する、エンタープライズ検索機能
-ms.openlocfilehash: 9ef8153979a31bbcb2ed6014055e99dc8dbc793a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Microsoft search は、生産性を向上させ、より関連性の高い検索結果を組織に提供することによって時間を節約するエンタープライズ検索の機能です。
+ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379006"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746400"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -45,8 +45,8 @@ ms.locfileid: "29379006"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>なぜマイクロソフトの検索</h2>
-                        <p>生産性の向上し、組織の関連性の高い検索結果を提供することにより時間を節約する、エンタープライズ検索機能を取得します。</p>
+                        <h2>Microsoft Search を使用する利点</h2>
+                        <p>組織により関連性の高い検索結果を提供することで生産性を向上させ、時間を節約するエンタープライズ検索の機能を活用する</p>
                         <p><a href="why-microsoft-search.md">方法を確認する</a></p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ ms.locfileid: "29379006"
     </li>
 </ul>
 
-<h2>おすすめトピック</h2>
+<h2>特集トピック</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -69,8 +69,8 @@ ms.locfileid: "29379006"
                     </div>
                     <div class="cardText">
                         <h3>主な機能</h3>
-                        <p>管理者グループおよびユーザーは、どのようなことがわかりますを検索する場合などに使用された機能を参照してください。</p>
-                        <p><a href="features.md">詳細については、以下を参照してください。</a></p>
+                        <p>管理者とユーザーが使用できる機能を確認する (検索時に何を検索するかを含む)</p>
+                        <p><a href="features.md">参照先</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "29379006"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>クイック設定の管理</h3>
-                        <p>Microsoft の検索を有効にし、次の 4 つの簡単な手順で、組織用に構成する方法についてください。</p>
-                        <p><a href="quick-set-up.md">今すぐ開始します。</a></p>
+                        <h3>管理者クイックセットアップ</h3>
+                        <p>4つの簡単な手順で Microsoft Search を有効にし、組織に合わせて構成する方法について説明します。</p>
+                        <p><a href="quick-set-up.md">今すぐ開始</a></p>
                     </div>
                 </div>
             </div>
@@ -105,8 +105,8 @@ ms.locfileid: "29379006"
                     </div>
                     <div class="cardText">
                         <h3>FAQ</h3>
-                        <p>いくつかの Microsoft の検索についてよく寄せられる質問への回答します。</p>
-                        <p><a href="faqs.md">FAQ を参照します。</a></p>
+                        <p>Microsoft Search に関してよく寄せられる質問のいくつかについての回答を得る</p>
+                        <p><a href="faqs.md">FAQ を参照する</a></p>
                     </div>
                 </div>
             </div>
@@ -120,8 +120,8 @@ ms.locfileid: "29379006"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Microsoft Search を使用して、</h2>
-                        <p>Microsoft Search は、情報を検索する、生産性の向上、および仕事をより効率的に、シンプルで高速、かつより安全な方法</p>
+                        <h2>Microsoft Search を使用する</h2>
+                        <p>Microsoft Search は、情報を検索し、生産性を高め、よりスマートに作業するためのシンプルで迅速で安全な方法です。</p>
                         <p><a href="use/about-microsoft-search.md">方法を確認する</a></p>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ ms.locfileid: "29379006"
                     <div class="cardText">
                         <p><a href="security.md">セキュリティ</a></p>
                         <p><a href="requirements.md">要件</a></p>  
-                        <p><a href="about-the-admin-portal.md">管理用ポータルについて</a></p>
+                        <p><a href="about-the-admin-portal.md">管理ポータルについて</a></p>
                     </div>
                 </div>
             </div>
@@ -165,9 +165,9 @@ ms.locfileid: "29379006"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="quick-set-up.md">クイックの設定</a></p>
-                        <p><a href="connected-services.md">接続サービス</a></p>
-                        <p><a href="set-up-microsoft-search.md">マイクロソフトの検索を設定します。</a></p>
+                        <p><a href="quick-set-up.md">クイック セットアップ</a></p>
+                        <p><a href="connected-services.md">接続済みサービス</a></p>
+                        <p><a href="set-up-microsoft-search.md">Microsoft Search のセットアップ</a></p>
                     </div>
                 </div>
             </div>
@@ -178,9 +178,9 @@ ms.locfileid: "29379006"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="create-bookmarks.md">ブックマークを作成します。</a></p>
-                        <p><a href="create-qas.md">Q&As を作成します。</a></p>
-                        <p><a href="add-users.md">Add users</a></p>
+                        <p><a href="create-bookmarks.md">ブックマークを作成する</a></p>
+                        <p><a href="create-qas.md">Q&A の作成</a></p>
+                        <p><a href="add-users.md">ユーザーを管理する</a></p>
                     </div>
                 </div>
             </div>
