@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Microsoft Search を組織にデプロイするために必要なすべての情報
-ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612403"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746352"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
-Office 365 の一部として、Microsoft 365 管理センターを有効にすることで Microsoft Search を簡単にデプロイできます。有効にすると、ロゴ、名前、色を設定して、ユーザーにアクセス権を付与するためのクイック構成を行うだけでセットアップが完了します。その後、承認されたユーザーは職場または学校アカウントを使用して Bing にサインインでき、検索時に作業結果が表示されるようになります。
+Office 365 の一部である Microsoft Search は、Microsoft 365 管理センターで有効にすると簡単に展開することができます。 これを有効にすれば、後は、ロゴ、名前、色を設定し、ユーザーにアクセス権を付与するためのクイック構成を行うだけでセットアップが完了します。 その後、承認されたユーザーは職場または学校アカウントを使用して Bing にサインインでき、検索時に作業結果が表示されるようになります。
 
 - [クイック セットアップ](quick-set-up.md)
     
@@ -31,11 +31,11 @@ Office 365 の一部として、Microsoft 365 管理センターを有効にす�
 
 - [コンテンツ設定](content-settings.md)
     
-    Microsoft Search の検索結果の外観を制御します
+    Microsoft Search の検索結果の外観を管理します
     
-- [ユーザーの追加](add-users.md)
+- [ユーザーの管理](add-users.md)
     
-    管理者やエディターのポータルへのアクセスを管理して、組織内の Microsoft Search へのアクセスを付与または制限します
+    管理者と編集者ポータルへのアクセスを管理する
     
 - [管理ポータルのツール](admin-portal-tools.md)
     
