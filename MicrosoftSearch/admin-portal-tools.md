@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: 結果を作成したりインポートしたり、自動的にサインインしたり、どこからでも検索したりできるようにする Microsoft Search ツールの概要
-ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612381"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746392"
 ---
 # <a name="admin-portal-tools"></a>管理ポータルのツール
 
@@ -31,11 +31,11 @@ Microsoft Search 管理ポータルには、管理者、編集者、ユーザー
     
 - Bing 検索での Microsoft Search の拡張機能
     
-    権限が付与されたユーザーが使用できます。Chrome または Edge の拡張機能を使用して、現在表示しているページやサイトから離れずに、Microsoft Search エンタープライズ検索にすばやくアクセスできます。
+    ChromeまたはEdgeの拡張機能を使用して、アクセスしているページやサイトから離れずにMicrosoft Searchのエンタープライズ検索にすばやくアクセスします。
     
-- Chrome 向けの Windows 10 と AAD サインイン拡張機能
+- Windows 10 と AAD サインインのためのChrome 拡張機能
     
-    権限が付与されたユーザーが使用できます。Chrome の拡張機能を使用して、Office 365 や Bing などのサポートされているサイトにサインインするときに、Azure Active Directory で簡単に認証できます。[シングル サインオンをテストする](test-single-sign-on.md)ときに、この拡張機能をデプロイすることをお勧めします。
+    Office 365やBingなどのサポートされているサイトにサインインするときに、Chrome拡張機能を使用してAzure Active Directoryで簡単に認証します。 [シングル サインオンをテスト](test-single-sign-on.md)する場合は、この拡張機能を展開することをお勧めします。
     
 - ブックマークとしてよく使用される SharePoint クエリをインポートする
     

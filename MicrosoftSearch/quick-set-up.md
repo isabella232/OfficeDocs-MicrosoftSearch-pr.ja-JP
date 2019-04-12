@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
 description: Microsoft Search を有効にして、使用するために必要な 4 つの簡単な手順について説明します。
-ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 2a113cf10d944aea54d3fe6342599934e4b5ac45
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612358"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746368"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>Microsoft Search のクイック セットアップ
 
@@ -73,7 +73,7 @@ SharePoint でおすすめコンテンツが設定されている場合、Micros
     
 3. 詳細については、「[管理ポータル ツール](admin-portal-tools.md)」をご覧ください。
     
-このクイック セットアップを完了し、[ユーザーを追加した](add-users.md)後、Bing.com に移動し、検索結果を得るために検索することができます。 
+このクイックセットアップを完了すると、ユーザーはBing.comにアクセスして作業結果を検索できます。 
   
 ## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Microsoft Search 管理ポータルを取得する方法
 

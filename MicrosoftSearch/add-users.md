@@ -1,5 +1,5 @@
 ---
-title: ユーザーの追加
+title: ユーザーを管理します
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
-description: Microsoft Search 管理ポータルで、管理者、エディター、ユーザーにアクセス許可と役割を割り当てます
-ms.openlocfilehash: c6c842a4337d218764c1969939e77e4abe91915c
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+description: Microsoft Searchの管理者および編集者に権限とロールを割り当てます
+ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612396"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746408"
 ---
-# <a name="add-users"></a>ユーザーの追加
+# <a name="manage-users"></a>ユーザーを管理します
 
-組織全体に対して Microsoft 検索を有効にするか、IT 部門だけでなくセキュリティ グループを追加することは、Microsoft Search ユーザーを追加する最も簡単な方法です。
+編集者はコンテンツを追加することができますが、設定を変更することはできません。
   
 ## <a name="add-admins-and-editors"></a>管理者とエディターを追加する
 
@@ -41,28 +41,4 @@ ms.locfileid: "29612396"
     
 ## <a name="add-users"></a>ユーザーを追加する
 
-既定で、組織内のすべてのユーザーは、Microsoft Search の作業結果にアクセスできます。アクセスを小人数のグループに制限する場合は、ユーザーを特定するため、以下のオプションを検討してください。
-  
-- 組織内のビジネス スポンサーと協力する
-    
-- 早期導入者のグループを特定する
-    
-- 大量のエンタープライズ検索を実行するグループを特定する
-    
-- 海外などの他の地域にいるユーザーを特定する
-    
-1 つまたは複数のユーザーに対して Microsoft Search を有効にするには、以下の手順に従います。
-  
-1. Microsoft Search 管理ポータルに移動します
-    
-2. ナビゲーション ウィンドウで、**[ユーザー &amp; アクセス許可]** をクリックします
-    
-3. ページの上部にある **[Manage preview access (プレビュー アクセスの管理)]** をクリックします
-    
-4. **[Add everyone in your organization (組織内のすべてのユーザーを追加)]** の選択を解除します 
-    
-5. **[Only allow these users (これらのユーザーのみを許可)]** ボックスで、追加するユーザーまたはグループを検索します 
-    
-6. **[保存]** をクリックします
-    
-プレビュー アクセスが許可されてから 2 時間が経過すると、Bing で職場アカウントを使用してサインインしているユーザーは、検索時に関連する作業結果が表示されるようになります。Bing へのサインイン方法については、「[Microsoft Search へのサインイン](use/sign-in.md)」を参照してください。
+デフォルトでは、Microsoft Searchは組織内の全員が利用できます。 アクセスを変更するには、[Azure Active Directoryでの条件的アクセス](https://docs.microsoft.com/ja-JP/azure/active-directory/conditional-access/overview)を使ってください。

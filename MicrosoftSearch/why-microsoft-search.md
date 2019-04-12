@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: 現代の職場にとって Microsoft Search がインテリジェントなエンタープライズ検索となる理由について説明します。
-ms.openlocfilehash: f00622643aac867a83614fe613f8c8ef4bdb116b
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: f7c65e13f18f6ea4fd38bc406653a37f85659d3e
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612385"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746416"
 ---
 # <a name="why-microsoft-search"></a>Microsoft Search を使用する利点
 
@@ -39,7 +39,7 @@ Microsoft Search で、信頼できるクラウドからの結果にアクセス
   
 ## <a name="easy-to-administer-and-available-everywhere"></a>管理が容易で、どこでも利用できる
 
-Microsoft Search を展開するのは簡単です。Microsoft 365 管理センターでそれを有効にして、ロゴ、名前、色などの設定をカスタマイズするだけです。権限のあるユーザーは、Bing にサインインするだけで、任意のデバイス上でアクセスできるようになります。
+Microsoft Searchの展開は簡単です。Microsoft365管理センターから機能を有効にして、ロゴ、名前、色などの設定をカスタマイズするだけです。 権限のあるユーザーは、Bing にサインインするだけで、任意のデバイス上でアクセスできるようになります。
   
 ## <a name="one-place-to-search-across-office-365-apps"></a>1 か所で Office 365 のアプリ間の検索を行う
 
