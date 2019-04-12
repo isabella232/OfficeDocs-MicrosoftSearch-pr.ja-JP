@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft Search は、組織にとってより関連性の高い検索結果を提供し、生産性の向上や時間の節約につながるエンタープライズ検索を可能にします
-ms.openlocfilehash: 1a50ff7a0ae3c2b86f3051ad4eeecb38a8a602a9
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 904a54998900e1c702d273dc71ceb605929269ed
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612357"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746384"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -46,8 +46,8 @@ ms.locfileid: "29612357"
                 <div class="card">
                     <div class="cardText">
                         <h2>Microsoft Search を使用する利点</h2>
-                        <p>組織にとってより関連性の高い検索結果を提供し、生産性の向上や時間の節約につながるエンタープライズ検索を可能にします</p>
-                        <p><a href="why-microsoft-search.md">理由を確認する</a></p>
+                        <p>組織にとってより関連性の高い検索結果を提供することで、生産性を高め、時間を節約するエンタープライズ検索エクスペリエンスを実現します</p>
+                        <p><a href="why-microsoft-search.md">具体的な方法</a></p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ ms.locfileid: "29612357"
                     </div>
                     <div class="cardText">
                         <h3>主な機能</h3>
-                        <p>検索対象など、管理者やユーザーが利用できる検索機能を確認します</p>
+                        <p>検索したときに表示される機能を含め、管理者とユーザーが利用できる機能を確認します</p>
                         <p><a href="features.md">詳細情報</a></p>
                     </div>
                 </div>
@@ -87,8 +87,8 @@ ms.locfileid: "29612357"
                     </div>
                     <div class="cardText">
                         <h3>管理者クイック セットアップ</h3>
-                        <p>Microsoft Search を有効にして組織用に構成するための 4 つの簡単な手順を確認します</p>
-                        <p><a href="quick-set-up.md">今すぐ開始する</a></p>
+                        <p>Microsoft Search を有効にして、組織用に構成するための 4 つの簡単な手順を確認します</p>
+                        <p><a href="quick-set-up.md">今すぐ開始します</a></p>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,9 @@ ms.locfileid: "29612357"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FAQ</h3>
-                        <p>Microsoft Search に関してよく寄せられる一部の質問への回答を参照します</p>
-                        <p><a href="faqs.md">FAQ を参照する</a></p>
+                        <h3>よく寄せられる質問 (FAQ)</h3>
+                        <p>Microsoft Search に関してよく寄せられる質問の一部への回答を参照します</p>
+                        <p><a href="faqs.md">FAQ を参照します</a></p>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@ ms.locfileid: "29612357"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Microsoft Search を使用する</h2>
-                        <p>Microsoft Search を使用すると簡単にすばやく、そして安全に情報を検索でき、生産性の向上やよりスマートな作業につながります</p>
-                        <p><a href="use/about-microsoft-search.md">詳細を確認する</a></p>
+                        <h2>Microsoft Search を使用します</h2>
+                        <p>Microsoft Searchは、情報を検索し、生産性を高め、よりスマートに機能させるためのシンプルで高速、そして安全な方法です。</p>
+                        <p><a href="use/about-microsoft-search.md">具体的な方法</a></p>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@ ms.locfileid: "29612357"
     </li>
 </ul>
 
-<h2>詳細情報</h2>
+<h2>さらに詳しい情報</h2>
 <ul class="panelContent cardsW">
     <li>
         <div class="cardSize">
@@ -178,9 +178,9 @@ ms.locfileid: "29612357"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="create-bookmarks.md">ブックマークの作成</a></p>
+                        <p><a href="create-bookmarks.md">ブックマークを作成します</a></p>
                         <p><a href="create-qas.md">Q&A の作成</a></p>
-                        <p><a href="add-users.md">ユーザーの追加</a></p>
+                        <p><a href="add-users.md">ユーザーを管理する</a></p>
                     </div>
                 </div>
             </div>
