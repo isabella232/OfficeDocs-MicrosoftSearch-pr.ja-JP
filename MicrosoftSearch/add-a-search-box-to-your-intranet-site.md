@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 description: 関連する検索候補や作業結果にすばやくアクセスするために、イントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
 ms.openlocfilehash: a66c0cea71cf637209d298f49542864755e92ec9
-ms.sourcegitcommit: c18809f57f957de958a87e940dc3904061fe0bd0
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789315"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508523"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a><span data-ttu-id="978d3-103">イントラネット サイトに検索ボックス追加する</span><span class="sxs-lookup"><span data-stu-id="978d3-103">Add a search box to your intranet site</span></span>
+# <a name="add-a-search-box-to-your-intranet-site"></a><span data-ttu-id="01d12-103">イントラネット サイトに検索ボックス追加する</span><span class="sxs-lookup"><span data-stu-id="01d12-103">Add a search box to your intranet site</span></span>
 
-<span data-ttu-id="978d3-104">関連する検索候補や作業結果にすばやくアクセスするために、任意のイントラネット サイトやページに Microsoft Search の検索ボックスを追加します。</span><span class="sxs-lookup"><span data-stu-id="978d3-104">For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.</span></span>
+<span data-ttu-id="01d12-104">関連する検索候補や作業結果にすばやくアクセスするために、任意のイントラネット サイトやページに Microsoft Search の検索ボックスを追加します。</span><span class="sxs-lookup"><span data-stu-id="01d12-104">For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.</span></span>
   
-## <a name="add-a-search-box-to-an-intranet-page"></a><span data-ttu-id="978d3-105">イントラネット ページに検索ボックス追加する</span><span class="sxs-lookup"><span data-stu-id="978d3-105">Add a search box to an intranet page</span></span>
+## <a name="add-a-search-box-to-an-intranet-page"></a><span data-ttu-id="01d12-105">イントラネット ページに検索ボックス追加する</span><span class="sxs-lookup"><span data-stu-id="01d12-105">Add a search box to an intranet page</span></span>
 
-<span data-ttu-id="978d3-106">検索ボックスのコンテナーと、それを動作させるスクリプトの 2 つの要素をページに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978d3-106">You need to add two elements to the page: a container for the search box and the script that powers it.</span></span>
+<span data-ttu-id="01d12-106">検索ボックスのコンテナーと、それを動作させるスクリプトの 2 つの要素をページに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="01d12-106">You need to add two elements to the page: a container for the search box and the script that powers it.</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -39,11 +39,11 @@ ms.locfileid: "30789315"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-<span data-ttu-id="978d3-107">従来の SharePoint サイトで、スクリプト エディターの Web パーツを追加し、これにスクリプトをドロップします。</span><span class="sxs-lookup"><span data-stu-id="978d3-107">On a SharePoint classic site, add a Script Editor Web Part and drop the script in it.</span></span>
+<span data-ttu-id="01d12-107">従来の SharePoint サイトで、スクリプト エディターの Web パーツを追加し、これにスクリプトをドロップします。</span><span class="sxs-lookup"><span data-stu-id="01d12-107">On a SharePoint classic site, add a Script Editor Web Part and drop the script in it.</span></span>
   
-## <a name="enable-the-search-box-for-mobile"></a><span data-ttu-id="978d3-108">モバイルの検索ボックスを有効にする</span><span class="sxs-lookup"><span data-stu-id="978d3-108">Enable the search box for mobile</span></span>
+## <a name="enable-the-search-box-for-mobile"></a><span data-ttu-id="01d12-108">モバイルの検索ボックスを有効にする</span><span class="sxs-lookup"><span data-stu-id="01d12-108">Enable the search box for mobile</span></span>
 
-<span data-ttu-id="978d3-109">モバイル ユーザーがイントラネット サイトやページを利用できるようにするには、設定オブジェクトに isMobile: true を追加します。</span><span class="sxs-lookup"><span data-stu-id="978d3-109">For intranet sites or pages available to mobile users, add isMobile: true to the settings object:</span></span>
+<span data-ttu-id="01d12-109">モバイル ユーザーがイントラネット サイトやページを利用できるようにするには、設定オブジェクトに isMobile: true を追加します。</span><span class="sxs-lookup"><span data-stu-id="01d12-109">For intranet sites or pages available to mobile users, add isMobile: true to the settings object:</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -56,9 +56,9 @@ ms.locfileid: "30789315"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="put-focus-on-the-search-box-by-default"></a><span data-ttu-id="978d3-110">既定で検索ボックスにフォーカスを置く</span><span class="sxs-lookup"><span data-stu-id="978d3-110">Put focus on the search box by default</span></span>
+## <a name="put-focus-on-the-search-box-by-default"></a><span data-ttu-id="01d12-110">既定で検索ボックスにフォーカスを置く</span><span class="sxs-lookup"><span data-stu-id="01d12-110">Put focus on the search box by default</span></span>
 
-<span data-ttu-id="978d3-111">ユーザーの検索スピードを速めるために、設定オブジェクトに focus: true を追加して、ページやサイトが読み込まれたときにカーソルが検索ボックスに配置されるようにします。</span><span class="sxs-lookup"><span data-stu-id="978d3-111">To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object:</span></span>
+<span data-ttu-id="01d12-111">ユーザーの検索スピードを速めるために、設定オブジェクトに focus: true を追加して、ページやサイトが読み込まれたときにカーソルが検索ボックスに配置されるようにします。</span><span class="sxs-lookup"><span data-stu-id="01d12-111">To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object:</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -71,9 +71,9 @@ ms.locfileid: "30789315"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="customize-the-appearance-of-the-search-box"></a><span data-ttu-id="978d3-112">検索ボックスの外観をカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="978d3-112">Change the appearance of the search box</span></span> 
+## <a name="customize-the-appearance-of-the-search-box"></a><span data-ttu-id="01d12-112">検索ボックスの外観をカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="01d12-112">Customize the appearance of the search box</span></span> 
 
-<span data-ttu-id="978d3-113">さまざまな構成オプションを利用して、イントラネットのスタイルに合った検索ボックスにすることができます。</span><span class="sxs-lookup"><span data-stu-id="978d3-113">To help the search box better fit with the style of your intranet, there are a variety of configuration options you can use.</span></span> <span data-ttu-id="978d3-114">オプションを組み合わせて、ニーズに合わせます。</span><span class="sxs-lookup"><span data-stu-id="978d3-114">Mix and match options to suit your needs.</span></span>
+<span data-ttu-id="01d12-113">さまざまな構成オプションを利用して、イントラネットのスタイルに合った検索ボックスにすることができます。</span><span class="sxs-lookup"><span data-stu-id="01d12-113">To help the search box better fit with the style of your intranet, there are a variety of configuration options you can use.</span></span> <span data-ttu-id="01d12-114">オプションを組み合わせて、ニーズに合わせます。</span><span class="sxs-lookup"><span data-stu-id="01d12-114">Mix and match options to suit your needs.</span></span>
 
 ```html
 <div id="bfb_searchbox"></div>
@@ -94,9 +94,9 @@ ms.locfileid: "30789315"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="use-an-iframe-to-embed-a-search-box"></a><span data-ttu-id="978d3-115">iFrame を使用して検索ボックスを埋め込む</span><span class="sxs-lookup"><span data-stu-id="978d3-115">Use an iFrame to embed a search box</span></span>
+## <a name="use-an-iframe-to-embed-a-search-box"></a><span data-ttu-id="01d12-115">iFrame を使用して検索ボックスを埋め込む</span><span class="sxs-lookup"><span data-stu-id="01d12-115">Use an iFrame to embed a search box</span></span>
 
-<span data-ttu-id="978d3-116">スクリプトの埋め込みがサイトでできない場合は、iFrame を使用して検索ボックスを追加します。</span><span class="sxs-lookup"><span data-stu-id="978d3-116">If embedding a script isn't an option for the site, use an iFrame to add the search box:</span></span> <span data-ttu-id="978d3-117">検索ボックスの外観はカスタマイズできません。</span><span class="sxs-lookup"><span data-stu-id="978d3-117">You won't be able to customize the appearance of the search box.</span></span>
+<span data-ttu-id="01d12-116">スクリプトの埋め込みがサイトでできない場合は、iFrame を使用して検索ボックスを追加します。</span><span class="sxs-lookup"><span data-stu-id="01d12-116">If embedding a script isn't an option for the site, use an iFrame to add the search box.</span></span> <span data-ttu-id="01d12-117">検索ボックスの外観はカスタマイズできません。</span><span class="sxs-lookup"><span data-stu-id="01d12-117">You won't be able to customize the appearance of the search box.</span></span>
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
