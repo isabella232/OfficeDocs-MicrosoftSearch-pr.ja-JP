@@ -1,5 +1,5 @@
 ---
-title: ユーザーおよびグループを検索します。
+title: ユーザーとグループを検索する
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,39 +12,39 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 17c9982a-0fd9-4cf1-b010-69ae3440b41f
-description: Microsoft Search を使用して、会社との情報が表示されますが、ユーザーを検索するには
+description: Microsoft Search を使用して、企業内のすべてのユーザーと、表示される情報を検索する
 ms.openlocfilehash: c9b71b8353e5ebc6e876a837424de8b74a7c20d5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379010"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508923"
 ---
-# <a name="find-people-and-groups"></a><span data-ttu-id="4cfbf-103">ユーザーおよびグループを検索します。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-103">Find people and groups</span></span>
+# <a name="find-people-and-groups"></a><span data-ttu-id="6fffe-103">ユーザーとグループを検索する</span><span class="sxs-lookup"><span data-stu-id="6fffe-103">Find people and groups</span></span>
 
-<span data-ttu-id="4cfbf-p101">同僚についての情報を見つけやすいことが Microsoft Search を使用します。連絡先情報、今後の会議を一緒にある場合、組織図の詳細情報、グループ メンバーシップ、およびあなたと共有したファイルを検索するのには、名前またはエイリアスの Bing で検索するだけです。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-p101">It's easy to find information about your co-workers using Microsoft Search. Just search on Bing for their name or alias to find contact info, upcoming meetings you have together, org chart details, group memberships, and files they've shared with you.</span></span>
+<span data-ttu-id="6fffe-104">Microsoft Search を使用して、同僚に関する情報を簡単に見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="6fffe-104">It's easy to find information about your co-workers using Microsoft Search.</span></span> <span data-ttu-id="6fffe-105">連絡先情報、一緒に開催された会議、組織図の詳細、グループメンバーシップ、および共有しているファイルを検索するには、Bing で名前またはエイリアスを検索するだけです。</span><span class="sxs-lookup"><span data-stu-id="6fffe-105">Just search on Bing for their name or alias to find contact info, upcoming meetings you have together, org chart details, group memberships, and files they've shared with you.</span></span>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AuTv?autoplay=false]
   
-## <a name="find-people"></a><span data-ttu-id="4cfbf-106">[おすすめ]</span><span class="sxs-lookup"><span data-stu-id="4cfbf-106">Find people</span></span>
+## <a name="find-people"></a><span data-ttu-id="6fffe-106">ユーザーを検索する</span><span class="sxs-lookup"><span data-stu-id="6fffe-106">Find people</span></span>
 
-<span data-ttu-id="4cfbf-107">IT 部門では、Microsoft の検索結果に表示されるコンテンツを指定します。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-107">Your IT department determines the content that appears in Microsoft Search results.</span></span>
+<span data-ttu-id="6fffe-107">IT 部門は、Microsoft 検索結果に表示されるコンテンツを決定します。</span><span class="sxs-lookup"><span data-stu-id="6fffe-107">Your IT department determines the content that appears in Microsoft Search results.</span></span>
   
-1. <span data-ttu-id="4cfbf-108">Bing で、職場、学校のアカウントにサインインします。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-108">Sign in to your work or school account on Bing</span></span>
+1. <span data-ttu-id="6fffe-108">Bing で職場または学校のアカウントにサインインする</span><span class="sxs-lookup"><span data-stu-id="6fffe-108">Sign in to your work or school account on Bing</span></span>
     
-2. <span data-ttu-id="4cfbf-109">'Me' 自分の名前を検索するか、エイリアス、または共同作業者の名前またはエイリアスを使用</span><span class="sxs-lookup"><span data-stu-id="4cfbf-109">Search for 'me,' your name or work alias, or a co-worker's name or alias</span></span>
+2. <span data-ttu-id="6fffe-109">' me '、' 自分の名前またはワークエイリアス、または共同作業者の名前またはエイリアスを検索します。</span><span class="sxs-lookup"><span data-stu-id="6fffe-109">Search for 'me,' your name or work alias, or a co-worker's name or alias</span></span>
     
-    <span data-ttu-id="4cfbf-110">姓と名の両方を含む最良の結果を返しますが、自分の名前の一部しかわからない場合は、Microsoft Search は、検索条件に最も一致する結果を表示してより多くの結果を表示するのには、可能であれば。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-110">Including both a first and last name will return the best result, but, if you only know part of their name, Microsoft Search will show you the result that best matches your search and, if possible, offer to show more results.</span></span>
+    <span data-ttu-id="6fffe-110">姓と名の両方を指定すると最適な結果が得られますが、名前の一部だけがわかっている場合は、検索結果に最適な結果が表示され、可能であれば、より多くの結果を表示するように提案します。</span><span class="sxs-lookup"><span data-stu-id="6fffe-110">Including both a first and last name will return the best result, but, if you only know part of their name, Microsoft Search will show you the result that best matches your search and, if possible, offer to show more results.</span></span>
     
-3. <span data-ttu-id="4cfbf-111">人のカードは、検索結果ページの上部または右側の列の上部にあるが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-111">A people card appears at the top of the results page or at the top of the right column</span></span>
+3. <span data-ttu-id="6fffe-111">結果ページの上部または右側の列の一番上に [people card] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="6fffe-111">A people card appears at the top of the results page or at the top of the right column</span></span>
     
-    <span data-ttu-id="4cfbf-112">詳細情報と、カード上のアクションをチェック アウトし、多くの情報を使用] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-112">Check out the details and actions on the card and click through for even more information.</span></span>
+    <span data-ttu-id="6fffe-112">カードの詳細とアクションをチェックし、詳細についてはをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6fffe-112">Check out the details and actions on the card and click through for even more information.</span></span>
     
-<span data-ttu-id="4cfbf-p102">作業の結果は、[web の結果が表示されます。組織に固有のこれらの結果が表示されません。場合によっては、たとえば、名前が非常に一般的な web 検索では、ユーザー カードされない可能性があります自動的に。作業結果を見るには、組織のロゴの横にある**から結果を表示する**] リンクをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-p102">Web results appear under your work results. These results aren't specific to your organization. In some cases, for example, when a name is a very common web search, the people card may not automatically appear. To see your work results you may need to click the **Show results from** link next to your organization's logo.</span></span> 
+<span data-ttu-id="6fffe-113">Web 結果は、作業結果の下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="6fffe-113">Web results appear under your work results.</span></span> <span data-ttu-id="6fffe-114">これらの結果は、組織に固有のものではありません。</span><span class="sxs-lookup"><span data-stu-id="6fffe-114">These results aren't specific to your organization.</span></span> <span data-ttu-id="6fffe-115">場合によっては、名前が非常に一般的な web 検索であっても、people card が自動的に表示されないことがあります。</span><span class="sxs-lookup"><span data-stu-id="6fffe-115">In some cases, for example, when a name is a very common web search, the people card may not automatically appear.</span></span> <span data-ttu-id="6fffe-116">作業結果を確認するには、組織のロゴの横にある [**結果の表示**] リンクをクリックする必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="6fffe-116">To see your work results you may need to click the **Show results from** link next to your organization's logo.</span></span> 
   
-## <a name="find-groups"></a><span data-ttu-id="4cfbf-117">グループを検索します。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-117">Find groups</span></span>
+## <a name="find-groups"></a><span data-ttu-id="6fffe-117">グループを検索する</span><span class="sxs-lookup"><span data-stu-id="6fffe-117">Find groups</span></span>
 
-<span data-ttu-id="4cfbf-118">同じようにグループの名前を入力、またはグループのエイリアスを連絡先の詳細、グループの所有者、メンバーを参照してください自分や同僚の検索、ファイルを共有したとの会話です。</span><span class="sxs-lookup"><span data-stu-id="4cfbf-118">Just like you search for yourself or a co-worker, enter the name of a group or group alias to see contact details, group owners, members, files they've shared with you, and conversations.</span></span>
+<span data-ttu-id="6fffe-118">自分または共同作業者を検索する場合と同様に、連絡先の詳細、グループの所有者、メンバー、自分が共有しているファイル、会話を表示するには、グループまたはグループエイリアスの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="6fffe-118">Just like you search for yourself or a co-worker, enter the name of a group or group alias to see contact details, group owners, members, files they've shared with you, and conversations.</span></span>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2V?autoplay=false]
   
