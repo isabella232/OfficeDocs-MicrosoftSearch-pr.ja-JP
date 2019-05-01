@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: Microsoft Search を使用して、会社の既定のホーム ページとして Bing を設定する方法について説明します。
 ms.openlocfilehash: db0611ebd7f4a8344664825bbb42025f3bb36486
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612491"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508977"
 ---
 # <a name="set-default-homepage"></a>既定のホーム ページの設定
 

@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 description: 管理者とエンド ユーザーの主要な Microsoft Search 機能は、ブックマーク、Q&A、管理、データ分析です
 ms.openlocfilehash: 983a882fd42ae6f76a4b3db4f0f87dd8fbe7974d
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746376"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508595"
 ---
 # <a name="features-of-microsoft-search"></a>Microsoft Search の機能
 
 ## <a name="key-admin-features-include"></a>主要な管理者機能には以下のものがあります。
 
-- [エンタープライズブックマーク](create-and-manage-bookmarks.md)
+- [エンタープライズ ブックマーク](create-and-manage-bookmarks.md)
     
-    サイト、ツールなどのエンタープライズ内の情報を発見します
+    サイト、ツールなどのエンタープライズ内の情報を検索します
     
 - [エンタープライズ Q&A](create-and-manage-qas.md)
     
@@ -37,7 +37,7 @@ ms.locfileid: "31746376"
     
     インポート、エクスポート、編集を一括で実行して、作成と更新を合理化します
 
-- [位置](locations.md)
+- [場所](locations.md)
     
     組織の建物、オフィス、他のワークスペースの住所と地図上の位置を確認します
     
@@ -45,17 +45,17 @@ ms.locfileid: "31746376"
     
     コンテンツの構成と作成を行い、検索キーワードや検索語句を定義します
     
-- [ユーザーと権限](add-users.md)
+- [ユーザーとアクセス許可](add-users.md)
     
     グローバル管理者またはMicrosoft Search管理者は、Microsoft Searchの構成を管理する追加の管理者とコンテンツを作成する編集者を承認します。
     
-- [分析 ](get-insights.md) 
+- [分析](get-insights.md) 
     
     組織での Microsoft Search の使用方法を理解します 
     
 ## <a name="key-end-user-features-include"></a>主要なエンドユーザー機能には以下のものがあります。
 
-- [複数のユーザー](use/find-people-and-groups.md)
+- [ユーザー](use/find-people-and-groups.md)
     
     ユーザーを見つけて、社内での役割、作業内容、連絡先について理解します
     
@@ -83,7 +83,7 @@ ms.locfileid: "31746376"
     
     パブリックとグループの会話からコンテキストおよび関連する結果を見つけます
 
-- [位置](use/find-locations.md)
+- [場所](use/find-locations.md)
     
     建物、オフィス、キャンパスなどの住所と地図上の位置を確認します
     

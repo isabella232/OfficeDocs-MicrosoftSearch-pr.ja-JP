@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
 description: Microsoft Search を使用する際に、検索できるすべての情報に関する概要を取得します
 ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612377"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508947"
 ---
 # <a name="about-microsoft-search"></a>Microsoft Search について
 

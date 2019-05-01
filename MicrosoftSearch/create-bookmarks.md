@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
 description: ブックマークを作成またはブラウザー拡張機能を使用してブックマークを Microsoft Search 作業結果へ追加します。
 ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612411"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508732"
 ---
 # <a name="create-bookmarks"></a>ブックマークを作成する
 

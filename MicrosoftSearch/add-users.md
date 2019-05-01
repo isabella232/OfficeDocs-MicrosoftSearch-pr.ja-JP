@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
 description: Microsoft Searchの管理者および編集者に権限とロールを割り当てます
 ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746408"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508483"
 ---
 # <a name="manage-users"></a>ユーザーを管理します
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 description: 関連する検索候補や作業結果にすばやくアクセスするために、イントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
 ms.openlocfilehash: a66c0cea71cf637209d298f49542864755e92ec9
-ms.sourcegitcommit: c18809f57f957de958a87e940dc3904061fe0bd0
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789315"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508523"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックス追加する
 

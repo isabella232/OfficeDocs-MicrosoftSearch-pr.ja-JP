@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
 description: ロゴ、会社名などを Microsoft Search の検索結果へ追加します
 ms.openlocfilehash: 1ec90c5ad10fb1c3b494ccbe3ad1cd1c6497e0fb
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612460"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508643"
 ---
 # <a name="content-settings"></a>コンテンツ設定
 
