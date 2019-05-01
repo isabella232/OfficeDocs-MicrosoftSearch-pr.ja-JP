@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 description: Microsoft Search 管理ポータルのインポートツールでよく寄せられる質問への回答をすばやく追加する
 ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901818"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508675"
 ---
 # <a name="bulk-create-qas"></a>Q&A の一括作成
 

@@ -1,5 +1,5 @@
 ---
-title: ファイルを検索します。
+title: ファイルの検索
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,23 +12,23 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ff42d668-f721-4ada-b130-77e38508197c
-description: Microsoft Search を使用して Office ファイルと Pdf が表示される情報を検索するには
+description: Microsoft Search を使用して、Office ファイルと pdf、および表示される情報を検索する
 ms.openlocfilehash: f46796c015137a5bc1a24a52f7eb35cd2675a09d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379001"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508939"
 ---
-# <a name="find-files"></a>ファイルを検索します。
+# <a name="find-files"></a>ファイルの検索
 
-独自のファイルを検索するかへのアクセス権のある共同作業者によって作成されたコンテンツを検索します。結果ファイルの名前と場所を含めるし、時期と、最後に修正した内容の簡単なスニペットを表示ことがあります。
+自分のファイルを検索するか、またはアクセス権を持っている同僚によって作成されたコンテンツを探します。 結果には、ファイル名と場所が含まれます。また、コンテンツの簡単なスニペット、最後に変更された日時、およびいつでも表示されることがあります。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AsoN?autoplay=false]
   
-など、ビジネスのファイルには、SharePoint と OneDrive を確認できます。
+SharePoint と OneDrive for business のファイルは次の場所にあります。
   
-- Word 文書
+- Word ドキュメント
     
 - Excel スプレッドシート
     
@@ -36,16 +36,16 @@ ms.locfileid: "29379001"
     
 - OneNote ノートブック
     
-- Pdf
+- pdf
     
-1. Bing で、職場、学校のアカウントにサインインします。
+1. Bing で職場または学校のアカウントにサインインする
     
-2. ドキュメントを検索する'、' '私のプレゼンテーション、' または、トピック、または他のユーザーの名前が含まれます
+2. ' my documents, ' my プレゼンテーション ' を検索するか、トピックまたは他の名前を含める
     
-    たとえば、共に 'docs の税コードの' または 'John がファイルです。
+    たとえば、「税コードに関するドキュメント」や「John によるファイル」などです。
     
-3. 検索結果ページの上部にあるファイルの結果が表示されます。
+3. 結果ページの上部に [ファイルの結果] が表示される
     
-    その下にある他の web の結果が表示されます。組織を特定できません。
+    その下に他の web 結果が表示されます。 組織に固有のものではありません。
 
 

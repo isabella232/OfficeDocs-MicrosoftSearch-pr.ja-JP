@@ -1,5 +1,5 @@
 ---
-title: 作成および管理 Q&As
+title: Q&As の作成と管理
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,55 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
-description: すべての Microsoft の検索管理ポータルでよく寄せられる質問への回答を作成する方法の概要
+description: Microsoft Search 管理ポータルでよく寄せられる質問への回答を作成するすべての方法の概要
 ms.openlocfilehash: f30693b0943a34786c9e52859c8c5c680dc6e141
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379013"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508747"
 ---
-# <a name="create-and-manage-qas"></a>作成および管理 Q&As
+# <a name="create-and-manage-qas"></a>Q&As の作成と管理
 
-## <a name="create-qas"></a>Q&As を作成します。
+## <a name="create-qas"></a>Q&A の作成
 
-Q&As では、ユーザーの作業に関連する質問の最適な解答が用意されています。Bing でそれらに関連付けたキーワードを入力するとき、ユーザーはそれらを検出簡単にできます。
+Q&As は、ユーザーの職場関連の質問に対して考えられる最高の回答を提供します。 ユーザーは、Bing でそれらに関連付けられているキーワードを入力すると、簡単に見つけることができます。
   
-- [Q&As を作成します。](create-qas.md)
+- [Q&As を作成する](create-qas.md)
     
-    個々 の Q&As を追加します。
+    個別の Q&As を追加します。
     
-- [一括作成し、Q&As をインポートします。](bulk-create-qas.md)
+- [Q&As を一括作成およびインポートする](bulk-create-qas.md)
     
-    .Csv ファイル内の Q&As を作成し、一括インポートします。
+    Q&As を .csv ファイルに作成し、一括インポートします。
     
-## <a name="manage-qas"></a>Q&As を管理します。
+## <a name="manage-qas"></a>Q&A の管理
 
-Q&A の状態は、ツール、および一括エクスポート/インポート ツールを[検索し Q&A のコンテンツを更新](manage-qas.md)、タイトル、質問、キーワード、Url などのフィルタ リングを使用します。
+Q&A status、filtering tools、および bulk export/import ツールを使用して、Q&A コンテンツ (タイトル、回答、キーワード、url など) を[検索して更新](manage-qas.md)します。
   
-## <a name="qa-status"></a>Q&A ステータス
+## <a name="qa-status"></a>Q&A の状態
 
-管理ポータルでは、現在の状態で Q&As を表示できます。
+管理ポータルでは、現在の状態によって Q&As を表示できます。
   
-- 公開日
+- Published
     
-    権限を持つユーザーがキーワードを検索すると、Bing の検索結果で公開されている Q&As が表示されます。
+    公開された Q&As は、承認されたユーザーがキーワードを検索したときに、Bing 検索結果に表示されます。
     
-- 下書き
+- Draft
     
-    いない場合は、Q&A を公開する準備ができて、下書きとして保存します。ドラフトの Q&As は、Bing には表示されません。
+    Q&A を発行する準備ができていない場合は、下書きとして保存します。 下書き Q&As は Bing に表示されません。
     
-- スケジュール
+- スケジュール済み
     
-    スケジュールされた Q&As は、将来の日付に自動的に発行されます。
+    スケジュールされた Q&As は、将来の日付に自動的に公開されます。
     
 - 有効期限切れ
     
-    期限切れの Q&As から発行されたコンテンツの有効期限の日付に基づいて自動的に削除されました。
+    期限切れの Q&As は、有効期限日に基づいて、公開されたコンテンツから自動的に削除されました。
     
-- 推奨
+- 内容
     
-    ユーザーからのフィードバックに基づいて Q&As を推奨します。
+    推奨される Q&As は、ユーザーからのフィードバックに基づいています。
 
   
 

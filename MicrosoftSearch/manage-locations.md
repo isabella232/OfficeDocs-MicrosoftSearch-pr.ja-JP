@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過とともに、場所の状態やコンテンツを更新して、関連性を維持する必要がある場合があります。
 ms.openlocfilehash: 69fa4fc86d80adf76aa2a5788bdde433dd827a4d
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901826"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508667"
 ---
 # <a name="manage-locations"></a>場所の管理
 
@@ -63,7 +63,7 @@ Id は各場所の一意の識別子であり、編集しないでください�
     
 4. 次のいずれかのフィールドのデータを編集します。
     
-   - Name
+   - 名前
     
    - 住所1
     
@@ -87,7 +87,7 @@ Id は各場所の一意の識別子であり、編集しないでください�
     
    - 予約済みキーワード
     
-   - 状態
+   - State
     
 5. .csv ファイルを保存する
 

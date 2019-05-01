@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 回答を個別に検索して更新したり、利用可能な Microsoft 検索ツールを使用してそれらを一度に編集したりする
 ms.openlocfilehash: 47882deeb95133cfc19f4eec6417fc20fb7203de
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901834"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508819"
 ---
 # <a name="manage-qas"></a>Q&A の管理
 
@@ -69,7 +69,7 @@ Id は各 Q&A の一意の識別子で、編集しないでください。 最�
       
    - キーワード
     
-   - 状態
+   - State
     
    - 回答の説明
     

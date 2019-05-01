@@ -32,3 +32,16 @@
 | 4/9/2019 | [Microsoft Search のクイック セットアップ](/MicrosoftSearch/quick-set-up) | 更新日時 |
 | 4/9/2019 | [Microsoft Search のセットアップ](/MicrosoftSearch/set-up-microsoft-search) | 更新日時 |
 | 4/9/2019 | [Microsoft Search を使用する利点](/MicrosoftSearch/why-microsoft-search) | 更新日時 |
+
+
+## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 4/16/2019 | [ブックマークの一括作成](/MicrosoftSearch/bulk-create-bookmarks) | 更新日時 |
+| 4/16/2019 | [場所の一括作成](/MicrosoftSearch/bulk-create-locations) | 更新日時 |
+| 4/16/2019 | [一括作成 Q&As](/MicrosoftSearch/bulk-create-qas) | 更新日時 |
+| 4/16/2019 | [ブックマークの管理](/MicrosoftSearch/manage-bookmarks) | 更新日時 |
+| 4/16/2019 | [場所の管理](/MicrosoftSearch/manage-locations) | 更新日時 |
+| 4/16/2019 | [Q&As の管理](/MicrosoftSearch/manage-qas) | 更新日時 |

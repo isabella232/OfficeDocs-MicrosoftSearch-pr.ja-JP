@@ -1,5 +1,5 @@
 ---
-title: 候補の検索
+title: 検索の候補
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
-description: Microsoft Search を使用する場合に表示されるサンプルの検索について
+description: Microsoft Search の使用時に表示されるサンプル検索について
 ms.openlocfilehash: 38afbdf233feba1772b9b72291d1571e2cf7ab97
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379029"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508507"
 ---
-# <a name="suggested-searches"></a>候補の検索
+# <a name="suggested-searches"></a>検索の候補
 
-Bing、職場、学校のアカウントにサインインする最初に提案された検索を使用してページの上部にあるウェルカム メッセージが表示されます。これらの検索は、Microsoft Search と作業の結果を検索する場合がありますの種類を理解するために設計されています。
+職場または学校のアカウントを使用して初めて Bing にサインインすると、ページの上部に、推奨される検索と共にウェルカムメッセージが表示されます。 これらの検索は、Microsoft search と検索時に表示される作業結果の種類を理解するのに役立ちます。
   
-ようにし、他のユーザーに関連性の高い組織で、IT 部門にレビューしか、独自に作成します。
+組織内の自分や他のユーザーにとってより関連性のあるものにするために、IT 部門はそれらを確認したり、独自に作成したりしています。
   
-場合によっては、新機能を発表または Microsoft Search の詳細を示すメッセージが表示されます。常に紹介する詳細情報へのリンクや詳細については[マイクロソフトの検索の表示](https://www.bing.com/business/explore)に移動できます。 
+場合によっては、新しい機能について説明するメッセージや、Microsoft Search の詳細を知らせるメッセージが表示することがあります。 詳細については、「 [Microsoft Search を参照](https://www.bing.com/business/explore)してください」を参照してください。 
 
   
 

@@ -1,5 +1,5 @@
 ---
-title: どのように Microsoft Search は、情報セキュリティで保護されました。
+title: Microsoft Search の情報セキュリティ
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,27 +12,27 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 5ab1234e-fbb2-4bf9-a907-fa83389a7dee
-description: Microsoft Search を使用すると、情報とファイル保護方法
+description: Microsoft Search を使用する場合の情報とファイルの保護
 ms.openlocfilehash: 52dbf65d3c7414eaa2c4a3770def3f4f00edc40c
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379007"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508851"
 ---
-# <a name="how-microsoft-search-keeps-your-info-secure"></a>どのように Microsoft Search は、情報セキュリティで保護されました。
+# <a name="how-microsoft-search-keeps-your-info-secure"></a>Microsoft Search の情報セキュリティ
 
-Microsoft Search では、お客様のコンテンツや情報をセキュリティで保護するのにいくつかの方法を使用します。
+Microsoft Search では、コンテンツと情報を保護するために、いくつかの方法を使用しています。
   
-- マイクロソフトの検索結果を Office 365 で使用される同じ信頼できるクラウドから直接取得します。Bing 公開 web インデックスでは、作業内容や情報は保存されません。
+- Microsoft 検索結果は、Office 365 で使用されている信頼された同じクラウドから直接取得されます。 Bing では、パブリック web インデックスに作業内容や情報は保存されません。
     
-- のみを表示できます、職場、学校のアカウントでサインインしているときに結果を操作します。
+- 作業の結果は、職場または学校のアカウントでサインインしている場合にのみ表示されます。
     
-- Microsoft Search は、情報を返すだけが表示する権限があります。ファイルや情報を作成するとファイルを共有したことまたはより大きなグループに含まれているフォルダーに格納されているまたは場所にアクセスする権限があるために、アクセス許可が存在することがあります。
+- Microsoft Search は、表示するアクセス許可がある情報のみを返します。 アクセス許可が付与されている可能性があるのは、ファイルまたは情報を作成したこと、あるいはユーザーが含まれるより大規模なグループを共有しているか、またはアクセス許可のあるフォルダーまたは場所に保存されている場合です。
     
-- パブリック web の結果を向上させるためにまたは Bing を向上させるために、Microsoft Search は、作業時間の検索を使用しません。
+- Microsoft Search では、作業検索を使用して、パブリック web の結果を向上させたり、Bing を改善したりしていません。
     
-- Microsoft Search には、広告主がターゲットにするか、組織内のすべてのユーザーはことができます。
+- Microsoft Search では、組織内のユーザーや組織内のユーザーを広告者にすることはできません。
 
   
 

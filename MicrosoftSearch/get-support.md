@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8a294807-bb40-474d-bbe5-c5b03b2fb2c8
-description: 他の Microsoft の検索管理者およびテクニカル コミュニティのエキスパートに相談します。
+description: 他の Microsoft 検索管理者や技術コミュニティの専門家と話します。
 ms.openlocfilehash: a1bed1441657b891339b83ec34f4c276146e8ca4
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378988"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508635"
 ---
 # <a name="get-support"></a>サポートを受ける
 
-その他の Microsoft Search 管理者の集団の知恵を利用、他の専門家から学ぶ[マイクロソフト テクニカル コミュニティ サイト](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch)の Microsoft の検索] セクションで経験を共有します。
+他の microsoft 検索管理者の全体的な知識を活用して、お互いや専門家から学んで、エクスペリエンスを[microsoft Tech Community サイト](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch)の microsoft Search セクションに公開します。
 
   
 

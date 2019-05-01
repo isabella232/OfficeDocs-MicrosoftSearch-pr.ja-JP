@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
 description: Microsoft Search 管理ポータルのインポートツールを使用して、多数のブックマークを一度に作成する
 ms.openlocfilehash: 7c134784f0ca0d4cc84d5bce3a98f7e75aa6f441
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901794"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508620"
 ---
 # <a name="bulk-create-bookmarks"></a>ブックマークの一括作成
 

@@ -1,5 +1,5 @@
 ---
-title: PowerApps を統合します。
+title: PowerApps の統合
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,49 +13,49 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: Microsoft Search の結果のブックマークにブラウザー ベースのアプリケーションが含まれます
+description: Microsoft Search のブックマーク検索結果にブラウザーベースのアプリを含める
 ms.openlocfilehash: d8d9d099848e719c86e0f3cadee330263566d243
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29379016"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508827"
 ---
-# <a name="integrate-powerapps"></a>PowerApps を統合します。
+# <a name="integrate-powerapps"></a>PowerApps の統合
 
-休暇の期間を入力するか、既存の PowerApps をブックマークに統合することで経費を報告するなどのタスクの完了、ユーザーを支援します。統合 PowerApps 内に表示されます、ブックマークの結果、どの保存時間と労力を別のツールを開いたり別のサイトに移動する必要があります。
+休暇の入力や、既存の PowerApps をブックマークに統合することによる経費の報告など、ユーザーがタスクを完了できるようにします。 統合 PowerApps はブックマークの結果内に表示されます。別のサイトに移動したり、別のツールを開いたりする必要がなくなり、時間と労力を節約できます。
   
-## <a name="what-are-powerapps"></a>PowerApps を挙げてください。
+## <a name="what-are-powerapps"></a>PowerApps とは
 
-PowerApps は、コーディングの経験が必要ないと、ブラウザーや携帯電話やタブレットを実行しているビジネス アプリケーションを構築できるようにするサービスです。詳細情報：
+PowerApps は、ブラウザーまたは携帯電話やタブレットで実行されるビジネスアプリを、コーディング操作を必要とせずに作成できるサービスです。 詳細については、次の項目を参照してください。
   
-- [学習ガイド付き](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
+- [ガイド付き学習](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
     
-- [書類](https://docs.microsoft.com/en-us/powerapps/)
+- [ドキュメント](https://docs.microsoft.com/en-us/powerapps/)
     
-## <a name="add-a-powerapp-to-a-bookmark"></a>PowerApp をブックマークに追加します。
+## <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに powerapp を追加する
 
-PowerApps 任意のブラウザーで、どのデバイスを使用し、追加するのには 1 分未満であります。
+PowerApps は任意のブラウザーおよび任意のデバイスで使用できます。追加するには、1分以内にする必要があります。
   
-1. [、PowerApp のアプリケーション ID の検索](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)と統合します。 
+1. 統合する[powerapp のアプリ ID を検索](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)する 
     
-2. Microsoft SearchAdmin ポータルでは、**ブックマーク**に移動します。
+2. Microsoft searchadmin ポータルで、[**ブックマーク**] に移動します。
     
-3. ブックマークを追加または、PowerApp を追加する既存のブックマークを検索
+3. powerapp を追加するブックマークを追加するか、既存のブックマークを検索します。
     
-4. ブックマークの設定、**電源のアプリケーション**をクリックし、**電源アプリケーションの追加**] をクリックしてください
+4. [ブックマークの設定] で、[ **power app**] をクリックし、[ **power app の追加**] をクリックします。
     
-5. 入力するか、アプリケーションの ID を貼り付け
+5. アプリ ID を入力または貼り付けます。
     
-    高さと幅を自動的に追加します。ブックマークは、向きを縦と横の両方をサポートできますが、現在のサイズを変更できません。
+    高さと幅は自動的に追加されます。 ブックマークは縦方向と横方向の両方をサポートできますが、現在サイズを変更することはできません。
     
-6. ブックマークのプレビューは、ブックマークの結果、PowerApp がどのように表示されるかを示しています。
+6. ブックマークのプレビューは、powerapp がブックマークの結果にどのように表示されるかを示しています。
     
-    プレビューで PowerApp は、簡単にテストして使用することは完全に機能します。
+    プレビューの powerapp は、テストと使用が容易になるように完全に機能します。
     
 7. [**発行**] をクリックします。
     
-権限のある Microsoft の検索ユーザーは、ブックマークのキーワードまたは予約済みキーワードのいずれかの Bing の検索、ブックマークの結果に、PowerApp が表示されます。
+承認された Microsoft 検索ユーザーが、任意のブックマークのキーワードまたは予約済みキーワードを使用して Bing で検索すると、powerapp がブックマークの結果に表示されます。
 
   
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 更新が必要なブックマークを検索し、Microsoft Search のブックマークの結果を一括編集する方法を指定する
 ms.openlocfilehash: f87176c645e127e20edd9e70a74efe05dd381236
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901802"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508611"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -68,7 +68,7 @@ Id は各ブックマークの一意の識別子であり、編集しないで�
     
    - キーワード
     
-   - 状態
+   - State
     
    - 説明
     
