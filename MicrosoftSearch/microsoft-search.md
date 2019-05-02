@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
 ms.date: 09/20/2018
 ms.audience: Admin
 ms.topic: landing-page
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft Search は、組織にとってより関連性の高い検索結果を提供し、生産性の向上や時間の節約につながるエンタープライズ検索を可能にします
-ms.openlocfilehash: b9937dd91d6101386a781884917dab131ddc85e9
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 37ee14c4d594f45e502a39b2c50d9cd4e283c88e
+ms.sourcegitcommit: b9ec3d10b3df3bf07c40c60c3ed580194ed445a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/01/2019
-ms.locfileid: "33509041"
+ms.locfileid: "33513943"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -46,8 +46,8 @@ ms.locfileid: "33509041"
                 <div class="card">
                     <div class="cardText">
                         <h2>Microsoft Search を選ぶ理由</h2>
-                        <p>組織にとってより関連性の高い検索結果を提供することで、生産性を高め、時間を節約するエンタープライズ検索エクスペリエンスを実現します</p>
-                        <p><a href="overview-microsoft-search.md">方法を確認する</a></p>
+                        <p>組織にとってより関連性の高い検索結果を提供し、生産性の向上や時間の節約につながるエンタープライズ検索を可能にします</p>
+                        <p><a href="overview-microsoft-search.md">理由を確認する</a></p>
                     </div>
                 </div>
             </div>
@@ -69,8 +69,8 @@ ms.locfileid: "33509041"
                     </div>
                     <div class="cardText">
                         <h3>コンテンツを検索できるようにする</h3>
-                        <p>検索したときに表示される機能を含め、管理者とユーザーが利用できる機能を確認します</p>
-                        <p><a href="make-content-easy-to-find.md">詳細については、以下を参照してください。</a></p>
+                        <p>検索対象など、管理者やユーザーが利用できる検索機能を確認します</p>
+                        <p><a href="make-content-easy-to-find.md">詳細情報</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "33509041"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>はじめに</h3>
+                        <h3>作業の開始</h3>
                         <p>Microsoft Search の使用を開始する方法と、組織のために構成する方法について説明します。</p>
-                        <p><a href="setup-microsoft-search.md">今すぐ開始します</a></p>
+                        <p><a href="setup-microsoft-search.md">今すぐ開始する</a></p>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ ms.locfileid: "33509041"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Microsoft Search を使用します</h2>
+                        <h2>Microsoft Search を使用する</h2>
                         <p>Microsoft Search を使用して生産性を向上させるためのユーザーのトレーニングに役立つ記事やビデオを表示します。 </p>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2090946">試してみて下さい</a></p>
                     </div>

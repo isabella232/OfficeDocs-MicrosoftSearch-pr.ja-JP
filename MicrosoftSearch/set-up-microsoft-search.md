@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Microsoft Search を組織にデプロイするために必要なすべての情報
 ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746352"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508955"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
