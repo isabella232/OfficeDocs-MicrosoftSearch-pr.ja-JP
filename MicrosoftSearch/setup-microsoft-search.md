@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: f4648988563245f6a61169d7e62b48c456dfa8fa
-ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
+ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
+ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33858274"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970132"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
@@ -30,7 +30,11 @@ ms.locfileid: "33858274"
 
 **Microsoft Search** は Microsoft 365 の一部であり、この機能をサポートしているすべての Microsoft アプリに対して既定で有効になっています。 ユーザーは、職場または学校のアカウントでサインインし、Bing のブラウザーを既定の検索プロバイダーとして設定するだけで、利用できます。
 
-しかし管理者であれば、組織内での効率的でユーザー フレンドリな **Microsoft Search** の操作性を実現するために、いくつかの点を考慮する必要があります。
+**Microsoft Search**を**Microsoft 365 管理センター**から管理します。 管理者認証情報を使用してサインインし、**アプリ起動ツール**で**管理**タイルを選択します。 **Microsoft 365 管理センター**で、 左側のナビゲーション パネルで**設定**の下の**Microsoft Search** を選択します。 
+
+**注:** 従来の管理ポータルが表示され、新しい管理センターに切り替えたい場合は、管理センターの右上隅にある **プレビューを試す**スイッチを有効にしてください。 
+
+管理者として、組織内での効率的でユーザー フレンドリな **Microsoft Search** の操作性を実現するために、いくつかの点を考慮する必要があります。
 
 ### <a name="step-1-check-access-level-of-your-users"></a>手順 1: ユーザーのアクセス レベルを確認する
 
@@ -42,13 +46,13 @@ ms.locfileid: "33858274"
 
 **Microsoft 管理センター** には 2 つの新しい役割があります。つまり、Search 管理者と Search エディターです。  すべての権限を持つグローバル管理者は、Search 管理者の役割を含む、管理者の役割をユーザーに割り当てます。 Search 管理者は、Search 管理者または Search エディターの役割を他のユーザーに委任できます。 異なる管理者の役割に関する詳細については、[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) を参照してください。
 
+**注:** これら 2 つの新しい役割である Search 管理者と Search エディターは、従来の管理ポータルではなく、**Microsoft 365 管理センター**でのみ利用できます。 
+
 Search 管理者は、エンド ユーザーの検索エクスペリエンスに直接影響を与えます。 これには、ユーザーに表示する結果の種類の選択が含まれます。 ユーザーが組織内で検索するさまざまなトピックに対して、信頼できるコンテンツを 1 人で選択して作成するのは難しい場合があります。 SME や他のユーザーをエディターとして追加して、その専門知識や知見を活用することをお勧めします。 
 
 **Microsoft Search** では、2 つの新しい役割を使用して、組織の検索設定とコンテンツを管理できます。
 1. **Search 管理者:** この役割では、検索結果のコンテンツを作成したり管理したりして、組織内の検索結果を向上させるためのクエリ設定を定義できます。 Search 管理者は、**Microsoft Search** の構成を管理し、コンテンツを作成する Search エディターを指定します。
 2. **Search エディター:** Microsoft 365 管理センターで **Microsoft Search** のコンテンツを作成、管理、および削除します。 この役割には、よく寄せられる質問や回答、重要な場所や位置、頻繁に検索および使用されるサイトやアプリなどの編集コンテンツを作成および管理する権限があります。ただし、検索設定を管理するアクセス権はありません。
-
-**注:** これら 2 つの新しい役割である Search 管理者と Search エディターは、従来の管理ポータルではなく、**Microsoft 365 管理センター**でのみ利用できます。
 
 管理者の役割の割り当てについては、「[一般法人向け Office 365 で管理者ロールを割り当てる](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)」を参照してください。
 

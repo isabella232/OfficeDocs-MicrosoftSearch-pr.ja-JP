@@ -13,19 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の概要、その利点、Microsoft Search が現在搭載されているアプリについて学習します。
-ms.openlocfilehash: d8445ac414920588c9b253e8640b1707c9fd2626
-ms.sourcegitcommit: b9ec3d10b3df3bf07c40c60c3ed580194ed445a6
+ms.openlocfilehash: cbf372e9fa7ced4a5e23e7d80d566192ab703a49
+ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33513935"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970140"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
 Microsoft Search は、Microsoft 365 生産性アプリとより広範な Microsoft エコシステムにおける統合検索機能です。 Microsoft Search は、Microsoft 365 全体のより多くのアプリで順次利用できるようになります。
 
-
-Microsoft Search を使用すると、ユーザーは適切な回答、他のユーザー、コンテンツを見つけて、既に作業しているアプリでタスクを完了することができます。 Microsoft Search では、次のことが可能です。 
+Microsoft Search を使用すると、ユーザーは適切な回答、他のユーザー、コンテンツを見つけて、既に作業しているアプリでタスクを完了することができます。 Microsoft Search では、次のことが可能です。
 - 検索元のアプリの**コンテキスト**に応じた結果を取得できます。 たとえば、Outlook で検索すると、SharePoint のサイトではなくメールが見つかります。 SharePoint で検索すると、メールではなく、サイト、ページ、ファイルが見つかります。
 - ユーザーがどのアプリで作業していても、Microsoft Search は**個人用**です。  Microsoft Search では、Microsoft Graph からの洞察を使用して、各ユーザーに関連性のある結果が表示されます。 各ユーザーが同じ単語を検索しても、それぞれの結果は異なる可能性があります。 ユーザーには既にアクセス権のある結果のみが表示されます。Microsoft Search によってアクセス許可が変更されることはありません。   
 - 情報がある場所を覚えておく必要はありません。 たとえば、あるユーザーが Word で作業していて、同僚が自分の OneDrive から共有したプレゼンテーションの情報をそのユーザーが再利用する必要があるとします。 この場合、OneDrive に切り替えて、そのプレゼンテーションを検索する必要はなく、Word から検索するだけで済みます。  
@@ -72,7 +71,6 @@ Microsoft Search は、Microsoft 365 全体のより多くのアプリで順次�
 
 さらに、Microsoft Search は以下の場所にもあります。
 - Bing 
-- Windows
 - Office.com
 - Word、Excel、PowerPoint Online の開始ページ
 
@@ -94,9 +92,9 @@ Microsoft Search を使用できるのは、アクティブなアカウントを
 ## <a name="what-can-users-find-with-microsoft-search"></a>Microsoft Search で何を検索できますか? 
 Microsoft Search では、グローバル アドレス一覧や Office 365 グループのユーザーを含め、Outlook、OneDrive、SharePoint Online に保存されているコンテンツ内を検索します。 クラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境をセットアップすると、Microsoft Search のユーザーは、SharePoint Server 環境に接続している外部コンテンツを含む、オンプレミスの SharePoint コンテンツからも結果を取得できます。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/ja-JP/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-[SharePoint ホーム ページ](https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx)または office.com から検索すると、Microsoft Search では組織全体が検索され、検出されたすべての組織の結果が表示されます。 これは、グローバル検索範囲と呼ばれています。
+SharePoint スタートページまたは Office.com から検索すると、Microsoft Search では組織全体が検索され、検出されたすべての組織の結果が表示されます。 これは、グローバル検索範囲と呼ばれています。
 
-Bing から検索すると、Microsoft Search では、ユーザーの組織とパブリック Web の両方にわたって検索が実行されます。 ユーザーは、結果一覧に埋め込まれた自身の組織から、最も関連性のある結果を広範囲に取得できます。 組織のすべての結果を表示する必要がある場合は、たった 1 回クリックするだけでユニバーサル検索範囲を実行できます。
+Bing から検索すると、Microsoft Search では、ユーザーの組織とパブリック Web の両方にわたって検索が実行されます。 ユーザーは、結果一覧に埋め込まれた自身の組織から、最も関連性のある結果を広範囲に取得できます。 組織のすべての結果を表示する必要がある場合は、たった 1 回クリックするだけでグローバル検索範囲を実行できます。
 
 アプリから検索すると、作業中のコンテキストに関連する結果が表示されます。 たとえば、Outlook から検索するとメール、SharePoint から検索すると一覧内のニュースやコンテンツ、PowerPoint から検索すると作業中のプレゼンテーション内のアクションや単語が表示されます。
 
@@ -112,22 +110,17 @@ Bing から検索すると、Microsoft Search では、ユーザーの組織と�
 
 **Bing**: パブリック Web 上のコンテンツ、ファイル、Office 365 グループ、ユーザー、Yammer と Teams の会話、組織図、SharePoint サイト。 定義されている場合: よく寄せられる質問に対する回答、権限のある情報につながるブックマーク、地図上の位置、ツール。  Word、Excel、PowerPoint、OneNote、PDF の各ファイルを見つけることができます。
 
-**Windows**: ファイルおよびユーザー。
-
 **Office.com、Word、Excel、PowerPoint Online のスタート ページ**: アプリ、ファイル、フォルダー、ユーザー、組織図、SharePoint サイト、サイト ページ、リスト、リスト アイテム。 定義されている場合: よく寄せられる質問に対する回答、権限のある情報につながるブックマーク、地図上の位置、ツール。 ここでは、SharePoint 内にあるものと同じファイルの種類を見つけることができます。
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>組織に合わせた Microsoft Search のカスタマイズ
 
-管理者は、ユーザーが自分の SharePoint ホーム ページ、office.com、Bing から検索する場合、ユーザーが組織固有の優れた結果を簡単に取得できるようにすることができます。
+管理者は、ユーザーが自分の SharePoint スタート ページ、Office.com、Bing から検索すれば、組織固有の良い検索結果を簡単に得られるようにすることができます。 Microsoft Search は、Microsoft 365 管理センター の Microsoft Search セクションから管理できます。
 
 **便利なコンテンツを表示** - 組織内の重要なツールやリソースはブックマークすることで見つけやすくなります。 パブリック Web ページにブックマークを作成できるのと同様に、ユーザーが検索できるように、任意の内部 Web ページにブックマークを作成できます。 Power App をブックマークに統合することもできるので、ユーザーはブックマークから直接タスクを完了することができます。
 
 **よく寄せられる質問に回答** - 最もよく寄せられる質問に対する最善の回答を提供できます。 検索ボックスによくある質問を入力すると、Microsoft Search では Web ページへのリンクを提供するだけでなく、結果として回答が表示されます。
 
 **便利な場所を表示** - マップの結果と組織の建物、オフィス、その他のワークスペースの住所情報をマップ上に表示します。 ユーザーはマップを使用して、道順を調べたり、近くにあるものなどを確認したりできます。
-
-Microsoft Search ボックスがあるすべてのアプリの Microsoft Search は、Microsoft Search 管理センターから管理できます。 
-
 
 ## <a name="how-does-microsoft-search-work"></a>Microsoft Search はどのように機能するのですか?
 Microsoft Search では、SharePoint Online、OneDrive for Business、Exchange の各コンテンツの検索が自動的に実行されます。 クラウド ハイブリッド検索を使用して、ハイブリッド SharePoint Server と SharePoint Online の検索環境を設定している場合、Microsoft Search では、オンプレミス コネクタ経由のコンテンツなど、オンプレミス SharePoint からのコンテンツも検索できます。
@@ -139,10 +132,10 @@ Microsoft Search では、SharePoint Online、OneDrive for Business、Exchange �
 ## <a name="microsoft-search-in-sharepoint"></a>SharePoint での Microsoft Search 
 Microsoft Search は、SharePoint Online のモダン検索エクスペリエンスです。 また、SharePoint Online では、クラシック検索エクスペリエンスも使用できます。 検索管理者は、モダンまたはクラシック検索エクスペリエンスのどちらもオンまたはオフにすることはできません。 両方とも既定でオンになっています。 ユーザーに提供される検索エクスペリエンスは、ユーザーがどこから検索するかによって異なります。
 
-- SharePoint のホーム ページ、ハブ サイト、コミュニケーション サイト、モダン チーム サイトから検索すると、Microsoft Search ボックスが表示されます。
+- ユーザーには、SharePoint スタート ページ、ハブ サイト、コミュニケーション サイトおよび最新のチーム サイトで Microsoft Search ボックスが表示されます。
 - 発行サイト、クラシック チーム サイト、検索センターから検索すると、クラッシック検索ボックスが表示されます。
 
-どちらの検索エクスペリエンスも、SharePoint と OneDrive for Business のコンテンツから結果を検索したり、Office 365 のユーザーを検索したりします。 
+どちらの検索エクスペリエンスも、SharePoint と OneDrive for Business のコンテンツから結果を検索したり、Office 365 のユーザーを検索したりします。
 
 引き続き SharePoint でクラシック検索を使用する場合は、[SharePoint の Microsoft Search エクスペリエンスに影響を与えないようにする方法を学習してください](https://docs.microsoft.com/ja-JP/sharepoint/differences-classic-modern-search)。  
 
