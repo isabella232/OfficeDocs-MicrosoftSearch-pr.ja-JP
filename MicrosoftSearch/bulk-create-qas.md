@@ -13,53 +13,56 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
-description: Microsoft Search 管理ポータルのインポートツールでよく寄せられる質問への回答をすばやく追加する
-ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Microsoft Search 管理ポータルのインポート ツールを使用して、よく寄せられる質問への回答をすばやく追加します
+ms.openlocfilehash: f535cb7ae843def536976cb1f05c8601de592cbb
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508675"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968307"
 ---
-# <a name="bulk-create-qas"></a><span data-ttu-id="f56f3-103">Q&A の一括作成</span><span class="sxs-lookup"><span data-stu-id="f56f3-103">Bulk create Q&As</span></span>
+# <a name="bulk-create-qas"></a><span data-ttu-id="6b125-103">Q&A の一括作成</span><span class="sxs-lookup"><span data-stu-id="6b125-103">Bulk create Q&As</span></span>
 
-<span data-ttu-id="f56f3-104">.csv テンプレートをダウンロードして使用し、Q&As を一括作成または一括編集します。</span><span class="sxs-lookup"><span data-stu-id="f56f3-104">Download and use the .csv template to bulk create or bulk edit Q&As.</span></span> <span data-ttu-id="f56f3-105">また、追加の編集や更新が必要な下書き Q&As を一括保存する簡単な方法でもあります。</span><span class="sxs-lookup"><span data-stu-id="f56f3-105">It's also a simple way to bulk save draft Q&As that need additional edits or updates.</span></span> <span data-ttu-id="f56f3-106">既存の Q&As を一括編集する必要がある場合は、管理ポータルからそれらをエクスポートしてから、必要な編集を行ってからインポートします。</span><span class="sxs-lookup"><span data-stu-id="f56f3-106">If you need to bulk edit existing Q&As, export them from the Admin portal, make the necessary edits, and then import them.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="6b125-104">Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="6b125-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="6b125-105">まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。</span><span class="sxs-lookup"><span data-stu-id="6b125-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
+    
+<span data-ttu-id="6b125-106">.csv テンプレートをダウンロードして使用し、Q&A を一括作成または一括編集します。</span><span class="sxs-lookup"><span data-stu-id="6b125-106">Download and use the .csv template to bulk create or bulk edit Q&As.</span></span> <span data-ttu-id="6b125-107">これは、編集や更新が必要な Q&A を一括で下書き保存する簡単な方法でもあります。</span><span class="sxs-lookup"><span data-stu-id="6b125-107">It's also a simple way to bulk save draft Q&As that need additional edits or updates.</span></span> <span data-ttu-id="6b125-108">既存の Q&A を一括編集するには、管理ポータルからエクスポートし、必要な編集を行ってからインポートします。</span><span class="sxs-lookup"><span data-stu-id="6b125-108">If you need to bulk edit existing Q&As, export them from the Admin portal, make the necessary edits, and then import them.</span></span>
   
-1. <span data-ttu-id="f56f3-107">[Q&As] セクションの右上隅にある [**インポート**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f56f3-107">In the upper-right corner of the Q&As section, click **Import**</span></span>
+1. <span data-ttu-id="6b125-109">[Q&A] セクションの右上部分で、[**インポート**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6b125-109">In the upper-right corner of the Q&As section, click **Import**</span></span>
     
-2. <span data-ttu-id="f56f3-108">[ **Q&A テンプレート (.csv) をダウンロード**する] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f56f3-108">Click **Download Q&A template (.csv)**</span></span>
+2. <span data-ttu-id="6b125-110">[**Q&A テンプレート (.csv) をダウンロード**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6b125-110">Click **Download Q&A template (.csv)**</span></span>
     
-3. <span data-ttu-id="f56f3-109">.csv ファイルを保存して開きます。</span><span class="sxs-lookup"><span data-stu-id="f56f3-109">Save and open the .csv file</span></span>
+3. <span data-ttu-id="6b125-111">.csv ファイルを保存して開きます</span><span class="sxs-lookup"><span data-stu-id="6b125-111">Save and open the .csv file</span></span>
     
-4. <span data-ttu-id="f56f3-110">Q&A のコンテンツと設定を追加し、ファイルを保存する</span><span class="sxs-lookup"><span data-stu-id="f56f3-110">Add the Q&A content and settings and save the file</span></span>
+4. <span data-ttu-id="6b125-112">Q&A のコンテンツと設定を追加して、ファイルを保存します</span><span class="sxs-lookup"><span data-stu-id="6b125-112">Add the Q&A content and settings and save the file</span></span>
 
-    <span data-ttu-id="f56f3-111">.csv ファイルを csv utf-8 ファイルとして保存する必要があります。他のファイルの種類やエンコードにより、インポートエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="f56f3-111">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
+    <span data-ttu-id="6b125-113">この .csv ファイルは、CSV UTF-8 ファイルとして保存する必要があります。その他のファイルの種類やエンコーディングでは、インポート エラーが発生する可能性があります</span><span class="sxs-lookup"><span data-stu-id="6b125-113">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
     
-5. <span data-ttu-id="f56f3-112">[Q&As] セクションの右上隅にある [**インポート**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f56f3-112">In the upper-right corner of the Q&As section, click **Import**</span></span>
+5. <span data-ttu-id="6b125-114">[Q&A] セクションの右上部分で、**[インポート]** をクリックします</span><span class="sxs-lookup"><span data-stu-id="6b125-114">In the upper-right corner of the Q&As section, click **Import**</span></span>
     
-6. <span data-ttu-id="f56f3-113">[Q&As のインポート] ウィンドウで、[**参照**] をクリックし、インポートする .csv ファイルに移動します。</span><span class="sxs-lookup"><span data-stu-id="f56f3-113">In the Import Q&As pane, click **Browse** and navigate to the .csv file you want to import</span></span> 
+6. <span data-ttu-id="6b125-115">[Q&A のインポート] ウィンドウで、**[参照]** をクリックしてインポートする .csv ファイルに移動します</span><span class="sxs-lookup"><span data-stu-id="6b125-115">In the Import locations pane, select **Browse**, and then the .csv file that you want to import.</span></span> 
     
-7. <span data-ttu-id="f56f3-114">[**インポート**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f56f3-114">Click **Import**</span></span>
+7. <span data-ttu-id="6b125-116">**[インポート]** をクリックします</span><span class="sxs-lookup"><span data-stu-id="6b125-116">Click **Import**.</span></span>
 
-# <a name="prevent-import-errors"></a><span data-ttu-id="f56f3-115">インポートエラーを回避する</span><span class="sxs-lookup"><span data-stu-id="f56f3-115">Prevent import errors</span></span>      
-<span data-ttu-id="f56f3-116">必要なデータが不足しているか無効な場合は、エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f56f3-116">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="f56f3-117">エラーによっては、修正する必要がある行と列に関する詳細情報を含むログファイルが生成されることがあります。</span><span class="sxs-lookup"><span data-stu-id="f56f3-117">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="f56f3-118">必要な編集を行ってから、もう一度ファイルをインポートしてみてください。</span><span class="sxs-lookup"><span data-stu-id="f56f3-118">Make any necessary edits, and try importing the file again.</span></span>
+# <a name="prevent-import-errors"></a><span data-ttu-id="6b125-117">インポート エラーを回避する</span><span class="sxs-lookup"><span data-stu-id="6b125-117">Prevent import errors</span></span>      
+<span data-ttu-id="6b125-118">必要なデータが存在しないか無効な場合は、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="6b125-118">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="6b125-119">エラーによっては、修正の必要がある行や列に関する詳細情報が記載されたログ ファイルが生成される場合があります。</span><span class="sxs-lookup"><span data-stu-id="6b125-119">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="6b125-120">必要な編集を行い、ファイルのインポートを再度実行してください。</span><span class="sxs-lookup"><span data-stu-id="6b125-120">Make necessary edits and try importing the file again.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f56f3-119">すべてのエラーが解決されるまで、Q&As を作成または編集することはできません。</span><span class="sxs-lookup"><span data-stu-id="f56f3-119">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
+> <span data-ttu-id="6b125-121">すべてのエラーが解決されるまで、Q&A の作成または編集はできません。</span><span class="sxs-lookup"><span data-stu-id="6b125-121">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
 
-<span data-ttu-id="f56f3-120">エラーが発生しないようにするために、インポートファイルの形式が正しいことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="f56f3-120">To help prevent errors, make sure your import file is properly formatted:</span></span>
-- <span data-ttu-id="f56f3-121">インポートテンプレートに含まれていたヘッダー行を含みます。</span><span class="sxs-lookup"><span data-stu-id="f56f3-121">Includes the header row that was in the import template</span></span>
-- <span data-ttu-id="f56f3-122">インポートテンプレートに含まれていたすべての列を含みます。</span><span class="sxs-lookup"><span data-stu-id="f56f3-122">Includes all columns that were in the import template</span></span>
-- <span data-ttu-id="f56f3-123">列の順序はインポートテンプレートと同じです。</span><span class="sxs-lookup"><span data-stu-id="f56f3-123">The column order is the same as the import template</span></span>
-- <span data-ttu-id="f56f3-124">これらの列は空にすることができます。 Id、last modified、および last modified By</span><span class="sxs-lookup"><span data-stu-id="f56f3-124">These columns can be empty: Id, Last Modified, and Last Modified By</span></span>
-- <span data-ttu-id="f56f3-125">[状態] 列を空にすることはできません。この情報は必須です。</span><span class="sxs-lookup"><span data-stu-id="f56f3-125">The State column can't be empty, this information is required</span></span>  
-<span data-ttu-id="f56f3-126">[状態] フィールドに基づいて、Q&As が下書きとして保存されるか、提案され、スケジュールされるか、または自動的に公開されるようになります。</span><span class="sxs-lookup"><span data-stu-id="f56f3-126">Based on the State field, Q&As will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+<span data-ttu-id="6b125-122">エラーが発生しないように、インポート ファイルが正しく書式設定されていることに加えて、次の事項を確認してください。</span><span class="sxs-lookup"><span data-stu-id="6b125-122">To prevent errors, make sure your import file is properly formatted and:</span></span>
+- <span data-ttu-id="6b125-123">インポート テンプレートに存在していたヘッダー行が含まれていること</span><span class="sxs-lookup"><span data-stu-id="6b125-123">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="6b125-124">インポート テンプレートに存在していたすべての列が含まれていること</span><span class="sxs-lookup"><span data-stu-id="6b125-124">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="6b125-125">列の順序がインポート テンプレートと同じであること</span><span class="sxs-lookup"><span data-stu-id="6b125-125">The column order is the same as the import template</span></span>
+- <span data-ttu-id="6b125-126">空にできる列は、「Id」、「最終更新日時」、「最終更新者」です</span><span class="sxs-lookup"><span data-stu-id="6b125-126">All columns have values, except the three that can be empty: Id, Last Modified, and Last Modified By</span></span>
+- <span data-ttu-id="6b125-127">「状態」列は空にできません (この情報は必須です)</span><span class="sxs-lookup"><span data-stu-id="6b125-127">The State column is not empty, as this information is required</span></span>  
+<span data-ttu-id="6b125-128">状態フィールドに基づいて、Q&A は、下書き、おすすめ、スケジュール済みとして保存されるか、自動的に公開されます。</span><span class="sxs-lookup"><span data-stu-id="6b125-128">Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
 
-<span data-ttu-id="f56f3-127">また、既存の Q&A の Id を指定すると、インポートファイルの情報に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="f56f3-127">Also, if you include the Id of an existing Q&A, it will be replaced with the information in the import file.</span></span>
+<span data-ttu-id="6b125-129">また、既存の Q&A の Id を含めると、インポート ファイルの情報に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="6b125-129">If you include the Id of an existing bookmark, it will be replaced with the information in the import file.</span></span>
 
-<span data-ttu-id="f56f3-128">複数のテナントを持つ組織では、Q&As を1つのテナントからエクスポートして、別のテナントにインポートできます。</span><span class="sxs-lookup"><span data-stu-id="f56f3-128">For organizations with mulitple tenants, you can export your Q&As from one tenant and import it into another.</span></span> <span data-ttu-id="f56f3-129">ただし、インポートする前に、[Id] 列のすべてのデータを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f56f3-129">But you must remove all of the data in the Id column before you import.</span></span>
+<span data-ttu-id="6b125-130">複数のテナントを持つ組織の場合は、テナントからエクスポートした Q&A を別のテナントにインポートできます。</span><span class="sxs-lookup"><span data-stu-id="6b125-130">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="6b125-131">ただし、インポートする前に Id 列のすべてのデータを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b125-131">But you must remove the data in the Id column before you import.</span></span>
 
-<span data-ttu-id="f56f3-130">必須および推奨フィールドの詳細については、「 [Create Q&As](create-qas.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f56f3-130">To find out more about required and recommended fields, see [Create Q&As](create-qas.md).</span></span>
+<span data-ttu-id="6b125-132">必須フィールドと推奨フィールドの詳細については、「[Q&A の作成](create-qas.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b125-132">To find out more about required and recommended fields, see [Create Q&As](create-qas.md).</span></span>
 
   
 
