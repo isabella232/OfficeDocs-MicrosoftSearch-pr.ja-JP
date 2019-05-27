@@ -1,5 +1,5 @@
 ---
-title: Q&As の作成と管理
+title: Q&A の作成と管理
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
-description: Microsoft Search 管理ポータルでよく寄せられる質問への回答を作成するすべての方法の概要
-ms.openlocfilehash: f30693b0943a34786c9e52859c8c5c680dc6e141
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Microsoft Search 管理ポータルでよく寄せられる質問に対する回答を作成するすべての方法の概要
+ms.openlocfilehash: 09c6747dafd5d2cf029f75fec210d308356c54fe
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508747"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968436"
 ---
-# <a name="create-and-manage-qas"></a>Q&As の作成と管理
+# <a name="create-and-manage-qas"></a>Q&A の作成と管理
 
+> [!IMPORTANT]
+> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+    
 ## <a name="create-qas"></a>Q&A の作成
 
-Q&As は、ユーザーの職場関連の質問に対して考えられる最高の回答を提供します。 ユーザーは、Bing でそれらに関連付けられているキーワードを入力すると、簡単に見つけることができます。
+Q&A では、ユーザーの作業に関連する質問に対する最適な回答を提供します。 Bing で、それらにキーワードを関連付けておくと、ユーザーはキーワードを入力して、それらを簡単に見つけられるようになります。
   
-- [Q&As を作成する](create-qas.md)
+- [Q&A の作成](create-qas.md)
     
-    個別の Q&As を追加します。
+    個々の Q&A を追加します。
     
-- [Q&As を一括作成およびインポートする](bulk-create-qas.md)
+- [Q&A の一括作成とインポート](bulk-create-qas.md)
     
-    Q&As を .csv ファイルに作成し、一括インポートします。
+    .csv ファイルで Q&A を作成して、一括でインポートします。
     
 ## <a name="manage-qas"></a>Q&A の管理
 
-Q&A status、filtering tools、および bulk export/import ツールを使用して、Q&A コンテンツ (タイトル、回答、キーワード、url など) を[検索して更新](manage-qas.md)します。
+Q&A の状態、フィルタリング ツール、一括エクスポート/インポート ツールを使用して、タイトル、回答、キーワード、URL などの [Q&A コンテンツを検索および更新](manage-qas.md)します。
   
 ## <a name="qa-status"></a>Q&A の状態
 
-管理ポータルでは、現在の状態によって Q&As を表示できます。
+管理ポータルでは、現在の状態ごとに Q&A を表示できます。
   
-- Published
+- 公開済み
     
-    公開された Q&As は、承認されたユーザーがキーワードを検索したときに、Bing 検索結果に表示されます。
+    公開済みの Q&A は、承認されたユーザーがキーワードを検索すると、Bing の検索結果に表示されます。
     
-- Draft
+- 下書き
     
-    Q&A を発行する準備ができていない場合は、下書きとして保存します。 下書き Q&As は Bing に表示されません。
+    Q&A は、公開する準備ができていない場合、下書きとして保存されます。 下書きの Q&A は、Bing に表示されません。
     
 - スケジュール済み
     
-    スケジュールされた Q&As は、将来の日付に自動的に公開されます。
+    スケジュール済みの Q&A は、将来の日付で自動的に公開されます。
     
-- 有効期限切れ
+- 期限切れ
     
-    期限切れの Q&As は、有効期限日に基づいて、公開されたコンテンツから自動的に削除されました。
+    期限切れの Q&A は、その期限切れ日に基づいて、公開されたコンテンツから自動的に削除されます。
     
-- 内容
+- おすすめ
     
-    推奨される Q&As は、ユーザーからのフィードバックに基づいています。
+    おすすめの Q&A は、ユーザーからのフィードバックに基づいています。
 
   
 

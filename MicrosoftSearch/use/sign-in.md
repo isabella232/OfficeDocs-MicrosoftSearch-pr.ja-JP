@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 429fb92c-e968-4d61-be15-6ecebfdbd157
-description: Microsoft Search または職場または学校のアカウントを使用して Office 365 アプリにすばやくサインインする
+description: 職場または学校のアカウントを使用して、Microsoft Search または Office 365 アプリにすばやくサインインします
 ms.openlocfilehash: 0edfd7d244e953beb8153f494e83a3e59c74c007
 ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/01/2019
 ms.locfileid: "33508867"
 ---
 # <a name="sign-in-to-microsoft-search"></a>Microsoft Search にサインインする
 
-IT 部門が Microsoft の検索ユーザーとして追加したら、職場または学校のアカウントでサインインします。
+IT 部署によって Microsoft Search ユーザーとして追加されたら、職場または学校のアカウントでサインインします。
   
 ## <a name="sign-in-to-microsoft-search"></a>Microsoft Search にサインインする
 
-Office 365 アプリケーションに既にサインインしている場合は、Bing にアクセスすると、Microsoft Search に自動的にサインインします。 サインインしていない場合:
+既に Office 365 のアプリケーションにサインインしている場合は、Bing に移動すると自動的に Microsoft Search にサインにされます。 サインインしていない場合:
   
-1. 任意の Bing ページの右上隅にある [**サインイン**] または [**サインイン] をクリックして、ビジネス結果を表示**します。
+1. Bing ページの右上にある、**[サインイン]** または **[サインインしてビジネスの成果を参照]** をクリックします
     
-2. これらのサインインオプションが表示されない場合は、[ [Microsoft Search の参照](https://www.bing.com/business/explore)] に移動します。
+2. これらのサインイン オプションが表示されない場合は、「[Microsoft Search を探索する](https://www.bing.com/business/explore)」に移動してください
     
-    組織のサインインページに自動的にリダイレクトされます。
+    組織のサインイン ページに自動的にリダイレクトされます。
     
-3. [アカウント] メニューで、[**職場または学校のアカウント**] の横の [**接続**] をクリックします。
+3. **職場または学校のアカウント**の横にある [アカウント] メニューで、**[接続]** をクリックします
     
-4. メッセージが表示されたら、サインインに使用するアカウントを選択するか、またはメールアドレスとパスワードを入力します。
+4. メッセージが表示されたら、サインインするアカウントを選択するか、メール アドレスとパスワードを入力します
     
-## <a name="use-a-browser-extension-to-sign-in-automatically"></a>ブラウザー拡張機能を使用して自動的にサインインする
+## <a name="use-a-browser-extension-to-sign-in-automatically"></a>ブラウザーの拡張機能を使用して自動的にサインインする
 
-windows 10 で Chrome を使用する場合は、windows 10 と AAD サインイン拡張機能をインストールします。 これにより、電子メールアドレスとパスワードを入力することなく、Microsoft Search および Office 365 などのサポート対象サイトにサインインすることができます。
+Windows 10 で Chrome を使用している場合は、Windows 10 と AAD サインイン拡張機能をインストールします。 これにより、Microsoft Search や Office 365 などのサポートされているサイトに、メール アドレスとパスワードを入力することなくサインインできます。
   
 ## <a name="sign-out-of-microsoft-search"></a>Microsoft Search からサインアウトする
 
-- Bing ページの右上隅で自分の名前をクリックし、[アカウント] メニューの [**職場または学校のアカウント**] の横にある [**サインアウト**] をクリックします。
+- Bing ページの右上で、自分の名前をクリックして、**[職場または学校アカウント]** の横にある **[サインアウト]** をクリックします。
     
-Bing は、サインインまたはサインアウトした職場または学校のアカウントの状態をブラウザーの cookie に保存します。 サインアウトして cookie をクリアすると、次回 Bing にアクセスしたときに、自動的にサインインしたときに、もう一度サインインするように求めるメッセージが表示される場合があります。 組織の IT 部門がこれを構成します。
+Bing により、職場または学校アカウントの状態 (サインインまたはサインアウトのいずれか) がブラウザーの cookie に保存されます。 サインアウトして cookie をクリアすると、その次に Bing に移動するときに、自動的にサインインされることも、もう一度サインインを求めるメッセージが表示されることもあります。 これは、IT 部署が組織に応じて構成します。
   
-microsoft Search にサインインすると、パーソナライズされた結果や microsoft 報奨などの一部の機能が異なる動作をしたり、利用できなくなることがあります。
+Microsoft Search にサインインすると、カスタマイズした検索結果や Microsoft Rewards のような一部の機能の動作が異なることや、利用できなくなることがあります。
 
   
 

@@ -1,5 +1,5 @@
 ---
-title: ブックマークを作成および管理する
+title: ブックマークの作成と管理
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,67 +13,70 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: Microsoft Search の作業結果のブックマークを追加および作成する方法の概要
-ms.openlocfilehash: 306a7cb3b278556454c3050926fed93f2a6929ad
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Microsoft Search の作業結果のブックマークを追加および作成するすべての方法の概要
+ms.openlocfilehash: a7243d43eb5132c8096115852a4ebd8bd4dc3305
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508659"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968377"
 ---
-# <a name="create-and-manage-bookmarks"></a>ブックマークを作成および管理する
+# <a name="create-and-manage-bookmarks"></a>ブックマークの作成と管理
 
-## <a name="create-bookmarks"></a>ブックマークを作成します
+> [!IMPORTANT]
+> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+    
+## <a name="create-bookmarks"></a>ブックマークを作成する
 
-ブックマークを使用すると、ユーザーの仕事に関連するクエリに対して最適な結果を促進できます。 公開するブックマークが多いほど、ユーザーに対して追加できる価値とメリットが増えます。
+ブックマークを使用すると、ユーザーの作業に関連するクエリの最適な結果を昇格できます。 ブックマークの公開数が増えれば増えるほど、ユーザーにとって価値が高く、利益が大きいものになります。
   
-- [ブックマークを作成します](create-bookmarks.md)
+- [ブックマークの作成](create-bookmarks.md)
     
     個々のブックマークを追加します。
     
 - [既定のブックマークの公開](publish-default-bookmarks.md)
     
-    一般的な検索に対処する提案されたブックマークをレビューして追加します。
+    一般的な検索に対応するおすすめのブックマークを確認および追加します。
     
 - [SharePoint の昇格した結果および上位のクエリのインポート](import-sharepoint-promoted-results-and-top-queries.md)
     
-    ユーザーのクエリと既存のおすすめコンテンツの結果を活用して、提案されたブックマークを作成します。
+    ユーザーのクエリと既存のおすすめコンテンツの結果を使用して、おすすめのブックマークを作成します。
     
 - [ブックマークの一括作成](bulk-create-bookmarks.md)
     
-    .csv ファイルにブックマークを作成し、それらを一括インポートします。
+    .csv ファイルのブックマークを作成し、一括でインポートします。
     
 - [PowerApps の統合](integrate-powerapps.md)
     
-    ビジネスアプリをブックマークに追加します。
+    ビジネス アプリケーションをブックマークに追加します。
     
 ## <a name="manage-bookmarks"></a>ブックマークの管理
 
-ブックマークの状態、フィルターツール、および一括エクスポート/インポートツールを使用して、ブックマークのコンテンツ (タイトル、キーワード、url など) を[検索して更新](manage-bookmarks.md)します。
+ブックマークの状態、フィルター ツール、一括エクスポート/インポート ツールを使用して、タイトル、キーワード、URL などの[ブックマークのコンテンツを検索および更新](manage-bookmarks.md)します。
   
 ## <a name="bookmark-status"></a>ブックマークの状態
 
-管理ポータルでは、現在の状態によってブックマークを表示できます。
+管理ポータルでは、現在の状態ごとにブックマークを表示できます。
   
-- Published
+- 公開済み
     
-    承認されたユーザーがキーワードを検索すると、公開されたブックマークが Bing の検索結果に表示されます。
+    公開済みのブックマークは、承認されたユーザーがキーワードを検索するときに、検索結果に表示されます。
     
-- Draft
+- 下書き
     
-    ブックマークを発行する準備ができていない場合は、下書きとして保存します。 下書きのブックマークは Bing に表示されません。
+    ブックマークは、公開する準備ができていない場合、下書きとして保存します。 下書きのブックマークは、Bing に表示されません。
     
 - スケジュール済み
     
-    スケジュールされたブックマークは、将来の日付に自動的に公開されます。
+    スケジュール済みのブックマークは、将来の日付で自動的に公開されます。
     
-- 有効期限切れ
+- 期限切れ
     
-    期限切れのブックマークは、有効期限の日付に基づいて、公開されたコンテンツから自動的に削除されました。
+    期限切れのブックマークは、その期限切れ日に基づいて、公開されたコンテンツから自動的に削除されます。
     
-- 内容
+- おすすめ
     
-    推奨されるブックマークは、ユーザーからのフィードバックに基づいています。 Microsoft からの既定の提案が表示される場合もあります。
+    おすすめのブックマークは、ユーザーからのフィードバックに基づいています。 Microsoft からの既定の候補が表示されることもあります。
 
   
 

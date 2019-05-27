@@ -13,49 +13,54 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: Microsoft Search のブックマーク検索結果にブラウザーベースのアプリを含める
-ms.openlocfilehash: d8d9d099848e719c86e0f3cadee330263566d243
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Microsoft Search のブックマーク結果にブラウザー ベースのアプリを組み込みます
+ms.openlocfilehash: 96b409274e3fa06cef7dcc6f1c43360a3e6b9d34
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508827"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968383"
 ---
 # <a name="integrate-powerapps"></a>PowerApps の統合
 
-休暇の入力や、既存の PowerApps をブックマークに統合することによる経費の報告など、ユーザーがタスクを完了できるようにします。 統合 PowerApps はブックマークの結果内に表示されます。別のサイトに移動したり、別のツールを開いたりする必要がなくなり、時間と労力を節約できます。
+> [!IMPORTANT]
+> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+    
+既存の PowerApps をブックマークに統合することで、休暇期間の入力や経費の報告などのユーザーのタスク実行を支援します。 統合された PowerApps はブックマークの結果内に表示されるため、別のサイトへの移動や別のツールを開く必要がなくなり、時間と労力を節約できます。
   
-## <a name="what-are-powerapps"></a>PowerApps とは
+## <a name="what-are-powerapps"></a>PowerApps とはどういったものですか? 
 
-PowerApps は、ブラウザーまたは携帯電話やタブレットで実行されるビジネスアプリを、コーディング操作を必要とせずに作成できるサービスです。 詳細については、次の項目を参照してください。
+PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 詳細情報:
   
-- [ガイド付き学習](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
+- 
+  [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)
     
-- [ドキュメント](https://docs.microsoft.com/en-us/powerapps/)
+- 
+  [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/)
     
-## <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに powerapp を追加する
+## <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに PowerApp を追加する
 
-PowerApps は任意のブラウザーおよび任意のデバイスで使用できます。追加するには、1分以内にする必要があります。
+PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分もかかりません。
   
-1. 統合する[powerapp のアプリ ID を検索](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)する 
+1. 統合する [PowerApp の App ID を検索します](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
     
-2. Microsoft searchadmin ポータルで、[**ブックマーク**] に移動します。
+2. Microsoft Search 管理ポータルで、**[ブックマーク]** に移動します
     
-3. powerapp を追加するブックマークを追加するか、既存のブックマークを検索します。
+3. ブックマークを追加するか、PowerApp を追加する既存のブックマークを検索します。
     
-4. [ブックマークの設定] で、[ **power app**] をクリックし、[ **power app の追加**] をクリックします。
+4. [ブックマークの設定] で、**[Power App]** をクリックして、**[Power App の追加]** をクリックします。
     
-5. アプリ ID を入力または貼り付けます。
+5. App ID を入力するか貼り付けます
     
-    高さと幅は自動的に追加されます。 ブックマークは縦方向と横方向の両方をサポートできますが、現在サイズを変更することはできません。
+    高さと幅が自動的に追加されます。 ブックマークでは、縦向きと横向きの両方の向きはサポートされていますが、現時点では、サイズの変更はできません。
     
-6. ブックマークのプレビューは、powerapp がブックマークの結果にどのように表示されるかを示しています。
+6. ブックマーク プレビューには、PowerApp がブックマーク結果にどのように表示されるかが示されます。
     
-    プレビューの powerapp は、テストと使用が容易になるように完全に機能します。
+    プレビューの PowerApp は、テストおよび使用を簡単にするための完全な機能が備わっています。
     
-7. [**発行**] をクリックします。
+7. **[公開]** をクリックします。
     
-承認された Microsoft 検索ユーザーが、任意のブックマークのキーワードまたは予約済みキーワードを使用して Bing で検索すると、powerapp がブックマークの結果に表示されます。
+承認された Microsoft Search ユーザーがブックマークのキーワードまたは予約キーワードを検索すると、ブックマーク結果に PowerApp が表示されます。
 
   
 

@@ -13,55 +13,58 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: 組織の場所を Microsoft Search の作業結果に含めることができるすべての方法の概要
-ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Microsoft Search の作業結果に組織の場所の情報を含めるすべての方法についての概要
+ms.openlocfilehash: bcda64315f85b9770f47d1b6c08fd90296063487
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508811"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968461"
 ---
 # <a name="locations"></a>場所
 
-## <a name="add-locations"></a>場所を追加する
+> [!IMPORTANT]
+> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+    
+## <a name="add-locations"></a>場所の追加
 
-場所を使用すると、ユーザーはアドレスを見つけて、組織の建物、オフィス、および地図上のその他のワークスペースを見つけることができます。 また、Bing マップを使用して、方向を取得したり、近くにあるものを表示したりすることもできます。
+場所の情報は、ユーザーが組織の建物やオフィスなどの作業空間の住所を調べて、地図で位置を特定する際に役立ちます。 ユーザーは Bing 地図を使用して、道順を調べたり、近所に何があるかを確認したりできます。
   
 - [場所の追加](add-a-location.md)
     
-    建物、office、キャンパス、またはその他のワークスペースを追加する
+    建物、オフィス、キャンパスなどの作業空間を追加します
     
 - [場所の一括作成](bulk-create-locations.md)
     
-    場所を .csv ファイルに追加して一括インポートする
+    場所の情報を .csv ファイルに追加して、一括でインポートします
     
 ## <a name="manage-locations"></a>場所の管理
 
-場所の状態、フィルターツール、および一括エクスポート/インポートツールを使用して、住所と場所の名前を含む場所を[検索して更新](manage-locations.md)します。
+場所の状態、フィルタリング ツール、および一括エクスポート/インポート ツールを使用して、住所と地名を含む[場所の情報を検索および更新](manage-locations.md)します
   
 ## <a name="location-status"></a>場所の状態
 
-管理ポータルでは、現在の状態別に場所を表示できます。
+管理ポータルでは、現在の状態ごとに場所の情報を表示できます。
   
-- Published
+- 公開済み
     
-    承認されたユーザーがキーワードを検索すると、公開された場所が Bing の検索結果に表示されます。
+    公開済みの場所の情報は、承認されたユーザーがキーワードを検索すると、Bing の検索結果に表示されます。
     
-- Draft
+- 下書き
     
-    場所を公開する準備ができていない場合は、下書きとして保存します。 下書きの場所は Bing に表示されません。
+    場所の情報は、公開する準備ができていない場合、下書きとして保存されます。 下書きの場所は、Bing に表示されません。
     
 - スケジュール済み
     
-    予約した場所は、将来の日付に自動的に公開されます。
+    スケジュール済みの場所の情報は、将来の日付で自動的に公開されます。
     
-- 有効期限切れ
+- 期限切れ
     
-    期限切れの場所は、有効期限の日付に基づいて、公開されたコンテンツから自動的に削除されました。
+    期限切れの場所の情報は、その期限切れ日に基づいて、公開されたコンテンツから自動的に削除されます。
     
-- 内容
+- おすすめ
     
-    推奨される場所は、ユーザーからのフィードバックに基づいています。 Microsoft からの既定の提案が表示される場合もあります。
+    おすすめの場所の情報は、ユーザーからのフィードバックに基づいています。 Microsoft からの既定の候補が表示されることもあります。
 
   
 

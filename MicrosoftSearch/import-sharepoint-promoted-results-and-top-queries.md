@@ -13,33 +13,36 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
-description: SharePoint からの検索クエリを使用して Microsoft search の作業結果を作成する
-ms.openlocfilehash: f4fa4354fed667800c1cdcf63c86f59d736c342a
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: SharePoint からの検索クエリを使用して、Microsoft Search の作業結果を作成します
+ms.openlocfilehash: 6e55e2000792bdb576a18a0efeb353dc3ea13605
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508755"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968453"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>SharePoint の昇格した結果および上位のクエリのインポート
 
-SharePoint で作成したユーザーのクエリとおすすめコンテンツを活用するために、Microsoft Search には、この情報を提案されたブックマークとしてインポートするためのツールが2つ含まれています。 
+> [!IMPORTANT]
+> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+    
+SharePoint で作成したユーザーのクエリと「おすすめコンテンツ」を活用するために、Microsoft Search には、この情報をおすすめのブックマークとしてインポートする 2 つのツールが組み込まれています。 
   
-## <a name="import-sharepoint-promoted-result-query-rules"></a>SharePoint で昇格した結果のクエリルールをインポートする
+## <a name="import-sharepoint-promoted-result-query-rules"></a>SharePoint の昇格した結果のクエリ ルールをインポートする
 
-推奨されるブックマークとして、これらのルール (以前のおすすめコンテンツ) をインポートします。 それらをユーザーが使用できるようにするには、それらを公開します。 公開時間は、選択したブックマークの数によって異なります。
+こうしたルール (以前は「おすすめコンテンツ」と呼ばれていました) を、おすすめのブックマークとしてインポートします。 これらをユーザーが利用できるようにするには、公開します。 公開にかかる時間は、選択したブックマークの数に基づいて変化します。
   
-## <a name="import-top-sharepoint-queries-using-powershell"></a>PowerShell を使用してトップの SharePoint クエリをインポートする
+## <a name="import-top-sharepoint-queries-using-powershell"></a>PowerShell を使用して、SharePoint の上位のクエリをインポートする
 
-- SharePoint から上位のクエリをダウンロードします。 PowerShell スクリプトでは、SharePoint 管理者の資格情報の入力を求められます。
+- 上位のクエリを SharePoint からダウンロードします。 PowerShell スクリプトでは、SharePoint 管理者の資格情報を求めるメッセージが表示されます。
     
-- 上位の検索結果を取得するには、上位の各クエリに対して SharePoint 検索を実行します。
+- 上位の検索結果を得るには、上位の各クエリの SharePoint 検索を実行します。
     
-- 管理ポータルに推奨されるブックマークを追加します。
+- 管理ポータルに、おすすめのブックマークを追加します。
     
-- SharePoint の上位のクエリは、ブックマークを作成するのに適しています。 PowerShell スクリプトを使用して、提案されたブックマークとしてインポートします。 このスクリプトは次のようになります。
+- SharePoint の上位のクエリが、ブックマークの適した候補になります。 おすすめのブックマークとしてインポートするには、PowerShell スクリプトを使用します。 このスクリプトを使用すると、次のようになります。
     
-要件、例、および使用可能なパラメーターの詳細については、スクリプトをダウンロードし、README ファイルを参照してください。 PowerShell スクリプトを実行した後、管理者または編集者は、提案されているブックマークを確認して、公開する前に必要な編集を行う必要があります。
+要件、例、使用可能なパラメーターについては、スクリプトをダウンロードし、README ファイルを確認します。 この PowerShell スクリプトの実行後に、管理者または共同編集者は、おすすめのブックマークを確認して、公開する前に必要な編集を加える必要があります。
 
   
 
