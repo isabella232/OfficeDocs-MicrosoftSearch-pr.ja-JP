@@ -3,22 +3,23 @@ title: Microsoft Search を使用してコンテンツを見つけやすくす�
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
+ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: ブックマーク、場所、Q&A 項目を作成して、組織のコンテンツを簡単に見つけられるようにします。
-ms.openlocfilehash: e7f65715faf71165549cb1af7f15a4d3ac918f19
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 851f88206d7f8e0330497c9706b02ad98e0f8e6c
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33511070"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591568"
 ---
 # <a name="make-content-easy-to-find"></a>簡単に見つけられるコンテンツ
 ****Microsoft Search**** は、ユーザーが関連コンテンツを見つけるのに役立つ機能です。 **Microsoft Search** を使用すると、イントラネットと Web の両方のコンテンツを安全に検索できます。 このような Web と組織の統合は、Microsoft だけが提供しています。 
@@ -156,8 +157,9 @@ ms.locfileid: "33511070"
 #### <a name="what-are-powerapps"></a>PowerApps とはどういったものですか? 
 PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分かかりません。 PowerApps の詳細については、以下を参照してください。
 - 
-  [ガイド付き学習](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
-- [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid)
+  [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)
+- 
+  [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps ホーム](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに PowerApp を追加する
