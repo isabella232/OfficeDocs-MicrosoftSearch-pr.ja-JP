@@ -1,9 +1,9 @@
 ---
 title: コンテンツの計画
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 12/18/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -14,130 +14,106 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Microsoft Search を使用して、その他のリソースに頼らずに質の高いコンテンツを提供します
-ms.openlocfilehash: 898ba99ebf4751c47da96b23d6cb9bac058f6ffd
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 88c2af543be02f8e17937e36a81fd28d862e8fb0
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508603"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591208"
 ---
-# <a name="plan-your-content"></a><span data-ttu-id="89c1b-103">コンテンツの計画</span><span class="sxs-lookup"><span data-stu-id="89c1b-103">Plan your content</span></span>
+# <a name="plan-your-content"></a><span data-ttu-id="1606e-103">コンテンツの計画</span><span class="sxs-lookup"><span data-stu-id="1606e-103">Plan your content</span></span>
 
-<span data-ttu-id="89c1b-104">コンテンツを計画する前に、以下の、Microsoft Search に追加することができるものを理解しておくことが大切です。</span><span class="sxs-lookup"><span data-stu-id="89c1b-104">Before planning your content, understanding what you can add to Microsoft Search will be helpful:</span></span>
-  
-- <span data-ttu-id="89c1b-105">ブックマーク</span><span class="sxs-lookup"><span data-stu-id="89c1b-105">Bookmarks</span></span>
-    
-    <span data-ttu-id="89c1b-106">追加の情報を入手できる内部サイト、ページ、またはツールへのリンクを素早くユーザーに提供します。</span><span class="sxs-lookup"><span data-stu-id="89c1b-106">Quickly give users a link to an internal site, page, or tool where they can get additional information.</span></span>
-    
-- <span data-ttu-id="89c1b-107">Q&A</span><span class="sxs-lookup"><span data-stu-id="89c1b-107">Q&As</span></span>
-    
-    <span data-ttu-id="89c1b-p101">ユーザーに対する回答や情報を、必要に応じてリンクを含めて提供します。Q&A には、ユーザーが情報源に移動しなくても済むよう探している詳細をすべて含めることが理想です。Q&A のコンテンツの書式を設定して画像、リスト、表などを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p101">Provide an answer or info to users including an optional link. Ideally, a Q&A includes all the details your users are looking for so they don't need to go to the source. You can format your Q&A content and include images, lists, and tables.</span></span>
-    
-## <a name="identify-information-your-users-need"></a><span data-ttu-id="89c1b-111">ユーザーが必要な情報を特定する</span><span class="sxs-lookup"><span data-stu-id="89c1b-111">Identify information your users need</span></span>
+<span data-ttu-id="1606e-104">\*\*\*\*Microsoft Search\*\*\*\* は、ユーザーが関連コンテンツを見つけるのに役立つ機能です。</span><span class="sxs-lookup"><span data-stu-id="1606e-104">\*\*\*\*Microsoft Search\*\*\*\* helps users find relevant content.</span></span> <span data-ttu-id="1606e-105">**Microsoft Search** を使用すると、イントラネットと Web の両方のコンテンツを安全に検索できます。</span><span class="sxs-lookup"><span data-stu-id="1606e-105">**Microsoft Search** is a secure way to search both your intranet and web content.</span></span> <span data-ttu-id="1606e-106">このような Web と組織の統合は、Microsoft だけが提供しています。</span><span class="sxs-lookup"><span data-stu-id="1606e-106">This kind of integration across web and organization is available only with Microsoft.</span></span> 
 
-<span data-ttu-id="89c1b-112">以下のアイデアを参考にしてください。</span><span class="sxs-lookup"><span data-stu-id="89c1b-112">Consider these ideas:</span></span>
-  
-- <span data-ttu-id="89c1b-113">ブックマークとして [SharePoint の昇格結果とよく使用されるクエリをインポートする](import-sharepoint-promoted-results-and-top-queries.md)</span><span class="sxs-lookup"><span data-stu-id="89c1b-113">[Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md) as bookmarks</span></span> 
-    
-- <span data-ttu-id="89c1b-114">イントラネットの検索ログを使用して、トラフィックが最も多いサイトやページを判別する</span><span class="sxs-lookup"><span data-stu-id="89c1b-114">Use intranet search logs to determine sites and pages that get the most traffic</span></span>
-    
-- <span data-ttu-id="89c1b-115">毎日または毎週の頻度で使用されるアプリ、サイト、およびツールを判別する</span><span class="sxs-lookup"><span data-stu-id="89c1b-115">Determine apps, sites, and tools that are used on a daily or weekly basis</span></span>
-    
-- <span data-ttu-id="89c1b-116">従業員の主要な福利厚生に関する情報とそうした情報へのリンクを集める</span><span class="sxs-lookup"><span data-stu-id="89c1b-116">Gather information about key employee benefits and direct link to them</span></span>
-    
-- <span data-ttu-id="89c1b-117">ユーザーが把握する必要があるポリシーとプロセスを確認する</span><span class="sxs-lookup"><span data-stu-id="89c1b-117">Find policies and processes users need to be aware of</span></span>
-    
-- <span data-ttu-id="89c1b-118">サポートにお問い合わせを行うユーザーと問い合わせ方法を決める</span><span class="sxs-lookup"><span data-stu-id="89c1b-118">Decide who and how users should contact support</span></span>
-    
-- <span data-ttu-id="89c1b-119">季節やビジネス サイクルに合わせて定期的に必要になる情報を入手する</span><span class="sxs-lookup"><span data-stu-id="89c1b-119">Get information that's needed on a recurring basis, either seasonally or based on business cycles</span></span>
-  
-<span data-ttu-id="89c1b-120">たとえば、従業員が休暇申請のツールや四半期財務諸表などを求めている場合</span><span class="sxs-lookup"><span data-stu-id="89c1b-120">For example, people looking for tools to book time off or quarterly financial updates</span></span>
-    
-- <span data-ttu-id="89c1b-121">地方勤務やモバイル社員のユーザーのために、事業所により異なる福利厚生規定を集める</span><span class="sxs-lookup"><span data-stu-id="89c1b-121">Collect policies for regional or mobile users like benefits that vary by location</span></span>
-    
-- <span data-ttu-id="89c1b-122">代表的な Web 検索のために内部サイトと情報を確認する</span><span class="sxs-lookup"><span data-stu-id="89c1b-122">Determine internal sites and information for common web searches</span></span>
-  
-<span data-ttu-id="89c1b-123">たとえば、交通情報、公共交通機関情報、地域の天気、取引先企業での割引、健康やフィットネス プログラムなど</span><span class="sxs-lookup"><span data-stu-id="89c1b-123">For example, traffic, public transit information, local weather, discounts available from corporate partners, and health and fitness programs</span></span>
-    
-- <span data-ttu-id="89c1b-124">会社がスポンサーになっているイベント、会議、社員旅行などに関する情報を見つける</span><span class="sxs-lookup"><span data-stu-id="89c1b-124">Find information about company-sponsored events, conferences, or retreats</span></span>
-    
-- <span data-ttu-id="89c1b-125">代表的な IT、人事、サポート関連の問題やよく寄せられる質問と回答について調べる</span><span class="sxs-lookup"><span data-stu-id="89c1b-125">Research common IT, HR, and support issues and frequently asked questions and answers</span></span>
-    
-## <a name="build-a-support-team"></a><span data-ttu-id="89c1b-126">サポート チームを構築する</span><span class="sxs-lookup"><span data-stu-id="89c1b-126">Build a support team</span></span>
+<span data-ttu-id="1606e-107">検索管理者は、組織とそのユーザーに関する知識を使用して、ユーザーが関連コンテンツを簡単に見つけられるようにします。</span><span class="sxs-lookup"><span data-stu-id="1606e-107">Search administrators use their knowledge of the organization and its users to make it easy for users to find the relevant content.</span></span> 
 
- <span data-ttu-id="89c1b-127">**特定分野のエキスパートを活用する**</span><span class="sxs-lookup"><span data-stu-id="89c1b-127">**Leverage subject matter experts**</span></span>
-  
-<span data-ttu-id="89c1b-p102">人事、サポート、営業、およびその他の主要な部門の専門家が含まれるサポート チームを作ります。特定分野のエキスパートが直接コンテンツを投稿することを許可するには、管理ポータルで編集者として追加します。これを行うと、スタッフを増やすことなく、利用可能なコンテンツの量の調整を行えるようになります。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p102">Build a support team that includes experts from HR, support, sales, and other key areas. To allow your SMEs to contribute content directly, add them as editors in the Admin portal. This also allows you to scale the amount of available content without needing additional staff resources.</span></span>
-  
- <span data-ttu-id="89c1b-131">**ユーザーの参加をはかる**</span><span class="sxs-lookup"><span data-stu-id="89c1b-131">**Involve your users**</span></span>
-  
-<span data-ttu-id="89c1b-p103">ユーザーにコンテンツ作成プロセスに参加してもらうことにより、Microsoft Search の使用を奨励します。作業結果のフィードバック リンクや、Microsoft Edge や Chrome の検索拡張機能を使用してもらい、ブックマークや Q&A の提案をしてもらいます。コンテンツの提案に加え、リンク切れや無効なリンクなどのエラーに関する報告やその他のフィードバックをしてもらうようにします。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p103">Involving users in the content creation process encourages them to use Microsoft Search. Ask them to use the feedback link in work results or the Edge or Chrome search extension to suggest bookmarks and Q&As. In addition to suggesting content, they can report errors, like broken or invalid links, and provide other feedback.</span></span>
-  
-## <a name="create-high-quality-content"></a><span data-ttu-id="89c1b-135">高品質のコンテンツを作成する</span><span class="sxs-lookup"><span data-stu-id="89c1b-135">Create high-quality content</span></span>
+## <a name="step-1-identify-information-your-users-need"></a><span data-ttu-id="1606e-108">手順 1: ユーザーが必要な情報を特定する</span><span class="sxs-lookup"><span data-stu-id="1606e-108">Step 1: Identify information your users need</span></span>
+<span data-ttu-id="1606e-109">ユーザーが何を検索しているのかを調べ、検索内容を簡単に検出できるようにします。</span><span class="sxs-lookup"><span data-stu-id="1606e-109">Find out what your users are searching for and make that easily discoverable.</span></span> <span data-ttu-id="1606e-110">以下に、ユーザーが必要とする情報を調べるためのアイデアをいくつか紹介します。</span><span class="sxs-lookup"><span data-stu-id="1606e-110">Here are some ideas for finding out what information users need:</span></span> 
+- <span data-ttu-id="1606e-111">イントラネットの検索ログを使用して、トラフィックが最も多いサイトやページを判別する。</span><span class="sxs-lookup"><span data-stu-id="1606e-111">Use intranet search logs to determine sites and pages that get the most traffic.</span></span>
+- <span data-ttu-id="1606e-112">毎日または毎週の頻度で使用されるアプリ、サイト、およびツールを判別する。</span><span class="sxs-lookup"><span data-stu-id="1606e-112">Determine apps, sites, and tools that are used on a daily or weekly basis.</span></span>
+- <span data-ttu-id="1606e-113">従業員の福利厚生の直接リンクを確認する。</span><span class="sxs-lookup"><span data-stu-id="1606e-113">Find direct links for employee benefits.</span></span>
+- <span data-ttu-id="1606e-114">ユーザーが把握する必要があるポリシーとプロセスを確認する。</span><span class="sxs-lookup"><span data-stu-id="1606e-114">Find policies and processes that users need to be aware of.</span></span>
+- <span data-ttu-id="1606e-115">ユーザーがサポートに問い合わせる際の「連絡先担当者」と「連絡方法」を決める。</span><span class="sxs-lookup"><span data-stu-id="1606e-115">Decide ‘who’ and ‘how’ users should contact Support.</span></span>
+- <span data-ttu-id="1606e-116">季節やビジネス サイクルに合わせて定期的に必要になる情報を入手する。たとえば、従業員が休暇申請のツールや四半期財務諸表などを求めている場合。</span><span class="sxs-lookup"><span data-stu-id="1606e-116">Get information that is needed on a recurring basis, either seasonally or based on business cycles; for example, people looking for tools to book time off or quarterly financial updates.</span></span>
+- <span data-ttu-id="1606e-117">地方勤務やモバイル社員のユーザーのために、事業所により異なる福利厚生規定を集める。</span><span class="sxs-lookup"><span data-stu-id="1606e-117">Collect policies for regional or mobile users, like benefits that vary by location.</span></span>
+- <span data-ttu-id="1606e-118">代表的な Web 検索のために内部サイトと情報を確認する。たとえば、交通情報、公共交通機関情報、地域の天気、取引先企業での割引、健康やフィットネス プログラム。</span><span class="sxs-lookup"><span data-stu-id="1606e-118">Determine internal sites and information for common web searches; for example, traffic, public transit information, local weather, discounts available from corporate partners, and health and fitness programs.</span></span>
+- <span data-ttu-id="1606e-119">会社がスポンサーになっているイベント、会議、社員旅行などに関する情報を見つける。</span><span class="sxs-lookup"><span data-stu-id="1606e-119">Find information about company-sponsored events, conferences, or retreats.</span></span>
+- <span data-ttu-id="1606e-120">代表的な IT、人事、サポート関連の問題やよく寄せられる質問 (FAQ) と回答について調べる。</span><span class="sxs-lookup"><span data-stu-id="1606e-120">Research common IT, HR, and support issues and frequently asked questions (FAQs) and answers.</span></span>
 
- <span data-ttu-id="89c1b-136">**タイトルと説明**</span><span class="sxs-lookup"><span data-stu-id="89c1b-136">**Titles and descriptions**</span></span>
-  
-<span data-ttu-id="89c1b-p104">ユーザーは、ブックマークや Q&A のタイトルと説明を見ることで、検索目的に合ったものなのか、別の検索を行う必要があるかなどを判断します。タイトルと説明は、検索結果の主要な目的を反映するものを使用します。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p104">People use bookmarks or Q&A titles and descriptions to determine if they address their search intent or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result.</span></span>
-  
-<span data-ttu-id="89c1b-p105">“育児手当” というタイトルと、“育児費用の負担軽減のための福利厚生についての説明” という説明は良い例と言えます。ユーザーが “childcare” と検索すると、金銭的支援の福利が提供されていることをユーザーに知らせ、詳細情報へのリンクが提供されます。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p105">A good example of a title might be 'Childcare benefits,' with a description of 'Learn about benefits to help pay child care costs.' This informs users who search for 'childcare' that monetary support benefits are available and provides them a link to find out more.</span></span>
-  
-<span data-ttu-id="89c1b-p106">Q&Aのタイトルでは質問を述べ、簡潔ながらも有用な回答を説明に書きます。他に役に立つ情報がある場合には、リンクを張ります。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p106">Q&A titles should pose a question and the description should provide a short but useful answer. If there's additional information that would be helpful, link to it.</span></span>
-  
- <span data-ttu-id="89c1b-143">**キーワード**</span><span class="sxs-lookup"><span data-stu-id="89c1b-143">**Keywords**</span></span>
-  
-<span data-ttu-id="89c1b-p107">キーワードとは、組織のユーザーが作業結果を導き出すために Bing で使用する検索用語のことです。適切なキーワードを含めて、ブックマークや Q&A を見つけやすくします。 キーワード決めるには、次の質問に答えることから始めます。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p107">Keywords are the terms people in your organization search for on Bing to discover work results. Make your bookmarks and Q&As easier to find by including the right keywords. To identify these keywords, start by answering these questions:</span></span>
-  
-- <span data-ttu-id="89c1b-147">見つけた情報を検索したときに、どのような検索用語を使いましたか?</span><span class="sxs-lookup"><span data-stu-id="89c1b-147">Which search terms are used to find the information you've identified?</span></span>
-    
-    <span data-ttu-id="89c1b-148">組織で使用されている既存の用語集や関連する用語のバリエーション、頭字語、件名、トピックなどを活用します。</span><span class="sxs-lookup"><span data-stu-id="89c1b-148">Leverage any existing taxonomy your organization uses, as well as related variations, acronyms, subjects, and topics.</span></span>
-    
-- <span data-ttu-id="89c1b-149">他のユーザーがこの情報について話すとき、どのようなバリエーションや単語が使われていますか?</span><span class="sxs-lookup"><span data-stu-id="89c1b-149">Which other variations or words do people use to talk about this information?</span></span>
-    
-    <span data-ttu-id="89c1b-150">サポート チームを活用してキーワードを決めます。</span><span class="sxs-lookup"><span data-stu-id="89c1b-150">Leverage your support team to determine these keywords.</span></span>
-    
-<span data-ttu-id="89c1b-p108">たとえば、休暇申請提出のツールへのリンクの結果を作成しようとしている場合、キーワードに “休暇” や “休暇申請を提出” などを含めると効果的です。また、組織内のユーザーが “休日” または “休暇” を使用して休暇関連の情報を表現したり検索したりする可能性があります。“休日”、“休暇”、“休日申請を提出”、“休暇申請” などのキーワードを追加すると、より多くのユーザーにとり結果が見つけやすくなります。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p108">For example, if you're creating a result that links to a tool for submitting vacation requests, keywords such as 'vacation' and 'submit vacation request' are good options to include. You may also find that people in your organization use 'holiday' or 'time off' to describe or search for vacation-related information. Adding keywords like 'holiday,' 'time off,' 'submit holiday request,' and 'request time off' as keywords makes the result easier for more of your users to discover.</span></span>
-  
- <span data-ttu-id="89c1b-154">**予約済みキーワード**</span><span class="sxs-lookup"><span data-stu-id="89c1b-154">**Reserved keywords**</span></span>
-  
-<span data-ttu-id="89c1b-p109">Microsoft Search では、使用度に基づきどのブックマークが作業結果の上位に表示されるかが決められます。特定の結果を上位に表示させる必要がある場合は、予約済みキーワードを使用します。予約済みのキーワードとは、ブックマークまたは Q&A の結果を識別することができる固有の単語または語句のことです。ユーザーが予約済みのキーワードを検索ボックスに入力すると、そのブックマークまたは Q&A が最初に表示されます。Microsoft Search が使用度に基づいて学習できるように、予約済みキーワードはあまり多用しないようにしてください。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p109">Microsoft Search determines which bookmarks appear as the top work results based on usage. When you need a specific result to appear as the top result, use reserved keywords. A reserved keyword is a unique word or phrase that identifies a bookmark or Q&A result. When a user enters a reserved keyword in the search box, that bookmark or Q&A will be the first result that appears. Use reserved keywords sparingly to allow Microsoft Search to learn based on usage.</span></span>
-  
- <span data-ttu-id="89c1b-160">**推奨キーワード**</span><span class="sxs-lookup"><span data-stu-id="89c1b-160">**Suggested keywords**</span></span>
-  
-<span data-ttu-id="89c1b-p110">結果のキーワードの初期セットを作成するには、自動キーワード候補を使用します。これらの候補は、ブックマークまたは Q&A のタイトルと URL に基づいて提案されます。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p110">Create an initial set of keywords for a result by using automatic keyword suggestions. These suggestions are based on the title and URL for your bookmark or Q&A.</span></span>
-  
- <span data-ttu-id="89c1b-163">**トピックのグループ化**</span><span class="sxs-lookup"><span data-stu-id="89c1b-163">**Group topics**</span></span>
-  
-<span data-ttu-id="89c1b-p111">ユーザーが検索するときに関連するコンテンツが検索結果に表示されるようにするには、そのトピックについてのすべてのブックマークや Q&A で同じキーワードを使用してみてください。たとえば、ライフ ステージの変化に関連するプロセスやツールの結果を追加する場合、“結婚” などのキーワードを全ての結果に含めると、福利厚生の更新、税金情報、氏名や別名の変更などに関する結果をグループ化することができます。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p111">If you want users to find sets of related content when they search, try using the same keyword for all the bookmarks and Q&As about that topic. For example, if you're adding results about processes and tools around life status changes, you could include a keyword like 'marriage' to them to group together results about updating benefits, tax information, and name and alias changes.</span></span>
-  
-## <a name="test-your-content-and-search-experience"></a><span data-ttu-id="89c1b-166">コンテンツと検索機能のテスト</span><span class="sxs-lookup"><span data-stu-id="89c1b-166">Test your content and search experience</span></span>
+## <a name="step-2-leverage-subject-matter-experts-smes-and-users"></a><span data-ttu-id="1606e-121">手順 2: 領域の専門家 (SME) とユーザーを活用する</span><span class="sxs-lookup"><span data-stu-id="1606e-121">Step 2: Leverage Subject Matter Experts (SMEs) and users</span></span>
+<span data-ttu-id="1606e-122">組織では、ユーザーは、勤務先住所、従業員の福利厚生などの単純なトピックから、新しい作業プロセス、技術情報、操作方法コンテンツなどの複雑なトピックまで、幅広いトピックを検索します。</span><span class="sxs-lookup"><span data-stu-id="1606e-122">In an organization, users search for a wide range of topics ranging from simple such as office addresses, employee benefits to complex topics such as new work processes, technical information, and how-to-do content.</span></span> <span data-ttu-id="1606e-123">このような幅広いコンテンツを作成または検索するには、さまざまな分野、テーマ、テクノロジなどに関する理解と専門知識が必要ですが、検索管理者に必要な専門知識がなかったり、理解度が十分でなかったりする場合があります。</span><span class="sxs-lookup"><span data-stu-id="1606e-123">Creating or finding such wide range of content requires knowledge and expertise in different fields, subjects, technologies etc. and a Search administrator may not have the requisite expertise or knowledge.</span></span> <span data-ttu-id="1606e-124">管理者は、リソースを追加せずに利用可能なコンテンツを増やすために、組織内の他の人が持つ専門知識と知見を活用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1606e-124">Administrators should leverage expertise and knowledge of others in the organization to scale the amount of available content without additional resources.</span></span>
 
-<span data-ttu-id="89c1b-167">結果を公開した後は、次のことを確認することが重要です。</span><span class="sxs-lookup"><span data-stu-id="89c1b-167">After you've published results, it's important to verify:</span></span>
-  
-- <span data-ttu-id="89c1b-168">適切なブックマークまたは Q&A が結果のトップに表示される</span><span class="sxs-lookup"><span data-stu-id="89c1b-168">The correct bookmark or Q&A appears as the top result</span></span>
-    
-- <span data-ttu-id="89c1b-169">すべての関連ブックマークまたは Q&A が、実際に関連している</span><span class="sxs-lookup"><span data-stu-id="89c1b-169">All related bookmarks or Q&As are relevant</span></span>
-    
-- <span data-ttu-id="89c1b-170">予想外の結果が含まれていない</span><span class="sxs-lookup"><span data-stu-id="89c1b-170">No unexpected results are included</span></span>
-    
-- <span data-ttu-id="89c1b-171">結果のタイトルと説明で、ユーザーが探している情報や詳細が提供されている</span><span class="sxs-lookup"><span data-stu-id="89c1b-171">Result titles and descriptions provide the information and details your users are looking for</span></span>
-    
-<span data-ttu-id="89c1b-172">サポート チームは、コンテンツと検索機能のテストと検証を行う際の優れたリソースです。</span><span class="sxs-lookup"><span data-stu-id="89c1b-172">Your support team is a great resource to help test and validate the content and search experience.</span></span>
-  
-## <a name="review-and-update-periodically"></a><span data-ttu-id="89c1b-173">定期的に確認と更新を行う</span><span class="sxs-lookup"><span data-stu-id="89c1b-173">Review and update periodically</span></span>
+### <a name="leverage-smes"></a><span data-ttu-id="1606e-125">SME を活用する</span><span class="sxs-lookup"><span data-stu-id="1606e-125">Leverage SMEs</span></span>
+<span data-ttu-id="1606e-126">人事、サポート、営業、テクノロジ、その他の主要な分野の専門家など、組織内の SME を活用します。</span><span class="sxs-lookup"><span data-stu-id="1606e-126">Leverage SMEs in the organization including experts from HR, support, sales, technology, and other key areas.</span></span> <span data-ttu-id="1606e-127">SME が直接コンテンツを投稿できるようにするには、SME を検索編集者として追加します。</span><span class="sxs-lookup"><span data-stu-id="1606e-127">To allow your SMEs to contribute content directly, add them as Search editors.</span></span> 
 
-<span data-ttu-id="89c1b-p112">組織の正式な情報を提供する場合、結果の正確性と最新性を維持することは大変重要です。定期的なレビューを実施し、次の作業を行います。</span><span class="sxs-lookup"><span data-stu-id="89c1b-p112">Maintaining the accuracy and freshness of your results is critical when you're providing authoritative information to your organization. Conduct periodic reviews to:</span></span>
-  
-- <span data-ttu-id="89c1b-176">リンク切れまたは無効な URL を削除する</span><span class="sxs-lookup"><span data-stu-id="89c1b-176">Fix or remove broken or invalid URLs</span></span>
-    
-- <span data-ttu-id="89c1b-177">現状に当てはまらないコンテンツを削除する</span><span class="sxs-lookup"><span data-stu-id="89c1b-177">Remove content that's no longer relevant</span></span>
-    
-- <span data-ttu-id="89c1b-178">ツール、サイト、チーム名の変更などを含む、不正確であったり古くなったりしたタイトルと説明を更新する</span><span class="sxs-lookup"><span data-stu-id="89c1b-178">Update inaccurate or out of date titles and descriptions, including tool, site, or team name changes</span></span>
-    
-- <span data-ttu-id="89c1b-179">クリック率が低いクエリを確認し、ブックマークまたは Q&A のコンテンツを更新する必要があるかどうかを決定する</span><span class="sxs-lookup"><span data-stu-id="89c1b-179">Review queries with low click-through rates and determine if the bookmark or Q&A content needs to be updated</span></span>
-    
-- <span data-ttu-id="89c1b-180">頻繁に使われるクエリ、放置されたクエリ、行われなかったクエリなどを含む SharePoint Online とオンプレミスの検索クエリを確認し、ユーザーはどのような検索を行い、どこに不備があるかを理解する</span><span class="sxs-lookup"><span data-stu-id="89c1b-180">Review SharePoint Online and on-premises search queries, including popular or top queries, abandoned queries, and no queries to understand what users search for and where there are gaps</span></span>
-    
-<span data-ttu-id="89c1b-181">結果をすばやく一括編集するには、管理ポータルのエクスポート機能とインポート機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="89c1b-181">To quickly bulk edit your results, use the export and import features in the Admin portal.</span></span>
+### <a name="involve-your-users"></a><span data-ttu-id="1606e-128">ユーザーの参加をはかる</span><span class="sxs-lookup"><span data-stu-id="1606e-128">Involve your users</span></span>
+<span data-ttu-id="1606e-129">ユーザーにブックマークするリソースを提案してもらうようにします。</span><span class="sxs-lookup"><span data-stu-id="1606e-129">Ask users to suggest resources to bookmark.</span></span> <span data-ttu-id="1606e-130">コンテンツの提案に加え、リンク切れや無効なリンクなどのエラーに関する報告もしてもらうようにします。</span><span class="sxs-lookup"><span data-stu-id="1606e-130">In addition to suggesting content, ask users to report errors, like broken or invalid links.</span></span>
 
-  
+## <a name="step-3-improve-findability-of-content"></a><span data-ttu-id="1606e-131">手順 3: コンテンツの見つけやすさを向上させる</span><span class="sxs-lookup"><span data-stu-id="1606e-131">Step 3: Improve findability of content</span></span> 
+<span data-ttu-id="1606e-132">**Microsoft Search** では、検索管理者はコンテンツの見つけやすさを向上させるために、ブックマーク、Q&A、場所、PowerApp を作成します。</span><span class="sxs-lookup"><span data-stu-id="1606e-132">In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and PowerApps to improve the findability of content.</span></span> <span data-ttu-id="1606e-133">これらの各検索コンポーネントには、その検索コンポーネントをトリガーするタイトル、URL、キーワードのセットが含まれます。</span><span class="sxs-lookup"><span data-stu-id="1606e-133">Each of these search components includes a title, a URL, and a set of keywords that trigger it.</span></span>
 
+### <a name="titles-and-descriptions"></a><span data-ttu-id="1606e-134">タイトルと説明</span><span class="sxs-lookup"><span data-stu-id="1606e-134">Titles and descriptions</span></span>
+<span data-ttu-id="1606e-135">ユーザーは、タイトルと説明を見ることで、検索結果が検索クエリに合ったものなのか、別の検索を行う必要があるかを判断します。</span><span class="sxs-lookup"><span data-stu-id="1606e-135">People use titles and descriptions to determine if the result answers their search query, or if they need to try a different search.</span></span> <span data-ttu-id="1606e-136">タイトルと説明は、検索結果の主要な目的を反映するものを使用します。</span><span class="sxs-lookup"><span data-stu-id="1606e-136">Titles and descriptions should reflect the core purpose of the result.</span></span> <span data-ttu-id="1606e-137">「育児手当」というタイトルと、「育児費用の負担軽減のための福利厚生についての説明」という説明は良い例と言えます。</span><span class="sxs-lookup"><span data-stu-id="1606e-137">A good example of a title might be 'Childcare benefits,' with a description - 'Learn about benefits to help pay childcare costs.'</span></span> <span data-ttu-id="1606e-138">ユーザーが「育児」と検索すると、金銭的支援の福利が提供されていることをユーザーに知らせ、詳細情報へのリンクが提供されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-138">This informs the users who search 'childcare' that monetary support benefits are available, and provides them a link to find out more.</span></span> 
+
+### <a name="keywords"></a><span data-ttu-id="1606e-139">キーワード</span><span class="sxs-lookup"><span data-stu-id="1606e-139">Keywords</span></span>
+<span data-ttu-id="1606e-140">キーワードは、組織内のユーザーが関連コンテンツを検索するために使用する用語です。</span><span class="sxs-lookup"><span data-stu-id="1606e-140">Keywords are the terms that people in your organization use to find relevant content.</span></span> <span data-ttu-id="1606e-141">適切なキーワードを検索結果に関連付けると、関連するコンテンツを見つけやすくなります。</span><span class="sxs-lookup"><span data-stu-id="1606e-141">Associating the appropriate keywords with search results makes it easier to find the relevant content.</span></span> <span data-ttu-id="1606e-142">**Microsoft Search** では、コンテンツのタイトルと URL に基づいてキーワードを提案しています。</span><span class="sxs-lookup"><span data-stu-id="1606e-142">**Microsoft Search** suggests keyword based on the title and URL for your content.</span></span> <span data-ttu-id="1606e-143">追加のキーワードを決めるには、次の質問に答えることから始めます。</span><span class="sxs-lookup"><span data-stu-id="1606e-143">To identify additional keywords, start by answering these questions:</span></span>
+
+1. <span data-ttu-id="1606e-144">見つけた情報を検索したときに、どのような検索用語を使いましたか?</span><span class="sxs-lookup"><span data-stu-id="1606e-144">Which search terms are used to find the information you've identified?</span></span>
+1. <span data-ttu-id="1606e-145">組織で使用されている既存の用語集や関連する用語のバリエーション、頭字語、件名、トピックなどを活用します。</span><span class="sxs-lookup"><span data-stu-id="1606e-145">Leverage any existing taxonomy your organization uses, as well as related variations, acronyms, subjects, and topics.</span></span>
+1. <span data-ttu-id="1606e-146">他のユーザーがこの情報について話すとき、どのようなバリエーションや単語が使われていますか?</span><span class="sxs-lookup"><span data-stu-id="1606e-146">Which other variations or words do people use to talk about this information?</span></span>
+1. <span data-ttu-id="1606e-147">サポート チームを活用してキーワードを決めます。</span><span class="sxs-lookup"><span data-stu-id="1606e-147">Leverage your support team to determine these keywords.</span></span>
+
+<span data-ttu-id="1606e-148">たとえば、休暇申請提出のツールへのリンクの結果を作成しようとしている場合、キーワードに「休暇」や「休暇申請を提出」などを含めると効果的です。</span><span class="sxs-lookup"><span data-stu-id="1606e-148">For example, if you're creating a result that links to a tool for submitting vacation requests, keywords such as 'vacation' and 'submit vacation request' are good options to include.</span></span> <span data-ttu-id="1606e-149">また、組織内のユーザーが「休日」または「休暇」を使用して休暇関連の情報を表現したり検索したりする可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1606e-149">You may also find that people in your organization use 'holiday' or 'time off' to describe or search vacation related information.</span></span> <span data-ttu-id="1606e-150">「休日」、「休暇」、「休日申請を提出」、「休暇申請」などのキーワードを追加すると、より多くのユーザーが関連コンテンツを簡単に見つけることができるようになります。</span><span class="sxs-lookup"><span data-stu-id="1606e-150">Adding keywords like 'holiday,' 'time off,' 'submit holiday request,' and 'request time off' will make it easier for more of your users to find the relevant content.</span></span>
+
+### <a name="reserved-keywords"></a><span data-ttu-id="1606e-151">予約済みキーワード</span><span class="sxs-lookup"><span data-stu-id="1606e-151">Reserved keywords</span></span>
+ <span data-ttu-id="1606e-152">予約済みキーワードは、結果をトリガーする一意の用語またはフレーズです。</span><span class="sxs-lookup"><span data-stu-id="1606e-152">A reserved keyword is a unique term or phrase that triggers a result.</span></span> <span data-ttu-id="1606e-153">他のキーワードとは異なり、予約済みキーワードを関連付けることができるのは 1 つの結果のみです。</span><span class="sxs-lookup"><span data-stu-id="1606e-153">Unlike other keywords, a reserved keyword can be associated with one result only.</span></span> <span data-ttu-id="1606e-154">**Microsoft Search** が使用度に基づいて学習できるように、予約済みキーワードはあまり多用しないようにしてください。</span><span class="sxs-lookup"><span data-stu-id="1606e-154">Use reserved keywords sparingly to allow **Microsoft Search** to learn based on usage.</span></span>
+
+<span data-ttu-id="1606e-155">たとえば、就業時間を送信するためのサイトのブックマークを作成し、予約キーワードとして「ログ時間」を追加すると、「ログ時間」を検索する組織内のユーザーには、**Microsoft Search** ボックスに唯一のブックマークとして就業時間を送信するサイトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-155">For example, if you create a bookmark for a site for submitting your hours and add “log time” as a reserved keyword, users in your organization who search “log time” see the site for submitting your hours as the only bookmark in the **Microsoft Search** box.</span></span> 
+
+### <a name="using-keyword-to-group-related-content"></a><span data-ttu-id="1606e-156">キーワードを使用した関連コンテンツのグループ化</span><span class="sxs-lookup"><span data-stu-id="1606e-156">Using keyword to group related content</span></span>
+<span data-ttu-id="1606e-157">ユーザーが用語を検索するときに関連コンテンツが検索結果に表示されるようにするには、すべての関連コンテンツで同じキーワードを使用してみてください。</span><span class="sxs-lookup"><span data-stu-id="1606e-157">If you want users to find sets of related content when they search for a term, then try using the same keyword for all related content.</span></span> <span data-ttu-id="1606e-158">たとえば、ライフ ステージの変化に関連するプロセスやツールの結果を追加する場合、「結婚」などのキーワードを含めると、福利厚生の更新、税金情報、氏名や別名の変更などに関する結果をグループ化することができます。</span><span class="sxs-lookup"><span data-stu-id="1606e-158">For example, if you're adding results about processes and tools around life status changes, you could include a keyword like 'marriage' to group together results about updating benefits, tax information, and name and alias changes.</span></span>
+
+### <a name="search-settings"></a><span data-ttu-id="1606e-159">検索の設定</span><span class="sxs-lookup"><span data-stu-id="1606e-159">Search settings</span></span>
+<span data-ttu-id="1606e-160">検索の設定を使用して、コンテンツをカスタマイズし、特定のユーザー グループを対象にします。</span><span class="sxs-lookup"><span data-stu-id="1606e-160">Use search settings to tailor your content and target specific groups of users.</span></span> <span data-ttu-id="1606e-161">**Microsoft Search** には、検索結果を表示するタイミングと表示するユーザーについてより詳細に制御できる次の設定があります。</span><span class="sxs-lookup"><span data-stu-id="1606e-161">**Microsoft Search** has the following settings that give you additional control over when a search result appears and who sees it.</span></span>
+
+- <span data-ttu-id="1606e-162">**日付:** 開始日と終了日を設定すると、コンテンツを利用可能にする、または利用不可能にするタイミングを制御できます。</span><span class="sxs-lookup"><span data-stu-id="1606e-162">**Dates:** Set a start date as well as an end date to control when content will be made available or unavailable.</span></span> <span data-ttu-id="1606e-163">たとえば、時間的制約のある資料は、関連性がある場合に検索結果に表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-163">For example, time sensitive material appears in search result when it is relevant.</span></span>
+- <span data-ttu-id="1606e-164">**国/地域:** 国または地域を選択すると、選択した場所にいるユーザーのみにコンテンツが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-164">**Country/region:** Select countries or regions so that only users in those locations will see the content.</span></span> <span data-ttu-id="1606e-165">たとえば、国に固有の情報は、該当する国の検索結果のみに表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-165">For example, country specific information appears in search results in those countries only.</span></span>
+- <span data-ttu-id="1606e-166">**グループ:** グループ設定を使用すると、指定されたグループのメンバーのみに結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-166">**Groups:** Use the Groups settings to make a result available only to members of a selected group.</span></span> <span data-ttu-id="1606e-167">たとえば、人事部のスタッフのみに関係するサイトを作成する場合、この設定でしかるべき人事部のセキュリティ グループを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="1606e-167">For example, if you're creating sites that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.</span></span>
+- <span data-ttu-id="1606e-168">**デバイスと OS:** デバイスの種類やオペレーティング システムを選択すると、ブックマークは選択したデバイスやオペレーティング システムで検索するユーザーのみに表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-168">**Device & OS:** Select device types or operating systems so that only users searching on those devices or using those systems will see that bookmark.</span></span>
+- <span data-ttu-id="1606e-169">**バリエーションの対象指定:** この設定を使用すると、ユーザーのデバイスと位置に応じて、ブックマークの内容にバリエーションを持たせることができます。</span><span class="sxs-lookup"><span data-stu-id="1606e-169">**Targeted variations:** Use this setting to vary the content of the bookmark based on a user's device and location.</span></span>
+
+## <a name="step-4-test-your-content"></a><span data-ttu-id="1606e-170">手順 4: コンテンツをテストする</span><span class="sxs-lookup"><span data-stu-id="1606e-170">Step 4: Test your content</span></span>
+<span data-ttu-id="1606e-171">ブックマークと Q&A を作成したら、次のことを確認することが重要です。</span><span class="sxs-lookup"><span data-stu-id="1606e-171">After you've created Bookmarks and Q&A, it's important to verify that:</span></span>
+- <span data-ttu-id="1606e-172">適切なブックマークまたは Q&A が表示されている。</span><span class="sxs-lookup"><span data-stu-id="1606e-172">The correct Bookmark or Q&A appears.</span></span>
+- <span data-ttu-id="1606e-173">キーワードを使用してグループ化されているすべてのコンテンツが、計画どおりにまとめて表示されている。</span><span class="sxs-lookup"><span data-stu-id="1606e-173">All content grouped together using keywords appear together as planned.</span></span>
+- <span data-ttu-id="1606e-174">予期しない結果が検索結果に表示されていない。</span><span class="sxs-lookup"><span data-stu-id="1606e-174">No unexpected results appear in search result.</span></span>
+- <span data-ttu-id="1606e-175">ブックマークまたは Q&A に十分な情報があるかどうか。</span><span class="sxs-lookup"><span data-stu-id="1606e-175">Review whether the Bookmark or Q&A has enough information.</span></span>
+
+<span data-ttu-id="1606e-176">コンテンツ作成に参加したユーザーと SME は、検索結果のテストと検証をサポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="1606e-176">Users and SMEs who contributed to content creation can help test and validate the search result.</span></span>
+
+## <a name="step-5-review-and-update-periodically"></a><span data-ttu-id="1606e-177">手順 5: 定期的に確認と更新を行う</span><span class="sxs-lookup"><span data-stu-id="1606e-177">Step 5: Review and update periodically</span></span>
+<span data-ttu-id="1606e-178">ブックマークや Q&A のような権限のある情報は、最新の状態であることが重要です。</span><span class="sxs-lookup"><span data-stu-id="1606e-178">It is important that authoritative information such as Bookmarks and Q&A are up to date.</span></span> <span data-ttu-id="1606e-179">以下は定期的に実行されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-179">Regularly:</span></span>
+- <span data-ttu-id="1606e-180">リンク切れまたは無効な URL を修正または削除する。</span><span class="sxs-lookup"><span data-stu-id="1606e-180">Fix or remove broken or invalid URL.</span></span>
+- <span data-ttu-id="1606e-181">関連性がなくなったブックマークと Q&A を削除する。</span><span class="sxs-lookup"><span data-stu-id="1606e-181">Remove Bookmarks or Q&A that are no longer relevant.</span></span>
+- <span data-ttu-id="1606e-182">ツール、サイト名、チーム名の変更を確認する。</span><span class="sxs-lookup"><span data-stu-id="1606e-182">Check for tool, site name, or team name changes.</span></span>
+- <span data-ttu-id="1606e-183">ブックマークまたは Q&A に十分な権限があるかどうか、よりわかりやすい説明が必要かどうかを検討する。</span><span class="sxs-lookup"><span data-stu-id="1606e-183">Consider whether the Bookmark or Q&A is authoritative enough or needs a clearer description.</span></span>
+
+<span data-ttu-id="1606e-184">**Microsoft Search** では、ブックマーク、Q&A、場所に関する使用状況の統計が提供されています。</span><span class="sxs-lookup"><span data-stu-id="1606e-184">**Microsoft Search** provides usage statistics for Bookmarks, Q&A, and Locations.</span></span> <span data-ttu-id="1606e-185">使用状況の統計には、ユーザーが検索結果にどのように関わっているか、ユーザーが探しているものを見つけているかどうか、または利用可能なコンテンツにギャップがあるかどうかが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-185">The usage statistics shows how users are engaging with your search results and whether users are finding what they are looking for, or are there any gaps in the available content?</span></span> <span data-ttu-id="1606e-186">これにより、管理者はパフォーマンスを監視し、検索結果を微調整するための適切なアクションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="1606e-186">It helps administrator monitor performance and take appropriate actions to fine tune the search results.</span></span> 
+
+### <a name="get-details-about-bookmarks-qa-and-locations"></a><span data-ttu-id="1606e-187">ブックマーク、Q&A、場所に関する詳細情報を取得する</span><span class="sxs-lookup"><span data-stu-id="1606e-187">Get details about Bookmarks, Q&A and Locations</span></span>
+<span data-ttu-id="1606e-188">何件のブックマーク、Q&A、場所が公開、スケジュール、おすすめされているかを確認します。</span><span class="sxs-lookup"><span data-stu-id="1606e-188">See how many Bookmarks, Q&A, and Locations have been published, scheduled, or suggested.</span></span> <span data-ttu-id="1606e-189">ダッシュボードを使用して、ブックマーク、Q&A、場所の各合計を次のステータス別に確認します。</span><span class="sxs-lookup"><span data-stu-id="1606e-189">Use the dashboard to see Bookmark, Q&A, or Location totals by status:</span></span>
+- <span data-ttu-id="1606e-190">**公開済み:** ユーザーが利用可能な公開済みの結果の数。</span><span class="sxs-lookup"><span data-stu-id="1606e-190">**Published:** The number of published results that are available to users.</span></span>
+- <span data-ttu-id="1606e-191">**スケジュール済み:** 発行パイプラインのスケジュール済みの結果の数。</span><span class="sxs-lookup"><span data-stu-id="1606e-191">**Scheduled:** The number of scheduled results in the publish pipeline.</span></span>
+- <span data-ttu-id="1606e-192">**おすすめ:** ユーザーからのおすすめの数。</span><span class="sxs-lookup"><span data-stu-id="1606e-192">**Suggested:** The number of suggestions from users.</span></span>
+
+<span data-ttu-id="1606e-193">おすすめのブックマーク、Q&A、場所は、コンテンツのギャップを示す良い指標です。</span><span class="sxs-lookup"><span data-stu-id="1606e-193">Suggested Bookmarks, Q&A, and Locations are a good indicator of gaps in your content.</span></span> <span data-ttu-id="1606e-194">ユーザーが何を探しているのか、何を見つけられないのかを理解するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="1606e-194">It will help you understand what your users are looking for, and not finding.</span></span> <span data-ttu-id="1606e-195">これは、より多くのブックマーク、Q&A、場所を作成する必要があること、またはコンテンツの見つけやすさを向上させるのに効果的なキーワード、予約キーワード、検索文字列を使用して、既存のコンテンツを更新する必要があることを示しています。</span><span class="sxs-lookup"><span data-stu-id="1606e-195">This could indicate that you need to create more Bookmarks, Q&A, or Locations or you need to update your existing content by using better keywords, reserved keywords, and search strings to improve the discoverability of content.</span></span>
+
+### <a name="review-top-search-queries"></a><span data-ttu-id="1606e-196">よく使用される検索クエリを確認する</span><span class="sxs-lookup"><span data-stu-id="1606e-196">Review top search queries</span></span>
+<span data-ttu-id="1606e-197">過去 90 日間に最も多くのインプレッションを生成した検索を見つけます。</span><span class="sxs-lookup"><span data-stu-id="1606e-197">Find out which searches have generated the most impressions over the last 90 days.</span></span> <span data-ttu-id="1606e-198">インプレッションとは、検索結果にページが表示された回数のことです。</span><span class="sxs-lookup"><span data-stu-id="1606e-198">Impression refers to how many times a page was viewed in search result.</span></span> <span data-ttu-id="1606e-199">**[よく使用されるクエリ]** カードには、各結果の種類に関して上位 25 名のユーザーが検索の合計数およびクリック率 (CTR) と共に表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-199">The **Top Queries** card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR).</span></span> <span data-ttu-id="1606e-200">このレポートを使用して、検索クエリの量を特定したり、検索活動の多いクエリと少ないクエリを確認したりします。</span><span class="sxs-lookup"><span data-stu-id="1606e-200">Use this report to identify search query volume and to determine queries with high and low search activity.</span></span> 
+
+<span data-ttu-id="1606e-201">検索数が少ない場合は、ユーザーの満足度が低いことを示す可能性があります。これは、ユーザーがそれらの検索コンテンツを探していないか、そのコンテンツを見つけるために別のキーワードを使用しているかのいずれかであるためです。</span><span class="sxs-lookup"><span data-stu-id="1606e-201">Low search count may indicate user dissatisfaction either because users are not looking for those search content or are using different keywords to find that content.</span></span> <span data-ttu-id="1606e-202">CTR は、ユーザーが昇格された結果を選択する頻度、およびユーザーにとってのクエリのルールと結果の有用性を示します。</span><span class="sxs-lookup"><span data-stu-id="1606e-202">CTR shows how often users select the promoted results and how useful your query rules and results are to users.</span></span> <span data-ttu-id="1606e-203">CTR が低い場合は、ユーザーがコンテンツを見つけているが、コンテンツが自分の検索に合わないと判断していることを示します。</span><span class="sxs-lookup"><span data-stu-id="1606e-203">A low CTR indicates that users are finding the content but are making the determination that the content does not meet their search.</span></span> <span data-ttu-id="1606e-204">このような場合、管理者はコンテンツを確認したり、コンテンツがユーザーの検索と一致するようにしたり、タイトル、説明、キーワードをユーザーの検索クエリに合わせるように更新したりすることを決定できます。</span><span class="sxs-lookup"><span data-stu-id="1606e-204">In such cases, administrators may decide to review the content and ensure that it corresponds with the user’s search and update titles, descriptions, and keywords to align them with the user search queries.</span></span> 
+
+### <a name="analyze-impressions-by-result-type"></a><span data-ttu-id="1606e-205">結果の種類別にインプレッションを分析する</span><span class="sxs-lookup"><span data-stu-id="1606e-205">Analyze impressions by result type</span></span>
+<span data-ttu-id="1606e-206">**結果の種類カード別のインプレッション分布**カードの読みやすいグラフによって、さまざまな時間枠にわたってインプレッションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-206">Easy-to-read graphs in the **Impression Distribution by Result Type** card show impressions over various timeframes.</span></span> <span data-ttu-id="1606e-207">タイムラインでは、1 つの結果の種類に関して 1 日のインプレッション数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="1606e-207">The timeline shows the daily number of impressions for a result type.</span></span> <span data-ttu-id="1606e-208">どの結果の種類が最も頻繁に使用されているか、またはあまり使用されないかを決定します。</span><span class="sxs-lookup"><span data-stu-id="1606e-208">Determine which result type is most frequently, or infrequently, used.</span></span> <span data-ttu-id="1606e-209">特定の結果の種類の使用頻度が低いからといって、必ずしもその結果の種類が適切ではないというわけではありません。</span><span class="sxs-lookup"><span data-stu-id="1606e-209">Infrequent use of particular result type does not necessarily mean that the result types are not good.</span></span> <span data-ttu-id="1606e-210">単に、ユーザーが検索結果をどのように使用しているかを示しているだけです。</span><span class="sxs-lookup"><span data-stu-id="1606e-210">It just shows how users are using the search result.</span></span>
+
+<span data-ttu-id="1606e-211">このレポートを使用して、ユーザーが使用している結果の種類と、一定期間にわたるユーザーの行動における変化を把握します。</span><span class="sxs-lookup"><span data-stu-id="1606e-211">Use this report to understand what result types users are using and any changes in user behavior over a period of time.</span></span> <span data-ttu-id="1606e-212">ユーザーが特定の結果の種類をよく使用している場合は、管理者は同じ種類の検索結果をさらに作成するか、ユーザーが使用していない結果の種類のキーワードを見直して適切なキーワードにするかを決定できます。</span><span class="sxs-lookup"><span data-stu-id="1606e-212">If a particular result type is preferred by users, administrators may decide to create more search results of the same types or  to review the keywords of results types not used by users to ensure that keywords are appropriate.</span></span>
