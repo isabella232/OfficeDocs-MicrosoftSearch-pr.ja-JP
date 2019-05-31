@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
+ROBOTS: NoIndex
 description: Microsoft Search 管理ポータルのインポート ツールを使用して、一度に多くのブックマークを作成します
-ms.openlocfilehash: 560cda6f94060d428f2d18cc61bd2430cb31b474
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1b3922215534391c65547a4ece22310261626036
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968351"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591424"
 ---
 # <a name="bulk-create-bookmarks"></a>ブックマークの一括作成
 
 > [!IMPORTANT]
-> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センター に移動しており、後で削除されます。 まず、Microsoft 365 管理センター を使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 ブックマークを一括作成、編集、および保存するには、.csv テンプレートをダウンロードして使用します。 既存のブックマークを一括編集するには、管理ポータルからブックマークをエクスポートし、必要な編集を行ってからインポートします。
   

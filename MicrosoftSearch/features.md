@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
+ROBOTS: NoIndex
 description: 管理者とエンド ユーザーの主要な Microsoft Search 機能は、ブックマーク、Q&A、管理、データ分析です
-ms.openlocfilehash: 983a882fd42ae6f76a4b3db4f0f87dd8fbe7974d
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: a0c9dc773ce7e11c446437cbcbcdc56014a4fe5e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508595"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591487"
 ---
 # <a name="features-of-microsoft-search"></a>Microsoft Search の機能
+
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センター に移動しており、後で削除されます。 まず、Microsoft 365 管理センター を使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
 ## <a name="key-admin-features-include"></a>主要な管理者機能には以下のものがあります。
 
