@@ -12,27 +12,28 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
-description: Microsoft Search 使用して SharePoint サイトと表示される詳細な情報を検索します
-ms.openlocfilehash: 926f53e8c0eceffae6c506e8f4e7233629c8415c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Microsoft Search を使用して SharePoint サイトと表示される詳細情報を検索する
+ms.openlocfilehash: 821391635b9cb304f46fde8cabadfa29510631bb
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508899"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590920"
 ---
 # <a name="find-sharepoint-sites"></a>SharePoint サイトの検索
 
-自分の所有している SharePoint サイトを検索したり、グループまたは同僚が作成したサイト (自分がアクセスできるもの) を探したりします。 Bing にサイトの結果が表示されますが、サイト内の個別のページは表示されません。 SharePoint サイトの結果には、サイト名と場所が含まれています。
+所有している SharePoint サイトを検索するか、またはアクセス権を持つグループまたは共同作業者が作成したサイトを検索します。 サイトの結果は Bing に表示されますが、サイト内の個々のページは表示されません。 SharePoint サイトの結果には、サイト名と場所が含まれます。
   
-1. Bing で職場または学校のアカウントにサインインします
+1. Bing で職場または学校のアカウントにサインインする
     
-2. サイト名またはトピックを検索します
+2. サイト名またはトピックを検索する
     
-3. サイトの結果が、結果ページの上部に表示されます
+3. サイトの結果が結果ページの上部に表示される
     
-    サイトの結果のみを表示するには、**[サイト]** タブをクリックします。 
+    サイトの結果を表示するには、[**サイト**] タブをクリックします。 
     
-作業結果に Web の検索結果が表示されます。 それらは組織固有のものではありません。
+Web 結果は、作業結果の下に表示されます。 組織に固有のものではありません。
 
   
 

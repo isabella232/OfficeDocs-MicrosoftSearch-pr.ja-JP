@@ -1,5 +1,5 @@
 ---
-title: 自動的にサインインされるのはなぜですか?
+title: '自動的にサインインされるのはなぜですか? '
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,43 +12,44 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
-description: Microsoft Search への自動サインインが、作業結果のすばやく簡単な検索に、どのように役立つかについて説明します
-ms.openlocfilehash: 999341f10c0b75009246451f7e48f9fc4706d86a
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Microsoft Search に自動的にサインインすることによって、作業結果をすばやく簡単に検索する方法について説明します。
+ms.openlocfilehash: a52cc9c88202e662b8598efa451b2bb964a861dc
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508835"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591037"
 ---
-# <a name="why-am-i-automatically-signed-in"></a>自動的にサインインされるのはなぜですか?
+# <a name="why-am-i-automatically-signed-in"></a>自動的にサインインされるのはなぜですか? 
 
-ユーザーが必要とする情報をすばやく簡単に検索できるようにするために、その組織はユーザーが自動的に Microsoft Search にサインインされるように構成されています。
+必要な情報をすばやく簡単に見つけることができるように、組織は Microsoft Search に自動的にサインインするように構成されています。
   
 ## <a name="about-microsoft-search"></a>Microsoft Search について
 
-Microsoft Search により、ユーザーが必要とするコンテンツが学校や作業空間から Bing に提供されます。 詳細については、「[Microsoft Search について](about-microsoft-search.md)」を参照してください。
+Microsoft Search を使用すると、必要なコンテンツを学校または職場から Bing に取り込むことができます。 [Microsoft Search](about-microsoft-search.md)の詳細について説明します。
   
-## <a name="privacy-and-security"></a>プライバシーとセキュリティ
+## <a name="privacy-and-security"></a>プライバシーおよびセキュリティ
 
-Microsoft Search を使用すると、アクセスを許可したユーザーのみが共有ファイルを表示できるようになります。 それ以外の検索結果 (組織図や人物情報など) は、組織内のユーザーにのみ表示されます。
+Microsoft Search では、アクセスが許可されたユーザーのみが共有ファイルを表示します。 組織図や人物情報などのその他の結果は、組織内の他のユーザーにのみ表示されます。
   
-Microsoft Search は、検索履歴を保護することでプライバシーを保護します。 検索履歴は、サインインしているときに職場または学校に関連する情報を検索したとしても、組織内の別のユーザーと共有されることはありません。
+Microsoft Search は、検索履歴を保護することにより、プライバシーを保護します。 サインインしていて、職場または学校に関連する情報を検索している場合でも、組織内の他のユーザーと検索履歴を共有することはできません。
   
-検索の操作性を向上するために、Bing では、複数のユーザーが頻繁に実行する検索について組織の管理者に報告します。 このデータは管理者のみが表示できます。特定のユーザーにリンクされることはなく、複数のユーザーが同じ内容を検索した場合にのみデータが現れます。
+検索機能を向上させるために、Bing は複数のユーザーによって行われた頻繁な検索を組織の管理者に報告します。 このデータを表示できるのは管理者のみで、特定のユーザーにはリンクされていません。複数のユーザーが同じことを検索した場合にのみ表示されます。
   
-組織はそれぞれに異なっているため、Microsoft は、Microsoft Search の外部でユーザーの検索内容などのデータがどのように取り扱われるかについては保証できません。
+すべての組織が異なるため、Microsoft Search からの検索やその他のデータの処理方法は保証されていません。
   
 ## <a name="sign-out-of-microsoft-search"></a>Microsoft Search からサインアウトする
 
-ユーザーは、いつでも Bing からサインアウトできます。いずれかの Bing ページの右上で、自分のプロフィールをクリックして、**[サインアウト]** をクリックします。
+いつでも Bing からサインアウトできます。任意の Bing ページの右上隅にあるプロフィールをクリックし、[**サインアウト**] をクリックします。
   
-このデバイスに、再度自動サインインされることはなくなります。 Microsoft Search へのサインインに別のブラウザーまたは別のデバイスを使用していた場合は、そこでもサインアウトする必要があります。 
+このデバイスでは自動的にサインインすることはありません。 他のブラウザーまたはデバイスを使用して Microsoft Search にサインインしている場合は、そこからもサインアウトする必要があります。 
   
-サインアウトすると、検索の追加の保護が受けられなくなります。 それらは、標準的な Bing 利用者の検索として取り扱われ、[Microsoft プライバシー ステートメント](https://privacy.microsoft.com/en-us/privacystatement)に準じて管理されます。
+サインアウトすると、検索に追加の保護が追加されることはありません。 これらは標準の Bing コンシューマー検索として扱われ、 [Microsoft のプライバシー](https://privacy.microsoft.com/en-us/privacystatement)に関する声明によって制御されます。
   
 ## <a name="view-your-search-history"></a>検索履歴を表示する
 
-過去 30 日間の Microsoft Search の履歴を確認するには、自分の[検索履歴](https://ssl.bing.com/profile/history)に移動して、Bing の Microsoft Search で **[エクスポート]** をクリックします。 30 日より前の検索は、自動的に履歴から消去されます。
+過去30日間の Microsoft 検索履歴を表示するには、[検索履歴](https://ssl.bing.com/profile/history)に移動し、Bing の microsoft search の下にある [**エクスポート**] をクリックします。 30日以上経過した検索は、履歴から自動的にクリアされます。
 
   
 

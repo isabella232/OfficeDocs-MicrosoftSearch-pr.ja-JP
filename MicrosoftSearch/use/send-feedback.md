@@ -12,29 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a51d395b-c281-433b-bb8e-fefac5252110
-description: IT 部門または Microsoft に Microsoft Search に関するフィードバックおよびコメントを送信します
-ms.openlocfilehash: cbf4aab91116e2f34d54aa39d5cba9f5d505fc11
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Microsoft Search に関するフィードバックとコメントを IT 部門または Microsoft に提出する
+ms.openlocfilehash: c0bb1357d7fe2b500fd12045647debe68fe15644
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508891"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590893"
 ---
 # <a name="send-feedback"></a>フィードバックの送信
 
-ユーザーからのフィードバックは、Microsoft Search の改善に役立ちます。 作業検索結果で、フィードバックのリンクを使用して気に入った点や問題点についてコメントしたり、追加を希望する新機能や結果を提案したりします。 また、リンクを使用して発生した問題を報告することもできます。
+フィードバックは、Microsoft 検索をより良くするために役に立ちます。 作業結果で、[フィードバック] リンクを使用して、好きなことをコメント化したり、追加する新機能や結果を提案したりすることができます。 また、リンクを使用して、発生した問題や問題を報告することもできます。
   
-## <a name="send-feedback-about-work-results"></a>作業結果に関するフィードバックを送信する
+## <a name="send-feedback-about-work-results"></a>作業結果に関するフィードバックの送信
 
-フィードバックを送信するには、作業結果の下部にある **[フィードバック]** をクリックします。 結果の種類によっては、IT 部門または Microsoft にフィードバックを送信するオプションが表示される場合があります。
+フィードバックを送信するには、すべての作業結果の下部にある [**フィードバック**] をクリックします。 結果の種類に応じて、IT 部門または Microsoft にフィードバックを送信するためのオプションが表示される場合があります。
   
-ユーザーから Microsoft に送信されたフィードバックは、[UserVoice] ウィジェットに掲載されます。 フィードバックを送信するすべてのユーザーが、そのコメントを読んでサブスクライブできます。
+Microsoft に送信したフィードバックは、UserVoice ウィジェットに投稿されます。 フィードバックを送信するユーザーは、自分のコメントを読んで購読することができます。
   
-IT 部門に送信したフィードバックは直接 Microsoft とは共有されません。
+IT 部門に送信されるフィードバックは、Microsoft と直接共有されません。
   
-## <a name="send-feedback-about-web-results"></a>Web の検索結果に関するフィードバックを送信する
+## <a name="send-feedback-about-web-results"></a>Web 結果に関するフィードバックの送信
 
-Microsoft Search を使用しているときに、Web の検索結果に関するフィードバックがある場合があります。 Web の検索結果に関するフィードバックを送信するには、ページの下部にある **[フィードバック]** をクリックします。 このフィードバックは、送信者の組織とは共有されません。 Bing では、すべてのフィードバックをレビューしますが、個人的に回答が送信されることはありません。 
+Microsoft Search を使用すると、表示される web の結果についてのフィードバックが得られる場合があります。 フィードバックを送信するには、Bing ページの下部にある [**フィードバック**] をクリックします。 このフィードバックは、組織とは共有されていません。 Bing はすべてのフィードバックをレビューしますが、個人的な反応は受け取りません。 
 
   
 
