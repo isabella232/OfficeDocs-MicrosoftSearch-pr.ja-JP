@@ -1,9 +1,9 @@
 ---
 title: ブックマークの管理
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 09/08/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,88 +13,86 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: 更新の必要があるブックマークと、Microsoft Search のブックマーク結果を一括編集する方法を調べます
-ms.openlocfilehash: d5cebbfd5779bc8a6aa25cdbcdedb6e9b18f242e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+description: ブックマークおよび Microsoft Search のブックマーク結果を一括編集する方法を作成および更新する
+ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968485"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591622"
 ---
-# <a name="manage-bookmarks"></a><span data-ttu-id="d873b-103">ブックマークの管理</span><span class="sxs-lookup"><span data-stu-id="d873b-103">Manage bookmarks</span></span>
+# <a name="manage-bookmarks"></a><span data-ttu-id="0517c-103">ブックマークの管理</span><span class="sxs-lookup"><span data-stu-id="0517c-103">Manage bookmarks</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="d873b-104">Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="d873b-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="d873b-105">まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。</span><span class="sxs-lookup"><span data-stu-id="d873b-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="d873b-106">時間の経過と共に、ブックマークの状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d873b-106">Over time, you may need to update a bookmark's status and content to keep it relevant.</span></span> 
-  
-## <a name="filter-bookmarks"></a><span data-ttu-id="d873b-107">ブックマークをフィルタリングする</span><span class="sxs-lookup"><span data-stu-id="d873b-107">Filter bookmarks</span></span>
+<span data-ttu-id="0517c-104">ブックマークはわずかな手順で作成できます。</span><span class="sxs-lookup"><span data-stu-id="0517c-104">You can create a bookmark in just a few steps.</span></span> <span data-ttu-id="0517c-105">各ブックマークには、そのブックマークをトリガーするタイトル、URL、キーワードのセットが含まれます。</span><span class="sxs-lookup"><span data-stu-id="0517c-105">Each bookmark includes a title, a URL, and a set of keywords that trigger it.</span></span> <span data-ttu-id="0517c-106">ブックマークには複数のキーワードを指定できるので、複数のブックマークで同じキーワードを共有できます。ただし、予約済みキーワードを共有することはできません。</span><span class="sxs-lookup"><span data-stu-id="0517c-106">A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared.</span></span> <span data-ttu-id="0517c-107">ブックマークを作成または変更すると、検索インデックスが直ちに更新され、ユーザーがブックマークをすぐに使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="0517c-107">When a Bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.</span></span>
 
-<span data-ttu-id="d873b-108">[ブックマーク] ページの右上隅のフィルタリング オプションを使用して、日付や変更したユーザー別にブックマークを検索します。</span><span class="sxs-lookup"><span data-stu-id="d873b-108">Use the filter option in the upper-right corner of the Bookmarks page to find bookmarks by date and who modified them.</span></span> <span data-ttu-id="d873b-109">たとえば、日付スライダーを 30 日間に設定して管理者または編集者を選択し、その時期にその管理者または編集者によって作成されたブックマークの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="d873b-109">For example, set the date slider to 30 days and select an admin or editor to see the list of bookmarks they've created or changed in that time.</span></span>
-  
-## <a name="change-bookmark-content-or-settings"></a><span data-ttu-id="d873b-110">ブックマークのコンテンツまたは設定を変更する</span><span class="sxs-lookup"><span data-stu-id="d873b-110">Change bookmark content or settings</span></span>
+<span data-ttu-id="0517c-108">組織が SharePoint で昇格した結果を設定している場合は、昇格した結果を **Microsoft Search** にインポートして、インポートしたコンテンツをユーザーが利用できるようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="0517c-108">If your organization has Promoted Results set up in SharePoint, you can import the Promoted Results into**Microsoft Search** and make the imported content available to your users.</span></span> <span data-ttu-id="0517c-109">これは、**Microsoft Search** がセットアップされ次第、即座に検索結果を作成して、ユーザーがより効果的に利用できるようにする簡単な方法です。</span><span class="sxs-lookup"><span data-stu-id="0517c-109">This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users.</span></span> <span data-ttu-id="0517c-110">関連する検索結果の名前付け方法と作成方法を理解するには、SharePoint の昇格した結果を参照として使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0517c-110">We recommend that you use promoted results from SharePoint as a reference to understand how to name and create relevant search results.</span></span> 
 
-1. <span data-ttu-id="d873b-111">Microsoft Search 管理ポータルに移動する</span><span class="sxs-lookup"><span data-stu-id="d873b-111">Go to the Microsoft Search Admin portal</span></span>
-    
-2. <span data-ttu-id="d873b-112">[ナビゲーション] ウィンドウで [**ブックマーク**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d873b-112">In the navigation pane, click **Bookmarks**</span></span>
-    
-3. <span data-ttu-id="d873b-113">ブックマークを見つけるには、ブックマークの状態を検索したり、フィルタリングしたり、クリックしたりして、結果を絞り込みます。</span><span class="sxs-lookup"><span data-stu-id="d873b-113">To find a bookmark, search, filter, or click a bookmark status to narrow your results</span></span>
-    
-4. <span data-ttu-id="d873b-114">ブックマークを更新または変更するには、タイトルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d873b-114">To change or update a bookmark, click the title</span></span>
-    
-5. <span data-ttu-id="d873b-115">コンテンツや設定を変更または更新し、どのように表示されるかをプレビューします。</span><span class="sxs-lookup"><span data-stu-id="d873b-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span> 
-    
-6. <span data-ttu-id="d873b-116">[**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d873b-116">Click **Save**</span></span>
-    
-## <a name="bulk-export-and-edit-bookmarks"></a><span data-ttu-id="d873b-117">ブックマークを一括でエクスポートおよび編集する</span><span class="sxs-lookup"><span data-stu-id="d873b-117">Bulk export and edit bookmarks</span></span>
+## <a name="add-or-edit-a-single-bookmark"></a><span data-ttu-id="0517c-111">1 つのブックマークを追加または編集する</span><span class="sxs-lookup"><span data-stu-id="0517c-111">Add or edit a single bookmark</span></span>
+1. <span data-ttu-id="0517c-112">**Microsoft 365 管理センター**に移動します。</span><span class="sxs-lookup"><span data-stu-id="0517c-112">Go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="0517c-113">ナビゲーション ウィンドウで、**[設定]** に移動して、\*\*\*\*[Microsoft Search]\*\*\*\* を選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-113">In the navigation pane, go to **Settings**, and then select \*\*\*\*Microsoft Search\*\*\*\*.</span></span>
+<span data-ttu-id="0517c-114">既定では、**[ブックマーク]** タブが選択されています。</span><span class="sxs-lookup"><span data-stu-id="0517c-114">By default, the **Bookmarks** tab is selected.</span></span>
+1. <span data-ttu-id="0517c-115">ブックマークを追加するには、**[新規追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-115">To add a bookmark, select **Add new**.</span></span> <span data-ttu-id="0517c-116">ブックマークを編集するには、関連するブックマークの一覧で編集するブックマークを選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-116">To edit a bookmark, select the bookmark in the relevant bookmark list.</span></span> 
+1. <span data-ttu-id="0517c-117">情報を追加または編集すると、プレビューが自動的に更新されます。</span><span class="sxs-lookup"><span data-stu-id="0517c-117">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="0517c-118">変更内容を保存します。</span><span class="sxs-lookup"><span data-stu-id="0517c-118">Save your changes.</span></span>
 
-<span data-ttu-id="d873b-118">これらのフィールドのデータは編集しないでください。</span><span class="sxs-lookup"><span data-stu-id="d873b-118">Never edit data in these fields: Id, Last Modified, and Last Modified By</span></span>
-  
-- <span data-ttu-id="d873b-119">ID</span><span class="sxs-lookup"><span data-stu-id="d873b-119">Id</span></span>
-    
-- <span data-ttu-id="d873b-120">最終更新日時</span><span class="sxs-lookup"><span data-stu-id="d873b-120">Last modified</span></span>
-    
-- <span data-ttu-id="d873b-121">最終更新者</span><span class="sxs-lookup"><span data-stu-id="d873b-121">Last modified by</span></span>
-    
-<span data-ttu-id="d873b-122">ID は各ブックマークの一意の識別子なので、編集しないでください。</span><span class="sxs-lookup"><span data-stu-id="d873b-122">Id is a unique identifier for each bookmark and should never be edited.</span></span> <span data-ttu-id="d873b-123">[最終更新日時] および [最終更新者] フィールドはブックマークの並べ替えと検索のみに使用します。</span><span class="sxs-lookup"><span data-stu-id="d873b-123">The Last Modified and Last Modified By fields should only be used to sort and find bookmarks.</span></span>
-  
-1. <span data-ttu-id="d873b-124">ブックマークのサブセットをエクスポートする場合は、フィルタリングします。</span><span class="sxs-lookup"><span data-stu-id="d873b-124">If you want to export a subset of your bookmarks, filter them</span></span>
-    
-2. <span data-ttu-id="d873b-125">[ブックマーク] ページの右上隅にある [**エクスポート**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d873b-125">In the upper-right corner of the Bookmarks page, click **Export**</span></span>
-    
-3. <span data-ttu-id="d873b-126">.csv ファイルを保存するか開きます。</span><span class="sxs-lookup"><span data-stu-id="d873b-126">Save or open the .csv file</span></span>
-    
-4. <span data-ttu-id="d873b-127">これらのフィールドのいずれかを編集します。</span><span class="sxs-lookup"><span data-stu-id="d873b-127">Edit data in any of these fields:</span></span>
-   - <span data-ttu-id="d873b-128">タイトル</span><span class="sxs-lookup"><span data-stu-id="d873b-128">Title</span></span>
-    
-   - <span data-ttu-id="d873b-129">URL</span><span class="sxs-lookup"><span data-stu-id="d873b-129">URL</span></span>
-    
-   - <span data-ttu-id="d873b-130">キーワード</span><span class="sxs-lookup"><span data-stu-id="d873b-130">Keywords</span></span>
-    
-   - <span data-ttu-id="d873b-131">状態</span><span class="sxs-lookup"><span data-stu-id="d873b-131">State</span></span>
-    
-   - <span data-ttu-id="d873b-132">説明</span><span class="sxs-lookup"><span data-stu-id="d873b-132">Description</span></span>
-    
-   - <span data-ttu-id="d873b-133">予約済みキーワード</span><span class="sxs-lookup"><span data-stu-id="d873b-133">Reserved Keywords</span></span>
-    
-   - <span data-ttu-id="d873b-134">開始日</span><span class="sxs-lookup"><span data-stu-id="d873b-134">Start Date</span></span>
-    
-   - <span data-ttu-id="d873b-135">終了日</span><span class="sxs-lookup"><span data-stu-id="d873b-135">End Date</span></span>
-    
-   - <span data-ttu-id="d873b-136">国/地域</span><span class="sxs-lookup"><span data-stu-id="d873b-136">Country/Region</span></span>
-    
-   - <span data-ttu-id="d873b-137">グループ</span><span class="sxs-lookup"><span data-stu-id="d873b-137">Groups</span></span>
-    
-   - <span data-ttu-id="d873b-138">デバイス&amp;OS</span><span class="sxs-lookup"><span data-stu-id="d873b-138">Device&amp;OS</span></span>
-    
-   - <span data-ttu-id="d873b-139">対象のバリエーション</span><span class="sxs-lookup"><span data-stu-id="d873b-139">Targeted variations</span></span>
-    
-5. <span data-ttu-id="d873b-140">.csv ファイルを保存します</span><span class="sxs-lookup"><span data-stu-id="d873b-140">Save the file as a .csv file.</span></span>
+## <a name="add-or-edit-bookmark-using-browser-extensions"></a><span data-ttu-id="0517c-119">ブラウザーの拡張機能を使用してブックマークを追加または更新する</span><span class="sxs-lookup"><span data-stu-id="0517c-119">Add or edit bookmark using browser extensions</span></span>
+<span data-ttu-id="0517c-120">検索管理者は、ブラウザーの拡張機能を使用して検索コンテンツを簡単に作成できます。</span><span class="sxs-lookup"><span data-stu-id="0517c-120">Search administrators can create search content easily by using browser extensions.</span></span> <span data-ttu-id="0517c-121">ブラウザーの拡張機能をインストールしてから、ブックマークとして追加するサイトに移動して、そのサイトをブックマークとして追加します。</span><span class="sxs-lookup"><span data-stu-id="0517c-121">Install the browser extension and then go to the site you want to add as bookmark and add the site as bookmark.</span></span>
 
-    <span data-ttu-id="d873b-141">この .csv ファイルは、CSV UTF-8 ファイルとして保存する必要があります。その他のファイルの種類やエンコーディングでは、インポート エラーが発生する可能性があります</span><span class="sxs-lookup"><span data-stu-id="d873b-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
-    
-6. <span data-ttu-id="d873b-142">[ブックマーク] ページの右上隅にある **[インポート]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d873b-142">In the upper-right corner of the Bookmarks page, click **Import**</span></span>
-    
-7. <span data-ttu-id="d873b-143">[ブックマークのインポート] ウィンドウで、**[参照]** をクリックして、編集済みの .csv ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="d873b-143">In the Import bookmarks pane, click **Browse** and select the edited .csv file</span></span> 
-    
-8. <span data-ttu-id="d873b-144">**[インポート]** をクリックします</span><span class="sxs-lookup"><span data-stu-id="d873b-144">Click **Import**.</span></span>
+<span data-ttu-id="0517c-122">現在、ブラウザーの拡張機能は Edge と Chrome で利用できます。</span><span class="sxs-lookup"><span data-stu-id="0517c-122">Currently, browser extensions are available for Edge and Chrome.</span></span> 
+- <span data-ttu-id="0517c-123">Edge の拡張機能をダウンロードするには、[Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) に移動して、アプリをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="0517c-123">To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.</span></span>
+- <span data-ttu-id="0517c-124">Chrome の拡張機能をダウンロードするには、[Chrome Web ストア](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)に移動して、アプリをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="0517c-124">To download Chrome extension, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.</span></span>
+
+## <a name="bulk-add-or-edit-bookmarks"></a><span data-ttu-id="0517c-125">ブックマークを一括して追加または編集する</span><span class="sxs-lookup"><span data-stu-id="0517c-125">Bulk add or edit bookmarks</span></span>
+<span data-ttu-id="0517c-126">検索管理者は、インポート機能またはエクスポート機能を使用して、ブックマークの一括作成または一括編集が行えます。</span><span class="sxs-lookup"><span data-stu-id="0517c-126">Search administrator can use the Import or Export features to bulk create or edit bookmarks.</span></span> <span data-ttu-id="0517c-127">これは、管理者が多数のブックマークを追加または編集する場合に非常に便利な機能です。</span><span class="sxs-lookup"><span data-stu-id="0517c-127">This is a very useful feature when an administrator wants to add or edit a large number of bookmarks.</span></span> 
+
+<span data-ttu-id="0517c-128">インポート/エクスポート機能を使用して、次のことが実行できます。</span><span class="sxs-lookup"><span data-stu-id="0517c-128">Use the import/export feature to:</span></span>
+- <span data-ttu-id="0517c-129">ブックマークの一括追加 - ブックマーク テンプレート ファイルに詳細を追加して、インポートします。</span><span class="sxs-lookup"><span data-stu-id="0517c-129">Bulk add bookmarks - Add details in the bookmark template file, and then import it.</span></span>
+- <span data-ttu-id="0517c-130">ブックマークの一括編集 - ブックマークを .csv ファイルにエクスポートし、エクスポートされた .csv ファイルのブックマークの詳細を編集してから、更新された .csv ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="0517c-130">Bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.</span></span>
+- <span data-ttu-id="0517c-131">昇格したサイトを SharePoint からインポートします。</span><span class="sxs-lookup"><span data-stu-id="0517c-131">Import promoted sites from SharePoint.</span></span>
+- <span data-ttu-id="0517c-132">ブックマークのバックアップ - ブックマークを .csv ファイルにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="0517c-132">Backup bookmarks - Export bookmarks to a .csv file.</span></span>
+
+<span data-ttu-id="0517c-133">ブックマークをインポートまたはエクスポートするには:</span><span class="sxs-lookup"><span data-stu-id="0517c-133">To import or export bookmarks:</span></span>
+1. <span data-ttu-id="0517c-134">**[ブックマーク]** タブの右上隅にある **[インポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-134">In the upper-right corner of **Bookmarks** tab, select **Import**.</span></span> <span data-ttu-id="0517c-135">.csv ファイル内の既存のブックマークをすべてダウンロードするには、**[エクスポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-135">Select **Export** to download all the existing bookmarks in a .csv file.</span></span>
+1. <span data-ttu-id="0517c-136">右側のウィンドウで、.csv ファイルを使用してインポートするオプション、または SharePoint からインポートするオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-136">In the right pane, choose the option to import using a .csv file or from SharePoint.</span></span>
+<span data-ttu-id="0517c-137">必要なフィールドと詳細の一覧については、テンプレート ファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="0517c-137">Download the template file for a list of the required fields and details.</span></span> 
+1. <span data-ttu-id="0517c-138">テンプレート ファイルのブックマークの詳細を追加または編集してから、コンピューターに保存します。</span><span class="sxs-lookup"><span data-stu-id="0517c-138">Add or edit bookmark details in the template file, and then save it on your computer.</span></span> 
+1. <span data-ttu-id="0517c-139">**[ブックマークのインポート]** ウィンドウで、**[参照]** を選び、インポートする .csv ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-139">In the **Import bookmarks** pane, select **Browse** and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="0517c-140">**[インポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-140">Select **Import**.</span></span>
+
+<span data-ttu-id="0517c-141">以下に、テンプレート ファイルに関して注意すべき重要な点をいくつか紹介します。</span><span class="sxs-lookup"><span data-stu-id="0517c-141">Here are some important points to be noted regarding the template file:</span></span>
+- <span data-ttu-id="0517c-142">次のフィールドのデータは決して編集しないでください: *ID*、*最終更新日時*、*最終更新者*</span><span class="sxs-lookup"><span data-stu-id="0517c-142">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="0517c-143">既存のブックマークの *ID* を含めると、インポート ファイルの情報に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="0517c-143">If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="0517c-144">同じタイトルまたは URL を持つ既存のブックマークがある場合は、そのブックマークはインポート ファイル内の情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="0517c-144">If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.</span></span>
+- <span data-ttu-id="0517c-145">テンプレート ファイルのすべてのフィールドが必要なわけではなく、ブックマークの状態によって必要なフィールドは変わります。</span><span class="sxs-lookup"><span data-stu-id="0517c-145">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span>
+- <span data-ttu-id="0517c-146">*状態*フィールドに基づいて、ブックマークは、下書き、おすすめ、スケジュール済みとして保存されるか、自動的に公開されます。</span><span class="sxs-lookup"><span data-stu-id="0517c-146">Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="0517c-147">複数のテナントを持つ組織の場合は、ブックマークをあるテナントからエクスポートして、別のテナントにインポートできます。</span><span class="sxs-lookup"><span data-stu-id="0517c-147">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="0517c-148">ただし、インポートする前に *ID* 列のデータを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0517c-148">But you must remove the data in the *Id* column before you import.</span></span>
+
+### <a name="prevent-import-errors"></a><span data-ttu-id="0517c-149">インポート エラーを回避する</span><span class="sxs-lookup"><span data-stu-id="0517c-149">Prevent import errors</span></span>
+<span data-ttu-id="0517c-150">必要なデータが不足しているか無効な場合はエラーになり、修正する行と列に関する詳細情報を含むログ ファイルが生成されます。</span><span class="sxs-lookup"><span data-stu-id="0517c-150">You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected.</span></span> <span data-ttu-id="0517c-151">必要な編集を行い、ファイルのインポートを再度実行してください。</span><span class="sxs-lookup"><span data-stu-id="0517c-151">Make necessary edits and try importing the file again.</span></span> <span data-ttu-id="0517c-152">すべてのエラーが解決されるまで、ブックマークをインポートまたは保存することはできません。</span><span class="sxs-lookup"><span data-stu-id="0517c-152">You cannot import or save any bookmarks until all errors are resolved.</span></span>
+
+<span data-ttu-id="0517c-153">エラーを回避するには、インポート ファイルが正しく書式設定されていることに加えて、次の事項を確認してください。</span><span class="sxs-lookup"><span data-stu-id="0517c-153">To prevent errors, make sure your import file is properly formatted and:</span></span>
+- <span data-ttu-id="0517c-154">インポート テンプレートに存在していたヘッダー行とすべての列が含まれていること。</span><span class="sxs-lookup"><span data-stu-id="0517c-154">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="0517c-155">列の順序がインポート テンプレートと同じであること。</span><span class="sxs-lookup"><span data-stu-id="0517c-155">The column order is the same as the import template</span></span>
+- <span data-ttu-id="0517c-156">すべての列に値があること。ただし、空白にすることができる次の 3 つは除きます: *ID*、*最終更新日時*、*最終更新者*</span><span class="sxs-lookup"><span data-stu-id="0517c-156">All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By*</span></span> 
+- <span data-ttu-id="0517c-157">*状態*列が空ではないこと。この情報は必須であるためです。</span><span class="sxs-lookup"><span data-stu-id="0517c-157">The *State* column is not empty, as this information is required</span></span>
+
+## <a name="powerapps"></a><span data-ttu-id="0517c-158">PowerApps</span><span class="sxs-lookup"><span data-stu-id="0517c-158">PowerApps</span></span>
+<span data-ttu-id="0517c-159">既存の PowerApps をブックマークに追加することにより、休暇期間の入力または経費の報告などのユーザーのタスク完了を支援します。</span><span class="sxs-lookup"><span data-stu-id="0517c-159">Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks.</span></span> 
+
+### <a name="what-are-powerapps"></a><span data-ttu-id="0517c-160">PowerApps とはどういったものですか? </span><span class="sxs-lookup"><span data-stu-id="0517c-160">What are PowerApps?</span></span>
+<span data-ttu-id="0517c-161">PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。</span><span class="sxs-lookup"><span data-stu-id="0517c-161">PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required.</span></span> <span data-ttu-id="0517c-162">PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分かかりません。</span><span class="sxs-lookup"><span data-stu-id="0517c-162">PowerApps work in any browser and on any device and take less than a minute to add.</span></span> <span data-ttu-id="0517c-163">PowerApps の詳細については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0517c-163">For more on PowerApps, see:</span></span>
+- <span data-ttu-id="0517c-164">
+  [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)</span><span class="sxs-lookup"><span data-stu-id="0517c-164">[Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)</span></span>
+- <span data-ttu-id="0517c-165">
+  [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid)</span><span class="sxs-lookup"><span data-stu-id="0517c-165">[Documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid)</span></span>
+- [<span data-ttu-id="0517c-166">PowerApps ホーム</span><span class="sxs-lookup"><span data-stu-id="0517c-166">PowerApps Home</span></span>](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
+
+### <a name="add-a-powerapp-to-a-bookmark"></a><span data-ttu-id="0517c-167">ブックマークに PowerApp を追加する</span><span class="sxs-lookup"><span data-stu-id="0517c-167">Add a PowerApp to a bookmark</span></span>
+1. <span data-ttu-id="0517c-168">追加する [PowerApp の App ID](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) を検索します。</span><span class="sxs-lookup"><span data-stu-id="0517c-168">Find the [App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.</span></span>
+1. <span data-ttu-id="0517c-169">サインインして、**Microsoft 365 管理センター**に移動します。</span><span class="sxs-lookup"><span data-stu-id="0517c-169">Sign in and go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="0517c-170">ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-170">In the navigation pane, go to **Settings**, and then select **Microsoft Search**.</span></span>
+1. <span data-ttu-id="0517c-171">ブックマークを追加するか、**PowerApp** を追加する既存のブックマークを検索します。</span><span class="sxs-lookup"><span data-stu-id="0517c-171">Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.</span></span>
+1. <span data-ttu-id="0517c-172">**[ブックマークの設定]** で、**[Power App]**、**[Power App を追加]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-172">In **Bookmark settings**, select **Power App**, and then **Add a Power App**.</span></span>
+1. <span data-ttu-id="0517c-173">**App ID** を入力するか貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="0517c-173">Enter or paste the **App ID**.</span></span>
+    <span data-ttu-id="0517c-174">高さと幅が自動的に追加されます。</span><span class="sxs-lookup"><span data-stu-id="0517c-174">The height and width are automatically adjusted.</span></span> <span data-ttu-id="0517c-175">ブックマークでは、縦向きと横向きの両方の向きはサポートされていますが、現在、サイズを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="0517c-175">Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed.</span></span> <span data-ttu-id="0517c-176">ブックマークのプレビューには、テストを簡単にするための完全な機能を持つ PowerApp が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0517c-176">The bookmark preview shows a fully functional PowerApp to make it easy to test.</span></span>
+1. <span data-ttu-id="0517c-177">**[公開]** または **[下書きに保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0517c-177">Select **Publish** or **Save to Draft**.</span></span>
