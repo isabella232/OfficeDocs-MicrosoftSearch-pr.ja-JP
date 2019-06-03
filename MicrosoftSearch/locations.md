@@ -13,18 +13,19 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
+ROBOTS: NOINDEX
 description: Microsoft Search の作業結果に組織の場所の情報を含めるすべての方法についての概要
-ms.openlocfilehash: bcda64315f85b9770f47d1b6c08fd90296063487
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 9eb61d206852759ade3cb668a3d9c0dee83c424f
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968461"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591577"
 ---
 # <a name="locations"></a>場所
 
 > [!IMPORTANT]
-> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 ## <a name="add-locations"></a>場所の追加
 

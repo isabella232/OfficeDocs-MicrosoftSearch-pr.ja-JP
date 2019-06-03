@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
+ROBOTS: NoIndex
 description: Microsoft Search 作業結果に関する一般的な質問に対する回答を作成する方法について取り上げます
-ms.openlocfilehash: 9713608450688a0841aa64d1f3198183b10e05ee
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 9b4d63490c95ec9d5468abbae281c9cc84ab25ca
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508627"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591496"
 ---
 # <a name="create-qas"></a>Q&A の作成
+
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
 Q&A では、ユーザーに対する回答や情報を、必要に応じてリンクを含めて提供します。理想的には、Q&A には、ユーザーが情報源に移動しなくても済むよう探している詳細をすべて含めます。Q&A のコンテンツの書式を設定し、画像、リスト、表などを含めることができます。
   

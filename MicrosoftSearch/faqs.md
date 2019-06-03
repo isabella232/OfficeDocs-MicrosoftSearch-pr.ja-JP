@@ -13,17 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
+ROBOTS: NoIndex
 description: エンタープライズ検索と Microsoft Search についてよく寄せられる質問に対する回答です
-ms.openlocfilehash: ed4179262dc20a441ce5e3acadc895bacb271fa9
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 58fb45eec5cc354a6228fb552a3dcda28c2b2367
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508699"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591505"
 ---
 # <a name="faqs"></a>FAQ
 
 組織やユーザーから Microsoft Search の管理や使用についてよく寄せられる質問は次のとおりです。
+
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
   
 ## <a name="whats-the-value-proposition-for-microsoft-search"></a>Microsoft Search にはどんな価値提供がありますか。
 

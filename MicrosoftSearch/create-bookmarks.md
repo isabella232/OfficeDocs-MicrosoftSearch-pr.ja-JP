@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
+ROBOTS: NoIndex
 description: ブックマークを作成またはブラウザー拡張機能を使用してブックマークを Microsoft Search 作業結果へ追加します。
-ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 6f6efd10b360547bb0cde47f35510433bf6f90cc
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508732"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590713"
 ---
 # <a name="create-bookmarks"></a>ブックマークを作成する
 
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+    
 ブックマークを使うと、重要なリソース、サイト、ツールなどをすばやく見つけるのに役立ちます。各ブックマークには、そのブックマークをトリガーするタイトル、URL、およびキーワードのセットが含まれます。
   
 ## <a name="create-a-bookmark"></a>ブックマークを作成する

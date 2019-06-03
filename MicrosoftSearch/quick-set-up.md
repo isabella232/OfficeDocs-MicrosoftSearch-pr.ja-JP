@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
+ROBOTS: NOINDEX
 description: Microsoft Search を有効にして、使用するために必要な 4 つの簡単な手順について説明します。
-ms.openlocfilehash: 2a113cf10d944aea54d3fe6342599934e4b5ac45
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: fe6e01c866ca99357ce8bdd5e9cb1b6cee1a2333
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508587"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591541"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>Microsoft Search のクイック セットアップ
 
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+    
 組織に最も適した Web と処理を用意することで時間を節約します。
   
 ## <a name="step-1-turn-on-microsoft-search"></a>手順 1: Microsoft Search をオンにする
