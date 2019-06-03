@@ -3,7 +3,7 @@ title: '**Microsoft Search** のセットアップ'
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 04/30/2019
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
-ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
+ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970132"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591055"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
@@ -30,9 +30,9 @@ ms.locfileid: "33970132"
 
 **Microsoft Search** は Microsoft 365 の一部であり、この機能をサポートしているすべての Microsoft アプリに対して既定で有効になっています。 ユーザーは、職場または学校のアカウントでサインインし、Bing のブラウザーを既定の検索プロバイダーとして設定するだけで、利用できます。
 
-**Microsoft Search**を**Microsoft 365 管理センター**から管理します。 管理者認証情報を使用してサインインし、**アプリ起動ツール**で**管理**タイルを選択します。 **Microsoft 365 管理センター**で、 左側のナビゲーション パネルで**設定**の下の**Microsoft Search** を選択します。 
+**Microsoft Search**を**Microsoft 365 管理センター**から管理します。 管理者の資格情報でログインしてサインインし、Office 365 アプリの一覧から [**管理者**] タイトルを選択します (アプリの一覧については、左上隅にある [**アプリ起動ツール**] アイコンをクリックします)。 **Microsoft 365 管理センター**で、 左側のナビゲーション パネルで**設定**の下の**Microsoft Search** を選択します。 
 
-**注:** 従来の管理ポータルが表示され、新しい管理センターに切り替えたい場合は、管理センターの右上隅にある **プレビューを試す**スイッチを有効にしてください。 
+**注:** **Microsoft 365 管理センター**の [**設定**] の下に [**Microsoft Search**] が表示されている場合は、管理センターの右上隅にある [**プレビューを試す**] スイッチを有効にしてください。 
 
 管理者として、組織内での効率的でユーザー フレンドリな **Microsoft Search** の操作性を実現するために、いくつかの点を考慮する必要があります。
 
@@ -40,7 +40,8 @@ ms.locfileid: "33970132"
 
 **Microsoft Search** は、コンテンツ ソースのセキュリティ設定を尊重します。 検索結果としてユーザーに表示される内容は、アクセス許可のレベルによって異なります。 ユーザーが、自分がアクセスを許可されているコンテンツのみを見つけるように、組織内のユーザーのアクセス レベルを確認してください。
 
-[アクセス許可の計画](https://docs.microsoft.com/ja-JP/sharepoint/plan-your-permissions-strategy)や[アクセス許可レベルの作成](https://docs.microsoft.com/ja-JP/sharepoint/how-to-create-and-edit-permission-levels)について詳しくご確認ください。
+
+  [アクセス許可の計画](https://docs.microsoft.com/ja-JP/sharepoint/plan-your-permissions-strategy)や[アクセス許可レベルの作成](https://docs.microsoft.com/ja-JP/sharepoint/how-to-create-and-edit-permission-levels)について詳しくご確認ください。
 
 ### <a name="step-2-assign-search-admin-and-search-editor"></a>手順 2: Search 管理者と Search エディターを割り当てる
 
@@ -54,7 +55,7 @@ Search 管理者は、エンド ユーザーの検索エクスペリエンスに
 1. **Search 管理者:** この役割では、検索結果のコンテンツを作成したり管理したりして、組織内の検索結果を向上させるためのクエリ設定を定義できます。 Search 管理者は、**Microsoft Search** の構成を管理し、コンテンツを作成する Search エディターを指定します。
 2. **Search エディター:** Microsoft 365 管理センターで **Microsoft Search** のコンテンツを作成、管理、および削除します。 この役割には、よく寄せられる質問や回答、重要な場所や位置、頻繁に検索および使用されるサイトやアプリなどの編集コンテンツを作成および管理する権限があります。ただし、検索設定を管理するアクセス権はありません。
 
-管理者の役割の割り当てについては、「[一般法人向け Office 365 で管理者ロールを割り当てる](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)」を参照してください。
+管理者の役割の割り当てについては、「[一般法人向け Office 365 で管理者ロールを割り当てる](https://docs.microsoft.com/ja-JP/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)」を参照してください。
 
 ### <a name="step-3-make-content-easy-to-find"></a>手順 3: コンテンツを見つけやすくする 
 
@@ -86,7 +87,7 @@ Chrome の Windows 10 および AAD サインイン拡張機能をダウンロ�
 - [Office の Microsoft Search で必要な情報を見つける](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 トレーニング センター](https://support.office.com/office-training-center)
 - 
-  [Microsoft Search センター](https://support.office.com/en-us/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+  [Microsoft Search センター](https://support.office.com/ja-JP/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
 ### <a name="trying-out-microsoft-search-in-bing"></a>**Microsoft Search** in Bing を試す 
 **Microsoft Search** 管理者は、Bing で **Microsoft Search** を無効にすることができます。 無効にすると、Bing 検索では組織のコンテンツが表示されなくなります。 既定では、**Microsoft Search** は Bing で有効になっています。 ユーザー エクスペリエンスを向上させるために、Bing で **Microsoft Search** を有効にしておくことをお勧めします。 
