@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
+ROBOTS: NOINDEX
 description: Microsoft Search を組織にデプロイするために必要なすべての情報
-ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: d375f67045a04341dedc699856f631c5c41e5896
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508955"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591091"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+    
 Office 365 の一部である Microsoft Search は、Microsoft 365 管理センターで有効にすると簡単に展開することができます。 これを有効にすれば、後は、ロゴ、名前、色を設定し、ユーザーにアクセス権を付与するためのクイック構成を行うだけでセットアップが完了します。 その後、承認されたユーザーは職場または学校アカウントを使用して Bing にサインインでき、検索時に作業結果が表示されるようになります。
 
 - [クイック セットアップ](quick-set-up.md)

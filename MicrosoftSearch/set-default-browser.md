@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
+ROBOTS: NOINDEX
 description: Microsoft Search を使用して、会社の既定のブラウザーを構成する方法について説明します。
-ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: daff7f66bd38bdd56179e44c36092a2c4fd42b42
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508999"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591163"
 ---
-# <a name="set-default-browser"></a>既定のブラウザーの設定
+# <a name="set-default-browser"></a>既定のブラウザーを設定する
 
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+    
 既定のブラウザー、検索エンジン、ホームページを構成すると、ユーザーが Microsoft Search 機能を把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます。
   
 組織の既定のブラウザーを設定するには、以下の手順を実行します。
