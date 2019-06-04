@@ -13,20 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
+ROBOTS: NoIndex
 description: Microsoft Search 管理ポータルのインポート ツールを使用して、一度に多数の場所を追加
-ms.openlocfilehash: 1d360fda2851083def0bcbd8fcffd77cfa15240e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 186f6973de1ff87b62b5f07a47eb41acdd842010
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968293"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591397"
 ---
 # <a name="bulk-create-locations"></a>場所の一括作成
 
 > [!IMPORTANT]
-> Bing の Microsoft Search の設定は、Microsoft 365 管理センターで利用できるようになりました。 まず、管理センターで[検索管理者を割り当てる](https://docs.microsoft.com/ja-JP/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)ことから作業を開始します。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
-場所の情報を一括作成、編集、および保存するには、.csv テンプレートをダウンロードして使用します。 
+.csv テンプレートをダウンロードして使用し、位置情報を一括作成、編集、および保存します。 
   
 1. [場所] セクションの右上にある **[インポート]** をクリックします
     
