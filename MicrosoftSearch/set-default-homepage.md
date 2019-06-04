@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
+ROBOTS: NOINDEX
 description: Microsoft Search を使用して、会社の既定のホーム ページとして Bing を設定する方法について説明します。
-ms.openlocfilehash: db0611ebd7f4a8344664825bbb42025f3bb36486
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 0fc16bc7389b8cfffc2ad528b3b10c7ae1d498c3
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508977"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591181"
 ---
-# <a name="set-default-homepage"></a>既定のホーム ページの設定
+# <a name="set-default-homepage"></a>既定のホーム ページを設定する
+
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
 既定のブラウザー、検索エンジン、ホーム ページを構成すると、ユーザーが Microsoft Search 機能を把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます。
   

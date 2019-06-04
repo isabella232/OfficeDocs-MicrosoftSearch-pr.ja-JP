@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
+ROBOTS: NoIndex
 description: 結果を作成したりインポートしたり、自動的にサインインしたり、どこからでも検索したりできるようにする Microsoft Search ツールの概要
-ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 16beaf5ae2945df19b32b65ae4e65b4989217f9f
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508724"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591352"
 ---
 # <a name="admin-portal-tools"></a>管理ポータルのツール
 
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+    
 Microsoft Search 管理ポータルには、管理者、編集者、ユーザーのために設計されたツールやリソースが含まれています。以下に例を示します。
   
 - コンテンツ作成者のブラウザー拡張機能
