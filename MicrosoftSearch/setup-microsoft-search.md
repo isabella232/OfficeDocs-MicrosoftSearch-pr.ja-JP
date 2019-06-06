@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591055"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728007"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
@@ -36,14 +36,14 @@ ms.locfileid: "34591055"
 
 管理者として、組織内での効率的でユーザー フレンドリな **Microsoft Search** の操作性を実現するために、いくつかの点を考慮する必要があります。
 
-### <a name="step-1-check-access-level-of-your-users"></a>手順 1: ユーザーのアクセス レベルを確認する
+## <a name="step-1-check-access-level-of-your-users"></a>手順 1: ユーザーのアクセス レベルを確認する
 
 **Microsoft Search** は、コンテンツ ソースのセキュリティ設定を尊重します。 検索結果としてユーザーに表示される内容は、アクセス許可のレベルによって異なります。 ユーザーが、自分がアクセスを許可されているコンテンツのみを見つけるように、組織内のユーザーのアクセス レベルを確認してください。
 
 
   [アクセス許可の計画](https://docs.microsoft.com/ja-JP/sharepoint/plan-your-permissions-strategy)や[アクセス許可レベルの作成](https://docs.microsoft.com/ja-JP/sharepoint/how-to-create-and-edit-permission-levels)について詳しくご確認ください。
 
-### <a name="step-2-assign-search-admin-and-search-editor"></a>手順 2: Search 管理者と Search エディターを割り当てる
+## <a name="step-2-assign-search-admin-and-search-editor"></a>手順 2: Search 管理者と Search エディターを割り当てる
 
 **Microsoft 管理センター** には 2 つの新しい役割があります。つまり、Search 管理者と Search エディターです。  すべての権限を持つグローバル管理者は、Search 管理者の役割を含む、管理者の役割をユーザーに割り当てます。 Search 管理者は、Search 管理者または Search エディターの役割を他のユーザーに委任できます。 異なる管理者の役割に関する詳細については、[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) を参照してください。
 
@@ -57,7 +57,7 @@ Search 管理者は、エンド ユーザーの検索エクスペリエンスに
 
 管理者の役割の割り当てについては、「[一般法人向け Office 365 で管理者ロールを割り当てる](https://docs.microsoft.com/ja-JP/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)」を参照してください。
 
-### <a name="step-3-make-content-easy-to-find"></a>手順 3: コンテンツを見つけやすくする 
+## <a name="step-3-make-content-easy-to-find"></a>手順 3: コンテンツを見つけやすくする 
 
 **Microsoft Search** では、ユーザーに対して堅牢な検索エクスペリエンスを構築するために使用できるツールを管理者に提供しています。 **Microsoft Search** では、管理者がより優れた検索機能を作成し、コンテンツの見つけやすさを向上させるために、次の 3 つの検索コンテンツを使用することができます。
 - **ブックマーク:** ブックマークとは、SharePoint の昇格した結果に似たもので、ユーザーのクエリに対して最適な結果を検索結果の上位に昇格させ、重要な内部サイトをユーザーが簡単に見つけられるようにします。 
@@ -73,7 +73,7 @@ Search 管理者は、エンド ユーザーの検索エクスペリエンスに
 
 検索コンテンツの作成と管理の詳細については、「[コンテンツを見つけやすくする](make-content-easy-to-find.md)」を参照してください。
 
-### <a name="step-4-test-single-sign-on"></a>手順 4: シングル サインオンのテスト
+## <a name="step-4-test-single-sign-on"></a>手順 4: シングル サインオンのテスト
 **Microsoft Search** では、Azure Active Directory (AAD) を使用して、組織のデータへのアクセスを認証および承認します。  つまり、ユーザーが Office 365 アプリまたは Windows 10 にサインインすると、自動的に職場または学校のアカウントにもサインインするという意味です。
 
 ユーザーがサインインするように求められる回数が減るため、**Microsoft Search** ユーザーはシングル サインオンを使用するようお勧めします。 管理者は、ブロッキングの構成の問題を特定できるように、小規模なユーザー グループでシングル サインオンをテストする必要があります。 
@@ -82,14 +82,14 @@ Windows 10 における Chrome ユーザーの場合、シングル サインオ
 
 Chrome の Windows 10 および AAD サインイン拡張機能をダウンロードしてインストールするには、[Chrome Web ストア](https://go.microsoft.com/fwlink/?linkid=2090961) にアクセスしてください。
 
-### <a name="step-5-training-and-communication"></a>手順 5: トレーニングおよびコミュニケーション
+## <a name="step-5-training-and-communication"></a>手順 5: トレーニングおよびコミュニケーション
 従業員が自分で簡単にアクセスできるセルフサービスのリソースを確立します。 これにより、お客様とチームの全体的な負担を軽減し、常にコミュニケーションを促進し、従業員の自己トレーニングと教育に役立てることができます。 ユーザーのコミュニケーション、FAQ、ビデオ、録画されたトレーニングやウェビナーを提供します。 まずは、次のリンクを参考にしてください。
 - [Office の Microsoft Search で必要な情報を見つける](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 トレーニング センター](https://support.office.com/office-training-center)
 - 
   [Microsoft Search センター](https://support.office.com/ja-JP/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
-### <a name="trying-out-microsoft-search-in-bing"></a>**Microsoft Search** in Bing を試す 
+## <a name="trying-out-microsoft-search-in-bing"></a>**Microsoft Search** in Bing を試す 
 **Microsoft Search** 管理者は、Bing で **Microsoft Search** を無効にすることができます。 無効にすると、Bing 検索では組織のコンテンツが表示されなくなります。 既定では、**Microsoft Search** は Bing で有効になっています。 ユーザー エクスペリエンスを向上させるために、Bing で **Microsoft Search** を有効にしておくことをお勧めします。 
 
 テスト テナントで **Microsoft Search** を試行する場合、またはすべてのユーザーが利用できるようにする前に検索エクスペリエンスをテストする場合は、**Microsoft Search** を無効にします。

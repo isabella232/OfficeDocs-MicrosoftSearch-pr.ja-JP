@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 ROBOTS: NOINDEX
 description: Microsoft Search を使用して会社の既定の検索エンジンとして Bing を設定する方法について取り上げます。
-ms.openlocfilehash: 77a8ea884f4df26fc8f7661fb9a9b8791b2f0f18
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 36e8a50a7b6acda553b82d4b95a57a378818f7ec
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591118"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727989"
 ---
 # <a name="set-default-search-engine"></a>既定の検索エンジンの設定
 
-> [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
-    
+  
 既定のブラウザー、検索エンジン、ホームページを構成すると、ユーザーが Microsoft Search 機能を把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます。
   
 組織の既定の検索エンジンを設定するには、以下の手順を実行します。

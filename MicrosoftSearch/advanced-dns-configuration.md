@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: 47eedbb9-6da9-47e0-aac5-078d34a7fd8f
 ROBOTS: NoIndex
 description: CNAME を使用して DNS サーバーを構成することにより、ユーザーがシームレスなサインイン エクスペリエンスを利用できるようにします
-ms.openlocfilehash: 6a291165df33f8acc99d247104e8e88cd35c3a0e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 05562bd9379af395ee305ffebdddbf7bfcd1e835
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591361"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727899"
 ---
 # <a name="advanced-dns-configuration"></a>高度な DNS 構成
 
-> [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
-    
+
 Bing で組織内のユーザーを特定し、ユーザーが職場または学校のアカウントに正常にサインインできるようにするには、内部 DNS サーバーまたはプロキシを構成し、`www.bing.com` から `ms.bing.com` に解決できるようにします。そのためには、`ms.bing.com` の CNAME となるように `www.bing.com` の DNS エントリを作成します。
   
 ****

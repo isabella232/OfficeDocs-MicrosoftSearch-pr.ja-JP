@@ -15,17 +15,14 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 関連する検索候補や作業結果にすばやくアクセスするために、イントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
-ms.openlocfilehash: 867282393c7a4bffa63363a3455e4f1543c7f8a1
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: ea3efc224b69ffe894104068b055efe8b5882cc1
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590695"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727926"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックスを追加する
-
-> [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センター に移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+# <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックス追加する
 
 関連する検索候補や作業結果にすばやくアクセスするために、任意のイントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
   

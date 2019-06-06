@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
 ROBOTS: NoIndex
 description: ロゴ、会社名などを Microsoft Search の検索結果へ追加します
-ms.openlocfilehash: d3989422c4bd38236241984c1f9beb67d12a0847
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0ae26acd0e0114b83c022e0a0b4ad082d495cd1c
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591244"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727980"
 ---
 # <a name="content-settings"></a>コンテンツ設定
 
-> [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
-    
+ 
 Microsoft Search では、SharePoint、OneDrive for Business、社内イントラネットなど、組織内のコンテンツ ソースから結果を使い慣れたルック アンド フィールで表示できます。 
   
 - 組織名
