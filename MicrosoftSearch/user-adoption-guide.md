@@ -15,17 +15,14 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 組織に Microsoft Search を正常にロールアウトするのに役立つ方法とプロセスについて説明します。
-ms.openlocfilehash: 967c5876fe1a559041ec88d5d038d5739fd77280
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590839"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727908"
 ---
 # <a name="user-adoption-guide"></a>ユーザー導入ガイド
-
-> [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動した後、削除されます。 開始するには、Microsoft 365 管理センターを使用することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
 この情報は、Microsoft Search 管理者、変更管理リーダー、およびビジネス所有者を対象としています。
   
@@ -88,9 +85,9 @@ Microsoft 検索のロールアウトの準備に時間をかけることで、�
   
 管理者は、エンドユーザーの検索機能に直接影響を与えることができます。また、組織を検索する方法を決定します。 これには、ユーザーに表示する結果の種類の選択が含まれます。 ドキュメント、サイト、人、グループ、会話の結果を有効または無効にすることで、これを制御します。
   
-詳細については、「 [Microsoft Search をセットアップ](set-up-microsoft-search.md)する」を参照してください。
+詳細については、「 [Microsoft Search をセットアップ](setup-microsoft-search.md)する」を参照してください。
   
-編集者は、専門分野でブックマークと Q&As を管理するのに役立つ専門家です。 編集者は、以前に確認したユーザーシナリオに対応するコンテンツを作成する必要があります。
+編集者は、専門分野の範囲内でブックマークと Q&を管理するのに役立つ専門家です。 編集者は、以前に確認したユーザーシナリオに対応するコンテンツを作成する必要があります。
   
 詳細については、「[コンテンツを計画する](plan-your-content.md)」を参照してください。
   
@@ -196,7 +193,4 @@ Microsoft Search に関して組織で興奮を得る:
     
 3. 調査、フォーカスグループ、フィードバックセッションを実施して、ユーザーが Microsoft Search についてどのようなものかを理解し、導入を促進し、改善範囲を特定します。
     
-教育およびフィードバックは反復的なプロセスです。 ユーザーが Microsoft Search を採用する際には、コンテンツや通信に変更を加える必要がある場合があります。 
-
-  
-
+教育およびフィードバックは反復的なプロセスです。 ユーザーが Microsoft Search を採用する際には、コンテンツや通信に変更を加える必要がある場合があります。
