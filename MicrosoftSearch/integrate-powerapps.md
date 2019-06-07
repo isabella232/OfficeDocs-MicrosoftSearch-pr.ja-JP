@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: Microsoft Search のブックマーク結果にブラウザー ベースのアプリを組み込みます
-ms.openlocfilehash: 655b8c8c6f4a9729461447112b21ca7c6c7864f9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1f4cf7512ee176015537be2fbe2f59429cde6578
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591613"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727971"
 ---
 # <a name="integrate-powerapps"></a>PowerApps の統合
 
@@ -43,9 +43,9 @@ PowerApps は、コーディング経験がなくても、ブラウザーまた�
 
 PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分もかかりません。
   
-1. 統合する [PowerApp の App ID を検索します](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
+1. 統合する [PowerApp のアプリ ID を検索する](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
     
-2. Microsoft Search 管理ポータルで、**[ブックマーク]** に移動します
+2. Microsoft Search 管理ポータルで、[**ブックマーク**] に移動します
     
 3. ブックマークを追加するか、PowerApp を追加する既存のブックマークを検索します。
     

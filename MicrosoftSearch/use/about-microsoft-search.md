@@ -14,14 +14,14 @@ search.appverid:
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
 ROBOTS: NOINDEX
 description: Microsoft Search を使用する際に、検索できるすべての情報に関する概要を取得します
-ms.openlocfilehash: bc8d53610d125aba57b2c2c8a8c6d1077e2f012a
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: a6bda23da00ac302287787b1c48a3e578f0bb335
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590983"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727938"
 ---
-# <a name="about-microsoft-search"></a>Microsoft Search について
+# <a name="using-microsoft-search"></a>Microsoft Search を使用する
 
 Microsoft Search を使用すると、検索作業と Web を 1 つのエクスペリエンスに簡単にまとめることができます。任意のデバイスの任意のブラウザーで、適切なタイミングで適切な情報を取得するためのシンプル、高速、強力、そしてより安全な方法を確立するために Microsoft Search を使用します。
   
