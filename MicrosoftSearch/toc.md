@@ -1,7 +1,10 @@
 #[Microsoft Searchの概要](overview-microsoft-search.md)
 #[Microsoft Search のセットアップ](setup-microsoft-search.md)
-#[コンテンツの計画](plan-your-content.md)
+#簡単に見つけられるコンテンツ
+##[コンテンツの計画](plan-your-content.md)
 ##[ブックマークの管理](manage-bookmarks.md)
 ##[Q&A の管理](manage-qas.md)
 ##[場所の管理](manage-locations.md)
 #[SharePoint Online での Microsoft Search](get-started-search-in-sharepoint-online.md)
+#[ユーザー導入ガイド](user-adoption-guide.md)
+#[Microsoft Search の使用](use/about-microsoft-search.md)
