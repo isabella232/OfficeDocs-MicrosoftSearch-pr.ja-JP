@@ -3,17 +3,6 @@
 
 
 
-## <a name="week-of-april-29-2019"></a>2019年4月29日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 2019 年 4 月 30 日 | [Microsoft Search](/MicrosoftSearch/microsoft-search) | 更新日時 |
-| 2019 年 4 月 30 日 | [ユーザー導入ガイド](/MicrosoftSearch/user-adoption-guide) | 更新日時 |
-| 5/1/2019 | [Microsoft Search](/MicrosoftSearch/microsoft-search) | 更新日時 |
-| 5/1/2019 | [Microsoft Search の概要](/MicrosoftSearch/overview-microsoft-search) | 更新日時 |
-
-
 ## <a name="week-of-may-06-2019"></a>2019年5月6日の週
 
 
@@ -123,3 +112,23 @@
 | 5/30/2019 | [自動的にサインインするのはなぜですか?](/MicrosoftSearch/use/why-am-i-automatically-signed-in) | 更新日時 |
 | 5/30/2019 | [ユーザー導入ガイド](/MicrosoftSearch/user-adoption-guide) | 更新日時 |
 | 5/30/2019 | [Microsoft Search を選ぶ理由](/MicrosoftSearch/why-microsoft-search) | 更新日時 |
+
+
+## <a name="week-of-june-03-2019"></a>2019年6月3日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 6/5/2019 | [イントラネット サイトに検索ボックス追加](/MicrosoftSearch/add-a-search-box-to-your-intranet-site) | 更新日時 |
+| 6/5/2019 | [高度な DNS 構成](/MicrosoftSearch/advanced-dns-configuration) | 更新日時 |
+| 6/5/2019 | [コンテンツ設定](/MicrosoftSearch/content-settings) | 更新日時 |
+| 6/5/2019 | [PowerApps の統合](/MicrosoftSearch/integrate-powerapps) | 更新日時 |
+| 6/5/2019 | [Microsoft Search のセキュリティ](/MicrosoftSearch/security) | 更新日時 |
+| 6/5/2019 | [既定のブラウザーの設定](/MicrosoftSearch/set-default-browser) | 更新日時 |
+| 6/5/2019 | [既定のホームページの設定](/MicrosoftSearch/set-default-homepage) | 更新日時 |
+| 6/5/2019 | [既定の検索エンジンの設定](/MicrosoftSearch/set-default-search-engine) | 更新日時 |
+| 6/5/2019 | [**Microsoft Search**をセットアップする](/MicrosoftSearch/setup-microsoft-search) | 更新日時 |
+| 6/5/2019 | [Microsoft Search について](/MicrosoftSearch/use/about-microsoft-search) | 更新日時 |
+| 6/5/2019 | [ユーザー導入ガイド](/MicrosoftSearch/user-adoption-guide) | 更新日時 |
+| 6/7/2019 | [SharePoint Online で Microsoft Search の使用を開始する](/MicrosoftSearch/get-started-search-in-sharepoint-online) | 更新日時 |
+| 6/7/2019 | [Microsoft Search の概要](/MicrosoftSearch/overview-microsoft-search) | 更新日時 |
