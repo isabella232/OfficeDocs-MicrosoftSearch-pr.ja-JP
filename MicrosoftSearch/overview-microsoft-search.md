@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の概要、その利点、Microsoft Search が現在搭載されているアプリについて確認します。
-ms.openlocfilehash: 7fc58204b17fbe8274655756bd8e041c921a063e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
+ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591313"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767192"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -26,7 +26,7 @@ Microsoft Search は、Microsoft 365 生産性アプリとより広範な Micros
 
 Microsoft Search を使用すると、ユーザーは適切な回答、他のユーザー、コンテンツを見つけて、既に作業しているアプリでタスクを完了することができます。
 
-- 検索元のアプリの**コンテキスト**に応じた結果を取得できます。 たとえば、Outlook で検索すると、SharePoint のサイトではなくメールが見つかります。 SharePoint で検索すると、メールではなく、サイト、ページ、ファイルが見つかります。
+- 検索元のアプリの**コンテキスト**に応じた結果を取得できます。 たとえば、Outlook で検索すると、SharePoint のサイトではなくメールが見つかります。 SharePoint で検索すると、サイト、ページ、ファイルが見つかります。
 - ユーザーがどのアプリで作業していても、Microsoft Search は**個人用**です。  Microsoft Search では、Microsoft Graph からの洞察を使用して、各ユーザーに関連性のある結果が表示されます。 各ユーザーが同じ単語を検索しても、それぞれの結果は異なる可能性があります。 ユーザーには既にアクセス権のある結果のみが表示されます。Microsoft Search によってアクセス許可が変更されることはありません。
 - 情報がある場所を覚えておく必要はありません。 たとえば、あるユーザーが Word で作業していて、同僚が自分の OneDrive から共有したプレゼンテーションの情報をそのユーザーが再利用する必要があるとします。 この場合、OneDrive に切り替えて、そのプレゼンテーションを検索する必要はなく、Word から検索するだけで済みます。  
 - Bing を使用している場合、公開されている Web の検索結果に加えて組織内からも結果を取得できます。
@@ -58,12 +58,11 @@ Bing では、ユーザーは Web 検索用の検索ボックスを使用しま�
 
 **進化する Microsoft Search** - ユーザーが検索できるコンテンツの種類セットと検索ボックスのインテリジェンスは徐々に拡充されていきます。
 
-**すべてのアプリで管理可能** - Microsoft Search は既定でオンになっており、実行するあらゆる管理はすべてのアプリの Microsoft Search に適用されます。
+**すべてのアプリで管理可能** - Microsoft Search は既定で**オン**になっており、実行するあらゆる管理はすべてのアプリの Microsoft Search に適用されます。
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>現在 Microsoft Search が搭載されているアプリ
 
-
-Microsoft Search は、Microsoft 365 全体のより多くのアプリで順次利用できるようになります。 現在、次の Office 365 アプリで Microsoft Search が提供されています。
+ 現在、次の Office 365 アプリで Microsoft Search が提供されています。
 
 - SharePoint Online
 - OneDrive for Business
@@ -105,7 +104,7 @@ Microsoft Search は、Microsoft 365 全体のより多くのアプリで順次�
 
 ## <a name="what-content-is-searched"></a>検索されるコンテンツ
 
-Microsoft Search では、グローバル アドレス一覧や Office 365 グループのユーザーを含め、SharePoint Online、OneDrive for Business、Exchange に保存されているコンテンツ内を検索できます。 組織でクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境をセットアップすると、Microsoft Search のユーザーは、SharePoint Server 環境に接続している外部コンテンツを含む、オンプレミスの SharePoint コンテンツからも結果を取得できます。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft Search では、グローバル アドレス一覧や Office 365 グループのユーザーを含め、SharePoint Online、OneDrive for Business、Exchange に保存されているコンテンツ内を検索します。 組織でクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境をセットアップすると、Microsoft Search は SharePoint Server 環境に接続している外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 SharePoint スタートページまたは Office.com から検索すると、Microsoft Search では組織内のすべてのコンテンツが検索され、検出されたすべての結果が表示されます。 これは、**グローバル検索範囲**と呼ばれています。
 
