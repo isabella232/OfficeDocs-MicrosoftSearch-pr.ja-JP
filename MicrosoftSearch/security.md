@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Microsoft Search において、承認されたユーザーに情報を提供するときにエンタープライズのデータとユーザーを保護します
-ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727944"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003112"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search のセキュリティ
 
@@ -57,28 +57,17 @@ SharePoint や OneDrive for Business などの Office 365 ワークロードか�
   
 ユーザーのクエリに返された応答に作業結果が含まれるかどうかに関わらず、次の対策がとられます。
   
-- ログ記録
+- Logging
     
-  - Microsoft Search トラフィックに関するすべての検索ログは匿名化され、Microsoft Search トラフィック以外の一般のトラフィックとは別に保管されます。検索ログは 18 か月間保持され、デバッグの目的以外にはアクセスできません。
-    
-  - これらのログのクエリは、一般の Web 検索のためのモデルや自動検索候補や関連検索などの一般検索用の機能の学習には使われません。
-    
-  - アクセス制限は、セキュリティ グループおよびエンジニアリング システム内の他のレイヤーなどのさまざまなセキュリティ メカニズムを通して管理されます。
-    
-- 検索履歴
-    
-  - 職場または学校のアカウントでサインインした場合、他のコンピューターまたはデバイスからユーザーの検索履歴へアクセスすることはできません。
+  - Microsoft Search トラフィックに関するすべての検索ログは匿名化され、匿名化された状態で 18 か月間保持されます。
+  - これらのシステムログに保存されたクエリは、制限一式と頻度しきい値が満たされている場合、自動検索候補や関連検索などのパブリックな検索機能のモデルや検索機能の学習にのみ使用されます。そしてそれは、これらのクエリが一般に普及しているものであり、特定の組織に特化したものではないという信頼を与えます。 クエリは、Microsoft 以外のユーザーからの関連付けデータに膨大な回数出現する必要があります。そしてそれは、企業の検索結果のみをトリガーするものであってはなりません。 クエリがこれらの要件を満たさない場合は、一般の、Microsoft Search 以外のトラフィックとは別に保管されます。
+  - アクセス制限は、セキュリティ グループおよびエンジニアリング システム内の他のレイヤーを含む、さまざまなセキュリティ機構によって管理されます。
     
 - 広告
     
   - エンタープライズ検索クエリが広告業者と共有されたり、広告業者に通知されたりすることはありません。
-    
-  - Microsoft Search に関係する検索広告のログは、一般のトラフィックとは別に保管されます。
-    
   - ユーザーの職場 ID または組織を基にユーザーが広告のターゲットになることはありません。
     
 ## <a name="gdpr"></a>GDPR
 
 Microsoft の [2018 年 5 月 21 日のブログ投稿](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)は、Microsoft における GDPR 遵守への取り組みと、Microsoft によるそれぞれの企業や組織での GDPR 遵守義務への支援の仕方を書き表したものです。追加詳細については、Microsoft [セキュリティ センターの FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs) をご覧ください。Microsoft Search オンライン サービス内で組織の顧客の顧客データに対して処理が行われるクエリは、[セキュリティ センターの FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs) の説明にある通り、第 28 条で説明される処理者に関する取り組みへ準拠しています。Microsoft Search から一般の Bing に対してのクエリに関しては、Microsoft がデータ管理者となり、GDPR の説明に従いクエリを匿名化する対応を実施しています。
-
-

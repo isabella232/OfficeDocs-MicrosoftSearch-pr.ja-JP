@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Microsoft Search を使用して、その他のリソースに頼らずに質の高いコンテンツを提供します
-ms.openlocfilehash: 88c2af543be02f8e17937e36a81fd28d862e8fb0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 90774f8606f5582338c12b4f123153b6f3f4de74
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591208"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947754"
 ---
 # <a name="plan-your-content"></a>コンテンツの計画
 
@@ -91,7 +91,7 @@ ms.locfileid: "34591208"
 
 コンテンツ作成に参加したユーザーと SME は、検索結果のテストと検証をサポートすることができます。
 
-## <a name="step-5-review-and-update-periodically"></a>手順 5: 定期的に確認と更新を行う
+## <a name="step-5-use-insights-to-review-and-update-periodically"></a>手順 5: 分析情報を使用して定期的に確認と更新を行う
 ブックマークや Q&A のような権限のある情報は、最新の状態であることが重要です。 以下は定期的に実行されます。
 - リンク切れまたは無効な URL を修正または削除する。
 - 関連性がなくなったブックマークと Q&A を削除する。

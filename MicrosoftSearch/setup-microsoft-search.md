@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: c95cc0d11d60e3d4d9a509dc691c01858ede7262
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34728007"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947745"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
@@ -32,7 +32,7 @@ ms.locfileid: "34728007"
 
 **Microsoft Search**を**Microsoft 365 管理センター**から管理します。 管理者の資格情報でログインしてサインインし、Office 365 アプリの一覧から [**管理者**] タイトルを選択します (アプリの一覧については、左上隅にある [**アプリ起動ツール**] アイコンをクリックします)。 **Microsoft 365 管理センター**で、 左側のナビゲーション パネルで**設定**の下の**Microsoft Search** を選択します。 
 
-**注:** **Microsoft 365 管理センター**の [**設定**] の下に [**Microsoft Search**] が表示されている場合は、管理センターの右上隅にある [**プレビューを試す**] スイッチを有効にしてください。 
+**注:** **Microsoft 365 管理センター**の [**設定**] の下に [**Microsoft Search**] が表示されていない場合は、管理センターの右上隅にある [**プレビューを試す**] スイッチを有効にしてください。 
 
 管理者として、組織内での効率的でユーザー フレンドリな **Microsoft Search** の操作性を実現するために、いくつかの点を考慮する必要があります。
 
