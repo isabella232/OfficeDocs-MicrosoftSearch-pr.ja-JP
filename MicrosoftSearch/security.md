@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Microsoft Search において、承認されたユーザーに情報を提供するときにエンタープライズのデータとユーザーを保護します
-ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: b079a693f7289977c9f7545ec049828f76939ee0
+ms.sourcegitcommit: 6f4756d2887c66030c5e7b81fb936d673bb594a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003112"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35009097"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search のセキュリティ
 
@@ -33,7 +33,7 @@ Microsoft Search では、要求は必ず HTTPS 経由で行われます。こ�
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Azure Active Directory による認証と承認
 
-Microsoft Search の認証は Azure Active Directory に結び付けられています。Microsoft Search ユーザーが Bing にアクセスすると、Bing ヘッダーには Microsoft アカウント、および職場と学校のアカウントのサインイン オプションが表示されます。ユーザーが参加資格を有しているかどうかを Bing が判断できない場合、ユーザーは[Microsoft Search の探索](https://www.bing.com/business/explore)ページに移動できます。このページでは、組織のサインイン ページに自動的にリダイレクトされます。 
+Microsoft Search の認証は Azure Active Directory に結び付けられています。Microsoft Search ユーザーが Bing にアクセスすると、Bing ヘッダーには Microsoft アカウント、および職場と学校のアカウントのサインイン オプションが表示されます。ユーザーが参加資格を有しているかどうかを Bing が判断できない場合、ユーザーは[Microsoft Search の探索](https://www.bing.com/business/explore)ページに移動できます。このページでは、組織のサインイン ページに自動的にリダイレクトされます。
   
 ユーザーは職場または学校のアカウントを使用する場合にのみ Microsoft Search にアクセスできます。SharePoint or Outlook などの Office 365 サービスにアクセスするときに使用するのと同じ資格情報でサインインする必要があります。個人用の Microsoft アカウントを使用して Microsoft Search にサインインすることはできません。
   
@@ -57,14 +57,14 @@ SharePoint や OneDrive for Business などの Office 365 ワークロードか�
   
 ユーザーのクエリに返された応答に作業結果が含まれるかどうかに関わらず、次の対策がとられます。
   
-- Logging
-    
+- Logging 
   - Microsoft Search トラフィックに関するすべての検索ログは匿名化され、匿名化された状態で 18 か月間保持されます。
   - これらのシステムログに保存されたクエリは、制限一式と頻度しきい値が満たされている場合、自動検索候補や関連検索などのパブリックな検索機能のモデルや検索機能の学習にのみ使用されます。そしてそれは、これらのクエリが一般に普及しているものであり、特定の組織に特化したものではないという信頼を与えます。 クエリは、Microsoft 以外のユーザーからの関連付けデータに膨大な回数出現する必要があります。そしてそれは、企業の検索結果のみをトリガーするものであってはなりません。 クエリがこれらの要件を満たさない場合は、一般の、Microsoft Search 以外のトラフィックとは別に保管されます。
-  - アクセス制限は、セキュリティ グループおよびエンジニアリング システム内の他のレイヤーを含む、さまざまなセキュリティ機構によって管理されます。
-    
-- 広告
-    
+  - アクセス制限は、セキュリティ グループおよびエンジニアリング システム内の他のレイヤーなどのさまざまなセキュリティ メカニズムを通して管理されます。
+- 検索履歴    
+  - 職場または学校のアカウントでサインインした場合、他のコンピューターまたはデバイスからユーザーの検索履歴へアクセスすることはできません。
+ 
+- 広告   
   - エンタープライズ検索クエリが広告業者と共有されたり、広告業者に通知されたりすることはありません。
   - ユーザーの職場 ID または組織を基にユーザーが広告のターゲットになることはありません。
     
