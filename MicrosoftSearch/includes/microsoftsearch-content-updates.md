@@ -3,15 +3,6 @@
 
 
 
-## <a name="week-of-may-06-2019"></a>2019年5月6日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 5/9/2019 | [Microsoft Search](/MicrosoftSearch/index) | 更新日時 |
-| 5/9/2019 | [**Microsoft Search**をセットアップする](/MicrosoftSearch/setup-microsoft-search) | 更新日時 |
-
-
 ## <a name="week-of-may-13-2019"></a>2019年5月13日の週
 
 
@@ -132,3 +123,17 @@
 | 6/5/2019 | [ユーザー導入ガイド](/MicrosoftSearch/user-adoption-guide) | 更新日時 |
 | 6/7/2019 | [SharePoint Online で Microsoft Search の使用を開始する](/MicrosoftSearch/get-started-search-in-sharepoint-online) | 更新日時 |
 | 6/7/2019 | [Microsoft Search の概要](/MicrosoftSearch/overview-microsoft-search) | 更新日時 |
+
+
+## <a name="week-of-june-10-2019"></a>2019年6月10日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 6/10/2019 | [SharePoint の昇格結果とよく使用されるクエリのインポート](/MicrosoftSearch/import-sharepoint-promoted-results-and-top-queries) | 更新日時 |
+| 6/14/2019 | [コンテンツの計画](/MicrosoftSearch/plan-your-content) | 更新日時 |
+| 6/14/2019 | [**Microsoft Search**をセットアップする](/MicrosoftSearch/setup-microsoft-search) | 更新日時 |
+| 6/14/2019 | [PowerApps の統合](/MicrosoftSearch/integrate-powerapps) | 更新日時 |
+| 6/14/2019 | [Microsoft Search の概要](/MicrosoftSearch/overview-microsoft-search) | 更新日時 |
+| 6/14/2019 | [SharePoint サイトの検索](/MicrosoftSearch/use/find-sharepoint-sites) | 更新日時 |
+| 6/14/2019 | [Microsoft Search のセキュリティ](/MicrosoftSearch/security) | 更新日時 |
