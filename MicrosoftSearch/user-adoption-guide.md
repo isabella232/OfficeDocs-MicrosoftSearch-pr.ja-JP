@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 組織に Microsoft Search を正常にロールアウトするのに役立つ方法とプロセスについて説明します。
-ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727908"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170313"
 ---
 # <a name="user-adoption-guide"></a>ユーザー導入ガイド
 
@@ -79,11 +79,11 @@ ms.locfileid: "34727908"
     
 ## <a name="stage-3-readiness"></a>ステージ 3: 準備
 
-Microsoft 検索のロールアウトの準備に時間をかけることで、組織にとってのメリットが得られます。 
+Microsoft 検索のロールアウトの準備に時間をかけることで、組織にとってのメリットが得られます。 Microsoft は、計画のガイダンス、カスタマイズ可能な電子メールアナウンス、アンケートテンプレート、エグゼクティブプレゼンテーションなどを含む<a href="https://aka.ms/MicrosoftSearch/Adoption">導入キット</a>を提供しています。 また、microsoft search<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">リソースセンター</a>では、microsoft search の実装によって、microsoft 検索を正常に展開するのに役立つように設計されたその他のトレーニングとリソースを入手できます。
   
  **製品とコンテンツの準備**
   
-管理者は、エンドユーザーの検索機能に直接影響を与えることができます。また、組織を検索する方法を決定します。 これには、ユーザーに表示する結果の種類の選択が含まれます。 ドキュメント、サイト、人、グループ、会話の結果を有効または無効にすることで、これを制御します。
+管理者は、エンドユーザーの検索機能に直接影響を与えることができます。また、組織を検索する方法を決定します。 これには、ユーザーに表示する結果の種類の選択が含まれます。 これらの結果には、ドキュメント、サイト、人、グループ、場所、会話、その他の workplace resources へのリンク (ブックマークとも呼ばれます) を含めることができます。
   
 詳細については、「 [Microsoft Search をセットアップ](setup-microsoft-search.md)する」を参照してください。
   
