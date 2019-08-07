@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークおよび Microsoft Search のブックマーク結果を一括編集する方法を作成および更新する
-ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591622"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170322"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "34591622"
 
 ## <a name="add-or-edit-a-single-bookmark"></a>1 つのブックマークを追加または編集する
 1. **Microsoft 365 管理センター**に移動します。
-1. ナビゲーション ウィンドウで、**[設定]** に移動して、****[Microsoft Search]**** を選択します。
+1. ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。
 既定では、**[ブックマーク]** タブが選択されています。
 1. ブックマークを追加するには、**[新規追加]** を選択します。 ブックマークを編集するには、関連するブックマークの一覧で編集するブックマークを選択します。 
 1. 情報を追加または編集すると、プレビューが自動的に更新されます。
