@@ -1,8 +1,8 @@
 ---
-title: 既定のブラウザーの設定
-ms.author: dawholl
-author: dawholl
-manager: kellis
+title: 既定のブラウザーを設定する
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -14,70 +14,55 @@ search.appverid:
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
-description: Microsoft Search を使用して、会社の既定のブラウザーを構成する方法について説明します。
-ms.openlocfilehash: 08c61bf6dd68f8044f3f79a0b22829a8f7f6b8ef
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+description: Microsoft Search ユーザーの Microsoft Edge または Internet Explorer に既定のブラウザーを設定します。
+ms.openlocfilehash: ed145a1811aba0b58158ed04dd3bf8dc089a0682
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727845"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639741"
 ---
-# <a name="set-default-browser"></a>既定のブラウザーの設定
+# <a name="make-microsoft-edge-the-default-browser"></a>Microsoft Edge を既定のブラウザーにする
+  
+Microsoft Search のエクスペリエンスを最善にするためには、Microsoft Edge を既定のブラウザーにします。 これにより、組織のユーザーの既定のブラウザーとして Microsoft Edge の設定のみを行えます。それでも個々のユーザーは、別のブラウザーを選択できます。
+  
+  
+## <a name="windows-8-and-later"></a>Windows 8 以降
 
+以下の手順では、Windows 8 以降を実行しているコンピューター向けに、既定のブラウザーとして Microsoft Edge または Internet Explorer を設定する方法について説明します。 ユーザーは、このポリシーの設定後にブラウザーを変更することができます。
   
-既定のブラウザー、検索エンジン、ホームページを構成すると、ユーザーが Microsoft Search 機能を把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます。
-  
-組織の既定のブラウザーを設定するには、以下の手順を実行します。
-  
-## <a name="windows-8-and-above"></a>Windows 8 以上
-
-Internet Explorer または Microsoft Edge を既定のブラウザーとして設定するには、以下のいずれかのステップを実行します。
-  
-### <a name="create-default-associations-file"></a>既定の関連付けファイルの作成
+### <a name="step-1-create-the-default-associations-file"></a>手順 1: 既定の関連付けファイルの作成
+ドメイン コントローラーの SYSVOL フォルダーに既定の関連付けファイルを作成します。
 
 1. 管理者 PowerShell コンソールを開きます。
+1. `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
+1. `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
+1. `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
-    
-3.  `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
-    
-4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
-    
-これらの手順では、ドメイン コントローラーの SYSVOL フォルダーに既定の関連付けファイルを作成します。
   
-### <a name="add-or-edit-the-default-associations-file"></a>既定の関連付けファイルの追加または編集
+### <a name="step-2-add-or-edit-the-default-associations-file"></a>手順 2. 既定の関連付けファイルの追加または編集
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
-    
-2. 以下のエントリ (.htm、.html、http、https) を編集し、必要ない場合はその他のエントリを削除します。
-    
+1. 以下のエントリ (.htm、.html、http、https) を編集し、必要ない場合はその他のエントリを削除します。
   - **Microsoft Edge**
-    
-     `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+              
+    - `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
   - **Internet Explorer**
     
-     `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
-    
-3. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
-    
+    - `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`        
+    - `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
+
+### <a name="step-3-edit-the-group-policy"></a>手順 3.  グループ ポリシーを編集する
+
+1. **グループ ポリシー管理コンソール** (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
 1. **[コンピューターの構成]、[管理用テンプレート]、[Windows コンポーネント]、[エクスプローラー]** と移動します。
-    
-2. **[既定の関連付け構成ファイルを設定する]** をダブルクリックして、**[有効]** に設定して、AppAssoc.xml へのパス (たとえば %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml) を入力します。
-    
-4. 作成された GPO を適切なドメインにリンクさせて適用します。
-    
-ユーザーは、このポリシーの設定後にブラウザーを変更することができます。
+1. **[既定の関連付け構成ファイルを設定する]** をダブルクリックし、**[有効]** に設定して、AppAssoc.xml へのパス (例: %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml) を入力します。設定を行った GPO を適切なドメインにリンクして適用します。
+
   
 ## <a name="windows-7"></a>Windows 7
 
@@ -103,4 +88,3 @@ Internet Explorer または Microsoft Edge を既定のブラウザーとして�
   
 3. 作成された GPO を適切なドメインにリンクさせて適用します。
     
-ユーザーは、このポリシーの設定後にブラウザーを変更することができます。
