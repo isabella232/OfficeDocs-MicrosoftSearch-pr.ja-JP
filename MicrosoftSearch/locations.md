@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
 ROBOTS: NOINDEX
 description: Microsoft Search の作業結果に組織の場所の情報を含めるすべての方法についての概要
-ms.openlocfilehash: 9eb61d206852759ade3cb668a3d9c0dee83c424f
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1c8aed7931eb3586bbf2b79251afa94152656cd3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591577"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639867"
 ---
 # <a name="locations"></a>場所
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 ## <a name="add-locations"></a>場所の追加
 

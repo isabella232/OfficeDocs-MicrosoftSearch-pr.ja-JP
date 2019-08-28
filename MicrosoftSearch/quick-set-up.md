@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
 ROBOTS: NOINDEX
 description: Microsoft Search を有効にして、使用するために必要な 4 つの簡単な手順について説明します。
-ms.openlocfilehash: fe6e01c866ca99357ce8bdd5e9cb1b6cee1a2333
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 170f798273dae51f447d32f98f458d0154ea9c86
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591541"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639759"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>Microsoft Search のクイック セットアップ
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 組織に最も適した Web と処理を用意することで時間を節約します。
   

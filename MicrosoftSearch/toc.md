@@ -1,10 +1,15 @@
-#[Microsoft Searchの概要](overview-microsoft-search.md)
-#[Microsoft Search のセットアップ](setup-microsoft-search.md)
-#簡単に見つけられるコンテンツ
+#Microsoft Search の計画
+##[概要](overview-microsoft-search.md)
+##[セットアップする](setup-microsoft-search.md)
+##[Microsoft Edge を既定のブラウザーにする](set-default-browser.md)
+##[Bing を既定の検索エンジンにする](set-default-search-engine.md)
+##[Bing.com を既定のホーム ページにする](set-default-homepage.md)
+##[SharePoint で Microsoft Search の使用を開始する](get-started-search-in-sharepoint-online.md)
+#コンテンツを見つけやすくする
 ##[コンテンツの計画](plan-your-content.md)
 ##[ブックマークの管理](manage-bookmarks.md)
 ##[Q&A の管理](manage-qas.md)
 ##[場所の管理](manage-locations.md)
-#[SharePoint Online での Microsoft Search](get-started-search-in-sharepoint-online.md)
-#[ユーザー導入ガイド](user-adoption-guide.md)
-#[Microsoft Search の使用](use/about-microsoft-search.md)
+#[ユーザーによる導入ガイド](user-adoption-guide.md)
+#[よく寄せられる質問](faqs.md)
+#[Microsoft Search を使用する](use/about-microsoft-search.md)
