@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 組織に Microsoft Search を正常にロールアウトするのに役立つ方法とプロセスについて説明します。
-ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
+ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170313"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639886"
 ---
 # <a name="user-adoption-guide"></a>ユーザー導入ガイド
 
@@ -79,7 +79,7 @@ ms.locfileid: "36170313"
     
 ## <a name="stage-3-readiness"></a>ステージ 3: 準備
 
-Microsoft 検索のロールアウトの準備に時間をかけることで、組織にとってのメリットが得られます。 Microsoft は、計画のガイダンス、カスタマイズ可能な電子メールアナウンス、アンケートテンプレート、エグゼクティブプレゼンテーションなどを含む<a href="https://aka.ms/MicrosoftSearch/Adoption">導入キット</a>を提供しています。 また、microsoft search<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">リソースセンター</a>では、microsoft search の実装によって、microsoft 検索を正常に展開するのに役立つように設計されたその他のトレーニングとリソースを入手できます。
+Microsoft 検索のロールアウトの準備に時間をかけることで、組織にとってのメリットが得られます。 Microsoft は、計画のガイダンス、カスタマイズ可能な電子メールアナウンス、アンケートテンプレート、エグゼクティブプレゼンテーションなどを含む<a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">導入キット</a>を提供しています。 また、microsoft search<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">リソースセンター</a>では、microsoft search の実装によって、microsoft 検索を正常に展開するのに役立つように設計されたその他のトレーニングとリソースを入手できます。
   
  **製品とコンテンツの準備**
   
