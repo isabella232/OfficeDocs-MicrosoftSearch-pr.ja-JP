@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
 ROBOTS: NoIndex
 description: Microsoft Search を使用するときに表示される検索結果をカスタマイズする方法について説明します。
-ms.openlocfilehash: 9054febab2626097762a80f093affb1e3351fe1a
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0d49d3051112bb9b63060e8ee7d4c85328c2d695
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591262"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639696"
 ---
 # <a name="connected-services"></a>接続済みサービス
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
      
      
 Microsoft Search では、強力な Bing 検索エンジンを使用して、Office 365 組織の SharePoint ファイル、ブックマークされた内部 Web サイト、グローバル アドレス リストの人物、Office 365 グループなどを検索できます。

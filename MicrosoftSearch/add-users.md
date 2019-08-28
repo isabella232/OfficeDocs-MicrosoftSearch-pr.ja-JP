@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
 ROBOTS: NoIndex
 description: Microsoft Searchの管理者および編集者に権限とロールを割り当てます
-ms.openlocfilehash: e29de1b38c0014d282168b4771f8400b2deb6ee3
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: af89aa2d536baa64f16b0c2b2ff316200c83cbc0
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591379"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639651"
 ---
 # <a name="manage-users"></a>ユーザーを管理します
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 編集者はコンテンツを追加することができますが、設定を変更することはできません。
   
