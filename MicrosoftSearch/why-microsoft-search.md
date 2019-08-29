@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 ROBOTS: NOINDEX
 description: 現代の職場にとって Microsoft Search がインテリジェントなエンタープライズ検索となる理由について説明します。
-ms.openlocfilehash: f2cf9c3e4d80bc17fd74bf0ae34b7886b4b69d33
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 392e004fef54d1bdbec302b780dd79ecc4668cb9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590749"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639390"
 ---
 # <a name="why-microsoft-search"></a>Microsoft Search を使用する利点
 
 Microsoft Search を使用することで、組織のユーザーが情報を検索する方法が変わります。 
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
   
 このエンタープライズ検索の操作環境では、職場環境においてより関連性の高い検索結果が提供されるため、生産性が向上し、時間が節約されます。Microsoft Search では、会社、学校、または組織の情報だけでなく、公開されている Web の結果が安全に取得され、1 つの操作環境に表示されます。取得される情報には、ファイル、会社のデータ、ユーザー情報、サイトなどがあります。
 

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
 ROBOTS: NOINDEX
 description: Microsoft Search を有効にするために必要な Office 365 の要件とサブスクリプション
-ms.openlocfilehash: 029bab5b88a800786f137941df1077b28d4398b7
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5fbdd306c4ed34ff4dea14cd1b53ad1d55715e32
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591217"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639876"
 ---
 # <a name="requirements-for-microsoft-search"></a>Microsoft Search の要件
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
 Microsoft Search を有効にするための Office 365 テナント要件があります。 
   

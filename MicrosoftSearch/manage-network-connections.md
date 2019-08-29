@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
 ROBOTS: NOINDEX
 description: 以下の URL およびドメインをファイアウォールの許可一覧に追加して、ユーザーが Microsoft Search に簡単にアクセスできるようにします
-ms.openlocfilehash: 08e98dbde4d9a32827ac000b0b922aab53abc681
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1f7001bb97c912fcbf054bd16b17c8b2db2f3e99
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591532"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639795"
 ---
 # <a name="manage-network-connections"></a>ネットワーク接続の管理
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 自分とユーザーが Microsoft Search エンドポイントに確実に接続できるようにするには、以下の URL をファイアウォールの許可一覧に追加します。
   

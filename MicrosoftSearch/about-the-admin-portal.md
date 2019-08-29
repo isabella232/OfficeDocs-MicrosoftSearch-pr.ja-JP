@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 ROBOTS: NoIndex
 description: Microsoft Search で使用できる管理ポータル機能とアクセス許可の概要について取り上げます
-ms.openlocfilehash: 4edfbce7b5858a3e8cd3aad30109177d71d45d7b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 3451f7fb8c5c2cd7245cdefd362910a8a712b3f8
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590722"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639426"
 ---
 # <a name="about-the-admin-portal"></a>管理ポータルについて
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
     
 Microsoft Search では Bing を使用して、SharePoint サイト、ファイル、内部 Web サイト、人物、Office 365 グループなどについて組織を検索できます。管理ポータルを使用すると、Microsoft Search のすべての側面を管理できます。

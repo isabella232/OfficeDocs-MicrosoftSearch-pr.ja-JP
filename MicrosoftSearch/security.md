@@ -14,14 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: Microsoft Search において、承認されたユーザーに情報を提供するときにエンタープライズのデータとユーザーを保護します
-ms.openlocfilehash: b7b62173dc61d271a4953adbf20a6cf48b122694
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917571"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639618"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search のセキュリティ
+
+> [!IMPORTANT]
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
 Microsoft Search では、エンタープライズ レベルのセキュリティによって常時ユーザーとデータが保護されます。
 
@@ -57,8 +60,8 @@ SharePoint や OneDrive for Business などの Office 365 ワークロードか�
 ユーザーのクエリに返された応答に作業結果が含まれるかどうかに関わらず、次の対策がとられます。
   
 - Logging 
-  - Microsoft Search トラフィックに関するすべての検索ログは匿名化され、匿名化された状態で 18 か月間保持されます。
-  - これらのシステムログに保存されたクエリは、制限一式と頻度しきい値が満たされている場合、自動検索候補や関連検索などのパブリックな検索機能のモデルや検索機能の学習にのみ使用されます。そしてそれは、これらのクエリが一般に普及しているものであり、特定の組織に特化したものではないという信頼を与えます。 クエリは、Microsoft 以外のユーザーからの関連付けデータに膨大な回数出現する必要があります。そしてそれは、企業の検索結果のみをトリガーするものであってはなりません。 クエリがこれらの要件を満たさない場合は、一般の、Microsoft Search 以外のトラフィックとは別に保管されます。
+  - Microsoft Search トラフィックに関するすべての検索ログは匿名化されています。 その状態で 18 か月間保持されます。
+  - これらのシステムログに保存されたクエリは、一連の制限と頻度のしきい値が満たされたときに、公開された Web 結果の自動検索候補または関連検索などのパブリック機能をモデル化およびトレーニングするためにのみ使用されます。そしてそれは、これらのクエリが一般に普及しているものであり、特定の組織に特化したものではないという信頼を与えます。 クエリは、Microsoft 以外のユーザーからの関連付けデータに膨大な回数出現する必要があります。そしてそれは、企業の検索結果のみをトリガーするものであってはなりません。 クエリがこれらの要件を満たさない場合は、一般の、Microsoft Search 以外のトラフィックとは別に保管されます。
   - アクセス制限は、セキュリティ グループおよびエンジニアリング システム内の他のレイヤーなどのさまざまなセキュリティ メカニズムを通して管理されます。
 - 検索履歴    
   - 職場または学校のアカウントでサインインした場合、他のコンピューターまたはデバイスからユーザーの検索履歴へアクセスすることはできません。

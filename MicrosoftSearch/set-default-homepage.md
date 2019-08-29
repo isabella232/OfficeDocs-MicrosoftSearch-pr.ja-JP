@@ -1,8 +1,8 @@
 ---
 title: 既定のホーム ページの設定
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -15,22 +15,56 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: Microsoft Search を使用して、会社の既定のホーム ページとして Bing を設定する方法について説明します。
-ms.openlocfilehash: 457202ba8dbebf59c5ef6a4630aea98304b9acdb
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727998"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639831"
 ---
-# <a name="set-default-homepage"></a>既定のホーム ページの設定
+# <a name="make-bingcom-the-default-home-page"></a>Bing.com を既定のホーム ページにする
 
-既定のブラウザー、検索エンジン、ホーム ページを構成すると、ユーザーが Microsoft Search 機能を把握したり、使用を促進したり、円滑なエクスペリエンスを提供したりするのに役立ちます。
+この記事では、Bing.com を Microsoft Edge、Google Chrome、Internet Explorer ブラウザーの規定のホームページとして設定する方法について説明します。 
   
-組織の既定のホーム ページを設定するには、以下の手順を実行します。
-  
-## <a name="internet-explorer"></a>Internet Explorer
+ 
+## <a name="microsoft-edge-on-windows-10-version-1511-or-later"></a>Windows 10 バージョン 1511 以降の Microsoft Edge
 
-### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 以降
+ユーザーは、このポリシーを設定した後に変更することはできません。 
+
+1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。 
+1. **[管理用テンプレート]、[Windows コンポーネント]、[Microsoft Edge]** の順に移動します。    
+1. **[スタート ページを構成する]** をダブルクリックして **[Enabled (有効)]** に設定し、「`https://www.bing.com/business`」と入力します
+1.  作成された GPO を適切なドメインにリンクさせて適用します。
+
+  
+## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Windows XP SP2 以降の Google Chrome
+
+
+異なるバージョンの Windows に関する ADMX ファイルと最新の ADMX ファイルの管理方法を記載した Windows サポート記事については、[Microsoft サポート](https://support.microsoft.com/ja-JP/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)をご確認ください。
+
+また、最新の Google ポリシー ファイルについては [Google Chrome エンタープライズ ヘルプ](https://support.google.com/chrome/a/answer/187202)を参照してください。
+  
+このセクションに示されている設定が GPMC 内に見つからない場合、適切な ADMX をダウンロードし、[中央ストア](https://docs.microsoft.com/ja-JP/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)にコピーします。コントローラーの中央ストアは 1 つのフォルダーで、以下の名前付け規則を使用します。
+  
+ **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
+  
+コントローラーが処理するドメインごとに異なるフォルダーが必要です。以下のコマンドを使用すると、コマンド プロンプトから ADMX ファイルをコピーできます。
+  
+ `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
+  
+1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
+1. *[ユーザーの構成] と [コンピューターの構成]* の両方の **[管理用テンプレート]** セクションに [Google Chrome] フォルダーと [Google Chrome - 既定の設定] フォルダー (ユーザーによる上書き可能) が表示されていることを確認します。
+   - 最初のセクションの設定は固定されているため、ローカル管理者は設定を変更することはできません。
+   - ポリシーの後半のセクションの設定は、ユーザーがブラウザーの設定で変更できます。ユーザーが既定の設定を上書き可能かどうかを決定する必要があります。次の手順で、組織のポリシーとニーズに対応するフォルダーの設定を変更します。以下の手順では、既定で [Google Chrome - 既定の設定] を使用します。
+
+1. **&lt;[コンピューターの構成] または [ユーザーの構成]&gt;、[管理用テンプレート]、[Google Chrome - 既定の設定]、[ホーム ページ]** の順に移動します。 
+1. **[Use New Tab Page as homepage (新しいタブ ページをホーム ページとして使用する)]** をダブルクリックして、**[Enabled (有効)]** に設定します。 
+1. **&lt;[コンピューターの構成] または [ユーザーの構成]&gt;、[管理用テンプレート]、[Google Chrome - 既定の設定]、[新しいタブ ページ]** の順に移動します。 
+1. **[Configure the New Tab Page URL (新しいタブ ページを URL として構成する)]** をダブルクリックして、**[Enabled (有効)]** に設定し、「`https://www.bing.com/business?form=BFBSPR`」と入力します 
+1. 作成された GPO を適切なドメインにリンクさせて適用します。
+
+## <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 以降
+ユーザーは、このポリシーを設定後にホーム ページを変更できます。 
 
 1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
     
@@ -58,57 +92,3 @@ ms.locfileid: "34727998"
 6. ホーム ページの設定で **F6** キーを押して、「`https://www.bing.com/business?form=BFBSPR`」と入力します。
     
 7. 作成された GPO を適切なドメインにリンクさせて適用します。
-    
-> [!NOTE]
-> ユーザーは、このポリシーを設定後にホーム ページを変更できます。 
-  
-## <a name="microsoft-edge"></a>Microsoft Edge
-
-### <a name="windows-10-version-1511-or-later"></a>Windows 10 バージョン 1511 以降
-
-1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
-    
-2. **[管理用テンプレート]、[Windows コンポーネント]、[Microsoft Edge]** の順に移動します。
-    
-1. **[スタート ページを構成する]** をダブルクリックして **[Enabled (有効)]** に設定し、「`https://www.bing.com/business`」と入力します
-    
-3. 作成された GPO を適切なドメインにリンクさせて適用します。
-    
-> [!CAUTION]
-> ユーザーは、このポリシーを設定後に検索プロバイダーを変更することはできません。 
-  
-## <a name="google-chrome"></a>Google Chrome
-
-### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 以降
-
-異なるバージョンの Windows に関する ADMX ファイルと最新の ADMX ファイルの管理方法を記載した Windows サポート記事については、[Microsoft サポート](https://support.microsoft.com/ja-JP/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)をご確認ください。
-
-また、最新の Google ポリシー ファイルについては [Google Chrome エンタープライズ ヘルプ](https://support.google.com/chrome/a/answer/187202)を参照してください。
-  
-このセクションに示されている設定が GPMC 内に見つからない場合、適切な ADMX をダウンロードし、[中央ストア](https://docs.microsoft.com/ja-JP/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)にコピーします。コントローラーの中央ストアは 1 つのフォルダーで、以下の名前付け規則を使用します。
-  
- **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
-  
-コントローラーが処理するドメインごとに異なるフォルダーが必要です。以下のコマンドを使用すると、コマンド プロンプトから ADMX ファイルをコピーできます。
-  
- `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
-  
-1. グループ ポリシー管理コンソール (gpmc.msc) を開き、既存のポリシーの編集または新しいポリシーの作成を行います。
-    
-2. *[ユーザーの構成] と [コンピューターの構成]* の両方の **[管理用テンプレート]** セクションに [Google Chrome] フォルダーと [Google Chrome - 既定の設定] フォルダー (ユーザーによる上書き可能) が表示されていることを確認します。
-    
-   - 最初のセクションの設定は固定されているため、ローカル管理者は設定を変更することはできません。
-    
-   - ポリシーの後半のセクションの設定は、ユーザーがブラウザーの設定で変更できます。ユーザーが既定の設定を上書き可能かどうかを決定する必要があります。次の手順で、組織のポリシーとニーズに対応するフォルダーの設定を変更します。以下の手順では、既定で [Google Chrome - 既定の設定] を使用します。
-    
-3. **&lt;[コンピューターの構成] または [ユーザーの構成]&gt;、[管理用テンプレート]、[Google Chrome - 既定の設定]、[ホーム ページ]** の順に移動します。
-    
-4. **[Use New Tab Page as homepage (新しいタブ ページをホーム ページとして使用する)]** をダブルクリックして、**[Enabled (有効)]** に設定します。
-    
-5. **&lt;[コンピューターの構成] または [ユーザーの構成]&gt;、[管理用テンプレート]、[Google Chrome - 既定の設定]、[新しいタブ ページ]** の順に移動します。
-    
-6. **[Configure the New Tab Page URL (新しいタブ ページを URL として構成する)]** をダブルクリックして、**[Enabled (有効)]** に設定し、「`https://www.bing.com/business?form=BFBSPR`」と入力します
-    
-7. 作成された GPO を適切なドメインにリンクさせて適用します。
-    
-ユーザーは、このポリシーを設定後にホーム ページを変更することができます。

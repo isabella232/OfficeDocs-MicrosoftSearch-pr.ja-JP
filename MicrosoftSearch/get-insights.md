@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 ROBOTS: NOINDEX
 description: Microsoft Search 管理ポータルの簡単に使用できるダッシュボードから、メトリックスを分析して、コンテンツを管理します。
-ms.openlocfilehash: a01b79dfc71218862da07270171da95e699ed7f2
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591514"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639822"
 ---
 # <a name="use-the-insights-dashboard"></a>インサイト ダッシュボードの使用
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 データ分析情報を把握して、どのようにユーザーが結果に関与しているのかを確認します。 管理ポータルのダッシュボードを使用して、次の操作を実行します。
   

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
 ROBOTS: NOINDEX
 description: Microsoft Search 管理ポータルで利用可能な既定のブックマーク
-ms.openlocfilehash: 06d4ee1eccacc288982d3824c5c0aab7bcfdbe55
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: f158912993a2e127c1c3a25bcad3513be05874e0
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591190"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639894"
 ---
 # <a name="publish-default-bookmarks"></a>既定のブックマークの公開
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
 
 Bing でブックマークがどのように表示されるかをすぐに確認するには、添付された既定のものを公開します。 これを参考用に使用して、ブックマークに名前を付ける方法と、適切なキーワードを作成する方法を理解してください。
   

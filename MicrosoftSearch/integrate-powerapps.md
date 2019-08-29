@@ -15,29 +15,24 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: Microsoft Search のブックマーク結果にブラウザー ベースのアプリを組み込みます
-ms.openlocfilehash: d818ab8149032b4664adb90098700d4432a6fbb7
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: f68b3c2b74f0a5c1712f0e86e86826e1f2c94b58
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003121"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639849"
 ---
 # <a name="integrate-powerapps"></a>PowerApps の統合
-
-> [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動しており、後で削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
-    
+   
 既存の PowerApps をブックマークに統合することで、休暇期間の入力や経費の報告などのユーザーのタスク実行を支援します。 統合された PowerApps はブックマークの結果内に表示されるため、別のサイトへの移動や別のツールを開く必要がなくなり、時間と労力を節約できます。
   
 ## <a name="what-are-powerapps"></a>PowerApps とはどういったものですか? 
 
 PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 詳細情報:
   
-- 
-  [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)
+- [ガイド付き学習](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
-- 
-  [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/)
+- [ドキュメント](https://docs.microsoft.com/powerapps/)
     
 ## <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに PowerApp を追加する
 
