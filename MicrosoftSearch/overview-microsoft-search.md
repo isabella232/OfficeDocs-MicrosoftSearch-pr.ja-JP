@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の概要、その利点、Microsoft Search が現在搭載されているアプリについて確認します。
-ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003139"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639588"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -62,24 +62,25 @@ Bing では、ユーザーは Web 検索用の検索ボックスを使用しま�
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>現在 Microsoft Search が搭載されているアプリ
 
- 現在、次の Office 365 アプリで Microsoft Search が提供されています。
+ Microsoft Search はこの機能をサポートしているすべての Microsoft アプリに対して既定で有効になっています。 ユーザーが行う必要があるのは、職場または学校のアカウントでサインインすることのみです。
 
+現在、次のアプリで Microsoft Search が提供されています。
 - SharePoint Online
 - OneDrive for Business
 - Outlook on the web
 - Windows 上の Office アプリ
 
-さらに、Microsoft Search は以下の場所にもあります。
+さらに、サインインしているユーザーなら Microsoft Search は以下の場所にもあります。
 
-- Bing
+- Bing ホーム ページ
 - Office.com
 - Word、Excel、PowerPoint Online の開始ページ
 
-ユーザーは、Edge のアドレス バーから Bing で検索を開始することもできます。
+ユーザーがデフォルトの検索エンジンとして Bing を使用している場合には、エッジ アドレス バーから Bing での検索を開始することもできます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要要件
 
-組織には、次のいずれかのサブスクリプションを持つ Office 365 テナントが必要です。
+次の Office 365 または Microsoft 365 サブスクリプションのいずれかが必要です。
 
 - Office 365 Business Essentials および Business Premium
 - Office 365 A1/A3/A5
@@ -90,11 +91,11 @@ Bing では、ユーザーは Web 検索用の検索ボックスを使用しま�
 - Microsoft 365 A3/A5
 - Microsoft 365 F1/E3/E5
 
-ユーザーと検索管理者の両方が、これらのサブスクリプションのいずれかでライセンスを取得している必要があります。 Microsoft Search を使用できるのは、アクティブなアカウントを持つユーザーのみであり、**サインイン**する必要があります。
+ユーザーと検索管理者の両方にこれらのライセンスを割り当てる必要があります。 アクティブなアカウントを持つユーザーのみが Microsoft Search を使用できます。そして Microsoft Search には Azure Active Directory が必要なため、ユーザーは**サインインする**必要があります
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>組織に合わせた Microsoft Search のカスタマイズ
 
-管理者は、ユーザーが自分の SharePoint スタート ページ、Office.com、Bing から検索すれば、組織固有の良い検索結果を簡単に得られるようにすることができます。 Microsoft Searchを Microsoft 365 管理センターで管理します。
+管理者は、ユーザーが自分の SharePoint スタート ページ、Office.com、Bing から検索すれば、組織固有の良い検索結果を簡単に得られるようにすることができます。 これを行うには、クエリ内の特定のキーワードに応じて Microsoft Search が表示する回答を定義します。 定義できる回答にはいくつかの種類があります。 
 
 **便利なコンテンツを表示** - 組織内の重要なツールやリソースはブックマークすることで見つけやすくなります。 パブリック Web ページにブックマークを作成できるのと同様に、ユーザーが検索できるように、任意の内部 Web ページにブックマークを作成できます。 Power App をブックマークに統合することもできるので、ユーザーはブックマークから直接タスクを完了することができます。
 
@@ -102,11 +103,15 @@ Bing では、ユーザーは Web 検索用の検索ボックスを使用しま�
 
 **便利な場所を表示** - マップの結果と組織の建物、オフィス、その他のワークスペースの住所情報をマップ上に表示します。 ユーザーはマップを使用して、道順を調べたり、近くにあるものなどを確認したりできます。
 
+ユーザーが回答にどのように関与しているか、ユーザーが探していたものを見つけられているかどうかを示す使用状況の統計を表示できます。 これに基づいて回答を微調整したり、新しい回答を追加したりできます。
+
+キーワードおよび予約済みキーワードの使用の詳細については、「[コンテンツを見つけやすくする](make-content-easy-to-find.md)」を参照してください。
+
 ## <a name="what-content-is-searched"></a>検索されるコンテンツ
 
-Microsoft Search では、グローバル アドレス一覧や Office 365 グループのユーザーを含め、SharePoint Online、OneDrive for Business、Exchange に保存されているコンテンツ内を検索します。 組織でクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境をセットアップすると、Microsoft Search は SharePoint Server 環境に接続している外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft Search では、グローバル アドレス一覧や Office 365 グループを含め、組織が SharePoint Online、OneDrive for Business、Exchange に保存しているコンテンツ内を検索します。 Microsoft Search は、テナント全体を検索したり、組織で共有されているコンテンツの結果を表示したりはしません。 組織でクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境をセットアップすると、Microsoft Search は SharePoint Server 環境に接続している外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-SharePoint スタートページまたは Office.com から検索すると、Microsoft Search では組織内のすべてのコンテンツが検索され、検出されたすべての結果が表示されます。 これは、**グローバル検索範囲**と呼ばれています。
+SharePoint スタートページまたは Office.com から検索すると、Microsoft Search では組織内のすべてのコンテンツが検索され、ユーザーに表示権限があるすべての結果が表示されます。 これは、**グローバル検索範囲**と呼ばれています。
 
 ユーザが Bing から検索すると、**Web** の検索結果リストに埋め込まれた組織内のすべてのコンテンツから最も関連性の高い結果を取得することができます。 組織の**すべて**の結果を表示する必要がある場合は、たった 1 回クリックするだけでグローバル検索範囲を実行できます。
 
@@ -130,6 +135,8 @@ SharePoint スタートページまたは Office.com から検索すると、Mic
 
 ユーザーが検索すると、Microsoft Search ではクエリを処理し、より大きいフレーズから検索意図が解析されます。これは人工知能 (AI) を使用して、ユーザーがクエリに追加した、ユーザーの検索意図に影響を与えない一般的な余分なフレーズを Microsoft Search が学習することで実現されています。 たとえば、ユーザーが、「パスワードを変更する方法」という検索を行うと、重要度の低い単語はクエリから取り除かれ、「パスワードを変更」などの関連性の高い単語に基づいてトリガーされます。  
 
+Microsoft Search は新しいインデックスを作成せず、SharePoint Online、OneDrive for Business、および Exchange コンテンツの既存のインデックスを検索します。
+
 ユーザーが表示する**アクセス許可**を持っている検索結果は、検索結果ページに表示されます。 Microsoft Search では、インテリジェント ランキング アルゴリズムを使用して、結果を関連性に従って順序付けします。
 
 ## <a name="microsoft-search-in-sharepoint"></a>SharePoint での Microsoft Search
@@ -144,6 +151,8 @@ SharePoint の Microsoft Search とは、SharePoint Online のモダン検索エ
 ## <a name="microsoft-search-in-bing"></a>Bing での Microsoft Search
 
 職務に関連する検索は機密性が求められる場合があるため、Microsoft Search では、Bing の一般の Web の検索結果部分でのそうした検索の取り扱いに関する一連の信頼性対策が使用されています。
+
+Microsoft Search リクエストは HTTPS 経由で行われます。 これによりセキュリティが強化され、接続がエンド ツー エンドで暗号化されます。 さらに Microsoft Search トラフィックに関連するすべての検索ログは匿名化され、パブリックの非 Microsoft Search トラフィックとは別に保存されます。
 
 ユーザーのクエリに返された応答に職務に関連する結果が含まれるかどうかに関わらず、次の対策がとられます。
 
