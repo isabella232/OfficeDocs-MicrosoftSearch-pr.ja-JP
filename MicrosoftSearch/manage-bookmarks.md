@@ -81,10 +81,8 @@ ms.locfileid: "36170322"
 
 ### <a name="what-are-powerapps"></a>PowerApps とはどういったものですか? 
 PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分かかりません。 PowerApps の詳細については、以下を参照してください。
-- 
-  [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)
-- 
-  [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid)
+- [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)
+- [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps ホーム](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに PowerApp を追加する

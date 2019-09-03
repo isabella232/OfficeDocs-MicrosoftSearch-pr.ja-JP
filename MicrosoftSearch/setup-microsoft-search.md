@@ -48,9 +48,7 @@ Microsoft Search では、コンテンツ ソースのセキュリティ設定�
 | ユーザー          | アドレス一覧で特定のユーザーが検索されないようにするには、[Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) ユーザー コマンドレットを使用して、パラメーター `HiddenFromAddressListEnabled` を `true` に設定します。 |
 | Microsoft Teams | [Microsoft Teams へのユーザー アクセスを管理する](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [共有を管理する](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | 
-  [アクセス許可の計画](https://docs.microsoft.com/ja-JP/sharepoint/plan-your-permissions-strategy)<br> 
-  [アクセス許可レベルを作成する](https://docs.microsoft.com/ja-JP/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [アクセス許可の計画](https://docs.microsoft.com/ja-JP/sharepoint/plan-your-permissions-strategy)<br> [アクセス許可レベルを作成する](https://docs.microsoft.com/ja-JP/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | OneNote に埋め込まれているファイルを検索することはできません。 [OneDrive でノートブックの権限を変更する](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Yammer のセキュリティ設定](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -89,5 +87,4 @@ Microsoft Search では、ユーザーのために堅牢な検索環境を構築
 
 - [Office の Microsoft Search で必要な情報を見つける](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 トレーニング センター](https://support.office.com/office-training-center)
-- 
-  [Microsoft Search センター](https://support.office.com/ja-JP/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Microsoft Search センター](https://support.office.com/ja-JP/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)

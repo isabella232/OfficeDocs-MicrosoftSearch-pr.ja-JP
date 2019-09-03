@@ -118,8 +118,7 @@ SharePoint スタートページまたは Office.com から検索すると、Mic
 ## <a name="what-types-of-results-can-users-find"></a>ユーザーが検索できる結果の種類
 ユーザーが検索すると、次のような検索結果が見つかります。
 
-**SharePoint**: ファイル、フォルダー、組織内のユーザー、組織図、サイト、サイト ページ、ニュース、リスト、リスト アイテム。 定義されている場合: よく寄せられる質問に対する回答、権限のある情報につながるブックマーク、位置、ツール。 
-  [検索可能なファイルの種類を確認してください](https://docs.microsoft.com/ja-JP/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+**SharePoint**: ファイル、フォルダー、組織内のユーザー、組織図、サイト、サイト ページ、ニュース、リスト、リスト アイテム。 定義されている場合: よく寄せられる質問に対する回答、権限のある情報につながるブックマーク、位置、ツール。 [検索可能なファイルの種類を確認してください](https://docs.microsoft.com/ja-JP/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 **Office.com、Word、Excel、PowerPoint Online のスタート ページ**: アプリ、ファイル、フォルダー、ユーザー、組織図、SharePoint サイト、サイト ページ、リスト、リスト アイテム。 定義されている場合: よく寄せられる質問に対する回答、権限のある情報につながるブックマーク、位置、ツール。 SharePoint 内にあるものと同じ種類のファイルを見つけることができます。
 
