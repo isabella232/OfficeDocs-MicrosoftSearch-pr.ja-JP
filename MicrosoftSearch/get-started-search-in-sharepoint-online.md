@@ -47,7 +47,6 @@ SharePoint の Microsoft Search とは、SharePoint Online のモダン検索エ
 ## <a name="see-also"></a>関連項目
 [Microsoft Search の概要](overview-microsoft-search.md)
 
-
-  [SharePoint の検索エクスペリエンスの詳細情報](https://docs.microsoft.com/ja-JP/sharepoint/overview-of-search)
+[SharePoint の検索エクスペリエンスの詳細情報](https://docs.microsoft.com/ja-JP/sharepoint/overview-of-search)
 
 [SharePoint でどの検索エクスペリエンスを使用するか](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)
