@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: ブックマークおよび Microsoft Search のブックマーク結果を一括編集する方法を作成および更新する
-ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
-ms.translationtype: HT
+description: ブックマークを作成および更新して、Microsoft Search のブックマークの結果を一括編集する方法
+ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170322"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288975"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
 ブックマークはわずかな手順で作成できます。 各ブックマークには、そのブックマークをトリガーするタイトル、URL、キーワードのセットが含まれます。 ブックマークには複数のキーワードを指定できるので、複数のブックマークで同じキーワードを共有できます。ただし、予約済みキーワードを共有することはできません。 ブックマークを作成または変更すると、検索インデックスが直ちに更新され、ユーザーがブックマークをすぐに使用できるようになります。
 
-組織が SharePoint で昇格した結果を設定している場合は、昇格した結果を **Microsoft Search** にインポートして、インポートしたコンテンツをユーザーが利用できるようにすることができます。 これは、**Microsoft Search** がセットアップされ次第、即座に検索結果を作成して、ユーザーがより効果的に利用できるようにする簡単な方法です。 関連する検索結果の名前付け方法と作成方法を理解するには、SharePoint の昇格した結果を参照として使用することをお勧めします。 
+組織の結果が SharePoint で昇格されている場合は、昇格した結果を**Microsoft Search**にインポートして、インポートされたコンテンツをユーザーが使用できるようにすることができます。 これは、**Microsoft Search** がセットアップされ次第、即座に検索結果を作成して、ユーザーがより効果的に利用できるようにする簡単な方法です。 関連する検索結果の名前付け方法と作成方法を理解するには、SharePoint の昇格した結果を参照として使用することをお勧めします。 
 
 ## <a name="add-or-edit-a-single-bookmark"></a>1 つのブックマークを追加または編集する
 1. **Microsoft 365 管理センター**に移動します。
@@ -39,7 +39,7 @@ ms.locfileid: "36170322"
 検索管理者は、ブラウザーの拡張機能を使用して検索コンテンツを簡単に作成できます。 ブラウザーの拡張機能をインストールしてから、ブックマークとして追加するサイトに移動して、そのサイトをブックマークとして追加します。
 
 現在、ブラウザーの拡張機能は Edge と Chrome で利用できます。 
-- Edge の拡張機能をダウンロードするには、[Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) に移動して、アプリをダウンロードします。
+- Edge の拡張機能をダウンロードするには、[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) に移動して、アプリをダウンロードします。
 - Chrome の拡張機能をダウンロードするには、[Chrome Web ストア](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)に移動して、アプリをダウンロードします。
 
 ## <a name="bulk-add-or-edit-bookmarks"></a>ブックマークを一括して追加または編集する
@@ -81,12 +81,13 @@ ms.locfileid: "36170322"
 
 ### <a name="what-are-powerapps"></a>PowerApps とはどういったものですか? 
 PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分かかりません。 PowerApps の詳細については、以下を参照してください。
-- [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)
-- [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid)
+- 
+  [ガイド付き学習](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [ドキュメント](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps ホーム](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに PowerApp を追加する
-1. 追加する [PowerApp の App ID](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) を検索します。
+1. 追加する [PowerApp の App ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) を検索します。
 1. サインインして、**Microsoft 365 管理センター**に移動します。
 1. ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。
 1. ブックマークを追加するか、**PowerApp** を追加する既存のブックマークを検索します。

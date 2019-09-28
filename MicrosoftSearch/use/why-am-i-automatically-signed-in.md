@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
 ROBOTS: NOINDEX
 description: Microsoft Search に自動的にサインインすることによって、作業結果をすばやく簡単に検索する方法について説明します。
-ms.openlocfilehash: a52cc9c88202e662b8598efa451b2bb964a861dc
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 31177e8a6c565cbb002a69ac50e16de3056008b4
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591037"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288966"
 ---
 # <a name="why-am-i-automatically-signed-in"></a>自動的にサインインされるのはなぜですか? 
 
@@ -45,7 +45,7 @@ Microsoft Search は、検索履歴を保護することにより、プライバ
   
 このデバイスでは自動的にサインインすることはありません。 他のブラウザーまたはデバイスを使用して Microsoft Search にサインインしている場合は、そこからもサインアウトする必要があります。 
   
-サインアウトすると、検索に追加の保護が追加されることはありません。 これらは標準の Bing コンシューマー検索として扱われ、 [Microsoft のプライバシー](https://privacy.microsoft.com/en-us/privacystatement)に関する声明によって制御されます。
+サインアウトすると、検索に追加の保護が追加されることはありません。 これらは標準の Bing コンシューマー検索として扱われ、 [Microsoft のプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明によって制御されます。
   
 ## <a name="view-your-search-history"></a>検索履歴を表示する
 
