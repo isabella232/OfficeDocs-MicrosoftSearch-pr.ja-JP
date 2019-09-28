@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: Microsoft Search を使用して、会社の既定のホーム ページとして Bing を設定する方法について説明します。
-ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: c3302863fab8888b8304b909c2c74ce71b391ade
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639831"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289011"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Bing.com を既定のホーム ページにする
 
@@ -40,11 +40,11 @@ ms.locfileid: "36639831"
 ## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Windows XP SP2 以降の Google Chrome
 
 
-異なるバージョンの Windows に関する ADMX ファイルと最新の ADMX ファイルの管理方法を記載した Windows サポート記事については、[Microsoft サポート](https://support.microsoft.com/ja-JP/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)をご確認ください。
+異なるバージョンの Windows に関する ADMX ファイルと最新の ADMX ファイルの管理方法を記載した Windows サポート記事については、[Microsoft サポート](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)をご確認ください。
 
 また、最新の Google ポリシー ファイルについては [Google Chrome エンタープライズ ヘルプ](https://support.google.com/chrome/a/answer/187202)を参照してください。
   
-このセクションに示されている設定が GPMC 内に見つからない場合、適切な ADMX をダウンロードし、[中央ストア](https://docs.microsoft.com/ja-JP/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)にコピーします。コントローラーの中央ストアは 1 つのフォルダーで、以下の名前付け規則を使用します。
+このセクションに示されている設定が GPMC 内に見つからない場合、適切な ADMX をダウンロードし、[中央ストア](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)にコピーします。コントローラーの中央ストアは 1 つのフォルダーで、以下の名前付け規則を使用します。
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   

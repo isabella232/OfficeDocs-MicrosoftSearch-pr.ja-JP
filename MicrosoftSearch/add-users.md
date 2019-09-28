@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
 ROBOTS: NoIndex
 description: Microsoft Searchの管理者および編集者に権限とロールを割り当てます
-ms.openlocfilehash: af89aa2d536baa64f16b0c2b2ff316200c83cbc0
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: b0a6d6db5c36bc12d4371e10d703e95bd3cd7731
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639651"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288957"
 ---
 # <a name="manage-users"></a>ユーザーを管理します
 
@@ -45,4 +45,4 @@ ms.locfileid: "36639651"
     
 ## <a name="add-users"></a>ユーザーを追加する
 
-デフォルトでは、Microsoft Searchは組織内の全員が利用できます。 アクセスを変更するには、[Azure Active Directoryでの条件的アクセス](https://docs.microsoft.com/ja-JP/azure/active-directory/conditional-access/overview)を使ってください。
+デフォルトでは、Microsoft Searchは組織内の全員が利用できます。 アクセスを変更するには、[Azure Active Directoryでの条件的アクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)を使ってください。

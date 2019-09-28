@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint Online で Microsoft Search の使用を組織で開始する
-ms.openlocfilehash: cff89b29b06d1592db15642a697cd414c011ecbc
-ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
+ms.openlocfilehash: 7651339d4c531139522d844cef238d6dc90a2496
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767183"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288984"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>SharePoint で Microsoft Search の使用を開始する
 
@@ -47,6 +47,6 @@ SharePoint の Microsoft Search とは、SharePoint Online のモダン検索エ
 ## <a name="see-also"></a>関連項目
 [Microsoft Search の概要](overview-microsoft-search.md)
 
-[SharePoint の検索エクスペリエンスの詳細情報](https://docs.microsoft.com/ja-JP/sharepoint/overview-of-search)
+[SharePoint の検索エクスペリエンスの詳細情報](https://docs.microsoft.com/sharepoint/overview-of-search)
 
 [SharePoint でどの検索エクスペリエンスを使用するか](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)

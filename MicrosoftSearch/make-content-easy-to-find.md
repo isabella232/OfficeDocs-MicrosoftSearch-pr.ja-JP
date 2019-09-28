@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ブックマーク、場所、Q&A 項目を作成して、組織のコンテンツを簡単に見つけられるようにします。
-ms.openlocfilehash: a2f8018a85d792473f268a735abb368babfc582c
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 2ed18cf8dcb855725a7cf3d51737e767000e9e83
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639858"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288921"
 ---
 # <a name="make-content-easy-to-find"></a>簡単に見つけられるコンテンツ
 
@@ -116,7 +116,7 @@ Microsoft Search では、検索管理者はコンテンツの見つけやすさ
 検索管理者は、ブラウザーの拡張機能を使用して検索コンテンツを簡単に作成できます。 ブラウザーの拡張機能をインストールしてから、ブックマークとして追加するサイトに移動して、そのサイトをブックマークとして追加します。
 
 現在、ブラウザーの拡張機能は Edge と Chrome で利用できます。 
-- Edge の拡張機能をダウンロードするには、[Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) に移動して、アプリをダウンロードします。
+- Edge の拡張機能をダウンロードするには、[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) に移動して、アプリをダウンロードします。
 - Chrome の拡張機能をダウンロードするには、[Chrome Web ストア](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)に移動して、アプリをダウンロードします。
 
 ### <a name="bulk-add-or-edit-bookmarks"></a>ブックマークを一括して追加または編集する
@@ -161,13 +161,13 @@ Microsoft Search では、検索管理者はコンテンツの見つけやすさ
 #### <a name="what-are-powerapps"></a>PowerApps とはどういったものですか? 
 
 PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分かかりません。 PowerApps の詳細については、以下を参照してください。
-- [ガイド付き学習](https://docs.microsoft.com/ja-JP/learn/browse/?products=powerapps)
-- [ドキュメント](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid)
+- [ガイド付き学習](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [ドキュメント](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps ホーム](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>ブックマークに PowerApp を追加する
 
-1. 追加する [PowerApp の App ID](https://docs.microsoft.com/ja-JP/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) を検索します。
+1. 追加する [PowerApp の App ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) を検索します。
 1. サインインして、**Microsoft 365 管理センター**に移動します。
 1. ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。
 1. ブックマークを追加するか、**PowerApp** を追加する既存のブックマークを検索します。
