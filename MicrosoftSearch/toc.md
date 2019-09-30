@@ -10,6 +10,7 @@
 ##[ブックマークの管理](manage-bookmarks.md)
 ##[Q&A の管理](manage-qas.md)
 ##[場所の管理](manage-locations.md)
-#[ユーザーによる導入ガイド](user-adoption-guide.md)
+##[フロアプランの管理](manage-floorplans.md)
+#[ユーザー導入ガイド](user-adoption-guide.md)
 #[よく寄せられる質問](faqs.md)
 #[Microsoft Search を使用する](use/about-microsoft-search.md)
