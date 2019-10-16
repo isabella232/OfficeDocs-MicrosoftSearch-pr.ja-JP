@@ -12,15 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
 ROBOTS: NoIndex
 description: エンタープライズ検索と Microsoft Search についてよく寄せられる質問に対する回答です
-ms.openlocfilehash: 3b30980c76915405767381fb3b6397468bdd1b68
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: d3cf7e4a6f252711f94e90a4e6561c8f25769c27
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639505"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502931"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -59,3 +58,8 @@ ms.locfileid: "36639505"
 ## <a name="where-can-i-get-info-about-office-365-and-microsoft-365-compliance-tiers-and-categories"></a>Office 365 および Microsoft 365 のコンプライアンス階層とカテゴリに関する情報はどこで入手できますか?
 
 「[業界標準と規制に関するコンプライアンス フレームワーク](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf)」(PDF ダウンロード) で詳細を入手できます。
+
+## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>ユーザーは職場または学校のアカウントで Microsoft リワード ポイントを獲得できますか?
+
+Microsoft Search では、エンタープライズ ユーザーが職場または学校のアカウントでサインインする必要があります。 ただし、ユーザーはこれらのアカウントで Microsoft リワード プログラムに参加またはサインインすることはできません。 しかし、エンタープライズ ユーザーにリワード ポイントが発生する場合があります。 これは、Microsoft Search ユーザーが <a href="https://www.microsoft.com/en-us/welcome?rtc=1">Microsoft アカウント</a>で作成されたリワード アカウントを持っている場合に発生する可能性があります。 (Microsoft アカウントに関連付けられている電子メール アドレスに、Outlook.com、Hotmail.com、Gmail、Yahoo、またはその他のプロバイダーからのものが使用できます。) ユーザーが同じブラウザー セッションで仕事用アカウントと Microsoft アカウントの両方で交互にサインインする場合、リワード アカウントにポイントが加算される場合があります。 ユーザーは、Cookie をクリアすることにより、Microsoft Search での検索中にポイントの発生を停止できます。 
+

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の概要、その利点、そして Microsoft Search が現在搭載されているアプリについてを確認します。
-ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37289047"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502940"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -29,7 +29,7 @@ Microsoft Search を使用すると、ユーザーは適切な回答、他のユ
 - 検索元のアプリの**コンテキスト**に応じた結果を取得できます。 たとえば、Outlook で検索すると、SharePoint のサイトではなくメールが見つかります。 SharePoint で検索すると、サイト、ページ、ファイルが見つかります。
 - ユーザーがどのアプリで作業していても、Microsoft Search は**個人用**です。  Microsoft Search では、Microsoft Graph からの洞察を使用して、各ユーザーに関連性のある結果が表示されます。 各ユーザーが同じ単語を検索しても、それぞれの結果は異なる可能性があります。 ユーザーには既にアクセス権のある結果のみが表示されます。Microsoft Search によってアクセス許可が変更されることはありません。
 - 情報がある場所を覚えておく必要はありません。 たとえば、あるユーザーが Word で作業していて、同僚が自分の OneDrive から共有したプレゼンテーションの情報をそのユーザーが再利用する必要があるとします。 この場合、OneDrive に切り替えて、そのプレゼンテーションを検索する必要はなく、Word から検索するだけで済みます。  
-- Bing を使用している場合、公開されている Web の検索結果に加えて組織内からの結果も取得できます。
+- [Bing](https://bing.com) を使用している場合、公開されている Web の検索結果に加えて組織内からの結果も取得できます。
 
 ## <a name="what-users-see"></a>ユーザーに対する表示
 
@@ -147,20 +147,14 @@ SharePoint の Microsoft Search とは、SharePoint Online のモダン検索エ
 
 クラシック検索エクスペリエンスはカスタマイズできます。たとえば、検索結果ページにユーザー設定の絞り込み条件に追加したり、特定の結果の種類をそれぞれ表示したりする方法があります。 そのように SharePoint で Microsoft Search エクスペリエンスをカスタマイズすることはできません。 従来の検索用に行ったカスタマイズの中では、SharePoint の Microsoft Search に影響を与える場合があります。 組織で SharePoint の両方の検索エクスペリエンスを使用する場合は、[違いと SharePoint での Microsoft Search への影響を回避する方法の詳細を参照してください](https://docs.microsoft.com/sharepoint/differences-classic-modern-search)。
 
-## <a name="microsoft-search-in-bing"></a>Bing での Microsoft Search
-
-職務に関連する検索は機密性が求められる場合があるため、Microsoft Search では、Bing の一般の Web の検索結果部分でのそうした検索の取り扱いに関する一連の信頼性対策が使用されています。
-
-Microsoft Search リクエストは HTTPS 経由で行われます。 これによりセキュリティが強化され、接続がエンド ツー エンドで暗号化されます。 さらに Microsoft Search トラフィックに関連するすべての検索ログは匿名化され、パブリックの非 Microsoft Search トラフィックとは別に保存されます。
-
-返された応答でユーザー クエリに 1 つ以上の仕事関連の結果が含まれているかどうかに関係なく、次の措置が取られます。
-
-**ログ** - Microsoft Search トラフィックに関するすべての検索ログは匿名化され、18 か月間保持されます。 これらのシステム ログに保存されたクエリは、一連の制限と頻度のしきい値が満たされている場合に、公開された Web 結果の自動検索候補または関連検索などのパブリックな機能のモデル化および学習のためにのみ使用されます。そしてそれは、これらのクエリが一般に普及しているものであり、特定の組織に特化したものではないという信頼を与えます。 クエリは、Microsoft 以外のユーザーからの関連付けデータに膨大な回数出現する必要があります。そしてそれは、企業の検索結果のみをトリガーするものであってはなりません。 クエリがこれらの要件を満たさない場合は、一般の、Microsoft Search 以外のトラフィックとは別に保管されます。 アクセス制限は、セキュリティ グループおよびエンジニアリング システム内の他のレイヤーなどのさまざまなセキュリティ メカニズムを通して管理されます。
-
-**検索履歴** - 職場または学校のアカウントでサインインした場合、他のコンピューターやデバイスからユーザーの検索履歴へアクセスすることはできません。
-
-**広告** - エンタープライズ検索クエリを広告業者と共有したり、広告業者に通知したりすることは決してありません。
-ユーザーの職場 ID または組織を基にユーザーが広告のターゲットになることはありません。
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Bing の Microsoft Search でエンタープライズ検索を保護する 
+ユーザーが Microsoft Search でエンタープライズ検索クエリを入力すると、同時に次の 2 つの検索要求が発生します。(1) 企業内部リソースの検索、および (2) Bing.com の公開結果の個別検索です。 エンタープライズ検索は機密性が高い可能性があるため、Microsoft Search は、Bing.com からの公開結果の個別検索がどのように処理されるかを説明する一連の信頼測定を実装しています。 
+-   **ログ記録**
+    - Microsoft Search トラフィックに関連するすべての検索ログは、職場の ID と関連付けられていません。
+    - クエリが特定の組織に固有ではないという確信を与える一連の制限または頻度のしきい値が満たされる場合、クエリは[プライバシーに関する声明](https://privacy.microsoft.com/privacystatement)の Bing サービス セクションで説明されているように処理されます。 たとえば、このようなクエリは、自動補完候補や関連検索などの公開機能をモデル化してトレーニングするために使用されます。 
+    - 一連の制限または頻度のしきい値を満たしていないクエリは、Microsoft Search 以外のパブリック トラフィックとは別に保存されます。
+-   **広告**
+    - エンタープライズ検索に関連して Bing.com に表示される広告は、検索クエリのコンテンツのみに関連しています。 広告は、職場 ID に基づいてユーザーをターゲットにすることはありません。
 
 ## <a name="see-also"></a>関連項目
 

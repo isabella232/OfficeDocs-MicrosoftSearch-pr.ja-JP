@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 ROBOTS: NOINDEX
 description: Microsoft Search を使用して会社の既定の検索エンジンとして Bing を設定する方法について取り上げます。
-ms.openlocfilehash: 7c7ec8be726f2ac12a0e07f3d70c4b6515366bf3
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: 0106799b4307e979c5fbafc4ed8c1ddb55098b14
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37289020"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502949"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Bing を既定の検索エンジンにする
   
