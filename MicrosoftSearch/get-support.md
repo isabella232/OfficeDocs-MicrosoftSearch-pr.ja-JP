@@ -22,9 +22,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/30/2019
 ms.locfileid: "34591595"
 ---
-# <a name="get-support"></a><span data-ttu-id="93026-103">サポートを受ける</span><span class="sxs-lookup"><span data-stu-id="93026-103">Get support</span></span>
+# <a name="get-support"></a><span data-ttu-id="0064e-103">サポートを受ける</span><span class="sxs-lookup"><span data-stu-id="0064e-103">Get support</span></span>
 
-<span data-ttu-id="93026-104">[Microsoft 技術コミュニティ サイト](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch)の Microsoft Search セクションで、他の Microsoft Search 管理者たちの集合知を活用し、お互いや専門家から学び、自分の経験を共有してください。</span><span class="sxs-lookup"><span data-stu-id="93026-104">Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span></span>
+<span data-ttu-id="0064e-104">[Microsoft 技術コミュニティ サイト](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch)の Microsoft Search セクションで、他の Microsoft Search 管理者たちの集合知を活用し、お互いや専門家から学び、自分の経験を共有してください。</span><span class="sxs-lookup"><span data-stu-id="0064e-104">Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span></span>
 
   
 
