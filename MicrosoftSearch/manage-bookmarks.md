@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークを作成および更新して、Microsoft Search のブックマークの結果を一括編集する方法
-ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: fa1da7d120522ea76d68c1a84f7bee7590701c88
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288975"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949223"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -65,7 +65,7 @@ ms.locfileid: "37288975"
 - 同じタイトルまたは URL を持つ既存のブックマークがある場合は、そのブックマークはインポート ファイル内の情報で更新されます。
 - テンプレート ファイルのすべてのフィールドが必要なわけではなく、ブックマークの状態によって必要なフィールドは変わります。
 - *状態*フィールドに基づいて、ブックマークは、下書き、おすすめ、スケジュール済みとして保存されるか、自動的に公開されます。
-- 複数のテナントを持つ組織の場合は、ブックマークをあるテナントからエクスポートして、別のテナントにインポートできます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
+- 複数の組織を管理するパートナーは、1つの組織からブックマークをエクスポートして、別の組織にインポートすることができます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
 
 ### <a name="prevent-import-errors"></a>インポート エラーを回避する
 必要なデータが不足しているか無効な場合はエラーになり、修正する行と列に関する詳細情報を含むログ ファイルが生成されます。 必要な編集を行い、ファイルのインポートを再度実行してください。 すべてのエラーが解決されるまで、ブックマークをインポートまたは保存することはできません。
@@ -81,8 +81,7 @@ ms.locfileid: "37288975"
 
 ### <a name="what-are-powerapps"></a>PowerApps とはどういったものですか? 
 PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 PowerApps は、どのブラウザーやデバイスでも動作し、追加するのに 1 分かかりません。 PowerApps の詳細については、以下を参照してください。
-- 
-  [ガイド付き学習](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [ガイド付き学習](https://docs.microsoft.com/learn/browse/?products=powerapps)
 - [ドキュメント](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps ホーム](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 

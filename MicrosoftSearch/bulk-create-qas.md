@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 ROBOTS: NoIndex
 description: Microsoft Search 管理ポータルのインポート ツールを使用して、よく寄せられる質問への回答をすばやく追加します
-ms.openlocfilehash: c0ec4aaa0ee93e94c8569dc383456018ccc6679d
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 660f5663ff6238f4ab59dab36d51f1311d5c7260
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639777"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949034"
 ---
 # <a name="bulk-create-qas"></a>Q&A の一括作成
 
@@ -45,7 +45,7 @@ ms.locfileid: "36639777"
     
 7. **[インポート]** をクリックします
 
-# <a name="prevent-import-errors"></a>インポート エラーを回避する      
+## <a name="prevent-import-errors"></a>インポート エラーを回避する      
 必要なデータが存在しないか無効な場合は、エラーが発生します。 エラーによっては、修正の必要がある行や列に関する詳細情報が記載されたログ ファイルが生成される場合があります。 必要な編集を行い、ファイルのインポートを再度実行してください。
 
 > [!NOTE]
@@ -61,7 +61,7 @@ ms.locfileid: "36639777"
 
 また、既存の Q&A の Id を含めると、インポート ファイルの情報に置き換えられます。
 
-複数のテナントを持つ組織の場合は、テナントからエクスポートした Q&A を別のテナントにインポートできます。 ただし、インポートする前に Id 列のすべてのデータを削除する必要があります。
+複数の組織を管理するパートナーの場合は、1つの組織から Q&をエクスポートして、別の組織にインポートすることができます。 ただし、インポートする前に Id 列のすべてのデータを削除する必要があります。
 
 必須フィールドと推奨フィールドの詳細については、「[Q&A の作成](create-qas.md)」を参照してください。
 

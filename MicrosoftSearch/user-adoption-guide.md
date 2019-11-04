@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 組織に Microsoft Search を正常にロールアウトするのに役立つ方法とプロセスについて説明します。
-ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 439c7a8e9fbfdeb5b2bc42276dccb2377f3f0dac
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639886"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949358"
 ---
 # <a name="user-adoption-guide"></a>ユーザー導入ガイド
 
@@ -41,9 +41,9 @@ ms.locfileid: "36639886"
 |エグゼクティブ スポンサー  <br/> |組織のための Microsoft Search の高度なビジョンと価値を理解する  <br/> IT/ビジネスチームにリーダーシップのサポートを提供する  <br/> リソースを割り当てる  <br/> 従業員と直接通信する  <br/> |経営幹部のリーダー  <br/> |
 |ビジネスオーナー  <br/> |製品とユーザーのシナリオを特定する  <br/> 部門と組織の成功指標を決定する  <br/> |任意  <br/> |
 |変更管理チーム  <br/> |製品価値の理解が容易であることを確認する  <br/> ロールアウトの計画を作成する  <br/> |IT  <br/> |
-|シリーズ  <br/> |ピアと teams に製品を啓発  <br/> |任意 (スタッフ)  <br/> |
+|チャンピオン  <br/> |ピアと teams に製品を啓発  <br/> |任意 (スタッフ)  <br/> |
 |検索管理者  <br/> |ユーザーの導入中心チームメンバーを特定する  <br/> 操作性と継続的な管理のルックアンドフィールを含む Microsoft Search を管理する  <br/> Microsoft Search の価値を示すためにディスカッションを促進する  <br/> |IT  <br/> |
-|編集  <br/> |管理ポータルでコンテンツを作成する  <br/> |IT/任意  <br/> |
+|編集  <br/> |管理センターでコンテンツを作成する  <br/> |IT/任意  <br/> |
    
 ## <a name="stage-2-scenarios"></a>ステージ 2: シナリオ
 
@@ -121,7 +121,7 @@ Microsoft 検索ユーザーは、職場または学校のアカウントを使�
   
  **パートナーチームと連携する**
   
-Microsoft 365 の重要な部分として、Microsoft Search は GDPR および Tier C のガイドラインに準拠しています。 組織によっては、プライバシーおよびセキュリティチームと共に Microsoft Search に関する情報を共有しなければならない場合があります。 詳細については、「 [Microsoft Search のセキュリティ](security.md)」を参照してください。
+Microsoft 365 の重要な部分として、Microsoft Search は GDPR および Tier C のガイドラインに準拠しています。 組織によっては、プライバシーおよびセキュリティチームと共に Microsoft Search に関する情報を共有しなければならない場合があります。 詳細については、「 [Microsoft Search のセキュリティ](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches)」を参照してください。
   
 ヘルプデスクが Microsoft Search の機能とサインインするユーザー要件について理解していることを確認して、ユーザーがより効果的にユーザーをサポートできるようにしてください。 詳細については、「 [Microsoft Search](use/about-microsoft-search.md)と[faq](faqs.md)を使う」を参照してください。
   
