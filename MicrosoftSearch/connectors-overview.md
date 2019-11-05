@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsfot 検索用の Microsoft Graph コネクタの概要
-ms.openlocfilehash: c60154e5769e96cf8a6a4a399d344da259f4e7b0
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c372d4750c6644f0f98054a2531b6431fb8cd334
+ms.sourcegitcommit: 90f82efc3671c477536cbe8d8846132910b64600
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949920"
+ms.locfileid: "37961957"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph コネクタの概要
 
 Microsoft Search では、ユーザーが検索できるように、Microsoft 365 のすべてのデータのインデックスが作成されます。 Microsoft Graph のコネクタを使用すると、組織はサードパーティのデータにインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
 
 > [!IMPORTANT]
-> **免責事項**: Microsoft Graph のコネクタ、インデックス作成 api、および検索 api は現在プレビュー段階です。 プレビューの詳細については、「[コネクタプレビュー](connectors-preview.md)」を参照してください。 プレビューに参加するには、最初に[Microsoft Graph Connector preview のサインアップフォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信する必要があります。
+> **免責事項**: microsoft Graph のコネクタと Microsoft search api (インデックスと検索) は現在プレビュー段階です。 プレビューの詳細については、「 [Microsoft Graph コネクタプレビュー](connectors-preview.md)」を参照してください。 プレビューに参加するには、最初に[Microsoft Graph Connector preview のサインアップフォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信する必要があります。
 
 ## <a name="architecture"></a>アーキテクチャ
 Microsoft Graph プラットフォームの次のアーキテクチャ図は、 [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search)クライアントでのコンテンツインデックスを使用してコネクタコンテンツをユーザーの結果にどのように流し込むかを示しています。 この記事では、Microsoft Graph コネクタデータフロープロセスの主な構成要素について説明します。
 
-[以下の一時ダイアグラムを参照]![](media/highlevel-connectors_FINAL.jpg)
+![](media/highlevel-connectors_FINAL.png)
 
-API は、データソースごとに1つの接続をインスタンス化します。 次に、ソースデータが Microsoft のコンテンツインデックス作成 API を介してインデックス処理され、格納されます。 確立された接続は Microsoft Search とやり取りされるので、ユーザーは検索結果を取得できます。
+API は、データソースごとに1つの接続をインスタンス化します。 その後、API はデータをインデックス処理して格納します。 確立された接続は Microsoft Search とやり取りされるので、ユーザーは検索結果を取得できます。
 
 Microsoft [365 管理センター](https://admin.microsoft.com)では、microsoft によって作成されたすべてのコネクタを構成できます。 管理センターを使用すると、簡単なユーザーインターフェイスでコネクタを簡単に構成できます。
 
@@ -42,7 +42,7 @@ Microsoft [365 管理センター](https://admin.microsoft.com)では、microsof
 
 エコシステムパートナーの1つからコネクタをプレビューするには、そのパートナーに直接連絡します。 詳細については、 [Microsoft Graph のコネクタギャラリー](connectors-gallery.md)を参照してください。
 
-[Microsoft Graph インデックス作成 API](/graph/search-index-overview)を使用して独自のコネクタを作成することもできます。
+[独自のコネクタを作成](https://docs.microsoft.com/graph/search-concept-overview)することもできます。
 
 ### <a name="connectors-by-microsoft"></a>Microsoft によるコネクタ
 Microsoft Graph コネクタプレビューリリースには、6つの Microsoft が作成したコネクタが含まれています。 [Microsoft 365 管理センター](https://admin.microsoft.com)で設定し、 [microsoft が作成](configure-connector.md)したコネクタをセットアップする方法について説明します。
@@ -72,10 +72,10 @@ Microsoft Graph コネクタプレビューリリースには、6つの Microsof
 パートナーからのコネクタの詳細については、 [Microsoft Graph のコネクタギャラリー](connectors-gallery.md)を参照してください。
 
 ### <a name="build-your-own-connector"></a>独自のコネクタを作成する
-カスタムデータ型またはファイルにインデックスを作成するために、開発者は[Microsoft Graph](https://developer.microsoft.com/graph/)でコネクタを作成できます。 コネクタは、Microsoft Graph インデックス API を使用して接続を作成し、アイテムを Microsoft 検索インデックスにプッシュするアプリケーションです。 詳細については、「 [Microsoft Graph のインデックス作成 API の概要](https://docs.microsoft.com/graph/search-index-overview)」を参照してください。
+カスタムデータ型またはファイルにインデックスを作成するために、開発者は[Microsoft Graph](https://developer.microsoft.com/graph/)でコネクタを作成できます。 コネクタは、[接続を作成](https://docs.microsoft.com/graph/search-index-manage-connections)し、Microsoft 検索インデックスにアイテムをプッシュするアプリケーションです。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
 
 ### <a name="search-results-with-your-custom-built-connector"></a>カスタム作成コネクタを使用した検索結果
-カスタムデータのインデックスを作成すると、開発者は Microsoft Graph の検索 API を使用して、このデータをクエリできます。 任意のアプリケーションでデータを表示できます。 詳細については、「 [Microsoft Graph 検索 API の概要](https://docs.microsoft.com/graph/api/resources/indexing-api-overview)」を参照してください。
+カスタムデータのインデックスを作成すると、開発者は[このデータをクエリ](https://docs.microsoft.com/graph/search-concept-custom-types)できます。 任意のアプリケーションでデータを表示できます。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
 
 ## <a name="license-requirements"></a>ライセンス要件
 検索結果のコネクタからのデータを表示するには、ユーザーは次の Microsoft 365 サブスクリプションのいずれかを所有している必要があります。
