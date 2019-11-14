@@ -3,7 +3,6 @@ title: Microsoft Search のファイル共有コネクタ
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用のファイル共有コネクタを設定します。
-ms.openlocfilehash: d5fbc1af2868ce7baa70017f617a9731340fb19a
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9791ee3460eb174fd7a478baa6a9beb45f1b1aab
+ms.sourcegitcommit: 6b531b2ce7253c16251c7089795dedf1d2f3fc33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949907"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310718"
 ---
 # <a name="file-share-connector"></a>ファイル共有コネクタ
 
@@ -27,13 +26,15 @@ ms.locfileid: "37949907"
 この記事は、Microsoft 365 管理者またはファイル共有コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
 
 ## <a name="install-a-data-gateway"></a>Data gateway をインストールする
-サードパーティのデータにアクセスするためには、Microsoft Power BI ゲートウェイをインストールして構成する必要があります。 詳細については[、「Install and on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) 」を参照してください。  
+サードパーティのデータにアクセスするためには、Microsoft Power BI ゲートウェイをインストールして構成する必要があります。 詳細について[は、「オンプレミスゲートウェイをインストール](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)する」を参照してください。  
+
+## <a name="content-requirements"></a>コンテンツの要件
+**ファイルの種類**。 これらの形式のファイルのみにインデックスを作成して検索できます。 DOC、.DOCM、.DOCX、ドット、.DOTX、EML、GIF、HTML、JPEG、.MHT、MHTML、MSG、NWS、OBD、OBD、ODP、XLB、PPT、PPTM、.PPTX、TXT、、XLC、.XLSB、XLS、.XLSX、、XLXM、XML、XPS、および ZIP。 これらの書式のテキストの内容のみがインデックス化されます。 すべてのマルチメディアコンテンツは無視されます。
+ 
+**ファイルサイズの制限**。 サポートされているファイルの最大サイズは 100 MB です。 100 MB を超えるファイルはインデックス作成からスキップされます。 処理後の最大サイズ制限は 4 MB です。 ファイルのサイズが 4 MB に達すると、処理は停止します。 そのため、ファイル内に存在する語句が検索に使用できない場合があります。
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
-[**データソースへの接続**] ページで、フォルダーを作成し、ファイル共有へのパスを指定します。 次に、以前にインストールしたゲートウェイを選択します。 共有内のすべてのファイルに対する**読み取りアクセス権**を持つ Windows ユーザーアカウントの資格情報を入力します。 その後、共有に存在するファイルを確認して、すべてのフェッチされたメタデータを表示できます。
-
-## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
-ファイル共有コネクタは、**すべてのユーザー**に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+[**データソースへの接続**] ページで、[**ファイル共有**] を選択し、名前、接続 ID、および説明を指定します。 次のページで、ファイル共有へのパスを指定し、以前にインストールしたゲートウェイを選択します。 共有内のすべてのファイルに対する読み取りアクセス権を持つ Windows ユーザーアカウントの資格情報を入力します。 残りの設定に進み、接続を公開します。
 
 ## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
 推奨される既定の更新スケジュール間隔は15分ですが、希望する別の間隔に変更することができます。
@@ -111,5 +112,5 @@ Read-Host -Prompt 'Press enter to exit'
 ## <a name="limitations"></a>制限事項
 ファイル共有コネクタには、次のようなプレビューリリースの制限があります。
 * カスタムプロパティを持つファイルではなく、固定プロパティを持つファイルのみをインデックス作成できます。
-* ファイル共有アクセス制御リスト (Acl) は現在サポートされていません。
+* ファイル共有アクセス制御リスト (Acl) は現在サポートされていません。 ファイル NTFS Acl のみがサポートされています。
 * 外部 id はサポートされていません。 Azure Active Directory の id にマップする必要があります。
