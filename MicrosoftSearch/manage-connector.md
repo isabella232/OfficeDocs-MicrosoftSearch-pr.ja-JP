@@ -1,9 +1,8 @@
 ---
 title: Microsoft 検索用の Microsoft Graph コネクタを管理する
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph コネクタを管理します。
-ms.openlocfilehash: 5aab310a05d073221918a8aaa80ea1e06c818e51
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c74dc8f6d08519860e757b0ebe19e83dcf42159b
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949947"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626803"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Microsoft Search のためにコネクタを管理する
 
@@ -34,9 +33,9 @@ ms.locfileid: "37949947"
 **操作** | **Microsoft が構築したコネクタ** | **パートナーまたはカスタム作成コネクタ**
 --- | --- | ---
 接続を追加する | : heavy_check_mark: ( [Microsoft が作成したコネクタを構成するを](configure-connector.md)参照) | : x: (パートナーまたはカスタム構築コネクタ管理者 UX を参照してください)
-接続の削除 | :heavy_check_mark: | :heavy_check_mark:
+接続を削除する | : heavy_check_mark: | : heavy_check_mark:
 公開された接続を編集する | : heavy_check_mark: Name<br></br> : heavy_check_mark: Description<br></br> : heavy_check_mark: 外部データソースの認証資格情報<br></br> : heavy_check_mark: オンプレミスのデータソースのゲートウェイ資格情報<br></br> : heavy_check_mark: 更新スケジュール<br></br> | : heavy_check_mark: Name<br></br> : heavy_check_mark: Description
-下書き接続を編集する | :heavy_check_mark: | エックス
+下書き接続を編集する | : heavy_check_mark: | エックス
 
 ## <a name="monitor-your-connection-status"></a>接続の状態を監視する
 接続を作成すると、[ **Microsoft Search** ] ページの [**コネクタ**] タブに、処理されたアイテムの数が表示されます。 最初のフルクロールが正常に完了すると、定期的な増分クロールの進行状況が表示されます。 このページでは、コネクタの毎日の操作に関する情報と、ログおよびエラー履歴の概要を提供します。

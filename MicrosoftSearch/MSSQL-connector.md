@@ -1,9 +1,8 @@
 ---
 title: Microsoft Search の microsoft SQL connector
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft SQL コネクタをセットアップします。
-ms.openlocfilehash: a5e0b26277345814ed095b54583ea635341295ad
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: a073a6d3f226e5f8b0ea297494a8889f1f50bab1
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949901"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626758"
 ---
 # <a name="microsoft-sql-server-connector"></a>Microsoft SQL server コネクタ
 

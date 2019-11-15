@@ -1,22 +1,23 @@
 ---
 title: コネクタギャラリー
-description: Microsoft Search のすべての Microsoft Graph コネクタを一覧表示します。
-services: microsoft-search
+ms.author: mounika.narayanan
 author: monaray
-manager: samanro
-layout: LandingPage
-ms.assetid: ''
-ms.service: mssearch
-ms.tgt_pltfrm: na
-ms.devlang: na
+manager: shohara
+ms.audience: Admin
 ms.topic: landing-page
-ms.author: samanro
-ms.openlocfilehash: 87fc858f702940afd5a943d05287aab15fd33d1e
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.service: mssearch
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: Microsoft Search のすべての Microsoft Graph コネクタを一覧表示します。
+ms.openlocfilehash: 6ae3ef26fc80997c9698b3fc5bd47cfceef6a32a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949931"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626554"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph コネクタギャラリー
 
@@ -55,7 +56,7 @@ ms.locfileid: "37949931"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>エンタープライズ web サイト</h3>
+                        <h3>大企業の Web サイト</h3>
                         <p><a href="https://www.microsoft.com">Microsoft</a>による</p>
                         <p onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'" style="height: 100px; overflow: hidden;">この Microsoft Graph コネクタを使用すると、組織内のユーザーは、SharePoint 以外のエンタープライズ web サイト内のページを検索できます。</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">

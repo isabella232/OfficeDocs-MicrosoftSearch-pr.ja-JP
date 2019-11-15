@@ -3,7 +3,6 @@ title: PowerApps の統合
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,14 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-ROBOTS: NOINDEX
 description: Microsoft Search のブックマーク検索結果にブラウザーベースのアプリを含める
-ms.openlocfilehash: 36389a8b53390c7dd18cf98285b0faa6df73c8b4
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: e3fda45bbc7bef5634fb08a7dd6fc0143d6da054
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288930"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626839"
 ---
 # <a name="integrate-powerapps"></a>PowerApps の統合
    
@@ -30,8 +28,7 @@ ms.locfileid: "37288930"
 
 PowerApps は、コーディング経験がなくても、ブラウザーまたは携帯電話やタブレットで実行するビジネス アプリケーションを作成できるサービスです。 詳細については、次の項目を参照してください。
   
-- 
-  [ガイド付き学習](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [ガイド付き学習](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
 - [ドキュメント](https://docs.microsoft.com/powerapps/)
     

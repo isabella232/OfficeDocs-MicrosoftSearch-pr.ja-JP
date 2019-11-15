@@ -13,13 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
+ROBOTS: NOINDEX
 description: Microsoft Search において、承認されたユーザーに情報を提供するときにエンタープライズのデータとユーザーを保護します
-ms.openlocfilehash: a41059d529645d8ee7ffc99bad1b1f55c0e42aee
-ms.sourcegitcommit: 6b531b2ce7253c16251c7089795dedf1d2f3fc33
+ms.openlocfilehash: f76067890188bdab575a011f444f49211db466d3
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38311803"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626767"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search のセキュリティ
 

@@ -3,7 +3,6 @@ title: ブックマークの管理
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークを作成および更新して、Microsoft Search のブックマークの結果を一括編集する方法
-ms.openlocfilehash: fa1da7d120522ea76d68c1a84f7bee7590701c88
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 94e24db6643307a83ffae21e03b2ea354e209f53
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949223"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626812"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 

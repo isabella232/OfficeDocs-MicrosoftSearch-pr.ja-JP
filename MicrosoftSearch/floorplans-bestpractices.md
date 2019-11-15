@@ -3,7 +3,6 @@ title: Microsoft 検索フロアプランのベストプラクティス
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 10/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索フロアプランのベストプラクティス
-ms.openlocfilehash: 93e06663524195188ca790f4cf5b853526bc7798
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 62c7122dd9fddfe41edb6841187e9974f222e62b
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949945"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626866"
 ---
 # <a name="best-practices"></a>ベスト プラクティス
 
@@ -83,6 +82,6 @@ Microsoft Search では、DWG プランファイルが必要です。これは�
 |部屋番号は、コード、翼、床面の情報の作成に常に従います。     |  部屋番号が**1001**の場合は、オフィスの場所を**b1 1001**、 **b1/1001**、または**b1-1001**に設定します。 <br> 会議室番号が**f1-001**の場合は、office の場所を**b1 F1-001**または**b1/f1-001**に設定します。 <br> 会議室番号が**1**の場合、Azure AD の場所を**b1 1001**、 **b1/1001**、または**b1-F1-001**に設定します。       |
 |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [場所の管理](manage-locations.md)<br>
 [フロアプランを管理する](manage-floorplans.md)

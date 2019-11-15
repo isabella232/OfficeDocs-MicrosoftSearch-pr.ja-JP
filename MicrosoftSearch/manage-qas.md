@@ -3,7 +3,6 @@ title: Q&A の管理
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 回答を個別に検索して更新するか、利用可能な Microsoft Search のツールを使用して一括ですべての回答を編集します
-ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 903aab52e8d51e45588a390b5ccdccbaae2cf04a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591523"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626776"
 ---
 # <a name="manage-qas"></a>Q&A の管理
 
@@ -76,7 +75,7 @@ Q&A をインポートまたはエクスポートするには:
 - 同じタイトルまたは URL を持つ既存のブックマークがある場合は、そのブックマークはインポート ファイル内の情報で更新されます。
 - テンプレート ファイルのすべてのフィールドが必要なわけではなく、ブックマークの状態によって必要なフィールドは変わります。
 - 状態フィールドに基づいて、ブックマークは、下書き、おすすめ、スケジュール済みとして保存されるか、自動的に公開されます。
-- 複数のテナントを持つ組織の場合は、ブックマークをあるテナントからエクスポートして、別のテナントにインポートできます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
+- 複数の組織を管理するパートナーは、1つの組織からブックマークをエクスポートして、別の組織にインポートすることができます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
 
 **注:** テンプレート ファイルにエラーがある場合は、Q&A をインポートすることはできません。 エラーを回避するには、インポート ファイルが正しく書式設定されていて、必要な情報がすべて含まれていることを確認してください。 
 

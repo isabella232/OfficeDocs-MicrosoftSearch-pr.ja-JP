@@ -3,7 +3,6 @@ title: 場所の管理
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過と共に、場所の情報の状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。
-ms.openlocfilehash: d026e518011f3b3739beb2b6aaa044f8a5e9c0d4
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591559"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626785"
 ---
 # <a name="manage-locations"></a>場所の管理
 
@@ -57,7 +56,7 @@ ms.locfileid: "34591559"
 - 同じタイトルまたは URL を持つ既存のブックマークがある場合は、そのブックマークはインポート ファイル内の情報で更新されます。
 - テンプレート ファイルのすべてのフィールドが必要なわけではなく、ブックマークの状態によって必要なフィールドは変わります。
 - *状態*フィールドに基づいて、ブックマークは、下書き、おすすめ、スケジュール済みとして保存されるか、自動的に公開されます。
-- 複数のテナントを持つ組織の場合は、ブックマークをあるテナントからエクスポートして、別のテナントにインポートできます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
+- 複数の組織を管理するパートナーは、1つの組織からブックマークをエクスポートして、別の組織にインポートすることができます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
 
 **注:** テンプレート ファイルにエラーがある場合は、場所をインポートすることはできません。 エラーを回避するには、インポート ファイルが正しく書式設定されていて、必要な情報がすべて含まれていることを確認してください。 
 

@@ -3,7 +3,6 @@ title: Microsoft Search 用の ServiceNow コネクタ
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow コネクタをセットアップする
-ms.openlocfilehash: b83bf04dc06ffab26a0067d15b36a99496c199a8
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949960"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626956"
 ---
 # <a name="servicenow-connector"></a>ServiceNow コネクタ
 

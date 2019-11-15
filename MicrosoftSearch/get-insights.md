@@ -1,9 +1,8 @@
 ---
-title: インサイト ダッシュボードの使用
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 9/11/2018
+title: Microsoft Search Insights ダッシュボードレポート
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,65 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-ROBOTS: NOINDEX
-description: Microsoft Search 管理ポータルの簡単に使用できるダッシュボードから、メトリックスを分析して、コンテンツを管理します。
-ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+description: Microsoft Search の insights ダッシュボードから測定値を分析し、コンテンツを管理する
+ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639822"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626875"
 ---
-# <a name="use-the-insights-dashboard"></a>インサイト ダッシュボードの使用
+# <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights ダッシュボードレポート
 
-> [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
-    
-データ分析情報を把握して、どのようにユーザーが結果に関与しているのかを確認します。 管理ポータルのダッシュボードを使用して、次の操作を実行します。
-  
-- 何件のブックマークおよび Q&A が公開、スケジュール、おすすめされているかを確認する
-    
-- 作業検索結果を示す上位の検索クエリのインプレッションを確認する
-    
-- ブックマークおよび Q&A のインプレッション分布を分析する
-    
-## <a name="get-details-about-bookmarks-and-qas"></a>ブックマークおよび Q&A に関する詳細情報を取得する
+Microsoft Search insights ダッシュボードを使用して、発行された回答の Bing データを管理できます。 これは、ユーザーがコンテンツを簡単に[見つけられるよう](make-content-easy-to-find.md)にするために必要な手順の1つにすぎません。
 
-ダッシュボードを使用して、ブックマークまたは Q&A の合計を次のステータス別に確認します。
-  
-- 公開済み: ユーザーが利用可能な公開済みの結果の数
-    
-- スケジュール済み: 公開パイプラインのスケジュール済みの結果の数
-    
-- おすすめ: ユーザーからのおすすめの数
-    
-また、ダッシュボードのブックマークおよび Q&A 分析情報カードによって、次の一般的なタスクに簡単にアクセスできます。
-  
-- ブックマークまたは Q&A の結果を表示するには、カードのタイトルのブックマークまたは Q&A をクリックします
-    
-- ブックマークまたは Q&A を追加するには、作成オプションをクリックします
-    
-- ブックマークまたは Q&A を一括で追加するには、インポート オプションをクリックします
-    
-## <a name="review-top-search-queries"></a>よく使用される検索クエリを確認する
+Microsoft 365 管理センターで最初に Microsoft Search に移動すると、Insights ダッシュボードにが入力されます。
 
-過去 90 日間に最も多くのインプレッションを生成した検索を見つけます。 各結果の種類に関して上位 25 名のユーザーがインプレッションの合計数およびクリック率 (CTR) と共に表示されます。 上位の検索クエリ カードで、次の操作を実行できます。
-  
-- 結果の種類別にフィルタリングするには、メニューの [すべての結果] をクリックして別の結果の種類を選択します
-    
-- Bing に結果がどのように表示されるかを確認するには、クエリをクリックして、新しいタブで検索結果ページを開きます
-    
-- 追加の検索クエリを表示するには、カードの下部にある左矢印または右矢印をクリックします
-    
-## <a name="analyze-impressions-by-result-type"></a>結果の種類別にインプレッションを分析する
+![Insights-dashboard](media/Insights-dashboard.png)
 
-結果の種類カード別の読みやすいインプレッション分布のグラフによって、さまざまな時間枠にわたるデータが表示されます。 概要では、分布の割合の計算 (結果の種類のインプレッション数×100/インプレッションの合計数) と共にインプレッション数が表示されます。 タイムラインでは、1 つの結果の種類に関して 1 日のインプレッション数が表示されます。 双方のビューの時間の範囲を変更して詳細情報を取得することもできます。
-  
-- カードの上部で、[7 日間]、[30 日間]、[90 日間] のいずれかをクリックします
-    
-- 0 から 90 日間のユーザー設定の範囲を表示するには、[ユーザー設定の範囲] をクリックし、開始日と終了日を入力します
-    
-- タイムラインで、1 日の結果の種類ごとのインプレッションに対するデータ ポイントにカーソルを置きます
+ここでは、insights ダッシュボードで使用可能なレポートについて説明します。
 
-  
+> [!NOTE]
+> レポート内のデータは、Bing データのみを表します。
 
+## <a name="top-queries"></a>よく使用されるクエリ
+
+このレポートでは、ユーザーが実行する上位の 2000 Bing 検索クエリについての詳細が提供されます。 クエリを**上位のクエリ**に表示するには、クエリは少なくとも3回のクリックを取得する必要があります。
+
+![上位のクエリは、テーブルの見出しと共にレポートします。クエリ、クエリの合計数、およびクリックの頻度です。](media/Insights-topqueries.png)
+
+ユーザーが検索しているものを見つけないことを意味するのは、クリックスルーレート (CTR) です。
+
+回答の種類に基づいてフィルター処理することで、レポートのさまざまなビューを選択できます。 たとえば、ブックマークの上位のクエリを表示する場合は、レポートの右上隅にあるドロップダウンを選択し、[**ブックマーク**] を選択します。 既定では、**すべて**の応答の種類が表示されます。
+
+![ブックマーク、ユーザー、Q&A、ファイル、グループ、場所、会話、サイトによって上位のクエリレポートをフィルター処理する](media/Insights-topqueries-dropdown.png)
+
+## <a name="impression-distribution"></a>インプレッションの分布
+
+このレポートでは、さまざまな回答に関して Bing でのインプレッション分布が表示されます。 ブックマーク、ユーザー、Q&A、ファイル、場所、ファイルサイト、グループ、会話などがあります。 
+
+![期間として90日が選択されたインプレッションレポート。](media/Insights-impressions.png)
+
+インプレッション配布は、指定された期間中にユーザーが検索する内容を管理者が理解するのに役立ちます。

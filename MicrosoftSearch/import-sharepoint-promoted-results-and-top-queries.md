@@ -3,7 +3,6 @@ title: SharePoint の昇格した結果および上位のクエリのインポ�
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 9/8/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -15,17 +14,17 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 ROBOTS: NOINDEX
 description: SharePoint からの検索クエリを使用して Microsoft Search の作業結果を作成する
-ms.openlocfilehash: ebfd10f8705ce5b9a36b9c13d549e28a3f1c6b91
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: c69203ce2138a7609e1b52614f8bfccc98bc9616
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639804"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626848"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>SharePoint の昇格した結果および上位のクエリのインポート
 
 > [!IMPORTANT]
-> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動して、Bing ポータルで Microsoft Search が削除されるようになっています。 開始するには、Microsoft 365 管理センターを使用することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
+> この記事は、Bing 管理ポータルの Microsoft Search に適用されます。 ポータルを Microsoft 365 管理センターに移動していますので、後で Bing ポータルの Microsoft Search は削除されます。 Microsoft 365 管理センターを使用して作業を開始することをお勧めします。 [Microsoft Search の概要](overview-microsoft-search.md)。
     
 SharePoint で作成したユーザーのクエリとおすすめコンテンツを活用するために、Microsoft Search には、この情報を提案されたブックマークとしてインポートするためのツールが2つ含まれています。 
   

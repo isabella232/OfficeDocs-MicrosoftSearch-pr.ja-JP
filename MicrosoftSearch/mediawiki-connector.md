@@ -3,7 +3,6 @@ title: Microsoft Search 用の MediaWiki コネクタ
 ms.author: v-pamcn
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の MediaWiki コネクタをセットアップする
-ms.openlocfilehash: 281d270a47051e20cb1cfd44540bd51371557c13
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 2aa0ef494aa42b1a7364ec68f6532dec737b9c25
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949951"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626965"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki コネクタ
 

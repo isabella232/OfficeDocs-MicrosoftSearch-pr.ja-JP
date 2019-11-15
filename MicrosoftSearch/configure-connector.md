@@ -1,6 +1,6 @@
 ---
 title: Microsoft が開発したコネクタを Microsoft Search 用に構成する
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin
@@ -12,31 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft が開発したコネクタを Microsoft Search 用に構成する
-ms.openlocfilehash: aee7c142e8cf04349076030cdedde0cea7344906
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 1a3affebc754595eabc40a13402aae6bbb7a1e1c
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949922"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626527"
 ---
 # <a name="set-up-your-microsoft-built-connector-for-microsoft-search"></a>Microsoft が開発したコネクタを Microsoft Search 用にセットアップする
 
-この記事では、Microsoft によって作成されたコネクタを構成する手順について説明します。 この記事では、 [Microsoft 365 管理センター](https://admin.microsoft.com)での接続のセットアップフローについて説明します。 特定の Microsoft が作成したコネクタをセットアップする方法の詳細については、次の記事を参照してください。
+この記事では、Microsoft によって作成されたコネクタを構成する手順について説明します。 この記事では、Microsoft 365[管理センター](https://admin.microsoft.com)での接続のセットアップフローについて説明します。 特定の Microsoft が作成したコネクタをセットアップする方法の詳細については、次の記事を参照してください。
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-* [エンタープライズ web サイト](enterprise-web-connector.md)
+* [大企業の Web サイト](enterprise-web-connector.md)
 * [ファイル共有](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
-* [Microsoft SQL server](MSSQL-connector.md)
+* [Microsoft SQL Server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 ## <a name="set-up"></a>設定
-Microsoft によって作成されたコネクタのいずれかを構成するには、 [microsoft 365 管理センター](https://admin.microsoft.com)に移動します。
-1. Microsoft 365 テストテナントの資格情報を使用して、アカウントにサインインします。
+Microsoft によって作成されたコネクタのいずれかを構成するには、[管理センター](https://admin.microsoft.com)に移動します。
+1. [Microsoft 365](https://www.microsoft.com/microsoft-365)テストテナントの資格情報を使用して、アカウントにサインインします。
 2. [**設定** > ]**Microsoft 検索** > **コネクタ**に移動します。
 3. [**コネクタの追加**] を選択します。
 4. 使用可能なコネクタのリストから、選択したコネクタを選択します。
 
-![](media/addconnector_final.png)
+![使用可能なデータソースは次のとおりです。 ADLS Gen2 コネクタ、エンタープライズ web サイト、ServiceNow、ファイル共有、Microsoft SQL server、および MediaWiki。](media/addconnector_final.png)
 
 ### <a name="name-the-connector"></a>コネクタに名前を指定する
 接続を作成するには、最初に次の属性を指定します。
@@ -59,16 +59,16 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 **検索スキーマの属性** | **Function** | **例**
 --- | --- | ---
-サーチ | プロパティのテキストコンテンツを検索可能にします。 プロパティの内容は、フルテキストインデックスに含まれています。 | プロパティが "title" の場合、"Enterprise" のクエリは、テキストまたはタイトルに "Enterprise" という単語が含まれる回答を返します。
-クエリ可能 | クエリによって特定のプロパティの一致が検索されます。 プロパティ名は、プログラムまたは逐語的にクエリで指定できます。 |  "Title" プロパティがクエリ可能である場合は、クエリ "Title: Enterprise" がサポートされています。
-だっ | 検索結果には、検索可能なプロパティのみを検索結果の種類で使用できます。 | 
+サーチ | プロパティのテキストコンテンツを検索可能にします。 プロパティの内容は、フルテキストインデックスに含まれています。 | プロパティが**title**の場合、**エンタープライズ**のクエリは、テキストまたはタイトルに " **enterprise** " が含まれている回答を返します。
+クエリ可能 | クエリによって特定のプロパティの一致が検索されます。 プロパティ名は、プログラムまたは逐語的にクエリで指定できます。 |  **Title**プロパティがクエリ可能な場合は、クエリ**タイトル: Enterprise**がサポートされています。
+だっ | 検索結果の種類には取得可能なプロパティのみを使用し、検索結果に表示することができます。 | 
 
-ファイル共有コネクタを除くすべてのコネクタについては、カスタムの種類を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティのリストにマップされた検索スキーマが必要です。 接続ウィザードは、選択したソースプロパティのセットに基づいて検索スキーマを自動的に選択します。 このスキーマを変更するには、[検索スキーマ] ページで各プロパティと属性のチェックボックスをクリックします。
+ファイル共有コネクタを除くすべてのコネクタについては、カスタムの種類を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティのリストにマップされた検索スキーマが必要です。 接続ウィザードは、選択したソースプロパティのセットに基づいて検索スキーマを自動的に選択します。 このスキーマを変更するには、[検索スキーマ] ページで各プロパティと属性のチェックボックスをオンにします。
 
 ![コネクタのスキーマは、クエリ、検索、および取得機能を追加または削除することでカスタマイズできます。](media/manageschema.png)
 
 これらの制限と推奨事項は、検索スキーマ設定に適用されます。
-* カスタム型のインデックスを作成するコネクタの場合は、取得可能なメインコンテンツを含むフィールドを**マークし****ない**ことをお勧めします。 検索結果が検索属性を使用して表示される場合、パフォーマンスの著しい問題が発生します。 この例は、ServiceNow ナレッジベースの記事の**テキスト**コンテンツフィールドです。
+* カスタム型のインデックスを作成するコネクタの場合は、取得可能なメインコンテンツを含むフィールドを**マークし****ない**ことをお勧めします。 検索結果が検索属性を使用して表示される場合、パフォーマンスの著しい問題が発生します。 この例は、 [ServiceNow](https://www.servicenow.com)ナレッジベースの記事の**テキスト**コンテンツフィールドです。
 * 検索結果には、取得可能としてマークされたプロパティのみが表示され、モダンの検索結果の種類 (MRTs) を作成するために使用できます。
 * 検索可能としてマークできるのは、文字列のプロパティだけです。
 
@@ -97,14 +97,14 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 ![増分クロールとフルクロール間隔の設定は、増分は15分で、フルクロールは1週間で表示されます。](media/refreshschedule.png)
 
 ### <a name="review-connector-settings"></a>コネクタの設定を確認する
-コネクタを構成した後、 [Microsoft 365 管理センター](https://admin.microsoft.com)から、設定を確認できるページが表示されます。 接続を確認する前に、構成プロセスに戻って設定を編集することができます。 詳細については、「[コネクタの管理](manage-connector.md)」を参照してください。
+コネクタを構成した後は、[管理センター](https://admin.microsoft.com)から設定を確認できるページに移動します。 接続を確認する前に、構成プロセスに戻って設定を編集することができます。 詳細については、「[コネクタの管理](manage-connector.md)」を参照してください。
 
 ## <a name="next-steps-customize-the-search-results-page"></a>次の手順: 検索結果ページをカスタマイズする
-Microsoft 検索ユーザーインターフェイス (UI) を使用すると、エンドユーザーは Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムからコンテンツを検索できます。 検索垂直とは、ユーザーが Bing で SharePoint、Office.com、Microsoft Search の検索結果を表示するときに表示されるタブを指します。 特定の種類の検索結果のみが表示されるように検索結果を絞り込むために、検索の業種をカスタマイズできます。 これらの業種は、検索結果ページの上部にタブとして表示されます。 モダン検索結果の種類 (MRT) は、結果の表示方法を指定する UI です。
+Microsoft 検索ユーザーインターフェイス (UI) を使用すると、エンドユーザーは[microsoft 365](https://www.microsoft.com/microsoft-365)プロダクティビティアプリと microsoft の広範なエコシステムからコンテンツを検索できます。 縦方向検索は、ユーザーが[Bing](https://Bing.com)で[SharePoint](http://sharepoint.com/)、 [Microsoft Office](https://Office.com)、および microsoft search の検索結果を表示するときに表示されるタブを示します。 検索結果を絞り込んで検索結果の特定の種類だけが表示されるように、検索対象をカスタマイズすることができます。 これらの業種は、検索結果ページの上部にタブとして表示されます。 モダン検索結果の種類 (MRT) は、結果の表示方法を指定する UI です。
 
 エンドユーザーが新しい接続から検索結果を表示できるように、独自の業種と結果の種類を作成する必要があります。 この手順を行わないと、接続からのデータが検索結果ページに表示されません。
 
 業種および MRTs の作成方法の詳細については、「[検索結果ページのカスタマイズ](customize-search-page.md)」を参照してください。
 
 ## <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
-[Microsoft 365 管理センター](https://admin.microsoft.com)の [**コネクタ**] タブで、発行された接続の一覧に移動します。 更新と削除を行う方法については、「[コネクタの管理](manage-connector.md)」を参照してください。
+[管理センター](https://admin.microsoft.com)の [**コネクタ**] タブで、公開されている接続の一覧に移動します。 更新と削除を行う方法については、「[コネクタの管理](manage-connector.md)」を参照してください。
