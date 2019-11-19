@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: 組織に Microsoft Search を正常にロールアウトするのに役立つ方法とプロセスについて説明します。
-ms.openlocfilehash: 59fbc5ea629d385fbdc01f56a8bca3f5c6e7626f
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 135b07b7dd4e26eaaebd0c09d0d94689b83f2b16
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626884"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699532"
 ---
 # <a name="user-adoption-guide"></a>ユーザー導入ガイド
 
@@ -121,7 +121,7 @@ Microsoft 検索ユーザーは、職場または学校のアカウントを使�
   
 Microsoft [365](https://www.microsoft.com/microsoft-365)の重要な部分として、microsoft SEARCH は GDPR および Tier C のガイドラインに準拠しています。 組織によっては、プライバシーおよびセキュリティチームと共に Microsoft Search に関する情報を共有しなければならない場合があります。 詳細については、「 [Microsoft Search のセキュリティ](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches)」を参照してください。
   
-ヘルプデスクが Microsoft Search の機能とサインインするユーザー要件について理解していることを確認して、ユーザーがより効果的にユーザーをサポートできるようにしてください。 詳細については、Microsoft 365 および[faq](faqs.md)[の「microsoft Search について](https://support.office.com/en-us/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)」を参照してください。
+ヘルプデスクが Microsoft Search の機能とサインインするユーザー要件について理解していることを確認して、ユーザーがより効果的にユーザーをサポートできるようにしてください。 詳細については、Microsoft 365 および[faq](faqs.md)[の「microsoft Search について](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)」を参照してください。
   
 ### <a name="evaluate-with-pilot-users"></a>パイロットユーザーと評価する
   

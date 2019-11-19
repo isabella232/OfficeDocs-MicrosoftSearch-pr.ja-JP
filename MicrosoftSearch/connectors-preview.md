@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft Graph コネクタプレビューに関する情報を確認します。
-ms.openlocfilehash: 3ac27bd1e859f9ffc825e5e77d96f0de56b13647
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626266"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699370"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph コネクタのプレビュー
 
@@ -37,5 +37,5 @@ Microsoft Graph のコネクタ、インデックス Api、および検索 Api �
 * 取り込みスループットは、1秒あたり約4アイテムに調整されます。
 * スキーマの更新はサポートされていません。 接続設定を作成した後、スキーマを更新する方法はありません。 接続を削除して再作成することはできません。
 * インデックスが作成されたコンテンツは、カスタム縦の下にある検索結果ページにのみ表示されます。 この制限は、ユーザー設定の種類のコンテンツに適用されます。
-* 一般的な使用を開始する前に、プレビュー期間中にセットアップした接続を削除して再作成する必要がある場合があります。 これらの接続は、製品の改善に加えられた変更に互換性がない場合は機能しません。
-* 接続の制限。 各テナントは最大10個の接続を作成できます。
+* 一般的な使用を開始する前に、プレビュー期間中にセットアップした接続を削除してから再作成する必要がある場合があります。 これらの接続は、製品の改善に加えられた変更に互換性がない場合は機能しません。
+* 接続制限があります。 各テナントは最大10個の接続を作成できます。

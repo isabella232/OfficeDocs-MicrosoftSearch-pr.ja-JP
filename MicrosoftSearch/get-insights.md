@@ -12,32 +12,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-description: Microsoft Search の insights ダッシュボードから測定値を分析し、コンテンツを管理する
-ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+description: Microsoft Search の Insights ダッシュボードから測定値を分析し、コンテンツを管理する
+ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626875"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699864"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights ダッシュボードレポート
 
-Microsoft Search insights ダッシュボードを使用して、発行された回答の Bing データを管理できます。 これは、ユーザーがコンテンツを簡単に[見つけられるよう](make-content-easy-to-find.md)にするために必要な手順の1つにすぎません。
+Microsoft Search Insights ダッシュボードを使用して、発行された回答の[Bing](https://Bing.com)データを管理できます。 これは、ユーザーがコンテンツを簡単に[見つけられるよう](make-content-easy-to-find.md)にするために必要な手順の1つにすぎません。
 
-Microsoft 365 管理センターで最初に Microsoft Search に移動すると、Insights ダッシュボードにが入力されます。
+Microsoft 365[管理センター](https://admin.microsoft.com)で最初に microsoft Search に移動するときは、Insights dashboard に入力します。
 
 ![Insights-dashboard](media/Insights-dashboard.png)
 
-ここでは、insights ダッシュボードで使用可能なレポートについて説明します。
+次のレポートは、Insights ダッシュボードで利用できます。
 
 > [!NOTE]
-> レポート内のデータは、Bing データのみを表します。
+> レポート内のデータは、 [Bing](https://Bing.com)データのみを表します。
 
 ## <a name="top-queries"></a>よく使用されるクエリ
 
-このレポートでは、ユーザーが実行する上位の 2000 Bing 検索クエリについての詳細が提供されます。 クエリを**上位のクエリ**に表示するには、クエリは少なくとも3回のクリックを取得する必要があります。
+このレポートでは、ユーザーが実行する上位の 2000 [Bing](https://Bing.com)検索クエリについての詳細が提供されます。 クエリを**上位のクエリ**に表示するには、クエリは少なくとも3回のクリックを取得する必要があります。
 
-![上位のクエリは、テーブルの見出しと共にレポートします。クエリ、クエリの合計数、およびクリックの頻度です。](media/Insights-topqueries.png)
+![[上位のクエリ] テーブルヘッダーでレポートします。クエリ、クエリの合計数、およびクリックスルー率。](media/Insights-topqueries.png)
 
 ユーザーが検索しているものを見つけないことを意味するのは、クリックスルーレート (CTR) です。
 
@@ -47,7 +47,7 @@ Microsoft 365 管理センターで最初に Microsoft Search に移動すると
 
 ## <a name="impression-distribution"></a>インプレッションの分布
 
-このレポートでは、さまざまな回答に関して Bing でのインプレッション分布が表示されます。 ブックマーク、ユーザー、Q&A、ファイル、場所、ファイルサイト、グループ、会話などがあります。 
+このレポートでは、さまざまな回答に関して[Bing](https://Bing.com)でのインプレッション分布が表示されます。 ブックマーク、ユーザー、Q&A、ファイル、場所、ファイルサイト、グループ、会話などがあります。 
 
 ![期間として90日が選択されたインプレッションレポート。](media/Insights-impressions.png)
 

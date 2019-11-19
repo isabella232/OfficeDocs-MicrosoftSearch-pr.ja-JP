@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索フロアプランのベストプラクティス
-ms.openlocfilehash: 62c7122dd9fddfe41edb6841187e9974f222e62b
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: ddad671592ab3cf05400faa1261ee7258f3868bb
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626866"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699854"
 ---
-# <a name="best-practices"></a>ベスト プラクティス
+# <a name="best-practices-for-microsoft-search-floor-plans"></a>Microsoft 検索フロアプランのベストプラクティス
 
 Microsoft 検索フロアプランを正常に実装するには、3つのデータを調整する必要があります。
 
@@ -46,7 +46,7 @@ Microsoft Search でマップを作成するには、フロアプランを DWG �
 
 フロアプランマップは4つの要素を表示します。
 
-1. **部屋番号**: 次の例では、部屋番号は**B1 1001**および**b1 1002**として定義されています。 **B1**は建物コードです。1001には、フロア番号**1**とオフィス番号**001**が含まれています。
+1. **部屋番号**: 次の例では、部屋番号は**B1 1001**および**b1 1002**として定義されています。 **B1**は建物コードです。 **1001**には、フロア番号**1**とオフィス番号**001**が含まれています。
 1. **部屋のレイアウト**: 複数のユーザーが1つのオフィスを共有しているときに詳細をわかりやすくするために、椅子や机などのレイアウトを定義できます。
 1. **部屋の種類**: 例には、office、corridor、open area、およびトイレットがあります。
 1. **資産情報**: ユーザーが空き領域内にいる場合は、どの机に座っているかを示すことができます。 この例では、机は**TB1**および**TB2**によって示されています。
@@ -57,21 +57,21 @@ Microsoft Search でマップを作成するには、フロアプランを DWG �
 
 ![ユーザーの詳細情報 (office の場所を含む) を示す people 検索結果カードの [概要] タブ](media/floorplans-peoplecard.png)
 
-この情報は、 **Physicaldeliveryofficename**プロパティの Azure AD に格納されています。 Microsoft 365[管理センター](https://admin.microsoft.com)では、 **Office**プロパティと呼ばれ、**アクティブなユーザー**に追加することができます。
+この情報は、 **Physicaldeliveryofficename**プロパティの[Azure AD](https://azure.microsoft.com/services/active-directory/)に格納されています。 Microsoft 365[管理センター](https://admin.microsoft.com)では、 **Office**プロパティと呼ばれ、**アクティブなユーザー**に追加することができます。
 
 ### <a name="dwg-files"></a>DWG ファイル
-Microsoft Search では、DWG プランファイルが必要です。これは、AutoCAD 図面形式をフォーマットします。 ファイルには、**レイアウト**と**ラベル**のデータが含まれている必要があります。 **部屋番号**は、フロアプランにとって最も重要なラベルです。
+Microsoft Search では、DWG プランファイルが必要です。これは、 [AutoCAD](https://www.autodesk.com/autocad)図面形式です。 ファイルには、**レイアウト**と**ラベル**のデータが含まれている必要があります。 **部屋番号**は、フロアプランにとって最も重要なラベルです。
 
-次の表に示す完全一致の方法で office の番号付けシステムを作成することをお勧めします。 しかし、そのラベル付けだけに制限はありません。 たとえば、Azure AD 内のユーザーのオフィスの場所が**B1 1001**の場合、DWG ファイルの部屋番号には、次のいずれかのオプションを指定してラベルを付けることができます。
+次の表に示す完全一致の方法で office の番号付けシステムを作成することをお勧めします。 しかし、そのラベル付けだけに制限はありません。 たとえば、 [AZURE AD](https://azure.microsoft.com/services/active-directory/)内のユーザーのオフィスの場所が**B1 1001**の場合、DWG ファイルの部屋番号には、次のいずれかのオプションを指定してラベルを付けることができます。
 
 |Match  |レイアウト  |
 |---------|---------|
-|Office の場所を正確に一致させる (推奨) <br> **B1 1001** <br> コードを作成する: B1<br>床: 1 <br>会議室番号: 001    |    ![オフィス番号が "B1 1001" の単一オフィスのフロアプラン。](media/floorplans-layoutexactmatch.png)     |
-|フロアと部屋番号を照合する <br> **1001**<br>床: 1 <br>会議室番号: 001    |   ![オフィス番号が "1001" の単一オフィスのフロアプラン。](media/floorplans-layoutfloorroom.png)   |
+|Office の場所を正確に一致させる (推奨) <br> **B1 1001** <br> コードを作成する: B1<br>床: 1 <br>会議室番号: 001    |    ![オフィス番号が "B1 1001" の単一オフィスのフロアプラン](media/floorplans-layoutexactmatch.png)     |
+|フロアと部屋番号を照合する <br> **1001**<br>床: 1 <br>会議室番号: 001    |   ![オフィス番号が "1001" の単一オフィスのフロアプラン](media/floorplans-layoutfloorroom.png)   |
 |会議室番号のみを照合する <br> **1**<br>部屋番号: 1        |    ![オフィス番号が "1" の単一オフィスフロアマップ](media/floorplans-layoutroomonly.png)     |
 
 ## <a name="user-account-office-location"></a>ユーザーアカウントのオフィスの場所
-従業員の場所をマップするために、DWG ファイルの部屋番号は、Azure AD のユーザーアカウント内のオフィスの場所にマップされます。 **Office location**プロパティは、DWG ファイルのオフィスの場所情報と一致している必要があります。
+従業員の場所をマップするために、DWG ファイルの部屋番号は、 [AZURE AD](https://azure.microsoft.com/services/active-directory/)のユーザーアカウント内のオフィスの場所にマップされます。 **Office location**プロパティは、DWG ファイルのオフィスの場所情報と一致している必要があります。
 
 次の表では、場所データのマッピングのベストプラクティスについて説明します。
 
@@ -79,7 +79,7 @@ Microsoft Search では、DWG プランファイルが必要です。これは�
 |---------|---------|
 |建物のコード、フロア、および部屋番号を含めます。     |   このデータを使用すると、正確な一致を得ることができます。     |
 |コードとフロアを構築した後に、区切り記号を含めます。     |  次の例に示されているように、フロア番号と部屋番号を別々に作成するコードを区切ります。<br> B1 1001<br> B1/1001 <br> B1-1001   |
-|部屋番号は、コード、翼、床面の情報の作成に常に従います。     |  部屋番号が**1001**の場合は、オフィスの場所を**b1 1001**、 **b1/1001**、または**b1-1001**に設定します。 <br> 会議室番号が**f1-001**の場合は、office の場所を**b1 F1-001**または**b1/f1-001**に設定します。 <br> 会議室番号が**1**の場合、Azure AD の場所を**b1 1001**、 **b1/1001**、または**b1-F1-001**に設定します。       |
+|部屋番号は、コード、翼、床面の情報の作成に常に従います。     |  部屋番号が**1001**の場合は、オフィスの場所を**b1 1001**、 **b1/1001**、または**b1-1001**に設定します。 <br> 会議室番号が**f1-001**の場合は、office の場所を**b1 F1-001**または**b1/f1-001**に設定します。 <br> 会議室番号が**1**の場合、 [Azure AD](https://azure.microsoft.com/services/active-directory/)の場所を**b1 1001**、 **b1/1001**、または**b1-F1-001**に設定します。       |
 |
 
 ## <a name="next-steps"></a>次の手順
