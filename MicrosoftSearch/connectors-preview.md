@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft Graph コネクタプレビューに関する情報を確認します。
-ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 054dc00bcb5cc0c110858fd329fbf2dbf16fb38b
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699370"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205878"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph コネクタのプレビュー
 
-Microsoft Graph のコネクタ、インデックス Api、および検索 Api は現在プレビュー段階です。 コネクタ機能へのアクセスを取得するには、 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph Connector preview のサインアップフォーム</a>を送信して、プレビュープログラムへの参加を要求する必要があります。 これは初期のプレビューであり、サービスレベルの保証はありません。 お客様には、コネクタの機能を試してフィードバックを提供することをお勧めします。 プレビュー期間中は、運用のためにコネクタを使用することはお勧めしません。
+Microsoft Graph のコネクタと Microsoft Search Api (クエリとインデックス) は現在プレビュー状態になっています。 コネクタ機能へのアクセスを取得するには、 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph Connector preview のサインアップフォーム</a>を送信して、プレビュープログラムへの参加を要求する必要があります。 これは初期のプレビューであり、サービスレベルの保証はありません。 お客様には、コネクタの機能を試してフィードバックを提供することをお勧めします。 プレビュー期間中は、運用のためにコネクタを使用することはお勧めしません。
 
 ## <a name="set-up-targeted-release"></a>対象となるリリースのセットアップ
 コネクタを試行するには、組織内のすべてのユーザーに対して**対象となるリリース**オプションが設定されている必要があります。 対象となるリリース要件は、選択した次のプレビュー環境に関係なく適用されます。
