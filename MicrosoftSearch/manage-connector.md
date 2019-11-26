@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph コネクタを管理します。
-ms.openlocfilehash: 962ceb488fa308eb31a98a8fad33d628f3590e89
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205869"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254723"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Microsoft Search のためにコネクタを管理する
 
@@ -65,11 +65,11 @@ ms.locfileid: "39205869"
 1003 | コネクタに関連付けられているアカウントには、アイテムにアクセスする権限がありません。 |  インデックスを作成するアイテムに適切なアカウントがアクセスできることを確認します。
 1004 | オンプレミスのデータゲートウェイに到達できません。 ゲートウェイサービスが実行中であることを確認します。 | ゲートウェイがあるコンピューターに移動し、power bi ゲートウェイアプリケーションを開いて Power BI ゲートウェイが実行されているかどうかを確認します。 Microsoft Search で使用されている管理者アカウントを使用して、ゲートウェイがサインインしているかどうかを確認します。 
 1005 | このデータソースに関連付けられている資格情報は有効期限が切れています。 資格情報を更新し、接続を更新します。 | [**編集**] をクリックして、認証資格情報を更新します。 
-1006 | ゲートウェイのバージョンが古いため、このコネクタをサポートしていません。 ゲートウェイを更新する必要があります。 | Gateway がインストールされているコンピューターに Power BI ゲートウェイhttps://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-installの最新バージョンをダウンロードしてインストールするには、(オンプレミスのデータゲートウェイをインストールする) [] を参照してください。
+1006 | ゲートウェイのバージョンが古いため、このコネクタをサポートしていません。 ゲートウェイを更新する必要があります。 | Gateway がインストールされているコンピューターに Power BI ゲートウェイhttps://docs.microsoft.com/data-integration/gateway/service-gateway-installの最新バージョンをダウンロードしてインストールするには、(オンプレミスのデータゲートウェイをインストールする) [] を参照してください。
 2001 | インデックスは、キューに大量の更新があるために調整されます。 キューによっては、更新が完了するまでに少し時間がかかることがあります。 | キューがクリアされるまで待機してください。
 2002 | アイテムの書式設定がサポートされていないため、インデックス付けに失敗しました | 詳細については、「コネクタ固有のドキュメント」を参照してください。
 2003 | サポートされていないアイテムのコンテンツによってインデックス付けが失敗しました。 | 詳細については、「コネクタ固有のドキュメント」を参照してください。 
-2004 | [ファイルサイズ](https://docs.microsoft.com/en-us/microsoftsearch/file-share-connector#content-requirements)が大きすぎてインデックス処理を行うことができません。 処理の前に 100 MB 以下である必要があり、処理後 4 MB 未満である必要があります。 この場合、ファイルのインデックスは作成されません。 ファイルに含まれる語句が検索結果を返さない場合があります。 |  
+2004 | [ファイルサイズ](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements)が大きすぎてインデックス処理を行うことができません。 処理の前に 100 MB 以下である必要があり、処理後 4 MB 未満である必要があります。 この場合、ファイルのインデックスは作成されません。 ファイルに含まれる語句が検索結果を返さない場合があります。 |  
 5000 | 問題が発生しました。 この問題が解決しない場合は、サポートにお問い合わせください。 | 
 
 ## <a name="preview-limitations"></a>プレビューの制限事項
