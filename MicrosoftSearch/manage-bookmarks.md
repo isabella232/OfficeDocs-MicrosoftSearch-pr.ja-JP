@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークを作成および更新して、Microsoft Search のブックマークの結果を一括編集する方法
-ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: b65e61e4435e36fad5760f0a8d34bf444b51178b
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254741"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663146"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -77,10 +77,8 @@ ms.locfileid: "39254741"
 - *状態*列が空ではないこと。この情報は必須であるためです。
 
 ブックマーク間の重複エラーを回避するには、次のベストプラクティスに従います。
-
 - 複数のブックマークに重複した URL を使用しないでください。 URL が既に別のブックマークに割り当てられていて、それをインポートファイルから再び追加する場合は、エラーが表示されます。 これは、他の種類の応答の重複した Url にも適用されます。
-- 既存のブックマークを更新するときは、ブックマーク ID 列を使用します。 キーワードや説明などの既存のブックマークのその他のプロパティは更新できますが、ブックマーク ID は、インポートファイルの適切な列にあることを確認する必要があります。 ブックマーク ID が存在する場合、サービスは新しい追加として考慮されず、エラーを処理します。
-
+- 既存のブックマークを更新するときは、*ブックマーク ID*列を使用します。 キーワードや説明などの既存のブックマークの他のプロパティは更新できますが、*ブックマーク ID*がインポートファイルの適切な列にあることを確認する必要があります。 *ブックマーク ID*が存在する場合、サービスは新しい追加として考慮しません。エラーとして処理されません。
 
 ## <a name="powerapps"></a>PowerApps
 既存の PowerApps をブックマークに追加することにより、休暇期間の入力または経費の報告などのユーザーのタスク完了を支援します。 

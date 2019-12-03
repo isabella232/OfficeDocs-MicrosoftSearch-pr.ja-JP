@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626911"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663062"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
-Microsoft Search では、メール、ファイル、SharePoint ファイル、OneDrive コンテンツ、その他の共有リソース、ユーザーの組織内のインターネットを含む、すべてのデータソースに安全にアクセスすることにより、ファイルやドキュメント、内部サイトやビジネス ツール、ユーザーやグループ、場所や方向、会話や回答などの情報を検索するのに役立つユーザー フレンドリなインターフェイスを提供しています。
+Microsoft Search では、ユーザーフレンドリなインターフェイスを使用して、ファイルやドキュメント、内部サイトとビジネスツール、ユーザーとグループ、場所と方法、会話、および回答などの情報を検索できます。 これは、電子メール、ファイル、SharePoint ファイル、OneDrive コンテンツ、その他の共有リソース、ユーザーの組織内のインターネットなど、すべてのデータソースに安全にアクセスすることによって行われます。
 
 Microsoft Search の機能の詳細については、「[Microsoft Search の概要](overview-microsoft-search.md)」を参照してください。
 

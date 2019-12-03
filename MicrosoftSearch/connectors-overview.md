@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph のコネクタの概要
-ms.openlocfilehash: f08393d5696466af72ed7b8f3e141c62adb61728
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: 8b02eadac099d75174fe849f7f2f97c26bf6c3af
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205860"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663137"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph コネクタの概要
 
 Microsoft Search では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365)のすべてのデータのインデックスが作成されます。 Microsoft Graph のコネクタを使用すると、組織はサードパーティのデータにインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
 
 > [!IMPORTANT]
-> **免責事項**: microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在プレビュー段階です。 プレビュープログラムの詳細については、「 [Microsoft Graph コネクタプレビュー](connectors-preview.md)」を参照してください。 プレビュープログラムに参加するには、 [Microsoft Graph コネクタプレビューのサインアップフォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信します。
+> **免責事項**: microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在、プレビュー状態になっています。 Microsoft Search でコネクタを使用するか、コネクタを構築するには、[コネクタ プレビュー プログラム](connectors-preview.md)にサインアップする必要があります。 プレビュープログラムに参加するには、 [Microsoft Graph コネクタプレビューのサインアップフォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信します。
 
 ## <a name="architecture"></a>アーキテクチャ
 Microsoft Graph プラットフォームの次のアーキテクチャ図は、 [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search)クライアントでのコンテンツインデックスを使用してコネクタコンテンツをユーザーの結果にどのように流し込むかを示しています。 この記事では、Microsoft Graph コネクタデータフロープロセスの主な構成要素について説明します。

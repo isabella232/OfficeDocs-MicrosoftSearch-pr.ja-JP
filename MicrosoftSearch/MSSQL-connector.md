@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft SQL コネクタをセットアップします。
-ms.openlocfilehash: a073a6d3f226e5f8b0ea297494a8889f1f50bab1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626758"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663167"
 ---
 # <a name="microsoft-sql-server-connector"></a>Microsoft SQL server コネクタ
 
@@ -48,6 +48,16 @@ Microsoft SQL server コネクタをデータソースに接続するには、�
 この例では、検索のデータを保持する5つのデータ列 (OrderId、OrderTitle、Ordertitle、Htmldatetime、および IsDeleted) の選択例を示します。 データの各行に対して表示権限を設定するには、必要に応じて、次の ACL 列を選択できます。 AllowedUsers、Allowedusers、DeniedUsers、および DeniedGroups。 これらのすべてのデータ列は、**クエリ**可能、**検索**可能 **、または**取得可能にすることができます。
 
 次のクエリ例に示すように、データ列を選択します。`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+ 
+検索結果へのアクセスを管理するには、クエリで1つ以上の ACL 列を指定できます。 SQL コネクタを使用すると、レコードレベルごとにアクセスを制御できます。 テーブル内のすべてのレコードに対して同じアクセス制御を行うことを選択できます。 ACL 情報が別のテーブルに格納されている場合は、クエリでそれらのテーブルを使用して結合する必要があります。
+
+以下では、上記のクエリで各 ACL 列を使用する方法について説明します。 次のリストでは、4つの**アクセス制御メカニズム**について説明します。 
+* **Allowedusers**: これにより、検索結果にアクセスできるユーザー id のリストを指定します。 次の例では、ユーザーのリスト: john@contoso.com、keith@contoso.com、および lisa@contoso.com には、OrderId = 12 のレコードへのアクセスのみが許可されています。 
+* **Allowedgroups**: これにより、検索結果にアクセスできるユーザーのグループが指定されます。 次の例では、グループ sales-team@contoso.com は OrderId = 12 のレコードにのみアクセスできます。
+* **DeniedUsers**: 検索結果への**アクセス権を持たない**ユーザーのリストを指定します。 次の例では、ユーザー john@contoso.com および keith@contoso.com は OrderId = 13 のレコードにアクセスできませんが、他のすべてのユーザーはこのレコードにアクセスできます。 
+* **DeniedGroups**: 検索結果への**アクセス権を持たない**ユーザーのグループを指定します。 次の例では、groups engg-team@contoso.com および pm-team@contoso.com には OrderId = 15 のレコードへのアクセス権がありませんが、他のユーザーはこのレコードにアクセスできます。  
+
+![](media/MSSQL-ACL1.png)
 
 ### <a name="watermark-required"></a>ウォーターマーク (必須)
 データベースが過負荷にならないようにするために、コネクタはフルクロールのウォーターマーク列を使用して、フルクロールクエリをバッチ処理および再開します。 [すかし] 列の値を使用すると、以降の各バッチが取得され、最後のチェックポイントからクエリが再開されます。 基本的には、フルクロールのデータ更新を制御するメカニズムを示します。
@@ -67,6 +77,18 @@ Microsoft SQL server コネクタをデータソースに接続するには、�
 
 ![論理削除の設定: "削除済みの行を示す" 論理削除列 "および" 値 (論理削除列) "](media/MSSQL-softdelete.png)
 
+### <a name="full-crawl-manage-search-permissions"></a>フルクロール: 検索権限を管理する
+[アクセス**許可の管理**] をクリックして、アクセス制御メカニズムを指定するさまざまなアクセス制御 (ACL) 列を選択します。 フルクロール SQL クエリで指定した列名を選択します。 
+
+各 ACL 列は複数値の列になることが想定されています。 これらの複数の ID 値は、セミコロン (;)、コンマ (,) などの区切り記号で区切ることができます。 この区切り記号は、[値の**区切り記号**] フィールドで指定する必要があります。
+ 
+Acl としてを使用するために、次の ID タイプがサポートされています。 
+* **ユーザープリンシパル名 (upn)**: ユーザープリンシパル名 (upn) は、電子メールアドレス形式のシステムユーザーの名前です。 UPN (例: john.doe@domain.com) は、ユーザー名 (ログオン名)、区切り記号 (@ 記号)、およびドメイン名 (UPN サフィックス) で構成されます。 
+* **Azure Active Directory (aad) ID**: aad では、すべてのユーザーまたはグループに、' e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ' のようなオブジェクト ID があります。 
+* **Active Directory (AD) セキュリティ ID**: オンプレミスの AD セットアップでは、すべてのユーザーとグループに、1-5-21-3878594291-2115959936-132693609-65242 というような不変の一意のセキュリティ識別子があります。
+
+![](media/MSSQL-ACL2.png)
+
 ## <a name="incremental-crawl-optional"></a>増分クロール (オプション)
 このオプションの手順では、データベースの増分クロールを実行するための SQL クエリを指定します。 このクエリを使用すると、Microsoft SQL server コネクタによって、前回の増分クロール以降のデータが変更されます。 フルクロールの場合と同様に、**クエリ**可能、**検索**可能、または取得可能にするすべての列を**選択します**。 フルクロールクエリで指定したものと同じ ACL 列のセットを指定します。
 
@@ -74,9 +96,11 @@ Microsoft SQL server コネクタをデータソースに接続するには、�
 
 ![OrderTable、AclTable、使用できるプロパティの例を示す増分クロールスクリプト。](media/MSSQL-incrcrawl.png)
 
+## <a name="manage-search-permissions"></a>検索アクセス許可を管理する 
+[フルクロール画面で指定された acl](#full-crawl-manage-search-permissions)を使用するか、すべてのユーザーにコンテンツを表示するように上書きするかを選択できます。
+
 ## <a name="limitations"></a>制限事項
 Microsoft SQL server コネクタには、次のようなプレビューリリースの制限があります。
 * オンプレミスデータベースでは、SQL server バージョン2008以降を実行する必要があります。
-* Acl は、ユーザープリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用する場合にのみサポートされます。
+* Acl は、ユーザープリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用する場合にのみサポートされます。 
 * データベース列内のリッチコンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、HTML、JSON、XML、blob、ドキュメント parsings などがあります。これらは、データベース列内のリンクとして存在します。
-

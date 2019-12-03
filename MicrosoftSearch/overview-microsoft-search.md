@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search とは何か、その利点、Microsoft Search をサポートしているアプリの概要について説明します。
-ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626974"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663071"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -46,7 +46,7 @@ Microsoft Search を使用すると、ユーザーは適切な回答、他のユ
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft Search のメリット
 
-**すべての Microsoft Search ボックスから Microsoft 365 全体を検索** - どの Microsoft Search ボックスからでも検索を実行し、作業していたタスクにすばやく戻ることができます。 Microsoft Search では、 [SharePoint](http://sharepoint.com/)、 [Microsoft OneDrive For Business](https://onedrive.live.com/about/en-us/business/)、 [Microsoft Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server)など、Office 365 のデータソースからの結果がまとめられています。
+**すべての Microsoft Search ボックスから Microsoft 365 全体を検索** - どの Microsoft Search ボックスからでも検索を実行し、作業していたタスクにすばやく戻ることができます。 Microsoft Search では、 [SharePoint](http://sharepoint.com/)、 [Microsoft OneDrive For Business](https://onedrive.live.com/about/business/)、 [Microsoft Exchange Server](https://products.office.com/exchange/microsoft-exchange-server)など、Office 365 のデータソースからの結果がまとめられています。
 
 **検索が容易**– Microsoft search では、Office 365 のユーザーの以前のアクティビティに基づいて**検索**ボックスに、結果が表示されます。
 
@@ -58,11 +58,11 @@ Microsoft Search を使用すると、ユーザーは適切な回答、他のユ
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>組織に合わせた Microsoft Search のカスタマイズ
 
-管理者は、ユーザーに対して優れた Microsoft 検索機能を作成できます。 
+管理者は、ユーザーに対してすばらしい Microsoft 検索機能を作成できます。 
 
 **有用なコンテンツを表示**–回答は、キーワードに基づいて検索クエリに高速で権限の高い結果を提供します。 [コンテンツを簡単に見つけられるように](make-content-easy-to-find.md)します。
 
-**外部コンテンツを追加**する-Microsoft Graph コネクタを使用すると、外部コンテンツをインデックスに取り込むことができます。 コネクタを使用して、Microsoft 365 の外部からのデータとファイルの検索機能を強化します。 [Microsoft Graph コネクタの概要](connectors-overview.md)
+**外部コンテンツを追加**する: Microsoft Graph コネクタを使用すると、外部コンテンツをインデックスに取り込むことができます。 コネクタを使用して、Microsoft 365 の外部にあるデータおよびファイルを検索する際の利便性を向上させます。 [Microsoft Graph コネクタの概要](connectors-overview.md)
 
 **ユーザーの作業をカスタマイズ**する-業種およびその他の構成を使用してユーザーの作業をカスタマイズできます。 [Microsoft 検索ページをカスタマイズする](customize-search-page.md)
 
@@ -87,7 +87,7 @@ Microsoft Search は、組織が Microsoft 365 に保存されているコンテ
 エンタープライズ検索では機密になる可能性があるため、Microsoft Search では、公開結果`Bing.com`の個別の検索をどのように処理するかを記述する一連の信頼手段が実装されています。
 
 ### <a name="logging"></a>ログ記録
- - Bing `Bing.com`トラフィックで Microsoft search に関連するすべての検索ログは、workplace identity から切り離されます。
+- Bing `Bing.com`トラフィックで Microsoft search に関連するすべての検索ログは、workplace identity から切り離されます。
 - クエリが特定の組織に固有ではないという確信を与える一連の制限または頻度のしきい値が満たされる場合、クエリは[プライバシーに関する声明](https://privacy.microsoft.com/privacystatement)の Bing サービス セクションで説明されているように処理されます。 たとえば、このようなクエリを使用して、autosuggest や関連する検索などのパブリック機能をモデル化し、トレーニングします。
 - 一連の制限または頻度のしきい値を満たしていないクエリは、Microsoft Search 以外のパブリック トラフィックとは別に保存されます。
 ### <a name="advertising"></a>広告 
