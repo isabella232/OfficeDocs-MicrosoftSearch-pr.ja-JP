@@ -7,7 +7,7 @@ ms.date: 10/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 関連する検索候補や作業結果にすばやくアクセスするために、イントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
-ms.openlocfilehash: ea3efc224b69ffe894104068b055efe8b5882cc1
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
-ms.translationtype: HT
+ms.openlocfilehash: bcf1c6890415fdd9ae22f28cdf6d3dec1ffcaac4
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727926"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37948908"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックス追加する
 
