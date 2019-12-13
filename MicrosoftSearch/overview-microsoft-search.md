@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search とは何か、その利点、Microsoft Search をサポートしているアプリの概要について説明します。
-ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663071"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995034"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -70,28 +70,16 @@ Microsoft Search を使用すると、ユーザーは適切な回答、他のユ
 
 Microsoft Search は、組織が Microsoft 365 に保存されているコンテンツ、またはコネクタ経由でインデックス付けされたコンテンツを示します。 Microsoft Search では、複数のテナントを検索したり、他の組織によって共有されているコンテンツから結果を表示したりすることはありません。 組織でクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境をセットアップすると、Microsoft Search は SharePoint Server 環境に接続している外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-ユーザーは、他の場所から取得したのと同じエンタープライズ検索結果を取得し、インターネットからも結果を取得します。
+ユーザーは、他の場所から取得した同じ検索結果を取得し、インターネットからも結果を取得します。
 
 ## <a name="how-does-microsoft-search-work"></a>Microsoft Search はどのように機能するのですか?
 
 ユーザーが検索すると、Microsoft Search ではクエリを処理し、より大きいフレーズから検索意図が解析されます。これは人工知能 (AI) を使用して、ユーザーがクエリに追加した、ユーザーの検索意図に影響を与えない一般的な余分なフレーズを Microsoft Search が学習することで実現されています。 たとえば、ユーザーが、「パスワードを変更する方法」という検索を行うと、重要度の低い単語はクエリから取り除かれ、「パスワードを変更」などの関連性の高い単語に基づいてトリガーされます。  
 ユーザーが表示する**アクセス許可**を持っている検索結果は、検索結果ページに表示されます。 Microsoft Search では、インテリジェント ランキング アルゴリズムを使用して、結果を関連性に従って順序付けします。
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Bing の Microsoft Search でエンタープライズ検索を保護する
+## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>Bing で Microsoft Search が会社のデータを保護する方法
 
-ユーザーが Bing の Microsoft Search で検索クエリを入力すると、次の2つの同時検索要求が発生します。
-
-- 組織の内部リソースの検索。
-- Bing.com からの公開結果を個別に検索します。 
-
-エンタープライズ検索では機密になる可能性があるため、Microsoft Search では、公開結果`Bing.com`の個別の検索をどのように処理するかを記述する一連の信頼手段が実装されています。
-
-### <a name="logging"></a>ログ記録
-- Bing `Bing.com`トラフィックで Microsoft search に関連するすべての検索ログは、workplace identity から切り離されます。
-- クエリが特定の組織に固有ではないという確信を与える一連の制限または頻度のしきい値が満たされる場合、クエリは[プライバシーに関する声明](https://privacy.microsoft.com/privacystatement)の Bing サービス セクションで説明されているように処理されます。 たとえば、このようなクエリを使用して、autosuggest や関連する検索などのパブリック機能をモデル化し、トレーニングします。
-- 一連の制限または頻度のしきい値を満たしていないクエリは、Microsoft Search 以外のパブリック トラフィックとは別に保存されます。
-### <a name="advertising"></a>広告 
-[ `Bing.com`エンタープライズ検索に関連して表示される広告は、検索クエリのコンテンツにのみ関連しています。 広告は、職場 ID に基づいてユーザーをターゲットにすることはありません。
+[Bing での Microsoft Search のセキュリティとプライバシー](security-for-search.md)
 
 ## <a name="see-also"></a>関連項目
 

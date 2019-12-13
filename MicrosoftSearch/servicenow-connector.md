@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow コネクタをセットアップする
-ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
+ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626956"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39998568"
 ---
 # <a name="servicenow-connector"></a>ServiceNow コネクタ
 
@@ -41,10 +41,10 @@ ServiceNow からコンテンツを認証および同期するには、次の2�
 
 **Field** | **説明** | **推奨値**
 --- | --- | ---
-名前 | この一意の値は、OAuth アクセスを必要とするアプリケーションを識別します。 | Microsoft Search
+Name | この一意の値は、OAuth アクセスを必要とするアプリケーションを識別します。 | Microsoft Search
 クライアント ID | 読み取り専用で、自動生成されたアプリケーションの一意の ID。 このインスタンスは、アクセストークンを要求するときにクライアント ID を使用します。 | 該当なし
 クライアントシークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Search は相互に通信を承認します。 | これをパスワードとして扱うことにより、セキュリティのベストプラクティスに従います。
-リダイレクト URL | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | [OAuth callback](https://gcs.office.com/v1.0/admin/oauth/callback)を参照してください。
+リダイレクト URL | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 ロゴの URL | アプリケーションロゴのイメージを含む URL。 | 該当なし
 Active | アプリケーションレジストリをアクティブにするには、チェックボックスをオンにします。 | Active に設定
 トークンの寿命を更新する | 更新トークンが有効になる秒数。 既定では、更新トークンの有効期限は100日 (864万秒) です。 | 31536000 (1 年)
