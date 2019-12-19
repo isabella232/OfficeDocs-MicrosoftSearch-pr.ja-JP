@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Microsoft Search の Insights ダッシュボードから測定値を分析し、コンテンツを管理する
-ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 8ed0e13b53f61c699e8cf5628341adba3b96be9c
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699864"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40738055"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights ダッシュボードレポート
 
@@ -47,7 +47,7 @@ Microsoft 365[管理センター](https://admin.microsoft.com)で最初に micro
 
 ## <a name="impression-distribution"></a>インプレッションの分布
 
-このレポートでは、さまざまな回答に関して[Bing](https://Bing.com)でのインプレッション分布が表示されます。 ブックマーク、ユーザー、Q&A、ファイル、場所、ファイルサイト、グループ、会話などがあります。 
+このレポートでは、さまざまな回答に関して[Bing](https://Bing.com)でのインプレッション分布が表示されます。 ブックマーク、ユーザー、Q&A、ファイル、場所、ファイルサイト、グループ、会話などがあります。
 
 ![期間として90日が選択されたインプレッションレポート。](media/Insights-impressions.png)
 
