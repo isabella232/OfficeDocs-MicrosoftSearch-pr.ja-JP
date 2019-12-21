@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint Online で Microsoft Search を使用して組織の作業を開始する
-ms.openlocfilehash: 662dc2b69f02857327cd95b0f7c162e92800ce1c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 43cd9bce3d3d5c6f60214fcc1023bc4b8b9bfe91
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626857"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699496"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>SharePoint で Microsoft Search の使用を開始する
 
@@ -30,7 +30,7 @@ SharePoint で Microsoft Search を使用して組織を進めるには、以下
 
 ## <a name="prepare-for-microsoft-search-in-sharepoint"></a>SharePoint での Microsoft Search の準備
 
-ユーザーは、インデックスが作成されている SharePoint コンテンツのみを検索できます。 Microsoft Search と従来の検索では、SharePoint コンテンツと同じインデックスが共有され、自動的にインデックスが作成されます。 
+ユーザーは、インデックスが作成されている[SharePoint](http://sharepoint.com/)コンテンツのみを検索できます。 Microsoft Search と従来の検索では、SharePoint コンテンツと同じインデックスが共有され、自動的にインデックスが作成されます。 
 
 一部の組織では、SharePoint で従来の検索と Microsoft Search の両方を使用しています。 SharePoint での Microsoft Search の従来の検索設定からの影響を回避する方法については、「 [Sharepoint Online での従来の検索機能とモダンな検索機能の違い](https://docs.microsoft.com/sharepoint/differences-classic-modern-search)」を参照してください。
 
