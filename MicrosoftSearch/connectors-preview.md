@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft Graph コネクタプレビューに関する情報を確認します。
-ms.openlocfilehash: 054dc00bcb5cc0c110858fd329fbf2dbf16fb38b
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: f95f6283fa875a1cfa84556640b16a902b2f2185
+ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205878"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947019"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph コネクタのプレビュー
 
@@ -34,6 +34,7 @@ Microsoft Graph のコネクタと Microsoft Search Api (クエリとインデ�
 
 ## <a name="preview-limitations"></a>プレビューの制限事項
 プレビューリリースには、次の制限があります。
+* Microsoft Graph コネクタのパブリックプレビューは、米国およびヨーロッパ地域のテナントに対してのみ使用できます。 
 * 取り込みスループットは、1秒あたり約4アイテムに調整されます。
 * スキーマの更新はサポートされていません。 接続設定を作成した後、スキーマを更新する方法はありません。 接続を削除して再作成することはできません。
 * インデックスが作成されたコンテンツは、カスタム縦の下にある検索結果ページにのみ表示されます。 この制限は、ユーザー設定の種類のコンテンツに適用されます。

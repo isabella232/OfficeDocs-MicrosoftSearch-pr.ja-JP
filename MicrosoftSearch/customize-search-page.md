@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索垂直を追加して検索結果をカスタマイズする
-ms.openlocfilehash: 28e8fdc7fe7f08abe265c53772a161b8a7095503
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
+ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699559"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947028"
 ---
-# <a name="customize-the-microsoft-search-page"></a>Microsoft 検索ページをカスタマイズする
+# <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
 検索の業種と結果の種類を作成することで、 [Bing](https://Bing.com)で[SharePoint](http://sharepoint.com/)、 [microsoft Office](https://Office.com)、microsoft search を検索するときに表示される検索結果をカスタマイズできます。 各業種では、ユーザーが表示するアクセス許可が付与されている情報を簡単に見つけられるようにします。 たとえば、マーケティング部門のユーザーのために、サードパーティ製のソフトウェアからマーケティング分析データの検索を縦に作成できます。 また、検索結果の種類を定義し、このデータのレイアウトをカスタマイズすることもできます。  
 
@@ -116,5 +116,5 @@ ms.locfileid: "38699559"
 
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [手順 3: 結果のレイアウトをカスタマイズする](customize-results-layout.md)
