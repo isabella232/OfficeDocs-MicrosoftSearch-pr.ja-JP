@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索垂直を追加して検索結果をカスタマイズする
-ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
-ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
+ms.openlocfilehash: 198e5c85c1544b05cdc622f7b617e8bddbcd6a00
+ms.sourcegitcommit: 78dc72e99e148898455e016b4ccb110d16b3d81c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "40947028"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40987678"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -101,7 +101,7 @@ ms.locfileid: "40947028"
 ### <a name="view-the-vertical-after-enabling"></a>垂直方向の表示を有効にした後
 
 垂直方向を有効にした後は、表示する前にしばらく時間がかかる場合があります。
-有効になった後に待機する場合は、 **cacheClear = true**を[SharePoint](http://sharepoint.com/)および[Office](https://Office.com)の URL に追加して、すぐに垂直状態を表示することができます。
+有効にした後に待機しない場合は、 **cacheClear = true**を[SharePoint](http://sharepoint.com/)および[Office](https://Office.com)の URL に追加して、すぐに垂直方向を表示することができます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -116,5 +116,5 @@ ms.locfileid: "40947028"
 
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [手順 3: 結果のレイアウトをカスタマイズする](customize-results-layout.md)
