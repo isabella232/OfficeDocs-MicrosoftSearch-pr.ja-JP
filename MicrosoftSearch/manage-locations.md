@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過と共に、場所の情報の状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。
-ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 44214cc1be22c5e9e49276c69c6c4132559f7c8d
+ms.sourcegitcommit: 9784c8a99138c2f333a9fed8b71df9c4f28b2bee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626785"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41519137"
 ---
 # <a name="manage-locations"></a>場所の管理
 
@@ -40,7 +40,7 @@ ms.locfileid: "38626785"
 インポート/エクスポート機能を使用して、次のことが実行できます。
 1. 場所の一括追加 - 場所テンプレート ファイルに詳細を追加して、インポートします。 
 1. 場所の一括編集 - 場所を .csv ファイルにエクスポートし、エクスポートされた .csv ファイルの場所の詳細を編集してから、更新された .csv ファイルをインポートします。
-1. 場所のバックアップ - 既存の場所を .csv ファイルにエクスポートします。
+1. バックアップの場所: 既存の場所を .csv ファイルにエクスポートします。
 
 場所をエクスポートまたはインポートするには:
 1. **[場所]** タブの右上隅にある **[インポート]** を選択します。
