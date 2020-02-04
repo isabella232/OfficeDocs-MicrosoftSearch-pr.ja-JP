@@ -2,7 +2,7 @@
 title: Bing での Microsoft Search のセキュリティとプライバシー
 ms.author: jeffkizn
 author: jeffkizn
-manager: pmanek
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bing で Microsoft Search を使用して、承認されたユーザーに情報を提供しながら、会社のデータとエンドユーザーを保護する
-ms.openlocfilehash: 7f19327f3d62f68ed876875596610181b5f1bc0e
-ms.sourcegitcommit: ac1209d11b8cc265d2224917fbe2a2bb0f65ef84
+ms.openlocfilehash: 1cc00a3b14b1918903c9aa34a24f13b1761b64b6
+ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41005623"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711755"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Bing での Microsoft Search のセキュリティとプライバシー
 
@@ -39,7 +39,7 @@ Bing での Microsoft Search の認証は、Azure Active Directory に関連付�
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>ブラウザーから Microsoft cloud と通信する
 
-ユーザーが職場または学校のアカウントを使用してサインインすると、Bing では Microsoft Search 結果を表示できるようにブラウザーに必要なクライアント ライブラリをダウンロードします。その後に検索を行うと、ブラウザー内のコードによって Office 365 クラウドが呼び出され、結果を取得できるようになります。そのため、Microsoft Search は、Office 365 の[業界標準と規制に関するコンプライアンス フレームワーク ](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf) (PDF ダウンロード) に従い、Tier C (SOC2 Type 1) に準拠する専用 API が使用されます。つまり、作業結果と作業データが非準拠の Bing システムを通ることはありません。
+ユーザーが職場または学校のアカウントでサインインすると、Bing は必要なクライアントライブラリをブラウザーにダウンロードして、Microsoft 検索結果を有効にします。 その後、ブラウザー内のコードが検索を実行すると、Office 365 cloud を呼び出して作業の結果が得られます。 これを行うために、Microsoft Search では、SSAE 18 SOC2 Type 1 の制御目標に従って運用されている専用の API を使用します。 これは、作業結果自体が Office 365 コアオンラインサービスで処理されたときに、作業の結果自体が影響を受けることはないということです。
   
 ## <a name="permissions"></a>アクセス許可
 
