@@ -1,8 +1,8 @@
 ---
 title: FAQ
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: エンタープライズ検索と Microsoft Search についてよく寄せられる質問に対する回答です
-ms.openlocfilehash: edfb8346263d60184d8655afa24118ed4b3e3bca
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 1acf4b5c4b3e771072ea67f4d807454723352c3f
+ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699795"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721761"
 ---
+<!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 以下は、よく寄せられる質問の一覧です。
@@ -44,7 +45,6 @@ ms.locfileid: "38699795"
 - [Bing を既定の検索エンジンとして設定する](set-default-search-engine.md)
 - [Bing.com をエンタープライズ ホームページとして設定する](set-default-homepage.md)
 
-  
 ## <a name="how-are-my-search-results-protected"></a>検索結果に対する保護について教えてください。
 
 信頼されたクラウドからの結果にアクセスするには、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)認証が必要です。 認証されたユーザーには、そのユーザーがアクセス権を持つコンテンツのみが表示されます。 検索クエリは識別されないため、ログはパブリック[Bing](https://Bing.com)検索トラフィックから分離されます。 このレベルの保護が提供されているのは、業界内でも Microsoft Search だけです。
@@ -53,11 +53,10 @@ ms.locfileid: "38699795"
 
 いいえ。
 
-## <a name="where-can-i-get-info-about-office-365-and-microsoft-365-compliance-tiers-and-categories"></a>Office 365 および Microsoft 365 のコンプライアンス階層とカテゴリに関する情報はどこで入手できますか?
+## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Office 365 のセキュリティ、コンプライアンス、プライバシーに関する情報はどこで入手できますか。
 
-「[業界標準と規制に関するコンプライアンス フレームワーク](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf)」(PDF ダウンロード) で詳細を入手できます。
+詳細については、「 [Office 365 のセキュリティセンターのページ](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)」を参照してください。
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>ユーザーは職場または学校のアカウントで Microsoft リワード ポイントを獲得できますか?
 
-Microsoft Search では、エンタープライズ ユーザーが職場または学校のアカウントでサインインする必要があります。 ただし、ユーザーはこれらのアカウントで Microsoft リワード プログラムに参加またはサインインすることはできません。 しかし、エンタープライズ ユーザーにリワード ポイントが発生する場合があります。 これは、Microsoft Search ユーザーが <a href="https://www.microsoft.com/welcome?rtc=1">Microsoft アカウント</a>で作成されたリワード アカウントを持っている場合に発生する可能性があります。 (Microsoft アカウントに関連付けられている電子メール アドレスに、Outlook.com、Hotmail.com、Gmail、Yahoo、またはその他のプロバイダーからのものが使用できます。) ユーザーが同じブラウザー セッションで仕事用アカウントと Microsoft アカウントの両方で交互にサインインする場合、リワード アカウントにポイントが加算される場合があります。 ユーザーは、Cookie をクリアすることにより、Microsoft Search での検索中にポイントの発生を停止できます。 
-
+Microsoft Search では、エンタープライズ ユーザーが職場または学校のアカウントでサインインする必要があります。 ただし、ユーザーはこれらのアカウントで Microsoft リワード プログラムに参加またはサインインすることはできません。 しかし、エンタープライズ ユーザーにリワード ポイントが発生する場合があります。 これは、Microsoft Search ユーザーが [Microsoft アカウント](https://www.microsoft.com/welcome?rtc=1)で作成されたリワード アカウントを持っている場合に発生する可能性があります。 (Microsoft アカウントに関連付けられている電子メール アドレスに、Outlook.com、Hotmail.com、Gmail、Yahoo、またはその他のプロバイダーからのものが使用できます。) ユーザーが同じブラウザー セッションで仕事用アカウントと Microsoft アカウントの両方で交互にサインインする場合、リワード アカウントにポイントが加算される場合があります。 ユーザーは、Cookie をクリアすることにより、Microsoft Search での検索中にポイントの発生を停止できます。

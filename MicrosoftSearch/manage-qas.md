@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 回答を個別に検索して更新するか、利用可能な Microsoft Search のツールを使用して一括ですべての回答を編集します
-ms.openlocfilehash: af5f12e759179d7a00d682575a51286e607149b2
-ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
+ms.openlocfilehash: 0877de027b68589e5ba15cd8109ea7edeeae8725
+ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711761"
+ms.locfileid: "41721743"
 ---
 # <a name="manage-qas"></a>Q&A の管理
 
@@ -62,8 +62,8 @@ Q&A を編集するには、関連する Q&A の一覧で Q&A を選択します
 
 現在、ブラウザーの拡張機能は Edge と Chrome で利用できます。
 
-- Edge の拡張機能をダウンロードするには、[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) に移動して、アプリをダウンロードします。
-- Chrome の拡張機能をダウンロードするには、[Chrome Web ストア](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)に移動して、アプリをダウンロードします。
+- エッジ拡張機能をダウンロードするには、 [Microsoft ストア](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)に移動して、アプリをダウンロードしてください。
+- Chrome 拡張機能をダウンロードするには、 [chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)に移動し、アプリをダウンロードします。
 
 ## <a name="bulk-add-or-edit-qas"></a>Q&A を一括して追加または編集する
 
