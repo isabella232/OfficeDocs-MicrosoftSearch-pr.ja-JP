@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: 4f47d5b743709657459ccbc6b03897c29a51e109
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: aa857cefe9a2a40a8519a91829e327d01a3f2391
+ms.sourcegitcommit: 25cdb5e6111ec6bc6c130a36aa5f13a6328e1092
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626821"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928231"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -39,7 +39,7 @@ Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [microsoft Office
 提案される結果には、ユーザーの組織内に存在する DNN のすべての意味が含まれています。
 
 > [!NOTE]
-> ユーザーは、頭字語の指定された*キーワード*を含むクエリを入力して、対応する回答をトリガーする必要があります。  
+> ユーザーは、頭字語の指定された*キーワード*を含むクエリを入力して、対応する回答をトリガーする必要があります。 頭字語のクエリでは大文字と小文字は区別されません。 
 
 ## <a name="set-up-acronyms-answers"></a>頭字語の回答を設定する
 Microsoft 365[管理センター](https://admin.microsoft.com)で、[**microsoft Search** >**の****設定** > ] に移動し、[**頭字**語の追加] を選択します。 
@@ -102,7 +102,7 @@ Microsoft Search を使用すると、ドキュメントに対するアクセス
 
 **Q: ユーザーが頭字語の回答を開始する方法を教えてください。**
 
-**A**: 頭字語の回答を取得するには、 [Bing](https://bing.com)、 [Office 365](https://Office.com)、または SharePoint の[](https://products.office.com/sharepoint/collaboration) **検索**ボックスに特定のクエリパターンを入力する必要があります。 「 *Dnn* 」という用語の解答を検索するクエリの例を次に示します。
+**A**: 頭字語の回答を取得するには、 [Bing](https://bing.com)、 [Office 365](https://Office.com)、または SharePoint の[SharePoint](https://products.office.com/sharepoint/collaboration) **検索**ボックスに特定のクエリパターンを入力する必要があります。 「 *Dnn* 」という用語の解答を検索するクエリの例を次に示します。
 
 - *機能*DNN
 - を*定義*するDNN
