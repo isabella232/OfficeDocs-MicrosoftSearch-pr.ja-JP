@@ -1,8 +1,8 @@
 ---
 title: Microsoft 検索フロアプランのベストプラクティス
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索フロアプランのベストプラクティス
-ms.openlocfilehash: ddad671592ab3cf05400faa1261ee7258f3868bb
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 47eb46df48f1871f6d34d4b00787cf11ccbac1ea
+ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699854"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "43571016"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="best-practices-for-microsoft-search-floor-plans"></a>Microsoft 検索フロアプランのベストプラクティス
 
 Microsoft 検索フロアプランを正常に実装するには、3つのデータを調整する必要があります。
@@ -30,6 +31,7 @@ Microsoft 検索フロアプランを正常に実装するには、3つのデー
 Microsoft 検索フロアプランを展開するためのベストプラクティスについても、以下のセクションで説明します。
 
 ## <a name="building-location-data"></a>場所データの作成
+
 フロアプランを追加する前に、Microsoft の検索場所に建物を追加する必要があります。 次の必要な建築データを提供します。
 
 |データを作成する必要がある  |例  |
@@ -42,7 +44,8 @@ Microsoft 検索フロアプランを展開するためのベストプラクテ�
 一度に1つの場所を追加するのではなく、[**場所**] タブの [**インポート**] 機能を使用して、多くの建物を一度に追加することができます。 **インポート**機能を使用すると、緯度-経度を指定できます。 詳細については、「[場所を管理](manage-locations.md)する」を参照してください。
 
 ## <a name="floor-plan-map-in-dwg-format"></a>DWG 形式のフロアプランマップ
-Microsoft Search でマップを作成するには、フロアプランを DWG 形式で、特定の情報と共にアップロードする必要があります。 DWG 形式のファイルを作成して表示する方法については、「 [Dwg ビューアー](https://www.autodesk.in/products/dwg)」を参照してください。 
+
+Microsoft Search でマップを作成するには、フロアプランを DWG 形式で、特定の情報と共にアップロードする必要があります。 DWG 形式のファイルを作成して表示する方法については、「 [Dwg ビューアー](https://www.autodesk.in/products/dwg)」を参照してください。
 
 フロアプランマップは4つの要素を表示します。
 
@@ -60,6 +63,7 @@ Microsoft Search でマップを作成するには、フロアプランを DWG �
 この情報は、 **Physicaldeliveryofficename**プロパティの[Azure AD](https://azure.microsoft.com/services/active-directory/)に格納されています。 Microsoft 365[管理センター](https://admin.microsoft.com)では、 **Office**プロパティと呼ばれ、**アクティブなユーザー**に追加することができます。
 
 ### <a name="dwg-files"></a>DWG ファイル
+
 Microsoft Search では、DWG プランファイルが必要です。これは、 [AutoCAD](https://www.autodesk.com/autocad)図面形式です。 ファイルには、**レイアウト**と**ラベル**のデータが含まれている必要があります。 **部屋番号**は、フロアプランにとって最も重要なラベルです。
 
 次の表に示す完全一致の方法で office の番号付けシステムを作成することをお勧めします。 しかし、そのラベル付けだけに制限はありません。 たとえば、 [AZURE AD](https://azure.microsoft.com/services/active-directory/)内のユーザーのオフィスの場所が**B1 1001**の場合、DWG ファイルの部屋番号には、次のいずれかのオプションを指定してラベルを付けることができます。
@@ -71,6 +75,7 @@ Microsoft Search では、DWG プランファイルが必要です。これは�
 |会議室番号のみを照合する <br> **1**<br>部屋番号: 1        |    ![オフィス番号が "1" の単一オフィスフロアマップ](media/floorplans-layoutroomonly.png)     |
 
 ## <a name="user-account-office-location"></a>ユーザーアカウントのオフィスの場所
+
 従業員の場所をマップするために、DWG ファイルの部屋番号は、 [AZURE AD](https://azure.microsoft.com/services/active-directory/)のユーザーアカウント内のオフィスの場所にマップされます。 **Office location**プロパティは、DWG ファイルのオフィスの場所情報と一致している必要があります。
 
 次の表では、場所データのマッピングのベストプラクティスについて説明します。
@@ -83,5 +88,6 @@ Microsoft Search では、DWG プランファイルが必要です。これは�
 |
 
 ## <a name="next-steps"></a>次の手順
+
 [場所の管理](manage-locations.md)<br>
 [フロアプランを管理する](manage-floorplans.md)
