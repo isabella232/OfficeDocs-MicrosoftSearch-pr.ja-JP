@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search の概要
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search とは何か、その利点、Microsoft Search をサポートしているアプリの概要について説明します。
-ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: fc21328f9a72ac77e37ae366bd138770509d6080
+ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995034"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914491"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -58,9 +58,9 @@ Microsoft Search を使用すると、ユーザーは適切な回答、他のユ
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>組織に合わせた Microsoft Search のカスタマイズ
 
-管理者は、ユーザーに対してすばらしい Microsoft 検索機能を作成できます。 
+管理者は、ユーザーに対してすばらしい Microsoft 検索機能を作成できます。
 
-**有用なコンテンツを表示**–回答は、キーワードに基づいて検索クエリに高速で権限の高い結果を提供します。 [コンテンツを簡単に見つけられるように](make-content-easy-to-find.md)します。
+**有用なコンテンツを表示**–回答は、キーワードに基づいて検索クエリに高速で権限の高い結果を提供します。 [コンテンツを計画](plan-your-content.md)します。
 
 **外部コンテンツを追加**する: Microsoft Graph コネクタを使用すると、外部コンテンツをインデックスに取り込むことができます。 コネクタを使用して、Microsoft 365 の外部にあるデータおよびファイルを検索する際の利便性を向上させます。 [Microsoft Graph コネクタの概要](connectors-overview.md)
 
@@ -72,17 +72,15 @@ Microsoft Search は、組織が Microsoft 365 に保存されているコンテ
 
 ユーザーは、他の場所から取得した同じ検索結果を取得し、インターネットからも結果を取得します。
 
-## <a name="how-does-microsoft-search-work"></a>Microsoft Search はどのように機能するのですか?
+## <a name="how-microsoft-search-works"></a>Microsoft Search のしくみ
 
 ユーザーが検索すると、Microsoft Search ではクエリを処理し、より大きいフレーズから検索意図が解析されます。これは人工知能 (AI) を使用して、ユーザーがクエリに追加した、ユーザーの検索意図に影響を与えない一般的な余分なフレーズを Microsoft Search が学習することで実現されています。 たとえば、ユーザーが、「パスワードを変更する方法」という検索を行うと、重要度の低い単語はクエリから取り除かれ、「パスワードを変更」などの関連性の高い単語に基づいてトリガーされます。  
 ユーザーが表示する**アクセス許可**を持っている検索結果は、検索結果ページに表示されます。 Microsoft Search では、インテリジェント ランキング アルゴリズムを使用して、結果を関連性に従って順序付けします。
 
-## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>Bing で Microsoft Search が会社のデータを保護する方法
+## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>Bing での Microsoft Search による会社データの保護
 
 [Bing での Microsoft Search のセキュリティとプライバシー](security-for-search.md)
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft Search のセットアップ](setup-microsoft-search.md)
-
-[簡単に見つけられるコンテンツ](make-content-easy-to-find.md)
