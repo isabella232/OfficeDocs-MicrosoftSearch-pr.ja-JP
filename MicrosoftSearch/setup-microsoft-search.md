@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search のセットアップ
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
+ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663062"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256639"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
-Microsoft Search では、ユーザーフレンドリなインターフェイスを使用して、ファイルやドキュメント、内部サイトとビジネスツール、ユーザーとグループ、場所と方法、会話、および回答などの情報を検索できます。 これは、電子メール、ファイル、SharePoint ファイル、OneDrive コンテンツ、その他の共有リソース、ユーザーの組織内のインターネットなど、すべてのデータソースに安全にアクセスすることによって行われます。
+Microsoft Search では、ユーザーフレンドリなインターフェイスを使用して、ファイルやドキュメント、内部サイトとビジネスツール、ユーザーとグループ、場所と方法、会話、および回答などの情報を検索できます。 これは、電子メール、ファイル、SharePoint ファイル、OneDrive コンテンツ、その他の共有リソースなど、すべてのデータソースに安全にアクセスすることによって行われます。 Bing で Microsoft Search を使用すると、インターネットからも検索結果を取得できます。
 
 Microsoft Search の機能の詳細については、「[Microsoft Search の概要](overview-microsoft-search.md)」を参照してください。
 
@@ -57,7 +57,7 @@ Microsoft Search では、ユーザーのために堅牢な検索環境を構築
 
 回答を作成および管理する方法については、「[コンテンツを計画](plan-your-content.md)する」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ユーザーが Microsoft Search を使用する方法の詳細については、次の記事を参照してください。
 
