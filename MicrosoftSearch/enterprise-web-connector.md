@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のエンタープライズ web サイトコネクタを設定する
-ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
-ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
+ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
+ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803954"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326832"
 ---
 # <a name="enterprise-websites-connector"></a>エンタープライズ web サイトコネクタ
 
@@ -26,7 +26,7 @@ ms.locfileid: "43803954"
 この記事は、 [Microsoft 365](https://www.microsoft.com/microsoft-365)管理者またはエンタープライズ websites コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。  
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続 
-データソースに接続するには、ルート URL と認証の形式が必要です。これには、 [Azure Active Directory (AZURE AD)](https://docs.microsoft.com/azure/active-directory/)を使用した基本認証または OAuth 2.0 が必要です。
+データソースに接続するには、ルート URL と基本認証が必要です。
 
 ### <a name="root-url"></a>ルート URL
 ルート URL は、クロールを開始するもので、認証に使用されます。 クロールする web サイトのホームページから URL を取得できます。
