@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のエンタープライズ web サイトコネクタを設定する
-ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
-ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
+ms.openlocfilehash: c4b799a3127a4a302e3f07953a59ea0319a09052
+ms.sourcegitcommit: c186be143164f21a3fecdb3037acd90a26c0fcf3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326832"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374337"
 ---
 # <a name="enterprise-websites-connector"></a>エンタープライズ web サイトコネクタ
 
@@ -33,22 +33,6 @@ ms.locfileid: "44326832"
 
 ### <a name="authentication"></a>認証 
 基本認証には、ユーザー名とパスワードが必要です。 Microsoft 365[管理センター](https://admin.microsoft.com)を使用して、この bot アカウントを作成します。
-
-[AZURE AD](https://docs.microsoft.com/azure/active-directory/)を使用する OAuth 2.0 には、テナント ID、リソース ID、クライアント ID、およびクライアントシークレットが必要です。
-詳細については、「 [OAuth 2.0 コード付与フローを使用して Azure Active Directory web アプリケーションへのアクセスを承認する](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code)」を参照してください。 次の値を使用して登録します。
-* **Name:** Microsoft Search
-* **Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
-
-名前付きテナント、リソース、client_id、client_secret の値を取得するには、「承認コードを使用して、リダイレクト URL web ページで**アクセストークンを要求**します。
-
-詳細については、「[クイックスタート: アプリケーションを Microsoft identity platform に登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)」を参照してください。
-
-### <a name="reverse-proxy-url"></a>リバースプロキシの URL 
-エンタープライズ web サイトコネクタはクラウドベースであるため、オンプレミスのコンテンツにはアクセスしません。 そのアクセスを提供するには、リバースプロキシをインストールします。 リバースプロキシは、オンプレミスの web サイトへの安全で信頼できるアクセスを提供します。 [Azure アプリケーションプロキシ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)をお勧めします。
-
-ルート URL と認証のリバースプロキシの要件は、クラウドベースのコンテンツの場合と同じですが、ルート URL と認証はリバースプロキシサーバーによって提供される点が異なります。
-
-[AZURE AD アプリケーションプロキシを使用してリモートでアプリにアクセスする場合のセキュリティに関する考慮事項を](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-security)参照してください。
 
 ## <a name="select-the-source-properties"></a>ソースのプロパティを選択する 
 ソースのプロパティは、エンタープライズ web サイトのデータ形式に基づいて定義されます。 ただし、コンテンツに機密がある場合やクロール価値がない場合は、一部の Url をクロール対象から除外する除外**リスト**を作成できます。 除外リストを作成するには、ルート URL を参照します。 構成プロセス中に、除外された Url をリストに追加するオプションがあります。
