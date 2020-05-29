@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search で頭字語の回答を管理する
-ms.author: v-pamcna
-author: TrishaMc1
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: aa857cefe9a2a40a8519a91829e327d01a3f2391
-ms.sourcegitcommit: 25cdb5e6111ec6bc6c130a36aa5f13a6328e1092
+ms.openlocfilehash: af5b82aa2c578fde67a36980cfceef131f605b4e
+ms.sourcegitcommit: d4f49d51fa7d07b3bfd9ba93ed14f4c46d310154
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928231"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412677"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
-従業員は多くの場合、組織やチームで使用されている見慣れない頭字語や略語になります。 組織またはチームに固有の用語は、チーム間での移行、社内パートナーチームと連携するユーザー、または新入社員にとっては新しいものである可能性があります。
+ユーザーは、組織やチームによって使用される見慣れない頭字語や略語を使用することがよくあります。 組織またはチームに固有の用語は、チーム間の移行、社内パートナーと連携しているユーザー、または組織にとって新しいユーザーにとって新しいものである場合があります。
 
 組織では、標準的な用語を常に参照することはありません。 単一の参照がないと、これらの略語の定義や拡張を見つけるのが困難になります。 Microsoft Search は、頭字語に問題があることを解決します。
 
 ## <a name="what-users-experience"></a>ユーザーの作業
-Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [microsoft Office 365](https://Office.com)、 [microsoft SharePoint Online](https://products.office.com/sharepoint/collaboration)の頭字語を使用して定義を取得できます。 ヘッダーバーの**検索**ボックスには、次の例のようなクエリが入力されます。
+Microsoft 検索ユーザーは、 [Bing](https://Bing.com)で頭字語を使用して定義を取得できます。 **検索**ボックスには、次の例のようなクエリが入力されます。
 
 - *機能*DNN
 - を*定義*するDNN
@@ -36,13 +36,13 @@ Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [microsoft Office
 - *の意味*DNN
 - DNN*は*
 
-提案される結果には、ユーザーの組織内に存在する DNN のすべての意味が含まれています。
+結果には、ユーザーの組織内に存在する DNN のすべての意味が含まれます。
 
 > [!NOTE]
 > ユーザーは、頭字語の指定された*キーワード*を含むクエリを入力して、対応する回答をトリガーする必要があります。 頭字語のクエリでは大文字と小文字は区別されません。 
 
 ## <a name="set-up-acronyms-answers"></a>頭字語の回答を設定する
-Microsoft 365[管理センター](https://admin.microsoft.com)で、[**microsoft Search** >**の****設定** > ] に移動し、[**頭字**語の追加] を選択します。 
+Microsoft 365[管理センター](https://admin.microsoft.com)で、[microsoft Search の**設定**] に移動し、[頭字語の  >  **Microsoft Search**  > **Acronyms****追加**] を選択します。 
 
 Microsoft Search では、ユーザーの検索に頭字語の回答を提供するために2つのデータソースをクエリします。
 
@@ -50,7 +50,7 @@ Microsoft Search では、ユーザーの検索に頭字語の回答を提供す
 2.  抽出した**略語**。 ユーザーの個人電子メールやドキュメントから組織内の一般に利用可能なデータから、Microsoft Search によってマイニングされます。
 
 ### <a name="set-up-editorial-acronyms"></a>編集の略語を設定する
-IT 管理者は、 [Microsoft 365 管理センター]( https://admin.microsoft.com)の [[頭字] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)で編集の略語を設定できます。 任意の内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集の略語は、**発行済み**または**下書き**の状態に追加できます。
+検索管理者は、 [Microsoft 365 管理センター]( https://admin.microsoft.com)の [[頭字] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)で編集の略語を設定できます。 任意の内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集の略語は、**発行済み**または**下書き**の状態に追加できます。
 
 **公開**された状態。 頭字語は、組織の従業員が Microsoft Search を通じて使用できます。
 
@@ -86,10 +86,10 @@ IT 管理者は、 [Microsoft 365 管理センター]( https://admin.microsoft.c
 - [SharePoint](https://products.office.com/sharepoint/collaboration)、 [Microsoft OneDrive]( https://onedrive.live.com/about/) 、 [microsoft OneNote](http://www.onenote.com/)のドキュメント。
 - ユーザーが SharePoint、OneDrive、または OneNote でアクセスできる組織内のパブリックドキュメント。
 
-Microsoft Search を使用すると、ドキュメントに対するアクセスとアクセス許可を持つユーザーのみが、その文書から抽出された頭字語を表示できるようになります。 頭字語は、ユーザーの受信トレイからマイニングされ、ユーザーのシャードに格納されます。 ユーザーが自分の受信トレイから抽出した略語にのみアクセスできます。
+Microsoft Search を使用すると、ドキュメントに対するアクセスとアクセス許可を持つユーザーのみが、その文書から抽出された頭字語を表示できるようになります。 頭字語がユーザーのメールボックスからマイニングされる場合、そのユーザーのみがその略語を表示できます。
 
 > [!NOTE]
-> マイニングされた頭字語には、IT 管理者のセットアップは必要ありません。
+> マイニングされた頭字語にはセットアップは必要ありません。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 **Q: どのように編集とマイニングされたデータがランク付けされるのですか?**
@@ -102,15 +102,7 @@ Microsoft Search を使用すると、ドキュメントに対するアクセス
 
 **Q: ユーザーが頭字語の回答を開始する方法を教えてください。**
 
-**A**: 頭字語の回答を取得するには、 [Bing](https://bing.com)、 [Office 365](https://Office.com)、または SharePoint の[SharePoint](https://products.office.com/sharepoint/collaboration) **検索**ボックスに特定のクエリパターンを入力する必要があります。 「 *Dnn* 」という用語の解答を検索するクエリの例を次に示します。
-
-- *機能*DNN
-- を*定義*するDNN
-- DNN*定義*
-- *展開*DNN
-- DNN*拡張*
-- *の意味*DNN
-- DNN*は*
+**A**: 頭字語の回答を取得するには、ユーザーは[Bing](https://bing.com) **検索**ボックスに特定のクエリパターンを入力する必要があります。 現時点では、 [Office 365](https://Office.com)または[SharePoint](https://products.office.com/sharepoint/collaboration)では、頭字語の回答は使用できません。
 
 **Q: 新しい電子メールやドキュメントを受信または送信した後に、マイニングされた頭字語が表示されるまでにどのくらいの時間がかかりますか?**
 
@@ -131,4 +123,4 @@ Microsoft Search を使用すると、ドキュメントに対するアクセス
 
 **Q: [Office 365](https://Office.com)と[SharePoint Online](https://products.office.com/sharepoint/collaboration)で頭字語の回答が表示されるのはいつですか。**
 
-**A**: 頭字語の回答は現在、 [Bing](https://bing.com)の Microsoft Search でのみ使用できます。 これらは、Office 365 および2020の SharePoint Online にロールアウトされます。
+**A**: Office 365 と SharePoint Online での頭字語の回答は製品ロードマップの一部ですが、現在、日付または時間枠を提供することはできません。
