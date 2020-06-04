@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: af5b82aa2c578fde67a36980cfceef131f605b4e
-ms.sourcegitcommit: d4f49d51fa7d07b3bfd9ba93ed14f4c46d310154
+ms.openlocfilehash: cd9e1a48288e6df8f5746d937684a3f2eedd65df
+ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412677"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44535358"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -26,6 +26,7 @@ ms.locfileid: "44412677"
 組織では、標準的な用語を常に参照することはありません。 単一の参照がないと、これらの略語の定義や拡張を見つけるのが困難になります。 Microsoft Search は、頭字語に問題があることを解決します。
 
 ## <a name="what-users-experience"></a>ユーザーの作業
+
 Microsoft 検索ユーザーは、 [Bing](https://Bing.com)で頭字語を使用して定義を取得できます。 **検索**ボックスには、次の例のようなクエリが入力されます。
 
 - *機能*DNN
@@ -39,17 +40,19 @@ Microsoft 検索ユーザーは、 [Bing](https://Bing.com)で頭字語を使用
 結果には、ユーザーの組織内に存在する DNN のすべての意味が含まれます。
 
 > [!NOTE]
-> ユーザーは、頭字語の指定された*キーワード*を含むクエリを入力して、対応する回答をトリガーする必要があります。 頭字語のクエリでは大文字と小文字は区別されません。 
+> ユーザーは、頭字語の指定された*キーワード*を含むクエリを入力して、対応する回答をトリガーする必要があります。 頭字語のクエリでは大文字と小文字は区別されません。
 
 ## <a name="set-up-acronyms-answers"></a>頭字語の回答を設定する
-Microsoft 365[管理センター](https://admin.microsoft.com)で、[microsoft Search の**設定**] に移動し、[頭字語の  >  **Microsoft Search**  > **Acronyms****追加**] を選択します。 
+
+Microsoft 365[管理センター](https://admin.microsoft.com)で、[microsoft Search の**設定**] に移動し、[頭字語の  >  **Microsoft Search**  > **Acronyms****追加**] を選択します。
 
 Microsoft Search では、ユーザーの検索に頭字語の回答を提供するために2つのデータソースをクエリします。
 
-1.  **編集の略語** [管理センター](https://admin.microsoft.com)の IT 管理者によって提供されます。
-2.  抽出した**略語**。 ユーザーの個人電子メールやドキュメントから組織内の一般に利用可能なデータから、Microsoft Search によってマイニングされます。
+1. **編集の略語** [管理センター](https://admin.microsoft.com)の IT 管理者によって提供されます。
+2. 抽出した**略語**。 ユーザーの個人電子メールやドキュメントから組織内の一般に利用可能なデータから、Microsoft Search によってマイニングされます。
 
 ### <a name="set-up-editorial-acronyms"></a>編集の略語を設定する
+
 検索管理者は、 [Microsoft 365 管理センター]( https://admin.microsoft.com)の [[頭字] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)で編集の略語を設定できます。 任意の内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集の略語は、**発行済み**または**下書き**の状態に追加できます。
 
 **公開**された状態。 頭字語は、組織の従業員が Microsoft Search を通じて使用できます。
@@ -66,6 +69,7 @@ Microsoft Search では、ユーザーの検索に頭字語の回答を提供す
 | *xxx* | *スペルミスの省略形* |  | *URL* | *公開または下書き* |
 
 ### <a name="csv-fields"></a>CSV フィールド
+
 **頭字語** 実際の短い形式または頭字語を含みます。 例として、 *Dnn*が挙げられます。
 
 **拡張**。 頭字語の拡張が含まれています。 例としては、*ディープニューラルネットワーク*があります。
@@ -80,6 +84,7 @@ Microsoft Search では、ユーザーの検索に頭字語の回答を提供す
 - **発行済み**。 頭字語を公開された状態に追加し、Microsoft Search で使用できるようにします。
 
 ### <a name="mined-acronyms"></a>マイニング頭字語
+
 管理者が組織内で使用されているすべての略語を回答に追加することが課題となる場合があります。 この機能は、検索管理者が認識していない略語を見つけることができます。 この作業を行うために、Microsoft Search では、これらのソースからの略語も地雷しています。
 
 - ユーザーの電子メール。
@@ -92,13 +97,14 @@ Microsoft Search を使用すると、ドキュメントに対するアクセス
 > マイニングされた頭字語にはセットアップは必要ありません。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
 **Q: どのように編集とマイニングされたデータがランク付けされるのですか?**
 
 **A:** 現在、機能は、抽出された略語の上に編集上の略語をランク付けします。
 
 **Q: 発行後に編集者の略語が Microsoft Search に表示されるまでにどのくらいの時間がかかりますか?**
 
-**A:** 発行済みの状態に追加された頭字語が Microsoft Search で利用できるようになるまでに最大3日間かかります。 
+**A:** 発行済みの状態に追加された頭字語が Microsoft Search で利用できるようになるまでに最大3日間かかります。
 
 **Q: ユーザーが頭字語の回答を開始する方法を教えてください。**
 
@@ -118,8 +124,8 @@ Microsoft Search を使用すると、ドキュメントに対するアクセス
 
 **Q: 組織でマイニングされた頭字語を表示したくない場合はどうすればよいですか?抽出された略語が検索結果に表示されないようにすることはできますか?**
 
-**A**: 検索結果での抽出された略語を表示しないようにするには、「[ビジネス製品についてのサポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)」の手順に従ってカスタマーサポートチケットを作成します。
-サポートチケットを作成した後は、検索結果に表示されなくなるまでに最大48時間かかります。 
+**A**: 検索結果での抽出された略語を表示しないようにするには、「[ビジネス製品についてのサポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)」の手順に従ってカスタマーサポートチケットを作成します。
+サポートチケットを作成した後は、検索結果に表示されなくなるまでに最大48時間かかります。
 
 **Q: [Office 365](https://Office.com)と[SharePoint Online](https://products.office.com/sharepoint/collaboration)で頭字語の回答が表示されるのはいつですか。**
 
