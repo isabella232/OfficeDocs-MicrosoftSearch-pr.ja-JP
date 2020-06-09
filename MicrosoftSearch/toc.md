@@ -20,7 +20,7 @@
 ### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ### [大企業の Web サイト](enterprise-web-connector.md)
 ### [ファイル共有](file-share-connector.md)
-### [Microsoft SQL Server](MSSQL-connector.md)
+### [Azure SQL と SQL server](MSSQL-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [フィードバック](connectors-feedback.md)
