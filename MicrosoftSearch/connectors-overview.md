@@ -12,21 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph のコネクタの概要
-ms.openlocfilehash: 8b02eadac099d75174fe849f7f2f97c26bf6c3af
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 0b5420eb4eb93eb257fab30f3e56a20e6456e1b3
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663137"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604394"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph コネクタの概要
 
 Microsoft Search では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365)のすべてのデータのインデックスが作成されます。 Microsoft Graph のコネクタを使用すると、組織はサードパーティのデータにインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
 
 > [!IMPORTANT]
-> **免責事項**: microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在、プレビュー状態になっています。 Microsoft Search でコネクタを使用するか、コネクタを構築するには、[コネクタ プレビュー プログラム](connectors-preview.md)にサインアップする必要があります。 プレビュープログラムに参加するには、 [Microsoft Graph コネクタプレビューのサインアップフォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信します。
+> **免責事項**: microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在、対象となるリリースのテナントで利用可能なプレビュー状態になっています。 Microsoft Search でコネクタを使用したり、コネクタを作成したりするには、[対象となるリリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)にオプトインします。 プレビューの詳細については、「[コネクタプレビュープログラム](connectors-preview.md)」を参照してください。
 
 ## <a name="architecture"></a>アーキテクチャ
+
 Microsoft Graph プラットフォームの次のアーキテクチャ図は、 [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search)クライアントでのコンテンツインデックスを使用してコネクタコンテンツをユーザーの結果にどのように流し込むかを示しています。 この記事では、Microsoft Graph コネクタデータフロープロセスの主な構成要素について説明します。
 
 ![図: 社内およびクラウドベースのデータは、コネクタによって取得され、Microsoft Search API によってインデックスが作成され、Microsoft Search サービスが結果をユーザーに配信します。](media/highlevel-connectors_FINAL.png)
@@ -38,6 +39,7 @@ Microsoft 365[管理センター](https://admin.microsoft.com)では、microsoft
 データソースへの**接続**を作成するには、管理者がデータとコンテンツリポジトリ全体への認証されたアクセスを必要とします。 データは、インデックス作成のために graph connector サービスに送られます。
 
 ## <a name="available-connectors"></a>利用可能なコネクタ
+
 現在、マイクロソフトが提供しているコネクタが6つあり、エコシステムパートナーから100以上のコネクタを利用できます。
 
 エコシステムパートナーの1つからコネクタをプレビューするには、そのパートナーに直接連絡します。 詳細については、 [Microsoft Graph のコネクタギャラリー](connectors-gallery.md)を参照してください。
@@ -45,6 +47,7 @@ Microsoft 365[管理センター](https://admin.microsoft.com)では、microsoft
 [独自のコネクタを作成](https://docs.microsoft.com/graph/search-concept-overview)することもできます。
 
 ### <a name="connectors-by-microsoft"></a>Microsoft によるコネクタ
+
 Microsoft Graph コネクタプレビューリリースには、6つの Microsoft が作成したコネクタが含まれています。 [管理センター](https://admin.microsoft.com)で設定し、 [Microsoft が作成](configure-connector.md)したコネクタをセットアップする方法について説明します。
 
 次のセクションでは、これらの Microsoft が作成したコネクタについて簡単に説明します。 各コネクタのリンクされた記事に詳細情報を表示できます。
@@ -68,16 +71,22 @@ Microsoft Graph コネクタプレビューリリースには、6つの Microsof
 [ServiceNow コネクタ](servicenow-connector.md)の詳細について説明します。
 
 ### <a name="connectors-from-our-partners"></a>パートナーからのコネクタ
+
 エコシステムパートナーからのプレビューには、100を超えるコネクタが用意されています。 エコシステムパートナーの1つからコネクタをプレビューするには、そのパートナーに直接連絡します。
 パートナーからのコネクタの詳細については、 [Microsoft Graph のコネクタギャラリー](connectors-gallery.md)を参照してください。
 
 ### <a name="build-your-own-connector"></a>独自のコネクタを作成する
+
 カスタムデータ型またはファイルにインデックスを作成するために、開発者は[Microsoft Graph](https://developer.microsoft.com/graph/)でコネクタを作成できます。 コネクタは、[接続を作成](https://docs.microsoft.com/graph/search-index-manage-connections)し、Microsoft 検索インデックスにアイテムをプッシュするアプリケーションです。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
 
 ### <a name="search-results-with-your-custom-built-connector"></a>カスタム作成コネクタを使用した検索結果
+
 カスタムデータのインデックスを作成すると、開発者は[このデータをクエリ](https://docs.microsoft.com/graph/search-concept-custom-types)できます。 任意のアプリケーションでデータを表示できます。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
 
 ## <a name="license-requirements"></a>ライセンス要件
+
 検索結果のコネクタからのデータを表示するには、ユーザーは次の Microsoft 365 サブスクリプションのいずれかを所有している必要があります。
-- <a href="https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans" target="_blank">Microsoft 365 for enterprise E3 または E5</a>
-- <a href="https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1" target="_blank">Microsoft 365 エデュケーション A3 または A5</a>
+
+- [Microsoft 365 for enterprise E3 または E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+
+- [Microsoft 365 エデュケーション A3 または A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)

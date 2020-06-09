@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search の microsoft SQL connector
+title: Microsoft Search 用 microsoft SQL server および Azure SQL connector
 ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
@@ -11,30 +11,32 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search の Microsoft SQL コネクタをセットアップします。
-ms.openlocfilehash: b48fece5fccaf2a82ac343cd13130073ee6b3c21
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+description: Microsoft Search 用の Microsoft SQL server または Azure SQL connector をセットアップします。
+ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995052"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604403"
 ---
-# <a name="microsoft-sql-server-connector"></a>Microsoft SQL server コネクタ
+# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL server および Azure SQL connector
 
-Microsoft SQL server コネクタを使用すると、組織は社内の SQL Server データベースからデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 SQL Server コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
+Microsoft SQL server または Azure SQL コネクタを使用すると、組織は、オンプレミスの SQL Server データベースまたはクラウド内の Azure SQL インスタンスでホストされているデータベースのデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 これらの SQL コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
 
 この記事は、Microsoft 365 管理者または Microsoft SQL server コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
 
-## <a name="install-a-data-gateway"></a>Data gateway をインストールする
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Data gateway をインストールする (オンプレミスの Microsoft SQL server コネクタにのみ必要)
 サードパーティのデータにアクセスするためには、Microsoft Power BI ゲートウェイをインストールして構成する必要があります。 詳細について[は、「オンプレミスゲートウェイをインストール](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)する」を参照してください。  
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
 Microsoft SQL server コネクタをデータソースに接続するには、クロールするデータベースサーバーとオンプレミスゲートウェイを構成する必要があります。 その後、必要な認証方法を使用してデータベースに接続できます。
 
-> [!NOTE]
-> データベースでは、SQL server バージョン2008以降を実行する必要があります。
+Azure SQL コネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQL コネクタは、データベースに接続するための Azure Active Directory Open ID connect (OIDC) 認証のみをサポートしています。
 
-データベースコンテンツを検索するには、コネクタを構成するときに SQL クエリを指定する必要があります。 これらの SQL クエリは、すべての列を取得するために実行する必要があるすべての SQL 結合を含む、インデックスを作成するすべてのデータベース列に名前を付ける必要があります (つまり、ソースプロパティ)。 検索結果へのアクセスを制限するには、Microsoft SQL server コネクタを構成するときに、SQL クエリでアクセス制御リスト (Acl) を指定する必要があります。
+> [!NOTE]
+> データベースに接続するには、データベースで SQL server バージョン2008以降を実行する必要があります (Microsoft SQL server connector)
+
+データベースコンテンツを検索するには、コネクタを構成するときに SQL クエリを指定する必要があります。 これらの SQL クエリは、すべての列を取得するために実行する必要があるすべての SQL 結合を含む、インデックスを作成するすべてのデータベース列に名前を付ける必要があります (つまり、ソースプロパティ)。 検索結果へのアクセスを制限するには、コネクタを構成するときに SQL クエリ内でアクセス制御リスト (Acl) を指定する必要があります。
 
 ## <a name="full-crawl-required"></a>フルクロール (必須)
 この手順では、データベースのフルクロールを実行する SQL クエリを構成します。 フルクロールでは、**クエリ**可能、**検索**可能、または取得可能にするすべての列またはプロパティが選択**されます。** また、ACL 列を指定して、検索結果のアクセスを特定のユーザーまたはグループに制限することもできます。
@@ -63,14 +65,14 @@ Microsoft SQL server コネクタをデータソースに接続するには、�
 データベースが過負荷にならないようにするために、コネクタはフルクロールのウォーターマーク列を使用して、フルクロールクエリをバッチ処理および再開します。 [すかし] 列の値を使用すると、以降の各バッチが取得され、最後のチェックポイントからクエリが再開されます。 基本的には、フルクロールのデータ更新を制御するメカニズムを示します。
 
 次の例に示すように、ウォーターマークに対してクエリスニペットを作成します。
-* `WHERE (CreatedDateTime > @watermark)`. 予約済みのキーワード`@watermark`を使用して、ウォーターマーク列名を指定します。 [すかし] 列の並べ替え順序が昇順の場合は`>`、を使用します。それ以外の`<`場合は、を使用します。
+* `WHERE (CreatedDateTime > @watermark)`. 予約済みのキーワードを使用して、ウォーターマーク列名を指定し `@watermark` ます。 [すかし] 列の並べ替え順序が昇順の場合は、を使用 `>` します。それ以外の場合は、を使用 `<` します。
 * `ORDER BY CreatedDateTime ASC`. [すかし] 列の昇順または降順に並べ替えます。
 
-次の図に示す構成では、 `CreatedDateTime` [選択されたウォーターマーク] 列が選択されています。 行の最初のバッチをフェッチするには、[すかし] 列のデータ型を指定します。 この例では、データ型は`DateTime`です。
+次の図に示す構成では、[ `CreatedDateTime` 選択されたウォーターマーク] 列が選択されています。 行の最初のバッチをフェッチするには、[すかし] 列のデータ型を指定します。 この例では、データ型は `DateTime` です。
 
 ![](media/MSSQL-watermark.png)
 
-最初のクエリは、次の値を使用して、最初の**N 個**の行をフェッチします。 "/1 月1日 > 1753 00:00:00" (datetime データ型の最小値)。 最初のバッチをフェッチした後、バッチで`CreatedDateTime`返される最大値は、行が昇順で並べ替えられている場合に、チェックポイントとして保存されます。 例としては、2019年3月1日、03:00:00 があります。 その後、 **N**行の次のバッチは、クエリ内の "/datetime > 03:00:00 2019 年3月1日を使用してフェッチされます。
+最初のクエリは、次の値を使用して、最初の**N 個**の行をフェッチします。 "/1 月1日 > 1753 00:00:00" (datetime データ型の最小値)。 最初のバッチをフェッチした後、 `CreatedDateTime` バッチで返される最大値は、行が昇順で並べ替えられている場合に、チェックポイントとして保存されます。 例としては、2019年3月1日、03:00:00 があります。 その後、 **N**行の次のバッチは、クエリ内の "/datetime > 03:00:00 2019 年3月1日を使用してフェッチされます。
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>削除された削除済みの行をスキップする (オプション)
 データベース内の削除済みの行をインデックス作成から除外するには、その行が削除されたことを示す、回復可能な削除の列名と値を指定します。
@@ -90,7 +92,7 @@ Acl としてを使用するために、次の ID タイプがサポートされ
 ![](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>増分クロール (オプション)
-このオプションの手順では、データベースの増分クロールを実行するための SQL クエリを指定します。 このクエリを使用すると、Microsoft SQL server コネクタによって、前回の増分クロール以降のデータが変更されます。 フルクロールの場合と同様に、**クエリ**可能、**検索**可能、または取得可能にするすべての列を**選択します**。 フルクロールクエリで指定したものと同じ ACL 列のセットを指定します。
+このオプションの手順では、データベースの増分クロールを実行するための SQL クエリを指定します。 このクエリでは、最後の増分クロール以降のデータの変更が SQL コネクタによって決定されます。 フルクロールの場合と同様に、**クエリ**可能、**検索**可能、または取得可能にするすべての列を**選択します**。 フルクロールクエリで指定したものと同じ ACL 列のセットを指定します。
 
 次の図のコンポーネントは、完全なクロールコンポーネントに似ていますが、1つの例外があります。 この例では、"ModifiedDateTime" は選択された透かし列です。 [フルクロールの手順](#full-crawl-required)を確認して、増分クロールクエリを記述する方法を説明し、次の画像を例として示します。
 
@@ -100,7 +102,7 @@ Acl としてを使用するために、次の ID タイプがサポートされ
 [フルクロール画面で指定された acl](#full-crawl-manage-search-permissions)を使用するか、すべてのユーザーにコンテンツを表示するように上書きするかを選択できます。
 
 ## <a name="limitations"></a>制限事項
-Microsoft SQL server コネクタには、次のようなプレビューリリースの制限があります。
-* オンプレミスデータベースでは、SQL server バージョン2008以降を実行する必要があります。
+SQL コネクタには、次のようなプレビューリリースの制限があります。
+* Microsoft SQL server connector: オンプレミスのデータベースは、SQL server バージョン2008以降を実行している必要があります。
 * Acl は、ユーザープリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用する場合にのみサポートされます。 
 * データベース列内のリッチコンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、HTML、JSON、XML、blob、ドキュメント parsings などがあります。これらは、データベース列内のリンクとして存在します。
