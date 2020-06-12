@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft が開発したコネクタを Microsoft Search 用に構成する
-ms.openlocfilehash: 3c54f04c1ac6cc42eef2e27a2b40b6ce92357630
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
+ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535311"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702760"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -34,10 +34,10 @@ ms.locfileid: "44535311"
 
 ## <a name="set-up"></a>セットアップ
 
-Microsoft によって作成されたコネクタのいずれかを構成するには、[管理センター](https://admin.microsoft.com)に移動します。
+Microsoft によって作成されたコネクタのいずれかを構成するには、次の手順を実行します。
 
-1. [Microsoft 365](https://www.microsoft.com/microsoft-365)テストテナントの資格情報を使用して、アカウントにサインインします。
-2. [**設定**]  >  **Microsoft 検索**  >  **コネクタ**に移動します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)の [[コネクタ] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)に移動します。
+2. [Microsoft 365](https://www.microsoft.com/microsoft-365)テナントの資格情報を使用して、アカウントにサインインします。
 3. [**コネクタの追加**] を選択します。
 4. 使用可能なコネクタのリストから、選択したコネクタを選択します。
 
@@ -67,7 +67,7 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 検索スキーマの属性には、検索可能、**クエリ**可能 **、および取得**可能**なものが**あります。 次の表に、Microsoft Graph コネクタがサポートしている各属性とその機能について説明します。
 
-**検索スキーマの属性** | **Function** | **例**
+検索スキーマの属性 | 関数 | 例
 --- | --- | ---
 サーチ | プロパティのテキストコンテンツを検索可能にします。 プロパティの内容は、フルテキストインデックスに含まれています。 | プロパティが**title**の場合、**エンタープライズ**のクエリは、テキストまたはタイトルに " **enterprise** " が含まれている回答を返します。
 クエリ可能 | クエリによって特定のプロパティの一致が検索されます。 プロパティ名は、プログラムまたは逐語的にクエリで指定できます。 |  **Title**プロパティがクエリ可能な場合は、クエリ**タイトル: Enterprise**がサポートされています。
