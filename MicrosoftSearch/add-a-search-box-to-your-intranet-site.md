@@ -15,16 +15,22 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 関連する検索候補や作業結果にすばやくアクセスするために、イントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
-ms.openlocfilehash: bcf1c6890415fdd9ae22f28cdf6d3dec1ffcaac4
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: af12ce4d17c2695e196f8e4d79ccd515f002f238
+ms.sourcegitcommit: 92206ea179ec00b22496f6fd2866b5406449cf40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37948908"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44798227"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックス追加する
 
-関連する検索候補や作業結果にすばやくアクセスするために、任意のイントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
+ユーザーが組織からの結果に簡単にアクセスできるようにするには、Bing 検索ボックスで、Microsoft Search を任意のイントラネットサイトまたはページに追加します。 次にいくつかの利点を示します。
+
+- SharePoint またはイントラネットポータルの検索ボックスには、検索を開始するための、なじみのある信頼できるエントリポイントが用意されています。
+- Google Chrome および Microsoft Edge を含む、すべての主要な web ブラウザーをサポートします。
+- 組織からの検索候補のみが表示され、web 提案は含まれません。
+- ユーザーが Bing の作業結果ページで Microsoft Search を実行して、広告と web の結果を除外します。
+- 検索ボックスの外観と動作を制御する
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>イントラネット ページに検索ボックス追加する
 
@@ -88,8 +94,8 @@ ms.locfileid: "37948908"
         dropShadow: true,                       // default: true
         iconColor: "#067FA6",                   // default: #067FA6
         companyNameInGhostText: "Contoso"       // default: not specified
-                                                // when absent, ghost text will be "Search work and the web"
-                                                // when specified, text will be "Search the web and [Contoso]"
+                                                // when absent, ghost text will be "Search work"
+                                                // when specified, text will be "Search <companyNameInGhostText>"
     };
 </script>
 <script async src="https://www.bing.com/business/s?k=sb"></script>
