@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のすべての Microsoft Graph コネクタを一覧表示します。
-ms.openlocfilehash: a5c3cb0090361e16456b01646b2a0dec46602d88
-ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
+ms.openlocfilehash: 949a7dfcf25c51c706d2a141071d7a0e5cad2133
+ms.sourcegitcommit: f189c83c0b82e822d65cda4ac69ba9c80a1a9c33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326841"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44838041"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph コネクタギャラリー
 
@@ -101,7 +101,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p><a href="https://www.microsoft.com">Microsoft</a>による</p>
-                        <p>この Microsoft Graph コネクタを使用すると、ユーザーは、組織が MediaWiki を使用して作成した wiki サイトで、サポート技術情報の記事を検索できます。</p>
+                        <p>この Microsoft Graph コネクタを使用すると、ユーザーは、組織が MediaWiki を使用して作成した wiki サイトのナレッジベースの記事を検索できます。</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="mediawiki-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -143,7 +143,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p><a href="https://www.microsoft.com">Microsoft</a>による</p>
-                        <p>この Microsoft Graph コネクタを使用すると、組織内のユーザーは ServiceNow インスタンスからサポート技術情報の記事を検索できます。</p>
+                        <p>この Microsoft Graph コネクタを使用すると、組織内のユーザーは ServiceNow インスタンスからナレッジベースの記事を検索できます。</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="servicenow-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -174,7 +174,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Aderant</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Aderant コネクタは、ソースシステムのセキュリティを強化し、フルクロールと増分クロールの両方を提供します。これにより、ユーザーは常に最新の情報を利用できるようになります。</p>
+                        <p>Aderant コネクタは、ソースシステムのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/" target="_blank" data-linktype="relative-path">
                                 <font color="0065BA">詳細情報</font>
@@ -211,7 +211,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Adobe Experience Manager</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Adobe Experience Manager (AEM) コネクタは、Adobe Experience Manager サーバーからコンテンツをクロールします。 コネクタ fetc は、ドキュメントレベルのセキュリティ (現在は閉じられているユーザーグループのみ) のアクセス制御リストを表示します。 予定されているオン/オフ時刻に基づいて、予想される値、パターン、またはページを使用して、プロパティに基づいてコンテンツをフィルター処理できます。</p>
+                        <p>Adobe Experience Manager (AEM) コネクタは、Adobe Experience Manager サーバーからコンテンツをクロールします。 コネクタは、ドキュメントレベルのセキュリティ (現時点では、閉じられたユーザーグループのみ) のアクセス制御リストを取り出します。 予定されているオン/オフ時刻に基づいて、予想される値またはパターンまたはページを使用して、プロパティに基づいてコンテンツをフィルター処理できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/AEM+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -230,7 +230,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Alfresco</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Alfresco コネクタは BAI コネクタフレームワークに基づいて構築されています。これは、すべてのコネクタを構築するために使用されるプラットフォームで、エンタープライズシステムへの安全な接続を提供します。</p>
+                        <p>Alfresco コネクタは、BAI コネクタフレームワークを基盤に構築されています。これは、すべてのコネクタを構築し、エンタープライズシステムへの安全な接続を提供するために使用するプラットフォームです。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/alfresco-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -246,7 +246,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Alfresco Content Services</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Alfresco One のコネクタ。 Alfresco One からほぼリアルタイムでドキュメント、フォルダー、ユーザープロファイルのインデックスを付けます。 コネクタは、Alfresco の組み込みのユーザーとグループの管理だけでなく、Active Directory およびその他のディレクトリサービスに基づく Alfresco インストールを完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Alfresco One のコネクタ。 Alfresco One からほぼリアルタイムでドキュメント、フォルダー、およびユーザープロファイルのインデックスを付けます。 コネクタは、Alfresco の組み込みのユーザーとグループの管理だけでなく、Active Directory およびその他のディレクトリサービスに基づく Alfresco インストールを完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-alfresco-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -313,7 +313,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Amazon S3 Connector は、S3 に格納されているすべてのコンテンツに対して動作します。組織は、コネクタを使用して、セキュリティで保護された S3 へのコネクタを使用し、S3 バケットからコンテンツにインデックスを作成できます。 パワフルなフィルタリング機能により、S3 で検出されたコンテンツのインデックスを作成することができます。</p>
+                        <p>Amazon S3 Connector は、S3 に格納されているすべてのコンテンツに対して動作します。組織はコネクタを使用して、s3 に安全に接続し、S3 バケットのコンテンツにインデックスを作成できます。 パワフルなフィルタリング機能により、S3 で検出されたコンテンツのインデックスを作成することができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -383,7 +383,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Atlassian Jira</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Atlassian Jira のコネクタ。 ほぼリアルタイムでオンプレミスの Jira インスタンスから、プロジェクト、案件、添付ファイル、コメント、作業ログ、問題の履歴、リンク、およびプロファイルをインデックス付けします。 コネクタは、Jira の組み込みのユーザーとグループの管理だけでなく、Active Directory およびその他のディレクトリサービスに基づく Jira インストールを完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Atlassian Jira のコネクタ。 ほぼリアルタイムでオンプレミスの Jira インスタンスから、プロジェクト、案件、添付ファイル、コメント、作業ログ、問題履歴、リンク、およびプロファイルにインデックスを付けます。 コネクタは、Jira の組み込みのユーザーとグループの管理だけでなく、Active Directory およびその他のディレクトリサービスに基づく Jira インストールを完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-jira-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -399,7 +399,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Atlassian Jira Cloud</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Atlassian Jira Cloud のコネクタ。 ほぼリアルタイムでオンプレミスの Jira インスタンスから、プロジェクト、案件、添付ファイル、コメント、作業ログ、問題の履歴、リンク、およびプロファイルをインデックス付けします。 コネクタは、Jira Cloud の組み込みユーザーおよびグループ管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Atlassian Jira Cloud のコネクタ。 ほぼリアルタイムでオンプレミスの Jira インスタンスから、プロジェクト、案件、添付ファイル、コメント、作業ログ、問題履歴、リンク、およびプロファイルにインデックスを付けます。 コネクタは、Jira Cloud の組み込みユーザーおよびグループ管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-jira-cloud-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -450,7 +450,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Azure Event Hub</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Fetc は、Azure stream からのイベントハブコネクタを追加し、オプションの変換を実行した後にそれを送信します。</p>
+                        <p>イベントハブコネクタは、Azure ストリームからイベントを取得し、オプションの変換の実行後にそれらを送信します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Events+Hub+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -517,7 +517,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>検索ボックス</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Box connector は、ボックスリポジトリからコンテンツをクロールします。 このコネクタは、RESTful API (コンテンツ API の基本2.0 バージョン) を使用して、サポートされている要素を取得します。認証は、OAuth 2 を使用する Box API を使用します。 各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
+                        <p>Box connector は、ボックスリポジトリからコンテンツをクロールします。 このコネクタは、RESTful API (コンテンツ API の基本2.0 バージョン) を使用して、サポートされている要素を取得します。認証では、Box API (OAuth 2 を使用) を使用します。 各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Box++Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -568,7 +568,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Deltek</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Deltek ビジョンコネクタは、ソースシステムのセキュリティを確保し、フルクロールと増分クロールの両方を提供して、ユーザーが常に最新情報を利用できるようにします。 Deltek 構想から Azure、SharePoint Online または SharePoint 2016/2013 にコンテンツをインデックス処理することで、SmartHub を使用して、ユーザーが統合された検索結果を提供できるようになります。</p>
+                        <p>Deltek ビジョンコネクタは、ソースシステムのセキュリティを確保し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。 Deltek 構想から Azure、SharePoint Online、または SharePoint 2016/2013 にコンテンツをインデックス処理することにより、ユーザーに統合された検索結果を提供するために BA SmartHub を使用して it を提示します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/deltek-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -791,7 +791,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>GitLab</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>GitLab のコネクタ。 GitLab からほぼリアルタイムで GitLab から、プロジェクト、ファイル、フォルダー、コミットメッセージ、問題、wiki ページのインデックスを付けます。 コネクタは、GitLab の組み込みユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>GitLab のコネクタ。 ほぼリアルタイムで GitLab から、プロジェクト、ファイル、フォルダー、コミットメッセージ、問題、wiki ページのインデックスを付けます。 コネクタは、GitLab の組み込みユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-gitlab-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -909,7 +909,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>IBM 接続</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>IBM connections コネクタは、IBM 接続のために特に開発され、接続アプリケーションへのセキュリティで保護された接続を確立し、コンテンツとメタデータと添付ファイルを接続スキーマから検索エンジンスキーマにマッピングしていました。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
+                        <p>IBM Connections コネクタは、IBM 接続用に特に開発され、接続アプリケーションへのセキュリティで保護された接続を確立し、コンテンツ (メタデータおよび添付ファイルを含む) を接続スキーマから検索エンジンスキーマにマッピングしたものです。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -944,7 +944,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>IBM 接続クラウド</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>IBM 接続クラウドのコネクタ。 [インデックス] パブリックおよび個人用ファイル、ブログ、wiki、フォーラム、コミュニティ、プロファイル、および状態の更新は、ほぼリアルタイムで接続クラウドから更新されます。 コネクタは、クラウドの組み込みユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>IBM 接続クラウドのコネクタ。 ほぼリアルタイムで接続クラウドからのパブリックおよび個人用ファイル、ブログ、wiki、フォーラム、コミュニティ、プロファイル、およびステータス更新のインデックスを設定します。 コネクタは、クラウドの組み込みユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-ibm-connections-cloud-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -995,7 +995,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>IBM FileNet P8</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>IBM FileNet Content Manager Connector を使用すると、SharePoint とその他のポータルユーザーが、FileNet リポジトリに格納されているコンテンツを安全に検索できます。コンテンツへのアクセスは、FileNet で確立されたセキュリティによって決まります。これにより、他のポータルを介してアクセスする際に、そのコンテンツを FileNet 内で直接使用することができます。</p>
+                        <p>IBM FileNet Content Manager Connector を使用すると、SharePoint とその他のポータルユーザーが、FileNet リポジトリに格納されているコンテンツを安全に検索できます。 コンテンツへのアクセスは、FileNet で確立されたセキュリティによって決まります。これにより、他のポータルを介してアクセスする際に、そのコンテンツを FileNet 内で直接使用することができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-filenet-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1129,7 +1129,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Jive</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Jive のコネクタ。 ほぼリアルタイムで、ディスカッション、投票、ファイル、ブログ、スペース、グループ、プロジェクト、タスク、ビデオ、メッセージ、アイデア、プロファイル、および進捗状況の更新を社内およびクラウドホスト型の Jive インスタンスから行います。 コネクタは、Jive の組み込みのユーザーとグループの管理を完全にサポートしており、Jive のネイティブの認証モデル、OAuth、および基本認証をサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Jive のコネクタ。 ほぼリアルタイムで、ディスカッション、投票、ファイル、ブログ、スペース、グループ、プロジェクト、タスク、ビデオ、メッセージ、アイデア、プロファイル、および進捗状況の更新を社内およびクラウドホスト型の Jive インスタンスから実行します。 コネクタは、Jive の組み込みのユーザーとグループの管理を完全にサポートし、Jive のネイティブ認証モデル、OAuth、および基本認証をサポートします。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-jive-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1148,7 +1148,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Kafka</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Kafka connector の fetc メッセージストリームから、省略可能な変換を実行した後に送信されたメッセージを送信します。</p>
+                        <p>Kafka コネクタは、Kafka メッセージストリームからメッセージをフェッチし、オプションの変換を実行した後にそれらを送信します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Kafka+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1164,7 +1164,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Kinesis</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Kinesis コネクタは、Amazon Kinesis データストリームからの fetc データを送信し、オプションの変換を実行した後にそれらを送信します。</p>
+                        <p>Kinesis コネクタは、Amazon Kinesis データストリームからデータをフェッチし、オプションの変換を実行した後にそれらを送信します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Kinesis+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1180,7 +1180,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>LDAP</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>LDAP コネクタを使用すると、組織は LDAP に準拠した任意のディレクトリに接続して、その中の任意のレコードにインデックスを作成できます。 組織はディレクトリの特定のサブセットにフィルターを適用し、特定のフィールドのみを取得できるため、ディレクトリ内の任意の場所に格納されているユーザー、契約、グループを簡単に検索できます。</p>
+                        <p>LDAP コネクタを使用すると、組織は LDAP に準拠した任意のディレクトリに接続して、その中の任意のレコードにインデックスを作成できます。 組織はディレクトリの特定のサブセットにフィルターを適用し、特定のフィールドのみを取得できるため、ディレクトリ内の任意の場所に格納されているユーザー、連絡先、またはグループを簡単に検索できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1199,7 +1199,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>LDAP</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>LDAP 互換のディレクトリサービス用コネクタ。 Active Directory、Novell 電子メールディレクトリ、およびその他の LDAP 互換ディレクトリサービスから、ほぼリアルタイムで LDAP オブジェクトをインデックス処理します。 このコネクタは、取り込むのプリンシパルに対して、専門家、機材、場所の検索、カスタムデータソースのセキュリティによるトリミングの実装などの用途に使用するために、Microsoft Search に対して使用できます。 コネクタが SSL 経由の LDAP をサポートしている。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>LDAP 互換のディレクトリサービス用コネクタ。 Active Directory、Novell E ディレクトリ、およびその他の LDAP 互換ディレクトリサービスから、ほぼリアルタイムで LDAP オブジェクトをインデックス処理します。 このコネクタは、取り込むのプリンシパルに対して、専門家、装置、場所の検索などのユースケース、またはカスタムデータソースのセキュリティによるトリミングを実装するために使用できます。 コネクタが SSL 経由の LDAP をサポートしている。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-ldap-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1215,7 +1215,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>LegalKEY</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>BA 洞察の OpenText LegalKEY Connector は、LegalKEY 内のクライアントおよび部分レコードの完全なテキストとメタデータの両方を Microsoft search エンジンに安全にインデックス処理することにより、複数のリポジトリのコンテンツにわたる単一の検索可能な結果セットを可能にします。 これにより、組織は LegalKEY、SharePoint、およびその他のリポジトリ内でアクセス可能な豊富な情報を利用できるようになるため、検索を通じてユーザーがすぐにデータを操作できるようになります。</p>
+                        <p>BA 洞察の OpenText LegalKEY Connector は、LegalKEY 内のクライアントおよび部分レコードの完全なテキストとメタデータの両方を Microsoft search エンジンに安全にインデックス処理することにより、複数のリポジトリのコンテンツにわたる単一の検索可能な結果セットを可能にします。 これにより、組織は LegalKEY、SharePoint、およびその他のリポジトリ内でアクセス可能な豊富な情報を利用できるようになるため、検索を通じてユーザーがすぐにデータを操作できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/legalkey-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1282,7 +1282,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>MediaPlatform PrimeTime</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>BA 洞察の MediaPlatform PrimeTime indexing connector を使用すると、組織のエンタープライズ検索プラットフォームを使用して、ユーザーがコンテンツにアクセスできるようになり、コネクタと BA 洞察の SmartHub が結び付けられます。 BA insights MediaPlatform PrimeTime コネクタは、メディアおよびビデオに関する情報を MediaPlatform PrimeTime から取得し、Microsoft Search を使用してインデックスを作成します。</p>
+                        <p>BA 洞察の MediaPlatform PrimeTime indexing connector を使用すると、組織のエンタープライズ検索プラットフォームを使用して、ユーザーがコンテンツにアクセスできるようになり、コネクタと BA 洞察の SmartHub が結び付けられます。 BA insights MediaPlatform PrimeTime コネクタは、メディアおよびビデオに関する情報を MediaPlatform PrimeTime から取得し、それらを Microsoft Search でインデックス付けします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/mediaplatform-primetime-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1317,7 +1317,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>マイクロフォーカスコンテンツマネージャー (HPE Records Manager/HP TRIM)</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>HP TRIM Connector は、特に HP Records Manager 用に開発され、トリミングアプリケーションへのセキュリティで保護された接続を確立し、コンテンツとメタデータおよび添付ファイルを、TRIM スキーマから検索エンジンスキーマにマッピングします。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
+                        <p>HP TRIM Connector は、特に HP Records Manager 用に開発され、トリミングアプリケーションに対してセキュリティで保護された接続を確立し、コンテンツ (メタデータおよび添付ファイルを含む) を TRIM スキーマから検索エンジンスキーマにマッピングしていました。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/hp-trim-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1333,7 +1333,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Microsoft Azure AD</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>コネクタは、Graph API を使用して Azure Active Directory オブジェクトをインデックス付けします。 このコネクタは、専門家、機材、場所の検索、カスタムデータソースと共に事前バインディングセキュリティのトリミングを実装するための取り込むプリンシパルに対して、ほぼリアルタイムで Microsoft Search に対して使用できます。 コネクタは O365 に対するフェデレーション認証をサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>コネクタは、Graph API を使用して Azure Active Directory オブジェクトをインデックス付けします。 このコネクタは、取り込むのプリンシパルに対してリアルタイムで Microsoft Search に対して使用することができます。エキスパート、装置、場所の検索などのユースケースでは、カスタムデータソースと共に事前バインディングセキュリティトリミングを実装します。 コネクタは O365 に対するフェデレーション認証をサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-azure-ad-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1352,7 +1352,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Microsoft SharePoint</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>SharePoint オンプレミスインスタンス用のコネクタ。 サイト、web、モダン (SharePoint 2016 以降) および従来のページ、wiki ページ、OneNote ドキュメント、リストアイテム、タスク、予定表アイテム、添付ファイル、およびファイルのインデックスをほぼリアルタイムで表示します。 コネクタは、SharePoint の組み込みのユーザーとグループの管理を完全にサポートするだけでなく、Active Directory を使用したインストールや、SiteMinder や Okta のような OAuth プロバイダーもサポートします。 コネクタには、基本認証、NTLM 認証、Kerberos 認証のサポートが用意されています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>SharePoint オンプレミスインスタンス用のコネクタ。 サイト、web、モダン (SharePoint 2016 以降) およびクラシックページ、wiki ページ、OneNote ドキュメント、リストアイテム、タスク、予定表アイテム、添付ファイル、およびファイルをほぼリアルタイムでインデックスにします。 コネクタは、SharePoint の組み込みのユーザーとグループの管理を完全にサポートするだけでなく、Active Directory を使用したインストールや、SiteMinder や Okta のような OAuth プロバイダーもサポートします。 コネクタには、基本認証、NTLM 認証、Kerberos 認証のサポートが用意されています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-sharepoint-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1368,7 +1368,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Microsoft SQL Server</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>データベースコネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。  ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行い、ユーザーが常に最新の情報を利用できるようにします。</p>
+                        <p>データベースコネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。 ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行うので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1404,7 +1404,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Microsoft Yammer</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Yammer のコネクタ。 ほぼリアルタイムで、Yammer からのチャネル、投稿、返信、添付ファイル、投票、アナウンスをインデックス処理します。 コネクタは、Yammer の組み込みのユーザーとグループの管理を完全にサポートします。また、O365 に向かって特定のフェデレーション認証を行うことができます。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Yammer のコネクタ。 ほぼリアルタイムで Yammer からのチャネル、投稿、返信、添付ファイル、投票、アナウンスをインデックス処理します。 コネクタは、Yammer の組み込みのユーザーとグループの管理を完全にサポートします。また、O365 に向かって特定のフェデレーション認証を行うことができます。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-yammer-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1420,7 +1420,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>MySQL</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>MySQL コネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。  ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行い、ユーザーが常に最新の情報を利用できるようにします。</p>
+                        <p>MySQL コネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。 ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行うので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/mysql-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1436,7 +1436,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>NetDocuments</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>NetDocuments コネクタは、ユーザーが自分のポータル内から直接 NetDocuments コンテンツを検索して取得できるように、Netdocuments に格納されているコンテンツにインデックスを付けます。  コネクタは NetDocs でドキュメントのセキュリティを自動的に Microsoft Search に適用するので、ユーザー情報は安全なままになります。  NetDocuments に格納されたメタデータは、ユーザーがシームレスな検索機能を持つように、同等の用語にマップすることができます。</p>
+                        <p>NetDocuments コネクタは、ユーザーが自分のポータル内から直接 NetDocuments コンテンツを検索して取得できるように、Netdocuments に格納されているコンテンツにインデックスを付けます。 コネクタは NetDocs でドキュメントのセキュリティを自動的に Microsoft Search に適用するので、ユーザー情報は安全なままになります。 NetDocuments に格納されたメタデータは、ユーザーがシームレスな検索機能を持つように、同等の用語にマップすることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/netdocuments-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1455,7 +1455,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Nuxeo</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Nuxeo コネクタを使用すると、Office 365 にあるサイドコンテンツに沿って、セキュリティ情報とコンテンツに関する標準およびカスタムメタデータの両方を含む Nuxeo コンテンツを組織にインデックス付けできます。 最終的には、ユーザーは必要なすべての情報を1か所で見つけることができます。</p>
+                        <p>Nuxeo コネクタを使用すると、組織は、セキュリティ情報とコンテンツに設定された標準およびカスタムメタデータの両方を、Office 365 にあるコンテンツと共に Microsoft Search にインデックス付けすることができます。 最終的には、ユーザーは必要なすべての情報を1か所で見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/2/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1506,7 +1506,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>OpenText Content Server</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>OpenText ContentServer のコネクタ。 ほぼリアルタイムのコンテンツサーバーインスタンスから、ファイル、フォルダー、仮想フォルダー、複合ドキュメント、ニュース、電子メール、ボリューム、コレクション、分類、およびその他の多くのオブジェクトをインデックス処理します。 コネクタは、OpenText ContentServer の組み込みユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>OpenText ContentServer のコネクタ。 ほぼリアルタイムで Content Server インスタンスのファイル、フォルダー、仮想フォルダー、複合ドキュメント、ニュース、電子メール、ボリューム、コレクション、分類、およびその他の多くのオブジェクトをインデックス処理します。 コネクタは、OpenText ContentServer の組み込みユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-opentext-content-server-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1538,7 +1538,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>OpenText Documentum</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Documentum 用コネクタ。 リポジトリ、フォルダー、およびファイルを、ほぼリアルタイムで Documentum からのメタデータおよびプロパティと共にインデックス付けします。 コネクタは、Documentum の組み込みのユーザーとグループの管理を完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Documentum 用コネクタ。 ほぼリアルタイムで Documentum からのメタデータとプロパティをリポジトリ、フォルダー、およびファイルにインデックス付けします。 コネクタは、Documentum の組み込みのユーザーとグループの管理を完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-documentum-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1557,7 +1557,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>OpenText eDOCS DM</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>OpenText eDOCS DM コネクタのユーザーは、Microsoft Search 内から直接 eDOCS リポジトリに格納されているコンテンツを検索することができ、必要なコンテンツを検索するために複数の検索を実行する必要がありません。  EDOCS 内で確立されたセキュリティは、アクセスが許可されているユーザーのみがコンテンツを認識できるように、コネクタによって維持されます。</p>
+                        <p>OpenText eDOCS DM コネクタのユーザーは、Microsoft Search 内から直接 eDOCS リポジトリに格納されているコンテンツを検索することができ、必要なコンテンツを検索するために複数の検索を実行する必要がありません。 EDOCS 内で確立されたセキュリティは、アクセスが許可されているユーザーのみがコンテンツを認識できるように、コネクタによって維持されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/edocs-dm-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1573,7 +1573,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>OpenText Livelink/RM</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>OpenText Livelink コネクタを使用すると、ユーザーは Livelink と Microsoft の両方のデータを1つのクエリで検索できます。  Livelink で定義されているセキュリティは検索機能に自動的に反映されるため、ユーザーが承認されているコンテンツのみが表示されるようになります。 最終的には、ユーザーは必要なすべての情報を1か所で見つけることができます。</p>
+                        <p>OpenText Livelink コネクタを使用すると、ユーザーは Livelink と Microsoft の両方のデータを1つのクエリで検索できます。 Livelink で定義されているセキュリティは検索機能に自動的に反映されるため、ユーザーが承認されているコンテンツのみが表示されるようになります。 最終的には、ユーザーは必要なすべての情報を1か所で見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/livelink-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1624,7 +1624,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Oracle WebCenter</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Webcenter Connector は、WebCenter を Microsoft Search と統合することで、組織全体のユーザーが、直接ログインしたり、別の検索を実行したりしなくても、WebCenter に格納されている重要な情報を簡単に見つけることができます。</p>
+                        <p>WebCenter Connector は、WebCenter を Microsoft Search と統合します。これにより、組織全体のユーザーは、直接ログインして別の検索を実行しなくても、WebCenter に格納されている重要な情報を簡単に見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/oracle-webcenter-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1640,7 +1640,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Oracle WebCenter コンテンツ (UCM/Stellent</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>WebCenter コンテンツコネクタは、Microsoft Search で利用可能になったすべてのコンテンツの基礎となるセキュリティを完全にサポートし、予定されたクロールによってこのコンテンツを最新の状態に保つことで、ユーザーが検索を実行するときに最新の更新プログラムを取得できるようにします。</p>
+                        <p>WebCenter コンテンツコネクタは、Microsoft Search で利用可能になったすべてのコンテンツの基礎となるセキュリティを完全にサポートしており、スケジュールされたクロールによってこのコンテンツを最新の状態に保つことで、ユーザーが検索を実行するときに最新の更新プログラムを取得できるようにします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/oracle-webcenter-content-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1659,7 +1659,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Pironet NDH pirobase CMS</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Pirobase CMS のコネクタ。 ほぼリアルタイムで pirobase CMS からのページ、添付ファイル、およびその他の生成されたドキュメントの種類のインデックスを作成します。 コネクタは、pirobase CMS ' 組み込みのユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Pirobase CMS のコネクタ。 ほぼリアルタイムで pirobase CMS から、ページ、添付ファイル、およびその他の生成されたドキュメントの種類をインデックス付けします。 コネクタは、pirobase CMS ' 組み込みのユーザーとグループの管理を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-pirobase-cms-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1675,7 +1675,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>PostgreSQL</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>BA 洞察の PostgreSQL コネクタは、ソースデータベースのセキュリティを強化し、フルクロールと増分クロールを実行して、ユーザーが常に最新情報を利用できるようにします。 これは、PostgreSQL からのコンテンツを Microsoft Search にインデックス付けし、BA を使用した検索結果をユーザーに提供するために、BA 洞察の SmartHub によってそのコンテンツを提示します。</p>
+                        <p>BA を使用した PostgreSQL コネクタは、ソースデータベースのセキュリティを強化し、フルクロールと増分クロールを提供するので、ユーザーは常に最新の情報を利用できるようになります。 これは、PostgreSQL からのコンテンツを Microsoft Search にインデックス付けし、BA を使用した検索結果をユーザーに提供するために、BA 洞察の SmartHub によってそのコンテンツを提示します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/postgresql-connector-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1710,7 +1710,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>リレーショナルデータベース</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>サードパーティの JDBC ドライバーを使用して、リレーショナルデータベースからコンテンツをクロールします。 更新プログラムは自動的に識別されるか、更新テーブルを使用します。 SQL select ステートメントを使用して、送信されるデータを制御します。 アクセス制御リストは、返される列から抽出できます。</p>
+                        <p>サードパーティの JDBC ドライバーを使用して、リレーショナルデータベースからコンテンツをクロールします。 更新プログラムは自動的に識別されるか、更新テーブルを使用します。 SQL select ステートメントを使用して、送信されるデータを制御します。 アクセス制御リストは、返された列から抽出できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Relational+Databases"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1742,7 +1742,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Salesforce</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Salesforce connector は、任意の Salesforce 夏 ' 16 (バージョン 37) からコンテンツをクロールします。 コネクタは、SOAP API を使用してサポートされている要素と、ユーザーの Salesforce チャターフィードを REST API を使用して取得します。</p>
+                        <p>Salesforce connector は、任意の Salesforce 夏 ' 16 (バージョン 37) からコンテンツをクロールします。 このコネクタは、REST API を使用して、SOAP API とユーザーの Salesforce チャターフィードを使用して、サポートされている要素を取得します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Salesforce+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1777,7 +1777,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Salesforce</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Salesforce コネクタは、Salesforce のサービス、Sales、Marketing Cloud を Microsoft Search と統合して、Salesforce 内のすべてのコンテンツをこのポータルを介してすべての従業員が利用できるようにします。</p>
+                        <p>Salesforce コネクタは、Salesforce のサービス、販売、マーケティングクラウドを Microsoft Search と統合し、Salesforce 内のすべてのコンテンツをこのポータルを介してすべての従業員が利用できるようにします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/salesforce-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1793,7 +1793,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>SAP ERP</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>BA 洞察の SAP ERP コネクタは、SAP から検索インデックスにアイテムを取り込むように設計されています。  これにより、UI が点灯し、SAP、SharePoint、およびその他のシステムの情報にわたる統合ビューを使用できるようになります。</p>
+                        <p>BA 洞察の SAP ERP コネクタは、SAP から検索インデックスにアイテムを取り込むように設計されています。 これにより、UI が点灯し、SAP、SharePoint、およびその他のシステムの情報にわたる統合ビューを使用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sap-erp-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1812,7 +1812,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>SAP HANA</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>SAP HANA コネクタは、ソースデータベースのセキュリティを強化し、フルクロールと増分クロールの両方を提供して、ユーザーが常に最新の情報を利用できるようにします。 SAP HANA から Microsoft Search にコンテンツをインデックス処理して、BA を使用した検索結果をユーザーに提供するために、BA 洞察の SmartHub によってそのコンテンツを提示します。</p>
+                        <p>SAP HANA コネクタは、ソースデータベースのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。 SAP HANA から Microsoft Search にコンテンツをインデックス処理して、BA を使用した検索結果をユーザーに提供するために、BA 洞察の SmartHub によってそのコンテンツを提示します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sap-hana-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1828,7 +1828,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>SAP NetWeaver ポータル</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>SAP NetWeaver ポータルのコネクタ。 SAP NetWeaver ポータル、KMC、および PDC 領域のページ、添付ファイル、およびその他のドキュメントの種類を、ほぼリアルタイムでインデックス化します。 コネクタは、SAP NWP の組み込みのユーザーとグループの管理に加えて、Active Directory やその他のディレクトリサービスに基づく NWP インストールを完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>SAP NetWeaver ポータルのコネクタ。 ページ、添付ファイル、およびその他のドキュメントの種類を SAP NetWeaver ポータル、KMC、および PDC 領域からほぼリアルタイムにインデックス化します。 コネクタは、SAP NWP の組み込みのユーザーとグループの管理に加えて、Active Directory やその他のディレクトリサービスに基づく NWP インストールを完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-sap-netweaver-portal-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1895,7 +1895,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>ServiceNow</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>ServiceNow のコネクタ。 問題、タスク、添付ファイル、KM の記事、ページなどを、ほぼリアルタイムで ServiceNow からのインデックスとしてインデックス付けします。 コネクタは、ServiceNow の組み込みユーザーとグループの管理をサポートしています。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>ServiceNow のコネクタ。 問題、タスク、添付ファイル、KM の記事、およびページを、ほぼリアルタイムで ServiceNow から、他のユーザーとの間でインデックス処理します。 コネクタは、ServiceNow の組み込みユーザーとグループの管理をサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-servicenow-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1914,7 +1914,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>SharePoint 2013</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint 2013 コネクタは、SharePoint 2013 サイトコレクションの URL からコンテンツをクロールします。コネクタは、リスト、ページ、およびサイトをサポートしており、自動または SharePoint の変更ログを使用して更新を識別します。</p>
+                        <p>SharePoint 2013 コネクタは、SharePoint 2013 サイトコレクションの URL からコンテンツをクロールします。コネクタは、リスト、ページ、およびサイトをサポートし、更新プログラムは自動的に、または SharePoint 変更ログを使用して識別されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2013+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1930,7 +1930,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>SharePoint 2016</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint 2016 コネクタは、SharePoint 2016 サイトコレクションの URL からコンテンツをクロールします。コネクタはリスト、ページ、およびサイトをサポートしており、自動または SharePoint 変更ログを使用して識別されます。</p>
+                        <p>SharePoint 2016 コネクタは、SharePoint 2016 サイトコレクションの URL からコンテンツをクロールします。コネクタは、リスト、ページ、およびサイトをサポートし、更新プログラムは自動的に、または SharePoint 変更ログを使用して識別されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2016+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1946,7 +1946,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint Online コネクタは、SharePoint Online サイトコレクションの URL からコンテンツをクロールします。コネクタは、サイト、リスト、フォルダー、リストアイテムと添付ファイル、およびその他のページ (.aspx 形式) を取得します。 このコネクタは、Microsoft O365 オファーリングで実行されている SharePoint をサポートします。 Sharepoint のオンプレミスオファーリングのクロールのサポートは、SharePoint 2010/2007 コネクタおよび SharePoint 2013 コネクタでサポートされています。</p>
+                        <p>SharePoint Online コネクタは、SharePoint Online サイトコレクションの URL からコンテンツをクロールします。コネクタは、サイト、リスト、フォルダー、リストアイテム、および添付ファイルとその他のページ (.aspx 形式) を取得します。 このコネクタは、Microsoft O365 オファーリングで実行されている SharePoint をサポートします。 Sharepoint のオンプレミスオファーリングのクロールのサポートは、SharePoint 2010/2007 コネクタおよび SharePoint 2013 コネクタでサポートされています。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1965,7 +1965,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Sitecore</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Sitecore コネクタは、ソースシステムのセキュリティを強化し、フルクロールと増分クロールの両方を提供します。これにより、ユーザーは常に最新の情報を利用できるようになります。</p>
+                        <p>Sitecore コネクタは、ソースシステムのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sitecore-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1997,7 +1997,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>総</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>余裕期間のコネクタは、Microsoft Search を使用して余裕期間のコンテンツを効率的に同期します。 これにより、すべてのパブリックチャネルからのメッセージ、スレッド、共有ファイルのインデックスが堅牢になります。 ほぼすべてのリアルタイムで。 コネクタを使用すると、すべてのドキュメントに包括的なメタデータセットが付属しているので、最適な検索機能を開発できます。 鮮やかな環境であっても、余裕期間コネクタはすべての変更を追跡し、更新された検索インデックスを保証します。</p>
+                        <p>余裕期間のコネクタは、Microsoft Search を使用して余裕期間のコンテンツを効率的に同期します。 これにより、ほぼリアルタイムですべてのパブリックチャネルからメッセージ、スレッド、および共有ファイルのインデックスが堅牢になります。 コネクタは、すべてのドキュメントに包括的なメタデータセットが付属していることを保証します。これにより、最適な検索機能を開発できます。 鮮やかな環境であっても、余裕期間コネクタはすべての変更を追跡し、更新された検索インデックスを保証します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-slack-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2048,7 +2048,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>SMTP</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SMTP コネクタは、それに送信される電子メールを処理します。 電子メールと添付ファイルは、[宛先]、[差出人]、[件名] などのメタデータを使用して送信されます。</p>
+                        <p>SMTP コネクタは、それに送信された電子メールを処理します。 電子メールと添付ファイルは、「宛先」、「差出人」、および「件名」などのメタデータを使用して送信されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2083,7 +2083,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>任意の SQL ベースの CRM システム</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>SQL Server コネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。  ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行い、ユーザーが常に最新の情報を利用できるようにします。</p>
+                        <p>SQL Server コネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。 ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行うので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2118,7 +2118,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Symantec Enterprise Vault</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>エンタープライズヴォールト用コネクタ。 電子メール、添付ファイル、ファイル、予定表アイテム、連絡先などのアーカイブされたデータをほぼリアルタイムでインデックス化します。 コネクタはエンタープライズ Vault の認証モデル基本、NTLM、Kerberos 認証を完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>エンタープライズヴォールト用コネクタ。 電子メール、添付ファイル、ファイル、予定表アイテム、連絡先などのアーカイブされたデータをほぼリアルタイムでインデックス化します。 コネクタはエンタープライズ Vault の認証モデル基本、NTLM、Kerberos 認証を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2134,7 +2134,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>TeamForge チームの偽造</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>TeamForge コネクタは、SOAP サービスを通じて TeamForge サーバーからコンテンツをクロールします。</p>
+                        <p>TeamForge コネクタは、SOAP サービスを使用して、TeamForge サーバーからコンテンツをクロールします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/TeamForge+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2150,7 +2150,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Twitter</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Twitter connector は、Twitter フィードからコンテンツをクロールします。 ツイートのテキストとメタデータ (URL リンク、地域の場所、ハッシュタグなど) を収集します。</p>
+                        <p>Twitter connector は、Twitter フィードからコンテンツをクロールします。 URL リンク、地域の場所、ハッシュタグを含むツイートのテキストとメタデータを収集します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Twitter+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2185,7 +2185,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                        <h3>Veritas Enterprise Vault</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>エンタープライズヴォールト用コネクタ。 電子メール、添付ファイル、ファイル、予定表アイテム、連絡先などのアーカイブされたデータをほぼリアルタイムでインデックス化します。 コネクタはエンタープライズ Vault の認証モデル基本、NTLM、Kerberos 認証を完全にサポートします。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>エンタープライズヴォールト用コネクタ。 電子メール、添付ファイル、ファイル、予定表アイテム、連絡先などのアーカイブされたデータをほぼリアルタイムでインデックス化します。 コネクタはエンタープライズ Vault の認証モデル基本、NTLM、Kerberos 認証を完全にサポートしています。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2201,7 +2201,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Veritas Enterprise Vault (Symantec eVault)</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Veritas Enterprise Vault Connector は、ソースシステムのセキュリティを強化し、フルクロールと増分クロールを実行します。これにより、ユーザーは常に最新の情報を利用できるようになります。</p>
+                        <p>Veritas Enterprise Vault Connector は、ソースシステムのセキュリティを強化し、フルクロールと増分クロールを提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/enterprise-vault-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2220,7 +2220,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Web クローラー</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Aspider Web クローラーコネクタは、1つ以上の web サイトからコンテンツをクロールします。 コンテンツは、サーバーによって提供されるすべてのメタデータと共に送信されます。 </p>
+                        <p>Aspider Web クローラーコネクタは、1つ以上の web サイトからコンテンツをクロールします。 コンテンツは、サーバーによって提供されるすべてのメタデータと共に送信されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Aspider+Web+Crawler"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2287,7 +2287,7 @@ ms.locfileid: "44326841"
                     <div class="cardText">
                         <h3>Yammer</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Yammer コネクタは、送信者、グループ、スレッドの詳細など、Yammer のメッセージとメタデータからコンテンツをクロールします。 このメソッドは、指定された AEM サーバーにアクセスできる任意のコンピューターから実行し、必要に応じてコンテンツ fetc および接続調整をサポートします。</p>
+                        <p>Yammer コネクタは、送信者、グループ、スレッドの詳細など、Yammer のメッセージとメタデータからコンテンツをクロールします。 このメソッドは、AEM サーバーにアクセスできる任意のコンピューターから実行され、必要に応じてコンテンツのフェッチと接続調整をサポートします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Yammer+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
