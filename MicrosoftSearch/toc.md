@@ -31,6 +31,7 @@
 ## [SharePoint での Microsoft Search](get-started-search-in-sharepoint-online.md)
 ## Bing での Microsoft Search
 ### [セキュリティとプライバシー](security-for-search.md)
+### [イントラネット サイトに検索ボックス追加する](add-a-search-box-to-your-intranet-site.md)
 ### [Microsoft Edge を既定のブラウザーにする](set-default-browser.md)
 ### [Bing を既定の検索エンジンにする](set-default-search-engine.md)
 ### [Bing.com を既定のホーム ページにする](set-default-homepage.md)
