@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用のファイル共有コネクタを設定します。
-ms.openlocfilehash: ece8997138182c1cd4ac7230aa2a3501af912933
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 2349ad753508d5f19a70648d9cbf1df495b27108
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699783"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861096"
 ---
-# <a name="the-file-share-connector-for-microsoft-search"></a>Microsoft Search のファイル共有コネクタ
+# <a name="file-share-connector"></a>ファイル共有コネクタ
 
 ファイル共有コネクタを使用すると、組織内のユーザーはオンプレミスのファイル共有を検索できます。 これらの共有からの検索結果は、 [SharePoint](http://sharepoint.com/)および[Microsoft OneDrive for business](https://onedrive.live.com/about/business/)からの結果とマージされます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "38699783"
 
 2. [SharePoint Online 管理シェル](https://www.microsoft.com/download/details.aspx?id=35588)をインストールします。
 
-3. SharePoint Online 管理シェルを管理者として開き、に`C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll`ある**Microsoft sharepoint. .dll**モジュールをインポートします。
+3. 管理者として SharePoint Online Management Shell を開き、にある**Microsoft.SharePoint.Client.dll**モジュールをインポートし `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll` ます。
 
 > [!NOTE]
 > このパスは、すべてのユーザーに対して同じであるとは限りません。
@@ -89,7 +89,7 @@ Write-Host "Success" -ForegroundColor Cyan
 Read-Host -Prompt 'Press enter to exit'
 ```
 
-5. [Microsoft PowerShell](https://microsoft.com/powershell)で必要な値 (組織名、ユーザー名、パスワード、サイト URL など) を入力します。 **たとえば**、管理者の資格情報が`admin@a830edad9050849823J19081300.onmicrosoft.com`の場合、組織名は**a830edad9050849823J19081300**になり、サイトの URL は`https:// a830edad9050849823J19081300.sharepoint.com`になります。
+5. [Microsoft PowerShell](https://microsoft.com/powershell)で必要な値 (組織名、ユーザー名、パスワード、サイト URL など) を入力します。 **たとえば**、管理者の資格情報がの場合、 `admin@a830edad9050849823J19081300.onmicrosoft.com` 組織名は**a830edad9050849823J19081300**になり、サイトの URL はに `https:// a830edad9050849823J19081300.sharepoint.com` なります。
 
 > [!NOTE]
 > **Allproperties**の設定は、サイトコレクションレベル (Teams/Comms サイト) でのみ実行できます。

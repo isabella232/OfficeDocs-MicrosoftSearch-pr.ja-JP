@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Microsoft SQL server または Azure SQL connector をセットアップします。
-ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604403"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850900"
 ---
-# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL server および Azure SQL connector
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL および Microsoft SQL server コネクタ
 
 Microsoft SQL server または Azure SQL コネクタを使用すると、組織は、オンプレミスの SQL Server データベースまたはクラウド内の Azure SQL インスタンスでホストされているデータベースのデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 これらの SQL コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
 
@@ -34,7 +34,7 @@ Microsoft SQL server コネクタをデータソースに接続するには、�
 Azure SQL コネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQL コネクタは、データベースに接続するための Azure Active Directory Open ID connect (OIDC) 認証のみをサポートしています。
 
 > [!NOTE]
-> データベースに接続するには、データベースで SQL server バージョン2008以降を実行する必要があります (Microsoft SQL server connector)
+> データベースで接続するには、Microsoft SQL server connector の SQL server バージョン2008以降を実行する必要があります。
 
 データベースコンテンツを検索するには、コネクタを構成するときに SQL クエリを指定する必要があります。 これらの SQL クエリは、すべての列を取得するために実行する必要があるすべての SQL 結合を含む、インデックスを作成するすべてのデータベース列に名前を付ける必要があります (つまり、ソースプロパティ)。 検索結果へのアクセスを制限するには、コネクタを構成するときに SQL クエリ内でアクセス制御リスト (Acl) を指定する必要があります。
 

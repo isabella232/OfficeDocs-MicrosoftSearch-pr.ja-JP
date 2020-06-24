@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft が開発したコネクタを Microsoft Search 用に構成する
-ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702760"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850891"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -26,6 +26,8 @@ ms.locfileid: "44702760"
 この記事では、Microsoft によって作成されたコネクタを構成する手順について説明します。 この記事では、Microsoft 365[管理センター](https://admin.microsoft.com)での接続のセットアップフローについて説明します。 特定の Microsoft が作成したコネクタをセットアップする方法の詳細については、次の記事を参照してください。
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
+* [Azure SQL](MSSQL-connector.md)
 * [大企業の Web サイト](enterprise-web-connector.md)
 * [ファイル共有](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)

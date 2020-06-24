@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph のコネクタの概要
-ms.openlocfilehash: 0b5420eb4eb93eb257fab30f3e56a20e6456e1b3
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: 08ddb8e61606007c706134242e865459f0399b86
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604394"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850873"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph コネクタの概要
 
@@ -55,6 +55,12 @@ Microsoft Graph コネクタプレビューリリースには、6つの Microsof
 - **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)**。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは Azure Blob コンテナーに格納されているファイルとコンテンツを検索できます。 Azure Data Lake Storage Gen2 connector は、指定した Azure Data Lake Storage Gen2 アカウント内の階層が有効なフォルダーにもインデックスを作成します。
 詳細については、「 [Azure Data Lake Storage Gen2 connector](azure-data-lake-connector.md)」を参照してください。
 
+- **[Azure DevOps](https://azure.microsoft.com/services/devops)**。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは Azure DevOps インスタンスから作業項目を検索できます。
+詳細については、「 [Azure DevOps connector](azure-devops-connector.md)」を参照してください。
+
+- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)**。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは Azure SQL データベースからデータを検索できます。
+詳細については、「 [AZURE SQL connector](MSSQL-connector.md)」を参照してください。
+
 - **エンタープライズ web サイト**。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは、SharePoint 以外のエンタープライズ web サイト内のページを検索できます。
 詳細については、「[エンタープライズ web サイトコネクタ](enterprise-web-connector.md)」を参照してください。
 
@@ -85,8 +91,8 @@ Microsoft Graph コネクタプレビューリリースには、6つの Microsof
 
 ## <a name="license-requirements"></a>ライセンス要件
 
-検索結果のコネクタからのデータを表示するには、ユーザーは次の Microsoft 365 サブスクリプションのいずれかを所有している必要があります。
+検索結果のコネクタのデータを表示するには、次の Microsoft 365 または Office 365 のサブスクリプションのいずれかをユーザーに割り当てる必要があります。
 
-- [Microsoft 365 for enterprise E3 または E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+- [Microsoft 365 または Office 365 Enterprise E3 または E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
-- [Microsoft 365 エデュケーション A3 または A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+- [Microsoft 365 または Office 365 エデュケーション A3 または A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
