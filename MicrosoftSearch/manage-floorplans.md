@@ -1,5 +1,5 @@
 ---
-title: フロアプランを管理する
+title: 間取図を管理する
 ms.author: rasrivas
 author: rasrivas
 manager: tonytha
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のフロアプラン機能を使用すると、建物内の人、オフィス、その他の amenities をユーザーが見つけやすくなります。
-ms.openlocfilehash: c2b148ab1bdb7ff425d5f2b4524e9770f489a92a
-ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
+ms.openlocfilehash: e005767c255cb899793b6b4849882c7ec0561256
+ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "42824843"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44878244"
 ---
-# <a name="manage-floor-plans"></a>フロアプランを管理する
+# <a name="manage-floor-plans"></a>間取図を管理する
 
 **Microsoft Search**のフロアプランは、ユーザーが建物内の人物や会議室を見つけられるように支援します。 フロアプランでは、次の質問に回答します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "42824843"
 
 |**部屋のラベルを含むテキストラベル**|**スペースラベルのないテキストラベル**|**テキストラベルなし**|
 |:-----:|:-----:|:-----:|
-|![floorplans-textandroomlabels](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels](media/floorplans-nolabels.png)|
+|![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
 DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequently-asked-questions) 」セクションを参照してください。
 
@@ -54,7 +54,7 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 組織内の各ユーザーのオフィスの場所を追加または更新します。 Microsoft 365[管理センター](https://admin.microsoft.com)のユーザープロファイルでオフィスの場所を変更するか、オンプレミスの active directory を変更して Azure active directory と同期することができます。 *Physicaldeliveryofficename*は、office の場所として使用されるフィールドです。 部屋のラベルに床数字が含まれていない場合は、ヒントについての FAQ を参照してください。
 
 この例では、すべての office がビル2のフロア1の部屋1173にあります。
-![floorplans-userlestview](media/floorplans-userlistview.png)
+![floorplans-userlestview.png](media/floorplans-userlistview.png)
 
 > [!NOTE]
 > フロアプランを検索するときに更新された office の場所を表示するには、各フロアで少なくとも**10 人**のオフィスの場所を更新する必要があります。
@@ -63,13 +63,13 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 **Microsoft Search**を使用して、ユーザーを検索し、オフィスの場所が正しく表示されていることを確認します。 場所が更新されたばかりの場合は、更新プログラムが検索結果に表示されるまで最大**72 時間**待機する必要があります。
 
-![floorplans-peoplecard](media/floorplans-peoplecard.png)
+![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
 
 ### <a name="step-5-add-building-locations"></a>手順 5: 建物の場所を追加する
 
 フロアプランでは、[場所](manage-locations.md)を使用して建物を定義します。 Microsoft 365[管理センター](https://admin.microsoft.com)で、[**設定**] の  >  [**microsoft 検索**場所] に移動し、[  >  **Locations****追加**] を選択します。 建物の名前、アドレス、およびキーワードを入力します。 必要な数の建物を追加します。
 
-![floorplans-locations](media/floorplans-locations.png)
+![floorplans-locations.png](media/floorplans-locations.png)
 
 場所の詳細については、「[場所を管理](manage-locations.md)する」を参照してください。
 
@@ -79,7 +79,7 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 [管理センター](https://admin.microsoft.com)で、[**設定**] の [  >  **Microsoft 検索**  >  **フロアプラン**] に移動し、[**開始**] を選択します。 この通知が表示されていない場合、この手順は組織に対して既に完了しています。
 
-![floorplans_hydrationstep .png](media/floorplans_hydrationstep.png)
+![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>手順 7: フロアプランをアップロードする
 
@@ -88,21 +88,24 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 3. [**ファイルのアップロード**] を選択し、アップロードするフロアプランを選択します。
 4. アップロードが完了すると、フロアプランファイルに表示されるフロア番号を入力する必要があります。 [**次へ**] を選択します。
 5. オプションフロアに翼または領域がある場合は、その詳細を入力します。
-6. このフロアプランの建物コードを入力します。 構築コードは、ユーザーの office location プロパティにあります。 たとえば、ユーザーのオフィスの場所が**2/1173**の場合、建物のコードは**2**になります。
-7. オプションアップロードされたすべてのフロアプランの場所パターンを確認して特定し、[**次へ**] を選択します。
-8. フロアプランにマップされたオフィスの場所の一覧を示すレビュー画面が表示されます。 [**詳細**] を選択して、マッピングが正しいことを確認します。
-9. 準備が整ったら、[**発行**] を選択して、 **Microsoft Search**でフロアプランを使用できるようにします。
+6. フロアプランにマップされたオフィスの場所の一覧を示すレビュー画面が表示されます。 [**詳細**] を選択して、マッピングが正しいことを確認します。
+    - マップされているユーザーがない場合、またはマッピングに満足していない場合は、[**マッピングの続行**] を選択します。 発行するには、[**スキップして発行**] を選択します。
+7. このフロアプランの建物コードを入力します。 構築コードは、ユーザーの office location プロパティにあります。 たとえば、ユーザーのオフィスの場所が**2/1173**の場合、建物のコードは**2**になります。
+8. [確認] 画面で、手順6を繰り返して、マッピングが正しいことを確認します。
+9. オプションアップロードされたすべてのフロアプランの場所パターンを確認して特定し、[**次へ**] を選択します。
+10. [確認] 画面で、手順6を繰り返して、マッピングが正しいことを確認します。
+11. 準備が整ったら、[**発行**] を選択して、 **Microsoft Search**でフロアプランを使用できるようにします。
 
 > [!NOTE]
 > **フロアプランを公開するには、48時間かかります。** その後、ユーザーが共同作業者のオフィスを検索するときに、次のようなフロアプラン結果が表示されます。
 
-![floorplans-officelocation](media/floorplans-officelocation.png)
+![floorplans-officelocation.png](media/floorplans-officelocation.png)
 
 ### <a name="step-8-optional-specify-location-patterns"></a>手順 8: (オプション) 場所のパターンを指定する
 
 フロアプランをアップロードすると、テキストラベルがユーザーのプロファイル内のオフィスの場所と比較されます。 一致するものが10未満の場合は、[**場所のパターンの指定**] 画面が表示されます。 場所パターンは、オフィスの場所からフロア、ウィング、および部屋情報を抽出するために使用されます。
 
-![floorplans-locationpattern](media/floorplans-locationpattern.png)
+![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
 
 必要に応じて場所を省略することができますが、フロアと主翼は省略可能です。
 
@@ -112,14 +115,14 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-|**手順**|**エラー メッセージ**|**種類**|**Action**|
+|**手順**|**エラー メッセージ**|**型**|**Action**|
 |:-----|:-----|:-----|:-----|
 |フロアプランをアップロードする|CC_1 .dwg を読み取ることができません。 フロアプランを再アップロードまたは削除してください。|Error|ファイルをもう一度アップロードしてください。 それでも問題が解決しない場合は、ファイルを削除して、もう一度実行してください。|
 |フロアプランをアップロードする|CC_1 .dwg という名前のファイルが2つあります。 いずれかを削除するか、別の名前で再アップロードしてください。|Error|ファイル名が正しくない場合は、floor またはウィング情報を追加してファイル名を一意にしてから、もう一度ファイルをアップロードしてください。 同じファイルを重複して追加した場合は、そのファイルを削除するだけです。|
 |フロアプランをアップロードする|データが見つかりません。|Error|ファイルが正しいことを確認してから、もう一度アップロードするか、削除してください。|
 |フロアプランをアップロードする|このファイルに外部参照が含まれていません。 CC_1_furniture .dwg をアップロードするか、このファイルを削除します。|警告|外部参照ファイルをアップロードするか、削除します。|
 |フロアプランをアップロードする|DWG ファイルの部屋番号またはタグを読み取ることができませんでした。 このファイルを削除してください。|警告|DWG ファイルを調べてデータが含まれていることを確認してから、ファイルを削除して、もう一度実行してください。|
-|Office の場所をリンクする|AAD にオフィスの場所がありません。 フロアプランを設定する前に、AAD に場所データを追加します。|Error|[ユーザープロファイルのオフィスの場所を更新する](#step-3-update-office-locations-on-user-profiles) |
+|Office の場所をリンクする|Azure Active Directory にオフィスの場所がありません。 フロアプランを設定する前に、Azure Active Directory に場所データを追加します。|Error|[ユーザープロファイルのオフィスの場所を更新する](#step-3-update-office-locations-on-user-profiles) |
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -129,7 +132,7 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 - ファイルを SharePoint にアップロードして開きます。
 - [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5)または[Autodesk DWG TrueView](https://www.autodesk.com/products/dwg)でファイルを開きます。
-- ファイルを[Autodesk Online ビューアー](https://viewer.autodesk.com/)にアップロードします。
+- ファイルを[Autodesk のオンラインビューアー](https://viewer.autodesk.com/)にアップロードします。
 
 **Q:** マークのない部屋にテキストラベルを追加するにはどうすればよいですか?
 
@@ -159,10 +162,10 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 **Q:** フロア番号を含まない DWG ファイルを使用できますか。
 
-**A:** はいできますよ。 ユーザーの AAD プロファイル内のオフィスの場所を更新するときは、DWG ファイルに含まれていない場合でも、部屋番号の一部としてフロア番号を含めます。 ファイルをアップロードすると、[場所のパターンの指定] 画面が表示され、両方の値を指定することができます。
+**A:** はいできますよ。 ユーザーの Azure Active Directory プロファイル内のオフィスの場所を更新するときは、DWG ファイルに含まれていない場合でも、部屋番号の一部として床番号を含めます。 ファイルをアップロードすると、[場所のパターンの指定] 画面が表示され、両方の値を指定することができます。
 
 たとえば、部屋番号を含む DWG ファイルは、次のように表示されることがあります。
 
-![floorplans-nofloors](media/floorplans-nofloors.png)
+![floorplans-nofloors.png](media/floorplans-nofloors.png)
 
 ユーザーのプロファイル内のオフィスの場所は2/1175 で、' 2 ' は建物のコード、' 1 ' はフロア番号、' 175 ' は部屋番号です。
