@@ -12,45 +12,44 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Azure Data Lake Storage Gen2 connector をセットアップする
-ms.openlocfilehash: f8cb94e806e619d6dae7258b6c2d708d93afb9a8
-ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
+ms.openlocfilehash: d6adabc6ea40b4385059f80375f49fb73e63e65b
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861078"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996096"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake Storage Gen2 connector
 
-[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)コネクタを使用すると、組織内のユーザーはファイルとそのコンテンツを検索できます。 このコネクタは、azure Data Lake Storage Gen 2 アカウント内の Azure Blob コンテナーおよび階層対応フォルダーに格納されているデータにアクセスします。
+Azure Data Lake Storage Gen2 コネクタを使用すると、組織内のユーザーは、 [Azure Blob ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)と[Azure Data lake Gen 2 のストレージ](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)アカウントに格納されているファイルを検索できます。
 
-この記事は、 [Microsoft 365](https://www.microsoft.com/microsoft-365)管理者または Azure Data Lake Storage Gen2 connector を構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
+この記事は、 [Microsoft 365](https://www.microsoft.com/microsoft-365)管理者または Azure Data Lake Storage Gen2 connector を構成、実行、および監視するユーザーを対象としています。 コネクタの構成、機能、制限事項、およびトラブルシューティングの手法の概要を示します。 この記事では、azure*ストレージ*を[azure Blob ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)と[Azure Data Lake Gen 2 ストレージ](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)の一般的な用語として使用します。
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
-
 ### <a name="primary-storage-connection-string"></a>プライマリストレージ接続文字列 
-[**認証と構成**] 画面で、プライマリストレージ接続文字列を指定します。 この文字列は、ストレージアカウントへのアクセスを許可するために必要です。 接続文字列を検索するには、 [azure portal](https://ms.portal.azure.com/#home)に移動して、 [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)アカウントの [**キー** ] セクションに移動します。 接続文字列をコピーして画面の適切なフィールドに貼り付けます。
+[**認証と構成**] 画面で、プライマリストレージ接続文字列を指定します。 この文字列は、ストレージアカウントへのアクセスを許可するために必要です。 接続文字列を検索するには、 [azure ポータル](https://ms.portal.azure.com/#home)に移動して、関連する azure Storage アカウントの [**キー** ] セクションに移動します。 接続文字列をコピーして画面の適切なフィールドに貼り付けます。
 
-**AccountKey** (プライマリストレージ接続文字列のパラメーター) を指定しない場合は、Graph connector Service への読み取りアクセス権を与える必要があります。 Azure Data Lake Storage Gen2 アカウントの [**アクセス制御**] タブで、そのページの指示に従って、次のアプリへのアクセス権を付与します。
+**AccountKey** (プライマリストレージ接続文字列のパラメーター) を指定しない場合は、Graph connector Service への読み取りアクセス権を与える必要があります。 Azure ストレージアカウントの [**アクセス制御**] タブに移動し、次のアプリへのアクセス権を付与するための手順に従います。
 * **最初のパーティのアプリ ID:** 56c1da01-2127648f7-9355-af6d59d2766
 * **ファーストパーティのアプリ名:** Graph Connector サービス
 
 ### <a name="storage-account-and-queue-notifications-optional"></a>ストレージアカウントとキューの通知 (オプション)
-グラフコネクタサービスでリアルタイムでの変更の処理のサポートが今後追加される可能性があります。 その場合は、 [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)の変更通知をキューに格納します。 Azure Data Lake Storage Gen2 と同じアカウント、または別のストレージアカウントにキューを作成する必要があります。
+グラフコネクタサービスでリアルタイムでの変更の処理のサポートが今後追加される可能性があります。 その場合は、キューに格納されている Azure ストレージの変更通知を監視します。 Azure ストレージアカウントと同じアカウントでキューを作成する必要があります。
 
-キューを作成した後、[キュー] ページの [**イベント**] タブに移動して、**イベントサブスクリプション**を構成します。 キューが受信するすべての Blob イベントを選択し、そのキューを Azure Data Lake Storage Gen2 アカウントに接続します。
+キューを作成した後、[キュー] ページの [**イベント**] タブに移動して、**イベントサブスクリプション**を構成します。 キューが受信するすべての Blob イベントを選択し、キューを Azure ストレージアカウントに接続します。
 
 ## <a name="manage-the-search-schema"></a>検索スキーマを管理する
-[**スキーマの管理**] 画面には、管理プロパティに関連付けられているスキーマ属性 (**クエリ**可能、**検索**可能、および取得**可能) を**変更するオプションがあります。 これらの管理プロパティの属性は、 [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)アカウントからインデックスが作成されたデータです。
+[**スキーマの管理**] 画面には、管理プロパティに関連付けられているスキーマ属性 (**クエリ**可能、**検索**可能、および取得**可能) を**変更するオプションがあります。 これらの管理プロパティの属性は、Azure データストレージアカウントからインデックスが作成されたデータです。
 
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
-[**検索権限の管理**] 画面では、ストレージアカウントからアクセス制御リスト (acl) を取り込みます。 これらの検索権限が設定されている場合、コンテンツを検索するサインインしている[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)ユーザーに割り当てられているアクセス許可に基づいて、検索コンテンツがトリミングされます。 または、組織内のすべてのユーザーに対して、ストレージアカウントからインデックスが作成されたすべてのコンテンツを表示するように選択することもできます。 この場合、組織内のすべてのユーザーがストレージアカウントのすべてのデータにアクセスできます。
- 
+### <a name="azure-data-lake-gen-2"></a>Azure Data Lake Gen 2
+[**検索権限の管理**] 画面では、 [Azure Data Lake Gen 2 ストレージ](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)アカウントからアクセス制御リスト (acl) を取り込みます。 これらの検索権限が設定されている場合、コンテンツを検索するサインインしている[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)ユーザーに割り当てられているアクセス許可に基づいて、検索コンテンツがトリミングされます。 または、組織内のすべてのユーザーに対して、ストレージアカウントからインデックスが作成されたすべてのコンテンツを表示するように選択することもできます。 この場合、組織内のすべてのユーザーがストレージアカウントのすべてのデータにアクセスできます。
+
+### <a name="azure-blob-storage"></a>Azure Blob Storage
+[Azure Blob ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)への接続の場合、構成されたソースからインデックスが作成されたすべてのコンテンツが組織内のすべてのユーザーに表示されます。 アクセス制御リストは、Azure Blob ストレージの Blob レベルではサポートされていません。
+
 ## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
-[**更新の設定**] 画面で、増分クロールの間隔とフルクロールの間隔を設定できます。 [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)コネクタの既定の間隔は、増分クロールの場合は15分、フルクロールの場合は1週間です。
- 
+[**更新の設定**] 画面で、増分クロールの間隔とフルクロールの間隔を設定できます。 Azure Data Lake Storage Gen2 コネクタの既定の間隔は、増分クロールの場合は15分、フルクロールの場合は1週間です。
+
 ## <a name="limitations"></a>制限事項
-現時点では、 [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)マルチプロトコルアクセスを使用できるのは、中部標準時、西中央アメリカ、カナダ中部、東部アメリカ、東アジア、北ヨーロッパ、東 US2、南アジア、西ヨーロッパ、西ヨーロッパ、西 US2、およびブラジル南部のみです。
-
-更新プログラムと詳細については、「 [Azure Data Lake Storage でのマルチプロトコルアクセス (プレビュー)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access)」を参照してください。
-
-
+Azure Data Lake Storage Gen2 source に対して、公開されている接続を再構成することはできません。また、その逆も同様です。 このようなシナリオでは、新しい接続を構成することをお勧めします。

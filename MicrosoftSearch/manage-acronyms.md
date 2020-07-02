@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: cd9e1a48288e6df8f5746d937684a3f2eedd65df
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535358"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996078"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -44,16 +44,16 @@ Microsoft 検索ユーザーは、 [Bing](https://Bing.com)で頭字語を使用
 
 ## <a name="set-up-acronyms-answers"></a>頭字語の回答を設定する
 
-Microsoft 365[管理センター](https://admin.microsoft.com)で、[microsoft Search の**設定**] に移動し、[頭字語の  >  **Microsoft Search**  > **Acronyms****追加**] を選択します。
+Microsoft 365[管理センター](https://admin.microsoft.com)で、[**設定**] の [  >  **microsoft 検索**  >  **応答**  >  の[**略語**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)] に**Add acronyms**移動し、[頭字語の追加] を選択します。
 
 Microsoft Search では、ユーザーの検索に頭字語の回答を提供するために2つのデータソースをクエリします。
 
-1. **編集の略語** [管理センター](https://admin.microsoft.com)の IT 管理者によって提供されます。
+1. **編集の略語** [管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)の IT 管理者によって提供されます。
 2. 抽出した**略語**。 ユーザーの個人電子メールやドキュメントから組織内の一般に利用可能なデータから、Microsoft Search によってマイニングされます。
 
 ### <a name="set-up-editorial-acronyms"></a>編集の略語を設定する
 
-検索管理者は、 [Microsoft 365 管理センター]( https://admin.microsoft.com)の [[頭字] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)で編集の略語を設定できます。 任意の内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集の略語は、**発行済み**または**下書き**の状態に追加できます。
+検索管理者は、 [Microsoft 検索管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)の [[頭字] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)で編集の略語を設定できます。 任意の内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集の略語は、**発行済み**または**下書き**の状態に追加できます。
 
 **公開**された状態。 頭字語は、組織の従業員が Microsoft Search を通じて使用できます。
 
@@ -64,9 +64,9 @@ Microsoft Search では、ユーザーの検索に頭字語の回答を提供す
 
 管理者は、頭文字を個別に追加するか、または CSV ファイルに一括インポートすることができます。 次の表に示すフィールドを使用して CSV ファイルをアップロードします。
 
-| 頭字語 (必須) | 拡張 (必須) | 説明  | ソース | 状態 (必須) |
+| 頭字語 (必須) | 拡張 (必須) | 説明  | Source | 状態 (必須) |
 | --------- | --------- | ---------- | --------- |--------- |
-| *xxx* | *スペルミスの省略形* |  | *URL* | *公開または下書き* |
+| *xxx* | *スペルミスの省略形* |  | * URL * | *公開または下書き* |
 
 ### <a name="csv-fields"></a>CSV フィールド
 

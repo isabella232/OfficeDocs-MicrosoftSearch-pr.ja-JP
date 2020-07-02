@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークを作成および更新して、Microsoft Search のブックマークの結果を一括編集する方法
-ms.openlocfilehash: 292a04714f4baa115473df86bfbeb2f3c8860114
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721752"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996105"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -29,8 +29,7 @@ ms.locfileid: "41721752"
 ## <a name="add-or-edit-a-single-bookmark"></a>1 つのブックマークを追加または編集する
 
 1. **Microsoft 365 管理センター**に移動します。
-1. ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。
-既定では、**[ブックマーク]** タブが選択されています。
+1. ナビゲーションウィンドウで、[**設定**] [  >  **Microsoft 検索**  >  **応答**  >  [**ブックマーク**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)] に移動します。
 1. ブックマークを追加するには、**[新規追加]** を選択します。
 ブックマークを編集するには、関連するブックマークの一覧で編集するブックマークを選択します。
 1. 情報を追加または編集すると、プレビューが自動的に更新されます。
@@ -106,8 +105,8 @@ Power Apps は、コーディング操作を必要とせずに、ブラウザー
 ### <a name="add-a-power-app-to-a-bookmark"></a>Power App をブックマークに追加する
 
 1. 追加する[電源アプリのアプリ ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)を検索します。
-1. サインインして、**Microsoft 365 管理センター**に移動します。
-1. ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。
+1. [**Microsoft 365 管理センター**](https://admin.microsoft.com)にサインインします。
+1. ナビゲーションウィンドウで、[**設定**] [  >  **Microsoft 検索**  >  **応答**  >  [**ブックマーク**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)] に移動します。
 1. ブックマークを追加するか、**PowerApp** を追加する既存のブックマークを検索します。
 1. **[ブックマークの設定]** で、**[Power App]**、**[Power App を追加]** の順に選択します。
 1. **App ID** を入力するか貼り付けます。

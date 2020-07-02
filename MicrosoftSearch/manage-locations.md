@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過と共に、場所の情報の状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。
-ms.openlocfilehash: bb229086f7dd8c1b8d17a0b8335bb618850106be
-ms.sourcegitcommit: 063fec4a336b6b3118d4769a4bd0cc2d568ea7e2
+ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42276990"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996069"
 ---
 # <a name="manage-locations"></a>場所の管理
 
@@ -29,8 +29,7 @@ ms.locfileid: "42276990"
 ### <a name="add-or-edit-a-single-location"></a>1 つの場所を追加または編集する
 
 1. **Microsoft 365 管理センター**に移動します。
-1. ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。
-1. **[場所]** タブを選択します。既定では、**[Microsoft Search]** ページで **[ブックマーク]** タブが選択されています。
+1. ナビゲーションウィンドウで、[**設定**] に移動します。  >  **Microsoft 検索**  >  **応答**の  >  [**場所**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
 1. 新しい場所を追加するには、**[新規追加]** を選択します。
 1. 場所を編集するには、関連する場所の一覧で場所を選択します。
 1. 情報を追加または編集すると、プレビューが自動的に更新されます。
@@ -65,6 +64,7 @@ ms.locfileid: "42276990"
 - [*状態*] フィールドに基づいて、場所が下書き、提案済み、スケジュール済み、または自動的に公開されるように保存されます。
 - 複数の組織を管理するパートナーは、1つの組織からの場所をエクスポートして、別の組織にインポートすることができます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
 
-**注:** テンプレート ファイルにエラーがある場合は、場所をインポートすることはできません。 エラーを回避するには、インポート ファイルが正しく書式設定されていて、必要な情報がすべて含まれていることを確認してください。
+> [!NOTE]
+> テンプレートファイルにエラーがある場合は、場所をインポートできません。 エラーを回避するには、インポート ファイルが正しく書式設定されていて、必要な情報がすべて含まれていることを確認してください。
 
 エラーを回避する方法の詳細については、「[インポート エラーを回避する](manage-bookmarks.md#prevent-import-errors)」を参照してください。

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のフロアプラン機能を使用すると、建物内の人、オフィス、その他の amenities をユーザーが見つけやすくなります。
-ms.openlocfilehash: e005767c255cb899793b6b4849882c7ec0561256
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878244"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996114"
 ---
 # <a name="manage-floor-plans"></a>間取図を管理する
 
@@ -67,7 +67,7 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 ### <a name="step-5-add-building-locations"></a>手順 5: 建物の場所を追加する
 
-フロアプランでは、[場所](manage-locations.md)を使用して建物を定義します。 Microsoft 365[管理センター](https://admin.microsoft.com)で、[**設定**] の  >  [**microsoft 検索**場所] に移動し、[  >  **Locations****追加**] を選択します。 建物の名前、アドレス、およびキーワードを入力します。 必要な数の建物を追加します。
+フロアプランでは、[場所](manage-locations.md)を使用して建物を定義します。 Microsoft 365[管理センター](https://admin.microsoft.com)で、[microsoft Search アンサーの**設定**] の場所に移動し、[  >  **Microsoft Search**  >  **Answers**  >  [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)**追加**] を選択します。 建物の名前、アドレス、およびキーワードを入力します。 必要な数の建物を追加します。
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 フロアプランを使用するには、office の場所にインデックスを付ける必要があります。 これは、完了するまでに最大48時間かかる1回限りの操作です。 合計時間は、組織の規模によって異なります。
 
-[管理センター](https://admin.microsoft.com)で、[**設定**] の [  >  **Microsoft 検索**  >  **フロアプラン**] に移動し、[**開始**] を選択します。 この通知が表示されていない場合、この手順は組織に対して既に完了しています。
+[管理センター](https://admin.microsoft.com)で、[**設定**] の  >  [**Microsoft 検索**  >  **応答**] フロアプランに移動し、[  >  [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)**開始**] を選択します。 この通知が表示されていない場合、この手順は組織に対して既に完了しています。
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>手順 7: フロアプランをアップロードする
 
-1. [管理センター](https://admin.microsoft.com)で、[設定] **Settings**  >  **Microsoft 検索**  >  **フロアプラン**に移動し、[**追加**] を選択します。
+1. [管理センター](https://admin.microsoft.com)で、[**設定**] の [  >  **Microsoft 検索**  >  **応答**]  >  [**フロアプラン**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)に移動します。
 2. ドロップダウンリストで建物を選択し、[**次へ**] を選択します。 建物が表示されていない場合は、前の手順に戻って、[建物の場所を追加](#step-5-add-building-locations)します。
 3. [**ファイルのアップロード**] を選択し、アップロードするフロアプランを選択します。
 4. アップロードが完了すると、フロアプランファイルに表示されるフロア番号を入力する必要があります。 [**次へ**] を選択します。
@@ -142,7 +142,7 @@ DWG ファイルの表示と更新の詳細については、「 [FAQ](#frequent
 
 **A:** Microsoft Visio、Autodesk AutoCAD、またはその他の DWG エディターで DWG ファイルを作成します。 ファイルに10以上の部屋のラベルが付けられていることを確認します。
 
-**Q:** * * DWG ファイルのテキストラベルの最適な形式は何ですか。
+**Q:** DWG ファイルのテキストラベルの最適な形式は何ですか。
 
 **A:** 最良の結果を得るために、テキストラベルにはフロア番号と部屋番号を含める必要があります。 次の例では、建物コードに2または SC を使用しています。
 <!-- markdownlint-disable no-inline-html -->

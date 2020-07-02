@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 回答を個別に検索して更新したり、使用可能な Microsoft 検索ツールを使用して、Q&を一度にすべて編集したりできます。
-ms.openlocfilehash: 2ec06fb0940172621255946283290450c1f2e036
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878235"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996087"
 ---
 # <a name="manage-qas"></a>Q&A の管理
 
@@ -27,8 +27,7 @@ Q&A の作成は、ブックマークの作成と似ています。 Q&、web ペ
 ## <a name="add-or-edit-a-single-qa"></a>1 つの Q&A を追加または編集する
 
 1. **Microsoft 365 管理センター**に移動します。
-1. ナビゲーション ウィンドウで、**[設定]** に移動して、**[Microsoft Search]** を選択します。
-1. **Q&** タブを選択します。
+1. ナビゲーションウィンドウで、[**設定**] の [  >  **Microsoft Search**  >  **アンサー**]  >  [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)に移動します。
 1. Q&A を追加するには、**[新規追加]** を選択します。
 Q&A を編集するには、関連する Q&A の一覧で Q&A を選択します。 情報を追加または編集すると、プレビューが自動的に更新されます。
 1. 変更内容を保存します。

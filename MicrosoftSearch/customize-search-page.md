@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索垂直を追加して検索結果をカスタマイズする
-ms.openlocfilehash: 44b1b9ff211a65313f5c5cf532334335994c486d
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470283"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996060"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -59,7 +59,7 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
 
 [SharePoint](https://sharepoint.com/) Home、 [Office](https://office.com)、または[Bing](https://bing.com)で Microsoft Search に垂直にするには、次の手順を実行します。
 
-1. Microsoft 365 [管理センター](https://admin.microsoft.com)で、[microsoft Search の **設定**] に移動   >  **Microsoft Search**   >  **Verticals**します。
+1. Microsoft 365 [管理センター](https://admin.microsoft.com)で、[ **設定**] [   >  **microsoft Search**カスタマイズ] の各オプションに移動   >  **Customization**  >  [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)します。
 1. 開始するには、[ **追加**] を選択します。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>サイトレベルで垂直方向のを作成する
@@ -77,7 +77,7 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
 
 結果の種類を使用してレイアウトを設計することで、結果を垂直に表示する方法を定義できます。 結果レイアウトでは、重要な情報を検索結果に直接表示することができます。したがって、ユーザーが探しているものが見つかったかどうかを確認するために、各結果を選択する必要はありません。
 
-検索結果の種類とは、検索結果のタイプの違いに応じて表示方法を変えるルールのことです。このルールは、次のような構成になっています。
+A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - 検索結果のコンテンツソースなど、各検索結果を比較する**1 つまたは複数の条件**。  
 - 条件に一致する検索結果に使用する**結果レイアウト**。 結果レイアウトは、条件を満たすすべての結果が検索結果ページに表示され、動作する方法を制御します。
@@ -88,7 +88,7 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>組織レベルで結果の種類を作成する
 
-1. [管理センター](https://admin.microsoft.com)で、[ **Setting**  >  **Microsoft Search**の設定] に移動し、 **[結果の種類**] を選択します。
+1. [管理センター](https://admin.microsoft.com)で、[ **Setting**  >  **Microsoft Search**  >  の**カスタマイズ**の結果の種類の設定] に移動  >  [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)します。
 1. **検索結果の種類**を追加するには、[ **追加**] を選択します。 検索結果の種類を編集するには、関連するリストで結果の種類を選択します。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>サイトレベルで結果の種類を作成する
@@ -107,7 +107,7 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
 
 発生する可能性のある一般的な問題と、それらを修正するためのアクションを次に示します。
 
-|Error  |Action  |
+|Error  |アクション  |
 |---------|---------|
 | 垂直方向に "問題が発生しました" というエラーメッセージが表示されます。 | セットアップを完了するには、垂直と結果の両方の種類が必要です。 同じコンテンツソースに対して両方の作成が完了していることを確認してください。 |
 | 結果のレイアウトは表示されませんでしたが、作成しました。 | これらの設定は一般的にキャッシュされるため、数分かかることがあります。 数分待ってから、もう一度実行してください。        |
