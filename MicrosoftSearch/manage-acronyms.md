@@ -14,119 +14,119 @@ search.appverid:
 description: Microsoft Search で頭字語の回答を作成および更新する
 ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
 ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "44996078"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
-ユーザーは、組織やチームによって使用される見慣れない頭字語や略語を使用することがよくあります。 組織またはチームに固有の用語は、チーム間の移行、社内パートナーと連携しているユーザー、または組織にとって新しいユーザーにとって新しいものである場合があります。
+ユーザーは、組織やチームで使用されている頭字語や略語に慣れていないことがよくあります。 組織またはチームに固有の用語は、チーム間を移動したり、社内パートナーと共同で作業する人、または組織の新人には新しい場合があります。
 
-組織では、標準的な用語を常に参照することはありません。 単一の参照がないと、これらの略語の定義や拡張を見つけるのが困難になります。 Microsoft Search は、頭字語に問題があることを解決します。
+組織の標準的な用語には、常に単一の参照があるとは限りません。 単一の参照がないと、これらの頭字語の定義や展開が難しくなります。 Microsoft Search は、頭字語の問題を解決します。
 
-## <a name="what-users-experience"></a>ユーザーの作業
+## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft 検索ユーザーは、 [Bing](https://Bing.com)で頭字語を使用して定義を取得できます。 **検索**ボックスには、次の例のようなクエリが入力されます。
+Microsoft Search のユーザーは [Bing](https://bing.com) の頭字語を使用して、定義を入手できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
 
-- *機能*DNN
-- を*定義*するDNN
-- DNN*定義*
-- *展開*DNN
-- DNN*拡張*
-- *の意味*DNN
-- DNN*は*
+- DNN *とは*
+- DNN *を定義する*
+- DNN *の定義*
+- DNN *を展開する*
+- DNN *の展開*
+- DNN *の意味*
+- DNN *は意味する*
 
 結果には、ユーザーの組織内に存在する DNN のすべての意味が含まれます。
 
 > [!NOTE]
-> ユーザーは、頭字語の指定された*キーワード*を含むクエリを入力して、対応する回答をトリガーする必要があります。 頭字語のクエリでは大文字と小文字は区別されません。
+> ユーザーは、対応する回答をトリガーするために、頭字語で指定された *キーワード* を含むクエリを入力する必要があります。 頭字語のクエリでは、大文字と小文字は区別されません。
 
 ## <a name="set-up-acronyms-answers"></a>頭字語の回答を設定する
 
-Microsoft 365[管理センター](https://admin.microsoft.com)で、[**設定**] の [  >  **microsoft 検索**  >  **応答**  >  の[**略語**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)] に**Add acronyms**移動し、[頭字語の追加] を選択します。
+Microsoft 365 [管理センター](https://admin.microsoft.com) で、**[設定]** > **[Microsoft Search]** > ** [回答]** > [**[頭字語]**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) の順に移動し、**[頭字語の追加]** を選択します。
 
-Microsoft Search では、ユーザーの検索に頭字語の回答を提供するために2つのデータソースをクエリします。
+Microsoft Search は、2 つのデータ ソースをクエリして、頭字語の回答をユーザーの検索に提供します:
 
-1. **編集の略語** [管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)の IT 管理者によって提供されます。
-2. 抽出した**略語**。 ユーザーの個人電子メールやドキュメントから組織内の一般に利用可能なデータから、Microsoft Search によってマイニングされます。
+1. **編集上の頭字語**。 [管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) の IT 管理者によって提供されます。
+2. **採掘された頭字語**。 ユーザーの個人的なメールと文書、および組織内で公開されているデータから Microsoft Search によって採掘されます。
 
-### <a name="set-up-editorial-acronyms"></a>編集の略語を設定する
+### <a name="set-up-editorial-acronyms"></a>編集上の頭字語を設定する
 
-検索管理者は、 [Microsoft 検索管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)の [[頭字] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)で編集の略語を設定できます。 任意の内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集の略語は、**発行済み**または**下書き**の状態に追加できます。
+検索管理者は、[Microsoft Search 管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) の [[頭字語] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) で編集上の頭字語を設定できます。 すべての内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集上の頭字語は、**公開** または **下書き** の状態に追加されます:
 
-**公開**された状態。 頭字語は、組織の従業員が Microsoft Search を通じて使用できます。
+**公開状態**。 頭字語は、Microsoft Search を通じて組織の従業員が利用できます。
 
 > [!NOTE]
-> 発行済みの状態に追加された頭字語が Microsoft Search で利用できるようになるまで、最大で3日かかる場合があります。
+> 公開状態に追加された頭字語が Microsoft Search で利用可能になるまで、最大 3 日かかる場合があります。
 
-**下書きの状態**です。 Microsoft Search で使用できるようにする前に、管理者が頭字語の回答を確認する必要がある場合は、略語を下書き状態に追加できます。 下書き状態に追加された頭字語は、Microsoft Search では使用できません。 管理者は、略語を公開済み状態に追加して利用できるようにする必要があります。
+**下書き状態**。 Microsoft Search で使用できるようにする前に、管理者が頭字語の回答を確認したい場合は、頭字語を下書き状態に追加できます。 下書き状態に追加された略語は、Microsoft Search では使用できません。 管理者は、使用できるようにするには、頭字語を公開状態に追加する必要があります。
 
-管理者は、頭文字を個別に追加するか、または CSV ファイルに一括インポートすることができます。 次の表に示すフィールドを使用して CSV ファイルをアップロードします。
+管理者は、頭字語を個別に追加するか、CSV ファイルに一括インポートすることができます。 次の表に示すフィールドを使用して CSV ファイルをアップロードします:
 
-| 頭字語 (必須) | 拡張 (必須) | 説明  | Source | 状態 (必須) |
+| 頭字語 (必須) | 展開 (必須) | 説明  | ソース | 状態 (必須) |
 | --------- | --------- | ---------- | --------- |--------- |
-| *xxx* | *スペルミスの省略形* |  | * URL * | *公開または下書き* |
+| *XXX* | *略語のスペル* |  | *URL* | *公開または下書き* |
 
 ### <a name="csv-fields"></a>CSV フィールド
 
-**頭字語** 実際の短い形式または頭字語を含みます。 例として、 *Dnn*が挙げられます。
+**頭字語**。 実際の短い形式または頭字語を含みます。 たとえば、*DNN* などです。
 
-**拡張**。 頭字語の拡張が含まれています。 例としては、*ディープニューラルネットワーク*があります。
+**展開**。 頭字語の展開を含みます。 たとえば、*Deep Neural Network* などです。
 
-**説明**。 頭字語とその拡張の意味をユーザーにすばやく理解できるようにするための、略語の簡単な説明。 たとえば、*深いニューラルネットワークとは、一定レベルの複雑な、3つ以上のレイヤーを持つニューラルネットワークのニューラルネットワーク*のことです。
+**説明**。 頭字語とその展開の意味をユーザーにすばやく伝える頭字語の簡単な説明。 たとえば、*deep neural network とは、特定の複雑さを持つニューラル ネットワーク、2 つ以上の層を持つニューラル ネットワークです*。
 
-**ソース**。 頭字語の詳細については、ユーザーが移動するページまたは web サイトの URL。
+**ソース**。 頭字語についての詳細情報をユーザーに表示するページまたは Web サイトの URL。
 
-**状態**。 このフィールドには、次の2つの値を指定できます。
+**状態**。 このフィールドには 2 つの値を指定できます:
 
 - **下書き**。 頭字語を下書き状態に追加します。
-- **発行済み**。 頭字語を公開された状態に追加し、Microsoft Search で使用できるようにします。
+- **公開**。 公開状態に頭字語を追加して、Microsoft Search で使用できるようにします。
 
-### <a name="mined-acronyms"></a>マイニング頭字語
+### <a name="mined-acronyms"></a>採掘された頭字語
 
-管理者が組織内で使用されているすべての略語を回答に追加することが課題となる場合があります。 この機能は、検索管理者が認識していない略語を見つけることができます。 この作業を行うために、Microsoft Search では、これらのソースからの略語も地雷しています。
+管理者にとって、組織内で使用されているすべての頭字語を回答に追加するのは難しいかもしれません。 この機能により、検索管理者が認識していない頭字語を見つけることができます。 そのために、Microsoft Search は次のソースから頭字語を採掘します:
 
-- ユーザーの電子メール。
-- [SharePoint](https://products.office.com/sharepoint/collaboration)、 [Microsoft OneDrive]( https://onedrive.live.com/about/) 、 [microsoft OneNote](http://www.onenote.com/)のドキュメント。
-- ユーザーが SharePoint、OneDrive、または OneNote でアクセスできる組織内のパブリックドキュメント。
+- ユーザーのメール。
+- [SharePoint](https://products.office.com/sharepoint/collaboration)、[Microsoft OneDrive]( https://onedrive.live.com/about/)、[Microsoft OneNote](http://www.onenote.com/) の文書。
+- ユーザーが SharePoint、OneDrive、または OneNote でアクセスできる組織内の公開文書。
 
-Microsoft Search を使用すると、ドキュメントに対するアクセスとアクセス許可を持つユーザーのみが、その文書から抽出された頭字語を表示できるようになります。 頭字語がユーザーのメールボックスからマイニングされる場合、そのユーザーのみがその略語を表示できます。
+Microsoft Search は、文書に対してアクセス権を持つユーザーのみが、その文書から採掘された頭字語を見ることができるようにします。 頭字語がユーザーのメールボックスから採掘されると、そのユーザーのみがその頭字語を見ることができます。
 
 > [!NOTE]
-> マイニングされた頭字語にはセットアップは必要ありません。
+> 採掘された頭字語に設定は必要はありません。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**Q: どのように編集とマイニングされたデータがランク付けされるのですか?**
+**Q: 編集上の採掘されたデータはどのようにランク付けされていますか?**
 
-**A:** 現在、機能は、抽出された略語の上に編集上の略語をランク付けします。
+**A:** この機能は現在、編集上の頭字語を採掘された頭字語より上にランク付けしています。
 
-**Q: 発行後に編集者の略語が Microsoft Search に表示されるまでにどのくらいの時間がかかりますか?**
+**Q: 編集上の頭字語が公開されてから Microsoft Search に表示されるまで、どのくらいの時間がかかりますか?**
 
-**A:** 発行済みの状態に追加された頭字語が Microsoft Search で利用できるようになるまでに最大3日間かかります。
+**A:** 公開状態に追加された頭字語が Microsoft Search で利用可能になるまで、最大 3 日かかります。
 
-**Q: ユーザーが頭字語の回答を開始する方法を教えてください。**
+**Q: ユーザーが頭字語の回答をトリガーするにはどうすればよいですか?**
 
-**A**: 頭字語の回答を取得するには、ユーザーは[Bing](https://bing.com) **検索**ボックスに特定のクエリパターンを入力する必要があります。 現時点では、 [Office 365](https://Office.com)または[SharePoint](https://products.office.com/sharepoint/collaboration)では、頭字語の回答は使用できません。
+**A**: 頭字語の回答を取得するには、ユーザーは [Bing](https://bing.com) **検索** ボックスに特定のクエリ パターンを入力する必要があります。 現在、頭字語の回答は [Office 365](https://Office.com) または [SharePoint](https://products.office.com/sharepoint/collaboration) では利用できません。
 
-**Q: 新しい電子メールやドキュメントを受信または送信した後に、マイニングされた頭字語が表示されるまでにどのくらいの時間がかかりますか?**
+**Q: 新しいメールや文書の送受信後に、採掘された頭字語が表示されるまで、どのくらいの時間がかかりますか?**
 
-**A:** 新しい電子メールまたはドキュメントから抽出された略語は、Microsoft 検索結果に表示されるまでに最大7日間かかります。
+**A:** 新しいメールまたは文書から採掘された頭字語がMicrosoft Search 結果に表示されるまでには、最大 7 日かかります。
 
-**Q: ドキュメントを選択するために、ドキュメントをマイニングの特定の形式にする必要がありますか。**
+**Q: 文書から採掘するには、文書が特定の形式である必要がありますか?**
 
-**A:** 違います。 画像、フォルダー、および zip ファイル以外のすべてのファイルの種類をサポートしています。
+**A:** いいえ。 画像、フォルダー、および zip ファイル以外のすべての種類のファイルをサポートしています。
 
-**Q: Microsoft はすべての言語のドキュメントから頭字語を地雷していますか?**
+**Q: Microsoft はすべての言語の文書から頭字語を採掘しますか?**
 
-**A**: Microsoft は、ドキュメントからのマイニングのみを英語でサポートしています。 他の言語のサポートは、フェーズで追加されます。
+**A**: Microsoft は、英語の文書からの採掘のみをサポートしています。 その他の言語のサポートは段階的に追加されます。
 
-**Q: 組織でマイニングされた頭字語を表示したくない場合はどうすればよいですか?抽出された略語が検索結果に表示されないようにすることはできますか?**
+**Q: 組織内の採掘された頭字語を表示する必要がない場合はどうすればよいですか? 採掘された頭字語を検索結果に表示しないようにすることはできますか?**
 
-**A**: 検索結果での抽出された略語を表示しないようにするには、「[ビジネス製品についてのサポート](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)」の手順に従ってカスタマーサポートチケットを作成します。
-サポートチケットを作成した後は、検索結果に表示されなくなるまでに最大48時間かかります。
+**A**: 検索結果に採掘された頭字語が表示されないようにするには、[「ビジネス製品のサポートに問い合わせる」](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support) の説明に従って、カスタマー サポート チケットを作成します。
+サポート チケットを作成してから、採掘された頭字語が検索結果に表示されなくなるまでに最大 48 時間かかります。
 
-**Q: [Office 365](https://Office.com)と[SharePoint Online](https://products.office.com/sharepoint/collaboration)で頭字語の回答が表示されるのはいつですか。**
+**Q: [Office 365](https://Office.com) と [SharePoint Online](https://products.office.com/sharepoint/collaboration) で頭字語の回答はいつ表示されますか?**
 
-**A**: Office 365 と SharePoint Online での頭字語の回答は製品ロードマップの一部ですが、現在、日付または時間枠を提供することはできません。
+**A**: Office 365 および SharePoint Online での頭字語の回答は、製品ロードマップに含まれていますが、現在のところ、日付や時間枠を提供することはできません。
