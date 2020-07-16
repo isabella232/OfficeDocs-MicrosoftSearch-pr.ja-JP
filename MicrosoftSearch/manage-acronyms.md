@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
-ms.translationtype: HT
+ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
+ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996078"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45143867"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
-ユーザーは、組織やチームで使用されている頭字語や略語に慣れていないことがよくあります。 組織またはチームに固有の用語は、チーム間を移動したり、社内パートナーと共同で作業する人、または組織の新人には新しい場合があります。
+ユーザーは、組織やチームで使用されている頭字語や略語に慣れていないことがよくあります。 組織またはチームに固有の用語は、チーム間を移動したり、内部パートナーチームと連携したり、組織にとって新しくなったりするユーザーにとって新しいものになる可能性があります。
 
 組織の標準的な用語には、常に単一の参照があるとは限りません。 単一の参照がないと、これらの頭字語の定義や展開が難しくなります。 Microsoft Search は、頭字語の問題を解決します。
 
 ## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft Search のユーザーは [Bing](https://bing.com) の頭字語を使用して、定義を入手できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
+Microsoft 検索ユーザーは、 [Bing](https://Bing.com)および[SharePoint](https://products.office.com/sharepoint/collaboration)で頭字語を使用して定義を取得できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
 
 - DNN *とは*
 - DNN *を定義する*
@@ -74,7 +74,7 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 
 **展開**。 頭字語の展開を含みます。 たとえば、*Deep Neural Network* などです。
 
-**説明**。 頭字語とその展開の意味をユーザーにすばやく伝える頭字語の簡単な説明。 たとえば、*deep neural network とは、特定の複雑さを持つニューラル ネットワーク、2 つ以上の層を持つニューラル ネットワークです*。
+**説明**。 頭字語とその拡張に関する情報をユーザーに提供する略語の簡単な説明。 たとえば、*deep neural network とは、特定の複雑さを持つニューラル ネットワーク、2 つ以上の層を持つニューラル ネットワークです*。
 
 **ソース**。 頭字語についての詳細情報をユーザーに表示するページまたは Web サイトの URL。
 
@@ -88,7 +88,7 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 管理者にとって、組織内で使用されているすべての頭字語を回答に追加するのは難しいかもしれません。 この機能により、検索管理者が認識していない頭字語を見つけることができます。 そのために、Microsoft Search は次のソースから頭字語を採掘します:
 
 - ユーザーのメール。
-- [SharePoint](https://products.office.com/sharepoint/collaboration)、[Microsoft OneDrive]( https://onedrive.live.com/about/)、[Microsoft OneNote](http://www.onenote.com/) の文書。
+- [SharePoint](https://products.office.com/sharepoint/collaboration)、 [Microsoft OneDrive]( https://onedrive.live.com/about/)、 [microsoft OneNote](https://www.onenote.com/)のドキュメント。
 - ユーザーが SharePoint、OneDrive、または OneNote でアクセスできる組織内の公開文書。
 
 Microsoft Search は、文書に対してアクセス権を持つユーザーのみが、その文書から採掘された頭字語を見ることができるようにします。 頭字語がユーザーのメールボックスから採掘されると、そのユーザーのみがその頭字語を見ることができます。
@@ -108,7 +108,7 @@ Microsoft Search は、文書に対してアクセス権を持つユーザーの
 
 **Q: ユーザーが頭字語の回答をトリガーするにはどうすればよいですか?**
 
-**A**: 頭字語の回答を取得するには、ユーザーは [Bing](https://bing.com) **検索** ボックスに特定のクエリ パターンを入力する必要があります。 現在、頭字語の回答は [Office 365](https://Office.com) または [SharePoint](https://products.office.com/sharepoint/collaboration) では利用できません。
+**A**: 頭字語の回答を取得するには、 [Bing](https://bing.com)または SharePoint の[SharePoint](https://products.office.com/sharepoint/collaboration) **検索**ボックスに特定のクエリパターンを入力する必要があります。 現時点では、 [Office 365](https://Office.com)では頭字語の回答は使用できません。
 
 **Q: 新しいメールや文書の送受信後に、採掘された頭字語が表示されるまで、どのくらいの時間がかかりますか?**
 
@@ -127,6 +127,6 @@ Microsoft Search は、文書に対してアクセス権を持つユーザーの
 **A**: 検索結果に採掘された頭字語が表示されないようにするには、[「ビジネス製品のサポートに問い合わせる」](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support) の説明に従って、カスタマー サポート チケットを作成します。
 サポート チケットを作成してから、採掘された頭字語が検索結果に表示されなくなるまでに最大 48 時間かかります。
 
-**Q: [Office 365](https://Office.com) と [SharePoint Online](https://products.office.com/sharepoint/collaboration) で頭字語の回答はいつ表示されますか?**
+**Q: [Office 365](https://Office.com)で頭字語の回答が表示されるのはいつですか?**
 
-**A**: Office 365 および SharePoint Online での頭字語の回答は、製品ロードマップに含まれていますが、現在のところ、日付や時間枠を提供することはできません。
+**A**: Office 365 での頭字語の回答は製品ロードマップの一部ですが、現在、日付または時間枠を提供することはできません。
