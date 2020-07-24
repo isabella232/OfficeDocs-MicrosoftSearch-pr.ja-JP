@@ -21,7 +21,6 @@
 ### [Azure DevOps](azure-devops-connector.md)
 ### [Azure SQL および Microsoft SQL Server](MSSQL-connector.md)
 ### [大企業の Web サイト](enterprise-web-connector.md)
-### [ファイル共有](file-share-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [フィードバック](connectors-feedback.md)
