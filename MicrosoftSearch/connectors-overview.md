@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph のコネクタの概要
-ms.openlocfilehash: 08ddb8e61606007c706134242e865459f0399b86
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: ecedd135336f37da26cee71be06dd421cdb95f61
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850873"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387996"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph コネクタの概要
 
-Microsoft Search では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365)のすべてのデータのインデックスが作成されます。 Microsoft Graph のコネクタを使用すると、組織はサードパーティのデータにインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
+Microsoft Search では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365)のすべてのデータのインデックスが作成されます。 Microsoft Graph コネクタを使用すると、サードパーティーデータのインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
 
 > [!IMPORTANT]
 > **免責事項**: microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在、対象となるリリースのテナントで利用可能なプレビュー状態になっています。 Microsoft Search でコネクタを使用したり、コネクタを作成したりするには、[対象となるリリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)にオプトインします。 プレビューの詳細については、「[コネクタプレビュープログラム](connectors-preview.md)」を参照してください。
@@ -46,7 +46,7 @@ Microsoft 365[管理センター](https://admin.microsoft.com)では、microsoft
 
 [独自のコネクタを作成](https://docs.microsoft.com/graph/search-concept-overview)することもできます。
 
-### <a name="connectors-by-microsoft"></a>Microsoft によるコネクタ
+### <a name="connectors-by-microsoft"></a>Microsoft 提供のコネクター
 
 Microsoft Graph コネクタプレビューリリースには、6つの Microsoft が作成したコネクタが含まれています。 [管理センター](https://admin.microsoft.com)で設定し、 [Microsoft が作成](configure-connector.md)したコネクタをセットアップする方法について説明します。
 
@@ -63,9 +63,6 @@ Microsoft Graph コネクタプレビューリリースには、6つの Microsof
 
 - **エンタープライズ web サイト**。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは、SharePoint 以外のエンタープライズ web サイト内のページを検索できます。
 詳細については、「[エンタープライズ web サイトコネクタ](enterprise-web-connector.md)」を参照してください。
-
-- [**ファイル共有**]。 この Microsoft Graph コネクタを使用すると、組織内のユーザーはオンプレミスの Windows ファイル共有に保存されているファイルを検索できます。
-[ファイル共有コネクタ](file-share-connector.md)の詳細について説明します。
 
 - **[Mediawiki](https://www.mediawiki.org/wiki/MediaWiki)**。 この Microsoft Graph コネクタを使用すると、ユーザーは、組織が MediaWiki を使用して作成した wiki サイトで、サポート技術情報の記事を検索できます。
 詳細については、「 [Mediawiki コネクタ](mediawiki-connector.md)」を参照してください。

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索垂直を追加して検索結果をカスタマイズする
-ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996060"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387987"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -41,7 +41,7 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
 
 開始する前に、コネクタにインデックスが作成されていることを確認してください。 これには、ファイルサイズに応じて、最大48時間かかることがあります。
 
-[SharePoint](https://sharepoint.com/)または[ファイル共有コネクタ](file-share-connector.md)によってインデックスが作成されたコンテンツに対して、垂直方向を作成することはできません。 [コンテンツにインデックス](configure-connector.md)を作成する方法について説明します。
+[SharePoint](https://sharepoint.com/)にあるコンテンツに対して垂直方向を作成することはできません。
 
 垂直方向を追加するには、次の3つの基本的な手順を実行します。
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft が開発したコネクタを Microsoft Search 用に構成する
-ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850891"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387975"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -29,7 +29,6 @@ ms.locfileid: "44850891"
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL](MSSQL-connector.md)
 * [大企業の Web サイト](enterprise-web-connector.md)
-* [ファイル共有](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL Server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
@@ -43,7 +42,7 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 3. [**コネクタの追加**] を選択します。
 4. 使用可能なコネクタのリストから、選択したコネクタを選択します。
 
-![使用可能なデータソースは次のとおりです。 ADLS Gen2 コネクタ、エンタープライズ web サイト、ServiceNow、ファイル共有、Microsoft SQL server、および MediaWiki。](media/addconnector_final.png)
+![利用可能なデータソースは次のとおりです。 Azure DevOps Connector、ServiceNow、ADLS Gen2、エンタープライズ web サイト、MediaWiki、Microsoft SQL server、および Azure SQL。](media/add_connector.png)
 
 ### <a name="name-the-connector"></a>コネクタに名前を指定する
 
@@ -75,7 +74,7 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 クエリ可能 | クエリによって特定のプロパティの一致が検索されます。 プロパティ名は、プログラムまたは逐語的にクエリで指定できます。 |  **Title**プロパティがクエリ可能な場合は、クエリ**タイトル: Enterprise**がサポートされています。
 だっ | 検索結果の種類には取得可能なプロパティのみを使用し、検索結果に表示することができます。 |
 
-ファイル共有コネクタを除くすべてのコネクタについては、カスタムの種類を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティのリストにマップされた検索スキーマが必要です。 接続ウィザードは、選択したソースプロパティのセットに基づいて検索スキーマを自動的に選択します。 このスキーマを変更するには、[検索スキーマ] ページで各プロパティと属性のチェックボックスをオンにします。
+すべてのコネクタについて、カスタムの種類を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティのリストにマップされた検索スキーマが必要です。 接続ウィザードは、選択したソースプロパティのセットに基づいて検索スキーマを自動的に選択します。 このスキーマを変更するには、[検索スキーマ] ページで各プロパティと属性のチェックボックスをオンにします。
 
 ![コネクタのスキーマは、クエリ、検索、および取得機能を追加または削除することでカスタマイズできます。](media/manageschema.png)
 
@@ -90,7 +89,7 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 ### <a name="manage-search-permissions"></a>検索アクセス許可を管理する
 
-アクセス制御リスト (Acl) は、組織内のどのユーザーがデータの各アイテムにアクセスできるかを決定します。 ファイル共有コネクタは、 [Azure Active Directory (AZURE AD)](https://docs.microsoft.com/azure/active-directory/)にマップできる acl のみをサポートしています。 他のすべてのコネクタは、すべてのユーザーに表示される検索アクセス許可をサポートします。
+アクセス制御リスト (Acl) は、組織内のどのユーザーがデータの各アイテムにアクセスできるかを決定します。 すべてのコネクタは、すべてのユーザーに表示される検索アクセス許可をサポートします。
 
 ### <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
 
@@ -98,11 +97,11 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 **フルクロール**では、検索エンジンは、以前のクロールに関係なく、コンテンツソース内のすべてのアイテムを処理してインデックスを付けます。 フルクロールは、次のような場合に最適です。
 
-* データの削除を検出する必要があります。
+* データの削除を検出します。
 * 増分クロールで、エラーのためにコンテンツをクロールできませんでした。
-* Microsoft Search のソフトウェア更新プログラムが必要です。 更新プログラムによって検索スキーマが変更されます。
 * Acl が変更されました。
 * クロールルールが変更されました。
+* Microsoft Search のソフトウェア更新プログラムが必要です。 更新プログラムによって検索スキーマが変更されます。
 
 **増分クロール**では、検索エンジンは、最後に成功したクロール以降に作成または変更されたアイテムのみを処理してインデックスを作成できます。 そのため、コンテンツソース内のすべてのデータが再インデックス化されるわけではありません。 増分クロールは、コンテンツ、メタデータ、アクセス許可、その他の更新プログラムを検出するのに最適です。
 
@@ -120,10 +119,10 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 Microsoft 検索ユーザーインターフェイス (UI) を使用すると、エンドユーザーは[microsoft 365](https://www.microsoft.com/microsoft-365)プロダクティビティアプリと microsoft の広範なエコシステムからコンテンツを検索できます。 縦方向検索は、ユーザーが[Bing](https://Bing.com)で[SharePoint](https://sharepoint.com/)、 [Microsoft Office](https://Office.com)、および microsoft search の検索結果を表示するときに表示されるタブを示します。 検索結果を絞り込んで検索結果の特定の種類だけが表示されるように、検索対象をカスタマイズすることができます。 これらの業種は、検索結果ページの上部にタブとして表示されます。 モダン検索結果の種類 (MRT) は、結果の表示方法を指定する UI です。
 
-エンドユーザーが新しい接続から検索結果を表示できるように、独自の業種と結果の種類を作成する必要があります。 この手順を行わないと、接続からのデータが検索結果ページに表示されません。
+独自の業種と結果の種類を作成することで、エンドユーザーは新しい接続から検索結果を表示できるようになります。 この手順を行わないと、接続からのデータが検索結果ページに表示されません。
 
 業種および MRTs の作成方法の詳細については、「[検索結果ページのカスタマイズ](customize-search-page.md)」を参照してください。
 
-## <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
+## <a name="how-do-i-know-the-connection-setup-worked"></a>接続セットアップが動作していることを確認するには、どうすればよいですか。
 
 [管理センター](https://admin.microsoft.com)の [**コネクタ**] タブで、公開されている接続の一覧に移動します。 更新と削除を行う方法については、「[コネクタの管理](manage-connector.md)」を参照してください。

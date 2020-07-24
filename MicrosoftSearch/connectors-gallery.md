@@ -13,21 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のすべての Microsoft Graph コネクタを一覧表示します。
-ms.openlocfilehash: 47782a9a429bf3ad75cffaadf6f67402638fd3a6
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850935"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388014"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph コネクタギャラリー
 
 
 #### <a name="in-this-article"></a>この記事の内容
-* <a href="#Microsoft">Microsoft によるコネクタ</a>
-* <a href="#Partners">パートナーによるコネクタ</a>
+* <a href="#Microsoft">Microsoft 提供のコネクター</a>
+* <a href="#Partners">パートナーが提供するコネクター</a>
 
-<h2 id="Microsoft">Microsoft によるコネクタ</h2>
+<h2 id="Microsoft">Microsoft 提供のコネクター</h2>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -120,27 +120,6 @@ ms.locfileid: "44850935"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>ファイル共有</h3>
-                        <p><a href="https://www.microsoft.com">Microsoft</a>による</p>
-                        <p>この Microsoft Graph コネクタを使用すると、組織内のユーザーはオンプレミスの Windows ファイル共有に保存されているファイルを検索できます。</p>
-                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
-                            <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
-                                    <font color="0065BA">詳細情報</font>
-                                </a>
-                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="overflow: hidden; height: 235px;">
-                    <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p><a href="https://www.microsoft.com">Microsoft</a>による</p>
                         <p>この Microsoft Graph コネクタを使用すると、ユーザーは、組織が MediaWiki を使用して作成した wiki サイトのナレッジベースの記事を検索できます。</p>
@@ -157,8 +136,6 @@ ms.locfileid: "44850935"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -180,6 +157,8 @@ ms.locfileid: "44850935"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -205,7 +184,7 @@ ms.locfileid: "44850935"
 
 ---
 
-<h2 id="Partners">パートナーによるコネクタ</h2>
+<h2 id="Partners">パートナーが提供するコネクター</h2>
 <!--- 1 ROW --->
 <h3 id="A"></h3>
 <ul class="panelContent cardsZ">
@@ -476,7 +455,7 @@ ms.locfileid: "44850935"
                     <div class="cardText">
                         <h3>Azure データ湖</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Azure Data Lake connector は、ルートまたは指定されたパスのいずれかで、Azure Data Lake Store クラウドからコンテンツをクロールします。 各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
+                        <p>Azure Data Lake connector は、ルートまたは指定されたパスのいずれかで、ADLS クラウドからコンテンツをクロールします。 各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1104,7 +1083,7 @@ ms.locfileid: "44850935"
                     <div class="cardText">
                         <h3>iManage の作業</h3>
                         <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>IManage ワークコネクタは、完全なセキュリティを提供し、高スループットで動作しながら、処理に対するパフォーマンスへの影響を最小限に抑えながら、クロール時間を最小にします。 読み取りアクセスのみが必要であり、任意の iManage サーバーにクライアントソフトウェアをインストールする必要はありません。 これにより、iManage 作業に格納されているすべてのコンテンツにシームレスかつ同時にアクセスできるようになります。</p>
+                        <p>IManage ワークコネクタは、完全なセキュリティを提供し、高スループットで運用に対して低パフォーマンスの影響を与える一方でクロール時間を最小限に抑えます。 読み取りアクセスのみが必要であり、任意の iManage サーバーにクライアントソフトウェアをインストールする必要はありません。 これにより、iManage 作業に格納されているすべてのコンテンツにシームレスかつ同時にアクセスできるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
