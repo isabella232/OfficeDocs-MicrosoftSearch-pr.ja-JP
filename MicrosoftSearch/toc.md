@@ -27,8 +27,10 @@
 ## [使用条件](terms-of-use.md)
 # カスタマイズと構成
 ## [業界および結果の種類を管理する](customize-search-page.md)
-## [検索結果のレイアウト](customize-results-layout.md)
-## [SharePoint での Microsoft Search](get-started-search-in-sharepoint-online.md)
+## [検索結果のレイアウトを管理する](customize-results-layout.md)
+## SharePoint での Microsoft Search
+### [概要](get-started-search-in-sharepoint-online.md)
+### [カスタム検索結果ページを作成する](create-search-results-pages.md)
 ## Bing での Microsoft Search
 ### [セキュリティとプライバシー](security-for-search.md)
 ### [イントラネット サイトに検索ボックス追加する](add-a-search-box-to-your-intranet-site.md)
