@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
-ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
+ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45143867"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591510"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -27,7 +27,7 @@ ms.locfileid: "45143867"
 
 ## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft 検索ユーザーは、 [Bing](https://Bing.com)および[SharePoint](https://products.office.com/sharepoint/collaboration)で頭字語を使用して定義を取得できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
+Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、および[Office 365](https://Office.com)の頭字語を使用して定義を取得できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
 
 - DNN *とは*
 - DNN *を定義する*
@@ -108,7 +108,7 @@ Microsoft Search は、文書に対してアクセス権を持つユーザーの
 
 **Q: ユーザーが頭字語の回答をトリガーするにはどうすればよいですか?**
 
-**A**: 頭字語の回答を取得するには、 [Bing](https://bing.com)または SharePoint の[SharePoint](https://products.office.com/sharepoint/collaboration) **検索**ボックスに特定のクエリパターンを入力する必要があります。 現時点では、 [Office 365](https://Office.com)では頭字語の回答は使用できません。
+**A**: 頭字語の回答を取得するには、ユーザーは[Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、または[Office 365](https://Office.com)の**検索**ボックスに特定のクエリパターンを入力する必要があります。
 
 **Q: 新しいメールや文書の送受信後に、採掘された頭字語が表示されるまで、どのくらいの時間がかかりますか?**
 
@@ -126,7 +126,3 @@ Microsoft Search は、文書に対してアクセス権を持つユーザーの
 
 **A**: 検索結果に採掘された頭字語が表示されないようにするには、[「ビジネス製品のサポートに問い合わせる」](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support) の説明に従って、カスタマー サポート チケットを作成します。
 サポート チケットを作成してから、採掘された頭字語が検索結果に表示されなくなるまでに最大 48 時間かかります。
-
-**Q: [Office 365](https://Office.com)で頭字語の回答が表示されるのはいつですか?**
-
-**A**: Office 365 での頭字語の回答は製品ロードマップの一部ですが、現在、日付または時間枠を提供することはできません。

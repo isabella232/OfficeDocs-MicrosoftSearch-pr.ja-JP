@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: 組織に Microsoft Search を正常にロールアウトするのに役立つ方法とプロセスについて説明します。
-ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: 76079dd2db378185a999acf9cc49cd04a7f97bbe
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995007"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591519"
 ---
 # <a name="user-adoption-guide"></a>ユーザー導入ガイド
 
@@ -37,7 +37,7 @@ ms.locfileid: "39995007"
 |**役割**|**分担**|**Department**|
 |:-----|:-----|:-----|
 |エグゼクティブ スポンサー  <br/> |組織のための Microsoft Search の高度なビジョンと価値について理解します。  <br/> IT/ビジネスチームにリーダーシップのサポートを提供します。  <br/> リソースを割り当てます。  <br/> 従業員と直接通信します。  <br/> |経営幹部のリーダー  <br/> |
-|ビジネスオーナー  <br/> |製品とユーザーのシナリオを特定します。  <br/> 部門と組織の成功指標を決定します。  <br/> |任意  <br/> |
+|ビジネス オーナー  <br/> |製品とユーザーのシナリオを特定します。  <br/> 部門と組織の成功指標を決定します。  <br/> |任意  <br/> |
 |変更管理チーム  <br/> |製品の価値を理解しやすいものにします。  <br/> ロールアウトの計画を作成します。  <br/> |IT  <br/> |
 |チャンピオン  <br/> |啓発と teams に製品を参加させる。  <br/> |任意 (スタッフ)  <br/> |
 |検索管理者  <br/> |ユーザーの主要なチームメンバーを特定します。  <br/> Microsoft Search を管理します。これには、操作性と継続的な管理のルックアンドフィールが含まれます。  <br/> Microsoft Search の価値を示すようにディスカッションを促進します。  <br/> |IT  <br/> |
@@ -77,7 +77,7 @@ ms.locfileid: "39995007"
     
 ## <a name="stage-3-readiness"></a>ステージ 3: 準備
 
-Microsoft 検索のロールアウトの準備に時間をかけることで、組織にとってのメリットが得られます。 Microsoft は、計画のガイダンス、カスタマイズ可能な電子メールアナウンス、アンケートテンプレート、エグゼクティブプレゼンテーションなどを含む<a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">導入キット</a>を提供しています。 また、microsoft search<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">リソースセンター</a>では、microsoft search の実装によって、microsoft 検索を正常に展開するのに役立つように設計されたその他のトレーニングとリソースを入手できます。
+Microsoft 検索のロールアウトの準備に時間をかけることで、組織にとってのメリットが得られます。 Microsoft は、お客様の内部コミュニケーションサイトでの共有用に作成されたアナウンス電子メールテンプレート、軽量なビジュアルコンテンツ、およびトレーニングプレゼンテーションを含む<a href="https://go.microsoft.com/fwlink/?linkid=2114710">導入キット</a>を提供しています。 Microsoft <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Search リソースセンター</a>では、microsoft 検索の展開に役立つように設計されたその他のトレーニングリソースや導入リソースを確認できます。
   
 ### <a name="product-and-content-readiness"></a>製品とコンテンツの準備
   
