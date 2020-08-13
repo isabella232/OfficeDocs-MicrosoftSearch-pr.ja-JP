@@ -12,21 +12,35 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Microsoft SQL server または Azure SQL connector をセットアップします。
-ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 55c2e86697d2159bf93bc950c47a37630739dba9
+ms.sourcegitcommit: dd082bf862414604e32d1a768e7c155c2d757f51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850900"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657015"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL および Microsoft SQL server コネクタ
 
 Microsoft SQL server または Azure SQL コネクタを使用すると、組織は、オンプレミスの SQL Server データベースまたはクラウド内の Azure SQL インスタンスでホストされているデータベースのデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 これらの SQL コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
 
-この記事は、Microsoft 365 管理者または Microsoft SQL server コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
+この記事は、Microsoft 365 管理者または Microsoft SQL server または Azure SQL コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。 
 
 ## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Data gateway をインストールする (オンプレミスの Microsoft SQL server コネクタにのみ必要)
 サードパーティのデータにアクセスするためには、Microsoft Power BI ゲートウェイをインストールして構成する必要があります。 詳細について[は、「オンプレミスゲートウェイをインストール](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)する」を参照してください。  
+
+## <a name="register-an-app"></a>アプリを登録します
+Azure SQL connector の場合、Microsoft Search アプリがインデックス作成のためにデータにアクセスできるようにするには、Azure Active Directory にアプリを登録する必要があります。 アプリの登録の詳細については、Microsoft Graph のドキュメントを参照して[アプリを登録](https://docs.microsoft.com/graph/auth-register-app-v2)する方法を参照してください。 
+
+アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、およびテナント ID をメモしておき、[新しいクライアントシークレットを生成](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)する必要があります。 クライアントシークレットは一度だけ表示されます。 クライアントシークレットは安全に保存 & ことに注意してください。 Microsoft Search で新しい接続を構成する際に、クライアント ID とクライアントシークレットを使用します。 
+
+登録済みのアプリを Azure SQL データベースに追加するには、次のことを行う必要があります。
+ - Azure SQL DB にログインします。
+ - 新しいクエリウィンドウを開く
+ - コマンド ' CREATE USER [app name] を EXTERNAL PROVIDER から実行して、新しいユーザーを作成します。
+ - コマンド ' exec sp_addrolemember ' db_datareader '、[app name] '、または ' ALTER ROLE db_datareader ADD MEMBER [app name] ' を実行して、ユーザーを役割に追加します。
+
+>[!NOTE]
+>Azure Active Directory に登録されているすべてのアプリへのアクセスを取り消すには、[登録済みアプリの削除](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)に関する azure のドキュメントを参照してください。
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
 Microsoft SQL server コネクタをデータソースに接続するには、クロールするデータベースサーバーとオンプレミスゲートウェイを構成する必要があります。 その後、必要な認証方法を使用してデータベースに接続できます。
@@ -59,7 +73,22 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
 * **DeniedUsers**: 検索結果への**アクセス権を持たない**ユーザーのリストを指定します。 次の例では、ユーザー john@contoso.com および keith@contoso.com は OrderId = 13 のレコードにアクセスできませんが、他のすべてのユーザーはこのレコードにアクセスできます。 
 * **DeniedGroups**: 検索結果への**アクセス権を持たない**ユーザーのグループを指定します。 次の例では、groups engg-team@contoso.com および pm-team@contoso.com には OrderId = 15 のレコードへのアクセス権がありませんが、他のユーザーはこのレコードにアクセスできます。  
 
-![](media/MSSQL-ACL1.png)
+![プロパティの例を使用して、OrderTable と AclTable を表示するサンプルデータ](media/MSSQL-ACL1.png)
+
+### <a name="supported-data-types"></a>サポートされるデータ型
+次の表は、MS SQL および Azure SQL コネクタでサポートされている SQL データ型の概要を示しています。 また、サポートされている SQL データ型のインデックスデータ型の概要を示します。 インデックス用にサポートされている Microsoft Graph コネクタの詳細については、「[プロパティリソースの種類](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)に関するドキュメント」を参照してください。 
+
+| カテゴリ | ソースデータ型 | インデックス作成データの種類 |
+| ------------ | ------------ | ------------ |
+| 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
+| 真数 | bigint <br> int <br> smallint <br> tinyint | int64 |
+| 真数 | 若干 | ブール値 |
+| 近似数値 | 浮動小数点数 <br> 本当の | double |
+| 文字の文字列 | カーソル <br> varchar <br> text | string |
+| Unicode 文字列 | nchar <br> nvarchar <br> 型 | string |
+| その他のデータ型 | 識別子 | string |
+
+現在直接サポートされていないその他のデータ型については、列は、サポートされているデータ型に明示的にキャストする必要があります。
 
 ### <a name="watermark-required"></a>ウォーターマーク (必須)
 データベースが過負荷にならないようにするために、コネクタはフルクロールのウォーターマーク列を使用して、フルクロールクエリをバッチ処理および再開します。 [すかし] 列の値を使用すると、以降の各バッチが取得され、最後のチェックポイントからクエリが再開されます。 基本的には、フルクロールのデータ更新を制御するメカニズムを示します。
@@ -70,7 +99,7 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
 
 次の図に示す構成では、[ `CreatedDateTime` 選択されたウォーターマーク] 列が選択されています。 行の最初のバッチをフェッチするには、[すかし] 列のデータ型を指定します。 この例では、データ型は `DateTime` です。
 
-![](media/MSSQL-watermark.png)
+![ウォーターマーク列の構成](media/MSSQL-watermark.png)
 
 最初のクエリは、次の値を使用して、最初の**N 個**の行をフェッチします。 "/1 月1日 > 1753 00:00:00" (datetime データ型の最小値)。 最初のバッチをフェッチした後、 `CreatedDateTime` バッチで返される最大値は、行が昇順で並べ替えられている場合に、チェックポイントとして保存されます。 例としては、2019年3月1日、03:00:00 があります。 その後、 **N**行の次のバッチは、クエリ内の "/datetime > 03:00:00 2019 年3月1日を使用してフェッチされます。
 
@@ -86,10 +115,10 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
  
 Acl としてを使用するために、次の ID タイプがサポートされています。 
 * **ユーザープリンシパル名 (upn)**: ユーザープリンシパル名 (upn) は、電子メールアドレス形式のシステムユーザーの名前です。 UPN (例: john.doe@domain.com) は、ユーザー名 (ログオン名)、区切り記号 (@ 記号)、およびドメイン名 (UPN サフィックス) で構成されます。 
-* **Azure Active Directory (aad) ID**: aad では、すべてのユーザーまたはグループに、' e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ' のようなオブジェクト ID があります。 
+* **Azure Active Directory (AAD) ID**: azure AD では、すべてのユーザーまたはグループのオブジェクト ID が ' e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ' のようになります。 
 * **Active Directory (AD) セキュリティ ID**: オンプレミスの AD セットアップでは、すべてのユーザーとグループに、1-5-21-3878594291-2115959936-132693609-65242 というような不変の一意のセキュリティ識別子があります。
 
-![](media/MSSQL-ACL2.png)
+![アクセス制御リストを構成するための検索アクセス許可の設定](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>増分クロール (オプション)
 このオプションの手順では、データベースの増分クロールを実行するための SQL クエリを指定します。 このクエリでは、最後の増分クロール以降のデータの変更が SQL コネクタによって決定されます。 フルクロールの場合と同様に、**クエリ**可能、**検索**可能、または取得可能にするすべての列を**選択します**。 フルクロールクエリで指定したものと同じ ACL 列のセットを指定します。
