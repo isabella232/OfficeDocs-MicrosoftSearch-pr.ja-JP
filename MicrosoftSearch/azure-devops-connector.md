@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Azure DevOps connector をセットアップする
-ms.openlocfilehash: e2698d7d4a50c15bf765aa4eeada20fbc7328772
-ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
-ms.translationtype: Auto
+ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
+ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861105"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359723"
 ---
 # <a name="azure-devops-connector"></a>Azure DevOps コネクタ
 
@@ -30,11 +30,11 @@ Azure DevOps コネクタを使用すると、組織は Azure DevOps service の
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
 
-Azure DevOps インスタンスに接続するには、Azure DevOps[組織](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization)名、そのアプリ ID、および OAuth 認証のクライアントシークレットが必要です。
+Azure DevOps インスタンスに接続するには、Azure DevOps [組織](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) 名、そのアプリ ID、および OAuth 認証のクライアントシークレットが必要です。
 
 ### <a name="register-an-app"></a>アプリを登録します
 
-Microsoft Search アプリがインスタンスにアクセスできるようにするには、Azure DevOps でアプリを登録する必要があります。 詳細については、「Azure DevOps のドキュメント」の「[アプリを登録](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app)する方法」を参照してください。
+Microsoft Search アプリがインスタンスにアクセスできるようにするには、Azure DevOps でアプリを登録する必要があります。 詳細については、「Azure DevOps のドキュメント」の「 [アプリを登録](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app)する方法」を参照してください。
 
 次の表に、アプリ登録フォームに記入する方法についてのガイダンスを示します。
 
@@ -44,9 +44,9 @@ Microsoft Search アプリがインスタンスにアクセスできるように
 | アプリケーション名     | この一意の値は、承認しているアプリケーションを識別します。    | Microsoft Search     |
 | アプリケーション web サイト  | この必須フィールドは、コネクタのセットアップ時に Azure DevOps インスタンスへのアクセスを要求するアプリケーションの URL です。  | <https://gcs.office.com/>                |
 | 認証コールバック URL        | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | <https://gcs.office.com/v1.0/admin/oauth/callback>|
-| 承認されたスコープ | これは、アプリケーションへのアクセスの範囲です。 | 次のスコープを選択します。 Identity (read)、作業項目 (読み取り)、変数グループ (読み取り)、プロジェクトおよびチーム (読み取り)|
+| 承認されたスコープ | これは、アプリケーションへのアクセスの範囲です。 | Id (読み取り)、作業項目 (読み取り)、変数グループ (読み取り)、プロジェクトとチーム (読み取り)、グラフ (読み取り) の各スコープを選択します。|
 
-上記の詳細を使用してアプリを登録する場合は、コネクタの構成に使用する**アプリ ID**と**クライアントシークレット**を取得します。
+上記の詳細を使用してアプリを登録する場合は、コネクタの構成に使用する **アプリ ID** と **クライアントシークレット** を取得します。
 
 >[!NOTE]
 >Azure DevOps に登録されているすべてのアプリへのアクセスを取り消すには、Azure DevOps インスタンスの右上にある [ユーザーの設定] に移動します。 [プロファイル] をクリックし、作業ウィンドウの [セキュリティ] セクションで [承認] をクリックします。 承認済み OAuth アプリの上にカーソルを移動すると、アプリの詳細の隅にある [取り消し] ボタンが表示されます。
@@ -75,7 +75,7 @@ Microsoft Search アプリを Azure DevOps に登録した後、接続設定の�
 
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
 
-現時点では、Azure DevOps コネクタは、**すべてのユーザーに表示される**検索アクセス許可のみをサポートしています。 インデックスが作成されたデータは、すべてのユーザーの検索結果に表示されます。
+現時点では、Azure DevOps コネクタは、 **すべてのユーザーに表示される**検索アクセス許可のみをサポートしています。 インデックスが作成されたデータは、すべてのユーザーの検索結果に表示されます。
 
 ## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
 
