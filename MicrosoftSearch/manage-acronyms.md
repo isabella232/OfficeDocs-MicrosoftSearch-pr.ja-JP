@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
-ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
+ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46591510"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422948"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -27,7 +27,7 @@ ms.locfileid: "46591510"
 
 ## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、および[Office 365](https://Office.com)の頭字語を使用して定義を取得できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
+Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、および [Office 365](https://Office.com)の頭字語を使用して定義を取得できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
 
 - DNN *とは*
 - DNN *を定義する*
@@ -44,7 +44,7 @@ Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [SharePoint](http
 
 ## <a name="set-up-acronyms-answers"></a>頭字語の回答を設定する
 
-Microsoft 365 [管理センター](https://admin.microsoft.com) で、**[設定]** > **[Microsoft Search]** > ** [回答]** > [**[頭字語]**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) の順に移動し、**[頭字語の追加]** を選択します。
+[Microsoft 365 管理センター](https://admin.microsoft.com)で、[[**頭字**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)語] に移動し、[**頭字語の追加**] を選択します。
 
 Microsoft Search は、2 つのデータ ソースをクエリして、頭字語の回答をユーザーの検索に提供します:
 
@@ -108,7 +108,7 @@ Microsoft Search は、文書に対してアクセス権を持つユーザーの
 
 **Q: ユーザーが頭字語の回答をトリガーするにはどうすればよいですか?**
 
-**A**: 頭字語の回答を取得するには、ユーザーは[Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、または[Office 365](https://Office.com)の**検索**ボックスに特定のクエリパターンを入力する必要があります。
+**A**: 頭字語の回答を取得するには、ユーザーは [Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、または [Office 365](https://Office.com)の **検索** ボックスに特定のクエリパターンを入力する必要があります。
 
 **Q: 新しいメールや文書の送受信後に、採掘された頭字語が表示されるまで、どのくらいの時間がかかりますか?**
 

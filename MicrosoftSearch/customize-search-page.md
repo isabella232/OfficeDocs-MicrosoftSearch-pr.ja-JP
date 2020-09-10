@@ -1,7 +1,7 @@
 ---
 title: Microsoft 検索ページをカスタマイズする
-ms.author: jypal6
-author: jypal
+ms.author: jypal
+author: jypal6
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索垂直を追加して検索結果をカスタマイズする
-ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387987"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422984"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -25,17 +25,17 @@ ms.locfileid: "45387987"
 
 次のレベルで、業種と結果の種類を作成できます。
 
-- **組織レベル**–組織レベルで垂直を追加すると、ユーザーが[SharePoint](https://sharepoint.com/)のスタートページ、 [Office](https://office.com)、または[Bing](https://bing.com)で検索したときに、検索結果ページに表示されます。
-- **サイトレベル**–たとえば、顧客サービスの従業員が、部門の SharePoint サイトから直接、*重要度 1*のインシデントを検索できるようにすることができます。
+- **組織レベル** –組織レベルで垂直を追加すると、ユーザーが [SharePoint](https://sharepoint.com/) のスタートページ、 [Office](https://office.com)、または [Bing](https://bing.com)で検索したときに、検索結果ページに表示されます。
+- **サイトレベル** –たとえば、顧客サービスの従業員が、部門の SharePoint サイトから直接、 *重要度 1* のインシデントを検索できるようにすることができます。
 
 ## <a name="search-verticals-explained"></a>検索業種の説明
 
-Microsoft 検索結果ページの上部には、タブの行があります。 これらは検索業界です。 検索垂直では、特定の種類の結果または特定のコンテンツのみが表示されます。 例としては、**ファイル**または**ニュース**があります。 Microsoft Search では、既定で、**すべて**の業種、**人**、**ファイル**、**サイト**、および**ニュース**が表示されます。  
+Microsoft 検索結果ページの上部には、タブの行があります。 これらは検索業界です。 検索垂直では、特定の種類の結果または特定のコンテンツのみが表示されます。 例としては、 **ファイル** または **ニュース**があります。 Microsoft Search では、既定で、 **すべて**の業種、 **人**、 **ファイル**、 **サイト**、および **ニュース**が表示されます。  
 
-組織に関連する検索業種を追加することができます。 これらは、 [SharePoint](https://sharepoint.com/)、 [Office](https://Office.com)、および[Bing](https://bing.com)の Microsoft 検索結果ページに表示されます。 たとえば、各グループに必要な情報の種類に基づいて、マーケティング関連のコンテンツを縦にまとめ、売り上げに対して別のものを作成することができます。 すべての業種を追加して、コネクタ経由でインデックスが作成されたコンテンツからの結果のみを表示することができます。  
+組織に関連する検索業種を追加することができます。 これらは、 [SharePoint](https://sharepoint.com/)、 [Office](https://Office.com)、および [Bing](https://bing.com)の Microsoft 検索結果ページに表示されます。 たとえば、各グループに必要な情報の種類に基づいて、マーケティング関連のコンテンツを縦にまとめ、売り上げに対して別のものを作成することができます。 すべての業種を追加して、コネクタ経由でインデックスが作成されたコンテンツからの結果のみを表示することができます。  
 
 >[!NOTE]
-> 各業種および結果の種類は、Microsoft Graph のコネクタプレビューの一部として現在プレビュー段階にあります。 プレビューの詳細については、「[コネクタプレビュー](connectors-preview.md)」を参照してください。 プレビューに参加するには、最初に[Microsoft Graph Connector preview のサインアップフォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信する必要があります。
+> 各業種および結果の種類は、Microsoft Graph のコネクタプレビューの一部として現在プレビュー段階にあります。 プレビューの詳細については、「 [コネクタプレビュー](connectors-preview.md)」を参照してください。 プレビューに参加するには、最初に [Microsoft Graph Connector preview のサインアップフォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信する必要があります。
 
 ## <a name="things-to-consider"></a>考慮事項
 
@@ -53,21 +53,21 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
 
 ウィザードを開始したら、検索するコンテンツの縦の名前、コンテンツソース、および範囲を定義する手順に従って操作します。 垂直は無効な状態で作成されます。 後で有効にします。
 
-限定された一連の[キーワードクエリ言語 (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)を使用して、範囲を絞ることができます。 このページには、使用可能なプロパティの一覧が表示されます。 この KQL を作成するブール演算子では、freetext キーワードとプロパティ制限を使用することをお勧めします。
+限定された一連の [キーワードクエリ言語 (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) を使用して、範囲を絞ることができます。 このページには、使用可能なプロパティの一覧が表示されます。 この KQL を作成するブール演算子では、freetext キーワードとプロパティ制限を使用することをお勧めします。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>組織レベルで垂直線を作成する
 
 [SharePoint](https://sharepoint.com/) Home、 [Office](https://office.com)、または[Bing](https://bing.com)で Microsoft Search に垂直にするには、次の手順を実行します。
 
-1. Microsoft 365 [管理センター](https://admin.microsoft.com)で、[ **設定**] [   >  **microsoft Search**カスタマイズ] の各オプションに移動   >  **Customization**  >  [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)します。
-1. 開始するには、[ **追加**] を選択します。  
+1.  [Microsoft 365 管理センター](https://admin.microsoft.com)で、[ [**垂直**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)] に移動します。
+1. 開始するには、[ **追加** ] を選択します。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>サイトレベルで垂直方向のを作成する
 
-1. 垂直にする[SharePoint](https://sharepoint.com/)サイトで、[**設定**] に移動します。
-1. [**サイト情報**] を選択し、[**すべてのサイト設定**] を表示します。
-1. [ **Microsoft search** ] セクションを探し、[**このサイトコレクションの Microsoft Search を構成する**] を選択します。
-1. ナビゲーションウィンドウで、[ **ユーザー設定の操作**] に移動し、[**垂直**] タブを選択します。
+1. 垂直にする [SharePoint](https://sharepoint.com/) サイトで、[ **設定**] に移動します。
+1. [ **サイト情報** ] を選択し、[ **すべてのサイト設定**] を表示します。
+1. [ **Microsoft search** ] セクションを探し、[ **このサイトコレクションの Microsoft Search を構成する**] を選択します。
+1. ナビゲーションウィンドウで、[ **ユーザー設定の操作**] に移動し、[ **垂直** ] タブを選択します。
 1. 垂直方向を追加するには、[ **追加**] を選択します。
   または、縦方向を編集するには、一覧から選択します。
 
@@ -80,34 +80,34 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
 検索結果の種類とは、検索結果のタイプの違いに応じて表示方法を変えるルールのことです。このルールは、次のような構成になっています。
 
 - 検索結果のコンテンツソースなど、各検索結果を比較する**1 つまたは複数の条件**。  
-- 条件に一致する検索結果に使用する**結果レイアウト**。 結果レイアウトは、条件を満たすすべての結果が検索結果ページに表示され、動作する方法を制御します。
+- 条件に一致する検索結果に使用する **結果レイアウト** 。 結果レイアウトは、条件を満たすすべての結果が検索結果ページに表示され、動作する方法を制御します。
 
-**結果を垂直に表示するには、少なくとも1つの結果の種類を作成する必要があります。** 垂直方向に複数の検索結果の種類を作成できます。これにより、さまざまな種類の結果に異なるレイアウトを使用できます。 たとえば、重大度*1*のインシデントをカスタマイズして、*重要度 3*のインシデントに比べて目立つ色とより大きいフォントを設定することができます。
+**結果を垂直に表示するには、少なくとも1つの結果の種類を作成する必要があります。** 垂直方向に複数の検索結果の種類を作成できます。これにより、さまざまな種類の結果に異なるレイアウトを使用できます。 たとえば、重大度 *1* のインシデントをカスタマイズして、 *重要度 3* のインシデントに比べて目立つ色とより大きいフォントを設定することができます。
 
 ウィザードを開始した後、検索結果の種類の名前、コンテンツソース、および条件を定義する手順について説明しています。 リストビューから検索結果の種類の優先度を定義できます。
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>組織レベルで結果の種類を作成する
 
-1. [管理センター](https://admin.microsoft.com)で、[ **Setting**  >  **Microsoft Search**  >  の**カスタマイズ**の結果の種類の設定] に移動  >  [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)で、[[**検索結果の種類**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)] に移動します。
 1. **検索結果の種類**を追加するには、[ **追加**] を選択します。 検索結果の種類を編集するには、関連するリストで結果の種類を選択します。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>サイトレベルで結果の種類を作成する
 
-1. 検索結果の種類を作成する[SharePoint](https://sharepoint.com/)サイトで、[**設定**] に移動します。
-1. [**サイト情報**] を選択し、[**すべてのサイト設定**] を表示します。
-1. [Microsoft Search] セクションを探し、[**このサイトコレクションの Microsoft search を構成する**] を選択します。
-1. ナビゲーションウィンドウで、[ **ユーザー設定の操作**] に移動し、[**結果の種類**] タブを選択します。
-2. 検索結果の種類を追加するには、[ **追加**] を選択します。  または、結果の種類を編集するには、リストで結果の種類を選択します。
+1. 検索結果の種類を作成する [SharePoint](https://sharepoint.com/) サイトで、[ **設定**] に移動します。
+1. [ **サイト情報** ] を選択し、[ **すべてのサイト設定**] を表示します。
+1. [Microsoft Search] セクションを探し、[ **このサイトコレクションの Microsoft search を構成する**] を選択します。
+1. ナビゲーションウィンドウで、[ **ユーザー設定の操作**] に移動し、[ **結果の種類** ] タブを選択します。
+1. 検索結果の種類を追加するには、[ **追加**] を選択します。  または、結果の種類を編集するには、リストで結果の種類を選択します。
 
 ### <a name="view-the-vertical-after-its-enabled"></a>有効になった縦の表示
 
-垂直方向を有効にした後は、表示する前にしばらく時間がかかる場合があります。 有効にした後に待機する必要がない場合は、 **cacheClear = true**を[SharePoint](https://sharepoint.com/)および[Office](https://office.com)の URL に追加して、すぐに垂直状態を表示することができます。
+垂直方向を有効にした後は、表示する前にしばらく時間がかかる場合があります。 有効にした後に待機する必要がない場合は、 **cacheClear = true** を [SharePoint](https://sharepoint.com/) および [Office](https://office.com) の URL に追加して、すぐに垂直状態を表示することができます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 発生する可能性のある一般的な問題と、それらを修正するためのアクションを次に示します。
 
-|Error  |アクション  |
+|Error  |Action  |
 |---------|---------|
 | 垂直方向に "問題が発生しました" というエラーメッセージが表示されます。 | セットアップを完了するには、垂直と結果の両方の種類が必要です。 同じコンテンツソースに対して両方の作成が完了していることを確認してください。 |
 | 結果のレイアウトは表示されませんでしたが、作成しました。 | これらの設定は一般的にキャッシュされるため、数分かかることがあります。 数分待ってから、もう一度実行してください。        |

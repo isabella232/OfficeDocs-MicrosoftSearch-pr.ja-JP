@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過と共に、場所の情報の状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。
-ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996069"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422885"
 ---
 # <a name="manage-locations"></a>場所の管理
 
@@ -28,9 +28,8 @@ ms.locfileid: "44996069"
 
 ### <a name="add-or-edit-a-single-location"></a>1 つの場所を追加または編集する
 
-1. **Microsoft 365 管理センター**に移動します。
-1. ナビゲーションウィンドウで、[**設定**] に移動します。  >  **Microsoft 検索**  >  **応答**の  >  [**場所**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
-1. 新しい場所を追加するには、**[新規追加]** を選択します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)で、[[**場所**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)] に移動します。
+1. 新しい場所を追加するには、[ **追加**] を選択します。
 1. 場所を編集するには、関連する場所の一覧で場所を選択します。
 1. 情報を追加または編集すると、プレビューが自動的に更新されます。
 1. 変更内容を保存します。
@@ -58,10 +57,10 @@ ms.locfileid: "44996069"
 以下に、テンプレート ファイルに関する重要な点をいくつか紹介します。
 
 - 次のフィールドのデータは決して編集しないでください: *ID*、*最終更新日時*、*最終更新者*
-- 既存の場所の*Id*を指定すると、インポートファイルの情報に置き換えられます。
+- 既存の場所の *Id* を指定すると、インポートファイルの情報に置き換えられます。
 - 同じ名前の既存の場所がある場合、その場所はインポートファイルの情報で更新されます。
 - テンプレートファイルのすべてのフィールドが必須であるわけではなく、場所の状態によって必須のフィールドが異なる場合があります。
-- [*状態*] フィールドに基づいて、場所が下書き、提案済み、スケジュール済み、または自動的に公開されるように保存されます。
+- [ *状態* ] フィールドに基づいて、場所が下書き、提案済み、スケジュール済み、または自動的に公開されるように保存されます。
 - 複数の組織を管理するパートナーは、1つの組織からの場所をエクスポートして、別の組織にインポートすることができます。 ただし、インポートする前に *ID* 列のデータを削除する必要があります。
 
 > [!NOTE]

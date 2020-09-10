@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search 用の ServiceNow コネクタ
-ms.author: v-pamcn
-author: TrishaMc1
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow コネクタをセットアップする
-ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
-ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
+ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39998568"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422867"
 ---
 # <a name="servicenow-connector"></a>ServiceNow コネクタ
 
@@ -26,16 +26,18 @@ ServiceNow コネクタを使用すると、組織内のすべてのユーザー
 この記事は、Microsoft 365 管理者、または ServiceNow コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
-ServiceNow データに接続するには、組織の**servicenow インスタンスの URL**、このアカウントの資格情報、および OAuth 認証用のクライアント ID とクライアントシークレットが必要です。  
 
-組織の**ServiceNow インスタンスの URL**は、通常 **、&lt;https://> service-now.com**のようになります。 この URL に加えて、ServiceNow への接続を設定するためのアカウントと、更新スケジュールに基づいて、Microsoft Search が ServiceNow から定期的に記事を更新できるようにする必要があります。
+ServiceNow データに接続するには、組織の **servicenow インスタンスの URL**、このアカウントの資格情報、および OAuth 認証用のクライアント ID とクライアントシークレットが必要です。  
 
-ServiceNow からコンテンツを認証および同期するには、次の2つのサポートされている方法のいずれかを選択します。 
-1. 基本認証 
+組織の **ServiceNow インスタンスの URL** は、通常 ** &lt; 、https://> service-now.com**のようになります。 この URL に加えて、ServiceNow への接続を設定するためのアカウントと、更新スケジュールに基づいて、Microsoft Search が ServiceNow から定期的に記事を更新できるようにする必要があります。
+
+ServiceNow からコンテンツを認証および同期するには、次の2つのサポートされている方法のいずれかを選択します。
+
+1. 基本認証
 2. OAuth (推奨)
 
 > [!Note]
-> 認証に OAuth を使用するには、servicenow 管理者が ServiceNow インスタンスにエンドポイントをプロビジョニングする必要があります。これにより、Microsoft Search アプリがインスタンスにアクセスできるようになります。 詳細については、「クライアントが ServiceNow ドキュメントの[インスタンスにアクセスするためのエンドポイントを作成する](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html)」を参照してください。
+> 認証に OAuth を使用するには、servicenow 管理者が ServiceNow インスタンスにエンドポイントをプロビジョニングする必要があります。これにより、Microsoft Search アプリがインスタンスにアクセスできるようになります。 詳細については、「クライアントが ServiceNow ドキュメントの [インスタンスにアクセスするためのエンドポイントを作成する](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 」を参照してください。
 
 次の表に、エンドポイント作成フォームに記入する方法についてのガイダンスを示します。
 
@@ -50,16 +52,20 @@ Active | アプリケーションレジストリをアクティブにするに�
 トークンの寿命を更新する | 更新トークンが有効になる秒数。 既定では、更新トークンの有効期限は100日 (864万秒) です。 | 31536000 (1 年)
 アクセストークンの寿命 | アクセストークンの有効期間 (秒数)。 | 43200 (12 時間)
 
-## <a name="set-a-sync-filter"></a>同期フィルターを設定する 
+## <a name="set-a-sync-filter"></a>同期フィルターを設定する
+
 同期フィルターを使用すると、記事を同期するための条件を指定できます。 **SQL Select**ステートメントの**where**句のようになります。 たとえば、公開されていてアクティブな記事のみにインデックスを作成することを選択できます。 [SyncNow の構成] ページには、同期フィルターをキャプチャして設定する方法が記載されています。
 
 ## <a name="manage-the-search-schema"></a>検索スキーマを管理する
+
 接続が成功した後、検索スキーママッピングを構成します。 **クエリ**可能、**検索**可能、および取得可能なプロパティを選択でき**ます。**
 
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
-ServiceNow コネクタは、**すべてのユーザー**に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
- 
-## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する 
+
+ServiceNow コネクタは、 **すべてのユーザー**に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+
+## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
+
 ServiceNow コネクタは、フルクロールと増分クロールの両方の更新スケジュールをサポートします。 両方を設定することをお勧めします。
 
 フルクロールスケジュールは、Microsoft 検索インデックスと同期フィルターから移動したすべての記事に対して以前に同期された削除済み記事を検索します。 最初に ServiceNow に接続すると、フルクロールが実行され、すべてのナレッジベースの記事が同期されます。 新しいアイテムを同期し、更新を行うには、増分クロールをスケジュールする必要があります。

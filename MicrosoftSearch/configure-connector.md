@@ -1,7 +1,7 @@
 ---
 title: Microsoft が開発したコネクタを Microsoft Search 用に構成する
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: jameslau
 ms.audience: Admin
 ms.topic: article
@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft が開発したコネクタを Microsoft Search 用に構成する
-ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: 19a0c21911a9c5410e13a36f0bcc694af4a5c41a
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387975"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422858"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 # <a name="set-up-your-microsoft-built-connector-for-microsoft-search"></a>Microsoft が開発したコネクタを Microsoft Search 用にセットアップする
 
-この記事では、Microsoft によって作成されたコネクタを構成する手順について説明します。 この記事では、Microsoft 365[管理センター](https://admin.microsoft.com)での接続のセットアップフローについて説明します。 特定の Microsoft が作成したコネクタをセットアップする方法の詳細については、次の記事を参照してください。
+この記事では、Microsoft によって作成されたコネクタを構成する手順について説明します。 この記事では、Microsoft 365 [管理センター](https://admin.microsoft.com)での接続のセットアップフローについて説明します。 特定の Microsoft が作成したコネクタをセットアップする方法の詳細については、次の記事を参照してください。
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
@@ -39,7 +39,7 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 1. [Microsoft 365 管理センター](https://admin.microsoft.com)の [[コネクタ] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)に移動します。
 2. [Microsoft 365](https://www.microsoft.com/microsoft-365)テナントの資格情報を使用して、アカウントにサインインします。
-3. [**コネクタの追加**] を選択します。
+3. [ **コネクタの追加**] を選択します。
 4. 使用可能なコネクタのリストから、選択したコネクタを選択します。
 
 ![利用可能なデータソースは次のとおりです。 Azure DevOps Connector、ServiceNow、ADLS Gen2、エンタープライズ web サイト、MediaWiki、Microsoft SQL server、および Azure SQL。](media/add_connector.png)
@@ -56,7 +56,7 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 ### <a name="connect-to-a-data-source"></a>データソースへの接続
 
-データ接続プロセスは、コネクタの種類によって異なります。 オンプレミスのデータソースへの接続の詳細については、「[オンプレミスのデータゲートウェイをインストール](https://aka.ms/configuregateway)する」を参照してください。
+データ接続プロセスは、コネクタの種類によって異なります。 オンプレミスのデータソースへの接続の詳細については、「 [オンプレミスのデータゲートウェイをインストール](https://aka.ms/configuregateway)する」を参照してください。
 
 ### <a name="select-source-properties"></a>ソースのプロパティの選択
 
@@ -68,9 +68,9 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 検索スキーマの属性には、検索可能、**クエリ**可能 **、および取得**可能**なものが**あります。 次の表に、Microsoft Graph コネクタがサポートしている各属性とその機能について説明します。
 
-検索スキーマの属性 | 関数 | 例
+検索スキーマの属性 | 職務 | 例
 --- | --- | ---
-サーチ | プロパティのテキストコンテンツを検索可能にします。 プロパティの内容は、フルテキストインデックスに含まれています。 | プロパティが**title**の場合、**エンタープライズ**のクエリは、テキストまたはタイトルに " **enterprise** " が含まれている回答を返します。
+サーチ | プロパティのテキストコンテンツを検索可能にします。 プロパティの内容は、フルテキストインデックスに含まれています。 | プロパティが **title**の場合、 **エンタープライズ** のクエリは、テキストまたはタイトルに " **enterprise** " が含まれている回答を返します。
 クエリ可能 | クエリによって特定のプロパティの一致が検索されます。 プロパティ名は、プログラムまたは逐語的にクエリで指定できます。 |  **Title**プロパティがクエリ可能な場合は、クエリ**タイトル: Enterprise**がサポートされています。
 だっ | 検索結果の種類には取得可能なプロパティのみを使用し、検索結果に表示することができます。 |
 
@@ -85,7 +85,7 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 * 検索可能としてマークできるのは、文字列のプロパティだけです。
 
 > [!Note]
-> 接続を作成した後、スキーマを変更する**ことはできません**。 そのためには、接続を削除して、新しい接続を作成する必要があります。
+> 接続を作成した後、スキーマを変更する **ことはできません** 。 そのためには、接続を削除して、新しい接続を作成する必要があります。
 
 ### <a name="manage-search-permissions"></a>検索アクセス許可を管理する
 
@@ -113,16 +113,16 @@ Microsoft によって作成されたコネクタのいずれかを構成する�
 
 ### <a name="review-connector-settings"></a>コネクタの設定を確認する
 
-コネクタを構成した後は、[管理センター](https://admin.microsoft.com)から設定を確認できるページに移動します。 接続を確認する前に、構成プロセスに戻って設定を編集することができます。 詳細については、「[コネクタの管理](manage-connector.md)」を参照してください。
+コネクタを構成した後は、 [管理センター](https://admin.microsoft.com) から設定を確認できるページに移動します。 接続を確認する前に、構成プロセスに戻って設定を編集することができます。 詳細については、「 [コネクタの管理](manage-connector.md)」を参照してください。
 
 ## <a name="next-steps-customize-the-search-results-page"></a>次の手順: 検索結果ページをカスタマイズする
 
-Microsoft 検索ユーザーインターフェイス (UI) を使用すると、エンドユーザーは[microsoft 365](https://www.microsoft.com/microsoft-365)プロダクティビティアプリと microsoft の広範なエコシステムからコンテンツを検索できます。 縦方向検索は、ユーザーが[Bing](https://Bing.com)で[SharePoint](https://sharepoint.com/)、 [Microsoft Office](https://Office.com)、および microsoft search の検索結果を表示するときに表示されるタブを示します。 検索結果を絞り込んで検索結果の特定の種類だけが表示されるように、検索対象をカスタマイズすることができます。 これらの業種は、検索結果ページの上部にタブとして表示されます。 モダン検索結果の種類 (MRT) は、結果の表示方法を指定する UI です。
+Microsoft 検索ユーザーインターフェイス (UI) を使用すると、エンドユーザーは [microsoft 365](https://www.microsoft.com/microsoft-365) プロダクティビティアプリと microsoft の広範なエコシステムからコンテンツを検索できます。 縦方向検索は、ユーザーが[Bing](https://Bing.com)で[SharePoint](https://sharepoint.com/)、 [Microsoft Office](https://Office.com)、および microsoft search の検索結果を表示するときに表示されるタブを示します。 検索結果を絞り込んで検索結果の特定の種類だけが表示されるように、検索対象をカスタマイズすることができます。 これらの業種は、検索結果ページの上部にタブとして表示されます。 モダン検索結果の種類 (MRT) は、結果の表示方法を指定する UI です。
 
 独自の業種と結果の種類を作成することで、エンドユーザーは新しい接続から検索結果を表示できるようになります。 この手順を行わないと、接続からのデータが検索結果ページに表示されません。
 
-業種および MRTs の作成方法の詳細については、「[検索結果ページのカスタマイズ](customize-search-page.md)」を参照してください。
+業種および MRTs の作成方法の詳細については、「 [検索結果ページのカスタマイズ](customize-search-page.md)」を参照してください。
 
 ## <a name="how-do-i-know-the-connection-setup-worked"></a>接続セットアップが動作していることを確認するには、どうすればよいですか。
 
-[管理センター](https://admin.microsoft.com)の [**コネクタ**] タブで、公開されている接続の一覧に移動します。 更新と削除を行う方法については、「[コネクタの管理](manage-connector.md)」を参照してください。
+[管理センター](https://admin.microsoft.com)の [**コネクタ**] タブで、公開されている接続の一覧に移動します。 更新と削除を行う方法については、「 [コネクタの管理](manage-connector.md)」を参照してください。

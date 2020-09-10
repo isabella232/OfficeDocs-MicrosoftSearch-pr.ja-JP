@@ -1,8 +1,8 @@
 ---
 title: コネクタの概要
-ms.author: mounika.narayanan
-author: monaray
-manager: shohara
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,31 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph のコネクタの概要
-ms.openlocfilehash: ecedd135336f37da26cee71be06dd421cdb95f61
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: e7c697505f6f84f6fef021df756091d8f4e32db1
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387996"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422903"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph コネクタの概要
 
-Microsoft Search では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365)のすべてのデータのインデックスが作成されます。 Microsoft Graph コネクタを使用すると、サードパーティーデータのインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
+Microsoft Search では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365) のすべてのデータのインデックスが作成されます。 Microsoft Graph コネクタを使用すると、サードパーティーデータのインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
 
 > [!IMPORTANT]
-> **免責事項**: microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在、対象となるリリースのテナントで利用可能なプレビュー状態になっています。 Microsoft Search でコネクタを使用したり、コネクタを作成したりするには、[対象となるリリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)にオプトインします。 プレビューの詳細については、「[コネクタプレビュープログラム](connectors-preview.md)」を参照してください。
+> **免責事項**: microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在、対象となるリリースのテナントで利用可能なプレビュー状態になっています。 Microsoft Search でコネクタを使用したり、コネクタを作成したりするには、 [対象となるリリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)にオプトインします。 プレビューの詳細については、「 [コネクタプレビュープログラム](connectors-preview.md)」を参照してください。
 
 ## <a name="architecture"></a>アーキテクチャ
 
-Microsoft Graph プラットフォームの次のアーキテクチャ図は、 [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search)クライアントでのコンテンツインデックスを使用してコネクタコンテンツをユーザーの結果にどのように流し込むかを示しています。 この記事では、Microsoft Graph コネクタデータフロープロセスの主な構成要素について説明します。
+Microsoft Graph プラットフォームの次のアーキテクチャ図は、 [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) クライアントでのコンテンツインデックスを使用してコネクタコンテンツをユーザーの結果にどのように流し込むかを示しています。 この記事では、Microsoft Graph コネクタデータフロープロセスの主な構成要素について説明します。
 
 ![図: 社内およびクラウドベースのデータは、コネクタによって取得され、Microsoft Search API によってインデックスが作成され、Microsoft Search サービスが結果をユーザーに配信します。](media/highlevel-connectors_FINAL.png)
 
 API は、データソースごとに1つの接続をインスタンス化します。 その後、API はデータをインデックス処理して格納します。 確立された接続は Microsoft Search とやり取りされるので、ユーザーは検索結果を取得できます。
 
-Microsoft 365[管理センター](https://admin.microsoft.com)では、microsoft によって作成されたすべてのコネクタを構成できます。 管理センターを使用すると、簡単なユーザーインターフェイスでコネクタを簡単に構成できます。
+Microsoft 365 [管理センター](https://admin.microsoft.com)では、microsoft によって作成されたすべてのコネクタを構成できます。 管理センターを使用すると、簡単なユーザーインターフェイスでコネクタを簡単に構成できます。
 
-データソースへの**接続**を作成するには、管理者がデータとコンテンツリポジトリ全体への認証されたアクセスを必要とします。 データは、インデックス作成のために graph connector サービスに送られます。
+データソースへの **接続** を作成するには、管理者がデータとコンテンツリポジトリ全体への認証されたアクセスを必要とします。 データは、インデックス作成のために graph connector サービスに送られます。
 
 ## <a name="available-connectors"></a>利用可能なコネクタ
 
@@ -62,7 +62,7 @@ Microsoft Graph コネクタプレビューリリースには、6つの Microsof
 詳細については、「 [AZURE SQL connector](MSSQL-connector.md)」を参照してください。
 
 - **エンタープライズ web サイト**。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは、SharePoint 以外のエンタープライズ web サイト内のページを検索できます。
-詳細については、「[エンタープライズ web サイトコネクタ](enterprise-web-connector.md)」を参照してください。
+詳細については、「 [エンタープライズ web サイトコネクタ](enterprise-web-connector.md)」を参照してください。
 
 - **[Mediawiki](https://www.mediawiki.org/wiki/MediaWiki)**。 この Microsoft Graph コネクタを使用すると、ユーザーは、組織が MediaWiki を使用して作成した wiki サイトで、サポート技術情報の記事を検索できます。
 詳細については、「 [Mediawiki コネクタ](mediawiki-connector.md)」を参照してください。
@@ -80,11 +80,11 @@ Microsoft Graph コネクタプレビューリリースには、6つの Microsof
 
 ### <a name="build-your-own-connector"></a>独自のコネクタを作成する
 
-カスタムデータ型またはファイルにインデックスを作成するために、開発者は[Microsoft Graph](https://developer.microsoft.com/graph/)でコネクタを作成できます。 コネクタは、[接続を作成](https://docs.microsoft.com/graph/search-index-manage-connections)し、Microsoft 検索インデックスにアイテムをプッシュするアプリケーションです。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
+カスタムデータ型またはファイルにインデックスを作成するために、開発者は [Microsoft Graph](https://developer.microsoft.com/graph/)でコネクタを作成できます。 コネクタは、 [接続を作成](https://docs.microsoft.com/graph/search-index-manage-connections) し、Microsoft 検索インデックスにアイテムをプッシュするアプリケーションです。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
 
 ### <a name="search-results-with-your-custom-built-connector"></a>カスタム作成コネクタを使用した検索結果
 
-カスタムデータのインデックスを作成すると、開発者は[このデータをクエリ](https://docs.microsoft.com/graph/search-concept-custom-types)できます。 任意のアプリケーションでデータを表示できます。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
+カスタムデータのインデックスを作成すると、開発者は [このデータをクエリ](https://docs.microsoft.com/graph/search-concept-custom-types)できます。 任意のアプリケーションでデータを表示できます。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
 
 ## <a name="license-requirements"></a>ライセンス要件
 

@@ -13,24 +13,23 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークを作成および更新して、Microsoft Search のブックマークの結果を一括編集する方法
-ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
-ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
+ms.openlocfilehash: 2c0b42e4be1307aa45e4cab3f5c923a7808375e4
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167459"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422876"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
 ブックマークはわずかな手順で作成できます。 各ブックマークには、そのブックマークをトリガーするタイトル、URL、キーワードのセットが含まれます。 また、管理ポータルでの並べ替えとフィルター処理に使用できるブックマークに、カテゴリを追加することもできます。 ブックマークには複数のキーワードを指定できるので、複数のブックマークで同じキーワードを共有できます。ただし、予約済みキーワードを共有することはできません。 ブックマークを作成または変更すると、検索インデックスが直ちに更新され、ユーザーがブックマークをすぐに使用できるようになります。
 
-組織の結果が SharePoint で昇格されている場合は、昇格した結果を**Microsoft Search**にインポートして、インポートされたコンテンツをユーザーが使用できるようにすることができます。 これは、**Microsoft Search** がセットアップされ次第、即座に検索結果を作成して、ユーザーがより効果的に利用できるようにする簡単な方法です。 関連する検索結果の名前付け方法と作成方法を理解するには、SharePoint の昇格した結果を参照として使用することをお勧めします。
+組織の結果が SharePoint で昇格されている場合は、昇格した結果を **Microsoft Search** にインポートして、インポートされたコンテンツをユーザーが使用できるようにすることができます。 これは、**Microsoft Search** がセットアップされ次第、即座に検索結果を作成して、ユーザーがより効果的に利用できるようにする簡単な方法です。 関連する検索結果の名前付け方法と作成方法を理解するには、SharePoint の昇格した結果を参照として使用することをお勧めします。
 
 ## <a name="add-or-edit-a-single-bookmark"></a>1 つのブックマークを追加または編集する
 
-1. **Microsoft 365 管理センター**に移動します。
-1. ナビゲーションウィンドウで、[**設定**] [  >  **Microsoft 検索**  >  **応答**  >  [**ブックマーク**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)] に移動します。
-1. ブックマークを追加するには、**[新規追加]** を選択します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)で、[[**ブックマーク**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)] に移動します。
+1. ブックマークを追加するには、[ **追加**] を選択します。
 ブックマークを編集するには、関連するブックマークの一覧で編集するブックマークを選択します。
 1. 情報を追加または編集すると、プレビューが自動的に更新されます。
 1. 変更内容を保存します。
@@ -41,8 +40,8 @@ ms.locfileid: "45167459"
 
 現在、ブラウザーの拡張機能は Edge と Chrome で利用できます。
 
-- エッジ拡張機能をダウンロードするには、 [Microsoft ストア](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)に移動して、アプリをダウンロードしてください。
-- Chrome 拡張機能をダウンロードするには、 [chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)に移動し、アプリをダウンロードします。
+- エッジ拡張機能をダウンロードするには、 [Microsoft ストア](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) に移動して、アプリをダウンロードしてください。
+- Chrome 拡張機能をダウンロードするには、 [chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) に移動し、アプリをダウンロードします。
 
 ## <a name="bulk-add-or-edit-bookmarks"></a>ブックマークを一括して追加または編集する
 
@@ -88,7 +87,7 @@ ms.locfileid: "45167459"
 ブックマーク間の重複エラーを回避するには、次のベストプラクティスに従います。
 
 - 複数のブックマークに重複した URL を使用しないでください。 URL が既に別のブックマークに割り当てられていて、それをインポートファイルから再び追加する場合は、エラーが表示されます。 これは、他の種類の応答の重複した Url にも適用されます。
-- 既存のブックマークを更新するときは、*ブックマーク ID*列を使用します。 キーワードや説明などの既存のブックマークの他のプロパティは更新できますが、*ブックマーク ID*がインポートファイルの適切な列にあることを確認する必要があります。 *ブックマーク ID*が存在する場合、サービスは新しい追加として考慮しません。エラーとして処理されません。
+- 既存のブックマークを更新するときは、 *ブックマーク ID* 列を使用します。 キーワードや説明などの既存のブックマークの他のプロパティは更新できますが、 *ブックマーク ID* がインポートファイルの適切な列にあることを確認する必要があります。 *ブックマーク ID*が存在する場合、サービスは新しい追加として考慮しません。エラーとして処理されません。
 
 ## <a name="power-apps"></a>Power アプリ
 
@@ -104,9 +103,8 @@ Power Apps は、コーディング操作を必要とせずに、ブラウザー
 
 ### <a name="add-a-power-app-to-a-bookmark"></a>Power App をブックマークに追加する
 
-1. 追加する[電源アプリのアプリ ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)を検索します。
-1. [**Microsoft 365 管理センター**](https://admin.microsoft.com)にサインインします。
-1. ナビゲーションウィンドウで、[**設定**] [  >  **Microsoft 検索**  >  **応答**  >  [**ブックマーク**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)] に移動します。
+1. 追加する [電源アプリのアプリ ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) を検索します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)で、[[**ブックマーク**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)] に移動します。
 1. ブックマークを追加するか、**PowerApp** を追加する既存のブックマークを検索します。
 1. **[ブックマークの設定]** で、**[Power App]**、**[Power App を追加]** の順に選択します。
 1. **App ID** を入力するか貼り付けます。
