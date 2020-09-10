@@ -13,58 +13,57 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過と共に、場所の情報の状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。
-ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996069"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422885"
 ---
-# <a name="manage-locations"></a><span data-ttu-id="3ee5d-103">場所の管理</span><span class="sxs-lookup"><span data-stu-id="3ee5d-103">Manage locations</span></span>
+# <a name="manage-locations"></a><span data-ttu-id="d3024-103">場所の管理</span><span class="sxs-lookup"><span data-stu-id="d3024-103">Manage locations</span></span>
 
-## <a name="location"></a><span data-ttu-id="3ee5d-104">場所</span><span class="sxs-lookup"><span data-stu-id="3ee5d-104">Location</span></span>
+## <a name="location"></a><span data-ttu-id="d3024-104">場所</span><span class="sxs-lookup"><span data-stu-id="d3024-104">Location</span></span>
 
-<span data-ttu-id="3ee5d-105">場所は、道順やナビゲーションとともに、オフィス、キャンパス、建物の正確な場所を提供することで、ユーザーが組織の建物の住所と場所を検索するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-105">Location helps your users find addresses and locate your organization's buildings by providing an accurate location for offices, campuses, and buildings, along with directions and navigation.</span></span> <span data-ttu-id="3ee5d-106">管理者は、組織に関するすべての重要な場所を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-106">Administrators should add all important locations of your organization.</span></span> <span data-ttu-id="3ee5d-107">ブックマークや Q&A とは異なり、インデックスはすぐに更新されないため、新しい場所や変更された場所が検索結果に表示されるまでに数時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-107">Unlike Bookmarks and Q&A, the index is not refreshed immediately, and it can take several hours for new or changed locations to appear in search results.</span></span>
+<span data-ttu-id="d3024-105">場所は、道順やナビゲーションとともに、オフィス、キャンパス、建物の正確な場所を提供することで、ユーザーが組織の建物の住所と場所を検索するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="d3024-105">Location helps your users find addresses and locate your organization's buildings by providing an accurate location for offices, campuses, and buildings, along with directions and navigation.</span></span> <span data-ttu-id="d3024-106">管理者は、組織に関するすべての重要な場所を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3024-106">Administrators should add all important locations of your organization.</span></span> <span data-ttu-id="d3024-107">ブックマークや Q&A とは異なり、インデックスはすぐに更新されないため、新しい場所や変更された場所が検索結果に表示されるまでに数時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d3024-107">Unlike Bookmarks and Q&A, the index is not refreshed immediately, and it can take several hours for new or changed locations to appear in search results.</span></span>
 
-### <a name="add-or-edit-a-single-location"></a><span data-ttu-id="3ee5d-108">1 つの場所を追加または編集する</span><span class="sxs-lookup"><span data-stu-id="3ee5d-108">Add or edit a single location</span></span>
+### <a name="add-or-edit-a-single-location"></a><span data-ttu-id="d3024-108">1 つの場所を追加または編集する</span><span class="sxs-lookup"><span data-stu-id="d3024-108">Add or edit a single location</span></span>
 
-1. <span data-ttu-id="3ee5d-109">**Microsoft 365 管理センター**に移動します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-109">Go to **Microsoft 365 admin center**.</span></span>
-1. <span data-ttu-id="3ee5d-110">ナビゲーションウィンドウで、[**設定**] に移動します。  >  **Microsoft 検索**  >  **応答**の  >  [**場所**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)</span><span class="sxs-lookup"><span data-stu-id="3ee5d-110">In the navigation pane, go to **Settings** > **Microsoft Search** > **Answers** > [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)</span></span>
-1. <span data-ttu-id="3ee5d-111">新しい場所を追加するには、**[新規追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-111">To add a new location, select **Add new**.</span></span>
-1. <span data-ttu-id="3ee5d-112">場所を編集するには、関連する場所の一覧で場所を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-112">To edit a location, select the location in the relevant locations list.</span></span>
-1. <span data-ttu-id="3ee5d-113">情報を追加または編集すると、プレビューが自動的に更新されます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-113">As you add or edit the information, the preview automatically updates.</span></span>
-1. <span data-ttu-id="3ee5d-114">変更内容を保存します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-114">Save your changes.</span></span>
+1. <span data-ttu-id="d3024-109">[Microsoft 365 管理センター](https://admin.microsoft.com)で、[[**場所**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)] に移動します。</span><span class="sxs-lookup"><span data-stu-id="d3024-109">In the [Microsoft 365 admin center](https://admin.microsoft.com), go to [**Locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)</span></span>
+1. <span data-ttu-id="d3024-110">新しい場所を追加するには、[ **追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d3024-110">To add a new location, select **Add**.</span></span>
+1. <span data-ttu-id="d3024-111">場所を編集するには、関連する場所の一覧で場所を選択します。</span><span class="sxs-lookup"><span data-stu-id="d3024-111">To edit a location, select the location in the relevant locations list.</span></span>
+1. <span data-ttu-id="d3024-112">情報を追加または編集すると、プレビューが自動的に更新されます。</span><span class="sxs-lookup"><span data-stu-id="d3024-112">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="d3024-113">変更内容を保存します。</span><span class="sxs-lookup"><span data-stu-id="d3024-113">Save your changes.</span></span>
 
-### <a name="bulk-add-or-edit-locations"></a><span data-ttu-id="3ee5d-115">場所を一括して追加または編集する</span><span class="sxs-lookup"><span data-stu-id="3ee5d-115">Bulk add or edit locations</span></span>
+### <a name="bulk-add-or-edit-locations"></a><span data-ttu-id="d3024-114">場所を一括して追加または編集する</span><span class="sxs-lookup"><span data-stu-id="d3024-114">Bulk add or edit locations</span></span>
 
-<span data-ttu-id="3ee5d-116">管理者は、インポート機能またはエクスポート機能を使用して、場所の一括作成または一括編集が行えます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-116">Administrators can use the Import or Export feature to bulk add or edit locations.</span></span>
+<span data-ttu-id="d3024-115">管理者は、インポート機能またはエクスポート機能を使用して、場所の一括作成または一括編集が行えます。</span><span class="sxs-lookup"><span data-stu-id="d3024-115">Administrators can use the Import or Export feature to bulk add or edit locations.</span></span>
 
-<span data-ttu-id="3ee5d-117">インポート/エクスポート機能を使用して、次のことが実行できます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-117">Use the import/export feature to:</span></span>
+<span data-ttu-id="d3024-116">インポート/エクスポート機能を使用して、次のことが実行できます。</span><span class="sxs-lookup"><span data-stu-id="d3024-116">Use the import/export feature to:</span></span>
 
-1. <span data-ttu-id="3ee5d-118">場所の一括追加 - 場所テンプレート ファイルに詳細を追加して、インポートします。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-118">Bulk add location - Add details in the location template file, and then import it.</span></span>
-1. <span data-ttu-id="3ee5d-119">場所の一括編集 - 場所を .csv ファイルにエクスポートし、エクスポートされた .csv ファイルの場所の詳細を編集してから、更新された .csv ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-119">Bulk edit locations - Export locations to a .csv file, then edit the location details in the exported .csv file, and then import the updated .csv file.</span></span>
-1. <span data-ttu-id="3ee5d-120">バックアップの場所: 既存の場所を .csv ファイルにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-120">Backup locations – Export existing locations to a .csv file.</span></span>
+1. <span data-ttu-id="d3024-117">場所の一括追加 - 場所テンプレート ファイルに詳細を追加して、インポートします。</span><span class="sxs-lookup"><span data-stu-id="d3024-117">Bulk add location - Add details in the location template file, and then import it.</span></span>
+1. <span data-ttu-id="d3024-118">場所の一括編集 - 場所を .csv ファイルにエクスポートし、エクスポートされた .csv ファイルの場所の詳細を編集してから、更新された .csv ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="d3024-118">Bulk edit locations - Export locations to a .csv file, then edit the location details in the exported .csv file, and then import the updated .csv file.</span></span>
+1. <span data-ttu-id="d3024-119">バックアップの場所: 既存の場所を .csv ファイルにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="d3024-119">Backup locations – Export existing locations to a .csv file.</span></span>
 
-<span data-ttu-id="3ee5d-121">場所をエクスポートまたはインポートするには:</span><span class="sxs-lookup"><span data-stu-id="3ee5d-121">To export or import locations:</span></span>
+<span data-ttu-id="d3024-120">場所をエクスポートまたはインポートするには:</span><span class="sxs-lookup"><span data-stu-id="d3024-120">To export or import locations:</span></span>
 
-1. <span data-ttu-id="3ee5d-122">**[場所]** タブの右上隅にある **[インポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-122">In the upper-right corner of the **Locations** tab, select **Import**.</span></span>
-<span data-ttu-id="3ee5d-123">.csv ファイル内の既存の場所をダウンロードするには、**[エクスポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-123">Select **Export** to download the existing locations in a .csv file.</span></span>
-1. <span data-ttu-id="3ee5d-124">右側のウィンドウで、.csv ファイルを使用してインポートするオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-124">In the right pane, choose the option to import using a .csv file.</span></span>
-<span data-ttu-id="3ee5d-125">必要なフィールドと詳細の一覧については、テンプレート ファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-125">Download the template file for a list of the required fields and details.</span></span>
-1. <span data-ttu-id="3ee5d-126">テンプレート ファイルの場所の詳細を追加または編集してから、コンピューターに保存します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-126">Add or edit location details in the template file, and then save it on your computer.</span></span>
-1. <span data-ttu-id="3ee5d-127">**[場所のインポート]** ウィンドウで、**[参照]** を選び、インポートする .csv ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-127">In the **Import** locations pane, select **Browse**, and then the .csv file that you want to import.</span></span>
-1. <span data-ttu-id="3ee5d-128">**[インポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-128">Select **Import**.</span></span>
+1. <span data-ttu-id="d3024-121">**[場所]** タブの右上隅にある **[インポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d3024-121">In the upper-right corner of the **Locations** tab, select **Import**.</span></span>
+<span data-ttu-id="d3024-122">.csv ファイル内の既存の場所をダウンロードするには、**[エクスポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d3024-122">Select **Export** to download the existing locations in a .csv file.</span></span>
+1. <span data-ttu-id="d3024-123">右側のウィンドウで、.csv ファイルを使用してインポートするオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="d3024-123">In the right pane, choose the option to import using a .csv file.</span></span>
+<span data-ttu-id="d3024-124">必要なフィールドと詳細の一覧については、テンプレート ファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="d3024-124">Download the template file for a list of the required fields and details.</span></span>
+1. <span data-ttu-id="d3024-125">テンプレート ファイルの場所の詳細を追加または編集してから、コンピューターに保存します。</span><span class="sxs-lookup"><span data-stu-id="d3024-125">Add or edit location details in the template file, and then save it on your computer.</span></span>
+1. <span data-ttu-id="d3024-126">**[場所のインポート]** ウィンドウで、**[参照]** を選び、インポートする .csv ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="d3024-126">In the **Import** locations pane, select **Browse**, and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="d3024-127">**[インポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d3024-127">Select **Import**.</span></span>
 
-<span data-ttu-id="3ee5d-129">以下に、テンプレート ファイルに関する重要な点をいくつか紹介します。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-129">Here are some important points regarding the template file:</span></span>
+<span data-ttu-id="d3024-128">以下に、テンプレート ファイルに関する重要な点をいくつか紹介します。</span><span class="sxs-lookup"><span data-stu-id="d3024-128">Here are some important points regarding the template file:</span></span>
 
-- <span data-ttu-id="3ee5d-130">次のフィールドのデータは決して編集しないでください: *ID*、*最終更新日時*、*最終更新者*</span><span class="sxs-lookup"><span data-stu-id="3ee5d-130">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
-- <span data-ttu-id="3ee5d-131">既存の場所の*Id*を指定すると、インポートファイルの情報に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-131">If you include the *Id* of an existing location, it will be replaced with the information in the import file.</span></span>
-- <span data-ttu-id="3ee5d-132">同じ名前の既存の場所がある場合、その場所はインポートファイルの情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-132">If there is an existing location with the same name, the location will be updated with information in the import file.</span></span>
-- <span data-ttu-id="3ee5d-133">テンプレートファイルのすべてのフィールドが必須であるわけではなく、場所の状態によって必須のフィールドが異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-133">Not all fields in the template file are required and required fields vary depending on the location state.</span></span>
-- <span data-ttu-id="3ee5d-134">[*状態*] フィールドに基づいて、場所が下書き、提案済み、スケジュール済み、または自動的に公開されるように保存されます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-134">Based on the *State* field, locations will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
-- <span data-ttu-id="3ee5d-135">複数の組織を管理するパートナーは、1つの組織からの場所をエクスポートして、別の組織にインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-135">For partners who manage multiple organizations, you can export your locations from one org and import them into another.</span></span> <span data-ttu-id="3ee5d-136">ただし、インポートする前に *ID* 列のデータを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-136">But you must remove the data in the *Id* column before you import.</span></span>
+- <span data-ttu-id="d3024-129">次のフィールドのデータは決して編集しないでください: *ID*、*最終更新日時*、*最終更新者*</span><span class="sxs-lookup"><span data-stu-id="d3024-129">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="d3024-130">既存の場所の *Id* を指定すると、インポートファイルの情報に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="d3024-130">If you include the *Id* of an existing location, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="d3024-131">同じ名前の既存の場所がある場合、その場所はインポートファイルの情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="d3024-131">If there is an existing location with the same name, the location will be updated with information in the import file.</span></span>
+- <span data-ttu-id="d3024-132">テンプレートファイルのすべてのフィールドが必須であるわけではなく、場所の状態によって必須のフィールドが異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d3024-132">Not all fields in the template file are required and required fields vary depending on the location state.</span></span>
+- <span data-ttu-id="d3024-133">[ *状態* ] フィールドに基づいて、場所が下書き、提案済み、スケジュール済み、または自動的に公開されるように保存されます。</span><span class="sxs-lookup"><span data-stu-id="d3024-133">Based on the *State* field, locations will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="d3024-134">複数の組織を管理するパートナーは、1つの組織からの場所をエクスポートして、別の組織にインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="d3024-134">For partners who manage multiple organizations, you can export your locations from one org and import them into another.</span></span> <span data-ttu-id="d3024-135">ただし、インポートする前に *ID* 列のデータを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3024-135">But you must remove the data in the *Id* column before you import.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3ee5d-137">テンプレートファイルにエラーがある場合は、場所をインポートできません。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-137">You cannot import Locations if there are any errors in the template file.</span></span> <span data-ttu-id="3ee5d-138">エラーを回避するには、インポート ファイルが正しく書式設定されていて、必要な情報がすべて含まれていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-138">To prevent errors, make sure your import file is properly formatted and include all the required information.</span></span>
+> <span data-ttu-id="d3024-136">テンプレートファイルにエラーがある場合は、場所をインポートできません。</span><span class="sxs-lookup"><span data-stu-id="d3024-136">You cannot import Locations if there are any errors in the template file.</span></span> <span data-ttu-id="d3024-137">エラーを回避するには、インポート ファイルが正しく書式設定されていて、必要な情報がすべて含まれていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="d3024-137">To prevent errors, make sure your import file is properly formatted and include all the required information.</span></span>
 
-<span data-ttu-id="3ee5d-139">エラーを回避する方法の詳細については、「[インポート エラーを回避する](manage-bookmarks.md#prevent-import-errors)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3ee5d-139">For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).</span></span>
+<span data-ttu-id="d3024-138">エラーを回避する方法の詳細については、「[インポート エラーを回避する](manage-bookmarks.md#prevent-import-errors)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3024-138">For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).</span></span>
