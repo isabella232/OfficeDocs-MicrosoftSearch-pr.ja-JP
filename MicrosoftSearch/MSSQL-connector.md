@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用 microsoft SQL server および Azure SQL connector
+title: Microsoft Search 用 microsoft SQL Server および Azure SQL connector
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,48 +11,46 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用の Microsoft SQL server または Azure SQL connector をセットアップします。
-ms.openlocfilehash: e67b1e6175744fd741b265c056798f18dc28b1d4
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: Microsoft Search 用の Microsoft SQL Server または Azure SQL connector をセットアップします。
+ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
+ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422912"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214490"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL および Microsoft SQL server コネクタ
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL および Microsoft SQL Server コネクタ
 
-Microsoft SQL server または Azure SQL コネクタを使用すると、組織は、オンプレミスの SQL Server データベースまたはクラウド内の Azure SQL インスタンスでホストされているデータベースのデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 これらの SQL コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
+Microsoft SQL Server または Azure SQL コネクタを使用すると、組織は、オンプレミスの SQL Server データベースまたはクラウド内の Azure SQL インスタンスでホストされているデータベースのデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 これらの SQL コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
 
-この記事は、Microsoft 365 管理者または Microsoft SQL server または Azure SQL コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
+この記事は、Microsoft 365 管理者または Microsoft SQL Server または Azure SQL コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
 
-## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Data gateway をインストールする (オンプレミスの Microsoft SQL server コネクタにのみ必要)
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Data gateway をインストールする (オンプレミスの Microsoft SQL Server コネクタにのみ必要)
 
 サードパーティのデータにアクセスするためには、Microsoft Power BI ゲートウェイをインストールして構成する必要があります。 詳細について [は、「オンプレミスゲートウェイをインストール](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) する」を参照してください。  
 
 ## <a name="register-an-app"></a>アプリを登録します
+Azure SQL connector の場合、Microsoft Search アプリがインデックス作成のためにデータにアクセスできるようにするには、Azure Active Directory にアプリを登録する必要があります。 アプリの登録の詳細については、Microsoft Graph のドキュメントを参照して [アプリを登録](https://docs.microsoft.com/graph/auth-register-app-v2)する方法を参照してください。 
 
-Azure SQL connector の場合、Microsoft Search アプリがインデックス作成のためにデータにアクセスできるようにするには、Azure Active Directory にアプリを登録する必要があります。 アプリの登録の詳細については、Microsoft Graph のドキュメントを参照して [アプリを登録](https://docs.microsoft.com/graph/auth-register-app-v2)する方法を参照してください。
-
-アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、およびテナント ID をメモしておき、 [新しいクライアントシークレットを生成](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)する必要があります。 クライアントシークレットは一度だけ表示されます。 クライアントシークレットは安全に保存 & ことに注意してください。 Microsoft Search で新しい接続を構成する際に、クライアント ID とクライアントシークレットを使用します。
+アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、およびテナント ID をメモしておき、 [新しいクライアントシークレットを生成](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)する必要があります。 クライアントシークレットは一度だけ表示されます。 クライアントシークレットは安全に保存 & ことに注意してください。 Microsoft Search で新しい接続を構成する際に、クライアント ID とクライアントシークレットを使用します。 
 
 登録済みのアプリを Azure SQL データベースに追加するには、次のことを行う必要があります。
-
-- Azure SQL DB にログインします。
-- 新しいクエリウィンドウを開く
-- コマンド ' CREATE USER [app name] を EXTERNAL PROVIDER から実行して、新しいユーザーを作成します。
-- コマンド ' exec sp_addrolemember ' db_datareader '、[app name] '、または ' ALTER ROLE db_datareader ADD MEMBER [app name] ' を実行して、ユーザーを役割に追加します。
+ - Azure SQL DB にログインします。
+ - 新しいクエリウィンドウを開く
+ - コマンド ' CREATE USER [app name] を EXTERNAL PROVIDER から実行して、新しいユーザーを作成します。
+ - コマンド ' exec sp_addrolemember ' db_datareader '、[app name] '、または ' ALTER ROLE db_datareader ADD MEMBER [app name] ' を実行して、ユーザーを役割に追加します。
 
 >[!NOTE]
 >Azure Active Directory に登録されているすべてのアプリへのアクセスを取り消すには、 [登録済みアプリの削除](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)に関する azure のドキュメントを参照してください。
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
 
-Microsoft SQL server コネクタをデータソースに接続するには、クロールするデータベースサーバーとオンプレミスゲートウェイを構成する必要があります。 その後、必要な認証方法を使用してデータベースに接続できます。
+Microsoft SQL Server コネクタをデータソースに接続するには、クロールするデータベースサーバーとオンプレミスゲートウェイを構成する必要があります。 その後、必要な認証方法を使用してデータベースに接続できます。
 
 Azure SQL コネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQL コネクタは、データベースに接続するための Azure Active Directory Open ID connect (OIDC) 認証のみをサポートしています。
 
 > [!NOTE]
-> データベースで接続するには、Microsoft SQL server connector の SQL server バージョン2008以降を実行する必要があります。
+> データベースで接続するには、Microsoft SQL Server connector の SQL server バージョン2008以降を実行する必要があります。
 
 データベースコンテンツを検索するには、コネクタを構成するときに SQL クエリを指定する必要があります。 これらの SQL クエリは、すべての列を取得するために実行する必要があるすべての SQL 結合を含む、インデックスを作成するすべてのデータベース列に名前を付ける必要があります (つまり、ソースプロパティ)。 検索結果へのアクセスを制限するには、コネクタを構成するときに SQL クエリ内でアクセス制御リスト (Acl) を指定する必要があります。
 
@@ -81,22 +79,6 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
 * **DeniedGroups**: 検索結果への **アクセス権を持たない** ユーザーのグループを指定します。 次の例では、groups engg-team@contoso.com および pm-team@contoso.com には OrderId = 15 のレコードへのアクセス権がありませんが、他のユーザーはこのレコードにアクセスできます。  
 
 ![プロパティの例を使用して、OrderTable と AclTable を表示するサンプルデータ](media/MSSQL-ACL1.png)
-
-### <a name="supported-data-types"></a>サポートされるデータ型
-
-次の表は、MS SQL および Azure SQL コネクタでサポートされている SQL データ型の概要を示しています。 また、サポートされている SQL データ型のインデックスデータ型の概要を示します。 インデックス用にサポートされている Microsoft Graph コネクタの詳細については、「 [プロパティリソースの種類](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)に関するドキュメント」を参照してください。
-<!-- markdownlint-disable no-inline-html -->
-| カテゴリ | ソースデータ型 | インデックス作成データの種類 |
-| ------------ | ------------ | ------------ |
-| 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
-| 真数 | bigint <br> int <br> smallint <br> tinyint | int64 |
-| 真数 | 若干 | ブール値 |
-| 近似数値 | 浮動小数点数 <br> 本当の | double |
-| 文字の文字列 | カーソル <br> varchar <br> text | string |
-| Unicode 文字列 | nchar <br> nvarchar <br> 型 | string |
-| その他のデータ型 | 識別子 | string |
-
-現在直接サポートされていないその他のデータ型については、列は、サポートされているデータ型に明示的にキャストする必要があります。
 
 ### <a name="watermark-required"></a>ウォーターマーク (必須)
 
@@ -149,6 +131,6 @@ Acl としてを使用するために、次の ID タイプがサポートされ
 
 SQL コネクタには、次のようなプレビューリリースの制限があります。
 
-* Microsoft SQL server connector: オンプレミスのデータベースは、SQL server バージョン2008以降を実行している必要があります。
+* Microsoft SQL Server connector: オンプレミスのデータベースは、SQL Server バージョン2008以降を実行している必要があります。
 * Acl は、ユーザープリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用する場合にのみサポートされます。
 * データベース列内のリッチコンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、HTML、JSON、XML、blob、ドキュメント parsings などがあります。これらは、データベース列内のリンクとして存在します。
