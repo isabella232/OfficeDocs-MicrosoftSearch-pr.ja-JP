@@ -2,7 +2,7 @@
 title: Microsoft Search のエンタープライズ Web サイトコネクタ
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のエンタープライズ web サイトコネクタを設定する
-ms.openlocfilehash: 4fb80ce4e3dbc77638e3b7db9c2ebd3c39d5a6d8
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: b4d9f837892bcfd795421530e0571fa0509a2761
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422957"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206943"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="enterprise-websites-connector"></a>エンタープライズ web サイトコネクタ

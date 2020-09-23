@@ -1,7 +1,7 @@
 ---
 title: Microsoft 検索ページをカスタマイズする
-ms.author: jypal
-author: jypal6
+ms.author: jeffkizn
+author: jypal
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索垂直を追加して検索結果をカスタマイズする
-ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422984"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206970"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -113,6 +113,6 @@ Microsoft 検索結果ページの上部には、タブの行があります。 
 | 結果のレイアウトは表示されませんでしたが、作成しました。 | これらの設定は一般的にキャッシュされるため、数分かかることがあります。 数分待ってから、もう一度実行してください。        |
 | [垂直または結果の種類] ページにコンテンツソースが表示されません。 | コネクタとインデックスデータが構成されていることを確認してください。   |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [手順 3: 結果のレイアウトをカスタマイズする](customize-results-layout.md)

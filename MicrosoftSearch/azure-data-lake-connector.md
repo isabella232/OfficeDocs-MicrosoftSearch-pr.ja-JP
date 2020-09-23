@@ -2,7 +2,7 @@
 title: Microsoft Search 用 Azure Data Lake connector
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Azure Data Lake Storage Gen2 connector をセットアップする
-ms.openlocfilehash: 788b7106c15cd9773c86f46f91ba0e91e38028f3
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 01fea60e91af5ba321ceb00578ea2b0745c9c394
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422930"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206934"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake Storage Gen2 connector
 
@@ -29,7 +29,12 @@ Azure Data Lake Storage Gen2 コネクタを使用すると、組織内のユー
 ### <a name="primary-storage-connection-string"></a>プライマリストレージ接続文字列 
 [ **認証と構成** ] 画面で、プライマリストレージ接続文字列を指定します。 この文字列は、ストレージアカウントへのアクセスを許可するために必要です。 接続文字列を検索するには、 [azure ポータル](https://ms.portal.azure.com/#home) に移動して、関連する azure Storage アカウントの [ **キー** ] セクションに移動します。 接続文字列をコピーして画面の適切なフィールドに貼り付けます。
 
-**AccountKey** (プライマリストレージ接続文字列のパラメーター) を指定しない場合は、Graph connector Service への読み取りアクセス権を与える必要があります。 Azure ストレージアカウントの [ **アクセス制御** ] タブに移動し、次のアプリへのアクセス権を付与するための手順に従います。
+**AccountKey** (プライマリストレージ接続文字列のパラメーター) を指定しない場合は、次の役割の Graph connector Service へのアクセス権を付与する必要があります。 
+* 記憶域 Blob データリーダー
+* ストレージキューデータ寄稿者
+* Storage Blob 委任者 (階層型ストレージの場合のみ)
+
+Azure ストレージアカウントの [ **アクセス制御** ] タブに移動し、次のアプリへのアクセス権を付与するための手順に従います。
 * **最初のパーティのアプリ ID:** 56c1da01-2127648f7-9355-af6d59d2766
 * **ファーストパーティのアプリ名:** Graph Connector サービス
 

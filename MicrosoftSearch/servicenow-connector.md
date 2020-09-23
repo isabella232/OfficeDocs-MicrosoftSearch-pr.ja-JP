@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search 用の ServiceNow コネクタ
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow コネクタをセットアップする
-ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 357722f83e7f276615d231c8d3e56016bc17ba6e
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422867"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206961"
 ---
 # <a name="servicenow-connector"></a>ServiceNow コネクタ
 
@@ -33,17 +33,17 @@ ServiceNow データに接続するには、組織の **servicenow インスタ�
 
 ServiceNow からコンテンツを認証および同期するには、次の2つのサポートされている方法のいずれかを選択します。
 
-1. 基本認証
-2. OAuth (推奨)
+ - 基本認証
+ - OAuth (推奨)
 
 > [!Note]
 > 認証に OAuth を使用するには、servicenow 管理者が ServiceNow インスタンスにエンドポイントをプロビジョニングする必要があります。これにより、Microsoft Search アプリがインスタンスにアクセスできるようになります。 詳細については、「クライアントが ServiceNow ドキュメントの [インスタンスにアクセスするためのエンドポイントを作成する](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 」を参照してください。
 
 次の表に、エンドポイント作成フォームに記入する方法についてのガイダンスを示します。
 
-**Field** | **説明** | **推奨値**
+Field | 説明 | 推奨値
 --- | --- | ---
-Name | この一意の値は、OAuth アクセスを必要とするアプリケーションを識別します。 | Microsoft Search
+名前 | この一意の値は、OAuth アクセスを必要とするアプリケーションを識別します。 | Microsoft Search
 クライアント ID | 読み取り専用で、自動生成されたアプリケーションの一意の ID。 このインスタンスは、アクセストークンを要求するときにクライアント ID を使用します。 | 該当なし
 クライアントシークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Search は相互に通信を承認します。 | これをパスワードとして扱うことにより、セキュリティのベストプラクティスに従います。
 リダイレクト URL | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
