@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: エンタープライズ検索と Microsoft Search についてよく寄せられる質問に対する回答です
-ms.openlocfilehash: c4b0d888e7765cf965832c252a79bdcf8aa5f6cf
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 5a134116c98b4feea0c04909349ce4b972c59ffe
+ms.sourcegitcommit: 0b8c3c57384cecaa93c5cbaf3b3b30f8e20d1a69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422966"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408440"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -60,3 +60,7 @@ ms.locfileid: "47422966"
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>ユーザーは職場または学校のアカウントで Microsoft リワード ポイントを獲得できますか?
 
 Microsoft Search では、エンタープライズ ユーザーが職場または学校のアカウントでサインインする必要があります。 ただし、ユーザーはこれらのアカウントで Microsoft リワード プログラムに参加またはサインインすることはできません。 しかし、エンタープライズ ユーザーにリワード ポイントが発生する場合があります。 これは、Microsoft Search ユーザーが [Microsoft アカウント](https://www.microsoft.com/welcome?rtc=1)で作成されたリワード アカウントを持っている場合に発生する可能性があります。 (Microsoft アカウントに関連付けられている電子メール アドレスに、Outlook.com、Hotmail.com、Gmail、Yahoo、またはその他のプロバイダーからのものが使用できます。) ユーザーが同じブラウザー セッションで仕事用アカウントと Microsoft アカウントの両方で交互にサインインする場合、リワード アカウントにポイントが加算される場合があります。 ユーザーは、Cookie をクリアすることにより、Microsoft Search での検索中にポイントの発生を停止できます。
+
+## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>ゲストユーザーが組織内で Microsoft Search を利用できるかどうか。
+
+Microsoft 365 は、ゲストアクセスを介して組織外のユーザーとのリッチコラボレーションを可能に [します。](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization) これらのユーザーは、ドキュメント、サイト、グループ、リスト、およびライブラリに対して検索操作を実行できます。 ただし、ゲストユーザーは、カスタマイズされた完全な Microsoft 検索機能を利用できないため、ヘッダーにある統合された Microsoft 検索ボックスではなく、ページ上の検索ボックスを利用する必要があります。
