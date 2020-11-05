@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アダプティブカードを使用して、カスタマイズされた検索結果を表示するレイアウトを作成する
-ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
-ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
+ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48595275"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919512"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>レイアウトを作成して検索結果をカスタマイズする
@@ -155,7 +155,7 @@ ms.locfileid: "48595275"
 }
 ```
 
-サンプルデータ:**プレビューモード**でデータバインドカードを表示するには、サンプル**データエディター**でサンプルデータを指定します。
+サンプルデータ: **プレビューモード** でデータバインドカードを表示するには、サンプル **データエディター** でサンプルデータを指定します。
 
 ```json
 {
@@ -178,7 +178,7 @@ ms.locfileid: "48595275"
 
 ### <a name="show-snippet-on-search-result"></a>検索結果にスニペットを表示する  
 
-コネクタの結果の **コンテンツ** プロパティで生成された動的スニペットは、検索結果に表示できます。 **Resultsnippet** は、各コネクタの結果に対して生成されたスニペットの placeholder プロパティとして機能するシステムプロパティです。 結果のレイアウトにスニペットを表示するには、検索結果のレイアウトで、 **resultsnippet** システムプロパティを適切なフィールド (Description など) にマップする必要があります。 各結果に対して生成されたスニペットも、ユーザーが入力したクエリ用語でスニペット内の一致を強調表示します。 
+コネクタの結果の **コンテンツ** プロパティで生成された動的スニペットは、検索結果に表示できます。 **Resultsnippet** は、各コネクタの結果に対して生成されたスニペットの placeholder プロパティとして機能するシステムプロパティです。 結果のレイアウトにスニペットを表示するには、検索結果のレイアウトで、 **resultsnippet** システムプロパティを適切なフィールド (Description など) にマップする必要があります。 各結果に対して生成されたスニペットも、ユーザーが入力したクエリ用語でスニペット内の一致を強調表示します。
 
 ## <a name="things-to-consider"></a>考慮事項
 
@@ -198,7 +198,7 @@ ms.locfileid: "48595275"
 - 値をバインドするときは、無効なデータ型を定義しないでください。 データ型の詳細については、「 [Manage The Search schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema)」を参照してください。
 - 結果レイアウト JSON の最大の高さに従って、結果ページ上の結果をトリミングしないようにします。 結果レイアウトの高さの最大値を超えた場合、結果は結果ページにトリミングされます。
 - `px`要素のプロパティで値を使用しないでください。
-- 結果レイアウトの **Resultsnippet** プロパティで markdown を使用して、検索結果のクエリ一致を強調表示しないようにします。 
+- 結果レイアウトの **Resultsnippet** プロパティで markdown を使用して、検索結果のクエリ一致を強調表示しないようにします。
 
 ## <a name="resources"></a>リソース
 

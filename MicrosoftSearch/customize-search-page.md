@@ -12,36 +12,34 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
-ms.translationtype: HT
+ms.openlocfilehash: 8999a811b6ed0e04963a87ff0170869b38dba727
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206970"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919503"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
-検索カテゴリと結果タイプを作成して、ユーザーが Microsoft [SharePoint](https://sharepoint.com/)、[Microsoft Office](https://Office.com)、および [Bing](https://bing.com) の Microsoft Search で検索したときに表示される検索結果をカスタマイズできます。 バーティカルを使用すると、ユーザーは表示を許可されている情報を簡単に見つけることができます。 たとえば、マーケティング部門のユーザー向けに、サードパーティ ソフトウェアからのマーケティング分析データの検索カテゴリを作成できます。 結果の種類を定義し、このデータのレイアウトをカスタマイズすることもできます。  
+検索カテゴリと結果タイプを作成して、ユーザーが Microsoft [SharePoint](https://sharepoint.com/)、[Microsoft Office](https://office.com)、および [Bing](https://bing.com) の Microsoft Search で検索したときに表示される検索結果をカスタマイズできます。 バーティカルを使用すると、ユーザーは表示を許可されている情報を簡単に見つけることができます。 たとえば、マーケティング部門のユーザー向けに、サードパーティ ソフトウェアからのマーケティング分析データの検索カテゴリを作成できます。 結果の種類を定義し、このデータのレイアウトをカスタマイズすることもできます。  
 
 次のレベルで、バーティカルと結果タイプを作成できます。
 
-- **組織レベル** – 組織レベルで業種を追加することで、ユーザーが [SharePoint](https://sharepoint.com/) スタートページ、[Office](https://Office.com)、または [Bing](https://bing.com) から検索すると、検索結果ページに表示されるようになります。
-- **サイトレベル** – たとえば、カスタマーサービスの従業員が部門の SharePoint サイトから直接、*重大度 1*のインシデントを検索できるようにすることができます。
+- **組織レベル** – 組織レベルで業種を追加することで、ユーザーが [SharePoint](https://sharepoint.com/) スタートページ、 [Office](https://office.com)、または [Bing](https://bing.com) から検索すると、検索結果ページに表示されるようになります。
+- **サイトレベル** – たとえば、カスタマーサービスの従業員が部門の SharePoint サイトから直接、 *重大度 1* のインシデントを検索できるようにすることができます。
 
 ## <a name="search-verticals-explained"></a>検索バーティカルの説明
 
-Microsoft Search 結果ページの上部には、タブが表示される行があります。 これらは検索バーティカルです。 検索バーティカルには、特定のタイプまたは特定のコンテンツの結果のみが表示されます。 例として、**ファイル**または**ニュース**があります。 既定では、Microsoft Search には、[**すべて**]、[**人物**]、[**ファイル**]、[**サイト**]、および [**ニュース**] のカテゴリが表示されます。  
+Microsoft Search 結果ページの上部には、タブが表示される行があります。 これらは検索バーティカルです。 検索バーティカルには、特定のタイプまたは特定のコンテンツの結果のみが表示されます。 例として、 **ファイル** または **ニュース** があります。 既定では、Microsoft Search には、[ **すべて** ]、[ **人物** ]、[ **ファイル** ]、[ **サイト** ]、および [ **ニュース** ] のカテゴリが表示されます。  
 
 組織に関連する検索カテゴリを追加できます。 これらの結果は、[SharePoint](https://sharepoint.com/)、[Office](https://Office.com)、[Bing](https://bing.com) の Microsoft Search 結果ページに表示されます。 たとえば、各グループが必要とする情報のタイプに基づいて、マーケティング関連のコンテンツ用のバーティカルと販売用のバーティカルを作成できます。 バーティカルを追加して、コネクタを介してインデックス付けされたコンテンツからの結果のみを表示できます。  
 
 >[!NOTE]
-> バーティカルおよび結果の種類は、Microsoft Graph のコネクタ プレビューの一部として現在プレビュー中です。 プレビューの詳細については、[コネクタのプレビュー](connectors-preview.md)を参照してください。 プレビューに参加するには、最初に [Microsoft Graph コネクタ プレビュー サインアップ フォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信する必要があります。
+> 各業種および結果の種類は、現在プレビュー段階で、Microsoft Graph コネクタプレビューの一部としてプレビューされており、 [SharePoint](https://sharepoint.com/)にあるコンテンツには使用できません。 プレビューの詳細については、[コネクタのプレビュー](connectors-preview.md)を参照してください。 プレビューに参加するには、最初に [Microsoft Graph コネクタ プレビュー サインアップ フォーム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)を送信する必要があります。
 
 ## <a name="things-to-consider"></a>考慮事項
 
 開始する前に、コネクタにインデックスが付けられていることを確認してください。 ファイルサイズによって、これには最大48時間かかる場合があります。
-
-[SharePoint](https://sharepoint.com/) に存在するコンテンツのバーティカルを作成することはできません。
 
 バーティカルを追加するには、次の3つの基本的な手順があります。
 
@@ -57,18 +55,18 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>組織レベルで業種を作成する
 
-[SharePoint](https://sharepoint.com/) ホーム、[Office](https://Office.com)、または[Bing](https://bing.com)で Microsoft Search にカテゴリを作成するには、次の手順を実行します。 
+[SharePoint](https://sharepoint.com/) ホーム、[Office](https://office.com)、または[Bing](https://bing.com)で Microsoft Search にカテゴリを作成するには、次の手順を実行します。 
 
-1.  [Microsoft 365 管理センター](https://admin.microsoft.com)で、 [**[バーティカル]**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) に移動します。
+1.  [Microsoft 365 管理センター](https://admin.microsoft.com)で、  [**[バーティカル]**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) に移動します。
 1.  **[追加]** を選択して開始します。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>サイトレベルでカテゴリを作成する
 
-1. バーティカルにする [SharePoint](https://sharepoint.com/) サイトで、**[設定]** に移動します。
-1. [**サイト情報**]、[**すべてのサイト設定を表示**] の順に選択します。
-1. **[Microsoft Search]** セクションを探し、**[このサイトコレクションの Microsoft 検索の構成]** を選択します。
-1. ナビゲーション ウィンドウで、 **[カスタムエクスペリエンス]** に移動し、**[バーティカル]** タブを選択します。
-1. バーティカルを追加するには、[ **追加**] を選択します。
+1. バーティカルにする [SharePoint](https://sharepoint.com/) サイトで、 **[設定]** に移動します。
+1. [ **サイト情報** ]、[ **すべてのサイト設定を表示** ] の順に選択します。
+1. **[Microsoft Search]** セクションを探し、 **[このサイトコレクションの Microsoft 検索の構成]** を選択します。
+1. ナビゲーション ウィンドウで、  **[カスタムエクスペリエンス]** に移動し、 **[バーティカル]** タブを選択します。
+1. バーティカルを追加するには、[ **追加** ] を選択します。
   または、バーティカルを編集するには、リストから業種を選択します。
 
 バーティカルは無効な状態で作成されることに注意してください。 ユーザーに表示する前に、これらを有効にする必要があります。
@@ -79,29 +77,29 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 
 検索結果の種類とは、検索結果のタイプの違いに応じて表示方法を変えるルールのことです。このルールは、次のような構成になっています。
 
-- 検索結果のコンテンツソースなど、各検索結果を比較するための **1 つ以上の条件**。  
-- 条件を満たす検索結果に使用する**結果レイアウト**。 結果レイアウトは、条件を満たすすべての結果が検索結果ページに表示され、動作する方法を制御します。
+- 検索結果のコンテンツソースなど、各検索結果を比較するための **1 つ以上の条件** 。  
+- 条件を満たす検索結果に使用する **結果レイアウト** 。 結果レイアウトは、条件を満たすすべての結果が検索結果ページに表示され、動作する方法を制御します。
 
-**結果をバーティカルに表示するには、少なくとも 1 つの結果タイプを作成する必要があります。** 業種ごとに複数の結果タイプを作成できます。これにより、さまざまなタイプの結果にさまざまなレイアウトを使用できます。 たとえば、*重大度 1* のインシデントをカスタマイズして、*重大度 3* のインシデントと比較してより目立つ色と大きなフォントを使用できます。
+**結果をバーティカルに表示するには、少なくとも 1 つの結果タイプを作成する必要があります。** 業種ごとに複数の結果タイプを作成できます。これにより、さまざまなタイプの結果にさまざまなレイアウトを使用できます。 たとえば、 *重大度 1* のインシデントをカスタマイズして、 *重大度 3* のインシデントと比較してより目立つ色と大きなフォントを使用できます。
 
 ウィザードを開始すると、結果タイプの名前、コンテンツソース、および条件を定義する手順がガイドされます。 リストビューから結果タイプの優先度を定義できます。
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Create a result type at the organization level
 
-1. [Microsoft 365 管理センター](https://admin.microsoft.com)で、[[結果の種類]** に移動します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)。
-1. **結果タイプ**を追加するには、 **[追加]** を選択します。 結果タイプを編集するには、関連するリストで結果タイプを選択します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)で、 [[結果の種類] **に移動します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)。
+1. **結果タイプ** を追加するには、  **[追加]** を選択します。 結果タイプを編集するには、関連するリストで結果タイプを選択します。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>サイトレベルで結果タイプを作成する
 
-1. 結果タイプを作成する[SharePoint](https://sharepoint.com/) サイトで、**[設定]** に移動します。
-1. [**サイト情報**]、[**すべてのサイト設定を表示**] の順に選択します。
-1. [Microsoft Search] セクションを探し、**[このサイトコレクションのMicrosoft Searchの構成]** を選択します。
-1. ナビゲーション ウィンドウで、 **[カスタムエクスペリエンス]** に移動し、**[検索タイプ]** タブを選択します。
+1. 結果タイプを作成する [SharePoint](https://sharepoint.com/) サイトで、 **[設定]** に移動します。
+1. [ **サイト情報** ]、[ **すべてのサイト設定を表示** ] の順に選択します。
+1. [Microsoft Search] セクションを探し、 **[このサイトコレクションのMicrosoft Searchの構成]** を選択します。
+1. ナビゲーション ウィンドウで、  **[カスタムエクスペリエンス]** に移動し、 **[検索タイプ]** タブを選択します。
 1. 結果タイプを追加するには、 **[追加]** を選択します。  または、結果タイプを編集するには、リストから結果タイプを選択します。
 
 ### <a name="view-the-vertical-after-its-enabled"></a>有効にした後にバーティカルを表示する
 
-バーティカルを有効にした後、表示できるようになるまでに時間がかかる場合があります。 有効にした後で待ちたくない場合は、[SharePoint](https://sharepoint.com/) と [Office](https://Office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。
+バーティカルを有効にした後、表示できるようになるまでに時間がかかる場合があります。 有効にした後で待ちたくない場合は、 [SharePoint](https://sharepoint.com/) と [Office](https://office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
