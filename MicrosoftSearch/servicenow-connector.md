@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow コネクタをセットアップする
-ms.openlocfilehash: f7ae05ad00a96a6f05780acfeb8c75911505ee6f
-ms.sourcegitcommit: 2ce86461e845c3ea84feb215df17685d2ef705c5
+ms.openlocfilehash: b60583e61687b13c7fd631cd1c4a9f6d663724e8
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48340858"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927200"
 ---
 # <a name="servicenow-connector"></a>ServiceNow コネクタ
 
@@ -28,11 +28,11 @@ ServiceNow コネクタを使用すると、組織内のすべてのユーザー
 Microsoft によって作成された microsoft [のコネクタを Microsoft Search 用にセットアップして、](https://docs.microsoft.com/microsoftsearch/configure-connector)microsoft の作成済みコネクタにアクセスする方法について説明します。 ServiceNow connector 固有の構成については、以下の記事で説明します。
 
 ## <a name="connection-settings"></a>接続設定
-ServiceNow データに接続するには、組織の **servicenow インスタンスの URL**、このアカウントの資格情報、および OAuth 認証用のクライアント ID とクライアントシークレットが必要です。  
+ServiceNow データに接続するには、組織の **servicenow インスタンスの URL** 、このアカウントの資格情報、および OAuth 認証用のクライアント ID とクライアントシークレットが必要です。  
 
-組織の **ServiceNow インスタンスの URL** は、通常 ** &lt; 、https://> service-now.com**のようになります。 この URL に加えて、ServiceNow への接続を設定するためのアカウントと、更新スケジュールに基づいて、Microsoft Search が ServiceNow から定期的に記事を更新できるようにする必要があります。 このアカウントには、 <em>ナレッジ</em> の役割が必要です。 [ServiceNow アカウントの役割を割り当てる方法について説明](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)します。
+組織の **ServiceNow インスタンスの URL** は、通常 **&lt; 、https://> service-now.com** のようになります。 この URL に加えて、ServiceNow への接続を設定するためのアカウントと、更新スケジュールに基づいて、Microsoft Search が ServiceNow から定期的に記事を更新できるようにする必要があります。 このアカウントには、 <em>ナレッジ</em> の役割が必要です。 [ServiceNow アカウントの役割を割り当てる方法について説明](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)します。
 
-ServiceNow からコンテンツを認証および同期するには、次の3つのサポートされている方法 **のいずれか** を選択します。 
+ServiceNow からコンテンツを認証および同期するには、次の3つのサポートされている方法 **のいずれか** を選択します。
 1. 基本認証 
 2. ServiceNow OAuth (推奨)
 3. Azure AD OpenID Connect
@@ -50,7 +50,7 @@ ServiceNow からコンテンツを認証および同期するには、次の3�
 名前 | この一意の値は、OAuth アクセスを必要とするアプリケーションを識別します。 | Microsoft Search
 クライアント ID | 読み取り専用で、自動生成されたアプリケーションの一意の ID。 このインスタンスは、アクセストークンを要求するときにクライアント ID を使用します。 | 該当なし
 クライアントシークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Search は相互に通信を承認します。 | これをパスワードとして扱うことにより、セキュリティのベストプラクティスに従います。
-リダイレクト URL | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
+リダイレクト URL | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 ロゴの URL | アプリケーションロゴのイメージを含む URL。 | 該当なし
 Active | アプリケーションレジストリをアクティブにするには、チェックボックスをオンにします。 | Active に設定
 トークンの寿命を更新する | 更新トークンが有効になる秒数。 既定では、更新トークンの有効期限は100日 (864万秒) です。 | 31536000 (1 年)
@@ -113,7 +113,7 @@ ServiceNow インスタンスでは、次の構成を行う必要があります
 
 その他の値はすべて既定値にすることができます。
 
-3. OIDC プロバイダ登録フォームで、新しい OIDC プロバイダ構成を追加する必要があります。 *OAUTH Oidc プロバイダ構成*フィールドに対して [検索] アイコンをクリックして、oidc 構成のレコードを開きます。 [新規作成] をクリックします。
+3. OIDC プロバイダ登録フォームで、新しい OIDC プロバイダ構成を追加する必要があります。 *OAUTH Oidc プロバイダ構成* フィールドに対して [検索] アイコンをクリックして、oidc 構成のレコードを開きます。 [新規作成] をクリックします。
 4. 次の表では、OIDC プロバイダ構成フォームに記入する方法についてのガイダンスを示します。
 
 **Field** | **推奨値**
@@ -122,7 +122,7 @@ OIDC プロバイダ |  Azure AD
 OIDC メタデータの URL | これは https \: //login.microsoftonline.com/"/.well-known/openid-configuration" という形式でなければなりません。 <br/>手順 1 (引用符なし) の "tenantID" をディレクトリ (テナント) ID に置き換えます。
 OIDC 構成キャッシュの有効期間 |  120
 アプリケーション | グローバル
-ユーザー要求 | 形式
+ユーザー要求 | sub
 ユーザーフィールド | ユーザー ID
 JTI クレーム検証を有効にする | 無効
 
@@ -148,13 +148,13 @@ ServiceNow プリンシパル ID を使用して作成した ServiceNow アカ�
 管理センター構成ウィザードのクライアント ID (手順 1) とクライアントシークレット (手順 2) を使用して、Azure AD OpenID Connect を使用して ServiceNow インスタンスを認証します。
 
 ## <a name="filter-data"></a>データをフィルター処理する 
-ServiceNow クエリ文字列を使用すると、記事を同期するための条件を指定できます。 **SQL Select**ステートメントの**where**句のようになります。 たとえば、公開されていてアクティブな記事のみにインデックスを作成することを選択できます。 独自のクエリ文字列を作成する方法については、「 [フィルターを使用してエンコードされたクエリ文字列を生成](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)する」を参照してください。
-
-## <a name="manage-the-search-schema"></a>検索スキーマを管理する
-接続が成功した後、検索スキーママッピングを構成します。 **クエリ**可能、**検索**可能、および取得可能なプロパティを選択でき**ます。** 検索スキーマの管理の詳細については、「 [Manage the search schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema)」を参照してください。
+ServiceNow クエリ文字列を使用すると、記事を同期するための条件を指定できます。 **SQL Select** ステートメントの **where** 句のようになります。 たとえば、公開されていてアクティブな記事のみにインデックスを作成することを選択できます。 独自のクエリ文字列を作成する方法については、「 [フィルターを使用してエンコードされたクエリ文字列を生成](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)する」を参照してください。
 
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
-ServiceNow コネクタは、 **すべてのユーザー**に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+ServiceNow コネクタは、 **すべてのユーザー** に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+
+## <a name="manage-the-search-schema"></a>検索スキーマを管理する
+接続が成功した後、検索スキーママッピングを構成します。 **クエリ** 可能、 **検索** 可能、および取得可能なプロパティを選択でき **ます。** 検索スキーマの管理の詳細については、「 [Manage the search schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema)」を参照してください。
 
 ## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
 ServiceNow コネクタは、フルクロールと増分クロールの両方の更新スケジュールをサポートします。 両方を設定することをお勧めします。
@@ -162,6 +162,7 @@ ServiceNow コネクタは、フルクロールと増分クロールの両方の
 フルクロールスケジュールは、Microsoft 検索インデックスと同期フィルターから移動したすべての記事に対して以前に同期された削除済み記事を検索します。 最初に ServiceNow に接続すると、フルクロールが実行され、すべてのナレッジベースの記事が同期されます。 新しいアイテムを同期し、更新を行うには、増分クロールをスケジュールする必要があります。
 
 推奨される既定値は、フルクロールの場合は1日、増分クロールの場合は4時間です。
+
 ## <a name="review-and-publish"></a>レビューと発行
 コネクタを構成した後、接続を確認して発行することができます。
 

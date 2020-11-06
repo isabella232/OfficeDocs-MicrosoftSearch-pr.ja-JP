@@ -1,5 +1,5 @@
 ---
-title: 検索結果のレイアウトをカスタマイズする
+title: 検索結果のレイアウトを管理する
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アダプティブカードを使用して、カスタマイズされた検索結果を表示するレイアウトを作成する
-ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919512"
+ms.locfileid: "48927182"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>レイアウトを作成して検索結果をカスタマイズする
@@ -198,7 +198,7 @@ ms.locfileid: "48919512"
 - 値をバインドするときは、無効なデータ型を定義しないでください。 データ型の詳細については、「 [Manage The Search schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema)」を参照してください。
 - 結果レイアウト JSON の最大の高さに従って、結果ページ上の結果をトリミングしないようにします。 結果レイアウトの高さの最大値を超えた場合、結果は結果ページにトリミングされます。
 - `px`要素のプロパティで値を使用しないでください。
-- 結果レイアウトの **Resultsnippet** プロパティで markdown を使用して、検索結果のクエリ一致を強調表示しないようにします。
+- 検索結果でクエリ一致を強調表示するために、結果レイアウトの **Resultsnippet** プロパティで markdown を使用しないでください。
 
 ## <a name="resources"></a>リソース
 

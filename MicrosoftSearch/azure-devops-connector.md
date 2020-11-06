@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Azure DevOps connector をセットアップする
-ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
-ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359723"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927191"
 ---
 # <a name="azure-devops-connector"></a>Azure DevOps コネクタ
 
@@ -69,15 +69,16 @@ Microsoft Search アプリを Azure DevOps に登録した後、接続設定の�
 
 ![プロパティの選択](media/ADO_choose_properties.png)
 
-## <a name="manage-the-search-schema"></a>検索スキーマを管理する
-
-検索スキーママッピングを構成します。  **クエリ**可能にするかどうかを**選択し、** 検索可能で **検索**可能なプロパティを選択できます。
-
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
 
-現時点では、Azure DevOps コネクタは、 **すべてのユーザーに表示される**検索アクセス許可のみをサポートしています。 インデックスが作成されたデータは、すべてのユーザーの検索結果に表示されます。
+現時点では、Azure DevOps コネクタは、 **すべてのユーザーに表示される** 検索アクセス許可のみをサポートしています。 インデックスが作成されたデータは、すべてのユーザーの検索結果に表示されます。
 
-## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
+## <a name="manage-search-schema"></a>検索スキーマを管理する
+
+検索スキーママッピングを構成します。 **クエリ** 可能にするかどうかを **選択し、** 検索可能で **検索** 可能なプロパティを選択できます。
+
+
+## <a name="set-refresh-schedule"></a>更新スケジュールの設定
 
 Azure DevOps コネクタは、フルクロールと増分クロールの両方の更新スケジュールをサポートしています。 フルクロールで、以前に Microsoft 検索インデックスと同期された削除済みの作業項目が検索されます。 フルクロールを実行して、すべての作業項目を同期します。 新しい作業項目と更新を既存の作業項目に同期するには、増分クロールをスケジュールする必要があります。
 
