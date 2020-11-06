@@ -23,6 +23,7 @@
 ### [大企業の Web サイト](enterprise-web-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
+## [ライセンス](licensing.md)
 ## [フィードバック](connectors-feedback.md)
 ## [使用条件](terms-of-use.md)
 # カスタマイズと構成
