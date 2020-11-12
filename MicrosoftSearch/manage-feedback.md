@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Microsoft Search でのユーザーフィードバックの確認と操作
-ms.openlocfilehash: fd47403fd86be2e2fb1ba7baee7473958a8e5572
-ms.sourcegitcommit: 4b2cc0a4cd3d7cdcd8eb23a8baa9703173889a73
+ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
+ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48986962"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48996794"
 ---
 # <a name="managing-user-feedback"></a>ユーザーフィードバックの管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "48986962"
 
 ![グローバルフィードバックフォーム](media/feedback/feedback-global-dialog.png)
 
-ユーザーには、クエリやその他の診断情報をカテゴリとコメントと共に Microsoft に送信するオプションもあります。 診断情報には、ユーザー識別子などの個人データが含まれます。 プライバシーの詳細と、このデータを保護する方法について[説明](https://privacy.microsoft.com/en-US/privacystatement)します。 診断データには、Microsoft が製品の改善のためにフィードバック項目を使用するために必要とする最も重要な情報が含まれています。
+ユーザーには、クエリやその他の診断情報をカテゴリとコメントと共に Microsoft に送信するオプションもあります。 プライバシーの詳細と、このデータを保護する方法について[説明](https://privacy.microsoft.com/en-US/privacystatement)します。 診断データには、Microsoft が製品の改善のためにフィードバック項目を使用するために必要とする最も重要な情報が含まれています。
 
 ほとんどのフィードバック提出は、Microsoft Search 管理センターの [ [フィードバック](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) ] セクションに表示されます。 [ **内部リンク** カテゴリを提案する] で送信されるフィードバックは、 [ブックマーク](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) セクションに推奨のブックマークとして表示され、 **提案** された状態でのフィルター処理によって確認できます。
 
