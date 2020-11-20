@@ -12,82 +12,96 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph のコネクタの概要
-ms.openlocfilehash: d20c576c92c0ec2d794fc6f8fd21c829e468c086
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 7388653927ca6a7af0ba64c3c592f2689780c181
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919485"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367525"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph コネクタの概要
 
-Microsoft Search では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365) のすべてのデータのインデックスが作成されます。 Microsoft Graph コネクタを使用すると、サードパーティーデータのインデックスを作成して、Microsoft の検索結果に表示することができます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。 コネクタは、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類を拡張します。
+[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) では、ユーザーが検索できるように、 [microsoft 365](https://www.microsoft.com/microsoft-365) のすべてのデータのインデックスが作成されます。 Microsoft Graph コネクタを使用すると、組織はサードパーティのデータにインデックスを作成して、Microsoft の検索結果に表示することができます。 これにより、Microsoft 365 プロダクティビティアプリと Microsoft の広範なエコシステムで検索可能なコンテンツソースの種類が拡張されます。 サードパーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベートクラウドでホストできます。
 
+<!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
+
+この記事の残りの部分では、Microsoft 365 管理者が、次の質問に回答するために avaiable されているリソースを見つけるのを支援します。
+
+* [Microsoft Search に接続できるデータソース](#what-data-sources-can-be-connected-to-microsoft-search)
+* [接続を管理するにはどうすればよいですか?](#how-do-i-manage-my-connections)
+* [グラフコネクタのライセンス要件と使用条件について](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [検索結果をカスタマイズして構成するにはどうすればよいですか?](#how-do-i-customize-and-configure-search-results)
+* [カスタムアプリケーションからコネクタデータを検索するにはどうすればよいですか?](#how-do-i-search-my-connector-data-from-a-custom-application)
+
+<!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
-> **免責事項** : microsoft Graph のコネクタと Microsoft Search api (クエリとインデックス) は現在、対象となるリリースのテナントで利用可能なプレビュー状態になっています。 Microsoft Search でコネクタを使用したり、コネクタを作成したりするには、 [対象となるリリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)にオプトインします。 プレビューの詳細については、「 [コネクタプレビュープログラム](connectors-preview.md)」を参照してください。
+> Microsoft Graph のコネクタと Microsoft 検索 Api は、一般公開されるようになりました。 最初のロールアウトは、対象となるリリース用に構成された顧客に対して行われます。 テナントで Graph connector を使用する場合は、ユーザーと管理者が [対象となるリリース](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)にオプトインする必要があります。
 
-## <a name="architecture"></a>アーキテクチャ
+<!---Add Value, scenario, example, and/or graphic in December updates--->
+<!---Probably remove architecture section below
+## Architecture
 
-Microsoft Graph プラットフォームの次のアーキテクチャ図は、 [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) クライアントでのコンテンツインデックスを使用してコネクタコンテンツをユーザーの結果にどのように流し込むかを示しています。 この記事では、Microsoft Graph コネクタデータフロープロセスの主な構成要素について説明します。
+The following architectural diagram of the Microsoft Graph platform shows how Graph connector content flows through content indexing to user results in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) clients. The rest of this section explains each of the key building blocks in the diagram.
 
-![図: 社内およびクラウドベースのデータは、コネクタによって取得され、Microsoft Search API によってインデックスが作成され、Microsoft Search サービスが結果をユーザーに配信します。](media/highlevel-connectors_FINAL.png)
+![Diagram: on-premises and cloud-based data is pulled by connectors and indexed by the Microsoft Search API, and then the Microsoft Search service delivers the results to users.](media/connectors-overview/highlevel-connectors.png)
+Graph connectors can pull data from cloud-based (SaaS) data sources and on-premises data stores. The above diagram shows connections to only two data sources, but you can add connections to up ten sources per tenant.
 
-API は、データソースごとに1つの接続をインスタンス化します。 その後、API はデータをインデックス処理して格納します。 確立された接続は Microsoft Search とやり取りされるので、ユーザーは検索結果を取得できます。
+The Microsoft Graph Connectors API instantiates one connection per data source. Then, the API indexes and stores the data. Established connections interact with Microsoft Search, so users can get search results.
 
-Microsoft 365 [管理センター](https://admin.microsoft.com)では、microsoft によって作成されたすべてのコネクタを構成できます。 管理センターを使用すると、簡単なユーザーインターフェイスでコネクタを簡単に構成できます。
+You can use the Microsoft 365 [admin center](https://admin.microsoft.com) to setup and manage any of the Graph connectors by Microsoft. The admin center has a simple user interface that makes it easy to establish the connection to your data source, and monitor connection status and utilization.
 
-データソースへの **接続** を作成するには、管理者がデータとコンテンツリポジトリ全体への認証されたアクセスを必要とします。 データは、インデックス作成のために graph connector サービスに送られます。
+***Edit paragraph below**_
+To create a _*connection** to a data source, admins need authenticated access to the data and the entire content repository. The data is fed to the graph connector service for indexing.--->
 
-## <a name="available-connectors"></a>利用可能なコネクタ
+## <a name="what-data-sources-can-be-connected-to-microsoft-search"></a>Microsoft Search に接続できるデータソース
 
-現在、マイクロソフトが提供しているコネクタが6つあり、エコシステムパートナーから100以上のコネクタを利用できます。
+Microsoft は10個のグラフコネクタを提供しており、エコシステムパートナーは100を超える追加の Graph コネクタを作成しています。 独自の Graph connector を構築することもできます。 
 
-エコシステムパートナーの1つからコネクタをプレビューするには、そのパートナーに直接連絡します。 詳細については、 [Microsoft Graph のコネクタギャラリー](connectors-gallery.md)を参照してください。
+### <a name="graph-connectors-by-microsoft"></a>Microsoft によるグラフコネクタ
 
-[独自のコネクタを作成](https://docs.microsoft.com/graph/search-concept-overview)することもできます。
+Microsoft によって作成された Graph コネクタを使用して、次のデータソースに接続できます。
 
-### <a name="connectors-by-microsoft"></a>Microsoft 提供のコネクター
+<!---Need to add a few links below when docs exist--->
+* [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
+* Azure SQL
+* [大企業の Web サイト](enterprise-web-connector.md)
+* [MediaWiki](mediawiki-connector.md)
+* [Microsoft SQL Server](MSSQL-connector.md)
+* [ファイル共有](fileshare-connector.md)
+* Oracle (プレビュー)
+* [Salesforce (プレビュー)](salesforce-connector.md)
+* [ServiceNow](servicenow-connector.md)
 
-Microsoft Graph コネクタプレビューリリースには、6つの Microsoft が作成したコネクタが含まれています。 [管理センター](https://admin.microsoft.com)で設定し、 [Microsoft が作成](configure-connector.md)したコネクタをセットアップする方法について説明します。
+[グラフコネクタギャラリー](connectors-gallery.md)には、これらのグラフコネクタの簡単な説明が含まれています。 これらのデータソースのいずれかをテナントに接続する準備が整っている場合は、「セットアップの [概要](configure-connector.md) 」および「Microsoft が設定したコネクタ」セクションにある、データソースに適用されるその他の記事を必ずお読みください。
 
-次のセクションでは、これらの Microsoft が作成したコネクタについて簡単に説明します。 各コネクタのリンクされた記事に詳細情報を表示できます。
+### <a name="graph-connectors-by-our-partners"></a>パートナーによるグラフコネクタ
 
-- **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)** 。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは Azure Blob コンテナーに格納されているファイルとコンテンツを検索できます。 Azure Data Lake Storage Gen2 connector は、指定した Azure Data Lake Storage Gen2 アカウント内の階層が有効なフォルダーにもインデックスを作成します。
-詳細については、「 [Azure Data Lake Storage Gen2 connector](azure-data-lake-connector.md)」を参照してください。
+[Microsoft graph のコネクタギャラリー](connectors-gallery.md)には、パートナーによって作成された各グラフコネクタの簡単な説明と、各パートナーの web サイトへのリンクが含まれています。 詳細については、各パートナーに直接お問い合わせください。
 
-- **[Azure DevOps](https://azure.microsoft.com/services/devops)** 。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは Azure DevOps インスタンスから作業項目を検索できます。
-詳細については、「 [Azure DevOps connector](azure-devops-connector.md)」を参照してください。
+### <a name="build-your-own-graph-connector"></a>独自の Graph connector を構築する
 
-- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)** 。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは Azure SQL データベースからデータを検索できます。
-詳細については、「 [AZURE SQL connector](MSSQL-connector.md)」を参照してください。
+独自の Graph connector の構築を計画している場合は、詳細について「 [Microsoft graph の Microsoft SEARCH API の概要](https://docs.microsoft.com/graph/search-concept-overview) 」を参照してください。
 
-- **エンタープライズ web サイト** 。 この Microsoft Graph コネクタを使用すると、組織内のユーザーは、SharePoint 以外のエンタープライズ web サイト内のページを検索できます。
-詳細については、「 [エンタープライズ web サイトコネクタ](enterprise-web-connector.md)」を参照してください。
+## <a name="how-do-i-manage-my-connections"></a>接続を管理するにはどうすればよいですか?
 
-- **[Mediawiki](https://www.mediawiki.org/wiki/MediaWiki)** 。 この Microsoft Graph コネクタを使用すると、ユーザーは、組織が MediaWiki を使用して作成した wiki サイトで、サポート技術情報の記事を検索できます。
-詳細については、「 [Mediawiki コネクタ](mediawiki-connector.md)」を参照してください。
+[Microsoft 365 管理センター](https://admin.microsoft.com/)の [[コネクタ] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)から、接続を管理できます。 詳細については [、「接続を管理](manage-connector.md) する」を参照してください。
 
-- **[MICROSOFT SQL server](https://www.microsoft.com/sql-server/sql-server-2017)** 。 この Microsoft Graph コネクタを使用すると、組織内のユーザーはオンプレミスの SQL server データベースのデータを検索できます。
-詳細については、「 [MICROSOFT SQL server connector](MSSQL-connector.md)」を参照してください。
-
-- **[ServiceNow](https://www.servicenow.com)** この Microsoft Graph コネクタを使用すると、組織内のユーザーは ServiceNow インスタンスからサポート技術情報の記事を検索できます。
-[ServiceNow コネクタ](servicenow-connector.md)の詳細について説明します。
-
-### <a name="connectors-from-our-partners"></a>パートナーからのコネクタ
-
-エコシステムパートナーからのプレビューには、100を超えるコネクタが用意されています。 エコシステムパートナーの1つからコネクタをプレビューするには、そのパートナーに直接連絡します。
-パートナーからのコネクタの詳細については、 [Microsoft Graph のコネクタギャラリー](connectors-gallery.md)を参照してください。
-
-### <a name="build-your-own-connector"></a>独自のコネクタを作成する
-
-カスタムデータ型またはファイルにインデックスを作成するために、開発者は [Microsoft Graph](https://developer.microsoft.com/graph/)でコネクタを作成できます。 コネクタは、 [接続を作成](https://docs.microsoft.com/graph/search-index-manage-connections) し、Microsoft 検索インデックスにアイテムをプッシュするアプリケーションです。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
-
-### <a name="search-results-with-your-custom-built-connector"></a>カスタム作成コネクタを使用した検索結果
-
-カスタムデータのインデックスを作成すると、開発者は [このデータをクエリ](https://docs.microsoft.com/graph/search-concept-custom-types)できます。 任意のアプリケーションでデータを表示できます。 詳細については、microsoft [Graph でアプリの Microsoft 検索機能を拡張するための概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。
-
-## <a name="license-requirements"></a>ライセンス要件
+## <a name="what-are-the-license-requirements-and-terms-of-use-for-graph-connectors"></a>グラフコネクタのライセンス要件と使用条件について
 
 検索結果のコネクタのデータを表示するには、組織内のユーザーに対して有効な Microsoft 365 または Office 365 のライセンスと十分なグラフコネクタクォータが必要です。
 
-詳細については、「 [ライセンス要件と価格](licensing.md)」を参照してください。
+詳細については、「[ライセンス要件と](licensing.md)[使用条件](terms-of-use.md)」を参照してください。
+
+## <a name="how-do-i-customize-and-configure-search-results"></a>検索結果をカスタマイズして構成するにはどうすればよいですか?
+
+検索結果をカスタマイズして構成するには、いくつかの方法があります。 詳細については、次の記事を参照してください。
+
+* [業界および結果の種類を管理する](customize-search-page.md)
+* [検索結果のレイアウトを管理する](customize-results-layout.md)
+* [検索結果クラスターを管理する](result-cluster.md)
+* [カスタムフィルターを管理する](custom-filters.md)
+
+## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>カスタムアプリケーションからコネクタデータを検索するにはどうすればよいですか?
+
+カスタムデータのインデックスを作成すると、開発者は [このデータをクエリ](https://docs.microsoft.com/graph/search-concept-custom-types)できます。 任意のアプリケーションでデータを表示できます。 詳細については、microsoft [Graph の Microsoft SEARCH API の概要](https://docs.microsoft.com/graph/search-concept-overview)を参照してください。

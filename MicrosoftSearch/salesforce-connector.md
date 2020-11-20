@@ -2,7 +2,7 @@
 title: Microsoft Search の Salesforce connector
 ms.author: rusamai
 author: rsamai
-manager: jameslao
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,23 +11,22 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Search の Salesforce connector をセットアップする
-ms.openlocfilehash: 8de7784cae7d430bc385889bd836360c69492591
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: 149d1d9a297e09e9b895aeb0947c7ff4a3cbdf84
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992914"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367651"
 ---
-# <a name="salesforce-connector"></a>Salesforce コネクタ
+# <a name="salesforce-connector-preview"></a>Salesforce コネクタ (プレビュー)
 
-Salesforce Graph コネクタを使用すると、組織は Salesforce インスタンスの連絡先、営業案件、潜在顧客、およびアカウントのオブジェクトにインデックスを作成できます。 Salesforce からコネクタとインデックスコンテンツを構成すると、エンドユーザーは任意の Microsoft 検索クライアントからこれらのアイテムを検索できるようになります。
+Salesforce Graph コネクタを使用すると、組織は Salesforce インスタンスの連絡先、営業案件、潜在顧客、およびアカウントのオブジェクトにインデックスを作成できます。 Salesforce からコネクタとインデックスコンテンツを構成した後は、エンドユーザーは任意の Microsoft 検索クライアントからこれらのアイテムを検索できます。
 
 この記事は、 [Microsoft 365](https://www.microsoft.com/microsoft-365) 管理者、または Salesforce コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
 
 >[!IMPORTANT]
->現在、Salesforce Graph コネクタは、夏の ' 20、Spring ' 20、冬 ' 20、およびサマー ' 19 バージョンをサポートしています。
+>現在、Salesforce Graph コネクタは夏の ' 19 以降をサポートしています。
 
 ## <a name="connection-settings"></a>接続設定
 
@@ -37,11 +36,11 @@ Salesforce インスタンスに接続するには、Salesforce インスタン�
 
 - [アプリ-> App Manager に移動します。
 
-- [ **新しい接続済みアプリ** ] を選択します。
+- [ **新しい接続済みアプリ**] を選択します。
 
 - API セクションを次のように入力します。
 
-    - [ **Oauth 設定を有効にする** ] のチェックボックスをオンにします。
+    - [ **Oauth 設定を有効にする**] のチェックボックスをオンにします。
 
     - コールバック URL を次のように指定します。 [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
 
@@ -60,11 +59,11 @@ Salesforce インスタンスに接続するには、Salesforce インスタン�
 - コンシューマーキーとコンシューマーシークレットをコピーします。 これらは、Microsoft 365 管理ポータルで Graph コネクタの接続設定を構成する際に、クライアント ID とクライアントシークレットとして使用されます。
 
   ![管理者が必要なすべての構成を送信した後に、Salesforce インスタンスの [API] セクションによって返された結果。 Consumer キーは左列の上にあり、コンシューマーシークレットは右列の上にあります。](media/salesforce-connector/clientsecret.png)
-- Salesforce インスタンスを閉じる前に、次の手順を実行して、更新トークンの有効期限が切れないようにします。 
+- Salesforce インスタンスを閉じる前に、次の手順を実行して、更新トークンの有効期限が切れないようにします。
     - [アプリ-> アプリマネージャー] に移動します。
-    - 作成したばかりのアプリを見つけ、右側のドロップダウンを選択します。 [ **管理** ] を選択します。
-    - [ **ポリシーの編集** ] を選択する
-    - 更新トークンポリシーの場合、[ **トークンの更新は取り消されるまで有効です** ] を選択します。
+    - 作成したばかりのアプリを見つけ、右側のドロップダウンを選択します。 [**管理**] を選択します。
+    - [**ポリシーの編集**] を選択する
+    - 更新トークンポリシーの場合、[**トークンの更新は取り消されるまで有効です**] を選択します。
 
   ![[更新トークンは取り消されるまで有効です] という名前の更新トークンポリシーを選択します。](media/salesforce-connector/oauthpolicies.png)
 
@@ -82,28 +81,28 @@ Graph connector の接続設定を次のように構成します。
   >ポップアップが表示されない場合は、ブラウザーでブロックされる可能性があるので、ポップアップとリダイレクトを許可する必要があります。
 
   >[!NOTE]
-  >組織でシングルサインオン (SSO) を使用している場合は、ログインインターフェイスの右下隅にある [ **カスタムドメインの使用** ] を選択することができます。 ドメインを入力し、[ **続行** ] を選択します。 これにより、SSO を使用してログインするオプションを持つ、組織固有のログインページに移動します。
+  >組織でシングルサインオン (SSO) を使用している場合は、ログインインターフェイスの右下隅にある [ **カスタムドメインの使用** ] を選択することができます。 ドメインを入力し、[ **続行**] を選択します。 これにより、SSO を使用してログインするオプションを持つ、組織固有のログインページに移動します。
 
 - 次のスクリーンショットに示されているように、「接続が成功しました」という緑色のバナーを検索して、接続が成功したことを確認します。
 
   ![成功したログインのスクリーンショット。 [接続成功] という緑色のバナーは、[Salesforce インスタンス URL] のフィールドの下にあります。](media/salesforce-connector/sf5.png)
 
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
-このデータソースからの検索結果を表示するユーザーを選択する必要があります。 特定の Azure Active Directory (AAD) または非 AAD ユーザーのみが検索結果を表示できるようにする場合は、id をマップする必要があります。
+このデータソースからの検索結果を表示するユーザーを選択する必要があります。 特定の Azure Active Directory (Azure AD) または非 Azure AD ユーザーのみが検索結果を表示できるようにする場合は、id をマップする必要があります。
 
 ### <a name="select-permissions"></a>アクセス許可の選択
-アクセス制御リスト (Acl) を Salesforce インスタンスから取り込み、または組織内のすべてのユーザーがこのデータソースからの検索結果を表示できるようにすることができます。 Acl には、Azure Active Directory (AAD) id、非 AAD id、またはその両方を含めることができます。
+アクセス制御リスト (Acl) を Salesforce インスタンスから取り込み、または組織内のすべてのユーザーがこのデータソースからの検索結果を表示できるようにすることができます。 Acl には、Azure Active Directory (AAD) id (Azure AD から Salesforce にフェデレーションされるユーザー)、非 Azure AD id (Azure AD で対応する id を持つネイティブの Salesforce ユーザー)、またはその両方を含めることができます。
 
 ![管理者によって完了したアクセス許可の選択画面。管理者が [このデータソースへのアクセス権を持つユーザーのみ] オプションを選択し、さらに id タイプのドロップダウンメニューから [AAD] を選択しました。](media/salesforce-connector/sf6.png)
 
 ### <a name="map-non-aad-identities"></a>AAD 以外の id をマップする 
-Salesforce インスタンスから ACL を取り込み、id の種類として "非 AAD" を選択した場合は、id のマッピングの手順について「 [非 AZURE AD id をマップ ](map-non-aad.md) する」を参照してください。
+Salesforce インスタンスから ACL を取り込み、id の種類として "非 AAD" を選択した場合は、id のマッピングの手順について「 [非 AZURE AD id をマップ](map-non-aad.md) する」を参照してください。
 
 ### <a name="map-aad-identities"></a>AAD id をマップする
-Salesforce インスタンスから ACL を取り込み、id の種類として "AAD" を選択した場合は、id のマッピングの手順について「 [AZURE AD id をマップ](map-aad.md) する」を参照してください。
+Salesforce インスタンスから ACL を取り込み、id の種類として "AAD" を選択した場合は、id のマッピングの手順について「 [AZURE AD id をマップ](map-aad.md) する」を参照してください。 Salesforce の Azure AD SSO をセットアップする方法については、この [チュートリアル](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/salesforce-tutorial)を参照してください。
 
 ## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる 
-各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。 既定では、"Title"、"url"、"Last/送信者" などの一部のラベルには、既に source プロパティが割り当てられています。
+各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。 既定では、"Title"、"URL"、"CreatedBy"、"Last" などの一部のラベルには、既に source プロパティが割り当てられています。
 
 ![既定のソースプロパティを示すプロパティのラベルの割り当て画面。](media/salesforce-connector/sf8.png)
 
@@ -126,23 +125,22 @@ Salesforce コネクタは、現在、フルクロールの更新スケジュー
 - Graph connector は現在、Salesforce からの個人グループを使用した Apex ベースの領土ベースの共有と共有をサポートしていません。
 - Salesforce API に既知のバグがあります。グラフコネクタで使用されるのは、潜在顧客に対するプライベートな組織全体の既定値が現在有効になっていない場合です。  
 - フィールドがプロファイルに対してフィールドレベルセキュリティ (FLS) が設定されている場合、Graph connector は、その Salesforce 組織のプロファイルに対してそのフィールドを取り込みません。そのため、ユーザーは、これらのフィールドの値を検索することはできません。結果には表示されません。  
-- FLS セットアップは、コネクタの完全同期時に有効になります。
 - [スキーマの管理] 画面には、これらの共通の標準プロパティの名前が1回表示され、それらをクエリ可能にするために実行した選択内容、検索可能で取得可能です。すべてまたはなしに適用されます。
-    - 名前
+    - Name
     - Url 
-    - 説明
+    - Description
     - FAX
     - Phone
     - MobilePhone
     - メール
-    - 型
-    - Title
+    - 種類
+    - タイトル
     - AccountId
     - AccountName
     - AccountUrl
     - AccountOwner
     - AccountOwnerUrl
-    - 所有者
+    - Owner
     - OwnerUrl
     - CreatedBy 
     - 新規の Url 

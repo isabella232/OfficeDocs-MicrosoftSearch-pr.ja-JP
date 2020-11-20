@@ -12,23 +12,27 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のエンタープライズ web サイトコネクタを設定する
-ms.openlocfilehash: b4d9f837892bcfd795421530e0571fa0509a2761
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 4b9d8a8472c81c2bc647b3cef3cdb437073d36cf
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206943"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367471"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="enterprise-websites-connector"></a>エンタープライズ web サイトコネクタ
 
-エンタープライズ web サイトコネクタを使用すると、組織は **内部に接続している web サイトの**記事とコンテンツにインデックスを作成できます。 コネクタを構成し、web サイトからコンテンツを同期すると、エンドユーザーは任意の Microsoft 検索クライアントからそのコンテンツを検索できるようになります。
+エンタープライズ web サイトコネクタを使用すると、組織は **内部に接続している web サイトの** 記事とコンテンツにインデックスを作成できます。 コネクタを構成し、web サイトからコンテンツを同期すると、エンドユーザーは任意の Microsoft 検索クライアントからそのコンテンツを検索できるようになります。
 
 この記事は、 [Microsoft 365](https://www.microsoft.com/microsoft-365) 管理者またはエンタープライズ websites コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。  
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
 
-データソースに接続するには、 [Azure Active Directory (AZURE AD)](https://docs.microsoft.com/azure/active-directory/)を使用して、ルート URL と認証の形式 (None、Basic Authentication、OAuth 2.0) が必要です。
+データソースに接続するには、web サイトのルート URL と、使用する認証の種類を設定する必要があります。これには、 [Azure Active Directory (AZURE AD)](https://docs.microsoft.com/azure/active-directory/)を使用した、[なし]、[基本認証]、または OAuth 2.0 があります。
+
+### <a name="url"></a>URL
+
+[URL] フィールドを使用して、クロールする web サイトのルートを指定します。 エンタープライズ web サイトコネクタは、この URL を開始点として使用し、この URL からのすべてのリンクをクロール対象にします。
 
 ### <a name="authentication"></a>認証
 
@@ -45,25 +49,29 @@ ms.locfileid: "48206943"
 
 詳細については、「 [クイックスタート: アプリケーションを Microsoft identity platform に登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)」を参照してください。
 
-### <a name="root-url"></a>ルート URL
+## <a name="add-urls-to-exclude"></a>除外する Url を追加する
 
-ルート URL は、クロールを開始するもので、認証に使用されます。 クロールする web サイトのホームページから URL を取得できます。
-
-## <a name="select-the-source-properties"></a>ソースのプロパティを選択する
-
-ソースのプロパティは、エンタープライズ web サイトのデータ形式に基づいて定義されます。 ただし、コンテンツに機密がある場合やクロール価値がない場合は、一部の Url をクロール対象から除外する除外 **リスト** を作成できます。 除外リストを作成するには、ルート URL を参照します。 構成プロセス中に、除外された Url をリストに追加するオプションがあります。
+必要に応じて、コンテンツに機密がある場合やクロール価値がない場合は、一部の Url をクロール対象から除外するように除外 **リスト** を作成することもできます。 除外リストを作成するには、ルート URL を参照します。 構成プロセス中に、除外された Url をリストに追加するオプションがあります。
 
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
 
-アクセス制御リスト (Acl) はサポートされていません。 そのため、組織内のすべてのユーザーに表示される web サイトのみを接続することをお勧めします。
+エンタープライズ web サイトコネクタは、 **すべてのユーザー** に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+
+## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる
+
+各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。
+
+## <a name="manage-schema"></a>スキーマを管理する
+
+[**スキーマの管理**] 画面で、プロパティに関連付けられているスキーマの属性 (**クエリ** 可能、**検索****可能、取得可能、および****絞り込み可能な**) を変更し、オプションのエイリアスを追加して、 **Content** プロパティを選択することができます。
 
 ## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
 
-エンタープライズ web サイトコネクタは、フルクロールのみをサポートします。 これは、すべてのクロール中にコネクタがすべての web サイトのコンテンツを読み取ることを意味します。 コネクタがコンテンツを読み取るのに十分な時間をかけるようにするには、更新のスケジュール間隔を大きくすることをお勧めします。 スケジュールされた更新は、1週間から2週間の間で行うことをお勧めします。
+エンタープライズ web サイトコネクタは、完全な更新のみをサポートします。 これは、すべての更新時にコネクタがすべての web サイトのコンテンツを再クロールすることを意味します。 コネクタがコンテンツをクロールするのに十分な時間を確保できるようにするには、更新のスケジュール間隔を大きく設定することをお勧めします。 スケジュールされた更新は、1週間から2週間の間で行うことをお勧めします。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-Web サイトのコンテンツを読み取るときに、以下の詳細なエラーコードで示されているソースエラーが発生することがあります。 エラーの種類に関する詳細を確認するには、接続を選択した後、[ **エラーの詳細** ] ページに移動します。 **エラーコード**をクリックして、より詳細なエラーを表示します。 詳細については [、「コネクタの管理](https://docs.microsoft.com/microsoftsearch/manage-connector) 」を参照してください。
+Web サイトのコンテンツを読み取るときに、以下の詳細なエラーコードで示されているソースエラーが発生することがあります。 エラーの種類に関する詳細を確認するには、接続を選択した後、[ **エラーの詳細** ] ページに移動します。 **エラーコード** をクリックして、より詳細なエラーを表示します。 詳細については [、「コネクタの管理](https://docs.microsoft.com/microsoftsearch/manage-connector) 」を参照してください。
 
  詳細なエラーコード | エラー メッセージ
  --- | ---
@@ -82,4 +90,4 @@ Web サイトのコンテンツを読み取るときに、以下の詳細なエ�
 
 ## <a name="limitations"></a>制限事項
 
-エンタープライズ web サイトコネクタは、 **動的 web ページ**上のデータの検索をサポートしていません。 これらの web ページの例は、コンテンツ管理システム ( [Confluence](https://www.atlassian.com/software/confluence) 、 [Unily](https://www.unily.com/) 、web サイトのコンテンツを格納するデータベースなど) に存在します。
+エンタープライズ web サイトコネクタは、 **動的 web ページ** 上のデータの検索をサポートしていません。 これらの web ページの例は、コンテンツ管理システム ( [Confluence](https://www.atlassian.com/software/confluence) 、 [Unily](https://www.unily.com/) 、web サイトのコンテンツを格納するデータベースなど) に存在します。

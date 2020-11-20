@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の MediaWiki コネクタをセットアップする
-ms.openlocfilehash: d8aa4a99c353a80f7d3dcf768d8287200b17fdc6
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 7f6b34dcafc4b82ab3778ec1d7a4921383e44a44
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206952"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367642"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki コネクタ
 
@@ -27,15 +27,19 @@ MediaWiki コネクタを使用すると、MediaWiki ソフトウェアを使用
 
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
 
-接続を認証するために、MediaWiki の URL と資格情報を入力します。 **テナント ID**、**リソース ID**、**クライアント ID**、**クライアントシークレット**の情報が必要です。
-
-## <a name="manage-the-search-schema"></a>検索スキーマを管理する
-
-接続が成功した後、検索スキーママッピングを構成します。 **クエリ**可能、**検索**可能、および取得可能なプロパティを選択でき**ます。**
+接続を認証するために、MediaWiki の URL と資格情報を入力します。 **テナント ID**、**リソース ID**、**クライアント ID**、**クライアントシークレット** の情報が必要です。
 
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
 
-MediaWiki コネクタは、 **すべてのユーザー**に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+MediaWiki コネクタは、 **すべてのユーザー** に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+
+## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる
+
+各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。
+
+## <a name="manage-schema"></a>スキーマを管理する
+
+[**スキーマの管理**] 画面で、プロパティに関連付けられているスキーマの属性 (**クエリ** 可能、**検索****可能、取得可能、および****絞り込み可能な**) を変更し、オプションのエイリアスを追加して、 **Content** プロパティを選択することができます。
 
 ## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
 

@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: AAD id をマップする手順
-ms.openlocfilehash: e373302314e3044f6bd6b874a341c8a1ada77556
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: db0378e596c560edebd2ceb942e6327b47a5286b
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992906"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367705"
 ---
 # <a name="map-your-azure-ad-identities"></a>Azure AD Id をマップする  
 
@@ -53,7 +52,7 @@ Azure AD ユーザーのプロパティの値を組み合わせて、一意の�
 数式を入力した後で、必要に応じて、[ **プレビュー** ] をクリックして、データソースから5つのランダムユーザーのプレビューを表示し、それぞれのユーザーマッピングを適用することができます。 プレビューの出力には、手順1でユーザーが選択した Azure AD ユーザープロパティの値と、そのユーザーの手順2で提供された最終的な式の出力が含まれています。 また、「成功」または「失敗」アイコンを使用して、式の出力をテナントの Azure AD ユーザーに解決できるかどうかも示します。  
 
 >[!NOTE]
->[ **プレビュー** ] をクリックした後、1つ以上のユーザーマッピングの状態が "Failed" になっている場合でも、接続の作成を続行できます。 プレビューには、5つのランダムユーザーと、データソースからのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされていない場合は、この場合に遭遇する可能性があります。
+>[ **プレビュー**] をクリックした後、1つ以上のユーザーマッピングの状態が "Failed" になっている場合でも、接続の作成を続行できます。 プレビューには、5つのランダムユーザーと、データソースからのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされていない場合は、この場合に遭遇する可能性があります。
 
 ## <a name="sample-azure-ad-mapping"></a>Azure AD マッピングの例
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Microsoft SQL Server または Azure SQL connector をセットアップします。
-ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
-ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
+ms.openlocfilehash: dc90693e7629c004ecc48b020262ec5cfd0808c0
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214490"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367579"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL および Microsoft SQL Server コネクタ
 
@@ -56,7 +56,7 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
 
 ## <a name="full-crawl-required"></a>フルクロール (必須)
 
-この手順では、データベースのフルクロールを実行する SQL クエリを構成します。 フルクロールでは、**クエリ**可能、**検索**可能、または取得可能にするすべての列またはプロパティが選択**されます。** また、ACL 列を指定して、検索結果のアクセスを特定のユーザーまたはグループに制限することもできます。
+この手順では、データベースのフルクロールを実行する SQL クエリを構成します。 フルクロールでは、**クエリ** 可能、**検索** 可能、または取得可能にするすべての列またはプロパティが選択 **されます。** また、ACL 列を指定して、検索結果のアクセスを特定のユーザーまたはグループに制限することもできます。
 
 > [!Tip]
 > 必要なすべての列を取得するには、複数のテーブルに結合することができます。
@@ -65,13 +65,13 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>データ列の選択 (必須) と ACL 列 (省略可能)
 
-この例では、検索のデータを保持する5つのデータ列 (OrderId、OrderTitle、Ordertitle、Htmldatetime、および IsDeleted) の選択例を示します。 データの各行に対して表示権限を設定するには、必要に応じて、次の ACL 列を選択できます。 AllowedUsers、Allowedusers、DeniedUsers、および DeniedGroups。 これらのすべてのデータ列は、 **クエリ**可能、 **検索**可能 **、または**取得可能にすることができます。
+この例では、検索のデータを保持する5つのデータ列 (OrderId、OrderTitle、Ordertitle、Htmldatetime、および IsDeleted) の選択例を示します。 データの各行に対して表示権限を設定するには、必要に応じて、次の ACL 列を選択できます。 AllowedUsers、Allowedusers、DeniedUsers、および DeniedGroups。 これらのすべてのデータ列は、 **クエリ** 可能、 **検索** 可能 **、または** 取得可能にすることができます。
 
 次のクエリ例に示すように、データ列を選択します。 `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
 検索結果へのアクセスを管理するには、クエリで1つ以上の ACL 列を指定できます。 SQL コネクタを使用すると、レコードレベルごとにアクセスを制御できます。 テーブル内のすべてのレコードに対して同じアクセス制御を行うことを選択できます。 ACL 情報が別のテーブルに格納されている場合は、クエリでそれらのテーブルを使用して結合する必要があります。
 
-以下では、上記のクエリで各 ACL 列を使用する方法について説明します。 次のリストでは、4つの **アクセス制御メカニズム**について説明します。
+以下では、上記のクエリで各 ACL 列を使用する方法について説明します。 次のリストでは、4つの **アクセス制御メカニズム** について説明します。
 
 * **Allowedusers**: これにより、検索結果にアクセスできるユーザー id のリストを指定します。 次の例では、ユーザーのリスト: john@contoso.com、keith@contoso.com、および lisa@contoso.com には、OrderId = 12 のレコードへのアクセスのみが許可されています。
 * **Allowedgroups**: これにより、検索結果にアクセスできるユーザーのグループが指定されます。 次の例では、グループ sales-team@contoso.com は OrderId = 12 のレコードにのみアクセスできます。
@@ -117,7 +117,7 @@ Acl としてを使用するために、次の ID タイプがサポートされ
 
 ## <a name="incremental-crawl-optional"></a>増分クロール (オプション)
 
-このオプションの手順では、データベースの増分クロールを実行するための SQL クエリを指定します。 このクエリでは、最後の増分クロール以降のデータの変更が SQL コネクタによって決定されます。 フルクロールの場合と同様に、 **クエリ**可能、 **検索**可能、または取得可能にするすべての列を **選択します**。 フルクロールクエリで指定したものと同じ ACL 列のセットを指定します。
+このオプションの手順では、データベースの増分クロールを実行するための SQL クエリを指定します。 このクエリでは、最後の増分クロール以降のデータの変更が SQL コネクタによって決定されます。 フルクロールの場合と同様に、 **クエリ** 可能、 **検索** 可能、または取得可能にするすべての列を **選択します**。 フルクロールクエリで指定したものと同じ ACL 列のセットを指定します。
 
 次の図のコンポーネントは、完全なクロールコンポーネントに似ていますが、1つの例外があります。 この例では、"ModifiedDateTime" は選択された透かし列です。 [フルクロールの手順](#full-crawl-required)を確認して、増分クロールクエリを記述する方法を説明し、次の画像を例として示します。
 
@@ -126,6 +126,14 @@ Acl としてを使用するために、次の ID タイプがサポートされ
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
 
 [フルクロール画面で指定された acl](#full-crawl-manage-search-permissions)を使用するか、すべてのユーザーにコンテンツを表示するように上書きするかを選択できます。
+
+## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる
+
+各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。
+
+## <a name="manage-schema"></a>スキーマを管理する
+
+[**スキーマの管理**] 画面で、プロパティに関連付けられているスキーマの属性 (**クエリ** 可能、**検索****可能、取得可能、および****絞り込み可能な**) を変更し、オプションのエイリアスを追加して、 **Content** プロパティを選択することができます。
 
 ## <a name="limitations"></a>制限事項
 

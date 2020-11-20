@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: AAD 以外の id をマップする手順
-ms.openlocfilehash: be479cfd9dad585e83b5a39ff3ce4a84b9d41676
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: cd7d0eb17678d69ec1966e4472b38c1f18c30809
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992898"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367660"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>非 Azure AD Id をマップする  
 
@@ -27,7 +26,7 @@ ms.locfileid: "48992898"
 これらの手順は、Microsoft によって [ServiceNow](servicenow-connector.md) または [Salesforce](salesforce-connector.md) のコネクタを設定している管理者のみが、"このデータソースへのアクセス権を持つユーザーのみ" および "identity type" という名前の "AAD" の検索アクセス許可を使用して設定している場合にのみ関連します。
 
 >[!NOTE]
->Salesforce コネクタを設定して、[アクセス許可] 画面で [このデータソースおよび id の種類 **AAD** **にアクセスできるユーザーのみ** ] を選択する場合は、「azure ad id をマップする方法」の手順については、「 [azure ad identity のマップ](map-aad.md)」の記事を参照してください。  
+>Salesforce コネクタを設定して、[アクセス許可] 画面で [このデータソースおよび id の種類 **AAD** **にアクセスできるユーザーのみ**] を選択する場合は、「azure ad id をマップする方法」の手順については、「 [azure ad identity のマップ](map-aad.md)」の記事を参照してください。  
 
 ## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>非 Azure AD プロパティをマッピングする手順
 
@@ -75,7 +74,7 @@ Azure 以外の各 AD ユーザープロパティに適用された正規表現�
 数式を入力した後で、必要に応じて、[ **プレビュー** ] をクリックして、データソースから5つのランダムユーザーのプレビューを表示し、それぞれのユーザーマッピングを適用することができます。 プレビューの出力には、手順2でユーザーが選択した非 Azure AD ユーザープロパティの値と、そのユーザーの手順3で提供された最終的な式の出力が含まれています。 また、「成功」または「失敗」アイコンを使用して、式の出力をテナントの Azure AD ユーザーに解決できるかどうかも示します。  
 
 >[!NOTE]
->[ **プレビュー** ] をクリックした後、1つ以上のユーザーマッピングの状態が "Failed" になっている場合でも、接続の作成を続行できます。 プレビューには、5つのランダムユーザーと、データソースからのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされていない場合は、この場合に遭遇する可能性があります。
+>[ **プレビュー**] をクリックした後、1つ以上のユーザーマッピングの状態が "Failed" になっている場合でも、接続の作成を続行できます。 プレビューには、5つのランダムユーザーと、データソースからのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされていない場合は、この場合に遭遇する可能性があります。
 
 ## <a name="sample-non-azure-ad-mapping"></a>サンプルの非 Azure AD マッピング
 
