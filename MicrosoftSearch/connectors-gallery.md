@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のすべての Microsoft Graph コネクタを一覧表示します。
-ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: 6ab0518dffacb25190a0eafc20e50408fd51004b
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388014"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367628"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph コネクタギャラリー
 
@@ -164,6 +164,27 @@ ms.locfileid: "45388014"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
+                        <h3>Salesforce</h3>
+                        <p><a href="https://www.microsoft.com">Microsoft</a>による</p>
+                        <p>この Microsoft Graph コネクタを使用すると、組織内のユーザーは、Salesforce インスタンスから連絡先、営業案件、潜在顧客、および Accounts オブジェクトを検索できます。</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="salesforce-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">詳細情報</font>
+                                </a>
+                             <img src="media/Salesforce_Small.png" alt="Enterprise Website" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p><a href="https://www.microsoft.com">Microsoft</a>による</p>
                         <p>この Microsoft Graph コネクタを使用すると、組織内のユーザーは ServiceNow インスタンスからナレッジベースの記事を検索できます。</p>
@@ -194,7 +215,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Aderant</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Aderant コネクタは、ソースシステムのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/aderant-connector-sharepoint-azure-elasticsearch/" target="_blank" data-linktype="relative-path">
@@ -250,7 +271,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Alfresco</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Alfresco コネクタは、BAI コネクタフレームワークを基盤に構築されています。これは、すべてのコネクタを構築し、エンタープライズシステムへの安全な接続を提供するために使用するプラットフォームです。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/alfresco-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -282,7 +303,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Amazon Aurora</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Amazon Aurora コネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/amazon-aurora-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -301,7 +322,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Amazon RDS</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Amazon RDS Connector は業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/amazon-rds-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -318,7 +339,7 @@ ms.locfileid: "45388014"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Amazon S3 connector は、Amazon Simple Storage サービスからコンテンツをクロールします。各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
+                        <p>Amazon S3 connector は、Amazon Simple Storage サービスからコンテンツをクロールします。 各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Amazon+S3+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -333,8 +354,8 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Amazon S3</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Amazon S3 Connector は、S3 に格納されているすべてのコンテンツに対して動作します。組織はコネクタを使用して、s3 に安全に接続し、S3 バケットのコンテンツにインデックスを作成できます。 パワフルなフィルタリング機能により、S3 で検出されたコンテンツのインデックスを作成することができます。</p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
+                        <p>Amazon S3 Connector は、S3 に格納されているすべてのコンテンツに対して動作します。 組織はコネクタを使用して、s3 に安全に接続し、S3 バケットのコンテンツにインデックスを作成できます。 パワフルなフィルタリング機能により、S3 で検出されたコンテンツのインデックスを作成することができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -486,7 +507,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Azure SQL データベース</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA 洞察の Azure SQL Database コネクタは、業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートできます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/azure-sql-database-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -505,7 +526,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>検索ボックス</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Box コネクタを使用すると、SharePoint やその他のポータルでコンテンツを表示できるようになり、ユーザーは SharePoint とボックスから統合された検索結果を取得できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/box-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -556,7 +577,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Confluence</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Confluence コネクタは、Confluence に格納されているコンテンツをクロールしてインデックスを作成できるようにするエンタープライズグレードのインデックスコネクタです。 これにより、SharePoint またはその他のポータルが、ユーザーが複数のコンテンツソースから必要なコンテンツを検索して取得するための単一のポイントとして機能することができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/confluence-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -572,7 +593,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>CuadraSTAR</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>CuadraSTAR Connector は、CuadraSTAR のコンテンツをクロールして、Microsoft Search を使用して CuadraSTAR 内の関連情報を検索できるようにする単一のインデックスを作成します。さらに、70の他のサポートされているリポジトリを検索して、個別に検索を実行する必要がなくなります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/cuadrastar-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -588,7 +609,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Deltek</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Deltek ビジョンコネクタは、ソースシステムのセキュリティを確保し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。 Deltek 構想から Azure、SharePoint Online、または SharePoint 2016/2013 にコンテンツをインデックス処理することにより、ユーザーに統合された検索結果を提供するために BA SmartHub を使用して it を提示します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/deltek-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -608,7 +629,7 @@ ms.locfileid: "45388014"
                     <div class="cardText">
                         <h3>Documentum/Documentum DQL</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Documentum コネクタは、任意の Documentum コンテンツリポジトリからコンテンツをクロールします。 DQL は、ドキュメントおよびコンテンツ管理用の特殊な検索機能に関連する非常に複雑なクエリを実行できるクエリ言語です。Aspire Documentum DQL コネクタは、Documentum からコンテンツをクロールします。</p>
+                        <p>Documentum コネクタは、任意の Documentum コンテンツリポジトリからコンテンツをクロールします。 DQL は、ドキュメントおよびコンテンツ管理用の特殊な検索機能に関連する非常に複雑なクエリを実行できるクエリ言語です。 Aspire Documentum DQL コネクタは、Documentum からコンテンツをクロールします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -639,7 +660,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>エリート/E3</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA 洞察のエリートコネクタは、Microsoft Search を使用して、弁護士が、企業のコンテンツや、エリートコンテンツに関する情報にアクセスするための単一のアクセスポイントを提供します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/elite-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -658,8 +679,8 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>EMC eRoom</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>Eroom Connector は、eRoom アプリケーションへのセキュリティで保護された接続を確立し、eRoom スキーマから検索エンジンスキーマにコンテンツ (メタデータおよび添付ファイルを含む) をマップします。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
+                        <p>Eroom Connector は、eRoom アプリケーションへのセキュリティで保護された接続を確立し、eRoom スキーマから検索エンジンスキーマにコンテンツ (メタデータおよび添付ファイルを含む) をマップします。  次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/eroom-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -709,7 +730,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Facebook のワークプレース</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Facebook で Workplace を利用する組織は、Facebook コネクタによって BA を使用して、このデータの範囲を既存の検索インデックスに拡張できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/connector-for-workplace-by-facebook/"><font color="0065BA">詳細情報</font></a>
@@ -741,7 +762,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>ファイル共有</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>ファイル共有コネクタを使用すると、ファイル共有 (Windows、SMB/CIFS) からのコンテンツを、1つの統合された検索インデックスに表示することができます。また、他のリポジトリのコンテンツを表示することもできます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/file-share-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -793,7 +814,7 @@ ms.locfileid: "45388014"
                     <div class="cardText">
                         <h3>転送</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Aspire ファイル転送プロトコル (FTP) コネクタは、FTP サーバー上のファイルとフォルダーへのアクセスを提供します。各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
+                        <p>Aspire ファイル転送プロトコル (FTP) コネクタは、FTP サーバー上のファイルとフォルダーへのアクセスを提供します。 各ファイルは、そのメタデータ (サイズ、場所、最終アクセスなど) で送信されます。 更新プログラムは自動的に検出されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/FTP+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -827,7 +848,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Google Cloud SQL</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Google Cloud sql Connector は、Google Cloud SQL の内容を Microsoft 検索インデックスにインデックス処理して、SmartHub を使用してユーザーに統合された検索結果を提供します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/google-cloud-sql-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -894,7 +915,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>HP 統合アーカイブ (EAS)</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA の HP 統合アーカイブコネクタは、アーカイブ内のドキュメントの完全なテキストとメタデータの両方を、SharePoint 検索や Azure Search を含むさまざまな検索エンジンにインデックス処理します。 これにより、複数のリポジトリのコンテンツにわたる単一の検索可能な結果セットが可能になります。 これにより、統合アーカイブ、SharePoint、その他のリポジトリ内でアクセス可能な豊富な情報を組織で活用できるようになり、検索を通じてユーザーがすぐにデータを操作できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/hp-consolidated-archive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -929,7 +950,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>IBM 接続</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>IBM Connections コネクタは、IBM 接続用に特に開発され、接続アプリケーションへのセキュリティで保護された接続を確立し、コンテンツ (メタデータおよび添付ファイルを含む) を接続スキーマから検索エンジンスキーマにマッピングしたものです。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -980,7 +1001,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>IBM コンテンツマネージャー</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>IBM Content Manager コネクタは、ソースアプリケーションのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-content-manager-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -996,7 +1017,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>IBM Db2</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Db2 コネクタを使用すると、組織は DB2 データベースおよびアプリケーションに格納されている豊富なデータをタップして、そのデータを検索を通じてユーザーがすぐに操作できるようにすることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-db2-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -1015,7 +1036,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>IBM FileNet P8</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>IBM FileNet Content Manager Connector を使用すると、SharePoint とその他のポータルユーザーが、FileNet リポジトリに格納されているコンテンツを安全に検索できます。 コンテンツへのアクセスは、FileNet で確立されたセキュリティによって決まります。これにより、他のポータルを介してアクセスする際に、そのコンテンツを FileNet 内で直接使用することができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-filenet-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -1031,8 +1052,8 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>IBM Lotus Notes</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
-                        <p>BA 洞察の IBM Notes 電子メールコネクタを使用すると、ユーザーは SharePoint または別のポータル内から直接 Notes メールを検索できます。IBM Notes で定義されたセキュリティは検索機能に自動的に反映されるため、ユーザーは自分のメールボックス、パブリックメールボックス、およびアクセスが許可されているその他のメールボックスから検索結果を確認できます。</p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA 洞察の IBM Notes 電子メールコネクタを使用すると、ユーザーは SharePoint または別のポータル内から直接 Notes メールを検索できます。  IBM Notes で定義されたセキュリティは検索機能に自動的に反映されるため、ユーザーは自分のメールボックス、パブリックメールボックス、およびアクセスが許可されているその他のメールボックスから検索結果を確認できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1066,7 +1087,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>IBM WebSphere</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA insights の WebSphere Connector は、WebSphere オブジェクトの完全なテキストとメタデータの両方を Microsoft の検索エンジンに安全にインデックス化して、複数のリポジトリからのコンテンツに対して単一の検索可能な結果セットを有効にします。 これにより、組織は Microsoft プラットフォーム内でアクセス可能な大量の情報をタップして、そのデータを検索を通じてユーザーに即座に操作できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-websphere-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -1082,7 +1103,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>iManage の作業</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>IManage ワークコネクタは、完全なセキュリティを提供し、高スループットで運用に対して低パフォーマンスの影響を与える一方でクロール時間を最小限に抑えます。 読み取りアクセスのみが必要であり、任意の iManage サーバーにクライアントソフトウェアをインストールする必要はありません。 これにより、iManage 作業に格納されているすべてのコンテンツにシームレスかつ同時にアクセスできるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -1133,7 +1154,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Jive</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Jive コネクタは特に Jive 用に開発されており、Jive アプリケーションへのセキュリティで保護された接続を確立し、Jive スキーマのメタデータと添付ファイルを含むコンテンツを検索エンジンスキーマにマッピングしていました。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/jive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -1200,7 +1221,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>LDAP</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>LDAP コネクタを使用すると、組織は LDAP に準拠した任意のディレクトリに接続して、その中の任意のレコードにインデックスを作成できます。 組織はディレクトリの特定のサブセットにフィルターを適用し、特定のフィールドのみを取得できるため、ディレクトリ内の任意の場所に格納されているユーザー、連絡先、またはグループを簡単に検索できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">詳細情報</font></a>
@@ -1235,7 +1256,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>LegalKEY</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA 洞察の OpenText LegalKEY Connector は、LegalKEY 内のクライアントおよび部分レコードの完全なテキストとメタデータの両方を Microsoft search エンジンに安全にインデックス処理することにより、複数のリポジトリのコンテンツにわたる単一の検索可能な結果セットを可能にします。 これにより、組織は LegalKEY、SharePoint、およびその他のリポジトリ内でアクセス可能な豊富な情報を利用できるようになるため、検索を通じてユーザーがすぐにデータを操作できます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/legalkey-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1251,7 +1272,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>LexisNexis の相互作用</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>LexisNexis の相互作用コネクタを使用すると、組織内の弁護士やその他の企業の従業員が、直接ログインして別の検索を実行しなくても、相互作用に格納されている重要な情報を簡単に見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/lexisnexis-interaction-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1286,7 +1307,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Lotus Notes データベース</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>IBM Notes データベースコネクタを使用すると、ユーザーは Microsoft Search を使用して Notes データベースに格納されているコンテンツを見つけることができます。 IBM Notes で定義されたセキュリティは検索機能に自動的に反映されるため、ユーザーが承認されているコンテンツを表示することができます。 最終的には、ユーザーは必要なすべての情報を1か所で見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-lotus-notes-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1302,7 +1323,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>MediaPlatform PrimeTime</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA 洞察の MediaPlatform PrimeTime indexing connector を使用すると、組織のエンタープライズ検索プラットフォームを使用して、ユーザーがコンテンツにアクセスできるようになり、コネクタと BA 洞察の SmartHub が結び付けられます。 BA insights MediaPlatform PrimeTime コネクタは、メディアおよびビデオに関する情報を MediaPlatform PrimeTime から取得し、それらを Microsoft Search でインデックス付けします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/mediaplatform-primetime-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1337,7 +1358,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>マイクロフォーカスコンテンツマネージャー (HPE Records Manager/HP TRIM)</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>HP TRIM Connector は、特に HP Records Manager 用に開発され、トリミングアプリケーションに対してセキュリティで保護された接続を確立し、コンテンツ (メタデータおよび添付ファイルを含む) を TRIM スキーマから検索エンジンスキーマにマッピングしていました。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/hp-trim-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1388,7 +1409,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Microsoft SQL Server</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>データベースコネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。 ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行うので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1440,7 +1461,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>MySQL</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>MySQL コネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。 ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行うので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/mysql-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a>
@@ -1456,7 +1477,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>NetDocuments</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>NetDocuments コネクタは、ユーザーが自分のポータル内から直接 NetDocuments コンテンツを検索して取得できるように、Netdocuments に格納されているコンテンツにインデックスを付けます。 コネクタは NetDocs でドキュメントのセキュリティを自動的に Microsoft Search に適用するので、ユーザー情報は安全なままになります。 NetDocuments に格納されたメタデータは、ユーザーがシームレスな検索機能を持つように、同等の用語にマップすることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/netdocuments-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1475,7 +1496,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Nuxeo</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Nuxeo コネクタを使用すると、組織は、セキュリティ情報とコンテンツに設定された標準およびカスタムメタデータの両方を、Office 365 にあるコンテンツと共に Microsoft Search にインデックス付けすることができます。 最終的には、ユーザーは必要なすべての情報を1か所で見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/2/"><font color="0065BA">詳細情報</font></a>
@@ -1491,7 +1512,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>目標</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>目的のコネクタは特に、目的のために開発されたもので、目標へのセキュリティで保護された接続を確立し、目標スキーマのメタデータを含むコンテンツを検索エンジンスキーマにマッピングしていました。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/objective-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1542,7 +1563,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>OpenText Documentum</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA の Documentum Connector は、Documentum オブジェクトの完全なテキストとメタデータの両方を Microsoft Search に安全にインデックス付けすることにより、複数のリポジトリのコンテンツにわたる単一の検索可能な結果セットを可能にします。 これは、Microsoft Search を使用して Documentum レコードをプロセス管理のために1つずつ扱う他のいくつかのコネクタとは異なります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/documentum-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1577,7 +1598,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>OpenText eDOCS DM</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>OpenText eDOCS DM コネクタのユーザーは、Microsoft Search 内から直接 eDOCS リポジトリに格納されているコンテンツを検索することができ、必要なコンテンツを検索するために複数の検索を実行する必要がありません。 EDOCS 内で確立されたセキュリティは、アクセスが許可されているユーザーのみがコンテンツを認識できるように、コネクタによって維持されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/edocs-dm-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1593,7 +1614,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>OpenText Livelink/RM</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>OpenText Livelink コネクタを使用すると、ユーザーは Livelink と Microsoft の両方のデータを1つのクエリで検索できます。 Livelink で定義されているセキュリティは検索機能に自動的に反映されるため、ユーザーが承認されているコンテンツのみが表示されるようになります。 最終的には、ユーザーは必要なすべての情報を1か所で見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/livelink-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1609,7 +1630,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Oracle データベース</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Oracle データベースコネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Microsoft SQL Server、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/oracle-database-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1644,7 +1665,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Oracle WebCenter</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>WebCenter Connector は、WebCenter を Microsoft Search と統合します。これにより、組織全体のユーザーは、直接ログインして別の検索を実行しなくても、WebCenter に格納されている重要な情報を簡単に見つけることができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/oracle-webcenter-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1660,7 +1681,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Oracle WebCenter コンテンツ (UCM/Stellent</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>WebCenter コンテンツコネクタは、Microsoft Search で利用可能になったすべてのコンテンツの基礎となるセキュリティを完全にサポートしており、スケジュールされたクロールによってこのコンテンツを最新の状態に保つことで、ユーザーが検索を実行するときに最新の更新プログラムを取得できるようにします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/oracle-webcenter-content-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1695,7 +1716,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>PostgreSQL</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA を使用した PostgreSQL コネクタは、ソースデータベースのセキュリティを強化し、フルクロールと増分クロールを提供するので、ユーザーは常に最新の情報を利用できるようになります。 これは、PostgreSQL からのコンテンツを Microsoft Search にインデックス付けし、BA を使用した検索結果をユーザーに提供するために、BA 洞察の SmartHub によってそのコンテンツを提示します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/postgresql-connector-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1797,7 +1818,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Salesforce</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Salesforce コネクタは、Salesforce のサービス、販売、マーケティングクラウドを Microsoft Search と統合し、Salesforce 内のすべてのコンテンツをこのポータルを介してすべての従業員が利用できるようにします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/salesforce-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1813,7 +1834,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>SAP ERP</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA 洞察の SAP ERP コネクタは、SAP から検索インデックスにアイテムを取り込むように設計されています。 これにより、UI が点灯し、SAP、SharePoint、およびその他のシステムの情報にわたる統合ビューを使用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sap-erp-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1832,7 +1853,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>SAP HANA</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>SAP HANA コネクタは、ソースデータベースのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。 SAP HANA から Microsoft Search にコンテンツをインデックス処理して、BA を使用した検索結果をユーザーに提供するために、BA 洞察の SmartHub によってそのコンテンツを提示します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sap-hana-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1899,7 +1920,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>ServiceNow</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>ServiceNow コネクタは、ソースシステムのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/servicenow-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -1935,7 +1956,7 @@ ms.locfileid: "45388014"
                     <div class="cardText">
                         <h3>SharePoint 2013</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint 2013 コネクタは、SharePoint 2013 サイトコレクションの URL からコンテンツをクロールします。コネクタは、リスト、ページ、およびサイトをサポートし、更新プログラムは自動的に、または SharePoint 変更ログを使用して識別されます。</p>
+                        <p>SharePoint 2013 コネクタは、SharePoint 2013 サイトコレクションの URL からコンテンツをクロールします。 コネクタは、リスト、ページ、およびサイトをサポートし、更新プログラムは自動的に、または SharePoint 変更ログを使用して識別されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2013+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1951,7 +1972,7 @@ ms.locfileid: "45388014"
                     <div class="cardText">
                         <h3>SharePoint 2016</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint 2016 コネクタは、SharePoint 2016 サイトコレクションの URL からコンテンツをクロールします。コネクタは、リスト、ページ、およびサイトをサポートし、更新プログラムは自動的に、または SharePoint 変更ログを使用して識別されます。</p>
+                        <p>SharePoint 2016 コネクタは、SharePoint 2016 サイトコレクションの URL からコンテンツをクロールします。 コネクタは、リスト、ページ、およびサイトをサポートし、更新プログラムは自動的に、または SharePoint 変更ログを使用して識別されます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2016+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1967,7 +1988,7 @@ ms.locfileid: "45388014"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p><a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint Online コネクタは、SharePoint Online サイトコレクションの URL からコンテンツをクロールします。コネクタは、サイト、リスト、フォルダー、リストアイテム、および添付ファイルとその他のページ (.aspx 形式) を取得します。 このコネクタは、Microsoft O365 オファーリングで実行されている SharePoint をサポートします。 Sharepoint のオンプレミスオファーリングのクロールのサポートは、SharePoint 2010/2007 コネクタおよび SharePoint 2013 コネクタでサポートされています。</p>
+                        <p>SharePoint Online コネクタは、SharePoint Online サイトコレクションの URL からコンテンツをクロールします。 コネクタは、サイト、リスト、フォルダー、リストアイテム、および添付ファイルとその他のページ (.aspx 形式) を取得します。 このコネクタは、Microsoft O365 オファーリングで実行されている SharePoint をサポートします。 Sharepoint のオンプレミスオファーリングのクロールのサポートは、SharePoint 2010/2007 コネクタおよび SharePoint 2013 コネクタでサポートされています。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -1985,7 +2006,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Sitecore</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Sitecore コネクタは、ソースシステムのセキュリティを強化し、フルクロールと増分クロールの両方を提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sitecore-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -2016,7 +2037,7 @@ ms.locfileid: "45388014"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                       <h3>総</h3>
+                       <h3>余裕期間</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
                         <p>余裕期間のコネクタは、Microsoft Search を使用して余裕期間のコンテンツを効率的に同期します。 これにより、ほぼリアルタイムですべてのパブリックチャネルからメッセージ、スレッド、および共有ファイルのインデックスが堅牢になります。 コネクタは、すべてのドキュメントに包括的なメタデータセットが付属していることを保証します。これにより、最適な検索機能を開発できます。 鮮やかな環境であっても、余裕期間コネクタはすべての変更を追跡し、更新された検索インデックスを保証します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
@@ -2103,7 +2124,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>任意の SQL ベースの CRM システム</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>SQL Server コネクタは業界標準のデータベースアクセス方法に基づいて構築されているため、Oracle、MySQL、IBM DB2 などの他のシステムからのデータベースを同等にサポートすることができます。 ソースデータベースのセキュリティを確保し、フルクロールと増分クロールの両方を行うので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/sql-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -2189,7 +2210,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Veeva Vault</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>BA 洞察の Veeva Vault Connector は、完全なテキストと、Veeva Vault オブジェクトのメタデータの両方を Microsoft Search に安全にインデックス付けします。 これにより、ユーザーは、Veeva Vault および Microsoft 365 内のコンテンツの単一の結果セットを取得することができます。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/veeva-vault-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -2221,7 +2242,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Veritas Enterprise Vault (Symantec eVault)</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Veritas Enterprise Vault Connector は、ソースシステムのセキュリティを強化し、フルクロールと増分クロールを提供するので、ユーザーは常に最新の情報を利用できるようになります。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/enterprise-vault-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -2255,9 +2276,9 @@ ms.locfileid: "45388014"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                       <h3>windream ECM-システム</h3>
+                       <h3>windream ECM-System</h3>
                         <p><a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Windream ECM-システムのコネクタ。 ほぼのリアルタイムで、windream ECM-システムのファイルとフォルダーのインデックスを付けます。 第6世代 Raytion 検索コネクタ。</p>
+                        <p>Windream ECM-システムのコネクタ。 ほぼのリアルタイムで、windream ECM-System のファイルとフォルダーのインデックスを付けます。 第6世代 Raytion 検索コネクタ。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-windream-ecm-system-connector"><font color="0065BA">詳細情報</font></a>
                         </p>
@@ -2272,7 +2293,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Xerox Docの場合</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Xerox Docが使用されているユーザーは、Microsoft Search 内から直接リポジトリを検索して、Docが保存されているコンテンツを検索することができます。必要なコンテンツを検索するために複数の検索を実行する必要はありません。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/docushare-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
@@ -2323,7 +2344,7 @@ ms.locfileid: "45388014"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                         <h3>Yammer</h3>
-                        <p>BA による<a href="https://www.bainsight.com">洞察</a></p>
+                        <p>BA による <a href="https://www.bainsight.com">洞察</a></p>
                         <p>Yammer コネクタは、Yammer アプリケーションへのセキュリティで保護された接続を確立し、メタデータおよび添付ファイルを含むコンテンツを Yammer スキーマから検索エンジンスキーマにマッピングします。 次に、コンテンツを抽出し、クロールと呼ばれるプロセスで検索エンジンにフィードします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/yammer-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細情報</font></a>
