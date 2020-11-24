@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
-ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
+ms.openlocfilehash: 7d0b8e1b4bbb405e254b2fe2d29b11f081f5b460
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256639"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382589"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
@@ -31,9 +31,7 @@ Microsoft Search は Microsoft 365 の一部であり、この機能をサポー
 
 Microsoft Search の管理は、Microsoft 365 管理センターから行います。
 
-1. Microsoft 365 管理センターで、[**設定**]  >  [**Microsoft Search**] の順に移動します。
-
-**注:** [**設定**] の下に [Microsoft Search] が表示されない場合は、管理センター ページの右上隅にある [**プレビューを試す**] スイッチを有効にしてください。
+1. Microsoft 365 管理センターで、[**設定**  >  [**検索 & インテリジェンス**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)] に移動します。
 
 管理者として、効率的でユーザー フレンドリな Microsoft Search の操作性を組織内で実現するために、いくつかの点を考慮する必要があります。
 
@@ -55,9 +53,9 @@ Microsoft Search では、ユーザーのために堅牢な検索環境を構築
 ブックマークは、最も一般的に使用される応答の種類です。 ユーザーのクエリに対して最適な結果を検索結果の上位に上げ、ユーザーが探しているものを見つけやすいようにします。
 すべてのユーザーが利用できる情報コンテンツ。たとえば、会社に関する情報、Windows および Office アプリのヘルプなど。通常、組織内のユーザーが日常業務で検索するコンテンツ。 従業員の福利厚生、時間と経費のレポート、発注書の発行、IT サービスからのヘルプの入手など、業務関連の一般的な検索項目です。
 
-回答を作成および管理する方法については、「[コンテンツを計画](plan-your-content.md)する」を参照してください。
+回答を作成および管理する方法については、「 [コンテンツを計画](plan-your-content.md)する」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ユーザーが Microsoft Search を使用する方法の詳細については、次の記事を参照してください。
 

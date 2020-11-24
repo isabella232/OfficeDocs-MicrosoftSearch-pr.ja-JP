@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow コネクタをセットアップする
-ms.openlocfilehash: 5bcc0870df7c2ad418bb2ae29e9d4d999dcbdf3f
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 520232f8055d5432ccb96a840a9466ae6a4e3b1a
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367597"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382562"
 ---
 # <a name="servicenow-connector"></a>ServiceNow コネクタ
 
@@ -171,6 +171,9 @@ ServiceNow クエリ文字列を使用すると、記事を同期するための
 ServiceNow コネクタは、 **すべてのユーザー** に表示される検索権限、または **このデータソースへのアクセス権を持つユーザーのみ** をサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザー、またはそれぞれにアクセス権を持つユーザーに対して表示されます。 ServiceNow コネクタは、高度なスクリプトを使用せずに、既定のユーザー条件のアクセス許可をサポートします。 コネクタが高度なスクリプトを使用してユーザーの条件を検出すると、そのユーザーの条件を使用するすべてのデータが検索結果に表示されなくなります。
 
 **このデータソースへのアクセス権を持つユーザーのみ** を選択する場合は、ServiceNow インスタンスに Azure Active DIRECTORY (AAD) プロビジョニングされたユーザーまたは aad 以外のユーザーがあるかどうかをさらに選択する必要があります。
+
+>[!NOTE]
+>**このデータソースへのアクセス権を持つユーザーのみ** を選択すると、ServiceNow コネクタは **プレビュー** 状態になります。
 
 >[!NOTE]
 >アイデンティティソースの種類として AAD を選択する場合は、[ServiceNow] の [対象ユーザー] プロパティに UPN source プロパティを割り当てていることを確認してください。 マッピングを確認または変更するには、「 [Azure Active Directory での SaaS アプリケーションのユーザープロビジョニング属性のカスタマイズ](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)」を参照してください。

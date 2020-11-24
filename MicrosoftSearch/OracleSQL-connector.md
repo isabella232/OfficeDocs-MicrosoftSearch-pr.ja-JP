@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用 microsoft SQL server および Azure SQL connector
+title: Microsoft Search 用 Oracle SQL connector
 ms.author: vivg
 author: Vivek
 manager: harshkum
@@ -12,51 +12,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用 Oracle SQL connector をセットアップします。
-ms.openlocfilehash: 118e073f355d2ce06e63745efbf5d090ba61d582
+ms.openlocfilehash: cf7946533b3806bb730cdc6a31f7745ebad2c59d
 ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382598"
+ms.locfileid: "49382696"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL および Microsoft SQL server コネクタ
+# <a name="oracle-sql-connector"></a>Oracle SQL コネクタ
 
-Microsoft SQL server または Azure SQL コネクタを使用すると、組織は、オンプレミスの SQL Server データベースまたはクラウド内の Azure SQL インスタンスでホストされているデータベースのデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 これらの SQL コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
+Oracle SQL コネクタを使用すると、組織は社内の Oracle データベースからデータを検出し、インデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソースデータのインデックスを最新の状態に保つために、フルクロールと増分クロールを定期的に行います。 Oracle SQL コネクタを使用すると、特定のユーザーに対する検索結果へのアクセスを制限することもできます。
 
-この記事は、Microsoft 365 管理者または Microsoft SQL server または Azure SQL コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。 
+この記事は、Microsoft 365 管理者または Oracle SQL コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
 
-## <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Graph connector エージェントをインストールする (オンプレミスの Microsoft SQL server コネクタにのみ必要)
+## <a name="install-the-graph-connector-agent"></a>Graph connector エージェントをインストールする
 オンプレミスのサードパーティデータにアクセスするためには、Graph connector エージェントをインストールして構成する必要があります。 詳細について [は、「Graph connector agent をインストール](on-prem-agent.md) する」を参照してください。  
 
-## <a name="register-an-app-for-azure-sql-connector-only"></a>アプリを登録する (Azure SQL connector の場合のみ)
-Azure SQL connector の場合、Microsoft Search アプリがインデックス作成のためにデータにアクセスできるようにするには、Azure Active Directory にアプリを登録する必要があります。 アプリの登録の詳細については、Microsoft Graph のドキュメントを参照して [アプリを登録](https://docs.microsoft.com/graph/auth-register-app-v2)する方法を参照してください。 
-
-アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、およびテナント ID をメモしておき、 [新しいクライアントシークレットを生成](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)する必要があります。 クライアントシークレットは一度だけ表示されます。 クライアントシークレットは安全に保存 & ことに注意してください。 Microsoft Search で新しい接続を構成する際に、クライアント ID とクライアントシークレットを使用します。 
-
-登録済みのアプリを Azure SQL データベースに追加するには、次のことを行う必要があります。
- - Azure SQL DB にログインします。
- - 新しいクエリウィンドウを開く
- - コマンド ' CREATE USER [app name] を EXTERNAL PROVIDER から実行して、新しいユーザーを作成します。
- - コマンド ' exec sp_addrolemember ' db_datareader '、[app name] '、または ' ALTER ROLE db_datareader ADD MEMBER [app name] ' を実行して、ユーザーを役割に追加します。
-
->[!NOTE]
->Azure Active Directory に登録されているすべてのアプリへのアクセスを取り消すには、 [登録済みアプリの削除](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)に関する azure のドキュメントを参照してください。
-
 ## <a name="connect-to-a-data-source"></a>データソースへの接続
-Microsoft SQL server コネクタをデータソースに接続するには、クロールするデータベースサーバーとオンプレミスエージェントを構成する必要があります。 その後、必要な認証方法を使用してデータベースに接続できます。
+Oracle SQL コネクタをデータソースに接続するには、クロールするデータベースサーバーとオンプレミスのグラフコネクタエージェントを構成する必要があります。 その後、必要な認証方法を使用してデータベースに接続できます。
+
+Oracle SQL コネクタの場合は、ホスト名、ポート、およびサービス (データベース) の名前を、推奨される認証方法、ユーザー名、およびパスワードと共に指定する必要があります。
 
 > [!NOTE]
-> データベースで接続するには、Microsoft SQL server connector の SQL server バージョン2008以降を実行する必要があります。
-
-Azure SQL コネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQL コネクタは、データベースに接続するための Azure Active Directory Open ID connect (OIDC) 認証のみをサポートしています。
-
-セキュリティを強化するために、Azure SQL server またはデータベースの IP ファイアウォールルールを構成することができます。 IP ファイアウォールルールの設定の詳細については、「 [ip ファイアウォールルール](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure)に関するドキュメント」を参照してください。 ファイアウォール設定に、次のクライアント IP 範囲を追加します。
-
-| 地域 | IP 範囲 |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30、52.224.250.216/30 |
-| EUR | 20.54.41.208/30、51.105.159.88/30 |
-| APC | 52.139.188.212/30、20.43.146.44/30 |
+> コネクタが接続できるようにするには、データベースで Oracle データベースバージョン11g 以降を実行する必要があります。 コネクタは、Windows、Linux、および Azure VM プラットフォームでホストされている Oracle データベースをサポートします。
 
 データベースコンテンツを検索するには、コネクタを構成するときに SQL クエリを指定する必要があります。 これらの SQL クエリは、すべての列を取得するために実行する必要があるすべての SQL 結合を含む、インデックスを作成するすべてのデータベース列に名前を付ける必要があります (つまり、ソースプロパティ)。 検索結果へのアクセスを制限するには、コネクタを構成するときに SQL クエリ内でアクセス制御リスト (Acl) を指定する必要があります。
 
@@ -84,17 +62,16 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
 ![プロパティの例を使用して、OrderTable と AclTable を表示するサンプルデータ](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>サポートされるデータ型
-次の表は、MS SQL および Azure SQL コネクタでサポートされている SQL データ型の概要を示しています。 また、サポートされている SQL データ型のインデックスデータ型の概要を示します。 インデックス用にサポートされている Microsoft Graph コネクタの詳細については、「 [プロパティリソースの種類](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)に関するドキュメント」を参照してください。 
+次の表は、Oracle SQL コネクタでサポートされているデータ型の概要を示しています。 また、サポートされている SQL データ型のインデックスデータ型の概要を示します。 インデックス用にサポートされている Microsoft Graph コネクタの詳細については、「 [プロパティリソースの種類](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)に関するドキュメント」を参照してください。 
 
 | カテゴリ | ソースデータ型 | インデックス作成データの種類 |
 | ------------ | ------------ | ------------ |
-| 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
-| 真数 | bigint <br> int <br> smallint <br> tinyint | int64 |
-| 真数 | 若干 | ブール値 |
-| 近似数値 | 浮動小数点数 <br> 本当の | double |
-| 文字の文字列 | カーソル <br> varchar <br> text | string |
-| Unicode 文字列 | nchar <br> nvarchar <br> 型 | string |
-| その他のデータ型 | 識別子 | string |
+| 数値データ型 | 数値 (p, 0) | int64 (p <= 18) <br> 倍精度浮動小数点型 (p > 18) |
+| 浮動小数点の数値データ型 | 数値 (p、s) <br> FLOAT (p) | double |
+| Date データ型 | 状態 <br> 示 <br> タイムスタンプ (n) | 日付型 |
+| 文字データ型 | CHAR (n) <br> VARCHAR <br> VARCHAR2 <br> L <br> CLOB <br> NCLOB | string |
+| Unicode 文字データ型 | NCHAR <br> NVARCHAR | string |
+| RowID データ型 | ROWID <br> UROWID | string |
 
 現在直接サポートされていないその他のデータ型については、列は、サポートされているデータ型に明示的にキャストする必要があります。
 
@@ -102,8 +79,8 @@ Azure SQL コネクタの場合は、接続先のサーバー名または IP ア
 データベースが過負荷にならないようにするために、コネクタはフルクロールのウォーターマーク列を使用して、フルクロールクエリをバッチ処理および再開します。 [すかし] 列の値を使用すると、以降の各バッチが取得され、最後のチェックポイントからクエリが再開されます。 基本的には、フルクロールのデータ更新を制御するメカニズムを示します。
 
 次の例に示すように、ウォーターマークに対してクエリスニペットを作成します。
-* `WHERE (CreatedDateTime > @watermark)`. 予約済みのキーワードを使用して、ウォーターマーク列名を指定し `@watermark` ます。 [すかし] 列の並べ替え順序が昇順の場合は、を使用 `>` します。それ以外の場合は、を使用 `<` します。
-* `ORDER BY CreatedDateTime ASC`. [すかし] 列の昇順または降順に並べ替えます。
+* `WHERE (CreatedDateTime > @watermark)`. 予約済みのキーワードを使用して、ウォーターマーク列名を指定し `@watermark` ます。 [すかし] 列は、昇順でのみ並べ替えることができます。
+* `ORDER BY CreatedDateTime ASC`. [すかし] 列を昇順で並べ替えます。
 
 次の図に示す構成では、[ `CreatedDateTime` 選択されたウォーターマーク] 列が選択されています。 行の最初のバッチをフェッチするには、[すかし] 列のデータ型を指定します。 この例では、データ型は `DateTime` です。
 
@@ -138,13 +115,27 @@ Acl としてを使用するために、次の ID タイプがサポートされ
 ## <a name="manage-search-permissions"></a>検索アクセス許可を管理する 
 [フルクロール画面で指定された acl](#full-crawl-manage-search-permissions)を使用するか、すべてのユーザーにコンテンツを表示するように上書きするかを選択できます。
 
+## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
+Oracle SQL コネクタは、フルクロールと増分クロールの両方の更新スケジュールをサポートしています。 両方を設定することをお勧めします。
+
+フルクロールスケジュールは、Microsoft 検索インデックスと同期フィルターから移動されたすべての行に対して以前に同期された削除済みの行を検索します。 最初にデータベースに接続すると、フルクロールが実行されて、フルクロールクエリから取得したすべての行が同期されます。 新しい行を同期し、更新を行うには、増分クロールをスケジュールする必要があります。
+
 ## <a name="next-steps-customize-the-search-results-page"></a>次の手順: 検索結果ページをカスタマイズする
 独自の業種と結果の種類を作成することで、エンドユーザーは新しい接続から検索結果を表示できるようになります。 この手順を行わないと、接続からのデータが検索結果ページに表示されません。
 
 業種および MRTs の作成方法の詳細については、「 [検索結果ページのカスタマイズ](customize-search-page.md)」を参照してください。
 
 ## <a name="limitations"></a>制限事項
-SQL コネクタには、次のようなプレビューリリースの制限があります。
-* Microsoft SQL server connector: オンプレミスのデータベースは、SQL server バージョン2008以降を実行している必要があります。
+Oracle SQL コネクタには、次のようなプレビューリリースの制限があります。
+* オンプレミスデータベースで Oracle データベースバージョン11g 以降を実行する必要があります。
 * Acl は、ユーザープリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用する場合にのみサポートされます。 
 * データベース列内のリッチコンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、HTML、JSON、XML、blob、ドキュメント parsings などがあります。これらは、データベース列内のリンクとして存在します。
+
+## <a name="troubleshooting-guide"></a>トラブルシューティング ガイド
+下には、コネクタを構成する際に観察される一般的なエラーと、考えられる理由の一覧があります。
+| 構成手順 | エラー メッセージ | 考えられる理由 (s) |
+| ------------ | ------------ | ------------ |
+| データベース設定 | データベースサーバーからのエラー: 接続要求がタイムアウトしました | 無効なホスト名 <br> ホストに到達できない |
+| データベース設定 | データベースサーバーからのエラー: ORA-12541: TNS: No listner | 無効なポート |
+| データベース設定 | データベースサーバーからのエラー: ORA-12514: TNS: listner は現在、要求されたサービスをコネクタ記述子で認識していません | 無効なサービス (データベース) 名 |
+| データベース設定 | データベースサーバーからのエラー: ユーザー ' ' に対するログインに失敗しました `user` 。 | ユーザー名またはパスワードが無効です |
