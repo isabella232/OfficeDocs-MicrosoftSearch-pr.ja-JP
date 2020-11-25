@@ -11,13 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: オンプレミスエージェント
-ms.openlocfilehash: 30ddf0ac8c6df76d1c598606754066b3d2e93615
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
+ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367755"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408944"
 ---
 # <a name="on-prem-agent"></a>オンプレミスエージェント
 
@@ -59,7 +60,7 @@ ms.locfileid: "49367755"
 
 認証の詳細は、次のいずれかの形式で提供されます。
 
-### <a name="configuring-the-client-secret-for-authentation"></a>認証のためにクライアントシークレットを構成する
+### <a name="configuring-the-client-secret-for-authentication"></a>認証用にクライアントシークレットを構成する
 
 1. [Azure portal](https://portal.azure.com)に移動し、テナントの管理者の資格情報でサインインします。
 2. ナビゲーションウィンドウから **アプリの登録** を開いて、適切なアプリに移動します。 [ **管理**] で、[ **証明書とシークレット**] を選択します。
@@ -68,7 +69,7 @@ ms.locfileid: "49367755"
 
 ## <a name="using-thumbprint-certificate-for-authentication"></a>認証に拇印証明書を使用する
 
-認証の詳細を既に構成している場合は、認証 [のためにクライアントシークレットを構成](#Configuring-the-client-secret-for-authentication) する必要があります。その後、 [セットアップの概要](configure-connector.md)にジャンプできます。
+[認証のためにクライアントシークレットを構成](#configuring-the-client-secret-for-authentication)した後に認証の詳細を構成している場合は、[セットアップの概要](configure-connector.md)に直接ジャンプできます。
 
 1. **アプリの登録** を開いて、ナビゲーションウィンドウから [**証明書とシークレット**] を選択します。 証明書の拇印をコピーします。
 ![左側のウィンドウで証明書とシークレットが選択されている場合の thumbrint 証明書の一覧](media/onprem-agent/certificates.png)
