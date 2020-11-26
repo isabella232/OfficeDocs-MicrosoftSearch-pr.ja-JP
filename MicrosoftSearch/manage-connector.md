@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 検索用の Microsoft Graph コネクタを管理します。
-ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367678"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49420844"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,13 +25,13 @@ ms.locfileid: "49367678"
 
 コネクタにアクセスして管理するには、テナントの検索管理者として指定する必要があります。 テナント管理者に連絡して、検索管理者ロールのプロビジョニングを行います。
 
-## <a name="get-started"></a>概要
+## <a name="get-started"></a>作業の開始
 
 [Microsoft 365 管理センター](https://admin.microsoft.com)の [[コネクタ] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)に移動します。
 
 各コネクタの種類について、 [Microsoft 365 管理センター](https://admin.microsoft.com) は次の表に示す操作をサポートしています。
 
-Operation | Microsoft が構築したコネクタ | パートナーまたはカスタム作成コネクタ
+操作​​ | Microsoft が構築したコネクタ | パートナーまたはカスタム作成コネクタ
 --- | --- | ---
 接続を追加する | : heavy_check_mark: ( [Microsoft が作成したコネクタを構成するを](configure-connector.md)参照) | : x: (パートナーまたはカスタム構築コネクタ管理者 UX を参照してください)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:
@@ -92,6 +92,7 @@ Operation | Microsoft が構築したコネクタ | パートナーまたはカ�
 2001 | インデックスは、キューに大量の更新があるために調整されます。 キューによっては、更新が完了するまでに少し時間がかかることがあります。 | キューがクリアされるまで待機してください。
 2002 | アイテムの書式設定がサポートされていないため、インデックス付けに失敗しました | 詳細については、「コネクタ固有のドキュメント」を参照してください。
 2003 | サポートされていないアイテムのコンテンツによってインデックス付けが失敗しました。 | 詳細については、「コネクタ固有のドキュメント」を参照してください。
+2010 | Microsoft によって更新されたため、この接続は無効になりました。 接続を削除して、新しい接続を作成してください。 | 接続を削除して、新しい接続を作成してください。
 5000 | 問題が発生しました。 この問題が解決しない場合は、サポートにお問い合わせください。 |
 
 ## <a name="monitor-your-index-quota-utilization"></a>インデックスクォータ使用率を監視する
@@ -109,7 +110,7 @@ Operation | Microsoft が構築したコネクタ | パートナーまたはカ�
 State | クォータ使用量
 --- | ---
 標準 | 1-69%
-高 | 70-89%
+高い | 70-89%
 重大 | 90%-99%
 Full | 100%
 
