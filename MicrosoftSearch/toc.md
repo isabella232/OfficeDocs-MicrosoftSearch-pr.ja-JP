@@ -17,7 +17,7 @@
 ## Microsoft 提供の Graph コネクタ
 ### [セットアップの概要](configure-connector.md)
 ### [オンプレミス エージェントを設定する (プレビュー)](on-prem-agent.md)
-### [Azure AD 以外の ID をマッピング (プレビュー)](map-non-add)
+### [Azure AD 以外の ID をマッピング (プレビュー)](map-non-aad.md)
 ### [Azure AD の ID をマッピング](map-aad.md)
 ### コネクタ固有情報
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
@@ -26,6 +26,7 @@
 #### [大企業の Web サイト](enterprise-web-connector.md)
 #### [ファイル共有 (プレビュー)](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
+#### [Oracle SQL (プレビュー)](OracleSQL-connector.md)
 #### [Salesforce (プレビュー)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [接続を管理する](manage-connector.md)
