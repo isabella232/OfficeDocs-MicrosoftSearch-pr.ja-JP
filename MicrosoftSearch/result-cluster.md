@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: コネクタの結果のクラスター環境の詳細
-ms.openlocfilehash: eac4180a247fe17b4e86b57a69f2b7bdb79e56bb
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: fa6ac2dc720ed43e40454b952526734accd45ea4
+ms.sourcegitcommit: a328b9764abf5cd0c1c0a8c7def0c6e334da9a1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367746"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477115"
 ---
 # <a name="graph-connectors-result-cluster"></a>グラフコネクタの結果クラスター
 
 ## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>グラフコネクタの結果クラスターの概要 (プレビュー)  
 
- グラフコネクタ結果クラスターを使用すると、エンタープライズは SharePoint および Office.com の既定のビュー ([すべて] タブ) でサードパーティのデータソースからコンテンツを検索できます。
+グラフコネクタ結果クラスターを使用すると、エンタープライズは SharePoint および Office.com の既定のビュー ([すべて] タブ) でサードパーティのデータソースからコンテンツを検索できます。
 
 結果クラスターは、1つの場所でサードパーティのコンテンツ (1 つのコネクタに関連付けられた previoulsy と縦向き) を検索するのに役立ちます。 結果クラスターに表示される結果は、テナント管理者が検索垂直方向に構成する方法に基づいてグループ化されます。  
 
@@ -40,14 +40,14 @@ ms.locfileid: "49367746"
 ## <a name="enable-result-clusters"></a>結果クラスターを有効にする
   
 結果のクラスターの機能は既定で無効になっています。  
+
 次の手順に従って、組織レベルでの操作を有効にします。
 
-Microsoft 365 管理センター
-
 1. [Microsoft 365 管理センター](https://admin.microsoft.com/)で、[**設定**  >  **検索 & インテリジェンス** のカスタマイズ] に移動  >  **Customization**  >  **Verticals** します。  
-2. [ **すべて** 縦] を選択し、[ **コネクタの結果を表示** ] セクションに移動します。 サイトレベルで快適な表示を有効にします。
+2. [ **すべて** の垂直] を選択してから、[ **コネクタの結果を表示** する] を有効にします。 
 
-Sharepoint
+
+サイトレベルでの操作を有効にするには、次の手順を実行します。
 
 1. 検索結果のクラスター環境を使用する SharePoint サイトで、[ **設定**] に移動します。
 2. [**サイト情報**] の [ > **すべてのサイト設定**] を表示します。
