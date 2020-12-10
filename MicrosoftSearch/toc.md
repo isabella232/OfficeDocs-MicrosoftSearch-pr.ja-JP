@@ -2,7 +2,7 @@
 ## [概要](overview-microsoft-search.md)
 ## [セットアップ](setup-microsoft-search.md)
 ## [よく寄せられる質問](faqs.md)
-# [分析情報の取得](get-insights.md)
+# [分析情報の取得](usage-reports.md)
 # 回答の提供
 ## [コンテンツの計画](plan-your-content.md)
 ## [頭字語](manage-acronyms.md)
