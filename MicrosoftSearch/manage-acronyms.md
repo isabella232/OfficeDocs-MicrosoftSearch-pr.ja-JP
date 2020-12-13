@@ -14,20 +14,20 @@ search.appverid:
 description: Microsoft Search で頭字語の回答を作成および更新する
 ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
 ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "47422948"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
-ユーザーは、組織やチームで使用されている頭字語や略語に慣れていないことがよくあります。 組織またはチームに固有の用語は、チーム間を移動したり、内部パートナーチームと連携したり、組織にとって新しくなったりするユーザーにとって新しいものになる可能性があります。
+ユーザーは、組織やチームで使用されている頭字語や略語に慣れていないことがよくあります。 組織またはチームに固有の用語は、チーム間を移動したり、社内パートナーと共同で作業する人、または組織の新人には新しい場合があります。  
 
 組織の標準的な用語には、常に単一の参照があるとは限りません。 単一の参照がないと、これらの頭字語の定義や展開が難しくなります。 Microsoft Search は、頭字語の問題を解決します。
 
 ## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、および [Office 365](https://Office.com)の頭字語を使用して定義を取得できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
+Microsoft Search のユーザーは [Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)および[Office 365](https://Office.com)の頭字語を使用して、定義を入手できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
 
 - DNN *とは*
 - DNN *を定義する*
@@ -44,7 +44,7 @@ Microsoft 検索ユーザーは、 [Bing](https://Bing.com)、 [SharePoint](http
 
 ## <a name="set-up-acronyms-answers"></a>頭字語の回答を設定する
 
-[Microsoft 365 管理センター](https://admin.microsoft.com)で、[[**頭字**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)語] に移動し、[**頭字語の追加**] を選択します。
+[Microsoft 365 管理センター](https://admin.microsoft.com)で、[**[頭字語]**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)に移動し、**[頭字語の追加]** を選択します。
 
 Microsoft Search は、2 つのデータ ソースをクエリして、頭字語の回答をユーザーの検索に提供します:
 
@@ -74,7 +74,7 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 
 **展開**。 頭字語の展開を含みます。 たとえば、*Deep Neural Network* などです。
 
-**説明**。 頭字語とその拡張に関する情報をユーザーに提供する略語の簡単な説明。 たとえば、*deep neural network とは、特定の複雑さを持つニューラル ネットワーク、2 つ以上の層を持つニューラル ネットワークです*。
+**説明**。 頭字語とその展開についての詳細情報をユーザーに伝える頭字語の簡単な説明。 たとえば、*deep neural network とは、特定の複雑さを持つニューラル ネットワーク、2 つ以上の層を持つニューラル ネットワークです*。
 
 **ソース**。 頭字語についての詳細情報をユーザーに表示するページまたは Web サイトの URL。
 
@@ -88,7 +88,7 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 管理者にとって、組織内で使用されているすべての頭字語を回答に追加するのは難しいかもしれません。 この機能により、検索管理者が認識していない頭字語を見つけることができます。 そのために、Microsoft Search は次のソースから頭字語を採掘します:
 
 - ユーザーのメール。
-- [SharePoint](https://products.office.com/sharepoint/collaboration)、 [Microsoft OneDrive]( https://onedrive.live.com/about/)、 [microsoft OneNote](https://www.onenote.com/)のドキュメント。
+- [SharePoint](https://products.office.com/sharepoint/collaboration)、[Microsoft OneDrive]( https://onedrive.live.com/about/)、[Microsoft OneNote](https://www.onenote.com/) の文書。
 - ユーザーが SharePoint、OneDrive、または OneNote でアクセスできる組織内の公開文書。
 
 Microsoft Search は、文書に対してアクセス権を持つユーザーのみが、その文書から採掘された頭字語を見ることができるようにします。 頭字語がユーザーのメールボックスから採掘されると、そのユーザーのみがその頭字語を見ることができます。
@@ -108,7 +108,7 @@ Microsoft Search は、文書に対してアクセス権を持つユーザーの
 
 **Q: ユーザーが頭字語の回答をトリガーするにはどうすればよいですか?**
 
-**A**: 頭字語の回答を取得するには、ユーザーは [Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、または [Office 365](https://Office.com)の **検索** ボックスに特定のクエリパターンを入力する必要があります。
+**A**: 頭字語の回答を取得するには、ユーザーは [ Bing](https://bing.com)、[SharePoint](https://products.office.com/sharepoint/collaboration)、または [Office 365](https://Office.com)**検索** ボックスに特定のクエリ パターンを入力する必要があります。
 
 **Q: 新しいメールや文書の送受信後に、採掘された頭字語が表示されるまで、どのくらいの時間がかかりますか?**
 
