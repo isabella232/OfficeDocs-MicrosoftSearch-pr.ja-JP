@@ -29,13 +29,13 @@ ms.locfileid: "47422948"
 
 Microsoft Search のユーザーは [Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)および[Office 365](https://Office.com)の頭字語を使用して、定義を入手できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
 
-- DNN *とは*
-- DNN *を定義する*
-- DNN *の定義*
-- DNN *を展開する*
-- DNN *の展開*
-- DNN *の意味*
-- DNN *は意味する*
+- *What is* DNN
+- *Define* DNN
+- DNN *definition*
+- *Expand* DNN
+- DNN *expansion*
+- *Meaning of* DNN
+- DNN *means*
 
 結果には、ユーザーの組織内に存在する DNN のすべての意味が含まれます。
 
