@@ -38,6 +38,8 @@
 ## SharePoint での Microsoft Search
 ### [概要](get-started-search-in-sharepoint-online.md)
 ### [カスタム検索結果ページを作成する](create-search-results-pages.md)
+### [検索ボックスの設定を管理する](manage-spo-search-box.md)
+### [クラッシック ページで Microsoft Search を使用する ](manage-classic-spo-pages.md)
 ## Bing での Microsoft Search
 ### [セキュリティとプライバシー](security-for-search.md)
 ### [イントラネット サイトに検索ボックス追加する](add-a-search-box-to-your-intranet-site.md)
