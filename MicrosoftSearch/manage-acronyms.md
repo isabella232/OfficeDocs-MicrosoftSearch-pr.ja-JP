@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
-ms.translationtype: HT
+ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
+ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422948"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709684"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -27,7 +27,7 @@ ms.locfileid: "47422948"
 
 ## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft Search のユーザーは [Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)および[Office 365](https://Office.com)の頭字語を使用して、定義を入手できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
+Microsoft Search のユーザーは [Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)および[Office 365](https://Office.com)の頭字語を使用して、定義を入手できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
 
 - *What is* DNN
 - *Define* DNN
@@ -100,7 +100,7 @@ Microsoft Search は、文書に対してアクセス権を持つユーザーの
 
 **Q: 編集上の採掘されたデータはどのようにランク付けされていますか?**
 
-**A:** この機能は現在、編集上の頭字語を採掘された頭字語より上にランク付けしています。
+**A:** 結果のランク付けは、結果がユーザーごとにカスタマイズされるので、人によって異なる場合があります。
 
 **Q: 編集上の頭字語が公開されてから Microsoft Search に表示されるまで、どのくらいの時間がかかりますか?**
 
