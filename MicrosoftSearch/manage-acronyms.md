@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search で頭字語の回答を管理する
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: rakkum
+author: rakeshMSFT
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
-ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
+ms.openlocfilehash: ff79e3d741e10d401873c29d86739e61c9f53329
+ms.sourcegitcommit: e6ceb07cae208648dadd5452a077414ab5a4513f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709684"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49728008"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -48,21 +48,21 @@ Microsoft Search のユーザーは [Bing](https://Bing.com)、 [SharePoint](htt
 
 Microsoft Search は、2 つのデータ ソースをクエリして、頭字語の回答をユーザーの検索に提供します:
 
-1. **編集上の頭字語**。 [管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) の IT 管理者によって提供されます。
-2. **採掘された頭字語**。 ユーザーの個人的なメールと文書、および組織内で公開されているデータから Microsoft Search によって採掘されます。
+1. **管理者が選択しました**。 [管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) の IT 管理者によって提供されます。
+2. **システムによって選択されます**。 ユーザーの電子メールとドキュメント、および組織内で一般に利用可能なデータから Microsoft Search によって検出されます。
 
-### <a name="set-up-editorial-acronyms"></a>編集上の頭字語を設定する
+### <a name="set-up-admin-curated-acronyms"></a>管理者が選択した頭字語を設定する
 
-検索管理者は、[Microsoft Search 管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) の [[頭字語] タブ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) で編集上の頭字語を設定できます。 すべての内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 編集上の頭字語は、**公開** または **下書き** の状態に追加されます:
+検索管理者は、Microsoft Search 管理センターの[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)頭字語タブに頭字語[を追加できます](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。 すべての内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 これらの頭字語は、発行済みまたは下書き **状態** に **追加** できます。
 
-**公開状態**。 頭字語は、Microsoft Search を通じて組織の従業員が利用できます。
+**公開状態**。 頭字語は、Microsoft Search を通じて組織のユーザーが使用できます。
 
 > [!NOTE]
 > 公開状態に追加された頭字語が Microsoft Search で利用可能になるまで、最大 3 日かかる場合があります。
 
-**下書き状態**。 Microsoft Search で使用できるようにする前に、管理者が頭字語の回答を確認したい場合は、頭字語を下書き状態に追加できます。 下書き状態に追加された略語は、Microsoft Search では使用できません。 管理者は、使用できるようにするには、頭字語を公開状態に追加する必要があります。
+**下書き状態**。 Microsoft Search で使用する前に頭字語を確認する場合は、下書き状態で頭字語を追加できます。 下書き状態の頭字語は検索結果に表示されません。 検索結果に表示するには、頭字語を発行済み状態に移動する必要があります。
 
-管理者は、頭字語を個別に追加するか、CSV ファイルに一括インポートすることができます。 次の表に示すフィールドを使用して CSV ファイルをアップロードします:
+頭字語を個別に追加したり、CSV ファイルに一括インポートすることができます。 次の表に示すフィールドを使用して CSV ファイルをアップロードします:
 
 | 頭字語 (必須) | 展開 (必須) | 説明  | ソース | 状態 (必須) |
 | --------- | --------- | ---------- | --------- |--------- |
@@ -83,46 +83,46 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 - **下書き**。 頭字語を下書き状態に追加します。
 - **公開**。 公開状態に頭字語を追加して、Microsoft Search で使用できるようにします。
 
-### <a name="mined-acronyms"></a>採掘された頭字語
+### <a name="system-curated-acronyms"></a>システムで選択された頭字語
 
-管理者にとって、組織内で使用されているすべての頭字語を回答に追加するのは難しいかもしれません。 この機能により、検索管理者が認識していない頭字語を見つけることができます。 そのために、Microsoft Search は次のソースから頭字語を採掘します:
+管理者にとって、組織内で使用されているすべての頭字語を回答に追加するのは難しいかもしれません。 この機能により、検索管理者が認識していない頭字語を見つけることができます。 これを行うには、Microsoft Search は次のソースから頭字語を検出して作成します。
 
-- ユーザーのメール。
-- [SharePoint](https://products.office.com/sharepoint/collaboration)、[Microsoft OneDrive]( https://onedrive.live.com/about/)、[Microsoft OneNote](https://www.onenote.com/) の文書。
-- ユーザーが SharePoint、OneDrive、または OneNote でアクセスできる組織内の公開文書。
+- ユーザーのメール
+- [SharePoint、Microsoft](https://products.office.com/sharepoint/collaboration) [OneDrive、Microsoft OneNote]( https://onedrive.live.com/about/)[のドキュメント](https://www.onenote.com/)
+- SharePoint、OneDrive、または OneNote でユーザーがアクセスできる組織内のパブリック ドキュメント
 
-Microsoft Search は、文書に対してアクセス権を持つユーザーのみが、その文書から採掘された頭字語を見ることができるようにします。 頭字語がユーザーのメールボックスから採掘されると、そのユーザーのみがその頭字語を見ることができます。
+Microsoft Search では、ドキュメントに対するアクセス権とアクセス許可を持つユーザーだけが、ドキュメントから検出された頭字語を確認できます。 ユーザーのメールボックスで頭字語が見つかると、そのユーザーだけがその頭字語を見る可能性があります。
 
 > [!NOTE]
-> 採掘された頭字語に設定は必要はありません。
+> 管理者が選択した頭字語にはセットアップは必要ない。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**Q: 編集上の採掘されたデータはどのようにランク付けされていますか?**
+**Q: 管理者が選択したデータとシステムで管理されたデータは、どのようにランク付けされますか。**
 
-**A:** 結果のランク付けは、結果がユーザーごとにカスタマイズされるので、人によって異なる場合があります。
+**A:** 結果のランク付けは、結果がユーザーごとにカスタマイズされるので、人によって異なる場合があります。 これらのカテゴリはどちらも常に他のカテゴリよりも優先されます。
 
-**Q: 編集上の頭字語が公開されてから Microsoft Search に表示されるまで、どのくらいの時間がかかりますか?**
+**Q: 管理者が選択した頭字語が Microsoft Search に公開された後に表示されるのに、どれくらいの時間が必要ですか。**
 
 **A:** 公開状態に追加された頭字語が Microsoft Search で利用可能になるまで、最大 3 日かかります。
 
-**Q: ユーザーが頭字語の回答をトリガーするにはどうすればよいですか?**
+**Q: ユーザーが頭字語の回答をトリガーする方法**
 
-**A**: 頭字語の回答を取得するには、ユーザーは [ Bing](https://bing.com)、[SharePoint](https://products.office.com/sharepoint/collaboration)、または [Office 365](https://Office.com)**検索** ボックスに特定のクエリ パターンを入力する必要があります。
+**A**: 頭字語の回答を取得するには [、Bing、SharePoint、](https://bing.com)または Office [](https://products.office.com/sharepoint/collaboration) [365](https://Office.com)検索ボックスに特定のクエリ パターンを入力する **必要** があります。
 
-**Q: 新しいメールや文書の送受信後に、採掘された頭字語が表示されるまで、どのくらいの時間がかかりますか?**
+**Q: 新しいメールやドキュメントを受信または送信した後、システムで指定された頭字語が表示されるのに、どれくらいの時間がですか。**
 
-**A:** 新しいメールまたは文書から採掘された頭字語がMicrosoft Search 結果に表示されるまでには、最大 7 日かかります。
+**A:** 新しいメールまたはドキュメントで見つかった頭字語は、Microsoft Search の結果に表示されるのに最大 7 日間かかる。
 
 **Q: 文書から採掘するには、文書が特定の形式である必要がありますか?**
 
 **A:** いいえ。 画像、フォルダー、および zip ファイル以外のすべての種類のファイルをサポートしています。
 
-**Q: Microsoft はすべての言語の文書から頭字語を採掘しますか?**
+**Q: Microsoft は、すべての言語のドキュメントから頭字語を見つけるのか。**
 
 **A**: Microsoft は、英語の文書からの採掘のみをサポートしています。 その他の言語のサポートは段階的に追加されます。
 
-**Q: 組織内の採掘された頭字語を表示する必要がない場合はどうすればよいですか? 採掘された頭字語を検索結果に表示しないようにすることはできますか?**
+**Q: 組織でシステムで作成された頭字語を表示しない場合は、どうでしょうか。この種の頭字語が検索結果に表示されるのを停止できますか。**
 
-**A**: 検索結果に採掘された頭字語が表示されないようにするには、[「ビジネス製品のサポートに問い合わせる」](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support) の説明に従って、カスタマー サポート チケットを作成します。
-サポート チケットを作成してから、採掘された頭字語が検索結果に表示されなくなるまでに最大 48 時間かかります。
+**A**: 検索結果にシステム指定の頭字語が表示されるのをオフにする場合は、ビジネス製品のサポートに問い合わせの指示に従ってカスタマー サポート チケット [を作成します](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)。
+サポート チケットを作成した後、システムが選択した頭字語が検索結果に表示されな最大 48 時間かかります。
