@@ -11,19 +11,18 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-robots: NOINDEX:NOFOLLOW
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Power BI のレポートとデータが検索結果に表示される方法を管理する
-ms.openlocfilehash: d775647b7cb2fca08ca7f693d4e1c8dd246d3599
-ms.sourcegitcommit: f17d81385b304f379bdc75d44580f59c3242e672
+ms.openlocfilehash: e78b8b5d22f7a91d80832fb4f5b536afc277fb6c
+ms.sourcegitcommit: 7294c953e7939e48f128656cc2f8f22705ae3f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760877"
+ms.locfileid: "49773047"
 ---
 # <a name="manage-power-bi-answers"></a>Power BI の回答を管理する
 
-ユーザーが情報に基づいた意思決定に必要なデータと分析を簡単に見つけやすくするために、Microsoft Search では Power BI ダッシュボードとレポートのサポートが追加されました。 Power BI 検索の利点の一部を次に示します。
+ユーザーが情報に基づいた意思決定を行う必要があるデータと分析を簡単に見つけやすくするために、Microsoft Search では Power BI ダッシュボードとレポートのサポートが追加されました。 Power BI 検索の利点の一部を次に示します。
 
 * **使いやすい:** このすぐに利用できる検索機能は、組織全体で Power BI ダッシュボードとレポートを簡単かつ迅速に見つけるのに役立ちます。
 * **より豊富なコンテンツ:** Power BI の検索結果をより便利にするために、コンテンツの種類 (ダッシュボードまたはレポート) や、そのコンテンツを所有するチームまたはユーザーなどの重要な情報が含まれます。
@@ -47,7 +46,7 @@ Microsoft Search ユーザーは、Windows 検索ボックス、SharePoint、Off
 
 ## <a name="turn-power-bi-search-on-or-off"></a>Power BI 検索を有効またはオフにする
 
-Power BI の結果は、既定で組織に対して有効になっています。 Power BI 管理者は、いつでも無効にできます。 Power BI 管理ポータルで、[テナントの設定] に移動し、[Power BI のグローバル検索を使用 **する] 設定を無効** にします。 詳細については、管理ポータルの [「Power BI の管理」を参照してください](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)。
+Power BI の結果は、既定で組織に対して有効になっています。 Power BI 管理者は、いつでも無効にできます。 Power BI 管理ポータルで、[テナントの設定] に移動し、[Power BI のグローバル検索を使用する **] 設定を無効** にします。 詳細については、管理ポータル [の「Power BI の管理」を参照してください](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)。
 
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Power BI の回答を有効または無効にする設定のスクリーンショット" border="true":::
 
