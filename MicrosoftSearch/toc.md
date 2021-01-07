@@ -9,6 +9,7 @@
 ## [ブックマーク](manage-bookmarks.md)
 ## [フロア設計](manage-floorplans.md)
 ## [場所](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [Q&A](manage-qas.md)
 # コネクタ (プレビュー)
 ## [概要](connectors-overview.md)
