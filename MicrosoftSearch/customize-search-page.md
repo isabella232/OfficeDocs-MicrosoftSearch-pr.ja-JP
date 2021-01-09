@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: edc541e902965472295a835906ef36fcd7fba730
-ms.sourcegitcommit: e1215758fd1325526e4b7b1612c3349137c6fbc3
+ms.openlocfilehash: 4896fdb9923c93602acc48c2360039d512e4d72e
+ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49716987"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790340"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -37,9 +37,9 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 ### <a name="multiple-connections-in-a-vertical"></a>垂直方向の複数の接続
 
 バーティカル検索では、複数のコネクタ ソースからの結果を表示できます。 これにより、検索結果ページの設計の柔軟性が向上します。 垂直セットアップの既存の管理エクスペリエンスでは、[コンテンツ ソース] 手順で複数の接続を選択できます。
-可能な限り多くのセマンティック ラベルを正確に指定すると、このエクスペリエンスが強化されます。 スキーマ定義と取り込み時にセマンティック ラベルを追加できます。
+可能な限り多くのセマンティック ラベルを正確に指定すると、このエクスペリエンスが強化されます。 スキーマの定義と取り込み時にセマンティック ラベルを追加できます。
 
-[セ](#configure-connector-step-5-assign-property-labels) マンティック ラベルを作成および管理する方法に関する追加情報を以下に示します。
+[セ](configure-connector.md#step-5-assign-property-labels) マンティック ラベルを作成および管理する方法に関する追加情報を以下に示します。
 
 ### <a name="things-you-should-know"></a>知る必要があります
 
@@ -62,7 +62,7 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 
 ウィザードを開始すると、業種の名前、コンテンツソース、および検索するコンテンツの範囲を定義する手順がガイドされます。 バーティカルは無効な状態で作成されます。 後ほど有効にします。
 
-限定された[キーワードクエリ言語 (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) のセットを使用して、範囲を狭めることができます。 このページには、利用可能なプロパティが一覧表示されます。 KQL の作成には、ブール演算子を使用した freetext キーワードとプロパティ制限を使用することをお勧めします。
+限定された[キーワードクエリ言語 (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) のセットを使用して、範囲を狭めることができます。 このページには、利用可能なプロパティが一覧表示されます。 KQL を作成するには、ブール演算子で自由形式のキーワードとプロパティ制限を使用することをお勧めします。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>組織レベルで業種を作成する
 
@@ -76,7 +76,7 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 1. バーティカルにする [SharePoint](https://sharepoint.com/) サイトで、**[設定]** に移動します。
 2. [**サイト情報**]、[**すべてのサイト設定を表示**] の順に選択します。
 3. **[Microsoft Search]** セクションを探し、**[このサイトコレクションの Microsoft 検索の構成]** を選択します。
-4. ナビゲーション ウィンドウで、カスタム エクスペリエンスに **移動し**、[バーティカル] タブ **を選択** します。
+4. ナビゲーション ウィンドウで、カスタム エクスペリエンス **に移動し**、[バーティカル] タブ **を選択** します。
 5. 垂直方向を追加するには、[追加] を **選択します**。
   または、バーティカルを編集するには、リストから業種を選択します。
 
@@ -97,7 +97,7 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 - 検索結果のコンテンツソースなど、各検索結果を比較するための **1 つ以上の条件**。  
 - 条件を満たす検索結果に使用する **結果レイアウト**。 結果レイアウトは、条件を満たすすべての結果が検索結果ページに表示され、動作する方法を制御します。
 
-**既定の検索結果レイアウトを表示するために適切なマッピングが行われない場合、Yyou は、垂直方向に表示する結果の種類を少なくとも 1 つ作成する必要があります。** 業種ごとに複数の結果タイプを作成できます。これにより、さまざまなタイプの結果にさまざまなレイアウトを使用できます。 たとえば、*重大度 1* のインシデントをカスタマイズして、*重大度 3* のインシデントと比較してより目立つ色と大きなフォントを使用できます。
+**既定の検索結果レイアウトを表示するために適切なマッピングが行われない場合は、垂直方向に表示する結果の種類を少なくとも 1 つ作成する必要があります。** 業種ごとに複数の結果タイプを作成できます。これにより、さまざまなタイプの結果にさまざまなレイアウトを使用できます。 たとえば、*重大度 1* のインシデントをカスタマイズして、*重大度 3* のインシデントと比較してより目立つ色と大きなフォントを使用できます。
 
 ウィザードを開始すると、結果タイプの名前、コンテンツソース、および条件を定義する手順がガイドされます。 リストビューから結果タイプの優先度を定義できます。
   
@@ -116,7 +116,7 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>手順 3: 垂直を有効にした後に表示する
 
-バーティカルを有効にした後、表示できるようになるまでに時間がかかる場合があります。 有効にした後で待ちたくない場合は、[SharePoint](https://sharepoint.com/) と [Office](https://office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。 [Bing の場合](https://bing.com)は、&の URL に **features=uncachedVerticals** を追加して、垂直を直ちに表示します。 
+バーティカルを有効にした後、表示できるようになるまでに時間がかかる場合があります。 有効にした後で待ちたくない場合は、[SharePoint](https://sharepoint.com/) と [Office](https://office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。 [Bing の場合](https://bing.com)は、&の URL に **features=uncachedVerticals** を追加して、垂直を直ちに表示します。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -130,4 +130,4 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 
 ## <a name="next-steps"></a>次のステップ
 
-[手順 3: 結果レイアウトをカスタマイズする](customize-results-layout.md)
+[結果レイアウトをカスタマイズする](customize-results-layout.md)
