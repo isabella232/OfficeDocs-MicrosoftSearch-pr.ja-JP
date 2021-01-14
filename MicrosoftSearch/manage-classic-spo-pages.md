@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 従来の SharePoint ページでの Microsoft Search の使用
-ms.openlocfilehash: 605e63a30ad166c63320c7e89e1b2745e628e15d
-ms.sourcegitcommit: c5fe4e01403379b3ee7ea4dbded8b31696311d79
+ms.openlocfilehash: 9a5aeb2e683297faccfb55d3407653c1791b3961
+ms.sourcegitcommit: 7133d46ca9c3a5216ee9159db781febd17e5a831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49700975"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49863176"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>クラシック ページと Microsoft Search
 
-モダン サイトより前に作成された SharePoint サイトでは、クラシック検索ボックスと従来の検索結果エクスペリエンスが使用されます。 Microsoft Search を使用するモダン検索エクスペリエンスの使用を開始するために、従来のページを既定で使用する機能を展開します。この機能は、関連性の高いカスタマイズされた結果を提供します。
+モダン サイトより前に作成された SharePoint サイトでは、クラシック検索ボックスと従来の検索結果エクスペリエンスが使用されます。 Microsoft Search を使用するモダン検索エクスペリエンスの使用を開始するために、クラシック ページを既定で使用する機能を展開します。この機能により、関連性の高いカスタマイズされた結果が提供されます。
 
 クラシックサイトを含むすべてのサイトには Microsoft Search の使用をお勧めしますが、クラシック サイトでカスタム マスター ページを使用している場合や、クラシック検索結果のエクスペリエンスをカスタマイズした場合は、これらのカスタマイズが自動検出され、Microsoft Search に切り替えは行いません。
 
@@ -32,9 +32,9 @@ ms.locfileid: "49700975"
 * サイトはチーム サイト テンプレート (STS#0 や STS#1 など) に基づいて作成されます。
 * サイトで発行機能が有効になっていません。
 * サイトはカスタム マスター ページ (oslo.master または seattle.master とは異なるマスター ページ) を使用しない。
-* 既定の検索元のサイト、サイト コレクション、またはテナントに昇格した結果を追加するクエリ ルール以外にアクティブなクエリ ルールはありません。
+* 既定の検索元のサイト、サイト コレクション、またはテナントに昇格した結果を追加するクエリ ルール以外に、アクティブなクエリ ルールはありません。
 * 既定の結果ソースには、サイトまたはサイト コレクションに対するカスタムの結果の種類はありません。
-* その一部であるサイトまたはサイト コレクションは、以下で説明する SearchBoxInNavBar 設定を使用して切り替えからオプトアウトしていない。
+* 以下で説明する *SearchBoxInNavBar* 設定を使用して、サイトまたはサイト コレクションが切り替えからオプトアウトされません。
 
 Microsoft Search に切り替えると、サイト内の従来のページがスイート ナビゲーション バーに検索ボックスの表示を開始し、従来の検索ボックスをページから削除します。 次に、ユーザーが用語を検索すると、Microsoft Search のモダン検索エクスペリエンスを使用して結果が表示されます。
 
@@ -48,7 +48,7 @@ Microsoft Search に切り替えると、サイト内の従来のページがス
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
-# this will prompt you to sign into your site. Use the site owner credentials
+# this will prompt you to sign in to your site. Use the site owner credentials.
 ```
 
 サイトのクラシック検索エクスペリエンスを使用するには、次のコマンドを実行します。

@@ -11,29 +11,29 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search の Microsoft Graph コネクタプレビューに関する情報を確認します。
-ms.openlocfilehash: 592e108fe0333e4faf8ff2e4618f9d5216847b8a
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Microsoft Search 用の Microsoft Graph Connectors プレビューについて説明します。
+ms.openlocfilehash: 47f7e1e417222c948f2916c70626278f9fe5b44a
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367669"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847512"
 ---
-# <a name="microsoft-graph-connectors-preview-release-and-features"></a>Microsoft Graph コネクタのプレビューリリースおよび機能
+# <a name="microsoft-graph-connectors-preview-release-and-features"></a>Microsoft Graph コネクタのプレビュー リリースと機能
 
-Microsoft Graph のコネクタと Microsoft 検索 Api は、一般公開されるようになりました。 最初のロールアウトは、対象となるリリース用に構成された顧客に対して行われます。 すべてのテナントに対する処理が完了すると、コネクタのインデックスクォータ使用率が請求される可能性があります。 詳細については [、「ライセンス要件と料金](licensing.md) 」を参照してください。
+Microsoft Graph コネクタと Microsoft Search API が一般提供されます。 最初のロールアウトは、対象指定リリース用に構成されたユーザーに対して行います。 このロールアウトは、2021 年 2 月の終わりまで行います。 すべてのテナントへのロールアウトが完了すると、コネクタ コンテンツからのインデックス クォータ使用率は課金の対象になります。 詳細 [については、「ライセンス要件と価格」](licensing.md) を参照してください。
 
-## <a name="set-up-targeted-release"></a>対象となるリリースのセットアップ
+## <a name="set-up-targeted-release"></a>対象指定リリースのセットアップ
 
-ロールアウト中にテナントでグラフコネクタを使用する場合は、対象となるリリースにオプトインする必要があります。 対象となるリリースオプションの詳細と設定方法については、「 [Office 365 で標準または対象指定リリースオプションを設定](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)する」を参照してください。
+ロールアウト中にテナントで Graph コネクタを使用する場合は、対象指定 **リリース** にオプトインする必要があります。 対象指定リリース オプションと設定方法の詳細については、「Office [365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)で標準または対象指定リリース オプションを設定する」を参照してください。
 
 ## <a name="preview-features"></a>プレビュー機能
 
-Microsoft Graph のコネクタと Microsoft 検索 Api は一般公開されるようになりましたが、いくつかの機能がプレビューのままになります。
+Microsoft Graph コネクタと Microsoft Search API が一般提供される現在ではありますが、プレビューのままのいくつかの機能があります。
 
-次に、プレビューのコネクタと機能のセットを示します。
+プレビューのコネクタと機能のセットは次のとおりです。
 
 * [Azure DevOps コネクタ](azure-devops-connector.md)
 * [Salesforce コネクタ](salesforce-connector.md)
-* ソース Acl を使用する検索権限を持つ[ServiceNow コネクタ](servicenow.md)
-* [検索結果クラスターを管理する](result-cluster.md)
+* [ソース ACL を](servicenow-connector.md) 使用する検索アクセス許可を持つ ServiceNow コネクタ
+* [結果のクラスターを管理する](result-cluster.md)
