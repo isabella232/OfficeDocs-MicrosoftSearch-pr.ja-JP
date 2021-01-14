@@ -18,7 +18,7 @@
 ## Microsoft 提供の Graph コネクタ
 ### [セットアップの概要](configure-connector.md)
 ### [Azure AD 以外の ID をマッピング (プレビュー)](map-non-aad.md)
-### [Azure AD の ID をマッピング](map-aad.md)
+### [Azure AD の ID をマッピング (プレビュー)](map-aad.md)
 ### コネクタ固有情報
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (プレビュー)](azure-devops-connector.md)
@@ -28,6 +28,7 @@
 #### [Salesforce (プレビュー)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [接続を管理する](manage-connector.md)
+## [接続の詳細とエラー](connector-details-errors.md)
 ## [ライセンス](licensing.md)
 ## [フィードバック](connectors-feedback.md)
 ## [使用条件](terms-of-use.md)
@@ -44,7 +45,7 @@
 ## Bing での Microsoft Search
 ### [セキュリティとプライバシー](security-for-search.md)
 ### [イントラネット サイトに検索ボックス追加する](add-a-search-box-to-your-intranet-site.md)
-### [Microsoft Edge を既定のブラウザーにする](set-default-browser.md)
+### [Microsoft Edge を既定のブラウザーにする](/deployedge/edge-default-browser)
 ### [Bing を既定の検索エンジンにする](set-default-search-engine.md)
 ### [Bing.com を既定のホーム ページにする](set-default-homepage.md)
 ### [ユーザー導入ガイド](user-adoption-guide.md)
