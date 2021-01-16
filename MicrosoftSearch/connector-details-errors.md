@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コネクタの詳細とエラー
-ms.openlocfilehash: bd091b35a1f62da9fe45ec7a955de051a1bc0a9a
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+ms.openlocfilehash: 23b2f0745a09bffbc5ac6ad9c2163c7a5b63cb51
+ms.sourcegitcommit: d22fe2a34d7efe2dd5bbb456f0d00eb5f6c7608c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49848793"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49880602"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -53,7 +53,7 @@ Microsoft 365 [管理センターの](https://admin.microsoft.com/Adminportal/Ho
 
 ![コネクタが選択されたコネクタの一覧と、コネクタのエラーの一覧を表示する詳細ウィンドウ。](media/errormonitoring2.png)
 
-次に、接続に対して発生する可能性があるさまざまなエラーの一覧を示します。 これらのソリューションが動作しない場合は、サポートに問い合わせ、フィードバックをお送 [りください](connectors-feedback.md)。
+次に、接続に対して発生する可能性があるさまざまなエラーの一覧を示します。
 
 エラー コード | エラー メッセージ | ソリューション
 --- | --- | ---
