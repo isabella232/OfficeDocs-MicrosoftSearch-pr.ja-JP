@@ -11,11 +11,11 @@
 ## [場所](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [Q&A](manage-qas.md)
-# コネクタ (プレビュー)
+# コネクタ
 ## [概要](connectors-overview.md)
 ## [リリースのプレビュー](connectors-preview.md)
 ## [コネクタ ギャラリー](connectors-gallery.md)
-## Microsoft 提供の Graph コネクタ
+## Microsoft 提供の設定コネクタ
 ### [セットアップの概要](configure-connector.md)
 ### [Azure AD 以外の ID をマッピング (プレビュー)](map-non-aad.md)
 ### [Azure AD の ID をマッピング (プレビュー)](map-aad.md)
@@ -30,7 +30,6 @@
 ## [接続を管理する](manage-connector.md)
 ## [接続の詳細とエラー](connector-details-errors.md)
 ## [ライセンス](licensing.md)
-## [フィードバック](connectors-feedback.md)
 ## [使用条件](terms-of-use.md)
 # カスタマイズと構成
 ## [業界および結果の種類を管理する](customize-search-page.md)
