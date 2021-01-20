@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用の MediaWiki コネクタ
+title: Microsoft Search 用 MediaWiki コネクタ
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,45 +11,57 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用の MediaWiki コネクタをセットアップする
-ms.openlocfilehash: 7f6b34dcafc4b82ab3778ec1d7a4921383e44a44
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Microsoft Search 用に MediaWiki コネクタをセットアップする
+ms.openlocfilehash: 7a22fcc84f6f435bf438aa027c42c76eb8be1eaf
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367642"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905956"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki コネクタ
 
-MediaWiki コネクタを使用すると、MediaWiki ソフトウェアを使用して作成された wiki から、組織がデータを検出してインデックスを作成できます。 このコネクタは、指定されたコンテンツを Microsoft Search にインデックス処理し、定期的なクロールをサポートしてインデックスを最新の状態に保ちます。
+MediaWiki コネクタを使用すると、組織は MediaWiki ソフトウェアを使用して作成された Wiki からデータを検出し、インデックスを作成できます。 このコネクタは、指定されたコンテンツのインデックスを Microsoft Search に作成し、インデックスを最新の状態に保つ定期的なクロールをサポートします。
 
-この記事は、Microsoft 365 管理者または、MediaWiki コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
+この記事は、Microsoft 365 管理者または MediaWiki Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 これは、Graph コネクタのセットアップに関する記事に記載されている一 [般的な手順を補完](configure-connector.md) します。 まだ設定していない場合は、「Graph コネクタのセットアップ」の記事全体を読んで、一般的なセットアップ プロセスについて理解してください。
 
-## <a name="connect-to-a-data-source"></a>データソースへの接続
+以下に、セットアップ プロセスの各手順と共に、一般的なセットアップ手順に従う必要があるというメモ、または MediaWiki Graph コネクタにのみ適用されるその他の手順を示します。 この記事には、MediaWiki Graph コネクタの制限事項に関する情報も含まれています。 [](#limitations) 
 
-接続を認証するために、MediaWiki の URL と資格情報を入力します。 **テナント ID**、**リソース ID**、**クライアント ID**、**クライアントシークレット** の情報が必要です。
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターで Graph コネクタを追加します。
+一般的なセットアップ手順に従います。
 
-## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
+## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付けています。
+一般的なセットアップ手順に従います。
+ 
+## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成します。
+Wiki **URL を入力し** 、 **オプションのドロップダウン** メニューから [認証の種類] を選択します。 オプションは **None、Basic、OAuth** **2.0 AAD です**。
 
-MediaWiki コネクタは、 **すべてのユーザー** に表示される検索アクセス許可のみをサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザーに表示されます。
+認証の種類として **[基本** ] を選択した場合は、Wiki の **ユーザー** 名と **パスワードを入力** する必要があります。
 
-## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる
+認証の種類として **OAuth 2.0 AAD** を選択した場合は、Wiki インストールの **リソース ID** を指定する必要があります。 また、AAD アプリケーション登録 **ページで生成** されたクライアント **ID** とクライアント シークレットも指定する必要があります。 
 
-各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。
+## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
+MediaWiki コネクタは、すべてのユーザーに表示される検索アクセス許可のみをサポート **します**。 インデックス付きデータは検索結果に表示され、組織内のすべてのユーザーに表示されます。
 
-## <a name="manage-schema"></a>スキーマを管理する
+## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
+一般的なセットアップ手順に従います。
 
-[**スキーマの管理**] 画面で、プロパティに関連付けられているスキーマの属性 (**クエリ** 可能、**検索****可能、取得可能、および****絞り込み可能な**) を変更し、オプションのエイリアスを追加して、 **Content** プロパティを選択することができます。
+## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
+一般的なセットアップ手順に従います。
 
-## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
+## <a name="step-7-choose-refresh-settings"></a>手順 7: 更新設定を選択する
+一般的なセットアップ手順に従います。
 
-このスケジュールによってインデックスが作成されたデータが更新されるので、wiki への変更は Microsoft Search に反映されます。 新しいページ、削除されたページ、ページコンテンツ、またはメタデータの変更は、指定した更新間隔の後に検索結果に表示されます。 クロール時間は wiki のサイズによって異なります。 現在、コネクタは1分間に50ページ以内にクロールされます。
+## <a name="step-8-review-connection"></a>手順 8: 接続を確認する
+一般的なセットアップ手順に従います。
+
+<!---## Troubleshooting-->
+<!---To be added-->
 
 ## <a name="limitations"></a>制限事項
+MediaWiki コネクタには、プレビュー リリースで次の制限があります。
 
-MediaWiki コネクタには、次のようなプレビューリリースの制限があります。
-
-* クラウドベースの wiki のみをサポートします。
-* Azure Active Directory または Azure 認証で基本または OAuth 2.0 のみをサポートします。
-* インデックス作成のための名前空間の選択をサポートしていません。 インデックスは、 **メイン**、 **カテゴリ**、および **ファイル** の名前空間のみになります。
-* は、アクセス制御リスト (Acl) をサポートしていません。 そのため、インデックスが作成されたページは、組織内のすべてのユーザーが参照できます。
+* クラウドベースの Wiki のみをサポートします。
+* Azure Active Directory または Azure 認証を使用する基本認証または OAuth 2.0 のみをサポートします。
+* インデックス作成用の名前空間の選択はサポートされていません。 Main 名前空間、Category 名前空間、および File 名前空間のみをインデックス化します。
+* アクセス制御リスト (ACL) はサポートされていません。 したがって、インデックス付きページは組織内のすべてのユーザーに表示されます。
