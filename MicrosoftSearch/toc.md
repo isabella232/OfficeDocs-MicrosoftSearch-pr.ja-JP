@@ -27,8 +27,9 @@
 #### [MediaWiki](mediawiki-connector.md)
 #### [Salesforce (プレビュー)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
-## [接続を管理する](manage-connector.md)
-## [接続の詳細とエラー](connector-details-errors.md)
+## 接続を管理する
+### [接続を監視する](manage-connector.md)
+### [接続の詳細とエラーを表示する](connector-details-errors.md)
 ## [ライセンス](licensing.md)
 ## [使用条件](terms-of-use.md)
 # カスタマイズと構成
