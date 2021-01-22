@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用 Azure Data Lake connector
+title: Microsoft Search 用 Azure Data Lake コネクタ
 ms.author: monaray
 author: monaray97
 manager: shohara
@@ -11,69 +11,68 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用の Azure Data Lake Storage Gen2 connector をセットアップする
-ms.openlocfilehash: 860c923c62495c7df20152fb530797e390949305
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Microsoft Search 用に Azure Data Lake Storage Gen2 コネクタをセットアップする
+ms.openlocfilehash: 8891c9a1fdf5397c397a941b5131f014db9e7a54
+ms.sourcegitcommit: 597c338bf9c1c425747ac74a9a1ae57c5e8957ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367588"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49920724"
 ---
-# <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake Storage Gen2 connector
+# <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake Storage Gen2 コネクタ
 
-Azure Data Lake Storage Gen2 コネクタを使用すると、組織内のユーザーは、 [Azure Blob ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) と [Azure Data lake Gen 2 のストレージ](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) アカウントに格納されているファイルを検索できます。
+Azure Data Lake Storage Gen2 コネクタを使用すると、組織内のユーザーは [、Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) および [Azure Data Lake Gen 2 Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) アカウントに格納されているファイルを検索できます。
 
-この記事は、 [Microsoft 365](https://www.microsoft.com/microsoft-365) 管理者または Azure Data Lake Storage Gen2 connector を構成、実行、および監視するユーザーを対象としています。 コネクタの構成、機能、制限事項、およびトラブルシューティングの手法の概要を示します。 この記事では、azure *ストレージ* を [azure Blob ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) と [Azure Data Lake Gen 2 ストレージ](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)の一般的な用語として使用します。
+この記事は [、Microsoft 365](https://www.microsoft.com/microsoft-365) 管理者または Azure Data Lake Storage Gen2 コネクタを構成、実行、および監視するユーザーを対象にしています。 コネクタの構成、機能、制限事項、およびトラブルシューティングの手法の概要を示します。 この記事では *、Azure Blob Storage* と [Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) Data Lake Gen 2 Storage の一般的な用語として Azure [Storage を使用します](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)。
 
-## <a name="connect-to-a-data-source"></a>データソースへの接続
+## <a name="connect-to-a-data-source"></a>データ ソースに接続する
 
-### <a name="primary-storage-connection-string"></a>プライマリストレージ接続文字列
+### <a name="primary-storage-connection-string"></a>プライマリ ストレージ接続文字列
 
-[ **認証と構成** ] 画面で、プライマリストレージ接続文字列を指定します。 この文字列は、ストレージアカウントへのアクセスを許可するために必要です。 接続文字列を検索するには、 [azure ポータル](https://ms.portal.azure.com/#home) に移動して、関連する azure Storage アカウントの [ **キー** ] セクションに移動します。 接続文字列をコピーして画面の適切なフィールドに貼り付けます。
+[認証 **と構成] 画面で** 、プライマリ ストレージ接続文字列を指定します。 ストレージ アカウントへのアクセスを許可するには、この文字列が必要です。 接続文字列を見つけるには [、Azure ポータル](https://ms.portal.azure.com/#home) に移動し、関連する Azure Storage アカウントの **[キー** ] セクションに移動します。 画面の適切なフィールドに接続文字列をコピーして貼り付けます。
 
-**AccountKey** (プライマリストレージ接続文字列のパラメーター) を指定しない場合は、次の役割の Graph connector Service へのアクセス権を付与する必要があります。
+**AccountKey** (プライマリ ストレージ接続文字列のパラメーター) を指定しない場合は、次の役割について Graph Connectors Service へのアクセスを許可する必要があります。 (この機能は、階層ストレージでのみサポートされます。 従来の Blob ストレージでは、AccountKey を提供する必要があります)。
+* ストレージ BLOB データ リーダー
+* 記憶域キュー データ共同作成者
+* ストレージ BLOB Delegator
 
-* 記憶域 Blob データリーダー
-* ストレージキューデータ寄稿者
-* Storage Blob 委任者 (階層型ストレージの場合のみ)
+Azure Storage アカウント **の [アクセス** 制御] タブに移動し、次の手順に従って、次のアプリへのアクセスを許可します。
 
-Azure ストレージアカウントの [ **アクセス制御** ] タブに移動し、次のアプリへのアクセス権を付与するための手順に従います。
+* **First Party App ID:** 56c1da01-2129-48f7-9355-af6d59d42766
+* **ファースト パーティのアプリ名:** Graph Connector サービス
 
-* **最初のパーティのアプリ ID:** 56c1da01-2127648f7-9355-af6d59d2766
-* **ファーストパーティのアプリ名:** Graph Connector サービス
+### <a name="storage-account-and-queue-notifications-optional"></a>ストレージ アカウントとキューの通知 (省略可能)
 
-### <a name="storage-account-and-queue-notifications-optional"></a>ストレージアカウントとキューの通知 (オプション)
+Graph Connectors Service でのリアルタイムでの変更処理のサポートは、今後追加される可能性があります。 その場合は、キューに格納されている Azure Storage の変更通知を監視します。 Azure Storage アカウントと同じアカウントにキューを作成する必要があります。
 
-グラフコネクタサービスでリアルタイムでの変更の処理のサポートが今後追加される可能性があります。 その場合は、キューに格納されている Azure ストレージの変更通知を監視します。 Azure ストレージアカウントと同じアカウントでキューを作成する必要があります。
+キューを作成した後、キュー ページの [ **イベント** ] タブに移動して、イベント サブスクリプション **を構成します**。 キューが受信する BLOB イベントを選択し、キューを Azure Storage アカウントに接続します。
 
-キューを作成した後、[キュー] ページの [ **イベント** ] タブに移動して、 **イベントサブスクリプション** を構成します。 キューが受信するすべての Blob イベントを選択し、キューを Azure ストレージアカウントに接続します。
-
-## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
+## <a name="manage-search-permissions"></a>検索のアクセス許可を管理する
 
 ### <a name="azure-data-lake-gen-2"></a>Azure Data Lake Gen 2
 
-[ **検索権限の管理** ] 画面では、 [Azure Data Lake Gen 2 ストレージ](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) アカウントからアクセス制御リスト (acl) を取り込みます。 これらの検索権限が設定されている場合、コンテンツを検索するサインインしている [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) ユーザーに割り当てられているアクセス許可に基づいて、検索コンテンツがトリミングされます。 または、組織内のすべてのユーザーに対して、ストレージアカウントからインデックスが作成されたすべてのコンテンツを表示するように選択することもできます。 この場合、組織内のすべてのユーザーがストレージアカウントのすべてのデータにアクセスできます。
+[検索アクセス **許可** の管理] 画面で [、Azure Data Lake Gen 2 Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) アカウントからアクセス制御リスト (ACL) を取り込む方法を選択できます。 これらの検索アクセス許可が設定されている場合、コンテンツを検索するサインイン済み [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) ユーザーに割り当てられているアクセス許可に基づいて、検索コンテンツがトリミングされます。 または、ストレージ アカウントからインデックスが作成されたコンテンツを組織内のすべてのユーザーに表示することもできます。 この場合、組織内のすべてのユーザーがストレージ アカウント内のすべてのデータにアクセスできます。
 
 ### <a name="azure-blob-storage"></a>Azure Blob Storage
 
-[Azure Blob ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)への接続の場合、構成されたソースからインデックスが作成されたすべてのコンテンツが組織内のすべてのユーザーに表示されます。 アクセス制御リストは、Azure Blob ストレージの Blob レベルではサポートされていません。
+Azure Blob [Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)への接続の場合、構成済みのソースからインデックスが作成されたコンテンツはすべて、組織内のすべてのユーザーに表示されます。 アクセス制御リストは、Azure Blob Storage の Blob レベルではサポートされていません。
 
-## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
+## <a name="search-permissions"></a>検索アクセス許可
 
-Azure Data Lake Storage Gen2 コネクタは、 **すべてのユーザー** に表示される検索アクセス許可、または **このデータソースへのアクセス権を持つユーザーのみ** をサポートします。 検索結果に表示されるインデックス付きデータは、組織内のすべてのユーザーに表示される場合もあれば、各アイテムにアクセスできるユーザーに対して表示される場合もあります。
+Azure Data Lake Storage Gen2 コネクタは、[すべてのユーザー] または [このデータ ソースにアクセスできるユーザーのみ] に表示される検索 **アクセス許可をサポートします**。 検索結果に表示されるインデックス付きデータは、組織内のすべてのユーザーに表示される場合と、各アイテムにアクセスできるユーザーにのみ表示される場合があります。
 
-## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる
+## <a name="assign-property-labels"></a>プロパティ ラベルを割り当てる
 
-各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。
+オプションのメニューから選択すると、ソース プロパティを各ラベルに割り当てできます。 この手順は必須ではありませんが、一部のプロパティ ラベルを使用すると、検索の関連性が向上し、エンド ユーザーの検索結果の精度が向上します。
 
 ## <a name="manage-schema"></a>スキーマを管理する
 
-[**スキーマの管理**] 画面で、プロパティに関連付けられているスキーマの属性 (**クエリ** 可能、**検索****可能、取得可能、および****絞り込み可能な**) を変更し、オプションのエイリアスを追加して、 **Content** プロパティを選択することができます。
+[スキーマの管理] 画面で、プロパティに関連付けられたスキーマ属性 **(クエリ** 可能、検索可能、取得可能、絞り込み **可能)** を変更し、オプションのエイリアスを追加して **、Content** プロパティを選択できます。 
 
 ## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
 
-[ **更新の設定** ] 画面で、増分クロールの間隔とフルクロールの間隔を設定できます。 Azure Data Lake Storage Gen2 コネクタの既定の間隔は、増分クロールの場合は15分、フルクロールの場合は1週間です。
+[設定 **の更新] 画面** では、増分クロールの間隔とフル クロールの間隔を設定できます。 Azure Data Lake Storage Gen2 コネクタの既定の間隔は、増分クロールの場合は 15 分、フル クロールの場合は 1 週間です。
 
 ## <a name="limitations"></a>制限事項
 
-Azure Data Lake Storage Gen2 source に対して、公開されている接続を再構成することはできません。また、その逆も同様です。 このようなシナリオでは、新しい接続を構成することをお勧めします。
+Azure Blob Storage の公開された接続は、Azure Data Lake Storage Gen2 ソースに対して再構成することはできません。その逆もできません。 このようなシナリオでは、新しい接続を構成する方法をお勧めします。
