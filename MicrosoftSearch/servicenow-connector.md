@@ -1,8 +1,8 @@
 ---
-title: Microsoft Search 用の ServiceNow コネクタ
-ms.author: kam1
-author: TheKarthikeyan
-manager: harshkum
+title: Microsoft Search の ServiceNow Graph コネクタ
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,29 +11,43 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search の ServiceNow コネクタをセットアップする
-ms.openlocfilehash: 520232f8055d5432ccb96a840a9466ae6a4e3b1a
-ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
+description: Microsoft Search の ServiceNow Graph コネクタをセットアップする
+ms.openlocfilehash: d1fdfb5f1aec5091fd526152de2bdc86932cfdb9
+ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382562"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084895"
 ---
-# <a name="servicenow-connector"></a>ServiceNow コネクタ
+<!---Previous ms.author: kam1 --->
 
-ServiceNow コネクタを使用すると、組織は、すべてのユーザーに表示される、または組織内のユーザーの条件によって制限されるナレッジベースの記事のインデックスを作成できます。 ServiceNow からコネクタとインデックスコンテンツを構成した後は、エンドユーザーは任意の Microsoft 検索クライアントからこれらの記事を検索できます。  
+# <a name="servicenow-graph-connector"></a>ServiceNow Graph コネクタ
 
-この記事は、Microsoft 365 管理者、または ServiceNow コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
+ServiceNow Graph コネクタを使用すると、組織内のユーザー条件のアクセス許可に従って、ユーザーに表示されるナレッジ ベースの記事のインデックスを作成できます。 ServiceNow からコネクタとインデックス コンテンツを構成すると、ユーザーは任意の Microsoft Search クライアントから記事を検索できます。
 
-Microsoft によって作成された microsoft [のコネクタを Microsoft Search 用にセットアップして、](https://docs.microsoft.com/microsoftsearch/configure-connector)microsoft の作成済みコネクタにアクセスする方法について説明します。 ServiceNow connector 固有の構成については、以下の記事で説明します。
+> [!NOTE]
+> Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、Graph コネクタの一般的なセットアップ プロセスを理解してください。
 
-## <a name="connection-settings"></a>接続設定
-ServiceNow データに接続するには、組織の **servicenow インスタンスの URL**、このアカウントの資格情報、および OAuth 認証用のクライアント ID とクライアントシークレットが必要です。  
+この記事は、ServiceNow Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、ServiceNow Graph コネクタにのみ適用される手順を示します。 この記事には、トラブルシューティングと [制限事項に関する](#troubleshooting) 情報も [含まれています](#limitations)。
+  
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターで Graph コネクタを追加する
 
-組織の **ServiceNow インスタンスの URL** は、通常 **&lt; 、https://> service-now.com** のようになります。 この URL に加えて、ServiceNow への接続を設定するためのアカウントと、更新スケジュールに基づいて、Microsoft Search が ServiceNow から定期的に記事を更新できるようにする必要があります。 少なくとも、このアカウントは <em>ナレッジ</em> の役割を持っている必要があります。 [ServiceNow アカウントの役割を割り当てる方法について説明](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)します。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
+
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-3-connection-settings"></a>手順 3: 接続設定
+
+ServiceNow データに接続するには、このアカウントの組織の **ServiceNow** インスタンス URL 資格情報、クライアント ID、および OAuth 認証用のクライアント シークレットを使用します。  
+
+組織の **ServiceNow** インスタンスの URL は、通常、組織https://ドメイン **&lt;>.service-now.com。** この URL と共に、ServiceNow への接続を設定し、Microsoft Search が更新スケジュールに基づいて ServiceNow から記事を更新できるように、アカウントが必要です。 アカウントには、少なくともナレッジ ロールが <em>必要</em> です。 [ServiceNow アカウントにロールを割り当てる方法について学習します](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
 
 >[!NOTE]
->ユーザーおよびグループの id をクロールして、Microsoft 検索結果のナレッジ項目のアクセス許可を尊重する場合は、このアカウントに、ServiceNow の次の表のレコードを読み取るためのアクセス権が必要です。
+>Microsoft Search の結果でナレッジ記事のアクセス許可を受け入れ、ユーザーおよびグループ ID をクロールする場合、アカウントは ServiceNow の次の表のレコードを読み取るアクセス権を持っている必要があります。
 >* kb_uc_can_contribute_mtom
 >* kb_uc_can_read_mtom
 >* kb_uc_cannot_read_mtom
@@ -43,165 +57,187 @@ ServiceNow データに接続するには、組織の **servicenow インスタ�
 >* sys_user_grmember
 >* user_criteria
 >* kb_knowledge_base  
-> Microsoft Search との接続に使用するアカウントの役割を作成して割り当てることができます。 その役割に対して、テーブルへの読み取りアクセス権を割り当てることができます。 テーブルレコードへの読み取りアクセスを設定する方法については、「 [テーブルレコードを保護](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)する」を参照してください。
+> Microsoft Search への接続に使用するアカウントの役割を作成して割り当てできます。 テーブルへの読み取りアクセス権は、そのロールに割り当てることができます。 テーブル レコードへの読み取りアクセスを設定する方法については、「テーブル レコードの [セキュリティ保護」を参照してください](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。
 
-ServiceNow からコンテンツを認証および同期するには、次の3つのサポートされている方法 **のいずれか** を選択します。 
-1. 基本認証 
-2. ServiceNow OAuth (推奨)
-3. Azure AD OpenID Connect
+ServiceNow からコンテンツを認証して同期するには、次の 3 つのサポート **される** 方法のいずれかを選択します。
 
-#### <a name="basic-authentication"></a>基本認証
+1. 基本認証
+1. ServiceNow OAuth (推奨)
+1. Azure AD OpenID Connect
 
-ユーザーのインスタンスに対して認証を行うための、 **サポート** の役割を持つ ServiceNow アカウントのユーザー名とパスワードを入力します。
+### <a name="basic-authentication"></a>基本認証
 
-#### <a name="servicenow-oauth"></a>ServiceNow OAuth
+インスタンスに対する認証を行うナレッジロールを持つ ServiceNow アカウントのユーザー名とパスワードを入力します。
 
-認証に ServiceNow OAuth を使用するには、Microsoft Search アプリがインスタンスにアクセスできるようにするために、servicenow 管理者が ServiceNow インスタンスでエンドポイントを準備する必要があります。 詳細については、「クライアントが ServiceNow ドキュメントの [インスタンスにアクセスするためのエンドポイントを作成する](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 」を参照してください。
+### <a name="servicenow-oauth"></a>ServiceNow OAuth
 
-次の表に、エンドポイント作成フォームに記入する方法についてのガイダンスを示します。
+認証に ServiceNow OAuth を使用するには、ServiceNow インスタンスにエンドポイントを準備します。 Microsoft Search アプリは、このアプリを使用してインスタンスにアクセスします。 詳細については、ServiceNow ドキュメント [の「クライアントがインスタンスにアクセス](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) するエンドポイントを作成する」を参照してください。
 
-**Field** | **説明** | **推奨値**
+次の表に、エンドポイント作成フォームに入力する方法のガイダンスを示します。
+
+Field | 説明 | 推奨値 
 --- | --- | ---
-Name | この一意の値は、OAuth アクセスを必要とするアプリケーションを識別します。 | Microsoft Search
-クライアント ID | 読み取り専用で、自動生成されたアプリケーションの一意の ID。 このインスタンスは、アクセストークンを要求するときにクライアント ID を使用します。 | 該当なし
-クライアントシークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Search は相互に通信を承認します。 | これをパスワードとして扱うことにより、セキュリティのベストプラクティスに従います。
-リダイレクト URL | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
-ロゴの URL | アプリケーションロゴのイメージを含む URL。 | 該当なし
-Active | アプリケーションレジストリをアクティブにするには、チェックボックスをオンにします。 | Active に設定
-トークンの寿命を更新する | 更新トークンが有効になる秒数。 既定では、更新トークンの有効期限は100日 (864万秒) です。 | 31536000 (1 年)
-アクセストークンの寿命 | アクセストークンの有効期間 (秒数)。 | 43200 (12 時間)
+名前 | OAuth アクセスが必要なアプリケーションを識別する一意の値。 | Microsoft Search
+クライアント ID | アプリケーションの読み取り専用で自動生成された一意の ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 該当なし
+クライアント シークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Search は互いに通信を承認します。 | シークレットをパスワードとして扱って、セキュリティのベスト プラクティスに従います。
+リダイレクト URL | 認証サーバーがリダイレクトする必須のコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
+ロゴ URL | アプリケーション ロゴのイメージを含む URL。 | 該当なし
+Active | チェック ボックスをオンにして、アプリケーション レジストリをアクティブにします。 | アクティブに設定
+更新トークンの有効期限 | 更新トークンが有効な時間 (秒)。 既定では、更新トークンの有効期限は 100 日 (8,640,000 秒) です。 | 31,536,000 (1 年間)
+アクセス トークンの有効期限 | アクセス トークンが有効な時間 (秒)。 | 43,200 (12 時間)
 
-クライアント id とクライアントシークレットを入力して、インスタンスに接続します。 接続した後、ServiceNow アカウントの資格情報を使用して、クロールするためのアクセス許可を認証します。 少なくとも、このアカウントは **ナレッジ** の役割を持っている必要があります。
+インスタンスに接続するクライアント ID とクライアント シークレットを入力します。 接続後、ServiceNow アカウント資格情報を使用してクロールのアクセス許可を認証します。 アカウントには、少なくともナレッジ ロールが **必要** です。
 
-#### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
+### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
 
-Azure AD OpenID Connect を認証に使用するには、次の手順を実行します。
+認証に Azure AD OpenID Connect を使用するには、次の手順を実行します。
 
-###### <a name="step-1-register-a-new-application-in-azure-active-directory"></a>手順 1: Azure Active Directory に新しいアプリケーションを登録する
+## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>手順 3.a: Azure Active Directory に新しいアプリケーションを登録する
 
-Azure Active Directory に新しいアプリケーションを登録する方法については、「 [アプリケーションを登録](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application)する」を参照してください。 [単一テナントの組織ディレクトリ] を選択します。 リダイレクト URI は必要ありません。 登録後、アプリケーション (クライアント) ID とディレクトリ (テナント) ID を書き留めます。
+Azure Active Directory に新しいアプリケーションを登録する方法については、「アプリケーションの登録 [」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application)。 単一テナントの組織ディレクトリを選択します。 リダイレクト URI は必要ない。 登録後、アプリケーション (クライアント) ID とディレクトリ (テナント) ID をメモします。
 
-###### <a name="step-2-create-a-client-secret"></a>手順 2: クライアントシークレットを作成する
+## <a name="step-3b-create-a-client-secret"></a>手順 3.b: クライアント シークレットを作成する
 
-クライアントシークレットを作成する方法については、「 [クライアントシークレットの作成](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)」を参照してください。 クライアントシークレットをメモします。
+クライアント シークレットの作成については、「クライアント シークレットの作成 [」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 クライアント シークレットをメモします。
 
-###### <a name="step-3-retrieve-service-principal-object-identifier"></a>手順 3: サービスプリンシパルオブジェクト識別子を取得する
+## <a name="step-3c-retrieve-service-principal-object-identifier"></a>手順 3.c: サービス プリンシパル オブジェクト識別子を取得する
 
-手順に従ってサービスプリンシパルオブジェクト識別子を取得する
+手順に従ってサービス プリンシパル オブジェクト識別子を取得する
 
-1. PowerShell を実行する
-2. 次のコマンドを使用して Azure PowerShell をインストールする
-```<language>
+1. PowerShell を実行します。
+
+2. 次のコマンドを使用して Azure PowerShell をインストールします。
+
+   ```powershell
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
-```
-3. Azure への接続
-```<language>
-    Connect-AzAccount
-```
-4. サービスプリンシパルオブジェクト識別子を取得する
-```<language>
+   ```
+
+3. Azure に接続します。
+
+   ```powershell
+   Connect-AzAccount
+   ```
+
+4. サービス プリンシパル オブジェクト識別子を取得します。
+
+   ```powershell
    Get-AzADServicePrincipal -ApplicationId "Application-ID"
-```
-手順1で登録したアプリケーションの "アプリケーション ID" を (引用符を除く) アプリケーション (クライアント) ID に置き換えます。 PowerShell 出力からの ID オブジェクトの値に注意してください。 これは、サービスプリンシパル ID です。
+   ```
+   "Application-ID" を手順 3.a. で登録したアプリケーションのアプリケーション (クライアント) ID (引用符なし) に置き換えてください。 PowerShell 出力からの ID オブジェクトの値をメモします。 サービス プリンシパル ID です。
 
-これで、Azure portal から必要な情報がすべて得られました。 情報の簡単な概要については、以下の表で説明します。
+これで、Azure portal から必要なすべての情報が取得しました。 情報の簡単な概要を次の表に示します。
 
-**プロパティ** | **説明**
+プロパティ | 説明 
 --- | ---
-ディレクトリ ID (テナント ID) | これは、Azure Active Directory テナントを参照する一意の ID です (手順1を参照)。
-アプリケーション ID (クライアント ID) | これは、手順1で登録したアプリケーションを参照する一意の ID です。
-クライアントの秘密情報 | これは、(手順2から) アプリケーションの秘密キーです。 パスワードと同じように扱います。
-サービスプリンシパル ID | サービスとして実行されているアプリケーションの id。 (手順 3)
+ディレクトリ ID (テナント ID) | 手順 3.a. からの Azure Active Directory テナントの一意の ID。
+アプリケーション ID (クライアント ID) | 手順 3.a. で登録したアプリケーションの一意の ID。
+クライアントの秘密情報 | アプリケーションの秘密キー (手順 3.b)。 パスワードのように扱います。
+サービス プリンシパル ID | サービスとして実行されているアプリケーションの ID。 (手順 3.c から)
 
-###### <a name="step-4-register-servicenow-application"></a>手順 4: ServiceNow アプリケーションを登録する
+## <a name="step-3d-register-servicenow-application"></a>手順 3.d: ServiceNow アプリケーションを登録する
 
-ServiceNow インスタンスでは、次の構成を行う必要があります。
+ServiceNow インスタンスには、次の構成が必要です。
 
-1. 新しい OAuth OIDC エンティティを登録します。 詳細については、「 [Create An OAuth OIDC provider](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/security/task/add-OIDC-entity.html)」を参照してください。
-2. 次の表では、OIDC プロバイダ登録フォームに記入する方法についてのガイダンスを示します。
+1. 新しい OAuth OIDC エンティティを登録します。 詳細については [、「OAuth OIDC プロバイダーの作成」を参照してください](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/security/task/add-OIDC-entity.html)。
 
-**Field** | **説明** | **推奨値**
---- | --- | ---
-Name | OAuth OIDC エンティティを識別する一意の名前。 | Azure AD
-クライアント ID | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント ID。 このインスタンスは、アクセストークンを要求するときにクライアント ID を使用します。 | 手順1のアプリケーション (クライアント) ID
-クライアントの秘密情報 | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアントシークレット。 | 手順2のクライアントシークレット
+2. 次の表に、OIDC プロバイダー登録フォームに入力する方法のガイダンスを示します。
 
-その他の値はすべて既定値にすることができます。
+   Field | 説明 | 推奨値
+   --- | --- | ---
+   名前 | OAuth OIDC エンティティを識別する一意の名前。 | Azure AD
+   クライアント ID | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 手順 3.a のアプリケーション (クライアント) ID
+   クライアントの秘密情報 | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント シークレット。 | 手順 3.b のクライアント シークレット
 
-3. OIDC プロバイダ登録フォームで、新しい OIDC プロバイダ構成を追加する必要があります。 *OAUTH Oidc プロバイダ構成* フィールドに対して [検索] アイコンをクリックして、oidc 構成のレコードを開きます。 [新規作成] をクリックします。
-4. 次の表では、OIDC プロバイダ構成フォームに記入する方法についてのガイダンスを示します。
+   その他の値はすべて既定に設定できます。
 
-**Field** | **推奨値**
+3. OIDC プロバイダー登録フォームで、新しい OIDC プロバイダー構成を追加する必要があります。 *OAuth OIDC* プロバイダー構成フィールドに対する検索アイコンを選択して、OIDC 構成のレコードを開きます。 [新規]を選択します。
+
+4. 次の表に、OIDC プロバイダー構成フォームに入力する方法のガイダンスを示します。
+
+   Field | 推奨値
+   --- | ---
+   OIDC プロバイダー |  Azure AD
+   OIDC メタデータ URL | URL は https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration の形式である必要があります。 <br/>手順 3.a の "tenantID" をディレクトリ (テナント) ID に置き換える。
+   OIDC 構成キャッシュの寿命 |  120
+   アプリケーション | グローバル
+   ユーザークレーム | sub
+   ユーザー フィールド | ユーザー ID
+   JTI 要求の検証を有効にする | 無効
+
+5. [OAuth OIDC エンティティ の送信と更新] フォームを選択します。
+
+## <a name="step-3e-create-a-servicenow-account"></a>手順 3.e: ServiceNow アカウントを作成する
+
+手順を参照して ServiceNow アカウントを作成し、ServiceNow [でユーザーを作成します](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html)。
+
+次の表に、ServiceNow ユーザー アカウントの登録に入力する方法のガイダンスを示します。
+
+Field | 推奨値
 --- | ---
-OIDC プロバイダ |  Azure AD
-OIDC メタデータの URL | これは https \: //login.microsoftonline.com/"/.well-known/openid-configuration" という形式でなければなりません。 <br/>手順 1 (引用符なし) の "tenantID" をディレクトリ (テナント) ID に置き換えます。
-OIDC 構成キャッシュの有効期間 |  120
-アプリケーション | グローバル
-ユーザー要求 | sub
-ユーザーフィールド | ユーザー ID
-JTI クレーム検証を有効にする | 無効
+ユーザー ID | 手順 3.c のサービス プリンシパル ID
+Web サービス アクセスのみ | Checked
 
-5. [Submit and Update OAuth OIDC Entity] フォームをクリックします。
+その他の値はすべて既定のままにすることができます。
 
-###### <a name="step-5-create-a-servicenow-account"></a>手順 5: ServiceNow アカウントを作成する
+## <a name="step-3f-enable-knowledge-role-for-the-servicenow-account"></a>手順 3.f: ServiceNow アカウントのナレッジ ロールを有効にする
 
-ServiceNow アカウントを作成する手順を参照し、 [servicenow でユーザーを作成](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html)します。
+ServiceNow プリンシパル ID をユーザー ID として作成した ServiceNow アカウントにアクセスし、ナレッジ ロールを割り当てる。 ServiceNow アカウントにロールを割り当てる手順については、ユーザーにロールを割り当てる [方法をご覧ください](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
 
-次の表に、ServiceNow ユーザーアカウント登録に記入する方法についてのガイダンスを示します。
+手順 3.a のクライアント ID としてアプリケーション ID を使用し、手順 3.b のクライアント シークレットを使用して、Azure AD OpenID Connect を使用して ServiceNow インスタンスに認証します。
 
-**Field** | **推奨値**
---- | ---
-ユーザー ID | 手順3のサービスプリンシパル ID
-Web サービスのアクセスのみ | Checked
+## <a name="step-4-select-properties-and-filter-data"></a>手順 4: プロパティを選択し、データをフィルター処理する
 
-その他の値は、すべて既定のままにしておくことができます。
+この手順では、ServiceNow データ ソースに対して使用可能なプロパティを追加または削除できます。 Microsoft 365 では、既定でいくつかのプロパティが既に選択されています。
 
-###### <a name="step-6-enable-knowledge-role-for-the-servicenow-account"></a>手順 6: ServiceNow アカウントのナレッジロールを有効にする
+ServiceNow クエリ文字列を使用すると、記事を同期する条件を指定できます。 これは、Select ステートメントの **Where** **句SQL似たもの** です。 たとえば、発行済みでアクティブな記事のインデックスのみを作成できます。 独自のクエリ文字列の作成については、「フィルターを使用してエンコードされたクエリ文字列を生成する [」を参照してください](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
 
-ServiceNow プリンシパル ID を使用して作成した ServiceNow アカウントにユーザー ID としてアクセスし、ナレッジの役割を割り当てます。 ServiceNow アカウントに役割を割り当てる手順については、「 [ユーザーに役割を割り当てる](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)」を参照してください。
+[結果のプレビュー] ボタンを使用して、選択したプロパティとクエリ フィルターのサンプル値を確認します。
 
-管理センター構成ウィザードのクライアント ID (手順 1) とクライアントシークレット (手順 2) を使用して、Azure AD OpenID Connect を使用して ServiceNow インスタンスを認証します。
+## <a name="step-5-manage-search-permissions"></a>手順 5: 検索権限を管理する
 
-## <a name="filter-data"></a>データをフィルター処理する
+ServiceNow コネクタは、[すべてのユーザー]または [このデータ ソースにアクセスできるユーザーのみ] に表示される検索 **アクセス許可をサポートします**。 インデックス付きデータは検索結果に表示され、それぞれアクセス権を持つ組織内のユーザーに表示されます。 ServiceNow Connector は、高度なスクリプトのない既定のユーザー条件のアクセス許可をサポートしています。 コネクタが高度なスクリプトを使用してユーザー条件を見つけると、そのユーザー条件を使用しているすべてのデータが検索結果に表示されません。
 
-ServiceNow クエリ文字列を使用すると、記事を同期するための条件を指定できます。 **SQL Select** ステートメントの **where** 句のようになります。 たとえば、公開されていてアクティブな記事のみにインデックスを作成することを選択できます。 独自のクエリ文字列を作成する方法については、「 [フィルターを使用してエンコードされたクエリ文字列を生成](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)する」を参照してください。
-
-## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
-
-ServiceNow コネクタは、 **すべてのユーザー** に表示される検索権限、または **このデータソースへのアクセス権を持つユーザーのみ** をサポートします。 インデックス付きデータが検索結果に表示され、組織内のすべてのユーザー、またはそれぞれにアクセス権を持つユーザーに対して表示されます。 ServiceNow コネクタは、高度なスクリプトを使用せずに、既定のユーザー条件のアクセス許可をサポートします。 コネクタが高度なスクリプトを使用してユーザーの条件を検出すると、そのユーザーの条件を使用するすべてのデータが検索結果に表示されなくなります。
-
-**このデータソースへのアクセス権を持つユーザーのみ** を選択する場合は、ServiceNow インスタンスに Azure Active DIRECTORY (AAD) プロビジョニングされたユーザーまたは aad 以外のユーザーがあるかどうかをさらに選択する必要があります。
+[このデータソースにアクセスできるユーザーのみ] を選択した場合は、ServiceNow インスタンスに Azure Active Directory (AAD) がプロビジョニングされたユーザーと AAD 以外のユーザーの 2 人を含むかどうかをさらに選択する必要があります。
 
 >[!NOTE]
->**このデータソースへのアクセス権を持つユーザーのみ** を選択すると、ServiceNow コネクタは **プレビュー** 状態になります。
+>The ServiceNow connector is in **preview** if you choose **Only people with access to this data source**.
 
 >[!NOTE]
->アイデンティティソースの種類として AAD を選択する場合は、[ServiceNow] の [対象ユーザー] プロパティに UPN source プロパティを割り当てていることを確認してください。 マッピングを確認または変更するには、「 [Azure Active Directory での SaaS アプリケーションのユーザープロビジョニング属性のカスタマイズ](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)」を参照してください。
+>ID ソースの種類として AAD を選択する場合は、ServiceNow の電子メールターゲット プロパティに UPN ソース プロパティを割り当て中です。 マッピングを確認または変更するには、「Azure Active Directory での SaaS アプリケーションのユーザー プロビジョニング属性マッピング [のカスタマイズ」を参照してください](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)。
 
-ServiceNow インスタンスから ACL を取り込み、id の種類として "非 AAD" を選択した場合は、id のマッピングの手順について「 [非 AZURE AD id をマップ](map-non-aad.md) する」を参照してください。
+ServiceNow インスタンスから ACL を取り込み、ID の種類として [非 AAD] を選択した場合は、「ID のマッピング方法については [、Azure 以外の AD](map-non-aad.md) ID をマップする」を参照してください。
 
-## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる
+## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
-各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="manage-schema"></a>スキーマを管理する
+## <a name="step-7-manage-schema"></a>手順 7: スキーマを管理する
 
-[**スキーマの管理**] 画面で、プロパティに関連付けられているスキーマの属性 (**クエリ** 可能、**検索****可能、取得可能、および****絞り込み可能な**) を変更し、オプションのエイリアスを追加して、 **Content** プロパティを選択することができます。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
+## <a name="step-8-choose-refresh-settings"></a>手順 8: 更新設定を選択する
 
-ServiceNow コネクタは、フルクロールと増分クロールの両方の更新スケジュールをサポートします。 両方を設定することをお勧めします。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-フルクロールスケジュールは、Microsoft 検索インデックスと同期フィルターから移動したすべての記事に対して以前に同期された削除済み記事を検索します。 最初に ServiceNow に接続すると、フルクロールが実行され、すべてのナレッジベースの記事が同期されます。 新しいアイテムを同期し、更新を行うには、増分クロールをスケジュールする必要があります。
-
-推奨される既定値は、フルクロールの場合は1日、増分クロールの場合は4時間です。
 >[!NOTE]
->Id の場合は、フルクロールのスケジュールのみが適用されます。
+>ID の場合は、スケジュールされたフル クロールだけが適用されます。
 
-## <a name="review-and-publish"></a>レビューと発行
+## <a name="step-9-review-connection"></a>手順 9: 接続を確認する
 
-コネクタを構成した後、接続を確認して発行することができます。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="next-steps"></a>次の手順
+## <a name="troubleshooting"></a>トラブルシューティング
 
-接続を公開した後、[検索結果] ページをカスタマイズする必要があります。 検索結果のカスタマイズについては、「 [検索結果ページをカスタマイズ](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)する」を参照してください。
+接続を発行し、結果ページをカスタマイズした後、管理センターの [コネクタ]タブで状態を[確認できます](https://admin.microsoft.com)。 更新と削除を行う方法については、「コネクタの管理」 [を参照してください](manage-connector.md)。
+
+## <a name="limitations"></a>制限事項
+
+ServiceNow Graph コネクタの最新リリースには、次の制限があります。
+
+- 組織内のすべてのユーザーが使用できるナレッジ項目のインデックス作成は、一般に利用可能な機能です。
+- *[検索のアクセス許可の* 管理] ステップでこのデータ ソース機能にアクセスできるユーザーだけがプレビュー段階であり、ユーザー条件のアクセス許可 [のみを](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) 処理します。 その他の種類のアクセス許可は、検索結果には適用されません。
+- 高度なスクリプトを使用したユーザーの条件は、現在のプレビュー バージョンではサポートされていません。 アクセス制限を持つナレッジ項目には、すべてのユーザーのアクセスを拒否するインデックスが付けされ、サポートされるまでは検索結果に表示されません。

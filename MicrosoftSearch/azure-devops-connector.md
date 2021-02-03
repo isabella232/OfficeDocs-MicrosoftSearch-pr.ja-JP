@@ -1,8 +1,8 @@
 ---
-title: Microsoft Search 用 Azure DevOps connector
-ms.author: shgrover
-author: shakungrover05
-manager: jeffkizn
+title: Microsoft Search 用 Azure DevOps Graph コネクタ
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,78 +11,112 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用の Azure DevOps connector をセットアップする
-ms.openlocfilehash: b9c566e3e07bfca6d4d25b14915f0160f3928b15
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Microsoft Search 用の Azure DevOps Graph コネクタをセットアップする
+ms.openlocfilehash: 3d922a5384de8bf0ef3c6dfd80bd67ad9170eb66
+ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367552"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084940"
 ---
-# <a name="azure-devops-connector-preview"></a>Azure DevOps コネクタ (プレビュー)
+<!---Previous ms.author: shgrover --->
 
-Azure DevOps コネクタを使用すると、組織は Azure DevOps service のインスタンスで作業項目のインデックスを作成できます。 Azure DevOps からコネクタとインデックスコンテンツを構成すると、エンドユーザーは Microsoft Search でそれらのアイテムを検索できるようになります。
+# <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph コネクタ (プレビュー)
 
-この記事は、Microsoft 365 管理者または Azure DevOps コネクタを構成、実行、および監視するユーザーを対象としています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
+Azure DevOps Graph コネクタを使用すると、組織は Azure DevOps サービスのインスタンスで作業項目のインデックスを作成できます。 Azure DevOps からコネクタとインデックス コンテンツを構成すると、エンド ユーザーは Microsoft Search でそれらのアイテムを検索できます。
+
+> [!NOTE]
+> Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、Graph コネクタの一般的なセットアップ プロセスを理解してください。
+
+この記事は、ServiceNow Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、ServiceNow Graph コネクタにのみ適用する手順を示します。
 
 >[!IMPORTANT]
->Azure DevOps connector では、Azure DevOps cloud service のみがサポートされています。 Azure DevOps Server 2019、TFS 2018、tfs 2017、tfs 2015、tfs 2013 は、このコネクタではサポートされていません。 
+>Azure DevOps コネクタは、Azure DevOps クラウド サービスのみをサポートします。 Azure DevOps Server 2019、TFS 2018、TFS 2017、TFS 2015、および TFS 2013 は、このコネクタではサポートされていません。
 
-## <a name="connect-to-a-data-source"></a>データソースへの接続
+<!---## Before you get started-->
 
-Azure DevOps インスタンスに接続するには、Azure DevOps [組織](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) 名、そのアプリ ID、および OAuth 認証のクライアントシークレットが必要です。
+<!---Insert "Before you get started" recommendations for this data source-->
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターで Graph コネクタを追加する
+
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
+
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
+
+Azure DevOps インスタンスに接続するには、Azure [DevOps](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) 組織名、アプリ ID、OAuth 認証用のクライアント シークレットが必要です。
 
 ### <a name="register-an-app"></a>アプリを登録します
 
-Microsoft Search アプリがインスタンスにアクセスできるようにするには、Azure DevOps でアプリを登録する必要があります。 詳細については、「Azure DevOps のドキュメント」の「 [アプリを登録](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app)する方法」を参照してください。 
+Microsoft Search アプリがインスタンスにアクセスできるよう、Azure DevOps にアプリを登録します。 詳しくは、アプリの登録方法に関する Azure DevOps の [ドキュメントをご覧ください](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app&preserve-view=true)。
 
-次の表に、アプリ登録フォームに記入する方法についてのガイダンスを示します。
+次の表に、アプリ登録フォームに入力する方法のガイダンスを示します。
 
- **必須フィールド** | **説明**      | **推奨値** 
---- | --- | --- 
-| Company Name         | これは会社の名前です。 | 適切な値を使用する   | 
-| アプリケーション名     | この一意の値は、承認しているアプリケーションを識別します。    | Microsoft Search     | 
-| アプリケーション web サイト  | この必須フィールドは、コネクタのセットアップ時に Azure DevOps インスタンスへのアクセスを要求するアプリケーションの URL です。  | <https://gcs.office.com/>                | 
-| 認証コールバック URL        | 承認サーバーのリダイレクト先となる必要なコールバック URL。 | <https://gcs.office.com/v1.0/admin/oauth/callback>| 
-| 承認されたスコープ | これは、アプリケーションへのアクセスの範囲です。 | Id (読み取り)、作業項目 (読み取り)、変数グループ (読み取り)、プロジェクトとチーム (読み取り)、グラフ (読み取り) の各スコープを選択します。| 
+必須フィールド | 説明 | 推奨値
+--- | --- | ---
+| Company Name         | 会社の名前。 | 適切な値を使用する   |
+| アプリケーション名     | 承認するアプリケーションを識別する一意の値。    | Microsoft Search     |
+| アプリケーション Web サイト  | コネクタのセットアップ中に Azure DevOps インスタンスへのアクセスを要求するアプリケーションの URL。 (必須)。  | https://<span>gcs.office.</span>com/
+| 認証コールバック URL        | 認証サーバーがリダイレクトする必須のコールバック URL。 | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
+| 承認されたスコープ | アプリケーションのアクセスのスコープ | Id (読み取り)、作業項目 (読み取り)、変数グループ (読み取り)、プロジェクトとチーム (読み取り)、グラフ (読み取り) の範囲を選択します。|
 
-上記の詳細を使用してアプリを登録する場合は、コネクタの構成に使用する **アプリ ID** と **クライアントシークレット** を取得します。
+上記の詳細を使用してアプリを登録すると、コネクタの構成に使用されるアプリ **ID** とクライアント シークレットが表示されます。
 
 >[!NOTE]
->Azure DevOps に登録されているすべてのアプリへのアクセスを取り消すには、Azure DevOps インスタンスの右上にある [ユーザーの設定] に移動します。 [プロファイル] をクリックし、作業ウィンドウの [セキュリティ] セクションで [承認] をクリックします。 承認済み OAuth アプリの上にカーソルを移動すると、アプリの詳細の隅にある [取り消し] ボタンが表示されます。
+>Azure DevOps に登録されているアプリへのアクセスを取り消す場合は、Azure DevOps インスタンスの右側にあるユーザー設定に移動します。 [プロファイル] を選択し、作業ウィンドウの [セキュリティ] セクションで [承認] を選択します。 承認された OAuth アプリの上にマウス ポインターを移動すると、アプリの詳細の隅に [取り消し] ボタンが表示されます。
 
 ### <a name="connection-settings"></a>接続設定
 
-Microsoft Search アプリを Azure DevOps に登録した後、接続設定の手順を完了できます。 組織名、アプリ ID、およびクライアントシークレットを入力します。
+Microsoft Search アプリを Azure DevOps に登録した後、接続設定の手順を完了できます。 組織名、アプリ ID、クライアント シークレットを入力します。
 
 ![接続アプリケーションの設定](media/ADO_Connection_settings_2.png)
 
-## <a name="select-projects-and-fields"></a>プロジェクトとフィールドの選択
+### <a name="configure-data-select-projects-and-fields"></a>データの構成: プロジェクトとフィールドの選択
 
-接続には、組織全体または特定のプロジェクトのいずれかにインデックスを作成するかどうかを選択できます。
+接続を選択して、組織全体または特定のプロジェクトのインデックスを作成できます。
 
-組織全体のインデックスを作成することを選択すると、組織内のすべてのプロジェクトの項目にインデックスが付けられます。 新しいプロジェクトとアイテムは、作成後に次のクロール中にインデックス処理されます。 個別のプロジェクトを選択した場合は、それらのプロジェクトの作業項目のみがインデックス作成されます。
+組織全体のインデックスを作成する場合は、組織内のすべてのプロジェクト内のアイテムにインデックスが作成されます。 新しいプロジェクトとアイテムは、作成後の次回のクロール時にインデックスが作成されます。
+
+個々のプロジェクトを選択すると、それらのプロジェクトの作業項目だけがインデックス付けされます。
 
 ![データを構成する](media/ADO_Configure_data.png)
 
-次に、接続するフィールドを選択して、次に進む前にこれらのフィールドにデータをプレビューします。
+次に、接続でこれらのフィールドのデータのインデックスを作成およびプレビューするフィールドを選択してから、次に進みます。
 
-![プロパティの選択](media/ADO_choose_properties.png)
+![プロパティを選択する](media/ADO_choose_properties.png)
 
-## <a name="manage-search-permissions"></a>検索アクセス許可を管理する
+## <a name="step-4-manage-search-permissions"></a>手順 4: 検索権限を管理する
 
-Azure DevOps コネクタは、このデータソースまたは **すべて** のユーザーにアクセス権を  **持つユーザーのみ** に表示される検索アクセス許可をサポートします。 **このデータソースへのアクセス** 権を持つユーザーのみを選択した場合は、Azure DevOps の組織、プロジェクト、またはエリアのパスレベルで、ユーザーまたはグループに対するアクセス許可に基づいて、インデックス付きのデータが検索結果に表示されます。 [すべてのユーザー] を選択すると、すべてのユーザーの検索結果にインデックス **付きのデータ** が表示されます。
+Azure DevOps コネクタは、このデータ ソースにアクセスできるユーザーまたはすべてのユーザーにのみ表示される検索アクセス  **許可を** サポート **しています**。 [このデータソースにアクセスできるユーザーのみ] を選択すると、Azure DevOps の組織、プロジェクト、またはエリア パス レベルのユーザーまたはグループへのアクセス許可に基づいて、そのユーザーにアクセスできるユーザーの検索結果にインデックス付きデータが表示されます。 [すべてのユーザー] **を** 選択すると、すべてのユーザーの検索結果にインデックス付きデータが表示されます。
 
-## <a name="assign-property-labels"></a>プロパティのラベルを割り当てる
+## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 
-各ラベルに source プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、いくつかのプロパティラベルを使用することで、検索の関連性が向上し、エンドユーザーの検索結果がより正確になります。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 
-## <a name="manage-schema"></a>スキーマを管理する
+## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
 
-[**スキーマの管理**] 画面で、プロパティに関連付けられているスキーマの属性 (**クエリ** 可能、**検索****可能、取得可能、および****絞り込み可能な**) を変更し、オプションのエイリアスを追加して、 **Content** プロパティを選択することができます。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 
-## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
+## <a name="step-7-choose-refresh-settings"></a>手順 7: 更新設定を選択する
 
-Azure DevOps コネクタは、フルクロールと増分クロールの両方の更新スケジュールをサポートしています。 フルクロールで、以前に Microsoft 検索インデックスと同期された削除済みの作業項目が検索されます。 フルクロールを実行して、すべての作業項目を同期します。 新しい作業項目と更新を既存の作業項目に同期するには、増分クロールをスケジュールする必要があります。
+Azure DevOps コネクタは、フル クロールと増分クロールの両方の更新スケジュールをサポートしています。
+増分クロールの場合は 1 時間、フル クロールの場合は 1 日をお勧めします。
 
-推奨されるスケジュールは、増分クロールの場合は1時間、フルクロールの場合は1日です。 
+## <a name="step-8-review-connection"></a>手順 8: 接続を確認する
+
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->
