@@ -1,8 +1,8 @@
 ---
-title: 'Microsoft Search パブリックプレビュー: 使用条件'
-ms.author: anfowler
-author: adefowler
-manager: shohara
+title: 'Microsoft Search パブリック プレビュー: 使用条件'
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,19 +11,20 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Graph connector の正規の使用条件 microsoft Search のパブリックプレビュー
-ms.openlocfilehash: d9a8e4d55904edac845a46ed6b524ed09433135b
-ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
+description: Microsoft Search の Microsoft Graph コネクタパブリック プレビューの法的条件
+ms.openlocfilehash: fde39e4a2a59f99158570f1fbf8afa659e362161
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382572"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099319"
 ---
-# <a name="microsoft-graph-connectors-terms-of-use"></a><span data-ttu-id="66f24-103">Microsoft Graph コネクタ: 使用条件</span><span class="sxs-lookup"><span data-stu-id="66f24-103">Microsoft Graph connectors: Terms of Use</span></span>
+<!---Previous ms.author: anfowler --->
 
-<span data-ttu-id="66f24-104">Microsoft Graph のコネクタを使用すると、サードパーティの使用条件が適用される場合があります。</span><span class="sxs-lookup"><span data-stu-id="66f24-104">Your use of Microsoft Graph Connectors may be subject to third party terms and conditions.</span></span> <span data-ttu-id="66f24-105">Microsoft は、お客様の契約にサードパーティが関係しているものではありません。また、サードパーティの用語やサービスに関する懸念事項や質問は、サードパーティに案内する必要があります。</span><span class="sxs-lookup"><span data-stu-id="66f24-105">Microsoft is not a party to your agreement(s) with third parties and any concerns or questions regarding third party terms or services should be directed to the third party.</span></span> <span data-ttu-id="66f24-106">データのデータコントローラーとして、Microsoft 365 テナントへのデータのインデックス作成を担当します。</span><span class="sxs-lookup"><span data-stu-id="66f24-106">You, as the data controller for your data, are responsible for the indexing of data into your Microsoft 365 tenant.</span></span>
+# <a name="microsoft-graph-connectors-terms-of-use"></a><span data-ttu-id="ad27c-103">Microsoft Graph コネクタ: 利用規約</span><span class="sxs-lookup"><span data-stu-id="ad27c-103">Microsoft Graph connectors: Terms of Use</span></span>
 
-<span data-ttu-id="66f24-107">Microsoft は、Microsoft 365 テナントにインデックスを作成する前に、サードパーティのデータに関しては表現、保証、または保証を行いません。</span><span class="sxs-lookup"><span data-stu-id="66f24-107">Microsoft makes no representation, warranty, or guarantee in relation to the third party data prior to indexing into your Microsoft 365 tenant.</span></span>  <span data-ttu-id="66f24-108">Microsoft は、サードパーティのデータのインデックスを作成する際に発生する可能性のあるエラーに関して一切責任を負いません。</span><span class="sxs-lookup"><span data-stu-id="66f24-108">Microsoft assumes no liability for errors that may occur during the indexing of third party data.</span></span>  <span data-ttu-id="66f24-109">サードパーティのプロバイダーから供給されるデータは、構成に従って、"as is" というキーワードに基づいて提供されることに同意します。</span><span class="sxs-lookup"><span data-stu-id="66f24-109">You agree that any data sourced from a third party provider is provided "as is," and with respect to the index, is provided subject to your configuration.</span></span> <span data-ttu-id="66f24-110">Microsoft 365 テナントのインデックス化されたデータは、 [オンラインサービスの用語](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)、プライバシーに関する [声明](https://privacy.microsoft.com/privacystatement)、および microsoft のその他のデータの責務を目的として、"顧客データ" と見なされます。</span><span class="sxs-lookup"><span data-stu-id="66f24-110">Indexed data in your Microsoft 365 tenant will be considered "Customer Data" for purposes of the [Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English), [Privacy Statement](https://privacy.microsoft.com/privacystatement), and Microsoft's other data obligations.</span></span>
+<span data-ttu-id="ad27c-104">Microsoft Graph コネクタの使用は、サードパーティの使用条件の対象となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="ad27c-104">The use of Microsoft Graph Connectors may be subject to third-party terms and conditions.</span></span> <span data-ttu-id="ad27c-105">Microsoft は、第三者との契約の当事者ではない。</span><span class="sxs-lookup"><span data-stu-id="ad27c-105">Microsoft isn't a party to your agreement(s) with third parties.</span></span> <span data-ttu-id="ad27c-106">サード パーティの使用条件またはサービスに関する懸念事項や質問は、第三者に指示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad27c-106">Any concerns or questions about third-party terms or services should be directed to the third party.</span></span> <span data-ttu-id="ad27c-107">Microsoft 365 テナントへのデータのインデックス作成は、お客様のデータのデータコントローラーとして行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad27c-107">You're responsible for the indexing of data into your Microsoft 365 tenant, as the data controller for your data.</span></span>
 
-<span data-ttu-id="66f24-111">M365 でお客様のデータを使用する方法の詳細については、 [オンラインサービス](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) の使用条件とプライバシーに関する [声明](https://privacy.microsoft.com/privacystatement)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="66f24-111">For further information on how we use Customer Data in M365, please consult the [Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) and [Privacy Statement](https://privacy.microsoft.com/privacystatement).</span></span> <span data-ttu-id="66f24-112">[セキュリティセンター](https://www.microsoft.com/trust-center)にアクセスすることによって、データ保護とプライバシーに対する Microsoft のコミットメントに関する詳細を確認することもできます。</span><span class="sxs-lookup"><span data-stu-id="66f24-112">You can also find out more about Microsoft's commitments to data protection and privacy by visiting our [Trust Center](https://www.microsoft.com/trust-center).</span></span>
+<span data-ttu-id="ad27c-108">Microsoft は、Microsoft 365 テナントにインデックスを作成する前に、サードパーティのデータに関して一切の表現、保証、保証を行う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ad27c-108">Microsoft makes no representation, warranty, or guarantee in relation to the third-party data prior to indexing into your Microsoft 365 tenant.</span></span>  <span data-ttu-id="ad27c-109">Microsoft は、サードパーティデータのインデックス作成中に発生する可能性があるエラーに対して一切の責任を負う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ad27c-109">Microsoft assumes no liability for errors that may occur during the indexing of third-party data.</span></span>  <span data-ttu-id="ad27c-110">お客様は、サードパーティのプロバイダーから提供されるデータは「現在の形式」で提供され、インデックスに関して、お客様の構成に応じて提供することに同意します。</span><span class="sxs-lookup"><span data-stu-id="ad27c-110">You agree that any data sourced from a third-party provider is provided "as is," and with respect to the index, is provided subject to your configuration.</span></span> <span data-ttu-id="ad27c-111">Microsoft 365 テナントのインデックス付きデータは、[オンライン](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)サービスの使用条件、プライバシーに関する声明[](https://privacy.microsoft.com/privacystatement)、および Microsoft のその他のデータ義務の目的で「顧客データ」と見なされます。</span><span class="sxs-lookup"><span data-stu-id="ad27c-111">Indexed data in your Microsoft 365 tenant will be considered "Customer Data" for purposes of the [Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English), [Privacy Statement](https://privacy.microsoft.com/privacystatement), and Microsoft's other data obligations.</span></span>
 
+<span data-ttu-id="ad27c-112">Microsoft 365 で顧客データを使用する方法の詳細については、 [オンライン](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) サービスの使用条件とプライバシーに関する声明を [参照してください](https://privacy.microsoft.com/privacystatement)。</span><span class="sxs-lookup"><span data-stu-id="ad27c-112">For more information on how we use Customer Data in Microsoft 365, see the [Online Services Terms](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) and [Privacy Statement](https://privacy.microsoft.com/privacystatement).</span></span> <span data-ttu-id="ad27c-113">データ保護とプライバシーに対する Microsoft の取り組みについて詳しくは、セキュリティ センターをご [覧ください](https://www.microsoft.com/trust-center)。</span><span class="sxs-lookup"><span data-stu-id="ad27c-113">You can also find out more about Microsoft's commitments to data protection and privacy by visiting our [Trust Center](https://www.microsoft.com/trust-center).</span></span>
