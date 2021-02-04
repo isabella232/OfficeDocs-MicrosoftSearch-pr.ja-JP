@@ -25,6 +25,7 @@
 #### [Azure SQL および Microsoft SQL Server](MSSQL-connector.md)
 #### [大企業の Web サイト](enterprise-web-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
+#### [Oracle SQL] (プレビュー)(OracleSQL-connector.md)
 #### [Salesforce (プレビュー)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## 接続を管理する
