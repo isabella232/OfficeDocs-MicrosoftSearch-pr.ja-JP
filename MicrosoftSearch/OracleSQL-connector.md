@@ -13,23 +13,23 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Microsoft Search 用の Oracle SQL Graph コネクタをセットアップします。
-ms.openlocfilehash: a13c9ea71b115e84d313489214d424f77337a062
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084976"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099337"
 ---
 <!---Previous ms.author:vivg --->
 
 # <a name="oracle-sql-graph-connector"></a>Oracle SQL Graph コネクタ
 
-Oracle SQL Graph コネクタを使用すると、組織はオンプレミスの Oracle データベースからデータを検出してインデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソース データを使用してインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 Oracle SQLコネクタを使用すると、特定のユーザーの検索結果へのアクセスを制限できます。
+Oracle SQL Graph コネクタを使用すると、組織はオンプレミスの Oracle データベースからデータを検出してインデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソース データでインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 Oracle SQLコネクタを使用すると、特定のユーザーの検索結果へのアクセスを制限できます。
 
 > [!NOTE]
 > Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、Graph コネクタの一般的なセットアップ プロセスを理解してください。
 
-この記事は、ServiceNow Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、ServiceNow Graph コネクタにのみ適用する手順を示します。 この記事には、トラブルシューティングと [制限事項に関する](#troubleshooting) 情報も [含まれています](#limitations)。
+この記事は、Oracle および Graph コネクタを構成、実行、および監視するSQL対象です。 一般的なセットアップ プロセスを補完し、Oracle SQL Graph コネクタにのみ適用される手順を示します。 この記事には、トラブルシューティングと [制限事項に関する](#troubleshooting) 情報も [含まれています](#limitations)。
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
@@ -77,7 +77,7 @@ Oracle SQLコネクタの場合は、ホスト名、ポートとサービス (�
 
 上記のクエリでの各 ACL 列の使用について、以下に説明します。 次の一覧では、4 つの **アクセス制御メカニズムについて説明します**。
 
-* **AllowedUsers**: このオプションは、検索結果にアクセスできるユーザー ID のリストを指定します。 次の例では、ユーザーのリスト: john@contoso.com、keith@contoso.com、および lisa@contoso.com は、OrderId = 12 のレコードにのみアクセスできます。
+* **AllowedUsers**: このオプションは、検索結果にアクセスできるユーザー ID の一覧を指定します。 次の例では、ユーザーのリスト: john@contoso.com、keith@contoso.com、および lisa@contoso.com は、OrderId = 12 のレコードにのみアクセスできます。
 * **AllowedGroups**: このオプションは、検索結果にアクセスできるユーザーのグループを指定します。 次の例では、グループsales-team@contoso.com OrderId = 12 のレコードにのみアクセスできます。
 * **DeniedUsers**: このオプションは、検索結果にアクセスできないユーザーのリストを指定します。 次の例では、ユーザー john@contoso.comおよび keith@contoso.com OrderId = 13 のレコードにアクセスできないのに対し、他のすべてのユーザーは、このレコードにアクセスできます。
 * **DeniedGroups**: このオプションは、検索結果にアクセスできないユーザーのグループを指定します。 次の例では、グループ engg-team@contoso.comおよび pm-team@contoso.com は OrderId = 15 のレコードにアクセスすることはできませんが、他のすべてのユーザーは、このレコードにアクセスできます。  
@@ -108,13 +108,13 @@ Oracle SQLコネクタの場合は、ホスト名、ポートとサービス (�
 * `WHERE (CreatedDateTime > @watermark)`. 予約済みのキーワードで透かしの列名を引用します `@watermark` 。 透かしの列は昇順でのみ並べ替えできます。
 * `ORDER BY CreatedDateTime ASC`. 透かしの列を昇順で並べ替えます。
 
-次の図に示す構成では `CreatedDateTime` 、選択されている透かし列です。 行の最初のバッチをフェッチするには、透かし列のデータ型を指定します。 この場合、データ型は次の値です `DateTime` 。
+次の図に示す構成では `CreatedDateTime` 、選択されている透かしの列です。 行の最初のバッチをフェッチするには、透かし列のデータ型を指定します。 この場合、データ型は次の値です `DateTime` 。
 
 ![透かし列の構成](media/MSSQL-watermark.png)
 
 最初のクエリは、"CreatedDateTime > January 1, 1753 00:00:00" (DateTime データ型の最小値) を使用して、最初の **N** 行数をフェッチします。 最初のバッチがフェッチされた後、行が昇順で並べ替えらた場合、バッチで返される最高値はチェックポイントとして `CreatedDateTime` 保存されます。 たとえば、2019 年 3 月 1 日 03:00:00 です。 次に、クエリで "CreatedDateTime > March 1, 2019 03:00:00" を使用して **N** 行の次のバッチがフェッチされます。
 
-### <a name="skipping-soft-deleted-rows-optional"></a>回復可能な削除によって削除された行のスキップ (省略可能)
+### <a name="skipping-soft-deleted-rows-optional"></a>回復可能な削除によって削除された行をスキップする (省略可能)
 
 データベース内の回復可能な削除によって削除された行のインデックス作成を除外するには、行が削除されたかどうかを示す回復可能な削除によって削除される列の名前と値を指定します。
 
@@ -181,7 +181,7 @@ Oracle SQL コネクタは、フル クロールと増分クロールの両方�
 | ------------ | ------------ | ------------ |
 | データベース設定 | データベース サーバーからのエラー: 接続要求がタイム アウトしました | ホスト名が無効です <br> ホストに到達できない |
 | データベース設定 | データベース サーバーからのエラー: ORA-12541: TNS: リスナーなし | 無効なポート |
-| データベース設定 | データベース サーバーからのエラー: ORA-12514: TNS: リスナーは現在、コネクタ記述子で要求されたサービスを知らない | 無効なサービス (データベース) 名 |
+| データベース設定 | データベース サーバーからのエラー: ORA-12514: TNS: リスナーは現在、コネクタ記述子で要求されたサービスを知らない | 無効なサービス (データベース) 名です |
 | データベース設定 | データベース サーバーからのエラー: ユーザー ' ' のログイン `user` に失敗しました。 | 無効なユーザー名またはパスワード |
 
 ## <a name="limitations"></a>制限事項

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Enterprise Web サイト Graph コネクタをセットアップする
-ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084886"
+ms.locfileid: "50097432"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,9 +28,9 @@ ms.locfileid: "50084886"
 Enterprise Websites Graph コネクタを使用すると、組織は内部向け Web サイトの記事やコンテンツに **インデックスを作成できます**。 コネクタを構成し、Web サイトからコンテンツを同期すると、エンド ユーザーは任意の Microsoft Search クライアントからそのコンテンツを検索できます。
 
 > [!NOTE]
-> Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、一般的な Graph コネクタのセットアップ プロセスについて説明します。
+> Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、一般的な Graph コネクタのセットアップ プロセスについて理解してください。
 
-この記事は、ServiceNow Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、ServiceNow Graph コネクタにのみ適用する手順を示します。 この記事には、トラブルシューティングと [制限事項に関する](#troubleshooting) 情報も [含まれています](#limitations)。
+この記事は、エンタープライズ Web サイト コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、Enterprise Web サイト コネクタにのみ適用される手順を示します。 この記事には、トラブルシューティングと [制限事項に関する](#troubleshooting) 情報も [含まれています](#limitations)。
 
 <!---## Before you get started-->
 
@@ -52,7 +52,7 @@ Enterprise Websites Graph コネクタを使用すると、組織は内部向け
 
 ### <a name="url"></a>URL
 
-URL フィールドを使用して、クロールする Web サイトのルートを指定します。 エンタープライズ Web サイト コネクタは、この URL を開始点として使用し、この URL からのすべてのリンクをクロールに従います。
+URL フィールドを使用して、クロールする Web サイトのルートを指定します。 エンタープライズ Web サイト コネクタは、この URL を開始点として使用し、この URL のすべてのリンクに従ってクロールします。
 
 ### <a name="crawl-mode-cloud-or-on-premises-preview"></a>クロール モード: クラウドまたはオンプレミス (プレビュー)
 
@@ -67,7 +67,7 @@ URL フィールドを使用して、クロールする Web サイトのルー�
 
 ### <a name="authentication"></a>認証
 
-基本認証には、ユーザー名とパスワードが必要です。 Microsoft 365 管理センターを使用して [、このボット アカウントを作成します](https://admin.microsoft.com)。
+基本認証には、ユーザー名とパスワードが必要です。 [Microsoft 365](https://admin.microsoft.com)管理センターを使用して、このボット アカウントを作成します。
 
 Azure ADを使用した OAuth 2.0 には、 [リソース](https://docs.microsoft.com/azure/active-directory/) ID、クライアント ID、およびクライアント シークレットが必要です。 OAuth 2.0 はクラウド モードでのみ動作します。
 
@@ -82,11 +82,11 @@ Azure ADを使用した OAuth 2.0 には、 [リソース](https://docs.microsof
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>手順 3a: 除外する URL を追加する (オプションのクロール制限)
 
-ページがクロールされるのを防ぐには、robots.txt ファイルで禁止する方法と除外一覧に追加する方法の 2 つがあります。
+ページがクロールされるのを防ぐには、robots.txt ファイルでページを許可するか、除外一覧に追加する方法の 2 つがあります。
 
 ### <a name="support-for-robotstxt"></a>サービスのrobots.txt
 
-コネクタは、ルート サイト用の robots.txt ファイルが存在するかどうかを確認し、存在する場合は、そのファイル内で見つかったルート案内に従って従います。 コネクタでサイト上の特定のページまたはディレクトリをクロールしない場合は、robots.txt ファイルの "Disallow" 宣言でこれらのページまたはディレクトリを呼び出します。
+コネクタは、ルート サイト用の robots.txt ファイルが存在するかどうかを確認し、存在する場合は、そのファイル内で見つかったルート案内に従って尊重します。 コネクタがサイト上の特定のページまたはディレクトリをクロールしない場合は、robots.txt ファイルの "Disallow" 宣言でこれらのページまたはディレクトリを呼び出します。
 
 ### <a name="add-urls-to-exclude"></a>除外する URL を追加する
 
@@ -94,7 +94,7 @@ Azure ADを使用した OAuth 2.0 には、 [リソース](https://docs.microsof
 
 ## <a name="step-4-assign-property-labels"></a>手順 4: プロパティ ラベルを割り当てる
 
-オプションのメニューから選択すると、ソース プロパティを各ラベルに割り当てできます。 この手順は必須ではありませんが、一部のプロパティ ラベルを使用すると、検索の関連性が向上し、エンド ユーザーの検索結果の精度が向上します。
+オプションのメニューから選択すると、各ラベルにソース プロパティを割り当てできます。 この手順は必須ではありませんが、一部のプロパティ ラベルを使用すると、検索の関連性が向上し、エンド ユーザーの検索結果の精度が向上します。
 
 ## <a name="step-5-manage-schema"></a>手順 5: スキーマを管理する
 
@@ -106,7 +106,7 @@ Azure ADを使用した OAuth 2.0 には、 [リソース](https://docs.microsof
 
 ## <a name="step-7-set-the-refresh-schedule"></a>手順 7: 更新スケジュールを設定する
 
-エンタープライズ Web サイト コネクタは、完全な更新のみをサポートします。 つまり、コネクタは更新の間に Web サイトのすべてのコンテンツを再スキャンします。 コネクタがコンテンツをクロールするのに十分な時間を取得するには、大規模な更新スケジュール間隔を設定することをお勧めします。 1 週間から 2 週間の間にスケジュールされた更新をお勧めします。
+エンタープライズ Web サイト コネクタは、完全な更新のみをサポートします。 つまり、コネクタは更新の間に Web サイトのすべてのコンテンツを再スキャンします。 コネクタがコンテンツをクロールするのに十分な時間を取得するには、更新スケジュール間隔を大きく設定することをお勧めします。 1 週間から 2 週間の間にスケジュールされた更新をお勧めします。
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続を確認する
 

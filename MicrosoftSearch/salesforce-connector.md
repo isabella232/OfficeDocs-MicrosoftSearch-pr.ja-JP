@@ -12,23 +12,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用に Salesforce Graph コネクタをセットアップする
-ms.openlocfilehash: 0b80bf7d3296236887d1cc1bf8e75da976b6a1f1
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50085022"
+ms.locfileid: "50097450"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector-preview"></a>Salesforce Graph コネクタ (プレビュー)
 
-Salesforce Graph コネクタを使用すると、組織は Salesforce インスタンス内の連絡先、機会、見込み客、およびアカウントオブジェクトのインデックスを作成できます。 Salesforce からのコネクタとインデックス コンテンツを構成すると、エンド ユーザーは任意の Microsoft Search クライアントからそれらのアイテムを検索できます。
+Salesforce Graph コネクタを使用すると、組織は Salesforce インスタンスの連絡先、機会、見込み客、およびアカウントオブジェクトにインデックスを作成できます。 Salesforce からのコネクタとインデックス コンテンツを構成すると、エンド ユーザーは任意の Microsoft Search クライアントからそれらのアイテムを検索できます。
 
 > [!NOTE]
 > Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、Graph コネクタの一般的なセットアップ プロセスを理解してください。
 
-この記事は、ServiceNow Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、Salesforce Graph コネクタにのみ適用される手順を示します。 この記事には、制限事項に関する [情報も含まれています](#limitations)。
+この記事は、Salesforce Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、Salesforce Graph コネクタにのみ適用される手順を示します。 この記事には、制限事項に関する [情報も含まれています](#limitations)。
 
 >[!IMPORTANT]
 >Salesforce Graph コネクタは現在、夏の '19 以降をサポートしています。
@@ -39,11 +39,11 @@ Salesforce インスタンスに接続するには、Salesforce インスタン�
 
 - Salesforce インスタンスにログインし、[セットアップ] に移動します。
 
-- [アプリ] ->に移動します。
+- Apps -> App Manager に移動します。
 
 - [新しい **接続済みアプリ] を選択します**。
 
-- API セクションを次のように完了します。
+- 次のように API セクションを完成します。
 
     - [Oauth の設定を有効 **にする] チェック ボックスをオンにします**。
 
@@ -115,7 +115,7 @@ Salesforce インスタンスから取得したクライアント ID とクラ�
 Salesforce インスタンスからアクセス制御リスト (ACL) を取り込むか、組織内のすべてのユーザーにこのデータ ソースからの検索結果の表示を許可することができます。 ACL には、Azure Active Directory (AAD) ID (Azure AD から Salesforce にフェデレーションされているユーザー)、Azure AD 以外の ID (Azure AD で対応する ID を持つネイティブの Salesforce ユーザー)、または両方が含まれます。
 
 >[!NOTE]
->Ping ID や secureAuth などのサード パーティ ID プロバイダーを使用する場合は、ID の種類として "非 AAD" を選択する必要があります。
+>Ping ID や secureAuth などのサードパーティの ID プロバイダーを使用する場合は、ID の種類として "非 AAD" を選択する必要があります。
 
 > [!div class="mx-imgBorder"]
 > ![管理者が完了した [アクセス許可の選択] 画面。管理者は、[このデータ ソースにアクセスできるユーザーのみ] オプションを選択し、ID の種類のドロップダウン メニューから [AAD] も選択しています。](media/salesforce-connector/sf6.png)
@@ -128,7 +128,7 @@ Salesforce インスタンスから ACL を取り込み、ID の種類として 
 
 ## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 
-オプションのメニューから選択すると、ソース プロパティを各ラベルに割り当てできます。 この手順は必須ではありませんが、一部のプロパティ ラベルを使用すると、検索の関連性が向上し、エンド ユーザーの検索結果が向上します。 既定では、"Title"、"URL"、"CreatedBy"、"LastModifiedBy" のようなラベルの一部には、既にソース プロパティが割り当てされています。
+オプションのメニューから選択すると、各ラベルにソース プロパティを割り当てできます。 この手順は必須ではありませんが、一部のプロパティ ラベルを使用すると、検索の関連性が向上し、エンド ユーザーの検索結果が向上します。 既定では、"Title"、"URL"、"CreatedBy"、"LastModifiedBy" のようなラベルの一部には、既にソース プロパティが割り当てされています。
 
 ## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
 
@@ -136,7 +136,7 @@ Salesforce インスタンスから ACL を取り込み、ID の種類として 
 絞り込み機能を使用すると、後でカスタム絞り込み条件またはフィルターとして使用できるプロパティを定義できます。  
 
 > [!div class="mx-imgBorder"]
-> ![各ソース プロパティのスキーマを選択します。 オプションは、クエリ、検索、取得、絞り込み](media/salesforce-connector/sf9.png)
+> ![各ソース プロパティのスキーマを選択します。 オプションは、クエリ、検索、取得、および絞り込み](media/salesforce-connector/sf9.png)
 
 ## <a name="step-7-set-the-refresh-schedule"></a>手順 7: 更新スケジュールを設定する
 
@@ -157,10 +157,10 @@ Salesforce コネクタは、現在、フル クロールの更新スケジュ�
 
 ## <a name="limitations"></a>制限事項
 
-- Graph コネクタでは、現在、Salesforce の個人グループを使用した、領域ベースの領域ベースの共有と共有はサポートされていません。
+- Graph コネクタは現在、Salesforce の個人グループを使用した、領域に基づく、領域ベースの共有と共有をサポートしています。
 - Graph コネクタが使用する Salesforce API には既知のバグがあります。この場合、現在、見込み客のプライベートな組織全体の既定値は尊重されません。  
 - フィールドにプロファイルに対してフィールド レベル セキュリティ (FLS) が設定されている場合、Graph コネクタは、その Salesforce 組織のプロファイルに対してそのフィールドを取り込まれません。その結果、ユーザーはそれらのフィールドの値を検索したり、結果に表示したりもできない可能性があります。  
-- [スキーマの管理] 画面には、これらの一般的な標準プロパティ名が 1 回表示され、オプションは **クエリ**、**検索**、取得、絞り込みであり、すべてまたはなしに適用されます。
+- [スキーマの管理] 画面には、これらの一般的な標準プロパティ名が 1 回表示され、オプションは **クエリ**、**検索**、**取得**、絞り込みであり、すべてまたはなしに適用されます。
     - 名前
     - Url
     - 説明

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用に MediaWiki Graph コネクタをセットアップする
-ms.openlocfilehash: 9d9d7a1ef9aeaba079f8cccef1ec4a4836768e8d
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: e2b2b7c506d92623dd0f68801312c1820b5b9d4e
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084985"
+ms.locfileid: "50097396"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +28,7 @@ MediaWiki Graph コネクタを使用すると、組織は MediaWiki ソフト�
 > [!NOTE]
 > Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、Graph コネクタの一般的なセットアップ プロセスを理解してください。
 
-この記事は、ServiceNow Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、MediaWiki Graph コネクタにのみ適用される手順を示します。 この記事には、制限事項に関する [情報も含まれています](#limitations)。
+この記事は、MediaWiki Graph コネクタを構成、実行、および監視するユーザーを対象にしています。 一般的なセットアップ プロセスを補完し、MediaWiki Graph コネクタにのみ適用される手順を示します。 この記事には、制限事項に関する [情報も含まれています](#limitations)。
 
 <!---## Before you get started-->
 
@@ -50,7 +50,7 @@ Wiki **URL を入力し** 、 **オプションのドロップダウン** メニ
 
 認証の種類として **[基本** ] を選択した場合は、Wiki の **ユーザー** 名と **パスワードを入力** する必要があります。
 
-認証の種類として **OAuth 2.0 AAD** を選択する場合は、Wiki インストールの **リソース ID** を指定する必要があります。 また、[AAD アプリケーションの登録]**ページで** 生成されたクライアント **ID** とクライアント シークレットも指定する必要があります。
+認証の種類として **OAuth 2.0 AAD** を選択した場合は、Wiki インストールの **リソース ID** を指定する必要があります。 また、AAD アプリケーション登録 **ページで生成** されたクライアント **ID** とクライアント シークレットも指定する必要があります。
 
 ## <a name="step-4-manage-search-permissions"></a>手順 4: 検索権限を管理する
 
@@ -86,4 +86,4 @@ MediaWiki コネクタには、プレビュー リリースで次の制限があ
 * クラウドベースの Wiki のみをサポートします。
 * Azure Active Directory または Azure 認証を使用する基本認証または OAuth 2.0 のみをサポートします。
 * インデックス作成用の名前空間の選択はサポートされていません。 Main 名前空間、Category 名前空間、および File 名前空間のみをインデックス化します。
-* アクセス制御リスト (ACL) をサポートしない。 したがって、インデックス付きページは組織内のすべてのユーザーに表示されます。
+* アクセス制御リスト (ACL) はサポートされていません。 したがって、インデックス付きページは組織内のすべてのユーザーに表示されます。

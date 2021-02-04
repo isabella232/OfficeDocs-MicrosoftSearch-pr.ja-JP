@@ -1,8 +1,8 @@
 ---
-title: ファイル共有コネクタ
-ms.author: rusamai
-author: rsamai
-manager: jameslau
+title: Microsoft Search 用のファイル共有 Graph コネクタ
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,25 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Microsoft Search のファイル共有コネクタをセットアップする
-ms.openlocfilehash: bf9fb730abd4ca6e42b681893525bbe3dd8a1419
-ms.sourcegitcommit: 249f41723dd6fda1e93ee1a8f3f7571ef066454b
+description: Microsoft Search のファイル共有 Graph コネクタをセットアップする
+ms.openlocfilehash: e8a68a1c6b9c2c8a8592fb915fe9bf846a758e77
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750899"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097423"
 ---
-# <a name="file-share-connector"></a>ファイル共有コネクタ
+<!---Previous ms.author: rusamai --->
+
+# <a name="file-share-graph-connector"></a>ファイル共有 Graph コネクタ
 
 ファイル共有 Graph コネクタを使用すると、組織内のユーザーはオンプレミスの Windows ファイル共有を検索できます。
 
-この記事は、Microsoft 365 管理者またはファイル共有コネクタを構成、実行、および監視するユーザーを対象にしています。 コネクタとコネクタの機能、制限事項、およびトラブルシューティングの手法を構成する方法について説明します。
+> [!NOTE]
+> Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、Graph コネクタの一般的なセットアップ プロセスを理解してください。
 
-## <a name="install-graph-connector-agent"></a>Graph コネクタ エージェントをインストールする
+## <a name="before-you-get-started"></a>使用を開始する前に
 
-Windows ファイル共有のインデックスを作成するには、Graph コネクタ エージェント ソフトウェアをインストール [して登録する必要](on-prem-agent.md) があります。
+### <a name="install-the-graph-connector-agent"></a>Graph コネクタ エージェントをインストールする
 
-## <a name="content-requirements"></a>コンテンツの要件
+Windows ファイル共有のインデックスを作成するには、Graph コネクタ エージェントをインストールして登録する必要があります。 詳細 [については、「Graph コネクタ エージェントのインストール」](on-prem-agent.md) を参照してください。  
+
+### <a name="content-requirements"></a>コンテンツの要件
 
 ### <a name="file-types"></a>ファイルの種類
 
@@ -40,30 +45,51 @@ Windows ファイル共有のインデックスを作成するには、Graph コ
 
 サポートされるファイル の最大サイズは 100 MB です。 100 MB を超えるファイルにはインデックスが作成されません。 処理後の最大サイズ制限は 4 MB です。 ファイルのサイズが 4 MB に達すると処理が停止します。 したがって、ファイル内に存在する一部の語句は検索に使用できない場合があります。
 
-## <a name="connect-to-a-data-source"></a>データ ソースに接続する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターで Graph コネクタを追加する
+
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
+
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
 [データ ソース **への接続] ページ** で、[ **ファイル共有]** を選択し、名前、接続 ID、および説明を入力します。 次のページで、ファイル共有へのパスを指定し、以前にインストールした Graph コネクタ エージェントを選択します。 ファイル共有内のすべてのファイルへの読み取りアクセス権を持つ [Microsoft Windows](https://microsoft.com/windows) ユーザー アカウントの資格情報を入力します。
 
-## <a name="preserve-last-access-time"></a>最終アクセス時刻を保持する
+### <a name="preserve-last-access-time"></a>最終アクセス時刻を保持する
 
 コネクタがファイルをクロールしようとすると、そのメタデータの "最終アクセス時刻" フィールドが更新されます。 アーカイブ ソリューションとバックアップ ソリューションのフィールドに依存し、コネクタがアクセスするときに更新しない場合は、[詳細設定] ページでこのオプション **を構成** できます。
 
-## <a name="manage-search-permissions"></a>検索のアクセス許可を管理する
+## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
 
 共有アクセス制御リストまたは新しいテクノロジ ファイル システム (NTFS) アクセス制御リストに基づいて、任意のファイルを検索するアクセス許可を制限できます。 アクセス制御リストの共有を使用する場合は、[詳細設定] ページで適切 **なオプションを選択** します。 NTFS アクセス制御リストを使用する場合は、[検索アクセス許可の管理] ページ **で適切なオプションを選択** します。
 
-## <a name="assign-property-labels"></a>プロパティ ラベルを割り当てる
+## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 
-オプションのメニューから選択すると、各ラベルにソース プロパティを割り当てできます。 この手順は必須ではありませんが、一部のプロパティ ラベルを使用すると、検索の関連性が向上し、エンド ユーザーの検索結果の精度が向上します。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="manage-schema"></a>スキーマを管理する
+## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
 
-[スキーマの管理] 画面で、プロパティに関連付けられているスキーマ属性 **(クエリ** 可能、**検索** 可能、取得可能、絞り込み **可能)** を変更し、オプションのエイリアスを追加して **、Content** プロパティを選択できます。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="set-the-refresh-schedule"></a>更新スケジュールを設定する
+## <a name="step-7-choose-refresh-settings"></a>手順 7: 更新設定を選択する
 
-推奨される既定の更新スケジュール間隔は 15 分ですが、設定に基づいて変更できます。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="result-layout"></a>結果レイアウト
+## <a name="step-8-review-connection"></a>手順 8: 接続を確認する
 
-ファイル 共有コネクタには、ファイル パスへの移動に役立つ適切なアイコンとコントロールが含まれていますので、既定の結果レイアウトを使用してファイル共有コネクタの結果を表示することをお勧めします。 新しい結果レイアウトを作成すると、既定のレイアウトが上書きされます。
+一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->
