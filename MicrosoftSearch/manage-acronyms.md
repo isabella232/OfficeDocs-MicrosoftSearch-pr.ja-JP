@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: ff79e3d741e10d401873c29d86739e61c9f53329
-ms.sourcegitcommit: e6ceb07cae208648dadd5452a077414ab5a4513f
+ms.openlocfilehash: 45d3cc7b33f27d2f4e77d8099fbfa91e01aabcbb
+ms.sourcegitcommit: ef94ffd6111acb929c8343f0f4f82ea109b68fb6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49728008"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122158"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -53,7 +53,7 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 
 ### <a name="set-up-admin-curated-acronyms"></a>管理者が選択した頭字語を設定する
 
-検索管理者は、Microsoft Search 管理センターの[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)頭字語タブに頭字語[を追加できます](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。 すべての内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 これらの頭字語は、発行済みまたは下書き **状態** に **追加** できます。
+検索管理者は、Microsoft Search 管理センターの[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)[頭字語] タブに頭字語[を追加できます](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。 すべての内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 これらの頭字語は、発行済みまたは下書き **状態** に **追加** できます。
 
 **公開状態**。 頭字語は、Microsoft Search を通じて組織のユーザーが使用できます。
 
@@ -64,9 +64,9 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 
 頭字語を個別に追加したり、CSV ファイルに一括インポートすることができます。 次の表に示すフィールドを使用して CSV ファイルをアップロードします:
 
-| 頭字語 (必須) | 展開 (必須) | 説明  | ソース | 状態 (必須) |
-| --------- | --------- | ---------- | --------- |--------- |
-| *XXX* | *略語のスペル* |  | *URL* | *公開または下書き* |
+| 頭字語 (必須) | 拡張 (必須) | Url | 説明  | State (Mandatory) | 最終更新日時 | 最終更新日者 | ID |
+| --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
+| *XXX* | *略語のスペル* | *Source* |  | *公開または下書き* |  |  |  |
 
 ### <a name="csv-fields"></a>CSV フィールド
 
@@ -108,9 +108,9 @@ Microsoft Search では、ドキュメントに対するアクセス権とアク
 
 **Q: ユーザーが頭字語の回答をトリガーする方法**
 
-**A**: 頭字語の回答を取得するには [、Bing、SharePoint、](https://bing.com)または Office [](https://products.office.com/sharepoint/collaboration) [365](https://Office.com)検索ボックスに特定のクエリ パターンを入力する **必要** があります。
+**A**: 頭字語の回答を取得するには、ユーザーは [Bing、SharePoint、](https://bing.com)または [](https://products.office.com/sharepoint/collaboration)Office [365](https://Office.com)検索ボックスに特定のクエリ パターンを入力する **必要** があります。
 
-**Q: 新しいメールやドキュメントを受信または送信した後、システムで指定された頭字語が表示されるのに、どれくらいの時間がですか。**
+**Q: 新しいメールやドキュメントを受信または送信した後に、システムで指定された頭字語が表示されるのにどれくらい時間がですか。**
 
 **A:** 新しいメールまたはドキュメントで見つかった頭字語は、Microsoft Search の結果に表示されるのに最大 7 日間かかる。
 
@@ -124,5 +124,5 @@ Microsoft Search では、ドキュメントに対するアクセス権とアク
 
 **Q: 組織でシステムで作成された頭字語を表示しない場合は、どうでしょうか。この種の頭字語が検索結果に表示されるのを停止できますか。**
 
-**A**: 検索結果にシステム指定の頭字語が表示されるのをオフにする場合は、ビジネス製品のサポートに問い合わせの指示に従ってカスタマー サポート チケット [を作成します](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)。
+**A**: 検索結果にシステム指定の頭字語が表示されるのをオフにする場合は、ビジネス製品のサポートに問い合わせの指示に従ってカスタマー サポート チケット [を作成します](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
 サポート チケットを作成した後、システムが選択した頭字語が検索結果に表示されな最大 48 時間かかります。
