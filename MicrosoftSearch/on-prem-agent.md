@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: オンプレム エージェント
-ms.openlocfilehash: 31220196849fe90ab2611e9c2b83a1cec0a02b34
-ms.sourcegitcommit: a04f1df14a3221776ccd141f6060328612d80e06
+ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
+ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876500"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173064"
 ---
 # <a name="graph-connector-agent"></a>Graph コネクタ エージェント
 
@@ -35,6 +35,15 @@ ms.locfileid: "49876500"
 * 8 コア、3 GHz
 * 16 GB RAM、2 GB のディスク領域
 * 443 を介したデータ ソースとインターネットへのネットワーク アクセス
+
+エージェントをインストールした後、組織のプロキシ サーバーまたはファイアウォールが不明なドメインへの通信をブロックしている場合は、許可リストに以下を追加してください。
+
+1. *.servicebus.windows.net
+2. *.events.data.microsoft.com
+3. https://login.microsoftonline.com
+4. https://gcs.office.com
+5. https://graph.microsoft.com/
+
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>エージェント用のアプリを作成して構成する  
 
