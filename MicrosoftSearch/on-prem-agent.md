@@ -13,20 +13,20 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: オンプレム エージェント
-ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
-ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
+ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
+ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173064"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50259431"
 ---
 # <a name="graph-connector-agent"></a>Graph コネクタ エージェント
 
-オンプレム Graph コネクタを使用するには、Graph コネクタ エージェント *ソフトウェアをインストールする必要* があります。 これにより、オンプレミス のデータと Graph コネクタ API の間でセキュリティで保護されたデータ転送が可能です。 この記事では、エージェントのインストールと構成について手順を示します。
+オンプレム Graph コネクタを使用するには、Graph コネクタ エージェント *ソフトウェアをインストールする必要* があります。 これにより、オンプレミス のデータと Graph コネクタ API の間で安全なデータ転送が可能です。 この記事では、エージェントのインストールと構成について手順を示します。
 
 ## <a name="installation"></a>インストール
 
-ここに最新バージョンの Graph コネクタ エージェントを [ダウンロードし](https://aka.ms/gcadownload) 、インストール ウィザードを使用してソフトウェアをインストールします。 以下で説明するコンピューターの推奨構成を使用して、ソフトウェアは最大 3 つの接続を処理できます。 それ以降の接続では、エージェント上のすべての接続のパフォーマンスが低下する可能性があります。
+ここに最新バージョンの Graph コネクタ エージェントを [ダウンロードし](https://aka.ms/gcadownload) 、インストール ウィザードを使用してソフトウェアをインストールします。 以下で説明するコンピューターの推奨構成を使用すると、ソフトウェアは最大 3 つの接続を処理できます。 それ以降の接続では、エージェント上のすべての接続のパフォーマンスが低下する可能性があります。
 
 推奨される構成:
 
@@ -40,27 +40,27 @@ ms.locfileid: "50173064"
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
-3. https://login.microsoftonline.com
-4. https://gcs.office.com
-5. https://graph.microsoft.com/
+3. https://<span>login.microsoftonline.</span>com
+4. https://<span>gcs.office.</span>com/
+5. https://<span>graph.microsoft.</span>com/
 
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>エージェント用のアプリを作成して構成する  
 
-最初にサインインし、アカウントに最低限必要な権限は検索管理者です。 エージェントは、認証の詳細を入力する必要があります。 以下の手順を使用して、アプリを作成し、必要な認証の詳細を生成します。
+最初にサインインし、アカウントに最低限必要な権限が検索管理者である点に注意してください。 エージェントは、認証の詳細を入力する必要があります。 以下の手順を使用して、アプリを作成し、必要な認証の詳細を生成します。
 
 ### <a name="create-an-app"></a>アプリを作成する
 
 1. Azure ポータルに [移動し](https://portal.azure.com) 、テナントの管理者資格情報でサインインします。
-2. ナビゲーション ウィンドウ **から Azure Active Directory**  ->  **アプリの登録** に移動し、[新規登録]**を選択します**。
-3. アプリの名前を入力し、[登録] を選択 **します**。
+2. ナビゲーション ウィンドウ **から Azure Active Directory** アプリの  ->  **登録** に移動し、[新規登録]**を選択します**。
+3. アプリの名前を指定し、[登録] を選択 **します**。
 4. アプリケーション (クライアント) ID をメモします。
 5. ナビゲーション **ウィンドウから API のアクセス許可** を開き、[アクセス許可の **追加] を選択します**。
 6. **[Microsoft Graph] を選択** し、[アプリケーションのアクセス **許可] を選択します**。
 7. アクセス許可から "ExternalItem.ReadWrite.All" と "Directory.Read.All" を検索し、[アクセス許可の追加] **を選択します**。
 8. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 9. アクセス許可が "付与" 状態にあるか確認します。
-     ![右側の列に緑色で付与されたアクセス許可が表示されます。](media/onprem-agent/granted-state.png)
+     ![右側の列に緑で付与されたアクセス許可が表示されます。](media/onprem-agent/granted-state.png)
 
 ### <a name="configure-authentication"></a>認証を構成する
 
@@ -120,4 +120,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 1. [個人] ->の下で新しくインストールされた証明書を選択します。
 1. 証明書を右クリックし、[すべてのタスク] -> 'Manage Private Keys...' を選択します。 オプション
 1. アクセス許可ダイアログで、[追加] オプションを選択します。 ユーザー選択ダイアログで、「NT Service\GcaHostService」と入力し、[OK] をクリックします。 [名前の確認] ボタンをクリックしない。
-1. [アクセス許可] ダイアログで [問題ありません] をクリックします。 これで、エージェント マシンは、証明書を使用してトークンを生成するようにエージェントが構成されました。
+1. [アクセス許可] ダイアログで [問題ありません] をクリックします。 これで、エージェント マシンが、証明書を使用してトークンを生成するようにエージェントが構成されました。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+1. 接続が失敗し、エラー '1011: Graph コネクタ エージェントに到達できないか、オフラインです。' の場合は、エージェントがインストールされているコンピューターにログインし、まだエージェント アプリケーションが実行されていない場合は、エージェント アプリケーションを起動します。 接続が引き続き失敗する場合は、登録時にエージェントに提供された証明書またはクライアント シークレットの有効期限が切れていないか、必要なアクセス許可を持っている必要があります。
