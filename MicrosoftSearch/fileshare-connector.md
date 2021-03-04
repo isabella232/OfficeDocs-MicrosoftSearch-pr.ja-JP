@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用のファイル共有 Graph コネクタ
+title: Microsoft Search のファイル共有グラフ コネクタ
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,40 +12,40 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Microsoft Search のファイル共有 Graph コネクタをセットアップする
-ms.openlocfilehash: e8a68a1c6b9c2c8a8592fb915fe9bf846a758e77
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+description: Microsoft Search のファイル共有グラフ コネクタをセットアップする
+ms.openlocfilehash: ed1c148a018ba9492a8a93685327bf43153d65d3
+ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097423"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421079"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>ファイル共有 Graph コネクタ
+# <a name="file-share-graph-connector"></a>ファイル共有グラフ コネクタ
 
-ファイル共有 Graph コネクタを使用すると、組織内のユーザーはオンプレミスの Windows ファイル共有を検索できます。
+ファイル共有グラフ コネクタを使用すると、組織内のユーザーはオンプレミスの Windows ファイル共有を検索できます。
 
 > [!NOTE]
-> Graph コネクタ [**のセットアップに関する記事を読**](configure-connector.md) んで、Graph コネクタの一般的なセットアップ プロセスを理解してください。
+> グラフ コネクタ [**の一般的なセットアップ**](configure-connector.md) プロセスについて詳しくは、Graph コネクタのセットアップに関する記事をご覧ください。
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
-### <a name="install-the-graph-connector-agent"></a>Graph コネクタ エージェントをインストールする
+### <a name="install-the-graph-connector-agent"></a>Graph コネクタ エージェントのインストール
 
-Windows ファイル共有のインデックスを作成するには、Graph コネクタ エージェントをインストールして登録する必要があります。 詳細 [については、「Graph コネクタ エージェントのインストール」](on-prem-agent.md) を参照してください。  
+Windows ファイル共有のインデックスを作成するには、Graph コネクタ エージェントをインストールして登録する必要があります。 詳細については [、「Graph コネクタ エージェントのインストール](on-prem-agent.md) 」を参照してください。  
 
-### <a name="content-requirements"></a>コンテンツの要件
+### <a name="content-requirements"></a>コンテンツ要件
 
 ### <a name="file-types"></a>ファイルの種類
 
-インデックスを作成して検索できる形式は DOC、 DOCM、DOCX、DOT、DOTX、EML、GIF、HTML、JPEG、MHT、MHTML、MSG、NWS、OBD、OBT、ODP、ODS、ODT、ONE、PDF、POT、PPS、PPTM、PPTM、PPTX、TXT、XLB、XLC、XLSB、XLS、XLSX、XLT、XLXM、XML、XPS、ZIP。 これらの形式のテキスト コンテンツだけがインデックス付けされます。 すべてのマルチメディア コンテンツは無視されます。 この形式に属さないファイルでは、メタデータだけではインデックスが作成されます。
+次の形式のコンテンツは、インデックスを作成して検索できます。DOC、 DOCM、DOCX、DOT、DOTX、EML、GIF、HTML、JPEG、MHT、MHTML、MSG、NWS、OBD、OBT、ODP、ODS、ODT、ONE、PDF、POT、PPS、PPTM、PPTX、PPTX、TXT、XLB、XLC、XLSB、XLSX、XLT、XML、XML、XPS、および ZIP。 これらの形式のテキスト コンテンツだけがインデックス付けされます。 すべてのマルチメディア コンテンツは無視されます。 この形式に属していないファイルの場合は、メタデータだけでインデックスが作成されます。
 
 ### <a name="file-size-limits"></a>ファイル サイズの制限を超えている
 
-サポートされるファイル の最大サイズは 100 MB です。 100 MB を超えるファイルにはインデックスが作成されません。 処理後の最大サイズ制限は 4 MB です。 ファイルのサイズが 4 MB に達すると処理が停止します。 したがって、ファイル内に存在する一部の語句は検索に使用できない場合があります。
+サポートされるファイルの最大サイズは 100 MB です。 100 MB を超えるファイルはインデックス付けされません。 処理後の最大サイズ制限は 4 MB です。 ファイルのサイズが 4 MB に達すると、処理が停止します。 したがって、ファイルに存在する一部の語句が検索に使用できない場合があります。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターで Graph コネクタを追加する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
 一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -57,15 +57,21 @@ Windows ファイル共有のインデックスを作成するには、Graph コ
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
-[データ ソース **への接続] ページ** で、[ **ファイル共有]** を選択し、名前、接続 ID、および説明を入力します。 次のページで、ファイル共有へのパスを指定し、以前にインストールした Graph コネクタ エージェントを選択します。 ファイル共有内のすべてのファイルへの読み取りアクセス権を持つ [Microsoft Windows](https://microsoft.com/windows) ユーザー アカウントの資格情報を入力します。
+[データ **ソースへの接続] ページで、[** ファイル共有] **を** 選択し、名前、接続 ID、および説明を指定します。 次のページで、ファイル共有へのパスを指定し、以前にインストールした Graph コネクタ エージェントを選択します。 ファイル共有内のすべてのファイルへの読み取りアクセス権を持つ [Microsoft Windows](https://microsoft.com/windows) ユーザー アカウントの資格情報を入力します。
 
-### <a name="preserve-last-access-time"></a>最終アクセス時刻を保持する
+### <a name="preserve-last-access-time"></a>最後のアクセス時間を保持する
 
-コネクタがファイルをクロールしようとすると、そのメタデータの "最終アクセス時刻" フィールドが更新されます。 アーカイブ ソリューションとバックアップ ソリューションのフィールドに依存し、コネクタがアクセスするときに更新しない場合は、[詳細設定] ページでこのオプション **を構成** できます。
+コネクタがファイルをクロールしようとすると、そのメタデータ内の "最終アクセス時刻" フィールドが更新されます。 アーカイブソリューションとバックアップ ソリューションのフィールドに依存し、コネクタがアクセスするときに更新しない場合は、[詳細設定] ページでこのオプション **を構成** できます。
 
 ## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
 
-共有アクセス制御リストまたは新しいテクノロジ ファイル システム (NTFS) アクセス制御リストに基づいて、任意のファイルを検索するアクセス許可を制限できます。 アクセス制御リストの共有を使用する場合は、[詳細設定] ページで適切 **なオプションを選択** します。 NTFS アクセス制御リストを使用する場合は、[検索アクセス許可の管理] ページ **で適切なオプションを選択** します。
+[検索アクセス許可の管理] ページで目的のオプションを選択することにより、Share Access Control Lists または New Technology File System (NTFS) Access Control Lists に基づいて任意のファイルを検索するアクセス許可を制限できます。  これらのアクセス制御リストで提供されるユーザー アカウントとグループは、Active Directory (AD) によって管理する必要があります。 ユーザー アカウント管理に他のシステムを使用している場合は、[すべてのユーザー] オプションを選択して、ユーザーがアクセス制限なしですべてのファイルを検索できます。 ただし、ユーザーがファイルを開く場合は、ソースで設定されたアクセス制御が適用されます。
+
+既定では、フォルダーがネットワーク上で共有されている場合、Windows は Share ACL の 'Everyone' に対する 「読み取り」 アクセス許可を提供します。 [検索アクセス許可の管理] で [ACLの共有] を選択している場合、ユーザーはすべてのファイルを検索できます。 アクセスを制限する場合は、ファイル共有の 'Everyone' の 'Read' アクセスを削除し、目的のユーザーとグループにのみアクセスを提供します。 コネクタは次に、これらのアクセス制限を読み取り、それらを検索に適用します。
+
+[ACL の共有] を選択できるのは、指定した共有パスが UNC パス形式に従う場合のみです。 UNC 形式のパスを作成するには、[共有] オプションの [高度な共有] に進む必要があります。
+
+![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 
@@ -82,7 +88,7 @@ Windows ファイル共有のインデックスを作成するには、Graph コ
 一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a>手順 8: 接続を確認する
+## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
 一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
