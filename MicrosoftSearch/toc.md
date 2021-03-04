@@ -13,7 +13,6 @@
 ## [Q&A](manage-qas.md)
 # コネクタ
 ## [概要](connectors-overview.md)
-## [リリースのプレビュー](connectors-preview.md)
 ## [コネクタ ギャラリー](connectors-gallery.md)
 ## Microsoft 提供の設定コネクタ
 ### [セットアップの概要](configure-connector.md)
@@ -25,6 +24,7 @@
 #### [Azure DevOps (プレビュー)](azure-devops-connector.md)
 #### [Azure SQL および Microsoft SQL Server](MSSQL-connector.md)
 #### [大企業の Web サイト](enterprise-web-connector.md)
+#### [ファイル共有](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
 #### [Oracle SQL (プレビュー)](OracleSQL-connector.md)
 #### [Salesforce (プレビュー)](salesforce-connector.md)
