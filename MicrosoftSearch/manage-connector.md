@@ -3,6 +3,7 @@ title: Microsoft Search の Microsoft Graph コネクタを管理する
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft Graph コネクタを管理します。
-ms.openlocfilehash: 488b6e9452e381f8fc64ad06c6f063aa170ca7f5
-ms.sourcegitcommit: 3ed4d21510020045d25e8c5b7e168013d96c1b7e
+ms.openlocfilehash: aa2e3db8c8dc9155c06f81fc0169dd4bda8f8343
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50464042"
+ms.locfileid: "50508834"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -31,11 +32,11 @@ Microsoft 365 [管理センターの](https://admin.microsoft.com/Adminportal/Ho
 
 コネクタの種類ごとに [、Microsoft 365 管理](https://admin.microsoft.com) センターは次の表に示す操作をサポートしています。
 
-Operation | Microsoft が構築したコネクタ | パートナーまたはカスタムビルドコネクタ
+Operation | Microsoft 提供の Graph コネクタ | パートナーコネクタまたはグラフ コネクタ
 --- | --- | ---
-接続の追加 | :heavy_check_mark: (「Microsoft[ビルド コネクタの構成」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
+接続の追加 | :heavy_check_mark: (「セットアップの概要[」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:
-発行済み接続の編集 | :heavy_check_mark: 名前<br></br> :heavy_check_mark: 説明<br></br> :heavy_check_mark: 外部データ ソースの認証資格情報<br></br> :heavy_check_mark: オンプレミス データ ソースのゲートウェイ資格情報<br></br> :heavy_check_mark: 更新スケジュール<br></br> | :heavy_check_mark: 名前<br></br> :heavy_check_mark: 説明
+発行済み接続の編集 | :heavy_check_mark: 名前と説明<br></br> :heavy_check_mark: 接続設定<br></br> :heavy_check_mark: プロパティ ラベル<br></br> :heavy_check_mark: スキーマ<br></br> :heavy_check_mark: 更新スケジュール<br></br> | :heavy_check_mark: 名前<br></br> :heavy_check_mark: 説明
 下書き接続の編集 | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-status"></a>接続状態を監視する

@@ -11,66 +11,66 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search とは何か、その利点、Microsoft Search をサポートするアプリの概要を説明します。
-ms.openlocfilehash: f06aff0ea0407983a40f60e03337d4ed281a53ad
-ms.sourcegitcommit: d6f8628be8108e6e9d6fb9efb7bd06bc2fcd561d
+description: Microsoft Search の概要、その利点、Microsoft Search をサポートするアプリについて説明します。
+ms.openlocfilehash: a7250bccd3f77eb3ad2f3c91bdfd176a2141fd98
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749388"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508816"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
-Microsoft Search は、作業を完了するために必要な情報を見つけるのに役立ちます。 ユーザー、ファイル、組織図、サイト、または一般的な質問に対する回答を検索している場合でも、Microsoft Search を使用して回答を得ることもできます。
+Microsoft Search を使用すると、作業している作業を完了するために必要な情報を見つけるのに役立ちます。 ユーザー、ファイル、組織図、サイト、または一般的な質問に対する回答を検索する場合は、仕事中に Microsoft Search を使用して回答を取得できます。
 
-Microsoft Search を使用すると、ユーザーは適切な回答、他のユーザー、コンテンツを見つけて、既に作業しているアプリでタスクを完了することができます。
+Microsoft Search は、ユーザーが適切な回答、ユーザー、およびコンテンツを見つけて、既に作業しているアプリでタスクを完了するのに役立ちます。
 
-- 検索元のアプリの **コンテキスト** に応じた結果を取得できます。 たとえば、Microsoft Outlook で検索すると [、SharePoint](https://www.microsoft.com/outlook)サイトではなくメール [が検索](http://sharepoint.com/) されます。 SharePoint で検索すると、サイト、ページ、ファイルが見つかります。
-- ユーザーがどのアプリで作業していても、Microsoft Search は **個人用** です。 Microsoft Search は [、Microsoft Graph](https://developer.microsoft.com/graph/) からの分析情報を使用して、各ユーザーに関連する結果を表示します。 各ユーザーが同じ単語を検索しても、それぞれの結果は異なる可能性があります。 ユーザーには既にアクセス権のある結果のみが表示されます。Microsoft Search によってアクセス許可が変更されることはありません。
-- 情報がある場所を覚えておく必要はありません。 たとえば、ユーザーが [Microsoft Word](https://products.office.com/word) で作業しているし、仕事仲間が自分の OneDrive から共有したプレゼンテーションからの情報を再利用 [する必要があります](https://onedrive.live.com/about/)。 この場合、OneDrive に切り替えて、そのプレゼンテーションを検索する必要はなく、Word から検索するだけで済みます。
+- 検索元のアプリの **コンテキスト** に応じた結果を取得できます。 たとえば、Microsoft Outlook で検索すると [、SharePoint](https://www.microsoft.com/outlook)サイトではなく電子メール [が検索](http://sharepoint.com/) されます。 SharePoint で検索すると、サイト、ページ、ファイルが見つかります。
+- ユーザーがどのアプリで作業していても、Microsoft Search は **個人用** です。 Microsoft Search では [、Microsoft Graph](https://developer.microsoft.com/graph/) の分析情報を使用して、各ユーザーに関連する結果を表示します。 各ユーザーが同じ単語を検索しても、それぞれの結果は異なる可能性があります。 既にアクセスできる結果だけが表示されます。Microsoft Search ではアクセス許可は変更されません。
+- ユーザーは、情報がどこにあるのか覚えておく必要はない。 たとえば、ユーザーが [Microsoft Word](https://products.office.com/word) で作業している場合、同僚が OneDrive から共有したプレゼンテーションの情報を [再利用したいとします](https://onedrive.live.com/about/)。 OneDrive に切り替えてそのプレゼンテーションを検索する必要はありません。Word から簡単に検索できます。
 - [Bing](https://bing.com) を使用している場合、公開されている Web の検索結果に加えて組織内からの結果も取得できます。
 
 ## <a name="what-users-see"></a>ユーザーに対する表示
 
-[Bing では、](https://bing.com)ユーザーは Web 検索と同じ検索ボックスを使用します。 アプリのOffice、ユーザーはヘッダー バーで Microsoft Search ボックスを見つける。 次のように表示されます。
+[Bing では、](https://bing.com)ユーザーは Web 検索と同じ検索ボックスを使用します。 アプリのOffice、ヘッダー バーに [Microsoft Search] ボックスが表示されます。 次のように表示されます。
 
 ![ヘッダー バーに Microsoft Search ボックスが表示されているアプリ ウィンドウのスクリーン ショット](media/Headings_520.png)
 
-ユーザーが検索ボックスをクリックすると、Office 365 での以前のアクティビティと、組織内で人気上昇中のコンテンツに基づいて、検索結果が表示されます。 検索で考慮されるアクティビティには、ユーザーが最近作業していたファイルや最近使用したコマンドだけでなく、そのユーザーが共同作業している他のユーザーなどがあります。 ユーザーが検索ボックスに入力を **開始すると** 、候補の結果が更新されます。 ユーザーは、検索ボックスから検索結果を開く **権限を持** ちます。 SharePoint での検索の例を次に [示します](http://sharepoint.com/)。
+ユーザーが [検索] ボックスを **クリック** すると、Office 365 での以前のアクティビティに基づいて、組織の傾向にあるコンテンツに基づいて検索結果が表示されます。 最近作業していたファイル、最近使用したコマンド、および共同作業を行うユーザーは、検索で考慮されるアクティビティの例です。 ユーザーが [検索] ボックスに入力 **を開始** すると、候補の結果が更新されます。 ユーザーは、[検索] ボックスから検索結果を **右に開** きます。 SharePoint での検索の例を次 [に示します](http://sharepoint.com/)。
 
 ![クエリと候補の検索結果が表示されている Microsoft Search ボックスのスクリーンショット](media/SERP_text_520.png)
 
-検索ボックスの候補がユーザーの検索候補ではない場合は **、Enter** キーを押して結果の完全な一覧を開きます。 アイテムを最後に変更したユーザー、いつ、アイテムが保存されている場所などのメタデータを使用して、アイテムをプレビューして、アイテムが何を探しているのかを判断できます。
+検索ボックスの候補がユーザーが探している情報ではない場合は、 **結果** の完全な一覧が開きます。 アイテムを最後に変更したユーザー、アイテムの場所、アイテムの場所などのメタデータを使用し、アイテムをプレビューして、アイテムが何を探しているのかを判断できます。
 
 ![Microsoft Search の結果ページのスクリーンショット](media/search_box.png)
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft Search のメリット
 
-**すべての Microsoft Search ボックスから Microsoft 365 全体を検索** - どの Microsoft Search ボックスからでも検索を実行し、作業していたタスクにすばやく戻ることができます。 Microsoft Search は[、SharePoint、Microsoft](http://sharepoint.com/) [OneDrive for Business、](https://onedrive.live.com/about/business/)および Office 365 のデータ ソースからの結果をまとめて[Microsoft Exchange Server。](https://products.office.com/exchange/microsoft-exchange-server)
+**すべての Microsoft Search ボックスから Microsoft 365 全体を検索** - どの Microsoft Search ボックスからでも検索を実行し、作業していたタスクにすばやく戻ることができます。 Microsoft Search は [、SharePoint、Microsoft](http://sharepoint.com/) [OneDrive for Business、](https://onedrive.live.com/about/business/)および Office など、365 のデータ ソースからの結果を [まとめ](https://products.office.com/exchange/microsoft-exchange-server)Microsoft Exchange Server。
 
-**検索が簡単** - Microsoft Search は、検索ボックス内の Office 365 でのユーザーの以前のアクティビティに基づいて結果を **提案** します。
+**簡単に検索 –** Microsoft Search は、ユーザーの過去のアクティビティに基づいて、Office 365 で検索ボックスに **表示** されます。
 
 **共有ファイルの検索** - Microsoft Search は高度なクエリ理解を利用して、共有ファイルの検索を容易にします。 ユーザーは共同作業しているファイルを簡単に見つけることができます。
 
-**関連コンテンツの表示** - ポリシー、利点、リソース、ツールなどのタスクの完了に必要な情報および回答をより詳細に提供しています。 新入社員、リモート ワーカー、さまざまな地域など、特定のグループを対象にすることもできます。
+**関連コンテンツの表示** - ポリシー、利点、リソース、ツールなどのタスクの完了に必要な情報および回答をより詳細に提供しています。 また、新入社員、リモート ワーカー、さまざまな地域など、特定のグループをターゲットにすることもできます。
 
 **すべてのアプリで管理可能** - Microsoft Search は既定で **オン** になっており、実行するあらゆる管理はすべてのアプリの Microsoft Search に適用されます。
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>組織に合わせた Microsoft Search のカスタマイズ
 
-管理者は、ユーザーに対してすばらしい Microsoft Search エクスペリエンスを作成できます。
+管理者は、ユーザーに素晴らしい Microsoft Search エクスペリエンスを作成できます。
 
-**便利なコンテンツを** 表示する - 回答は、キーワードに基づいて検索クエリに高速で権限の高い結果を提供します。 [コンテンツを計画します](plan-your-content.md)。
+**有用なコンテンツを** 表示する - 回答は、キーワードに基づいて検索クエリに迅速かつ権限の高い結果を提供します。 [コンテンツを計画します](plan-your-content.md)。
 
-**外部コンテンツを追加** する – Microsoft Graph コネクタを使用すると、外部コンテンツをインデックスに取り込むこが可能です。 コネクタを使用して、Microsoft 365 の外部からのデータとファイルの検索エクスペリエンスを強化します。 [Microsoft Graph コネクタの概要](connectors-overview.md)
+**外部コンテンツを追加** する - Microsoft Graph Connectors を使用すると、外部コンテンツをインデックスに取り込みできます。 コネクタを使用して、Microsoft 365 の外部からのデータとファイルで検索エクスペリエンスを強化します。 [Microsoft Graph コネクタの概要](connectors-overview.md)
 
-**ユーザー エクスペリエンスをカスタマイズ** する - 垂直および他の構成を使用してユーザー エクスペリエンスをカスタマイズできます。 [Microsoft Search ページをカスタマイズする](customize-search-page.md)
+**ユーザー エクスペリエンスをカスタマイズ** する – 垂直および他の構成を使用してユーザー エクスペリエンスをカスタマイズできます。 [Microsoft Search ページをカスタマイズする](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>検索されるコンテンツ
 
-Microsoft Search は、組織が Microsoft 365 に保存したコンテンツ、またはコネクタを介してインデックス付けされたコンテンツを表示します。 Microsoft Search では、テナント全体を検索したり、他の組織で共有されているコンテンツの結果を表示したりは行う必要があります。 組織でクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境をセットアップすると、Microsoft Search は SharePoint Server 環境に接続している外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft Search には、組織が Microsoft 365 に保存したコンテンツ、またはコネクタを介してインデックス付けされたコンテンツが表示されます。 Microsoft Search では、テナント間で検索したり、他の組織が共有しているコンテンツの結果を表示したりは行ないます。 組織がクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境を設定している場合、Microsoft Search は、SharePoint Server 環境に接続した外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-ユーザーは、他の場所から取得した検索結果と同じ結果を取得し、インターネットから結果も取得します。
+ユーザーは、他の場所から取得した検索結果と同じ検索結果を取得し、インターネットから結果を取得します。
 
 ## <a name="how-microsoft-search-works"></a>Microsoft Search のしくみ
 
@@ -79,7 +79,7 @@ Microsoft Search は、組織が Microsoft 365 に保存したコンテンツ、
 
 ## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>Bing の Microsoft Search が会社のデータを保護する方法
 
-[Bing での Microsoft Search のセキュリティとプライバシー](security-for-search.md)
+[Bing の Microsoft Search のセキュリティとプライバシー](security-for-search.md)
 
 ## <a name="see-also"></a>関連項目
 

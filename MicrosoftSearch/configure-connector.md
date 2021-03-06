@@ -1,8 +1,9 @@
 ---
-title: Microsoft Search 用に Microsoft が構築したコネクタを構成する
-ms.author: monaray
-author: monaray97
-manager: jameslau
+title: Microsoft Search 用の Microsoft ビルドの Graph コネクタを構成する
+ms.author: mecampos
+author: mecampos
+manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,158 +12,196 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用に Microsoft が構築したコネクタを構成する
-ms.openlocfilehash: 61a7d444ddc4c290b5098c327faa8e70f0ef1049
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+description: Microsoft による Graph コネクタのセットアップの概要
+ms.openlocfilehash: e97b930f627a6336cc93b3a1f33e390cae4ff0aa
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49847548"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508877"
 ---
+<!-- Previous ms.author: monaray -->
+
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 # <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft による Graph コネクタのセットアップの概要 
 
-この記事では [、Microsoft 365](https://admin.microsoft.com) 管理センターを使用して Microsoft が Graph コネクタをセットアップするために必要な基本的なプロセスを要約します。 基本的なプロセスには、次の手順が含まれます。  
+この記事では [、Microsoft 365](https://admin.microsoft.com)管理センターで Microsoft が **Graph** コネクタをセットアップするために必要な基本的なプロセスを示します。 基本的なプロセスには、次の手順が含まれます。  
 <!---Add links to each section in the doc--->
 
-1. Microsoft 365 管理センターで Graph コネクタを追加します。
-2. 接続の名前を指定します。
-3. 接続設定を構成します。
-4. 検索アクセス許可を管理します。
-5. プロパティ ラベルを割り当てる。
-6. スキーマを管理します。
-7. 更新設定を選択します。
-8. 接続を確認します。
+1. [Microsoft 365 管理センターに Graph コネクタを追加する](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+2. [接続に名前を付け](#step-2-name-the-connection)
+3. [接続設定の構成](#step-3-configure-the-connection-settings)
+4. [検索のアクセス許可を管理する](#step-4-manage-search-permissions)
+5. [プロパティ ラベルの割り当て](#step-5-assign-property-labels)
+6. [スキーマを管理する](#step-6-manage-schema)
+7. [更新設定](#step-7-refresh-settings)
+8. [接続の確認](#step-8-review-connection)
 
-セットアップ プロセスは、Microsoft のすべての Graph コネクタで非常に似ていますが、まったく同じではありません。 **この記事を読むだけでなく、データ ソースのコネクタ固有の情報も必ずお読みください。**  
+この記事には、トラブルシューティング、制限事項、および次の手順に関する情報も含まれています。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターで Graph コネクタを追加する
+* [トラブルシューティング](#troubleshooting)
+* [限界事項](#limitations)
+* [次の手順](#next-steps)
 
-Microsoft が作成したコネクタを構成するには、次の手順を実行します。
+> [!NOTE]
+> セットアップ プロセスは、Microsoft のすべての Graph コネクタと似ていますが、まったく同じではありません。 **この記事を読むだけでなく、必ずデータ ソースのコネクタ固有の情報を読んでください。**  
 
-1. [Microsoft 365 管理センターで管理者アカウントにサインインする](https://admin.microsoft.com)
-2. ナビゲーション ウィンドウで、[設定] **を選択し**、[検索とインテリジェンス] **&します**。 [コネクタ [] タブを選択します](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+<!---## Before you get started-->
+
+<!---Insert "Before you get started" recommendations for this data source-->
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
+
+Microsoft が構築した Graph コネクタを構成するには、次の手順を実行します。
+
+1. [Microsoft 365](https://admin.microsoft.com)管理センターで管理者アカウントにサインインします。
+
+2. ナビゲーション ウィンドウで、[設定] を **選択** し、[検索] を選択& **します**。 [コネクタ] [タブを選択します](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+
 3. **[+追加]** を選択し、使用可能なオプションのメニューから選択したデータ ソースを選択します。
 
-![利用可能なデータ ソースは、ADLS Gen2、Enterprise Web サイト、Microsoft SQL サーバー、Azure SQL、Oracle SQL データベース、ServiceNow、ファイル共有、Azure DevOps、MediaWiki です。](media/add-connector.png)
+   > [!div class="mx-imgBorder"]
+   > ![利用可能なデータ ソースは、ADLS Gen2、Enterprise Web サイト、Microsoft SQL サーバー、Azure SQL、Oracle SQL データベース、ServiceNow、ファイル共有、Azure DevOps、MediaWiki です。](media/add-connector.png)
 
->[!注:] 各テナントに最大 10 個の Graph 接続を追加できます。
+> [!NOTE]
+> 各テナントに最大 10 個の Graph 接続を追加できます。
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
-次の属性を指定する必要があります。 
 
-* 名前  
-* 接続 ID 
-* 説明 (省略可能) 
+次の属性を指定します。
 
-接続 ID は、コネクタの暗黙的なプロパティを作成します。 英数字のみを含む必要があります。最大 32 文字です。 
+* Name (必須)
+* 接続 ID (必須)
+* 説明 (省略可能)
+
+接続 ID は、コネクタの暗黙的なプロパティを作成します。 英数字のみを含み、最大 32 文字にする必要があります。
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
 接続設定を構成するプロセスは、データ ソースの種類によって異なります。 セットアップ プロセスでこの手順を完了するには、テナントに追加するデータ ソースの種類に関するコネクタ固有の情報を参照してください。  
 
-オンプレミスのデータ ソースへの接続の詳細については、「オンプレミス のデータ ゲートウェイをインストールする」 [を参照してください](https://aka.ms/configuregateway)。
+オンプレミス データ ソースへの接続の詳細については、「オンプレミス データ ゲートウェイのインストール [」を参照してください](https://aka.ms/configuregateway)。
 
-## <a name="step-4-manage-search-permissions"></a>手順 4: 検索権限を管理する
+## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
 
 アクセス制御リスト (ACL) は、組織内のユーザーがデータの各アイテムにアクセスできるかどうかを決定します。  
 
-Microsoft SQL [や](MSSQL-connector.md) Azure Data [Lake Storage Gen2](azure-data-lake-connector.md) のような一部のコネクタは [、Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) ACL をネイティブにサポートしています。
+Microsoft SQL [および Azure](MSSQL-connector.md) Data [Lake Storage Gen2](azure-data-lake-connector.md) のような一部のコネクタは [、Azure Active Directory (Azure Active Directory) ACL をネイティブAD](https://docs.microsoft.com/azure/active-directory/) しています。
 
-[ServiceNow、Azure DevOps、Salesforce](servicenow-connector.md)などの他[](salesforce-connector.md)のコネクタは、Azure 以外のユーザーとグループAD同期をサポートします。 [](azure-devops-connector.md)  
+[ServiceNow、Azure](servicenow-connector.md) [DevOps、Salesforce](azure-devops-connector.md)などの他のコネクタでは[、Azure](salesforce-connector.md)以外のユーザーとグループAD同期できます。  
 
 ## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
-セマンティック ラベルは、[プロパティ ラベルの割り当て] ページでソース プロパティに割り当てることができます。 ラベルは、意味を提供する Microsoft によって提供される既知のタグです。 Microsoft は、拡張検索、ユーザー カード、インテリジェント検出などの Microsoft 365 エクスペリエンスにコネクタ データを統合できます。  
+
+セマンティック ラベルは、[プロパティ ラベルの割り当て] ページでソース プロパティに割り当てることができます。 ラベルは、意味的な意味を提供する Microsoft によって提供される既知のタグです。 Microsoft は、拡張検索、ユーザー カード、インテリジェント検出などの Microsoft 365 エクスペリエンスにコネクタ データを統合できます。  
 
 次の表に、現在サポートされているラベルとその説明を示します。  
 
 ラベル | 説明
 --- | ---  
-**title** | 検索やその他のエクスペリエンスに表示するアイテムのタイトル 
-**url** | ソース システム内のアイテムのターゲット URL 
-**createdBy** | アイテムを作成したユーザーの名前 
-**lastModifiedBy** | アイテムを最近編集したユーザーの名前 
-**authors** | アイテムに参加/共同作業を行ったユーザーの名前 
-**createdDateTime** | アイテムが作成されたのはいつか 
-**lastModifiedDateTime** | アイテムが最近編集されたのはいつか 
-**fileName** | ファイル アイテムの名前 
-**FileExtension** | .pdf や .word などのファイルアイテムの種類 
+**title** | 検索やその他のエクスペリエンスに表示するアイテムのタイトル
+**url** | ソース システム内のアイテムのターゲット URL
+**createdBy** | アイテムを作成したユーザーの名前
+**lastModifiedBy** | アイテムを最近編集したユーザーの名前
+**authors** | アイテムに参加/共同作業を行ったユーザーの名前
+**createdDateTime** | アイテムが作成されたのは、いつ
+**lastModifiedDateTime** | アイテムが最近編集された場合
+**fileName** | ファイル アイテムの名前
+**FileExtension** | .pdf や .word などのファイル アイテムの種類
 
 このページのプロパティは、データ ソースに基づいて事前に選択されますが、特定のラベルに適した別のプロパティがある場合は、この選択を変更できます。  
 
-ラベルの **タイトルは** 最も重要なラベルです。 接続が **結果クラスター エクスペリエンス** に参加するには、このラベルにプロパティが割り当てられている必要 [があります。](result-cluster.md)
+ラベル タイトル **は、** 最も重要なラベルです。 接続が **結果クラスター エクスペリエンス** に参加するには、このラベルにプロパティが割り当てられている必要 [があります。](result-cluster.md)
 
-ラベルを正しくマッピングしないと、検索エクスペリエンスが低下します。 一部のラベルにはプロパティが割り当てられていない場合でも問題ありません。  
+ラベルを正しくマッピングしないと、検索エクスペリエンスが低下します。 一部のラベルにプロパティが割り当てられていない場合は問題ありません。  
 
 ## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
 
 ### <a name="content-property"></a>Content プロパティ
 
-オプションのドロップダウン メニューから [コンテンツ プロパティ] を選択するか、存在する場合は既定値のままにしてください。 このプロパティは、コンテンツのフルテキスト インデックス作成、検索結果ページ スニペットの生成、 [結果クラスター](result-cluster.md) への参加、言語検出、HTML/テキストのサポート、ランク付けと関連性、クエリの生成に使用されます。
+オプションのドロップダウン メニューから **コンテンツ** プロパティを選択するか、存在する場合は既定値のままにしてください。 このプロパティは、コンテンツのフルテキスト インデックス作成、検索結果ページ スニペットの生成、[](result-cluster.md)結果クラスターへの参加、言語の検出、HTML/テキストのサポート、ランク付けと関連性、およびクエリの作成に使用されます。
 
-コンテンツ プロパティを選択すると、結果の種類を作成するときに、システム生成プロパティ **ResultSnippet** [を使用できます](customize-results-layout.md)。 このプロパティは、クエリ時にコンテンツ プロパティから生成される動的スニペットのプレースホルダーとして機能します。 このプロパティを結果の種類で使用すると、検索結果にスニペットが生成されます。
+コンテンツ プロパティを選択すると、結果の種類を作成するときに、システム生成プロパティ **ResultSnippet** を [使用できます](customize-results-layout.md)。 このプロパティは、クエリ時に content プロパティから生成される動的スニペットのプレースホルダーとして機能します。 このプロパティを結果の種類で使用すると、検索結果にスニペットが生成されます。
 
 ### <a name="creating-aliases-for-source-properties"></a>ソース プロパティのエイリアスの作成
 
-[スキーマの管理] ページの [エイリアス] 列で、プロパティにエイリアスを追加できます。 エイリアスは、プロパティの表示名です。 クエリやフィルターの作成で使用されます。 また、同じ名前を持つ複数の接続からソース プロパティを正規化するためにも使用されます。 この方法で、複数の接続を持つ垂直に対して 1 つのフィルターを作成できます。 詳細 [については、「検索結果のカスタマイズ」ページ](customize-search-page.md) を参照してください。  
+[スキーマの管理] ページの [エイリアス] 列の下のプロパティにエイリアスを追加できます。 エイリアスは、プロパティの表示名であり、クエリやフィルターの作成にも使用されます。 また、同じ名前を持つ複数の接続からソース プロパティを正規化するためにも使用されます。 この方法で、複数の接続を持つ垂直の 1 つのフィルターを作成できます。 詳細については、「検索結果ページを [カスタマイズする」を参照してください](customize-search-page.md)。  
 
-### <a name="search-schema-attributes"></a>検索スキーマの属性
+### <a name="search-schema-attributes"></a>スキーマ属性の検索
 
 検索スキーマ属性を設定して、各ソース プロパティの検索機能を制御できます。 検索スキーマは、検索結果ページに表示される結果と、エンド ユーザーが表示およびアクセスできる情報を決定するのに役立ちます。
 
-検索スキーマの属性には **、検索可能、****クエリ可能、****取得可能、** 絞り込み **可能な属性が含まれます**。 次の表に、Microsoft Graph コネクタがサポートする各属性とその機能を示します。
+検索スキーマ属性には、クエリ、 **検索**、 **取得**、絞り込 **み** などのオプション **があります**。 次の表に、Microsoft Graph コネクタがサポートする各属性とその機能について説明します。
 
 検索スキーマ属性 | 関数 | 例
 --- | --- | ---
-SEARCHABLE | プロパティのテキスト コンテンツを検索可能にする。 プロパティの内容は、フルテキスト インデックスに含まれます。 | プロパティが title **の場合**、 **エンタープライズ** のクエリは、任意のテキストまたはタイトルに **Enterprise** という単語を含む回答を返します。
-QUERYABLE | 特定のプロパティの一致をクエリで検索します。 その後、クエリでプログラムまたは動詞を使用してプロパティ名を指定できます。 |  Title プロパティ **がクエリ** 可能な場合、クエリ **Title: Enterprise** がサポートされます。 
-取得可能 | 検索結果の種類で使用できるのは、取得可能なプロパティのみであり、検索結果に表示されます。 |
-絞り込み可能 | 絞り込み可能なプロパティは、Microsoft Search の結果ページで使用できます。 | 接続のセットアップ中に [](custom-filters.md)プロパティが絞り込み可能とマークされている場合、組織内のユーザーは検索結果ページで **lastModifiedDateTime** でフィルター処理できます。
+SEARCH | プロパティのテキスト コンテンツを検索可能にする。 プロパティの内容は、フルテキスト インデックスに含まれます。 | プロパティが title の **場合****、Enterprise** のクエリは、任意のテキストまたはタイトルに **Enterprise** という単語を含む回答を返します。
+QUERY | 特定のプロパティの一致をクエリで検索します。 その後、クエリでプロパティ名をプログラムまたは動詞で指定できます。 |  Title プロパティ **をクエリ** できる場合は、 **クエリ Title: Enterprise** がサポートされます。
+RETRIEVE | 検索可能なプロパティのみを結果の種類で使用し、検索結果に表示できます。 |
+REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同様に使用できます。 | 接続のセットアップ中に[](custom-filters.md)絞り込みプロパティがマークされている場合、組織内のユーザーは検索結果ページの URL でフィルター処理できます
 
-ファイル共有コネクタを除くすべてのコネクタでは、カスタム型を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティのリストにマップされた検索スキーマが必要です。 接続ウィザードは、選択したソース プロパティのセットに基づいて検索スキーマを自動的に選択します。 このスキーマを変更するには、検索スキーマ ページの各プロパティと属性のチェック ボックスをオンにします。
+ファイル共有コネクタを除くすべてのコネクタでは、ユーザー設定の種類を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティの一覧にマップされた検索スキーマが必要です。 接続ウィザードでは、選択したソース プロパティのセットに基づいて検索スキーマが自動的に選択されます。 このスキーマを変更するには、検索スキーマ ページの各プロパティと属性のチェック ボックスをオンにします。
 
-![コネクタのスキーマは、クエリ関数、検索関数、および取得関数を追加または削除することでカスタマイズできます。](media/manageschema.png)
- 
-### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>検索スキーマ設定の制限事項と推奨事項
+> [!div class="mx-imgBorder"]
+> ![コネクタのスキーマは、クエリ、検索、および取得関数を追加または削除することでカスタマイズできます。](media/manageschema.png)
 
-* コンテンツ **プロパティ** は検索のみ可能です。 ドロップダウンで選択すると、このプロパティを取得可能またはクエリ可能 **と** マーク **することはできません**。
+### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>検索スキーマ設定の制限と推奨事項
 
-* コンテンツ プロパティを使用して検索結果が表示される場合、パフォーマンスに重大な問題 **が発生** します。 たとえば [、ServiceNow](https://www.servicenow.com) **ナレッジ** ベースの記事のテキスト コンテンツ フィールドがあります。
+* content **プロパティ** は検索可能です。 ドロップダウンで選択すると、このプロパティをオプションの取得またはクエリ **と一緒に** 使用 **することはできません**。
 
-* 検索結果で取得可能とマークされているプロパティのみ、モダン検索結果の種類 (MRT) の作成に使用できます。
+* 検索結果が content プロパティでレンダリングされる場合、パフォーマンスに関する重大な **問題が発生** します。 例として **、ServiceNow** ナレッジベース記事の [テキスト](https://www.servicenow.com) コンテンツ フィールドがあります。
+
+* 検索結果で取得可能なレンダリングとしてマークされたプロパティのみであり、最新の結果の種類 (MRT) の作成に使用できます。
 
 * 検索可能とマークできるのは文字列プロパティのみです。
 
 > [!NOTE]
-> 接続を作成した後は **、スキーマを** 変更できます。 これを行うには、接続を削除し、新しい接続を作成する必要があります。
+> 接続を作成した後は **、スキーマを** 変更できます。 これを行うには、接続を削除して新しい接続を作成する必要があります。
 
-## <a name="step-7-refresh-settings"></a>手順 7: 設定を更新する
+## <a name="step-7-refresh-settings"></a>手順 7: 設定の更新
 
-更新間隔は、データ ソースと Microsoft Search の間でデータが同期される頻度を決定します。 データ ソースの種類ごとに、データの変更頻度と変更の種類に基づいて、最適な更新スケジュールのセットが異なります。
+更新間隔は、データ ソースと Microsoft Search の間でデータを同期する頻度を決定します。 データ ソースの種類ごとに、データの変更頻度と変更の種類に基づいて、最適な更新スケジュールのセットが異なります。
 
 更新間隔には、完全更新と増分更新の2種類がありますが、一部のデータ ソースでは増分更新を使用できません。
 
-完全な更新では、検索エンジンは、以前のクロールに関係なく、コンテンツ ソース内のすべてのアイテムを処理し、インデックスを作成します。 完全な更新は、次の状況に最適です。
+完全な更新により、検索エンジンは、以前のクロールに関係なく、コンテンツ ソース内のすべてのアイテムを処理してインデックスを作成します。 完全な更新は、次の状況に最適です。
 
 * データの削除を検出する。
-* エラーが原因で、増分更新でコンテンツの更新に失敗しました。
+* 増分更新でエラーが検出され、失敗しました。
 * ACL が変更されました。
 * クロール ルールが変更されました。
-* 接続のスキーマが更新された場合 (スキーマの更新はまだサポートされていません)
+* 接続のスキーマが更新されました (スキーマ更新はまだサポートされていません)。
 
-増分更新 **では、** 検索エンジンは前回成功したクロール以降に作成または変更されたアイテムのみを処理してインデックスを作成できます。 したがって、コンテンツ ソース内のすべてのデータのインデックスが再作成されるのではありません。 増分更新は、コンテンツ、メタデータ、アクセス許可、その他の更新を検出する場合に最適です。
+増分更新 **を使用すると**、検索エンジンは、前回のクロールが成功した後に作成または変更されたアイテムのみを処理およびインデックス付けできます。 その結果、コンテンツ ソース内のすべてのデータがインデックスを再作成する必要があります。 増分更新は、コンテンツ、メタデータ、アクセス許可、その他の更新プログラムを検出する場合に最適です。
 
-変更されていないアイテムは処理されないので、増分更新は完全な更新よりもずっと高速です。 ただし、増分更新を実行する場合でも、コンテンツ ソースと検索インデックスの間の正確なデータ同期を維持するために、定期的に完全な更新を実行する必要があります。
+変更されていないアイテムは処理されないので、増分更新は完全な更新よりもはるかに高速です。 ただし、増分更新を実行する場合でも、コンテンツ ソースと検索インデックスの間で正しいデータ同期を維持するには、定期的に完全な更新を実行する必要があります。
 
-![増分クロールとフル クロールの間隔の設定で、[15 分の増分] と [1 週間のフル クロール] が表示されます。](media/refreshschedule.png)
+> [!div class="mx-imgBorder"]
+> ![増分クロールと 15 分の増分、1 週間のフル クロールを示すフル クロール間隔の設定。](media/refreshschedule.png)
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>手順 8: 接続を確認する
+## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
-接続を完了する前に、必要に応じて構成全体を確認し、設定を編集できます。 **データ ソースのコネクタ固有の情報をまだ読み込んでいなき場合は、必ずお読みください。** 接続 **を完了する準備ができたら** 、[更新の完了] を選択します。
+接続を完了する前に、必要に応じて構成全体を確認し、設定を編集できます。 **まだデータ ソースのコネクタ固有の情報を読み取っていない場合は、必ずお読みください。** 接続 **を完了する準備** ができたら、[更新の完了] を選択します。
 
-## <a name="how-do-i-know-the-connection-setup-worked"></a>接続セットアップの動作を確認する方法
+### <a name="confirm-if-the-connection-setup-worked"></a>接続のセットアップが機能した場合の確認
 
-管理センターの [コネクタ] タブで、公開されている接続の一覧に[移動します](https://admin.microsoft.com)。 更新と削除を行う方法については、「コネクタの管理」 [を参照してください](manage-connector.md)。
+管理センターの [コネクタ] タブの下にある発行済み **接続の一** 覧に [移動します](https://admin.microsoft.com)。 更新と削除を行う方法については、「コネクタの管理 [」を参照してください](manage-connector.md)。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+<!---Insert troubleshooting recommendations for this data source-->
+データ ソースのコネクタ固有の情報を読み取る。 
+
+> [!NOTE]
+> コネクタ固有の記事の中には、この時点でのトラブルシューティングの推奨事項が含まれる場合があります。
+
+## <a name="limitations"></a>制限事項
+<!---Insert limitations for this data source-->
+すべてのデータ ソースに適用される制限について詳しくは [、「Microsoft Graph](connectors-overview.md) コネクタの概要」をご覧ください。
+
+その特定の Graph コネクタに他の制限が適用される場合は、データ ソースのコネクタ固有の情報を参照してください。
+
+## <a name="next-steps"></a>次のステップ
+
+接続を公開した後、検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、「検索結果のカスタマイズ [ページ」を参照してください](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。

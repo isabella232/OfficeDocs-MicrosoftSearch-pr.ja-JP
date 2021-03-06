@@ -3,6 +3,7 @@ title: Microsoft Search のエンタープライズ Web サイト Graph コネ�
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のエンタープライズ Web サイト Graph コネクタをセットアップする
-ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
-ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
+ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421101"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508798"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +29,7 @@ ms.locfileid: "50421101"
 エンタープライズ Web サイトグラフ コネクタを使用すると、組織は内部向け Web サイトから記事やコンテンツ **をインデックス化できます**。 コネクタを構成し、Web サイトからコンテンツを同期すると、エンド ユーザーは任意の Microsoft Search クライアントからそのコンテンツを検索できます。
 
 > [!NOTE]
-> 一般的な [**Graph コネクタの**](configure-connector.md) セットアップ プロセスについては、「グラフ コネクタのセットアップ」の記事をご覧ください。
+> グラフ コネクタ [**のセットアップの一**](configure-connector.md) 般的な手順については、「グラフ コネクタのセットアップ」をご覧ください。
 
 この記事は、エンタープライズ Web サイト コネクタを構成、実行、および監視するユーザー向けです。 一般的なセットアップ プロセスを補足し、Enterprise Web サイト コネクタにのみ適用される手順を示します。 この記事には、トラブルシューティングと [制限事項に関](#troubleshooting) する情報 [も含まれています](#limitations)。
 
@@ -50,12 +51,12 @@ ms.locfileid: "50421101"
 
 データ ソースに接続するには、Web サイトのルート URL を入力し、クロール ソースを選択し、使用する認証の種類 [(None、Basic Authentication、または](https://docs.microsoft.com/azure/active-directory/)OAuth 2.0 と Azure Active Directory (Azure AD) を使用する必要があります。 この情報を完了したら、[接続のテスト] を選択して設定を確認します。
 
-> [!NOTE]
-> クロールするサイトにサイトマップが定義されている場合、コネクタはサイトマップにリストされている URL のみをクロールします。 サイトマップが定義されていない場合、コネクタはサイトのルート URL で見つかったすべてのリンクを深くクロールします。
-
 ### <a name="url"></a>URL
 
 URL フィールドを使用して、クロールする Web サイトのルートを指定します。 エンタープライズ Web サイト コネクタは、この URL を開始点として使用し、クロールのためにこの URL からのすべてのリンクに従います。
+
+> [!NOTE]
+> クロールするサイトにサイトマップが定義されている場合、コネクタはサイトマップにリストされている URL のみをクロールします。 サイトマップが定義されていない場合、コネクタはサイトのルート URL で見つかったすべてのリンクを深くクロールします。
 
 ### <a name="crawl-mode-cloud-or-on-premises-preview"></a>クロール モード: クラウドまたはオンプレミス (プレビュー)
 
