@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の概要、その利点、Microsoft Search をサポートするアプリについて説明します。
-ms.openlocfilehash: a7250bccd3f77eb3ad2f3c91bdfd176a2141fd98
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 23bc07766bd5fb00bed21c7e739b22e7d1333630
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508816"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031784"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -68,7 +68,7 @@ Microsoft Search は、ユーザーが適切な回答、ユーザー、および
 
 ## <a name="what-content-is-searched"></a>検索されるコンテンツ
 
-Microsoft Search には、組織が Microsoft 365 に保存したコンテンツ、またはコネクタを介してインデックス付けされたコンテンツが表示されます。 Microsoft Search では、テナント間で検索したり、他の組織が共有しているコンテンツの結果を表示したりは行ないます。 組織がクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境を設定している場合、Microsoft Search は、SharePoint Server 環境に接続した外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft Search には、組織が Microsoft 365 に保存したコンテンツ、またはコネクタを介してインデックス付けされたコンテンツが表示されます。 Microsoft Search では、テナント間で検索したり、他の組織が共有しているコンテンツの結果を表示したりは行ないます。 組織がクラウド ハイブリッド検索を使用してハイブリッド SharePoint 環境を設定している場合、Microsoft Search は、SharePoint Server 環境に接続した外部コンテンツを含む、オンラインおよびオンプレミスの両方の SharePoint コンテンツからの検索結果を返します。 [ハイブリッド検索環境の詳細については、こちらを参照してください](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 ユーザーは、他の場所から取得した検索結果と同じ検索結果を取得し、インターネットから結果を取得します。
 

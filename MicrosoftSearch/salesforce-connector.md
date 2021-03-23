@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Salesforce Graph コネクタをセットアップする
-ms.openlocfilehash: 86140a4650593e08188f171be54f1753b73ecf7a
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 59cc321a40655a1c1e5edf615dd43a2a56c8ddbc
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508825"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031685"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -81,12 +81,12 @@ Salesforce インスタンスに接続するには、OAuth 認証用の Salesfor
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
@@ -125,7 +125,7 @@ Salesforce インスタンスから ACL を取り込み、ID の種類として 
 
 ## <a name="step-4b-map-aad-identities"></a>手順 4b: AAD ID のマップ
 
-Salesforce インスタンスから ACL を取り込み、ID の種類として [AAD] を選択した場合は、「Id のマッピング方法については [、「Map your Azure AD Identitys」](map-aad.md) を参照してください。 Azure AD SSO を設定する方法については、このチュートリアルを参照 [してください](https://docs.microsoft.com/azure/active-directory/saas-apps/salesforce-tutorial)。
+Salesforce インスタンスから ACL を取り込み、ID の種類として [AAD] を選択した場合は、「Id のマッピング方法については [、「Map your Azure AD Identitys」](map-aad.md) を参照してください。 Azure AD SSO を設定する方法については、このチュートリアルを参照 [してください](/azure/active-directory/saas-apps/salesforce-tutorial)。
 
 ## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 
@@ -150,7 +150,7 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
@@ -170,13 +170,13 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
     - MobilePhone
     - メール
     - 型
-    - タイトル
+    - Title
     - AccountId
     - AccountName
     - AccountUrl
     - AccountOwner
     - AccountOwnerUrl
-    - 所有者
+    - Owner
     - OwnerUrl
     - CreatedBy
     - CreatedByUrl

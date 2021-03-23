@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft による Graph コネクタのセットアップの概要
-ms.openlocfilehash: e97b930f627a6336cc93b3a1f33e390cae4ff0aa
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508877"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031379"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -81,13 +81,13 @@ Microsoft が構築した Graph コネクタを構成するには、次の手順
 
 接続設定を構成するプロセスは、データ ソースの種類によって異なります。 セットアップ プロセスでこの手順を完了するには、テナントに追加するデータ ソースの種類に関するコネクタ固有の情報を参照してください。  
 
-オンプレミス データ ソースへの接続の詳細については、「オンプレミス データ ゲートウェイのインストール [」を参照してください](https://aka.ms/configuregateway)。
+オンプレミス データ ソースへの接続の詳細については、「オンプレミス データ ゲートウェイのインストール [」を参照してください](/data-integration/gateway/service-gateway-install)。
 
 ## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
 
 アクセス制御リスト (ACL) は、組織内のユーザーがデータの各アイテムにアクセスできるかどうかを決定します。  
 
-Microsoft SQL [および Azure](MSSQL-connector.md) Data [Lake Storage Gen2](azure-data-lake-connector.md) のような一部のコネクタは [、Azure Active Directory (Azure Active Directory) ACL をネイティブAD](https://docs.microsoft.com/azure/active-directory/) しています。
+Microsoft SQL [および Azure](MSSQL-connector.md) Data [Lake Storage Gen2](azure-data-lake-connector.md) のような一部のコネクタは [、Azure Active Directory (Azure Active Directory) ACL をネイティブAD](/azure/active-directory/) しています。
 
 [ServiceNow、Azure](servicenow-connector.md) [DevOps、Salesforce](azure-devops-connector.md)などの他のコネクタでは[、Azure](salesforce-connector.md)以外のユーザーとグループAD同期できます。  
 
@@ -202,6 +202,6 @@ REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同�
 
 その特定の Graph コネクタに他の制限が適用される場合は、データ ソースのコネクタ固有の情報を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-接続を公開した後、検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、「検索結果のカスタマイズ [ページ」を参照してください](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
+接続を公開した後、検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、「検索結果のカスタマイズ [ページ」を参照してください](#next-steps-customize-the-search-results-page)。

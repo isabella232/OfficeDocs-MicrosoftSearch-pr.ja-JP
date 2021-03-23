@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Microsoft Search を使用して会社の既定の検索エンジンとして Bing を設定する方法について取り上げます。
-ms.openlocfilehash: 1ac2f23a8263c01901e252e7dd830e7373380669
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508672"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031757"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Bing を既定の検索エンジンにする
   
@@ -30,7 +30,7 @@ Bing を規定の検索エンジンとして設定しても、Microsoft Edge で
   
 各種バージョンの Windows の最新 ADMX ファイルについては、「[Windows でグループ ポリシー管理テンプレート用に中央ストアを作成および管理する方法](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)」を参照してください。
   
-このセクションで説明する設定が GPMC の内部に見つからない場合は、適切な ADMX をダウンロードして中央ストアにコピーします。 詳細については [、「ADMX ファイルを使用Domain-Based GPO の編集」を参照してください](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 コントローラーの中央ストアは、次の名前付け規則を持つフォルダーです **。%systemroot%\sysvol<\\ \> \policyes\PolicyDefinitions**
+このセクションで説明する設定が GPMC の内部に見つからない場合は、適切な ADMX をダウンロードして中央ストアにコピーします。 詳細については [、「ADMX ファイルを使用Domain-Based GPO の編集」を参照してください](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 コントローラーの中央ストアは、次の名前付け規則を持つフォルダーです **。%systemroot%\sysvol<\\ \> \policyes\PolicyDefinitions**
   
 コントローラーが処理するドメインごとに異なるフォルダーが必要です。以下のコマンドを使用すると、コマンド プロンプトから ADMX ファイルをコピーできます。
   
@@ -48,7 +48,7 @@ Bing を規定の検索エンジンとして設定しても、Microsoft Edge で
   
 Chrome には、Google Chrome Enterprise ヘルプから ADMX ファイルの形式でダウンロードできるグループ ポリシー設定の独自のセット [が付属しています](https://support.google.com/chrome/a/answer/187202)。
   
-ドメイン コントローラー上の ADMX ファイルの中央ストアにテンプレート ファイルをコピーします。 詳細については [、「ADMX ファイルを使用Domain-Based GPO の編集」を参照してください](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 コントローラーの中央ストアは、次の名前付け規則を持つフォルダーです **。%systemroot%\sysvol<\\ \> \policyes\PolicyDefinitions**
+ドメイン コントローラー上の ADMX ファイルの中央ストアにテンプレート ファイルをコピーします。 詳細については [、「ADMX ファイルを使用Domain-Based GPO の編集」を参照してください](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 コントローラーの中央ストアは、次の名前付け規則を持つフォルダーです **。%systemroot%\sysvol<\\ \> \policyes\PolicyDefinitions**
   
 コントローラーが処理するドメインごとに異なるフォルダーが必要です。以下のコマンドを使用すると、コマンド プロンプトから ADMX ファイルをコピーできます。
   

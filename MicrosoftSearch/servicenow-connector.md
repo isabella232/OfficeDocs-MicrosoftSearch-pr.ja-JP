@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow Graph コネクタをセットアップする
-ms.openlocfilehash: eaf8014876b03c0b64c012cf7e83c4e4b84838b9
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 692170ef6f8332418efc7d56a56c6fa1b1cce76c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508681"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031766"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -33,19 +33,19 @@ ServiceNow Graph コネクタを使用すると、組織内のユーザー条件
   
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-connection-settings"></a>手順 3: 接続の設定
 
 ServiceNow データに接続するには、このアカウントの組織の **ServiceNow** インスタンス URL 資格情報、クライアント ID、OAuth 認証用のクライアント シークレットを使用します。  
 
-通常、組織の **ServiceNow** インスタンス URL は、組織https://ドメイン **&lt;>.service-now.com と似now.com。** この URL と共に、ServiceNow への接続をセットアップし、更新スケジュールに基づいて Microsoft Search が ServiceNow から記事を更新できるようにアカウントが必要です。 アカウントには、少なくともナレッジ ロール <em>が必要</em> です。 [ServiceNow アカウントの役割を割り当てる方法について学習します](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
+組織の **ServiceNow** インスタンス URL は、通常、組織 **https://>.service-now.com のように &lt; 表示されます**。 この URL と共に、ServiceNow への接続をセットアップし、更新スケジュールに基づいて Microsoft Search が ServiceNow から記事を更新できるようにアカウントが必要です。 アカウントには、少なくともナレッジ ロール <em>が必要</em> です。 [ServiceNow アカウントの役割を割り当てる方法について学習します](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
 
 >[!NOTE]
 >Microsoft 検索結果のナレッジ 記事のアクセス許可を受け入れ、ユーザー ID とグループ ID をクロールする場合、アカウントは ServiceNow で次の表レコードを読み取るアクセス権を持つ必要があります。
@@ -76,7 +76,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 
 次の表に、エンドポイント作成フォームに入力する方法のガイダンスを示します。
 
-フィールド | 説明 | 推奨値 
+Field | 説明 | 推奨値 
 --- | --- | ---
 名前 | OAuth アクセスが必要なアプリケーションを識別する一意の値。 | Microsoft Search
 クライアント ID | アプリケーションの読み取り専用で自動生成された一意の ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 該当なし
@@ -95,11 +95,11 @@ Active | チェック ボックスをオンにして、アプリケーション 
 
 ## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>手順 3.a: Azure Active Directory に新しいアプリケーションを登録する
 
-Azure Active Directory での新しいアプリケーションの登録の詳細については、「アプリケーションの登録 [」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application)。 [単一テナントの組織ディレクトリ] を選択します。 リダイレクト URI は不要です。 登録後、アプリケーション (クライアント) ID とディレクトリ (テナント) ID をメモします。
+Azure Active Directory での新しいアプリケーションの登録の詳細については、「アプリケーションの登録 [」を参照してください](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 [単一テナントの組織ディレクトリ] を選択します。 リダイレクト URI は不要です。 登録後、アプリケーション (クライアント) ID とディレクトリ (テナント) ID をメモします。
 
 ## <a name="step-3b-create-a-client-secret"></a>手順 3.b: クライアント シークレットを作成する
 
-クライアント シークレットの作成の詳細については、「クライアント シークレットの作成 [」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 クライアント シークレットをメモします。
+クライアント シークレットの作成の詳細については、「クライアント シークレットの作成 [」を参照してください](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 クライアント シークレットをメモします。
 
 ## <a name="step-3c-retrieve-service-principal-object-identifier"></a>手順 3.c: サービス プリンシパル オブジェクト識別子の取得
 
@@ -132,7 +132,7 @@ Azure Active Directory での新しいアプリケーションの登録の詳細
 --- | ---
 ディレクトリ ID (テナント ID) | 手順 3.a から Azure Active Directory テナントの一意の ID。
 アプリケーション ID (クライアント ID) | 手順 3.a で登録されているアプリケーションの一意の ID。
-クライアント シークレット | アプリケーションの秘密キー (手順 3.b から)。 パスワードのように扱います。
+クライアントの秘密情報 | アプリケーションの秘密キー (手順 3.b から)。 パスワードのように扱います。
 サービス プリンシパル ID | サービスとして実行されているアプリケーションの ID。 (手順 3.c から)
 
 ## <a name="step-3d-register-servicenow-application"></a>手順 3.d: ServiceNow アプリケーションの登録
@@ -143,11 +143,11 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 2. 次の表に、OIDC プロバイダー登録フォームに入力する方法のガイダンスを示します。
 
-   フィールド | 説明 | 推奨値
+   Field | 説明 | 推奨値
    --- | --- | ---
    名前 | OAuth OIDC エンティティを識別する一意の名前。 | Azure AD
    クライアント ID | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 手順 3.a のアプリケーション (クライアント) ID
-   クライアント シークレット | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント シークレット。 | 手順 3.b のクライアント シークレット
+   クライアントの秘密情報 | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント シークレット。 | 手順 3.b のクライアント シークレット
 
    その他の値はすべて既定で指定できます。
 
@@ -155,7 +155,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 4. 次の表に、OIDC プロバイダー構成フォームに入力する方法のガイダンスを示します。
 
-   フィールド | 推奨値
+   Field | 推奨値
    --- | ---
    OIDC プロバイダー |  Azure AD
    OIDC メタデータ URL | URL は \: 、/.well known/openid-configuration login.microsoftonline.com/<https //login.microsoftonline.com/<tenandId">形式である必要があります。 <br/>手順 3.a から "tenantID" をディレクトリ (テナント) ID に置き換えてください。
@@ -173,7 +173,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 次の表は、ServiceNow ユーザー アカウントの登録に記入する方法に関するガイダンスを示しています。
 
-フィールド | 推奨値
+Field | 推奨値
 --- | ---
 ユーザー ID | 手順 3.c のサービス プリンシパル ID
 Web サービス アクセスのみ | Checked
@@ -204,23 +204,23 @@ ServiceNow コネクタは、[すべてのユーザー]または [このデー�
 >[このデータ ソースにアクセスできるユーザーのみ] を選択した場合、ServiceNow コネクタ **はプレビュー中です**。
 
 >[!NOTE]
->ID ソースの種類として [AAD] を選択した場合は、ServiceNow の電子メール対象プロパティに UPN ソース プロパティを割り当ててみてください。 マッピングを確認または変更するには、「Azure Active Directory での SaaS アプリケーションのユーザー プロビジョニング属性 [マッピングのカスタマイズ」を参照してください](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)。
+>ID ソースの種類として [AAD] を選択した場合は、ServiceNow の電子メール対象プロパティに UPN ソース プロパティを割り当ててみてください。 マッピングを確認または変更するには、「Azure Active Directory での SaaS アプリケーションのユーザー プロビジョニング属性 [マッピングのカスタマイズ」を参照してください](/azure/active-directory/app-provisioning/customize-application-attributes)。
 
 ServiceNow インスタンスから ACL を取り込み、ID の種類に対して "非 AAD" を選択した場合は [、「Map your Azure AD Identitys」](map-non-aad.md) を参照してください。
 
 ## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-7-manage-schema"></a>手順 7: スキーマの管理
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-8-choose-refresh-settings"></a>手順 8: 更新設定を選択する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 >[!NOTE]
@@ -228,7 +228,7 @@ ServiceNow インスタンスから ACL を取り込み、ID の種類に対し�
 
 ## <a name="step-9-review-connection"></a>手順 9: 接続の確認
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="troubleshooting"></a>トラブルシューティング

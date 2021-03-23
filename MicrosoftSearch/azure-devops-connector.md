@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Azure DevOps Graph コネクタをセットアップする
-ms.openlocfilehash: 9307aabbf5ea1565e083abfefb90c590d356ae58
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 9352f619e0a48bc2dac8441107f87f725211ab13
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508862"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031316"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -40,23 +40,23 @@ Azure DevOps Graph コネクタを使用すると、組織は Azure DevOps サ�
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
-Azure DevOps インスタンスに接続するには、OAuth 認証用の Azure [DevOps](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) 組織名、そのアプリ ID、およびクライアント シークレットが必要です。
+Azure DevOps インスタンスに接続するには、OAuth 認証用の Azure [DevOps](/azure/devops/organizations/accounts/create-organization) 組織名、そのアプリ ID、およびクライアント シークレットが必要です。
 
 ### <a name="register-an-app"></a>アプリを登録します
 
-Microsoft Search アプリがインスタンスにアクセスできるよう、Azure DevOps にアプリを登録します。 詳細については、アプリの登録方法に関する Azure DevOps [のドキュメントを参照してください](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app&preserve-view=true)。
+Microsoft Search アプリがインスタンスにアクセスできるよう、Azure DevOps にアプリを登録します。 詳細については、アプリの登録方法に関する Azure DevOps [のドキュメントを参照してください](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
 
 次の表に、アプリ登録フォームに入力する方法に関するガイダンスを示します。
 
@@ -99,11 +99,11 @@ Azure DevOps コネクタは、[このデータ ソースにアクセスでき�
 
 ## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 
 ## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 
 ## <a name="step-7-choose-refresh-settings"></a>手順 7: 更新設定を選択する
 
@@ -112,7 +112,7 @@ Azure DevOps コネクタは、フル クロールと増分クロールの両方
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

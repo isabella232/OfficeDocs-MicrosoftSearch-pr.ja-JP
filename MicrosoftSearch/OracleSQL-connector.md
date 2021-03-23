@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Microsoft Search 用の Oracle SQLグラフ コネクタをセットアップします。
-ms.openlocfilehash: 901b772def7585606a090d8a7696a32ff028e2a0
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 7ad3d03c73ce051c43f3b3ea094130a837d3177f
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508897"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031424"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -40,12 +40,12 @@ Oracle SQL グラフ コネクタを使用すると、組織はオンプレミ�
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
@@ -80,14 +80,14 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 
 * **AllowedUsers**: このオプションは、検索結果にアクセスできるユーザー ID の一覧を指定します。 次の例では、ユーザーの一覧 (john@contoso.com、keith@contoso.com、lisa@contoso.com が OrderId = 12 のレコードにのみアクセスできます。
 * **AllowedGroups**: このオプションは、検索結果にアクセスできるユーザーのグループを指定します。 次の例では、グループ sales-team@contoso.com OrderId = 12 のレコードにのみアクセスできます。
-* **DeniedUsers**: このオプションは、検索結果にアクセスできないユーザーの一覧を指定します。 次の例では、ユーザー john@contoso.comおよび keith@contoso.com OrderId = 13 のレコードにアクセスできないのに対し、他のすべてのユーザーは、このレコードにアクセスできます。
-* **DeniedGroups**: このオプションは、検索結果にアクセスできないユーザーのグループを指定します。 次の例では、グループengg-team@contoso.comグループpm-team@contoso.com OrderId = 15 のレコードにアクセスすることはできませんが、他のすべてのユーザーは、このレコードにアクセスできます。  
+* **DeniedUsers**: このオプションは、検索結果にアクセスできないユーザーの一覧を指定します。 次の例では、ユーザー john@contoso.com および keith@contoso.com OrderId = 13 のレコードにアクセスできないのに対し、他のすべてのユーザーは、このレコードにアクセスできます。
+* **DeniedGroups**: このオプションは、検索結果にアクセスできないユーザーのグループを指定します。 次の例では、グループ engg-team@contoso.com グループ pm-team@contoso.com OrderId = 15 のレコードにアクセスすることはできませんが、他のすべてのユーザーは、このレコードにアクセスできます。  
 
 ![サンプル プロパティを含む OrderTable および AclTable を示すサンプル データ](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>サポートされているデータ型
 
-次の表に、Oracle コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされる Microsoft Graph コネクタのデータ型の詳細については、プロパティ リソースの種類に関する [ドキュメントを参照してください](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)。
+次の表に、Oracle コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされる Microsoft Graph コネクタのデータ型の詳細については、プロパティ リソースの種類に関する [ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | カテゴリ | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
@@ -145,12 +145,12 @@ ACL として使用するには、次の ID の種類がサポートされてい
 
 ## <a name="step-4-assign-property-labels"></a>手順 4: プロパティ ラベルを割り当てる
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-5-manage-schema"></a>手順 5: スキーマの管理
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-6-manage-search-permissions"></a>手順 6: 検索アクセス許可を管理する
@@ -165,7 +165,7 @@ Oracle SQL コネクタは、フル クロールと増分クロールの両方�
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!--- ## Next steps: Customize the search results page

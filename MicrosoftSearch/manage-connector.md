@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft Graph コネクタを管理します。
-ms.openlocfilehash: 1c152f23e9b9d9982b957830d5f4bef0eef41347
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929589"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031721"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -32,7 +32,7 @@ Microsoft 365 [管理センターの](https://admin.microsoft.com/Adminportal/Ho
 
 コネクタの種類ごとに [、Microsoft 365 管理](https://admin.microsoft.com) センターは次の表に示す操作をサポートしています。
 
-操作 | Microsoft 提供の Graph コネクタ | パートナーコネクタまたはグラフ コネクタ
+Operation | Microsoft 提供の Graph コネクタ | パートナーコネクタまたはグラフ コネクタ
 --- | --- | ---
 接続の追加 | :heavy_check_mark: (「セットアップの概要[」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:
@@ -61,14 +61,14 @@ Microsoft 365 [管理センターの](https://admin.microsoft.com/Adminportal/Ho
  
 >[!NOTE]
 >プレビュー期間中、Graph コネクタを試しているすべての組織に、すべての接続で最大 200 万アイテムの無料の固定クォータが提供されました。 Graph コネクタが一般公開されている場合、プレビューで Graph コネクタを使用している組織では、2021 年 4 月 1 日に無料のクォータが期限切れになります。
->Microsoft が作成した ["Preview"](connectors-preview.md) というラベルのグラフ コネクタは、組織の合計課金インデックス クォータには含まれません。 ただし、組織に対して構成できる最大接続数 10 と、組織が接続間でインデックスを作成できる最大 700 万アイテムの数にカウントされます。各接続は 700,000 アイテムに制限されます。 
+>Microsoft が作成した ["Preview"](./connectors-overview.md) というラベルのグラフ コネクタは、組織の合計課金インデックス クォータには含まれません。 ただし、組織に対して構成できる最大接続数 10 と、組織が接続間でインデックスを作成できる最大 700 万アイテムの数にカウントされます。各接続は 700,000 アイテムに制限されます。 
 
 クォータ使用率バーは、組織によるクォータの消費に基づいてさまざまな状態を示します。
 
 状態 | クォータ使用率レベル
 --- | --- 
 標準 | 0-79%
-高い | 80-89%
+高 | 80-89%
 重大 | 90%-99%
 Full | 100%
 

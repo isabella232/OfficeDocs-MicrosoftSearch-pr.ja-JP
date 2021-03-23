@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Azure SQLおよび Microsoft SQL Graph コネクタをセットアップします。
-ms.openlocfilehash: 499c0fad93f97e634086ff9025d947c4f70336fb
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 81951dab058a14d687f81f7611ee624b079f0822
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508906"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031406"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -40,13 +40,13 @@ Graph コネクタは、指定されたコンテンツを Microsoft Search に�
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -54,9 +54,9 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>アプリを登録する (Azure SQLコネクタのみ)
 
-Azure SQLコネクタの場合、Microsoft Search アプリがインデックス作成用のデータにアクセスするには、Azure Active Directory にアプリを登録する必要があります。 アプリの登録の詳細については、アプリの登録方法に関する Microsoft Graph の [ドキュメントを参照してください](https://docs.microsoft.com/graph/auth-register-app-v2)。
+Azure SQLコネクタの場合、Microsoft Search アプリがインデックス作成用のデータにアクセスするには、Azure Active Directory にアプリを登録する必要があります。 アプリの登録の詳細については、アプリの登録方法に関する Microsoft Graph の [ドキュメントを参照してください](/graph/auth-register-app-v2)。
 
-アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、テナント ID をメモした後、新しいクライアント シークレットを [生成する必要があります](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 クライアント シークレットは 1 回だけ表示されます。 クライアント シークレットを&注意してください。 Microsoft Search で新しい接続を構成する場合は、クライアント ID とクライアント シークレットを使用します。
+アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、テナント ID をメモした後、新しいクライアント シークレットを [生成する必要があります](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 クライアント シークレットは 1 回だけ表示されます。 クライアント シークレットを&注意してください。 Microsoft Search で新しい接続を構成する場合は、クライアント ID とクライアント シークレットを使用します。
 
 登録済みのアプリを Azure SQLデータベースに追加するには、次の必要があります。
 
@@ -66,7 +66,7 @@ Azure SQLコネクタの場合、Microsoft Search アプリがインデックス
 - コマンド 'exec sp_addrolemember 'db_datareader', [アプリ名]' または 'ALTER ROLE db_datareader ADD MEMBER [アプリ名]] を実行して、ユーザーを役割に追加する
 
 >[!NOTE]
->Azure Active Directory に登録されているアプリへのアクセスを取り消す場合は、登録されたアプリの削除に関する Azure の [ドキュメントを参照してください](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)。
+>Azure Active Directory に登録されているアプリへのアクセスを取り消す場合は、登録されたアプリの削除に関する Azure の [ドキュメントを参照してください](/azure/active-directory/develop/quickstart-remove-app)。
 
 ### <a name="connection-settings"></a>接続設定
 
@@ -77,7 +77,7 @@ Microsoft SQL サーバー コネクタをデータ ソースに接続するに�
 
 Azure SQLコネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQLコネクタは、データベースに接続するための Azure Active Directory Open ID Connect (OIDC) 認証のみをサポートします。
 
-セキュリティを強化するには、Azure サーバーまたはデータベースの IP ファイアウォールSQL構成できます。 IP ファイアウォールルールの設定の詳細については、IP ファイアウォールルールに関する [ドキュメントを参照してください](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure)。 ファイアウォール設定に次のクライアント IP 範囲を追加します。
+セキュリティを強化するには、Azure サーバーまたはデータベースの IP ファイアウォールSQL構成できます。 IP ファイアウォールルールの設定の詳細については、IP ファイアウォールルールに関する [ドキュメントを参照してください](/azure/azure-sql/database/firewall-configure)。 ファイアウォール設定に次のクライアント IP 範囲を追加します。
 
 | Region | IP 範囲 |
 | ------------ | ------------ |
@@ -108,20 +108,20 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 - **AllowedUsers**: この列は、検索結果にアクセスできるユーザー ID の一覧を指定します。 次の例では、ユーザーの一覧 (john@contoso.com、keith@contoso.com、lisa@contoso.com が OrderId = 12 のレコードにのみアクセスできます。
 - **AllowedGroups**: この列は、検索結果にアクセスできるユーザーのグループを指定します。 次の例では、グループ sales-team@contoso.com OrderId = 12 のレコードにのみアクセスできます。
-- **DeniedUsers**: この列は、検索結果にアクセスできないユーザーの一覧を指定します。 次の例では、ユーザー john@contoso.comおよび keith@contoso.com OrderId = 13 のレコードにアクセスできないのに対し、他のすべてのユーザーは、このレコードにアクセスできます。
-- **DeniedGroups**: この列は、検索結果にアクセスできないユーザーのグループを指定します。 次の例では、グループengg-team@contoso.comグループpm-team@contoso.com OrderId = 15 のレコードにアクセスすることはできませんが、他のすべてのユーザーは、このレコードにアクセスできます。  
+- **DeniedUsers**: この列は、検索結果にアクセスできないユーザーの一覧を指定します。 次の例では、ユーザー john@contoso.com および keith@contoso.com OrderId = 13 のレコードにアクセスできないのに対し、他のすべてのユーザーは、このレコードにアクセスできます。
+- **DeniedGroups**: この列は、検索結果にアクセスできないユーザーのグループを指定します。 次の例では、グループ engg-team@contoso.com グループ pm-team@contoso.com OrderId = 15 のレコードにアクセスすることはできませんが、他のすべてのユーザーは、このレコードにアクセスできます。  
 
 ![サンプル プロパティを含む OrderTable および AclTable を示すサンプル データ](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>サポートされているデータ型
 
-次の表は、MS SQLおよび Azure のデータ コネクタでサポートされているデータSQLのSQLします。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされる Microsoft Graph コネクタのデータ型の詳細については、プロパティ リソースの種類に関する [ドキュメントを参照してください](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)。
+次の表は、MS SQLおよび Azure のデータ コネクタでサポートされているデータSQLのSQLします。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされる Microsoft Graph コネクタのデータ型の詳細については、プロパティ リソースの種類に関する [ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | カテゴリ | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
 | 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
 | 正確な数値 | bigint <br> int <br> smallint <br> tinyint | int64 |
-| 正確な数値 | ビット | ブール値 |
+| 正確な数値 | ビット | boolean |
 | 近似数値 | 浮動小数点数 <br> 本当の | double |
 | 文字の文字列 | char <br> varchar <br> text | string |
 | Unicode 文字の文字列 | nchar <br> nvarchar <br> ntext | string |
@@ -174,14 +174,14 @@ ACL として使用するには、次の ID の種類がサポートされてい
 
 ## <a name="step-4-assign-property-labels"></a>手順 4: プロパティ ラベルを割り当てる
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-5-manage-schema"></a>手順 5: スキーマの管理
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -191,13 +191,13 @@ instructions.-->
 
 ## <a name="step-7-choose-refresh-settings"></a>手順 7: 更新設定を選択する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

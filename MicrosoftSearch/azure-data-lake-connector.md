@@ -13,34 +13,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Azure Data Lake Storage Gen2 Graph コネクタをセットアップする
-ms.openlocfilehash: 2bb9570bc3b0a5adef7ac72ea1620c4f22a8aefb
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 37a035b3de9dc217f885f193992d1e74a675fb35
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508888"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031325"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="azure-data-lake-storage-gen2-graph-connector"></a>Azure Data Lake Storage Gen2 Graph コネクタ
 
-Azure Data Lake Storage Gen2 Graph コネクタを使用すると、組織内のユーザーは [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) および Azure Data Lake Gen [2 ストレージ](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) アカウントに格納されているファイルを検索できます。
+Azure Data Lake Storage Gen2 Graph コネクタを使用すると、組織内のユーザーは [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) および Azure Data Lake Gen [2 ストレージ](/azure/storage/blobs/data-lake-storage-introduction) アカウントに格納されているファイルを検索できます。
 
 > [!NOTE]
 > グラフ コネクタ [**のセットアップの一**](configure-connector.md) 般的な手順については、「グラフ コネクタのセットアップ」をご覧ください。
 
 この記事は、Azure Data Lake Storage Gen2 コネクタを構成、実行、および監視するユーザーを対象にしています。 これは、一般的なセットアップ プロセスを補足し、Azure Data Lake Storage Gen2 コネクタにのみ適用される手順を示します。 この記事には、制限に関する [情報も含まれています](#limitations)。
 
-この記事では *、Azure Blob Storage* および [Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) Data Lake Gen 2 Storage の総称として Azure [Storage を使用します](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)。
+この記事では *、Azure Blob Storage* および [Azure](/azure/storage/blobs/storage-blobs-introduction) Data Lake Gen 2 Storage の総称として Azure [Storage を使用します](/azure/storage/blobs/data-lake-storage-introduction)。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
@@ -76,13 +76,13 @@ Graph Connectors Service で変更をリアルタイムで処理するサポー�
 
 ### <a name="azure-data-lake-gen-2"></a>Azure Data Lake Gen 2
 
-Azure Data Lake Gen 2 ストレージ アカウントからアクセス制御リスト (ACL) を取り [込む方法を選択](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) できます。 これらの検索アクセス許可を設定すると、Azure Active Directory にサインインしているユーザーのアクセス許可に基づいて検索コンテンツ [がトリミングされます](https://docs.microsoft.com/azure/active-directory/)。 または、ストレージ アカウントからインデックスが作成されたコンテンツを組織内のすべてのユーザーに表示することもできます。 この場合、組織内のすべてのユーザーがストレージ アカウント内のすべてのデータにアクセスできます。
+Azure Data Lake Gen 2 ストレージ アカウントからアクセス制御リスト (ACL) を取り [込む方法を選択](/azure/storage/blobs/data-lake-storage-introduction) できます。 これらの検索アクセス許可を設定すると、Azure Active Directory にサインインしているユーザーのアクセス許可に基づいて検索コンテンツ [がトリミングされます](/azure/active-directory/)。 または、ストレージ アカウントからインデックスが作成されたコンテンツを組織内のすべてのユーザーに表示することもできます。 この場合、組織内のすべてのユーザーがストレージ アカウント内のすべてのデータにアクセスできます。
 
 Azure Data Lake Storage Gen2 Graph コネクタは、[すべてのユーザー] または [このデータ ソースにアクセスできるユーザーのみ] に表示される検索 **アクセス許可をサポートしています**。 検索結果に表示されるインデックス付きデータは、各アイテムにアクセスできる組織内のユーザーに表示される可能性があります。
 
 ### <a name="azure-blob-storage"></a>Azure Blob Storage
 
-Azure Blob [Storage への接続では](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)、構成済みのソースからインデックスが作成されたコンテンツはすべて、組織内のすべてのユーザーに表示されます。 アクセス制御リストは、Azure Blob Storage の BLOB レベルではサポートされていません。
+Azure Blob [Storage への接続では](/azure/storage/blobs/storage-blobs-introduction)、構成済みのソースからインデックスが作成されたコンテンツはすべて、組織内のすべてのユーザーに表示されます。 アクセス制御リストは、Azure Blob Storage の BLOB レベルではサポートされていません。
 
 ## <a name="step-7-set-the-refresh-schedule"></a>手順 7: 更新スケジュールを設定する
 
@@ -90,7 +90,7 @@ Azure Blob [Storage への接続では](https://docs.microsoft.com/azure/storage
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

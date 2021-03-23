@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のエンタープライズ Web サイト Graph コネクタをセットアップする
-ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508798"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031631"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -39,17 +39,17 @@ ms.locfileid: "50508798"
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
-データ ソースに接続するには、Web サイトのルート URL を入力し、クロール ソースを選択し、使用する認証の種類 [(None、Basic Authentication、または](https://docs.microsoft.com/azure/active-directory/)OAuth 2.0 と Azure Active Directory (Azure AD) を使用する必要があります。 この情報を完了したら、[接続のテスト] を選択して設定を確認します。
+データ ソースに接続するには、Web サイトのルート URL を入力し、クロール ソースを選択し、使用する認証の種類 [(None、Basic Authentication、または](/azure/active-directory/)OAuth 2.0 と Azure Active Directory (Azure AD) を使用する必要があります。 この情報を完了したら、[接続のテスト] を選択して設定を確認します。
 
 ### <a name="url"></a>URL
 
@@ -62,7 +62,7 @@ URL フィールドを使用して、クロールする Web サイトのルー�
 
 クロール モードは、インデックスを作成する Web サイトの種類 (クラウドまたはオンプレミス) を決定します。 クラウド Web サイトの場合は、クロール **モードとして [クラウド** ] を選択します。
 
-また、コネクタはオンプレミス Web サイトのクロールをサポートしています。 このモードはプレビュー中です。 オンプレミスのデータにアクセスするには、まず Graph コネクタ エージェントをインストールして構成する必要があります。 詳細については [、「Graph コネクタ エージェント」を参照してください](https://docs.microsoft.com/microsoftsearch/on-prem-agent)。
+また、コネクタはオンプレミス Web サイトのクロールをサポートしています。 このモードはプレビュー中です。 オンプレミスのデータにアクセスするには、まず Graph コネクタ エージェントをインストールして構成する必要があります。 詳細については [、「Graph コネクタ エージェント」を参照してください](./on-prem-agent.md)。
 
 オンプレミス Web サイトの場合は、クロール モードとして [エージェント] を選択し **、[On-Prem Agent]** フィールドで、前にインストールして構成した Graph コネクタ エージェントを選択します。  
 
@@ -73,16 +73,16 @@ URL フィールドを使用して、クロールする Web サイトのルー�
 
 基本認証には、ユーザー名とパスワードが必要です。 Microsoft 365 管理センターを使用して [、このボット アカウントを作成します](https://admin.microsoft.com)。
 
-Azure サーバーを使用する [OAuth](https://docs.microsoft.com/azure/active-directory/) 2.0 AD ID、クライアント ID、およびクライアント シークレットが必要です。 OAuth 2.0 はクラウド モードでのみ動作します。
+Azure サーバーを使用する [OAuth](/azure/active-directory/) 2.0 AD ID、クライアント ID、およびクライアント シークレットが必要です。 OAuth 2.0 はクラウド モードでのみ動作します。
 
-詳細については [、「OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code)コード許可フローを使用して Azure Active Directory Web アプリケーションへのアクセスを承認する」を参照してください。 次の値を使用して登録します。
+詳細については [、「OAuth 2.0](/azure/active-directory/develop/v1-protocols-oauth-code)コード許可フローを使用して Azure Active Directory Web アプリケーションへのアクセスを承認する」を参照してください。 次の値を使用して登録します。
 
 **名前:** Microsoft Search <br/>
 **Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
 
 リソース、client_id、client_secretの値を取得するには、「承認コードを使用してリダイレクト URL  Web ページでアクセス トークンを要求する」を参照してください。
 
-詳細については、「クイック スタート [: アプリケーションを Microsoft ID プラットフォームに登録する」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
+詳細については、「クイック スタート [: アプリケーションを Microsoft ID プラットフォームに登録する」を参照してください](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>手順 3a: 除外する URL を追加する (オプションのクロール制限)
 
@@ -114,12 +114,12 @@ Azure サーバーを使用する [OAuth](https://docs.microsoft.com/azure/activ
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
-一般的なセットアップ [手順に従います](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-Web サイトのコンテンツを読み取る場合、クロールでソース エラーが発生する可能性があります。これは、以下の詳細なエラー コードで表されます。 エラーの種類の詳細については、接続を選択した後でエラー **の詳細** ページに移動します。 エラー コード **を選択して** 、詳細なエラーを表示します。 詳細については、「 [コネクタの管理」](https://docs.microsoft.com/microsoftsearch/manage-connector) も参照してください。
+Web サイトのコンテンツを読み取る場合、クロールでソース エラーが発生する可能性があります。これは、以下の詳細なエラー コードで表されます。 エラーの種類の詳細については、接続を選択した後でエラー **の詳細** ページに移動します。 エラー コード **を選択して** 、詳細なエラーを表示します。 詳細については、「 [コネクタの管理」](./manage-connector.md) も参照してください。
 
  詳細なエラー コード | エラー メッセージ
  --- | ---
