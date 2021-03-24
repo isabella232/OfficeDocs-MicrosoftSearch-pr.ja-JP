@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用 Microsoft Graph コネクタの概要
-ms.openlocfilehash: 2d49471c703b765f6e99324f39dbe730f6dea814
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031658"
+ms.locfileid: "51042576"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -124,7 +124,7 @@ Microsoft Graph コネクタと Microsoft Search API は一般に利用可能で
 
 ## <a name="how-do-i-customize-search-results"></a>検索結果をカスタマイズする方法
 
-次の手順は、この記事で推奨される検索結果をカスタマイズする方法をカスタマイズし、検索結果[を構成する方法です。](#how-do-i-customize-and-configure-search-results) 検索結果のカスタマイズの詳細については、「[検索結果のカスタマイズ] ページ [」を参照してください](./configure-connector.md#next-steps-customize-the-search-results-page)。
+次の手順は、この記事で推奨される検索結果をカスタマイズする方法をカスタマイズし、検索結果[を構成する方法です。](#how-do-i-customize-and-configure-search-results) 検索結果のカスタマイズの詳細については、「[検索結果のカスタマイズ] ページ [」を参照してください](customize-search-page.md)。
 
 ## <a name="what-are-the-connector-limitations"></a>コネクタの制限事項は何ですか?
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft による Graph コネクタのセットアップの概要
-ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031379"
+ms.locfileid: "51042585"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -202,6 +202,6 @@ REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同�
 
 その特定の Graph コネクタに他の制限が適用される場合は、データ ソースのコネクタ固有の情報を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-接続を公開した後、検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、「検索結果のカスタマイズ [ページ」を参照してください](#next-steps-customize-the-search-results-page)。
+接続を公開した後、検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、「検索結果のカスタマイズ [ページ」を参照してください](customize-search-page.md)。
