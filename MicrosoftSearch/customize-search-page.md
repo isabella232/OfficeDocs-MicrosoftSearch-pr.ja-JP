@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
+ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031649"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587741"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -116,7 +116,10 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>手順 3: 垂直を有効にした後に表示する
 
-バーティカルを有効にした後、表示できるようになるまでに時間がかかる場合があります。 有効にした後で待ちたくない場合は、[SharePoint](https://sharepoint.com/) と [Office](https://office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。 [Bing の](https://bing.com)場合は、&**機能=uncachedVerticals** を作業垂直 URL に追加して、垂直をすぐに表示します。
+垂直を有効にした後、表示するには数時間かかります。 有効にした後で待ちたくない場合は、[SharePoint](https://sharepoint.com/) と [Office](https://office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。 [Bing の](https://bing.com)場合は、&**機能=uncachedVerticals** を作業垂直 URL に追加して、垂直をすぐに表示します。 
+
+> [!NOTE]
+> 追加されたバーティカルは、モバイル Web ブラウザー[](https://office.com)から表示Office [SharePoint](https://sharepoint.com/)やアプリでは表示されません。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
