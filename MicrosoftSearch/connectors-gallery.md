@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のすべての Microsoft Graph コネクタの一覧
-ms.openlocfilehash: f20a52beb3894503e0c5b8911bfc026b8249f9a5
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: b899e3facd38502dc653364b29e70a10ac6ca3a4
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929618"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639882"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph コネクタ ギャラリー
 
@@ -425,6 +425,22 @@ ms.locfileid: "50929618"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                        <h3>Atlassian Confluence (Cloud)</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Confluence (クラウド バージョン) コネクタは、Confluence に格納されているコンテンツをクロールおよびインデックス付けできるエンタープライズ グレードのインデックス コネクタです。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/"><font color="0065BA">詳細</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                        <h3>Atlassian Confluence Cloud</h3>
                         <p>by <a href="https://www.raytion.com">Raytion</a></p>
                         <p>Atlassian Confluence Cloud 用コネクタ。 オンプレミスの Confluence インスタンスからのタグのページ、ブログ投稿、添付ファイル、コメント、スペース、プロファイル、ハブ サイトをほぼリアルタイムでインデックス化します。 コネクタは、Confluence Cloud の組み込みのユーザーおよびグループ管理を完全にサポートします。 第 6 世代 Raytion 検索コネクタ。</p>
@@ -471,6 +487,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Azure AD </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Microsoft Azure Active Directory (Azure Active Directory) (Azure AD) からコンテンツを確実にインデックス化し、Microsoft Graph を使用してインテリジェントに検索するためのセキュリティで保護されたエンタープライズ検索コネクタ。 Microsoft Graph API を介して Azure ADオブジェクトにインデックスを作成します。 コネクタを使用すると、ほぼリアルタイムでプリンシパルを Microsoft Graph に取り込み、エキスパート検索、機器検索、場所検索などの使用例を実装したり、カスタム データ ソースと組み合わせて早期バインドのセキュリティ トリミングを提供できます。 コネクタは、Microsoft 365 に対するフェデレーション認証をサポートしています。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-azure-ad-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -546,6 +563,22 @@ ms.locfileid: "50929618"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                        <h3>Bentley</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>BAI Bentley AssetWise Connector を使用すると、他のリポジトリのコンテンツと共に、AssetWise から 1 つの統合検索インデックスにコンテンツを表示できます。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/bentley-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                         <h3>検索ボックス</h3>
                         <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
                         <p>Box コネクタを使用すると、SharePoint や他のポータルの Box からコンテンツを表示し、ユーザーは SharePoint と Box から統合された検索結果を取得できます。</p>
@@ -608,6 +641,8 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Confluence からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 オンプレミスの Confluence インスタンスからのタグのページ、ブログ投稿、添付ファイル、コメント、スペース、プロファイル、ハブ サイトをほぼリアルタイムで堅牢にインデックス付けします。 このコネクタは、Atlassian Confluence の組み込みのユーザーおよびグループ管理、および Active Directory および他のディレクトリ サービスに基づく Confluence インストールを完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence Cloud </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Confluence Cloud からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 Confluence Cloud インスタンスのタグのページ、ブログ投稿、添付ファイル、コメント、スペース、プロファイル、ハブ サイトをほぼリアルタイムで堅牢にインデックス付けします。 このコネクタは、Atlassian Confluence Cloud の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -643,6 +678,7 @@ ms.locfileid: "50929618"
 </ul>
 <!--- 9 ROW --->
 <ul class="panelContent cardsZ">
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Documentum </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、OpenText Documentum からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索します。 リポジトリ、フォルダー、ファイルを、Documentum のメタデータとプロパティと共にほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、OpenText Documentum の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-documentum-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -653,6 +689,22 @@ ms.locfileid: "50929618"
                         <p>Documentum Connector は、任意の Documentum コンテンツ リポジトリからコンテンツをクロールします。 DQL は、ドキュメントおよびコンテンツ管理に特化した検索機能を含む複雑なクエリを実行できるクエリ言語です。 Aspire Documentum DQL コネクタは、Documentum からコンテンツをクロールします。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector"><font color="0065BA">詳細</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Egnyte</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>"Egnyte Connector は、完全クロールと増分クロールの両方をサポートし、非常に高いスループットを実現します。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
                         </p>
                     </div>
                 </div>
@@ -710,6 +762,8 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Enterprise Vault </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Symantec Enterprise Vault からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索します。 アーカイブされたデータ (電子メール、添付ファイル、ファイル、予定表アイテム、連絡先など) をほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、Symantec Enterprise Vault の認証モデル Basic、NTLM、Kerberos 認証を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Enterprise Vault </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>セキュリティで保護されたエンタープライズ検索コネクタにより、Veritas Enterprise Vault からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索できます。 アーカイブされたデータ (電子メール、添付ファイル、ファイル、予定表アイテム、連絡先など) をほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、Veritas Enterprise Vault の認証モデル Basic、NTLM、Kerberos 認証を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -828,6 +882,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>FirstSpirit </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、e-Spirit FirstSpirit からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 ページ、添付ファイル、および他の生成されたドキュメントの種類を FirstSpirit からほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、e-Spirit FirstSpirit の組み込みのユーザー、グループ、アクセス許可の管理、および Active Directory や他のディレクトリ サービスに基づく FirstSpirit インストールを完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-firstspirit-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -873,6 +928,22 @@ ms.locfileid: "50929618"
                         <p>Google Cloud SQL コネクタは、Google Cloud SQL から MICROSOFT Search インデックスにコンテンツをインデックス化し、BA Insight の SmartHub を介して表示し、統合された検索結果をユーザーに提供します。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/google-cloud-sql-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Google ドライブ</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>BAI Google Drive コネクタを使用すると、Google ドライブのコンテンツを参照する 1 つの統合検索インデックスに Google ドライブのコンテンツと、他のリポジトリのコンテンツを表示できます。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/google-drive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
                         </p>
                     </div>
                 </div>
@@ -1123,6 +1194,22 @@ ms.locfileid: "50929618"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                        <h3>iManage Cloud</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>BA Insight の iManage Cloud Connector は、Work ワークスペース内のドキュメントの全文とメタデータの両方を安全に検索エンジンにインデックス付けします。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-imanage-work-cloud/"><font color="0065BA">詳細</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                         <h3>iManage Work</h3>
                         <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
                         <p>iManage Work Connector は完全なセキュリティを提供し、高スループットで動作し、クロール時間を最小限に抑え、ワークに対するパフォーマンスの低い影響を維持します。 読み取りアクセスだけが必要で、クライアント ソフトウェアを iManage サーバーにインストールする必要はありません。 これにより、iManage Work に保存されているすべてのコンテンツにシームレスに同時にアクセスできます。</p>
@@ -1134,6 +1221,25 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+    <li>
+     <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Jira</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Jira Connector を使用すると、すべての Jira オブジェクトに対して検索を実行できます。これにより、Jira に直接移動する必要がなくなります。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Jira からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索します。 プロジェクト、問題、添付ファイル、コメント、作業ログ、発行履歴、リンク、およびプロファイルをオンプレミスの Jira インスタンスからほぼリアルタイムで堅牢にインデックス化します。 このコネクタは、Atlassian Jira の組み込みのユーザーおよびグループ管理、および Active Directory および他のディレクトリ サービスに基づく Jira インストールを完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-connector /"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Jira (クラウド バージョン) コネクタは、すべての Jira オブジェクトに対して検索を実行し、Jira に直接移動する必要がなくなります。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira Cloud </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Jira Cloud からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 Jira Cloud のプロジェクト、問題、添付ファイル、コメント、作業ログ、発行履歴、リンク、およびプロファイルをほぼリアルタイムで堅牢にインデックス付けします。 このコネクタは、Atlassian Jira Cloud の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-cloud-connector /"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1204,6 +1310,7 @@ ms.locfileid: "50929618"
 </ul>
 <!--- 20 ROW --->
 <ul class="panelContent cardsZ">
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Kaltura</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Kaltura Connector を使用すると、ビデオだけでなく、カテゴリ、データ、ドキュメントなどのさまざまな種類の情報のインデックス作成も可能です。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1389,7 +1496,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
-    <li>
+   <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
@@ -1405,6 +1512,11 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Microsoft Dynamics 365 CRM コネクタは、オンプレミスの CRM インストールと Dynamics CRM Online の両方をサポートしています。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365 (Cloud)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Microsoft Dynamics 365 (Cloud Version) CRM Connector は、CRM アプリケーションへの安全な接続を確立し、CRM スキーマから検索エンジン スキーマにコンテンツをマップします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/"><font color="0065BA"">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Exchange Online コネクタを使用すると、さまざまな検索プラットフォームを介して Exchange Online からコンテンツを取得できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange パブリック フォルダー</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BAI Microsoft Exchange パブリック フォルダー コネクタを使用すると、さまざまな検索プラットフォームを介して Exchange からコンテンツを取得できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Server</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Exchange Connector を使用すると、さまざまな検索エンジンを介して Exchange からコンテンツを取得できます。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 24 ROW --->
 <ul class="panelContent cardsZ">
@@ -1440,6 +1552,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Teams</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Teams Connector は、Microsoft Teams のコンテンツを他のエンタープライズ システムのコンテンツと共にインデックス化して、統合された結果を提供します。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1511,7 +1624,9 @@ ms.locfileid: "50929618"
 </ul>
 <!--- 26 ROW --->
 <ul class="panelContent cardsZ">
-    <li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Neudesic The Firm Directory</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Firm Directory Connector は、ソース システムのセキュリティを尊重し、フル クロールと増分クロールの両方を提供し、ユーザーが最新情報を提供します。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/the-firm-directory-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>メモ </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、IBM Notes (旧 Lotus Note) からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 構成可能な一連の Notes データベースからレコードをほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、IBM Notes の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-notes-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
@@ -1559,6 +1674,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OneDrive for Business</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight OneDrive Connector を使用すると、OneDrive からさまざまな検索プラットフォームにコンテンツをインデックス化し、複数のソースからの統合検索結果をユーザーに提供できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/onedrive-business-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 27 ROW --->
 <ul class="panelContent cardsZ">
@@ -1613,6 +1729,7 @@ ms.locfileid: "50929618"
 </ul>
 <!--- 28 ROW --->
 <ul class="panelContent cardsZ">
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OpenText Documentum (Cloud)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の OpenText Documentum Cloud Connector は、Documentum オブジェクトの全文とメタデータの両方を安全に検索エンジンにインデックス付けし、複数のリポジトリのコンテンツ間で 1 つの検索可能な結果セットを有効にします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-documentum-cloud/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1747,6 +1864,8 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>実用的な法律</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Practical Law Connector を使用すると、ユーザーは実用的な法律データベースに対して検索を実行できます。これにより、実際の法律に直接移動する必要がなくなります。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ProLaw</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Connector for Pro Law は、任意のポータルを ProLaw に接続し、ProLaw 内のユーザー特権を尊重しながら ProLaw からの情報を表示できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/prolaw-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1865,6 +1984,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP ERP (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SAP ERP (クラウド バージョン) コネクタは、SAP からアイテムを検索インデックスに取り込む目的で設計されています。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 33 ROW --->
 <ul class="panelContent cardsZ">
@@ -1884,6 +2004,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP HANA (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>SAP HANA (クラウド バージョン) コネクタは、ソース データベースのセキュリティを尊重し、フル クロールと増分クロールの両方を提供し、ユーザーが最新情報をすべての時間で利用できます。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-sap-hana-cloud-version/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1967,6 +2088,8 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ServiceNow (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight ServiceNow (クラウド バージョン) コネクタは、ソース システムのセキュリティを尊重し、フル クロールと増分クロールの両方を提供し、ユーザーが最新の情報を提供します。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/servicenow-cloud-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2010</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint 2010 コネクタを使用すると、SharePoint 2010 に接続したり、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2010-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 35 ROW --->
 <ul class="panelContent cardsZ">
@@ -1986,6 +2109,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2013</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint 2013 コネクタを使用すると、SharePoint 2013 に接続したり、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2013-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2002,6 +2126,8 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2016</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint Connector を使用すると、SharePoint 2016 に接続し、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。  </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2016-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2019</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint Connector を使用すると、SharePoint 2019 に接続し、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sharepoint-2019/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2018,6 +2144,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint Online コネクタを使用すると、SharePoint Online に接続したり、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-online-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 36 ROW --->
 <ul class="panelContent cardsZ">
@@ -2069,6 +2196,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>余裕期間 </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Slack からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索するためのエンタープライズ検索コネクタをセキュリティで保護します。 Slack からのすべてのパブリック チャネルからのメッセージ、スレッド、共有ファイルをほぼリアルタイムで堅牢にインデックス付けします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-slack-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 37 ROW --->
 <ul class="panelContent cardsZ">
@@ -2292,6 +2420,8 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Web サイト クローラー</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Web サイト クローラー コネクタを使用すると、1 つの統合検索インデックス内の任意の Web サイトのコンテンツと、他のリポジトリのコンテンツを表示できます。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>西の km</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight West km Connector は、カスタム検索結果ページの作成を含む、トランザクションおよび訴訟ドキュメント間の検索をサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2375,102 +2505,7 @@ ms.locfileid: "50929618"
             </div>
         </div>
     </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Atlassian Confluence (Cloud)</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Confluence (クラウド バージョン) コネクタは、Confluence に格納されているコンテンツをクロールおよびインデックス付けできるエンタープライズ グレードのインデックス コネクタです。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/"><font color="0065BA">詳細</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Bentley</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>BAI Bentley AssetWise Connector を使用すると、他のリポジトリのコンテンツと共に、AssetWise から 1 つの統合検索インデックスにコンテンツを表示できます。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/bentley-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Egnyte</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>"Egnyte Connector は、完全クロールと増分クロールの両方をサポートし、非常に高いスループットを実現します。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Google ドライブ</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>BAI Google Drive コネクタを使用すると、Google ドライブのコンテンツを参照する 1 つの統合検索インデックスに Google ドライブのコンテンツと、他のリポジトリのコンテンツを表示できます。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/google-drive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>iManage Cloud</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>BA Insight の iManage Cloud Connector は、Work ワークスペース内のドキュメントの全文とメタデータの両方を安全に検索エンジンにインデックス付けします。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/connector-for-imanage-work-cloud/"><font color="0065BA">詳細</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Jira</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Jira Connector を使用すると、すべての Jira オブジェクトに対して検索を実行できます。これにより、Jira に直接移動する必要がなくなります。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Yammer </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>セキュリティで保護されたエンタープライズ検索コネクタを使用して、Microsoft Yammerからコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 チャネル、投稿、返信、添付ファイル、ポーリング、アナウンスを、ほぼリアルタイムでYammerにインデックス付けします。 コネクタは、Microsoft Yammerの組み込みユーザーおよびグループ管理、特に Microsoft 365 に対するフェデレーション認証を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-yammer-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
 <!-- This is the "template" for each box > Copy and edit to add new boxes
     <li>
         <div class="cardSize">
@@ -2494,38 +2529,3 @@ ms.locfileid: "50929618"
 <!-- --->
 <!-- --->
 <!-- --->
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Jira (クラウド バージョン) コネクタは、すべての Jira オブジェクトに対して検索を実行し、Jira に直接移動する必要がなくなります。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Kaltura</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Kaltura Connector を使用すると、ビデオだけでなく、カテゴリ、データ、ドキュメントなどのさまざまな種類の情報のインデックス作成も可能です。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Microsoft Dynamics 365 CRM コネクタは、オンプレミスの CRM インストールと Dynamics CRM Online の両方をサポートしています。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365 (Cloud)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Microsoft Dynamics 365 (Cloud Version) CRM Connector は、CRM アプリケーションへの安全な接続を確立し、CRM スキーマから検索エンジン スキーマにコンテンツをマップします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/"><font color="0065BA"">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Exchange Online コネクタを使用すると、さまざまな検索プラットフォームを介して Exchange Online からコンテンツを取得できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange パブリック フォルダー</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BAI Microsoft Exchange パブリック フォルダー コネクタを使用すると、さまざまな検索プラットフォームを介して Exchange からコンテンツを取得できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Server</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Exchange Connector を使用すると、さまざまな検索エンジンを介して Exchange からコンテンツを取得できます。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Teams</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Teams Connector は、Microsoft Teams のコンテンツを他のエンタープライズ システムのコンテンツと共にインデックス化して、統合された結果を提供します。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Neudesic The Firm Directory</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Firm Directory Connector は、ソース システムのセキュリティを尊重し、フル クロールと増分クロールの両方を提供し、ユーザーが最新情報を提供します。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/the-firm-directory-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OneDrive for Business</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight OneDrive Connector を使用すると、OneDrive からさまざまな検索プラットフォームにコンテンツをインデックス化し、複数のソースからの統合検索結果をユーザーに提供できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/onedrive-business-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OpenText Documentum (Cloud)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の OpenText Documentum Cloud Connector は、Documentum オブジェクトの全文とメタデータの両方を安全に検索エンジンにインデックス付けし、複数のリポジトリのコンテンツ間で 1 つの検索可能な結果セットを有効にします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-documentum-cloud/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>実用的な法律</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Practical Law Connector を使用すると、ユーザーは実用的な法律データベースに対して検索を実行できます。これにより、実際の法律に直接移動する必要がなくなります。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ProLaw</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Connector for Pro Law は、任意のポータルを ProLaw に接続し、ProLaw 内のユーザー特権を尊重しながら ProLaw からの情報を表示できます。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/prolaw-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP ERP (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SAP ERP (クラウド バージョン) コネクタは、SAP からアイテムを検索インデックスに取り込む目的で設計されています。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP HANA (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>SAP HANA (クラウド バージョン) コネクタは、ソース データベースのセキュリティを尊重し、フル クロールと増分クロールの両方を提供し、ユーザーが最新情報をすべての時間で利用できます。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-sap-hana-cloud-version/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ServiceNow (クラウド)</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight ServiceNow (クラウド バージョン) コネクタは、ソース システムのセキュリティを尊重し、フル クロールと増分クロールの両方を提供し、ユーザーが最新の情報を提供します。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/servicenow-cloud-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2010</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint 2010 コネクタを使用すると、SharePoint 2010 に接続したり、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2010-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2013</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint 2013 コネクタを使用すると、SharePoint 2013 に接続したり、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2013-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2016</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint Connector を使用すると、SharePoint 2016 に接続し、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。  </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2016-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2019</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint Connector を使用すると、SharePoint 2019 に接続し、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sharepoint-2019/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight の SharePoint Online コネクタを使用すると、SharePoint Online に接続したり、任意のサイト、ドキュメント ライブラリ、またはリストからデータを取得できます。このコンテンツを安全にインデックス付けします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-online-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Web サイト クローラー</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Web サイト クローラー コネクタを使用すると、1 つの統合検索インデックス内の任意の Web サイトのコンテンツと、他のリポジトリのコンテンツを表示できます。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>西の km</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight West km Connector は、カスタム検索結果ページの作成を含む、トランザクションおよび訴訟ドキュメント間の検索をサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Azure AD </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Microsoft Azure Active Directory (Azure Active Directory) (Azure AD) からコンテンツを確実にインデックス化し、Microsoft Graph を使用してインテリジェントに検索するためのセキュリティで保護されたエンタープライズ検索コネクタ。 Microsoft Graph API を介して Azure ADオブジェクトにインデックスを作成します。 コネクタを使用すると、ほぼリアルタイムでプリンシパルを Microsoft Graph に取り込み、エキスパート検索、機器検索、場所検索などの使用例を実装したり、カスタム データ ソースと組み合わせて早期バインドのセキュリティ トリミングを提供できます。 コネクタは、Microsoft 365 に対するフェデレーション認証をサポートしています。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-azure-ad-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Confluence からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 オンプレミスの Confluence インスタンスからのタグのページ、ブログ投稿、添付ファイル、コメント、スペース、プロファイル、ハブ サイトをほぼリアルタイムで堅牢にインデックス付けします。 このコネクタは、Atlassian Confluence の組み込みのユーザーおよびグループ管理、および Active Directory および他のディレクトリ サービスに基づく Confluence インストールを完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence Cloud </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Confluence Cloud からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 Confluence Cloud インスタンスのタグのページ、ブログ投稿、添付ファイル、コメント、スペース、プロファイル、ハブ サイトをほぼリアルタイムで堅牢にインデックス付けします。 このコネクタは、Atlassian Confluence Cloud の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Documentum </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、OpenText Documentum からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索します。 リポジトリ、フォルダー、ファイルを、Documentum のメタデータとプロパティと共にほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、OpenText Documentum の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-documentum-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Enterprise Vault </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Symantec Enterprise Vault からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索します。 アーカイブされたデータ (電子メール、添付ファイル、ファイル、予定表アイテム、連絡先など) をほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、Symantec Enterprise Vault の認証モデル Basic、NTLM、Kerberos 認証を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Enterprise Vault </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>セキュリティで保護されたエンタープライズ検索コネクタにより、Veritas Enterprise Vault からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索できます。 アーカイブされたデータ (電子メール、添付ファイル、ファイル、予定表アイテム、連絡先など) をほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、Veritas Enterprise Vault の認証モデル Basic、NTLM、Kerberos 認証を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>FirstSpirit </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、e-Spirit FirstSpirit からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 ページ、添付ファイル、および他の生成されたドキュメントの種類を FirstSpirit からほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、e-Spirit FirstSpirit の組み込みのユーザー、グループ、アクセス許可の管理、および Active Directory や他のディレクトリ サービスに基づく FirstSpirit インストールを完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-firstspirit-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Jira からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索します。 プロジェクト、問題、添付ファイル、コメント、作業ログ、発行履歴、リンク、およびプロファイルをオンプレミスの Jira インスタンスからほぼリアルタイムで堅牢にインデックス化します。 このコネクタは、Atlassian Jira の組み込みのユーザーおよびグループ管理、および Active Directory および他のディレクトリ サービスに基づく Jira インストールを完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-connector /"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira Cloud </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、Atlassian Jira Cloud からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 Jira Cloud のプロジェクト、問題、添付ファイル、コメント、作業ログ、発行履歴、リンク、およびプロファイルをほぼリアルタイムで堅牢にインデックス付けします。 このコネクタは、Atlassian Jira Cloud の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-cloud-connector /"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>メモ </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>エンタープライズ検索コネクタをセキュリティで保護し、IBM Notes (旧 Lotus Note) からコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 構成可能な一連の Notes データベースからレコードをほぼリアルタイムで堅牢にインデックス付けします。 コネクタは、IBM Notes の組み込みのユーザーおよびグループ管理を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-notes-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>余裕期間 </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>Slack からコンテンツを確実にインデックス作成し、Microsoft Graph でインテリジェントに検索するためのエンタープライズ検索コネクタをセキュリティで保護します。 Slack からのすべてのパブリック チャネルからのメッセージ、スレッド、共有ファイルをほぼリアルタイムで堅牢にインデックス付けします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-slack-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Yammer </h3><p>by <a href="https://www.raytion.com">Raytion</a></p><p>セキュリティで保護されたエンタープライズ検索コネクタを使用して、Microsoft Yammerからコンテンツを確実にインデックス化し、Microsoft Graph でインテリジェントに検索します。 チャネル、投稿、返信、添付ファイル、ポーリング、アナウンスを、ほぼリアルタイムでYammerにインデックス付けします。 コネクタは、Microsoft Yammerの組み込みユーザーおよびグループ管理、特に Microsoft 365 に対するフェデレーション認証を完全にサポートします。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-yammer-connector/"><font color="0065BA">詳細情報</font></a></p></div></div></div></div></li>
