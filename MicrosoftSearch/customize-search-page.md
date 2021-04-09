@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
-ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
+ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587741"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639855"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -40,6 +40,9 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 可能な限り多くのセマンティック ラベルを正確に任命すると、このエクスペリエンスが強化されます。 スキーマの定義と取り込み時にセマンティック ラベルを追加できます。
 
 [セ](configure-connector.md#step-5-assign-property-labels) マンティック ラベルを作成および管理する方法に関する追加情報を次に示します。
+
+> [!NOTE]
+> 垂直の複数の接続が現在プレビュー中です。 プレビューの詳細については [、「Connectors preview features」を参照してください](connectors-overview.md#what-are-the-preview-features)。
 
 ### <a name="things-you-should-know"></a>知っている必要があります。
 

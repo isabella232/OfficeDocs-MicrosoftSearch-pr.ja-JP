@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用 Microsoft Graph コネクタの概要
-ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+ms.openlocfilehash: ccf1e746c2a8bf97429bf5b13c8340db015e3eb1
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042576"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639864"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -108,6 +108,7 @@ Microsoft Graph コネクタと Microsoft Search API は一般に利用可能で
 * [Salesforce コネクタ](salesforce-connector.md)
 * [ソース ACL を使用](servicenow-connector.md) する検索アクセス許可を持つ ServiceNow コネクタ
 * [結果のクラスターを管理する](result-cluster.md)
+* [垂直の複数の接続](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>検索結果をカスタマイズおよび構成する方法
 
@@ -130,12 +131,10 @@ Microsoft Graph コネクタと Microsoft Search API は一般に利用可能で
 
 * Microsoft で **構築された** コネクタを発行すると、接続が作成されるのに数分かかる場合があります。 その間、接続の状態は保留中として表示されます。
 
-* [Microsoft 365 管理センター](https://admin.microsoft.com)では、接続が公開された後の検索 **スキーマ** の編集はサポートされていません。 検索スキーマを編集するには、接続を削除してから、新しい接続を作成します。
-
-* 取り込みスループットは、1 秒あたり約 4 つのアイテムで調整されます。
+* 取り込みスループットは、1 秒あたり 4 つの項目で調整されます。
 
 * スキーマの更新はサポートされていません。 接続セットアップを作成した後、スキーマを更新する方法はありません。 接続の削除と再作成のみ可能です。
 
 * 接続の制限があります。 各テナントは、最大 10 の接続を作成できます。
 
-* 接続の編集サポートは利用できません。 接続が作成されると、その接続を編集または変更することはできません。 詳細を変更する必要がある場合は、接続を削除して再作成する必要があります。
+* 接続を作成した後で、接続を編集または変更することはできません。 詳細を変更する必要がある場合は、接続を削除して再作成する必要があります。
