@@ -14,16 +14,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 利用状況レポートの確認
-ms.openlocfilehash: 8e46b1bdc2143dd3f7c53643e3ee89446a18cbbf
-ms.sourcegitcommit: 74356701eac9d5deccd01b142e7e6fb083cd3871
+ms.openlocfilehash: 17645d86e315538305a28bad51ea1a41dcc37dcb
+ms.sourcegitcommit: d62849b00f2b65b493ab54be50c3e7c94430f057
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656782"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754666"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Usage Reports
 
 検索利用状況レポートを使用すると、組織内での検索の機能を理解できます。 これらのレポートから生成された分析情報は、コンテンツ[](./make-content-easy-to-find.md)を簡単に見つけてアクションを実行し、ユーザーにとって検索をより便利で楽しいエクスペリエンスにするのに役立ちます。
+
+> [!IMPORTANT]
+> Microsoft Search 利用状況レポートは現在プレビュー中です
 
 [Microsoft Search の利用状況レポートには](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)、SharePoint Home から実行された検索および検索ボックスから生成されたグラフ Office.com が含まれます。 過去 31 日、1 日、または前の年の月次のデータを確認できます。 これらのレポートは展開されているだけなので、履歴データの発生に時間がかかっています。
 
