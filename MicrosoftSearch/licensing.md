@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の Microsoft Graph コネクタパブリック プレビューのライセンス要件と価格
-ms.openlocfilehash: 23eed2c107b8b0ee04d772b3d2a77fb5db9c1902
-ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
+ms.openlocfilehash: a7236f647e6513508e50519f9c6b1af166a3b2d9
+ms.sourcegitcommit: 2a178850c521189a221879151faa7b3b0aff95d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408707"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51905530"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -38,9 +38,15 @@ Graph コネクタを使用してコンテンツにインデックスを作成�
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Microsoft 365 または 365 E5 Officeに組み込まれています
 
-Microsoft 365 E5 または Office 365 E5 ライセンスの種類には、500 アイテムのインデックス クォータへの権利が含まれています。これは、Graph コネクタからコンテンツを取り込む組織のクォータにカウントされます。 これは Microsoft 365 A5 または 365 A5 にはOffice注意してください。
+次のライセンスには、500 アイテムのインデックス クォータへの権利が含まれます。これは、Graph コネクタからコンテンツを取り込む組織のクォータにカウントされます。
+
+* Microsoft 365 E5 または Office 365 E5
+* [Microsoft Viva トピック](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 たとえば、組織に 100 の Microsoft 365 E5 ライセンスがある場合、組織には 100 x 500 = 50,000 アイテム分の Graph コネクタ インデックス クォータがあります。
+
+<!---Comment requested in PR#143--->
+Microsoft 365 A5 または Office 365 A5 にはこの権利は含め注意してください。
 
 ## <a name="purchase-of-add-on-index-quota"></a>アドオン インデックス クォータの購入
 より多くの Graph コネクタクォータを購入するには、Microsoft アカウント マネージャーに連絡するか、次の手順を実行します。
