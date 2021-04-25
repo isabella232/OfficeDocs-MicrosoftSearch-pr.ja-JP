@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search のエンタープライズ Web サイト Graph コネクタをセットアップする
-ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
+ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031631"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51951023"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -58,11 +58,11 @@ URL フィールドを使用して、クロールする Web サイトのルー�
 > [!NOTE]
 > クロールするサイトにサイトマップが定義されている場合、コネクタはサイトマップにリストされている URL のみをクロールします。 サイトマップが定義されていない場合、コネクタはサイトのルート URL で見つかったすべてのリンクを深くクロールします。
 
-### <a name="crawl-mode-cloud-or-on-premises-preview"></a>クロール モード: クラウドまたはオンプレミス (プレビュー)
+### <a name="crawl-mode-cloud-or-on-premises"></a>クロール モード: クラウドまたはオンプレミス
 
 クロール モードは、インデックスを作成する Web サイトの種類 (クラウドまたはオンプレミス) を決定します。 クラウド Web サイトの場合は、クロール **モードとして [クラウド** ] を選択します。
 
-また、コネクタはオンプレミス Web サイトのクロールをサポートしています。 このモードはプレビュー中です。 オンプレミスのデータにアクセスするには、まず Graph コネクタ エージェントをインストールして構成する必要があります。 詳細については [、「Graph コネクタ エージェント」を参照してください](./on-prem-agent.md)。
+また、コネクタはオンプレミス Web サイトのクロールをサポートしています。 オンプレミスのデータにアクセスするには、まず Graph コネクタ エージェントをインストールして構成する必要があります。 詳細については [、「Graph コネクタ エージェント」を参照してください](./on-prem-agent.md)。
 
 オンプレミス Web サイトの場合は、クロール モードとして [エージェント] を選択し **、[On-Prem Agent]** フィールドで、前にインストールして構成した Graph コネクタ エージェントを選択します。  
 
