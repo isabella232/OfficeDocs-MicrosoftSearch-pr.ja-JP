@@ -16,7 +16,7 @@
 ## [コネクタ ギャラリー](connectors-gallery.md)
 ## Microsoft 提供の設定コネクタ
 ### [セットアップの概要](configure-connector.md)
-### [グラフ コネクタ エージェントを設定する (プレビュー)](on-prem-agent.md)
+### [グラフ コネクタ エージェントを設定する](on-prem-agent.md)
 ### [Azure AD 以外の ID をマッピング (プレビュー)](map-non-aad.md)
 ### [Azure AD の ID をマッピング (プレビュー)](map-aad.md)
 ### コネクタ固有情報
@@ -26,7 +26,7 @@
 #### [大企業の Web サイト](enterprise-web-connector.md)
 #### [ファイル共有](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL (プレビュー)](OracleSQL-connector.md)
+#### [Oracle SQL](OracleSQL-connector.md)
 #### [Salesforce (プレビュー)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## 接続を管理する
