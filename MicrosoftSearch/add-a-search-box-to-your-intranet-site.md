@@ -3,7 +3,6 @@ title: イントラネット サイトに検索ボックス追加する
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 10/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,23 +13,23 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: 関連する検索候補や作業結果にすばやくアクセスするために、イントラネット サイトやページに Microsoft Search の検索ボックスを追加します。
-ms.openlocfilehash: af12ce4d17c2695e196f8e4d79ccd515f002f238
-ms.sourcegitcommit: 92206ea179ec00b22496f6fd2866b5406449cf40
+description: イントラネット サイトまたはページに Microsoft Search 検索ボックスを追加することで、関連する検索候補を取得し、作業結果をより速く検索できます。
+ms.openlocfilehash: c71f61971bf69c2eaa5fb7a48d0cb3d26af0ad07
+ms.sourcegitcommit: 5f0a8bdf274d02132a3b5211fb4738eb38d159db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44798227"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52247767"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックス追加する
 
-ユーザーが組織からの結果に簡単にアクセスできるようにするには、Bing 検索ボックスで、Microsoft Search を任意のイントラネットサイトまたはページに追加します。 次にいくつかの利点を示します。
+ユーザーが組織の結果に簡単にアクセスできるよう、イントラネット サイトまたはページに [検索Bingに Microsoft Search を追加します。 これらの利点の一部を次に示します。
 
-- SharePoint またはイントラネットポータルの検索ボックスには、検索を開始するための、なじみのある信頼できるエントリポイントが用意されています。
-- Google Chrome および Microsoft Edge を含む、すべての主要な web ブラウザーをサポートします。
-- 組織からの検索候補のみが表示され、web 提案は含まれません。
-- ユーザーが Bing の作業結果ページで Microsoft Search を実行して、広告と web の結果を除外します。
-- 検索ボックスの外観と動作を制御する
+- ユーザーまたはイントラネット ポータルのSharePointボックスは、検索を開始する使い慣れた信頼できるエントリ ポイントを提供します。
+- Google Chrome やアプリを含むすべての主要な Web ブラウザーをサポートMicrosoft Edge
+- 組織からの検索候補だけが表示され、Web 候補は含まれません
+- 広告と Web 結果を除外する[Bing検索結果] ページでユーザーを Microsoft Search に移動します。
+- 既定の垂直または作成したカスタム垂直にユーザーを配置する機能など、検索ボックスの外観と動作を制御します。
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>イントラネット ページに検索ボックス追加する
 
@@ -91,8 +90,10 @@ ms.locfileid: "44798227"
         height: 40,                             // default: 40, min: 40, max: 72
         cornerRadius: 6,                        // default: 6, min: 0, max: 25                                   
         strokeOutline: true,                    // default: true
-        dropShadow: true,                       // default: true
+        dropShadow: true,                       // default: false
         iconColor: "#067FA6",                   // default: #067FA6
+        title: "Search box",                    // default: "Search box"
+        vertical: "Person-people",              // default: not specified, search box directs to the All vertical on the WORK results page
         companyNameInGhostText: "Contoso"       // default: not specified
                                                 // when absent, ghost text will be "Search work"
                                                 // when specified, text will be "Search <companyNameInGhostText>"
@@ -101,10 +102,26 @@ ms.locfileid: "44798227"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
+## <a name="direct-users-to-a-default-or-custom-vertical"></a>ユーザーを既定またはカスタムの垂直に移動する
+
+社内アプリやイントラネット サイトと作業結果との簡単な統合を実現するには、ユーザーが検索候補をクリックするときに設定する既定またはカスタムの垂直を指定して、検索ボックスをカスタマイズすることもできます。
+
+bfbSearchBoxConfig の垂直オプションを使用して、必要な垂直方向を定義します。 たとえば、ユーザーが常にサイトの垂直方向に移動する場合は、既定の垂直方向の 1 つを使用して、値 "Site-sites" を使用します。
+
+![サイトの垂直方向の結果と URL を表示Bing Microsoft Search の作業結果ページのスクリーンショット](media/sites-vertical-esb.png)
+
+カスタムバーティカルの場合は、URL の末尾にあるハッシュを使用します。 これらの値は、Bing の作業ページから検索し、垂直ラベルをクリックし、番号記号 (#)の後に値をコピーすることで確認できます。
+
+![カスタムプレゼンテーションの垂直方向の結果と URL をBing Microsoft Search の作業結果ページのスクリーンショット](media/custom-vertical-esb.png)
+
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>iFrame を使用して検索ボックスを埋め込む
 
-スクリプトの埋め込みがサイトでできない場合は、iFrame を使用して検索ボックスを追加します。 検索ボックスの外観はカスタマイズできません。
+スクリプトの埋め込みがサイトでできない場合は、iFrame を使用して検索ボックスを追加します。 検索ボックスをカスタマイズできない。
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
 ```
+
+## <a name="inprivate-mode-and-conditional-access"></a>InPrivate モードと条件付きアクセス
+
+ページまたはサイトが InPrivate ウィンドウで開いている場合、埋め込み検索ボックスは無効になります。 また、Azure AD 条件付きアクセスのサポートが Microsoft Edge の場合、Bing.com は InPrivate モードを使用する場合、AAD サインインをサポートしません。 エッジの条件付きアクセスの詳細については、「条件付きアクセス」[および「Microsoft Edgeアクセス」を参照してください](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
