@@ -1,6 +1,6 @@
 ---
-title: Microsoft Search の Microsoft Graph コネクタを管理する
-ms.author: monaray
+title: Microsoft 検索Graphコネクタを管理する
+ms.author: mecampos
 author: monaray97
 manager: mnirkhe
 audience: Admin
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search の Microsoft Graph コネクタを管理します。
-ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Microsoft 検索用の microsoft Graphコネクタを管理します。
+ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
+ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031721"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52325170"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -28,11 +28,11 @@ ms.locfileid: "51031721"
 
 ## <a name="connection-operations"></a>接続操作
 
-Microsoft 365 [管理センターの](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) [[コネクタ] タブに移動します](https://admin.microsoft.com)。
+管理センターの[[コネクタ]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) [タブMicrosoft 365移動します](https://admin.microsoft.com)。
 
-コネクタの種類ごとに [、Microsoft 365 管理](https://admin.microsoft.com) センターは次の表に示す操作をサポートしています。
+コネクタの種類ごとに、Microsoft 365[管理センターは](https://admin.microsoft.com)、次の表に示す操作をサポートします。
 
-Operation | Microsoft 提供の Graph コネクタ | パートナーコネクタまたはグラフ コネクタ
+Operation | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
 --- | --- | ---
 接続の追加 | :heavy_check_mark: (「セットアップの概要[」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:
@@ -43,7 +43,7 @@ Operation | Microsoft 提供の Graph コネクタ | パートナーコネクタ
 
 接続を作成すると、Microsoft Search ページの [コネクタ]タブに処理されたアイテムの数 **が表示** されます。 最初のフル クロールが正常に完了すると、定期的な増分クロールの進行状況が表示されます。 このページでは、コネクタの毎日の操作とログとエラー履歴の概要について説明します。
 
-4 つの状態が各接続に対 **して [状態** ] 列に表示されます。
+5 つの状態が各接続 **に対して [状態** ] 列に表示されます。
 
 * **同期します**。 コネクタは、ソースからのデータをクロールして、既存のアイテムにインデックスを付け、更新を行います。
 
@@ -53,6 +53,8 @@ Operation | Microsoft 提供の Graph コネクタ | パートナーコネクタ
 
 * **失敗**。 接続に重大な障害が発生しました。 このエラーには、手動による介入が必要です。 管理者は、表示されるエラー メッセージに基づいて適切なアクションを実行する必要があります。 エラーが発生するまでインデックスが作成されたデータは検索可能です。
 
+* **Delete Failed**. 接続の削除に失敗しました。 エラーの理由によっては、データに引き続きインデックスが作成される場合があります。アイテム クォータは引き続き使用され、接続に対してクロールが実行される場合があります。 この状態でもう一度接続を削除してみてください。
+
 ## <a name="monitor-your-index-quota-utilization"></a>インデックス クォータの使用率を監視する
 
 使用可能なインデックスクォータと使用量は、コネクタのランディング ページに表示されます。
@@ -60,15 +62,15 @@ Operation | Microsoft 提供の Graph コネクタ | パートナーコネクタ
 ![インデックス クォータ使用率バー](media/quota_utilization.png)
  
 >[!NOTE]
->プレビュー期間中、Graph コネクタを試しているすべての組織に、すべての接続で最大 200 万アイテムの無料の固定クォータが提供されました。 Graph コネクタが一般公開されている場合、プレビューで Graph コネクタを使用している組織では、2021 年 4 月 1 日に無料のクォータが期限切れになります。
->Microsoft が作成した ["Preview"](./connectors-overview.md) というラベルのグラフ コネクタは、組織の合計課金インデックス クォータには含まれません。 ただし、組織に対して構成できる最大接続数 10 と、組織が接続間でインデックスを作成できる最大 700 万アイテムの数にカウントされます。各接続は 700,000 アイテムに制限されます。 
+>プレビュー期間中、すべての組織がコネクタを試Graph、すべての接続で最大 200 万アイテムの無料の固定クォータが提供されました。 Graphコネクタが一般に利用可能になると、プレビューで Graph コネクタを使用している組織の無料クォータは 2021 年 4 月 1 日に期限切れになります。
+>Microsoft が[Graph"Preview"](./connectors-overview.md)というラベルのコネクタは、組織の合計課金インデックス クォータに含まれません。 ただし、組織に対して構成できる最大接続数 10 と、組織が接続間でインデックスを作成できる最大 700 万アイテムの数にカウントされます。各接続は 700,000 アイテムに制限されます。 
 
 クォータ使用率バーは、組織によるクォータの消費に基づいてさまざまな状態を示します。
 
 状態 | クォータ使用率レベル
 --- | --- 
 標準 | 0-79%
-高 | 80-89%
+高い | 80-89%
 重大 | 90%-99%
 Full | 100%
 
