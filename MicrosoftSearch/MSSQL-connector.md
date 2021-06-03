@@ -1,5 +1,5 @@
 ---
-title: Azure SQLおよび Microsoft SQL Microsoft Search 用のサーバー Graph コネクタ
+title: Microsoft Search SQL Azure SQLおよび Microsoft Graph サーバー コネクタ
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,33 +12,33 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用の Azure SQLおよび Microsoft SQL Graph コネクタをセットアップします。
-ms.openlocfilehash: 81951dab058a14d687f81f7611ee624b079f0822
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Microsoft Search 用の Azure SQLおよび Microsoft SQL Graphコネクタをセットアップします。
+ms.openlocfilehash: 29474c731c489c9e9b75f2456d25e4ff43aae4eb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031406"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720981"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQLおよび Microsoft SQL Graph コネクタ
+# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQLおよび Microsoft SQL サーバー Graph コネクタ
 
 Microsoft SQL サーバーまたは Azure SQL Graph コネクタを使用すると、組織はオンプレミスの SQL Server データベース、またはクラウド内の Azure SQL インスタンスでホストされているデータベースからデータを検出してインデックス付けできます。
-Graph コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソース データを使用してインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 これらのコネクタSQL、特定のユーザーの検索結果へのアクセスを制限できます。
+指定Graphコネクタは、指定したコンテンツを Microsoft Search にインデックス付けします。 ソース データを使用してインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 これらのコネクタSQL、特定のユーザーの検索結果へのアクセスを制限できます。
 
 > [!NOTE]
-> グラフ コネクタ [**のセットアップの一**](configure-connector.md) 般的な手順については、「グラフ コネクタのセットアップ」をご覧ください。
+> コネクタの [**セットアップに関する**](configure-connector.md)Graph一般的なコネクタのセットアップGraph説明します。
 
-この記事は、Azure SQLおよび Microsoft のサーバー Graph コネクタを構成、実行、SQLするユーザー向けです。 これは、一般的なセットアップ プロセスを補足し、Azure SQLおよび Microsoft SQL Graph コネクタにのみ適用される手順を示します。 この記事では、Microsoft [](#limitations) SQL および Azure SQLについて説明します。
+この記事は、Azure SQL および Microsoft SQL サーバー Graphを構成、実行、およびGraphします。 これは、一般的なセットアップ プロセスを補足し、Azure SQL および Microsoft SQL サーバー Graph表示します。 この記事では、Microsoft [](#limitations) SQL および Azure SQLについて説明します。
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
-### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Graph コネクタ エージェントをインストールする (オンプレミスの Microsoft SQL サーバー コネクタにのみ必要)
+### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>コネクタ エージェントGraphインストールする (オンプレミスの Microsoft SQL サーバー コネクタにのみ必要)
 
-オンプレミスのサードパーティ データにアクセスするには、Graph コネクタ エージェントをインストールして構成する必要があります。 詳細については [、「Graph コネクタ エージェントのインストール](on-prem-agent.md) 」を参照してください。  
+オンプレミスのサード パーティ製データにアクセスするには、コネクタ エージェントをインストールして構成Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](on-prem-agent.md)する」を参照してください。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: 管理センター GraphコネクタをMicrosoft 365する
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -54,11 +54,11 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>アプリを登録する (Azure SQLコネクタのみ)
 
-Azure SQLコネクタの場合、Microsoft Search アプリがインデックス作成用のデータにアクセスするには、Azure Active Directory にアプリを登録する必要があります。 アプリの登録の詳細については、アプリの登録方法に関する Microsoft Graph の [ドキュメントを参照してください](/graph/auth-register-app-v2)。
+Azure SQL コネクタの場合は、Microsoft Search アプリがインデックス作成Azure Active Directoryデータにアクセスするためにアプリを登録する必要があります。 アプリの登録の詳細については、「アプリを登録するGraph Microsoft Graph」[を参照してください](/graph/auth-register-app-v2)。
 
 アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、テナント ID をメモした後、新しいクライアント シークレットを [生成する必要があります](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 クライアント シークレットは 1 回だけ表示されます。 クライアント シークレットを&注意してください。 Microsoft Search で新しい接続を構成する場合は、クライアント ID とクライアント シークレットを使用します。
 
-登録済みのアプリを Azure SQLデータベースに追加するには、次の必要があります。
+登録したアプリをアプリに追加するには、Azure SQL Databaseする必要があります。
 
 - Azure SQL DB にログインする
 - 新しいクエリ ウィンドウを開く
@@ -66,7 +66,7 @@ Azure SQLコネクタの場合、Microsoft Search アプリがインデックス
 - コマンド 'exec sp_addrolemember 'db_datareader', [アプリ名]' または 'ALTER ROLE db_datareader ADD MEMBER [アプリ名]] を実行して、ユーザーを役割に追加する
 
 >[!NOTE]
->Azure Active Directory に登録されているアプリへのアクセスを取り消す場合は、登録されたアプリの削除に関する Azure の [ドキュメントを参照してください](/azure/active-directory/develop/quickstart-remove-app)。
+>アプリに登録されているアプリへのアクセスを取り消Azure Active Directory、登録されたアプリの削除に関する Azure[のドキュメントを参照してください](/azure/active-directory/develop/quickstart-remove-app)。
 
 ### <a name="connection-settings"></a>接続設定
 
@@ -75,21 +75,21 @@ Microsoft SQL サーバー コネクタをデータ ソースに接続するに�
 > [!NOTE] 
 > Microsoft SQL コネクタを接続するには、データベースをサーバー バージョン 2008 以降SQL実行する必要があります。
 
-Azure SQLコネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQLコネクタは、データベースに接続するための Azure Active Directory Open ID Connect (OIDC) 認証のみをサポートします。
+Azure SQLコネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQLコネクタは、データベースAzure Active Directory接続するための Open ID 接続 (OIDC) 認証のみをサポートします。
 
 セキュリティを強化するには、Azure サーバーまたはデータベースの IP ファイアウォールSQL構成できます。 IP ファイアウォールルールの設定の詳細については、IP ファイアウォールルールに関する [ドキュメントを参照してください](/azure/azure-sql/database/firewall-configure)。 ファイアウォール設定に次のクライアント IP 範囲を追加します。
 
-| Region | IP 範囲 |
+| 地域 | IP 範囲 |
 | ------------ | ------------ |
 | NAM | 52.250.92.252/30, 52.224.250.216/30 |
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-データベース コンテンツを検索するには、コネクタを構成するときにSQLクエリを指定する必要があります。 これらのSQLクエリでは、インデックスを作成するデータベース列 (つまり、ソース プロパティ) に名前を付け、すべての列を取得するために実行する必要がある SQL 結合を含む必要があります。 検索結果へのアクセスを制限するには、コネクタを構成するときに、アクセス制御リスト (ACL) をSQLクエリ内で指定する必要があります。
+データベース コンテンツを検索するには、コネクタを構成するときにSQLクエリを指定する必要があります。 これらのSQLクエリでは、インデックスを作成するデータベース列 (つまり、ソース プロパティ) に名前を付け、すべての列を取得するために実行する必要がある SQL 結合を含む必要があります。 検索結果へのアクセスを制限するには、コネクタを構成するときに、アクセス制御リスト (ACL) SQLクエリ内で指定する必要があります。
 
 ## <a name="step-3a-full-crawl-required"></a>手順 3a: フル クロール (必須)
 
-この手順では、データベースのフル クロールSQLクエリを構成します。 フル クロールでは、クエリ、検索、または取得のオプションを選択するすべての列または **プロパティが** 選択 **されます**。 ACL 列を指定して、検索結果へのアクセスを特定のユーザーまたはグループに制限することもできます。
+この手順では、データベースのフル クロールSQL実行するクエリを構成します。 フル クロールでは、クエリ、検索、または取得のオプションを選択するすべての列または **プロパティが** 選択 **されます**。 ACL 列を指定して、検索結果へのアクセスを特定のユーザーまたはグループに制限することもできます。
 
 > [!Tip]
 > 必要なすべての列を取得するには、複数のテーブルを結合できます。
@@ -115,13 +115,13 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 ### <a name="supported-data-types"></a>サポートされているデータ型
 
-次の表は、MS SQLおよび Azure のデータ コネクタでサポートされているデータSQLのSQLします。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされる Microsoft Graph コネクタのデータ型の詳細については、プロパティ リソースの種類に関する [ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+次の表は、MS SQLおよび Azure SQL コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされている Microsoft Graph コネクタの詳細については、プロパティ リソースの種類に関する[ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | カテゴリ | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
 | 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
 | 正確な数値 | bigint <br> int <br> smallint <br> tinyint | int64 |
-| 正確な数値 | ビット | boolean |
+| 正確な数値 | ビット | ブール値 |
 | 近似数値 | 浮動小数点数 <br> 本当の | double |
 | 文字の文字列 | char <br> varchar <br> text | string |
 | Unicode 文字の文字列 | nchar <br> nvarchar <br> ntext | string |
@@ -159,14 +159,14 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 ACL として使用するには、次の ID の種類がサポートされています。
 
 - **ユーザー プリンシパル名 (UPN)**: ユーザー プリンシパル名 (UPN) は、電子メール アドレス形式のシステム ユーザーの名前です。 UPN (たとえば、john.doe@domain.com) は、ユーザー名 (ログオン名)、区切り記号 (@ 記号)、およびドメイン名 (UPN サフィックス) で構成されます。
-- **Azure Active Directory (AAD) ID**: Azure AD では、すべてのユーザーまたはグループに、'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' のようなオブジェクト ID があります。
+- **Azure Active Directory (AAD) ID**: Azure AD では、すべてのユーザーまたはグループに'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' のようなオブジェクト ID があります。
 - **Active Directory (AD)** セキュリティ ID : オンプレミスの AD セットアップでは、すべてのユーザーとグループに、'S-1-5-21-3878594291-2115959936-132693609-65242.
 
 ![アクセス制御リストを構成するための検索アクセス許可設定](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>手順 3b: 増分クロール (オプション)
 
-このオプションの手順では、データベースSQL増分クロールを実行するためのクエリを提供します。 このクエリを使用すると、SQLコネクタによって、前回の増分クロール以降のデータに対する変更が決定されます。 フル クロールと同様に、クエリ、検索、または取得のオプションを選択するすべての **列を選択****します**。 フル クロール クエリで指定したのと同じ ACL 列のセットを指定します。
+このオプションの手順では、データベースSQLを実行するためのクエリを提供します。 このクエリを使用すると、SQLコネクタによって、前回の増分クロール以降のデータに対する変更が決定されます。 フル クロールと同様に、クエリ、検索、または取得のオプションを選択するすべての **列を選択****します**。 フル クロール クエリで指定したのと同じ ACL 列のセットを指定します。
 
 次の図のコンポーネントは、1 つの例外を除き、フル クロール コンポーネントに似たものとなります。 この場合、「ModifiedDateTime」は選択された透かし列です。 フル クロール [の手順を確認して](#step-3a-full-crawl-required) 、増分クロール クエリを記述する方法を説明し、例として次のイメージを参照してください。
 
@@ -207,15 +207,19 @@ Create your own verticals and result types, so end users can view search results
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
-<!---## Troubleshooting-->
+## <a name="troubleshooting"></a>トラブルシューティング
 
-<!---Insert troubleshooting recommendations for this data source-->
+次に示すのは、コネクタの構成中に発生する一般的なエラーとその考えられる理由です。
+
+| 構成手順 | エラー メッセージ | 考えられる理由 |
+| ------------ | ------------ | ------------ |
+| フル クロール | `Error from database server: A transport level error has occurred when receiving results from the server.` | このエラーは、ネットワークの問題が原因で発生します。 Microsoft ネットワーク モニターを使用してネットワーク ログを確認し [、Microsoft](https://www.microsoft.com/download/details.aspx?id=4865) カスタマー サポートに問い合わせください。 |
 
 ## <a name="limitations"></a>制限事項
 
 次SQLコネクタには、プレビュー リリースで次の制限があります。
 
 - Microsoft SQL コネクタ: オンプレミス データベースは、サーバー バージョン 2008 以降SQL実行する必要があります。
-- M365 サブスクリプションと Azure サブスクリプション (Azure SQL データベースをホストする) は、同じ Azure Active Directory 内にある必要があります。
+- M365 サブスクリプションと Azure サブスクリプション (Azure SQL データベースをホストする) は、同じサブスクリプション内Azure Active Directory。
 - ACL は、ユーザー プリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用してのみサポートされます。
 - データベース列内のリッチ コンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、データベース列内のリンクとして存在する HTML、JSON、XML、BLOB、およびドキュメント解析があります。

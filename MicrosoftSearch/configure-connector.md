@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用の Microsoft ビルドの Graph コネクタを構成する
+title: Microsoft Search 用の Microsoft Graphコネクタを構成する
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft による Graph コネクタのセットアップの概要
-ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+description: Microsoft によるGraphコネクタのセットアップの概要
+ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042585"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720945"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft による Graph コネクタのセットアップの概要 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft によるGraphコネクタのセットアップの概要 
 
-この記事では [、Microsoft 365](https://admin.microsoft.com)管理センターで Microsoft が **Graph** コネクタをセットアップするために必要な基本的なプロセスを示します。 基本的なプロセスには、次の手順が含まれます。  
+この記事では、Microsoft が管理センターで Graph コネクタをセットアップするために必要Microsoft 365[を示します](https://admin.microsoft.com)。 基本的なプロセスには、以下のステップが含まれます。  
 <!---Add links to each section in the doc--->
 
-1. [Microsoft 365 管理センターに Graph コネクタを追加する](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [管理センター GraphコネクタをMicrosoft 365する](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [接続に名前を付け](#step-2-name-the-connection)
 3. [接続設定の構成](#step-3-configure-the-connection-settings)
 4. [検索のアクセス許可を管理する](#step-4-manage-search-permissions)
@@ -45,27 +45,27 @@ ms.locfileid: "51042585"
 * [次の手順](#next-steps)
 
 > [!NOTE]
-> セットアップ プロセスは、Microsoft のすべての Graph コネクタと似ていますが、まったく同じではありません。 **この記事を読むだけでなく、必ずデータ ソースのコネクタ固有の情報を読んでください。**  
+> セットアップ プロセスは、Microsoft のすべてのGraph似ていますが、まったく同じではありません。 **この記事を読むだけでなく、必ずデータ ソースのコネクタ固有の情報を読んでください。**  
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: 管理センター GraphコネクタをMicrosoft 365する
 
-Microsoft が構築した Graph コネクタを構成するには、次の手順を実行します。
+以下の手順を実行して、Microsoft が構築したコネクタGraphします。
 
-1. [Microsoft 365](https://admin.microsoft.com)管理センターで管理者アカウントにサインインします。
+1. 管理センターで管理者アカウント[にサインインMicrosoft 365します](https://admin.microsoft.com)。
 
-2. ナビゲーション ウィンドウで、[設定] を **選択** し、[検索] を選択& **します**。 [コネクタ] [タブを選択します](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+2. ナビゲーション ウィンドウで、[検索] を選択 **設定** し、[検索] を選択&**します**。 [コネクタ] [タブを選択します](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
 3. **[+追加]** を選択し、使用可能なオプションのメニューから選択したデータ ソースを選択します。
 
    > [!div class="mx-imgBorder"]
-   > ![利用可能なデータ ソースは、ADLS Gen2、Enterprise Web サイト、Microsoft SQL サーバー、Azure SQL、Oracle SQL データベース、ServiceNow、ファイル共有、Azure DevOps、MediaWiki です。](media/add-connector.png)
+   > ![使用できるデータ ソースは、ADLS Gen2、Enterprise Web サイト、Microsoft SQL サーバー、Azure SQL、Oracle SQL データベース、ServiceNow、ファイル共有、Azure DevOps、および MediaWiki です。](media/add-connector.png)
 
 > [!NOTE]
-> 各テナントに最大 10 個の Graph 接続を追加できます。
+> 各テナントに最大 10 個Graph接続を追加できます。
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付け
 
@@ -87,13 +87,13 @@ Microsoft が構築した Graph コネクタを構成するには、次の手順
 
 アクセス制御リスト (ACL) は、組織内のユーザーがデータの各アイテムにアクセスできるかどうかを決定します。  
 
-Microsoft SQL [および Azure](MSSQL-connector.md) Data [Lake Storage Gen2](azure-data-lake-connector.md) のような一部のコネクタは [、Azure Active Directory (Azure Active Directory) ACL をネイティブAD](/azure/active-directory/) しています。
+Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azure-data-lake-connector.md)のような一部のコネクタは、Azure Active Directory [(Azure AD)](/azure/active-directory/) ACL をネイティブにサポートします。
 
-[ServiceNow、Azure](servicenow-connector.md) [DevOps、Salesforce](azure-devops-connector.md)などの他のコネクタでは[、Azure](salesforce-connector.md)以外のユーザーとグループAD同期できます。  
+[ServiceNow、Azure DevOps、Salesforce](servicenow-connector.md)[などの](azure-devops-connector.md)他のコネクタは[、Azure](salesforce-connector.md)以外のユーザーとグループAD同期をサポートします。  
 
 ## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 
-セマンティック ラベルは、[プロパティ ラベルの割り当て] ページでソース プロパティに割り当てることができます。 ラベルは、意味的な意味を提供する Microsoft によって提供される既知のタグです。 Microsoft は、拡張検索、ユーザー カード、インテリジェント検出などの Microsoft 365 エクスペリエンスにコネクタ データを統合できます。  
+セマンティック ラベルは、[プロパティ ラベルの割り当て] ページでソース プロパティに割り当てることができます。 ラベルは、意味的な意味を提供する Microsoft によって提供される既知のタグです。 これらの機能を使用すると、Microsoft は、拡張検索、Microsoft 365、インテリジェント検出など、さまざまなエクスペリエンスにコネクタ データを統合できます。  
 
 次の表に、現在サポートされているラベルとその説明を示します。  
 
@@ -107,7 +107,7 @@ Microsoft SQL [および Azure](MSSQL-connector.md) Data [Lake Storage Gen2](azu
 **createdDateTime** | アイテムが作成されたのは、いつ
 **lastModifiedDateTime** | アイテムが最近編集された場合
 **fileName** | ファイル アイテムの名前
-**FileExtension** | .pdf や .word などのファイル アイテムの種類
+**FileExtension** | ファイル アイテムの種類 (.pdf .word など)
 
 このページのプロパティは、データ ソースに基づいて事前に選択されますが、特定のラベルに適した別のプロパティがある場合は、この選択を変更できます。  
 
@@ -131,12 +131,12 @@ Microsoft SQL [および Azure](MSSQL-connector.md) Data [Lake Storage Gen2](azu
 
 検索スキーマ属性を設定して、各ソース プロパティの検索機能を制御できます。 検索スキーマは、検索結果ページに表示される結果と、エンド ユーザーが表示およびアクセスできる情報を決定するのに役立ちます。
 
-検索スキーマ属性には、クエリ、 **検索**、 **取得**、絞り込 **み** などのオプション **があります**。 次の表に、Microsoft Graph コネクタがサポートする各属性とその機能について説明します。
+検索スキーマ属性には、クエリ、 **検索**、 **取得**、絞り込 **み** などのオプション **があります**。 次の表に、Microsoft がコネクタでサポートする各Graphを示し、その機能について説明します。
 
-検索スキーマ属性 | 関数 | 例
+検索スキーマ属性 | 機能 | 例
 --- | --- | ---
-SEARCH | プロパティのテキスト コンテンツを検索可能にする。 プロパティの内容は、フルテキスト インデックスに含まれます。 | プロパティが title の **場合****、Enterprise** のクエリは、任意のテキストまたはタイトルに **Enterprise** という単語を含む回答を返します。
-QUERY | 特定のプロパティの一致をクエリで検索します。 その後、クエリでプロパティ名をプログラムまたは動詞で指定できます。 |  Title プロパティ **をクエリ** できる場合は、 **クエリ Title: Enterprise** がサポートされます。
+SEARCH | プロパティのテキスト コンテンツを検索可能にする。 プロパティの内容は、フルテキスト インデックスに含まれます。 | プロパティが **title** の場合は、テキスト **または** Enterpriseの単語を含む **Enterpriseを返** します。
+QUERY | 特定のプロパティの一致をクエリで検索します。 その後、クエリでプロパティ名をプログラムまたは動詞で指定できます。 |  Title プロパティ **をクエリ** できる場合は、**クエリ Title: Enterprise** サポートされます。
 RETRIEVE | 検索可能なプロパティのみを結果の種類で使用し、検索結果に表示できます。 |
 REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同様に使用できます。 | 接続のセットアップ中に[](custom-filters.md)絞り込みプロパティがマークされている場合、組織内のユーザーは検索結果ページの URL でフィルター処理できます
 
@@ -164,7 +164,7 @@ REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同�
 
 更新間隔には、完全更新と増分更新の2種類がありますが、一部のデータ ソースでは増分更新を使用できません。
 
-完全な更新により、検索エンジンは、以前のクロールに関係なく、コンテンツ ソース内のすべてのアイテムを処理してインデックスを作成します。 完全な更新は、次の状況に最適です。
+完全な更新により、検索エンジンは、以前のクロールに関係なく、コンテンツ ソースで変更されたアイテムを処理してインデックスを作成します。 完全な更新は、次の状況に最適です。
 
 * データの削除を検出する。
 * 増分更新でエラーが検出され、失敗しました。
@@ -198,10 +198,10 @@ REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同�
 
 ## <a name="limitations"></a>制限事項
 <!---Insert limitations for this data source-->
-すべてのデータ ソースに適用される制限について詳しくは [、「Microsoft Graph](connectors-overview.md) コネクタの概要」をご覧ください。
+すべてのデータ ソースに適用される制限の詳細については[、「Microsoft Graphコネクタの概要」を参照](connectors-overview.md)してください。
 
-その特定の Graph コネクタに他の制限が適用される場合は、データ ソースのコネクタ固有の情報を参照してください。
+データ ソースのコネクタ固有の情報を参照して、その特定のコネクタに他の制限が適用されるGraphしてください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 接続を公開した後、検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、「検索結果のカスタマイズ [ページ」を参照してください](customize-search-page.md)。
