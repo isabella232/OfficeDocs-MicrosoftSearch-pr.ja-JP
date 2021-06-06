@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 用の Salesforce Graphコネクタをセットアップする
-ms.openlocfilehash: d4d19c05f82ddb28c4dc3e6719bf8ea8d7284cc3
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720990"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774091"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -131,7 +131,7 @@ Salesforce インスタンスから ACL を取り込み、ID の種類として 
 
 このビデオでは、Salesforce インスタンスに対する認証プロセスを確認し、Azure Active Directory 以外の ID を Azure Active Directory ID に同期し、適切なセキュリティ トリミングを Salesforce アイテムに適用できます。
 
-> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
+> [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
 

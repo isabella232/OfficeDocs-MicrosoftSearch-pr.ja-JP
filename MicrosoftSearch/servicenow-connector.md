@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow Graphコネクタをセットアップする
-ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 31b581af2c51a5c26b161e778b242e396afe91fd
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720970"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774082"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -212,7 +212,7 @@ ServiceNow インスタンスから ACL を取り込み、ID の種類に対し�
 
 次のビデオでは、Servicenow コネクタを使用してナレッジ記事のインデックスを作成し、ユーザー条件のアクセス許可を定義し、ServiceNow と Microsoft Search インデックスの間の変更をシームレスに同期する方法を確認できます。
 
-> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
+> [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
