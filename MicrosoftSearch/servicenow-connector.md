@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search の ServiceNow Graphコネクタをセットアップする
-ms.openlocfilehash: 0b7e752ec67a7c14e4afc2e3bad32124694f8f39
-ms.sourcegitcommit: 668930032e77a065c23551b3e8820dcc2c63c0f8
+ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
+ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52853816"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879310"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -64,15 +64,15 @@ Microsoft Search **との接続に使用する** サービス アカウントの
 
 ServiceNow からコンテンツを認証および同期するには、次の 3 つの **サポートされている方法** のいずれかを選択します。 
  
-1. 基本認証 
-1. ServiceNow OAuth (推奨)
-1. Azure AD OpenID Connect
+- 基本認証 
+- ServiceNow OAuth (推奨)
+- Azure AD OpenID Connect
 
-### <a name="basic-authentication"></a>基本認証
+## <a name="step-31-basic-authentication"></a>手順 3.1: 基本認証
 
 インスタンスに対する認証を行うナレッジ ロールを持つ ServiceNow **アカウントのユーザー** 名とパスワードを入力します。
 
-### <a name="servicenow-oauth"></a>ServiceNow OAuth
+## <a name="step-32-servicenow-oauth"></a>手順 3.2: ServiceNow OAuth
 
 認証に ServiceNow OAuth を使用するには、ServiceNow 管理者が ServiceNow インスタンスでエンドポイントをプロビジョニングして、Microsoft Search アプリがアクセスできる必要があります。 詳細については、ServiceNow のドキュメントの「クライアントがインスタンスにアクセス [する](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) エンドポイントを作成する」を参照してください。
 
@@ -91,19 +91,19 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 
 インスタンスに接続するクライアント ID とクライアント シークレットを入力します。 接続後、ServiceNow アカウント資格情報を使用してクロールするアクセス許可を認証します。 アカウントには、少なくともナレッジ ロール **が必要** です。 より多くの ServiceNow テーブル レコードへの読み取りアクセスを提供し、ユーザー条件のアクセス許可をインデックス化するための接続設定の手順 [3:](#step-3-connection-settings) の先頭にある表を参照してください。
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
+## <a name="step-33-azure-ad-openid-connect"></a>手順 3.3: Azure AD OpenID Connect
 
 認証に Azure AD OpenID Connectするには、以下の手順に従います。
 
-## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>手順 3.a: 新しいアプリケーションを新しいアプリケーションに登録Azure Active Directory
+### <a name="step-331-register-a-new-application-in-azure-active-directory"></a>手順 3.3.1: 新しいアプリケーションを新しいアプリケーションに登録Azure Active Directory
 
 アプリケーションに新しいアプリケーションを登録する方法については、「Azure Active Directoryを登録する[」を参照してください](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 [単一テナントの組織ディレクトリ] を選択します。 リダイレクト URI は不要です。 登録後、アプリケーション (クライアント) ID とディレクトリ (テナント) ID をメモします。
 
-## <a name="step-3b-create-a-client-secret"></a>手順 3.b: クライアント シークレットを作成する
+### <a name="step-332-create-a-client-secret"></a>手順 3.3.2: クライアント シークレットを作成する
 
 クライアント シークレットの作成の詳細については、「クライアント シークレットの作成 [」を参照してください](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 クライアント シークレットをメモします。
 
-## <a name="step-3c-retrieve-service-principal-object-identifier"></a>手順 3.c: サービス プリンシパル オブジェクト識別子の取得
+### <a name="step-333-retrieve-service-principal-object-identifier"></a>手順 3.3.3: サービス プリンシパル オブジェクト識別子の取得
 
 手順に従ってサービス プリンシパル オブジェクト識別子を取得する
 
@@ -137,7 +137,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 クライアントの秘密情報 | アプリケーションの秘密キー (手順 3.b から)。 パスワードのように扱います。
 サービス プリンシパル ID | サービスとして実行されているアプリケーションの ID。 (手順 3.c から)
 
-## <a name="step-3d-register-servicenow-application"></a>手順 3.d: ServiceNow アプリケーションの登録
+### <a name="step-334-register-servicenow-application"></a>手順 3.3.4: ServiceNow アプリケーションの登録
 
 ServiceNow インスタンスには、次の構成が必要です。
 
@@ -169,7 +169,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 5. [OAuth OIDC エンティティ] フォームの [送信と更新] を選択します。
 
-## <a name="step-3e-create-a-servicenow-account"></a>手順 3.e: ServiceNow アカウントを作成する
+### <a name="step-335-create-a-servicenow-account"></a>手順 3.3.5: ServiceNow アカウントを作成する
 
 手順を参照して ServiceNow アカウントを作成し [、ServiceNow でユーザーを作成します](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html)。
 
@@ -182,7 +182,7 @@ Web サービス アクセスのみ | Checked
 
 その他の値はすべて既定のままにできます。
 
-##### <a name="step-36-enable-knowledge-role-for-the-servicenow-account"></a>手順 3.6: ServiceNow アカウントのナレッジ ロールを有効にする
+### <a name="step-336-enable-knowledge-role-for-the-servicenow-account"></a>手順 3.3.6: ServiceNow アカウントのナレッジ ロールを有効にする
 
 ServiceNow プリンシパル ID をユーザー ID として作成した ServiceNow アカウントにアクセスし、ナレッジ ロールを割り当てる。 ServiceNow アカウントに役割を割り当てる手順については、ここで、ユーザーに役割を割 [り当てる方法をご覧ください](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 より多くの ServiceNow テーブル レコードへの読み取りアクセスを提供し、ユーザー条件のアクセス許可をインデックス化するための接続設定の手順 [3:](#step-3-connection-settings) の先頭にある表を参照してください。
 
@@ -267,4 +267,4 @@ PROD | ヨーロッパ | 20.54.41.208/30, 51.105.159.88/30
 PROD | アジア太平洋 | 52.139.188.212/30, 20.43.146.44/30 
 
 
-その他の問題がある場合、またはフィードバックを提供する場合は、お問い合わせ aka.ms/TalkToGraphConnectors
+その他の問題がある場合、またはフィードバックを提供する場合は、お問い [合わせ aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
