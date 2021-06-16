@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search SQL Azure SQLおよび Microsoft Graph サーバー コネクタ
+title: Azure SQLおよびMicrosoft SQL Server GraphコネクタMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,33 +12,33 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用の Azure SQLおよび Microsoft SQL Graphコネクタをセットアップします。
-ms.openlocfilehash: 29474c731c489c9e9b75f2456d25e4ff43aae4eb
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
+ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
+ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720981"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52955620"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQLおよび Microsoft SQL サーバー Graph コネクタ
+# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL および Microsoft SQL Server Graph コネクタ
 
-Microsoft SQL サーバーまたは Azure SQL Graph コネクタを使用すると、組織はオンプレミスの SQL Server データベース、またはクラウド内の Azure SQL インスタンスでホストされているデータベースからデータを検出してインデックス付けできます。
-指定Graphコネクタは、指定したコンテンツを Microsoft Search にインデックス付けします。 ソース データを使用してインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 これらのコネクタSQL、特定のユーザーの検索結果へのアクセスを制限できます。
+Microsoft SQL Serverまたは Azure SQL Graph コネクタを使用すると、組織はオンプレミスの SQL Server データベース、またはクラウド内の Azure SQL インスタンスでホストされているデータベースからデータを検出してインデックス付けできます。
+指定Graphコネクタは、指定したコンテンツをインデックスにMicrosoft Search。 ソース データを使用してインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 これらのコネクタSQL、特定のユーザーの検索結果へのアクセスを制限できます。
 
 > [!NOTE]
 > コネクタの [**セットアップに関する**](configure-connector.md)Graph一般的なコネクタのセットアップGraph説明します。
 
-この記事は、Azure SQL および Microsoft SQL サーバー Graphを構成、実行、およびGraphします。 これは、一般的なセットアップ プロセスを補足し、Azure SQL および Microsoft SQL サーバー Graph表示します。 この記事では、Microsoft [](#limitations) SQL および Azure SQLについて説明します。
+この記事は、Azure コネクタとセキュリティ コネクタを構成、実行、およびSQLするMicrosoft SQL Server Graphです。 これは、一般的なセットアップ プロセスを補足し、Azure SQLコネクタとMicrosoft SQL Server Graph示します。 この記事には、セキュリティ[コネクタと](#limitations)Azure Microsoft SQL ServerコネクタのSQLも含まれています。
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
-### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>コネクタ エージェントGraphインストールする (オンプレミスの Microsoft SQL サーバー コネクタにのみ必要)
+### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>コネクタ エージェントGraphインストールする (オンプレミスのコネクタMicrosoft SQL Serverのみ)
 
 オンプレミスのサード パーティ製データにアクセスするには、コネクタ エージェントをインストールして構成Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](on-prem-agent.md)する」を参照してください。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: 管理センター GraphコネクタをMicrosoft 365する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -54,9 +54,9 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>アプリを登録する (Azure SQLコネクタのみ)
 
-Azure SQL コネクタの場合は、Microsoft Search アプリがインデックス作成Azure Active Directoryデータにアクセスするためにアプリを登録する必要があります。 アプリの登録の詳細については、「アプリを登録するGraph Microsoft Graph」[を参照してください](/graph/auth-register-app-v2)。
+Azure SQL コネクタの場合は、アプリがインデックス作成Azure Active DirectoryデータにアクセスMicrosoft Searchアプリを登録する必要があります。 アプリの登録の詳細については、「アプリを登録するGraph Microsoft Graph」[を参照してください](/graph/auth-register-app-v2)。
 
-アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、テナント ID をメモした後、新しいクライアント シークレットを [生成する必要があります](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 クライアント シークレットは 1 回だけ表示されます。 クライアント シークレットを&注意してください。 Microsoft Search で新しい接続を構成する場合は、クライアント ID とクライアント シークレットを使用します。
+アプリの登録を完了し、アプリ名、アプリケーション (クライアント) ID、テナント ID をメモした後、新しいクライアント シークレットを [生成する必要があります](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 クライアント シークレットは 1 回だけ表示されます。 クライアント シークレットを&注意してください。 クライアント ID とクライアント シークレットを使用して、新しい接続を構成Microsoft Search。
 
 登録したアプリをアプリに追加するには、Azure SQL Databaseする必要があります。
 
@@ -70,14 +70,14 @@ Azure SQL コネクタの場合は、Microsoft Search アプリがインデッ�
 
 ### <a name="connection-settings"></a>接続設定
 
-Microsoft SQL サーバー コネクタをデータ ソースに接続するには、クロールするデータベース サーバーと on-prem エージェントを構成する必要があります。 その後、必要な認証方法でデータベースに接続できます。
+Microsoft SQL Serverコネクタをデータ ソースに接続するには、クロールするデータベース サーバーと on-prem エージェントを構成する必要があります。 その後、必要な認証方法でデータベースに接続できます。
 
 > [!NOTE] 
-> Microsoft SQL コネクタを接続するには、データベースをサーバー バージョン 2008 以降SQL実行する必要があります。
+> データベースを接続するにはSQL Serverバージョン 2008 以降Microsoft SQL Server実行する必要があります。
 
 Azure SQLコネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQLコネクタは、データベースAzure Active Directory接続するための Open ID 接続 (OIDC) 認証のみをサポートします。
 
-セキュリティを強化するには、Azure サーバーまたはデータベースの IP ファイアウォールSQL構成できます。 IP ファイアウォールルールの設定の詳細については、IP ファイアウォールルールに関する [ドキュメントを参照してください](/azure/azure-sql/database/firewall-configure)。 ファイアウォール設定に次のクライアント IP 範囲を追加します。
+セキュリティを強化するには、Azure サーバーまたはデータベースの IP ファイアウォールSQL Server構成できます。 IP ファイアウォールルールの設定の詳細については、IP ファイアウォールルールに関する [ドキュメントを参照してください](/azure/azure-sql/database/firewall-configure)。 ファイアウォール設定に次のクライアント IP 範囲を追加します。
 
 | 地域 | IP 範囲 |
 | ------------ | ------------ |
@@ -219,7 +219,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 次SQLコネクタには、プレビュー リリースで次の制限があります。
 
-- Microsoft SQL コネクタ: オンプレミス データベースは、サーバー バージョン 2008 以降SQL実行する必要があります。
-- M365 サブスクリプションと Azure サブスクリプション (Azure SQL データベースをホストする) は、同じサブスクリプション内Azure Active Directory。
+- Microsoft SQL Serverコネクタ: オンプレミス データベースは、バージョン 2008 以降SQL Server実行する必要があります。
+- サブスクリプションMicrosoft 365 Azure サブスクリプション (Azure SQL データベースをホストする) は、同じサブスクリプション内にある必要Azure Active Directory。
 - ACL は、ユーザー プリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用してのみサポートされます。
 - データベース列内のリッチ コンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、データベース列内のリンクとして存在する HTML、JSON、XML、BLOB、およびドキュメント解析があります。
