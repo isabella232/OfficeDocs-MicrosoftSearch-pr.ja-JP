@@ -22,6 +22,10 @@
       {
         "files": [
           "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf",
           "**/*.jpg"
         ],
         "exclude": [
@@ -38,7 +42,20 @@
       "ocv-translation-feedback": true,
       "breadcrumb_path": "/MicrosoftSearch/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "recommendations": true,
+      "feedback_system": "None",
+      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-MicrosoftSearch",
+      "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-MicrosoftSearch/issues",
+      "searchScope": ["Microsoft Search"],
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "fileMetadata": {},
     "template": [],
