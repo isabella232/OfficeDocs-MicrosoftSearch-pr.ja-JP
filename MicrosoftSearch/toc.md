@@ -11,29 +11,32 @@
 ## [場所](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [Q&A](manage-qas.md)
-# コネクタ
-## [概要](connectors-overview.md)
-## [コネクタ ギャラリー](connectors-gallery.md)
-## Microsoft 提供の設定コネクタ
-### [セットアップの概要](configure-connector.md)
-### [グラフ コネクタ エージェントを設定する](on-prem-agent.md)
-### [Azure AD 以外の ID をマッピング (プレビュー)](map-non-aad.md)
-### [Azure AD の ID をマッピング (プレビュー)](map-aad.md)
-### コネクタ固有情報
-#### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-#### [Azure DevOps (プレビュー)](azure-devops-connector.md)
-#### [Azure SQL および Microsoft SQL Server](MSSQL-connector.md)
-#### [大企業の Web サイト](enterprise-web-connector.md)
-#### [ファイル共有](fileshare-connector.md)
-#### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL](OracleSQL-connector.md)
-#### [Salesforce (プレビュー)](salesforce-connector.md)
-#### [ServiceNow](servicenow-connector.md)
-## 接続を管理する
-### [接続を監視する](manage-connector.md)
-### [接続の詳細とエラーを表示する](connector-details-errors.md)
-## [ライセンス](licensing.md)
-## [使用条件](terms-of-use.md)
+# データ ソース
+## Graph コネクタ
+### [概要](connectors-overview.md)
+### [コネクタ ギャラリー](connectors-gallery.md)
+### Microsoft 提供の設定コネクタ
+#### [セットアップの概要](configure-connector.md)
+#### [グラフ コネクタ エージェントを設定する](on-prem-agent.md)
+#### [Azure AD 以外の ID をマッピング (プレビュー)](map-non-aad.md)
+#### [Azure AD の ID をマッピング (プレビュー)](map-aad.md)
+#### コネクタ固有情報
+##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+##### [Azure DevOps (プレビュー)](azure-devops-connector.md)
+##### [Azure SQL および Microsoft SQL Server](MSSQL-connector.md)
+##### [大企業の Web サイト](enterprise-web-connector.md)
+##### [ファイル共有](fileshare-connector.md)
+##### [MediaWiki](mediawiki-connector.md)
+##### [Oracle SQL](OracleSQL-connector.md)
+##### [Salesforce (プレビュー)](salesforce-connector.md)
+##### [ServiceNow](servicenow-connector.md)
+### 接続を管理する
+#### [接続を監視する](manage-connector.md)
+#### [接続の詳細とエラーを表示する](connector-details-errors.md)
+### [ライセンス](licensing.md)
+### [使用条件](terms-of-use.md)
+## フェデレーション コネクタ
+### [Dynamics 365](manage-dynamics365.md)
 # カスタマイズと構成
 ## [業界および結果の種類を管理する](customize-search-page.md)
 ## [検索結果のレイアウトを管理する](customize-results-layout.md)
