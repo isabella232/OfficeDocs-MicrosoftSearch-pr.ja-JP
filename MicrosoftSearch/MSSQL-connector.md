@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
-ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
+ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52955620"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230918"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -30,7 +30,7 @@ Microsoft SQL Serverまたは Azure SQL Graph コネクタを使用すると、�
 > [!NOTE]
 > コネクタの [**セットアップに関する**](configure-connector.md)Graph一般的なコネクタのセットアップGraph説明します。
 
-この記事は、Azure コネクタとセキュリティ コネクタを構成、実行、およびSQLするMicrosoft SQL Server Graphです。 これは、一般的なセットアップ プロセスを補足し、Azure SQLコネクタとMicrosoft SQL Server Graph示します。 この記事には、セキュリティ[コネクタと](#limitations)Azure Microsoft SQL ServerコネクタのSQLも含まれています。
+この記事は、Azure SQL および Microsoft SQL コネクタを構成、実行、およびGraphします。 これは、一般的なセットアップ プロセスを補足し、Azure SQL および Microsoft SQL サーバー Graph表示します。 この記事では、Microsoft [](#limitations) SQL および Azure SQLについて説明します。
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
@@ -120,7 +120,7 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 | カテゴリ | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
 | 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
-| 正確な数値 | bigint <br> int <br> smallint <br> tinyint | int64 |
+| 正確な数値 | bigint <br> 整数 <br> smallint <br> tinyint | int64 |
 | 正確な数値 | ビット | ブール値 |
 | 近似数値 | 浮動小数点数 <br> 本当の | double |
 | 文字の文字列 | char <br> varchar <br> text | string |
@@ -220,6 +220,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 次SQLコネクタには、プレビュー リリースで次の制限があります。
 
 - Microsoft SQL Serverコネクタ: オンプレミス データベースは、バージョン 2008 以降SQL Server実行する必要があります。
+
 - サブスクリプションMicrosoft 365 Azure サブスクリプション (Azure SQL データベースをホストする) は、同じサブスクリプション内にある必要Azure Active Directory。
 - ACL は、ユーザー プリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用してのみサポートされます。
 - データベース列内のリッチ コンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、データベース列内のリンクとして存在する HTML、JSON、XML、BLOB、およびドキュメント解析があります。

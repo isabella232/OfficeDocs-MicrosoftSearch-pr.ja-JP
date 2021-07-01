@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search Graph Salesforce コネクタ
+title: Salesforce GraphコネクタのMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search 用の Salesforce Graphコネクタをセットアップする
-ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
-ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
+description: Salesforce Graph コネクタをセットアップMicrosoft Search
+ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52774091"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230936"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector-preview"></a>Salesforce Graph コネクタ (プレビュー)
 
-Salesforce Graphコネクタを使用すると、組織は Salesforce インスタンスの連絡先、機会、見込み客、およびアカウント オブジェクトをインデックス化できます。 Salesforce からコネクタとインデックス コンテンツを構成した後、エンド ユーザーは任意の Microsoft Search クライアントからそれらのアイテムを検索できます。
+Salesforce Graphコネクタを使用すると、組織は Salesforce インスタンスの連絡先、機会、見込み客、およびアカウント オブジェクトをインデックス化できます。 Salesforce からコネクタとインデックス コンテンツを構成した後、エンド ユーザーは任意のクライアントからそれらのアイテムMicrosoft Searchできます。
 
 > [!NOTE]
 > 一般的な [**コネクタのセットアップGraph**](configure-connector.md) Graphについては、「Graphコネクタのセットアップ」をご覧ください。
@@ -77,9 +77,9 @@ Salesforce インスタンスに接続するには、OAuth 認証用の Salesfor
   > [!div class="mx-imgBorder"]
   > !["Refresh token is valid is valid until revoked" という名前の Refresh Token Policy を選択します。](media/salesforce-connector/oauthpolicies.png)
 
-[これで、M365 管理センターを](https://admin.microsoft.com/)使用して、このコネクタのセットアップ プロセスの残りのGraphできます。
+これで、Microsoft 365 管理[センター](https://admin.microsoft.com/)を使用して、コネクタのセットアップ プロセスの残りのGraphできます。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: 管理センター GraphコネクタをMicrosoft 365する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -150,7 +150,7 @@ Salesforce インスタンスから ACL を取り込み、ID の種類として 
 Salesforce コネクタは現在、フル クロールの更新スケジュールのみをサポートしています。
 
 >[!IMPORTANT]
->フル クロールでは、削除されたオブジェクトと、以前に Microsoft Search インデックスに同期されたユーザーが検索されます。
+>フル クロールでは、削除されたオブジェクトと、以前に同期されたユーザーが削除済みインデックスMicrosoft Searchします。
 
 推奨されるスケジュールは、フル クロールの場合は 1 週間です。
 
@@ -175,7 +175,7 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
     - Phone
     - MobilePhone
     - メール
-    - 型
+    - 種類
     - タイトル
     - AccountId
     - AccountName
