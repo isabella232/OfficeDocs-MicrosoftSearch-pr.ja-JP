@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
-ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
+ms.openlocfilehash: 6b6f0593a668e9c2c5c7fc5a62f7b5dd4a43a8bb
+ms.sourcegitcommit: ea6905626de67090141039565282e4e0c53b43ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51639855"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314021"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -47,7 +47,7 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 ### <a name="things-you-should-know"></a>知っている必要があります。
 
 1. 接続は、1 つの垂直の下でのみコンテンツ ソースとして追加できます。 複数の垂直で接続を再利用できません。
-2. 複数の接続ソースが追加されている検索バーティカルのクエリをセットアップする必要がある場合は、一般的なソース プロパティを使用してこのようなクエリを作成する必要があります。
+2. 複数の接続ソースが追加されている検索バーティカルのクエリを設定する必要がある場合は、一般的なソース プロパティを使用してこのようなクエリを作成する必要があります。
 
 ## <a name="things-to-consider"></a>考慮事項
 
@@ -66,12 +66,13 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 ウィザードを開始すると、業種の名前、コンテンツソース、および検索するコンテンツの範囲を定義する手順がガイドされます。 バーティカルは無効な状態で作成されます。 後ほど有効にします。
 
 限定された[キーワードクエリ言語 (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) のセットを使用して、範囲を狭めることができます。 このページには、利用可能なプロパティが一覧表示されます。 KQL を作成するには、ブール演算子と一緒にフリーテキスト キーワードとプロパティ制限を使用することをお勧めします。
+KQL では、プロファイル クエリ [変数を使用](#profile-query-variables) して垂直方向の結果を微調整することもできます。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>組織レベルで業種を作成する
 
 [SharePoint](https://sharepoint.com/) ホーム、[Office](https://office.com)、または[Bing](https://bing.com)で Microsoft Search にカテゴリを作成するには、次の手順を実行します。 
 
-1. Microsoft [365 管理センターで、[](https://admin.microsoft.com)バーティカル] [**に移動します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)。
+1. [バーティ [Microsoft 365 管理センター](https://admin.microsoft.com)に [**移動します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)。
 2. [追加 **] を** 選択して開始します。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>サイトレベルでカテゴリを作成する
@@ -98,7 +99,7 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 独自の検索結果レイアウトを作成し、結果の種類を作成して既定の検索結果レイアウトを上書 **きすることができます**。 検索結果の種類とは、検索結果のタイプの違いに応じて表示方法を変えるルールのことです。 このルールは、次のような構成になっています。
 
 - 検索結果のコンテンツソースなど、各検索結果を比較するための **1 つ以上の条件**。  
-- 条件を満たす検索結果に使用する **結果レイアウト**。 結果レイアウトは、条件を満たすすべての結果が検索結果ページに表示され、動作する方法を制御します。
+- 条件を満たす検索結果に使用する **結果レイアウト**。 結果のレイアウトは、条件を満たすすべての結果が検索結果ページに表示および動作する方法を制御します。
 
 **既定の検索結果レイアウトを表示するために適切なマッピングが行われない場合は、垂直方向に表示する結果の種類を少なくとも 1 つ作成する必要があります。** 業種ごとに複数の結果タイプを作成できます。これにより、さまざまなタイプの結果にさまざまなレイアウトを使用できます。 たとえば、*重大度 1* のインシデントをカスタマイズして、*重大度 3* のインシデントと比較してより目立つ色と大きなフォントを使用できます。
 
@@ -119,10 +120,76 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>手順 3: 垂直を有効にした後に表示する
 
-垂直を有効にした後、表示するには数時間かかります。 有効にした後で待ちたくない場合は、[SharePoint](https://sharepoint.com/) と [Office](https://office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。 [Bing の](https://bing.com)場合は、&**機能=uncachedVerticals** を作業垂直 URL に追加して、垂直をすぐに表示します。 
+垂直を有効にした後、表示するには数時間かかります。 有効にした後で待ちたくない場合は、[SharePoint](https://sharepoint.com/) と [Office](https://office.com) の URL に **cacheClear=true** を追加して、カテゴリをすぐに表示できます。 たとえば [Bing、&](https://bing.com)**を**[作業] 垂直 URL に追加して、垂直をすぐに表示します。
 
 > [!NOTE]
-> 追加されたバーティカルは、モバイル Web ブラウザー[](https://office.com)から表示Office [SharePoint](https://sharepoint.com/)やアプリでは表示されません。
+> モバイル Web ブラウザーから表示された場合、追加された[SharePointとOffice](https://sharepoint.com/)[に表示](https://office.com)されません。
+
+## <a name="profile-query-variables"></a>プロファイル クエリ変数
+
+クエリ変数は、垂直のクエリへの入力として動的データを提供するために、垂直の KQL クエリ セクションで使用されます。 プロファイル クエリ変数を使用して、サインインしているユーザーに対して検索結果をコンテキストに合った状態にできます。 プロファイル クエリ変数は、サインインしているユーザーのプロファイルから値をフェッチ [します](/graph/api/resources/profile?view=graph-rest-beta)。
+
+たとえば、サインインしているユーザーが割り当てられたサポート チケットを検索できる垂直の "チケット" を作成する場合は、管理ページの垂直方向の作成中に[クエリ] セクションで次のクエリを指定できます。  
+
+**AssignedTo:{Profile.accounts.userPrincipalName}**
+
+これにより、検索結果を絞り込み、割り当て先が検索を実行しているユーザーであるアイテムのみを表示します。
+
+[プロファイル リソースは](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) 、プロパティをコレクションとして公開します。 たとえば、電子メール アドレスに関連する情報は、電子メールのコレクション、職位のコレクションとしての作業位置などによって公開されます。 ソースの種類として AAD を持つユーザー プロファイルで使用可能なすべてのプロパティは、クエリ変数として公開されます。
+
+以下に示すように、電子メール コレクションで使用できる電子メール アドレスが 3 つ含まれます。
+
+```json
+"emails": [{ 
+
+        "address": "Megan.Bowen@contoso.com",
+        "id": "xyz", 
+        "source": { 
+            "CreatedBy": "xyz", 
+            "CreatedOn": "2222", 
+            "Type": "official" 
+        },
+        "type": "main" 
+    }, { 
+        "address": "meganb@hotmail.com",
+        "id": "abc", 
+        "source": { 
+            "CreatedBy": "abc",
+            "CreatedOn": "3333", 
+            "Type": "non-official",
+        },
+        "type": "work"
+    }, { 
+        "address": "meganb@outlook.com",
+        "id": "pqr", 
+        "source": { 
+            "CreatedBy": "pqr", 
+            "CreatedOn": "4444", 
+            "Type": "personal" 
+        },
+        "type": "personal" 
+    } 
+] 
+```
+
+- クエリ **MyProperty: {Profile.emails.address}** は MyProperty: "Megan.Bowen@contoso.com" に解決されます。  
+
+- address 属性のすべての値を解決するには、複数値の拡張構文を使用する必要があります。 クエリ **{|MyProperty:{Profile.emails.address}}** は ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com")) に解決されます。  
+
+"|" 演算子は、複数値変数の解決に使用する必要があります。 プロファイルの展開に関するその他の例については、以下の表を参照してください。
+
+| #         | 構文 |  戻り値  |
+| --------- | ------ | --- |
+| 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} 電子メールはオブジェクトなので、これは解決できません。|
+| 3    | {?MyProperty:{Profile.emails}}  |  メールはオブジェクトなので、これは解決しない。 "? 演算子は、解決しないクエリ変数を無視します。 この変数は、クエリ スタックの下にさらに渡されると削除されます。   |
+| 4  | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+
+> [!NOTE]
+>
+> - プロファイル クエリ変数は、コネクタをコンテンツ ソースとして使用するカスタム [バー](connectors-overview.md) ティカルでのみサポートされます。
+> - プロファイル クエリ変数は、垂直セットアップ プロセスの "Query" [セクションで定義されます](customize-search-page.md#step-1-create-the-search-vertical)。
+> - プロファイル クエリ変数は現在プレビュー中です。 プレビューの詳細については [、「Connectors preview features」を参照してください](connectors-overview.md#what-are-the-preview-features)。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
