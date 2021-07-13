@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
-ms.openlocfilehash: 4bcfb871fabae07270611762d2112a6e72d4762b
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: 87645e32e274eb166d6ba008c4ac720667105a1f
+ms.sourcegitcommit: 52129e0129a201ec056903b2461d012fda6d3636
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230891"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383485"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -38,10 +38,6 @@ ms.locfileid: "53230891"
 * [カスタム アプリケーションからコネクタ データを検索する方法](#how-do-i-search-my-connector-data-from-a-custom-application)
 * [検索結果をカスタマイズする方法](#how-do-i-customize-search-results)
 * [コネクタの制限事項](#what-are-the-connector-limitations)
-
-<!---Modify to another note that is more accurate after rollout completion--->
-> [!IMPORTANT]
-> Microsoft GraphコネクタとMicrosoft Search API が一般に利用可能になります。 最初のロールアウトは、ターゲットリリース用に構成された顧客に対して行います。 テナントでユーザー コネクタをGraphする場合は、ユーザーと管理者がターゲット リリースをオプトイン[する必要があります](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)。
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
