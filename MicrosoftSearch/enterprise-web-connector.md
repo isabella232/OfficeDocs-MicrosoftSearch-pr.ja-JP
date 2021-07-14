@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search のエンタープライズ Web サイト Graph コネクタ
+title: Enterprise web サイトGraphコネクタMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,32 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search のエンタープライズ Web サイト Graph コネクタをセットアップする
-ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
-ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
+description: Web サイトのEnterpriseコネクタGraph設定Microsoft Search
+ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
+ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51951023"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419897"
 ---
 <!---Previous ms.author: monaray --->
 
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="enterprise-websites-graph-connector"></a>エンタープライズ Web サイト Graph コネクタ
+# <a name="enterprise-websites-graph-connector"></a>Enterprise web サイトGraph コネクタ
 
-エンタープライズ Web サイトグラフ コネクタを使用すると、組織は内部向け Web サイトから記事やコンテンツ **をインデックス化できます**。 コネクタを構成し、Web サイトからコンテンツを同期すると、エンド ユーザーは任意の Microsoft Search クライアントからそのコンテンツを検索できます。
+コネクタEnterpriseサイトGraphを使用すると、組織は内部向け Web サイトから記事やコンテンツ **をインデックス化できます**。 コネクタを構成し、Web サイトからコンテンツを同期すると、エンド ユーザーは任意のクライアントからそのコンテンツMicrosoft Searchできます。
 
 > [!NOTE]
-> グラフ コネクタ [**のセットアップの一**](configure-connector.md) 般的な手順については、「グラフ コネクタのセットアップ」をご覧ください。
+> コネクタの [**セットアップに関する**](configure-connector.md)Graph一般的なコネクタのセットアップGraph説明します。
 
-この記事は、エンタープライズ Web サイト コネクタを構成、実行、および監視するユーザー向けです。 一般的なセットアップ プロセスを補足し、Enterprise Web サイト コネクタにのみ適用される手順を示します。 この記事には、トラブルシューティングと [制限事項に関](#troubleshooting) する情報 [も含まれています](#limitations)。
+この記事は、Web サイト コネクタを構成、実行、監視するユーザー Enterpriseです。 これは、一般的なセットアップ プロセスを補足し、Web サイト コネクタに適用される手順Enterprise示します。 この記事には、トラブルシューティングと [制限事項に関](#troubleshooting) する情報 [も含まれています](#limitations)。
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -49,40 +49,41 @@ ms.locfileid: "51951023"
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
-データ ソースに接続するには、Web サイトのルート URL を入力し、クロール ソースを選択し、使用する認証の種類 [(None、Basic Authentication、または](/azure/active-directory/)OAuth 2.0 と Azure Active Directory (Azure AD) を使用する必要があります。 この情報を完了したら、[接続のテスト] を選択して設定を確認します。
+データ ソースに接続するには、Web サイトのルート URL を入力し、クロール ソースを選択し、使用する認証の種類 (None、Basic Authentication、または OAuth 2.0 with [Azure Active Directory (Azure AD)](/azure/active-directory/)を選択します。 この情報を完了したら、[接続のテスト] を選択して設定を確認します。
 
 ### <a name="url"></a>URL
 
 URL フィールドを使用して、クロールする Web サイトのルートを指定します。 エンタープライズ Web サイト コネクタは、この URL を開始点として使用し、クロールのためにこの URL からのすべてのリンクに従います。
 
-> [!NOTE]
-> クロールするサイトにサイトマップが定義されている場合、コネクタはサイトマップにリストされている URL のみをクロールします。 サイトマップが定義されていない場合、コネクタはサイトのルート URL で見つかったすべてのリンクを深くクロールします。
+### <a name="crawl-websites-listed-in-the-sitemap"></a>サイトマップにリストされている Web サイトをクロールする
+
+選択すると、コネクタはサイトマップにリストされている URL のみをクロールします。 選択されていない場合、またはサイト マップが見つからない場合、コネクタはサイトのルート URL で見つかったすべてのリンクを深くクロールします。
+
+> [!div class="mx-imgBorder"]
+> ![Web コネクタの [接続設定] ウィンドウEnterpriseスクリーンショット](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>クロール モード: クラウドまたはオンプレミス
 
 クロール モードは、インデックスを作成する Web サイトの種類 (クラウドまたはオンプレミス) を決定します。 クラウド Web サイトの場合は、クロール **モードとして [クラウド** ] を選択します。
 
-また、コネクタはオンプレミス Web サイトのクロールをサポートしています。 オンプレミスのデータにアクセスするには、まず Graph コネクタ エージェントをインストールして構成する必要があります。 詳細については [、「Graph コネクタ エージェント」を参照してください](./on-prem-agent.md)。
+また、コネクタはオンプレミス Web サイトのクロールをサポートしています。 オンプレミス のデータにアクセスするには、最初にコネクタ エージェントをインストールして構成Graph必要があります。 詳細については、「コネクタ エージェント[Graph」を参照してください](./on-prem-agent.md)。
 
-オンプレミス Web サイトの場合は、クロール モードとして [エージェント] を選択し **、[On-Prem Agent]** フィールドで、前にインストールして構成した Graph コネクタ エージェントを選択します。  
-
-> [!div class="mx-imgBorder"]
-> ![Enterprise Web コネクタの [接続設定] ウィンドウのスクリーンショット](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+オンプレミス Web サイトの場合は、クロール モードとして [エージェント]を選択し、[オンプレミス エージェント] フィールドで、前にインストールして構成した Graph コネクタ エージェントを選択します。  
 
 ### <a name="authentication"></a>認証
 
-基本認証には、ユーザー名とパスワードが必要です。 Microsoft 365 管理センターを使用して [、このボット アカウントを作成します](https://admin.microsoft.com)。
+基本認証には、ユーザー名とパスワードが必要です。 このボット アカウントを作成するには、次[のMicrosoft 365 管理センター。](https://admin.microsoft.com)
 
 Azure サーバーを使用する [OAuth](/azure/active-directory/) 2.0 AD ID、クライアント ID、およびクライアント シークレットが必要です。 OAuth 2.0 はクラウド モードでのみ動作します。
 
-詳細については [、「OAuth 2.0](/azure/active-directory/develop/v1-protocols-oauth-code)コード許可フローを使用して Azure Active Directory Web アプリケーションへのアクセスを承認する」を参照してください。 次の値を使用して登録します。
+詳細については[、「OAuth 2.0 コード許可](/azure/active-directory/develop/v1-protocols-oauth-code)フローをAzure Active Directory Web アプリケーションへのアクセスを承認する」を参照してください。 次の値を使用して登録します。
 
-**名前:** Microsoft Search <br/>
+**名前: Microsoft Search** <br/>
 **Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
 
 リソース、client_id、client_secretの値を取得するには、「承認コードを使用してリダイレクト URL  Web ページでアクセス トークンを要求する」を参照してください。
 
-詳細については、「クイック スタート [: アプリケーションを Microsoft ID プラットフォームに登録する」を参照してください](/azure/active-directory/develop/quickstart-register-app)。
+詳細については、「クイック スタート[: アプリケーションをアプリケーションに](/azure/active-directory/develop/quickstart-register-app)登録する」を参照Microsoft ID プラットフォーム。
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>手順 3a: 除外する URL を追加する (オプションのクロール制限)
 
@@ -106,11 +107,11 @@ Azure サーバーを使用する [OAuth](/azure/active-directory/) 2.0 AD ID、
 
 ## <a name="step-6-manage-search-permissions"></a>手順 6: 検索アクセス許可を管理する
 
-エンタープライズ Web サイト コネクタは、Everyone に表示される検索アクセス許可のみを **サポートします**。 インデックス付きデータは検索結果に表示され、組織内のすべてのユーザーに表示されます。
+Web Enterpriseコネクタは、Everyone に表示される検索アクセス許可のみを **サポートします**。 インデックス付きデータは検索結果に表示され、組織内のすべてのユーザーに表示されます。
 
 ## <a name="step-7-set-the-refresh-schedule"></a>手順 7: 更新スケジュールを設定する
 
-エンタープライズ Web サイト コネクタは、完全な更新のみをサポートします。 つまり、更新の度にコネクタが Web サイトのすべてのコンテンツを再スキャンします。 コネクタがコンテンツをクロールするのに十分な時間を取得するには、大規模な更新スケジュール間隔を設定することをお勧めします。 1 ~ 2 週間の間にスケジュールされた更新をお勧めします。
+Web Enterpriseコネクタは、完全な更新のみをサポートします。 つまり、更新の度にコネクタが Web サイトのすべてのコンテンツを再スキャンします。 コネクタがコンテンツをクロールするのに十分な時間を取得するには、大規模な更新スケジュール間隔を設定することをお勧めします。 1 ~ 2 週間の間にスケジュールされた更新をお勧めします。
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 
@@ -138,4 +139,4 @@ Web サイトのコンテンツを読み取る場合、クロールでソース 
 
 ## <a name="limitations"></a>制限事項
 
-エンタープライズ Web サイト コネクタは、動的 Web ページ上のデータの検索 **をサポートされていません**。 これらの Web ページの例は [、Confluence](https://www.atlassian.com/software/confluence) や [Unily](https://www.unily.com/) のようなコンテンツ管理システム、または Web サイトのコンテンツを格納するデータベースに含まれています。
+Web Enterpriseコネクタでは、動的 Web ページ上のデータの検索 **はサポートされていません**。 これらの Web ページの例は [、Confluence](https://www.atlassian.com/software/confluence) や [Unily](https://www.unily.com/) のようなコンテンツ管理システム、または Web サイトのコンテンツを格納するデータベースに含まれています。
