@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Web サイトのEnterpriseコネクタGraph設定Microsoft Search
-ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
-ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
+ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419897"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449048"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -31,7 +31,7 @@ ms.locfileid: "53419897"
 > [!NOTE]
 > コネクタの [**セットアップに関する**](configure-connector.md)Graph一般的なコネクタのセットアップGraph説明します。
 
-この記事は、Web サイト コネクタを構成、実行、監視するユーザー Enterpriseです。 これは、一般的なセットアップ プロセスを補足し、Web サイト コネクタに適用される手順Enterprise示します。 この記事には、トラブルシューティングと [制限事項に関](#troubleshooting) する情報 [も含まれています](#limitations)。
+この記事は、Web サイト コネクタを構成、実行、監視するユーザー Enterpriseです。 これは、一般的なセットアップ プロセスを補足し、Web サイト コネクタに適用される手順Enterprise示します。 この記事には、トラブルシューティングに関する [情報も含まれています](#troubleshooting)。
 
 <!---## Before you get started-->
 
@@ -59,8 +59,21 @@ URL フィールドを使用して、クロールする Web サイトのルー�
 
 選択すると、コネクタはサイトマップにリストされている URL のみをクロールします。 選択されていない場合、またはサイト マップが見つからない場合、コネクタはサイトのルート URL で見つかったすべてのリンクを深くクロールします。
 
+### <a name="dynamic-site-configuration"></a>動的サイト構成
+
+Web サイトに動的コンテンツ (たとえば、Confluence や Unily のようなコンテンツ管理システムに含まれる Web ページ) が含まれている場合は、動的クローラーを有効にできます。 有効にするには、[動的サイトの **クロールを有効にする] を選択します**。 クローラは、クロールを開始する前に動的コンテンツのレンダリングを待機します。
+
 > [!div class="mx-imgBorder"]
-> ![Web コネクタの [接続設定] ウィンドウEnterpriseスクリーンショット](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
+> ![Web コネクタの [接続設定] ウィンドウEnterpriseスクリーンショット](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+
+チェック ボックスに加えて、次の 3 つのオプション フィールドを使用できます。
+
+1. **DOM Ready**: コンテンツが完全にレンダリングされ、クロールが開始されるというシグナルとしてクローラーが使用する DOM 要素を入力します。
+1. **追加するヘッダー**: 特定の Web URL を送信するときにクローラーに含める HTTP ヘッダーを指定します。 Web サイトごとに複数のヘッダーを設定できます。 認証トークンの値を含めてお勧めします。
+1. **スキップするヘッダー**: 動的クロール要求から除外する必要がある不要なヘッダーを指定します。
+
+> [!NOTE]
+> 動的クロールは、エージェント クロール モードでのみサポートされます。
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>クロール モード: クラウドまたはオンプレミス
 
@@ -136,7 +149,3 @@ Web サイトのコンテンツを読み取る場合、クロールでソース 
 
 * エラー 6001~6013 は、ネットワークの問題が原因でデータ ソースに到達できない場合、またはデータ ソース自体が削除、移動、または名前変更された場合に発生します。 提供されたデータ ソースの詳細がまだ有効か確認します。
 * エラー 6021-6024 は、データ ソースにページにテキスト以外のコンテンツが含まれている場合、またはページが HTML でない場合に発生します。 データ ソースを確認し、除外リストにこのページを追加するか、エラーを無視します。
-
-## <a name="limitations"></a>制限事項
-
-Web Enterpriseコネクタでは、動的 Web ページ上のデータの検索 **はサポートされていません**。 これらの Web ページの例は [、Confluence](https://www.atlassian.com/software/confluence) や [Unily](https://www.unily.com/) のようなコンテンツ管理システム、または Web サイトのコンテンツを格納するデータベースに含まれています。

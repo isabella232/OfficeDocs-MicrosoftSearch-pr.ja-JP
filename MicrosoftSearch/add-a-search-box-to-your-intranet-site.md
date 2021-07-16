@@ -13,22 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: イントラネット サイトまたはページに Microsoft Search 検索ボックスを追加することで、関連する検索候補を取得し、作業結果をより速く検索できます。
-ms.openlocfilehash: c71f61971bf69c2eaa5fb7a48d0cb3d26af0ad07
-ms.sourcegitcommit: 5f0a8bdf274d02132a3b5211fb4738eb38d159db
+description: イントラネット サイトまたはページに検索ボックスを追加することで、関連する検索候補を取得し、Microsoft Search検索結果を迅速に検索できます。
+ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52247767"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449063"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックス追加する
 
-ユーザーが組織の結果に簡単にアクセスできるよう、イントラネット サイトまたはページに [検索Bingに Microsoft Search を追加します。 これらの利点の一部を次に示します。
+ユーザーが組織の結果に簡単にアクセスできるよう、イントラネット サイトまたはMicrosoft SearchページにBingを追加します。 これらの利点の一部を次に示します。
 
 - ユーザーまたはイントラネット ポータルのSharePointボックスは、検索を開始する使い慣れた信頼できるエントリ ポイントを提供します。
 - Google Chrome やアプリを含むすべての主要な Web ブラウザーをサポートMicrosoft Edge
 - 組織からの検索候補だけが表示され、Web 候補は含まれません
-- 広告と Web 結果を除外する[Bing検索結果] ページでユーザーを Microsoft Search に移動します。
+- 広告と Web 結果をMicrosoft SearchするBing検索結果ページのユーザーを特定のユーザーに移動します。
 - 既定の垂直または作成したカスタム垂直にユーザーを配置する機能など、検索ボックスの外観と動作を制御します。
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>イントラネット ページに検索ボックス追加する
@@ -108,11 +108,11 @@ ms.locfileid: "52247767"
 
 bfbSearchBoxConfig の垂直オプションを使用して、必要な垂直方向を定義します。 たとえば、ユーザーが常にサイトの垂直方向に移動する場合は、既定の垂直方向の 1 つを使用して、値 "Site-sites" を使用します。
 
-![サイトの垂直方向の結果と URL を表示Bing Microsoft Search の作業結果ページのスクリーンショット](media/sites-vertical-esb.png)
+:::image type="content" alt-text="[サイトの垂直方向の結果と URL] をMicrosoft SearchページBing画面の作業結果ページのスクリーンショット。" source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 カスタムバーティカルの場合は、URL の末尾にあるハッシュを使用します。 これらの値は、Bing の作業ページから検索し、垂直ラベルをクリックし、番号記号 (#)の後に値をコピーすることで確認できます。
 
-![カスタムプレゼンテーションの垂直方向の結果と URL をBing Microsoft Search の作業結果ページのスクリーンショット](media/custom-vertical-esb.png)
+:::image type="content" alt-text="カスタムプレゼンテーションの垂直方向の結果と URL をMicrosoft SearchのBingの作業結果ページのスクリーンショット。" source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>iFrame を使用して検索ボックスを埋め込む
 
@@ -124,4 +124,4 @@ bfbSearchBoxConfig の垂直オプションを使用して、必要な垂直方�
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate モードと条件付きアクセス
 
-ページまたはサイトが InPrivate ウィンドウで開いている場合、埋め込み検索ボックスは無効になります。 また、Azure AD 条件付きアクセスのサポートが Microsoft Edge の場合、Bing.com は InPrivate モードを使用する場合、AAD サインインをサポートしません。 エッジの条件付きアクセスの詳細については、「条件付きアクセス」[および「Microsoft Edgeアクセス」を参照してください](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
+ページまたはサイトが InPrivate ウィンドウで開いている場合、埋め込み検索ボックスは無効になります。 また、Azure AD 条件付きアクセスのサポートが Microsoft Edge の場合、Bing.com は InPrivate モードを使用する場合、AAD サインインをサポートしません。 エッジの条件付きアクセスの詳細については、「条件付きアクセス」[および「Microsoft Edgeアクセス」を参照してください](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
