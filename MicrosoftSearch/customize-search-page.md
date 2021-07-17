@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: 6b6f0593a668e9c2c5c7fc5a62f7b5dd4a43a8bb
-ms.sourcegitcommit: ea6905626de67090141039565282e4e0c53b43ac
+ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
+ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314021"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463228"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -135,7 +135,7 @@ KQL では、プロファイル クエリ [変数を使用](#profile-query-varia
 
 これにより、検索結果を絞り込み、割り当て先が検索を実行しているユーザーであるアイテムのみを表示します。
 
-[プロファイル リソースは](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) 、プロパティをコレクションとして公開します。 たとえば、電子メール アドレスに関連する情報は、電子メールのコレクション、職位のコレクションとしての作業位置などによって公開されます。 ソースの種類として AAD を持つユーザー プロファイルで使用可能なすべてのプロパティは、クエリ変数として公開されます。
+[プロファイル リソースは](/graph/api/resources/profile?view=graph-rest-beta) 、プロパティをコレクションとして公開します。 たとえば、電子メール アドレスに関連する情報は、電子メールのコレクション、職位のコレクションとしての作業位置などによって公開されます。 ソースの種類として AAD を持つユーザー プロファイルで使用可能なすべてのプロパティは、クエリ変数として公開されます。
 
 以下に示すように、電子メール コレクションで使用できる電子メール アドレスが 3 つ含まれます。
 
