@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Salesforce Graph コネクタをセットアップMicrosoft Search
-ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: b0b3ba0e41c0e28cac15f4fed491ac8507aa0e59
+ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230936"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529384"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="salesforce-graph-connector-preview"></a>Salesforce Graph コネクタ (プレビュー)
+# <a name="salesforce-graph-connector"></a>Salesforce Graph コネクタ
 
-Salesforce Graphコネクタを使用すると、組織は Salesforce インスタンスの連絡先、機会、見込み客、およびアカウント オブジェクトをインデックス化できます。 Salesforce からコネクタとインデックス コンテンツを構成した後、エンド ユーザーは任意のクライアントからそれらのアイテムMicrosoft Searchできます。
+Salesforce Graphコネクタを使用すると、組織は Salesforce インスタンスの連絡先、機会、見込み顧客、ケース、および Accounts オブジェクトのインデックスを作成できます。 Salesforce からコネクタとインデックス コンテンツを構成した後、エンド ユーザーは任意のクライアントからそれらのアイテムMicrosoft Searchできます。
 
 > [!NOTE]
 > 一般的な [**コネクタのセットアップGraph**](configure-connector.md) Graphについては、「Graphコネクタのセットアップ」をご覧ください。
@@ -105,13 +105,20 @@ Salesforce インスタンスから取得したクライアント ID とクラ�
 下のスクリーンショットに示すように、「接続が成功しました」という緑色のバナーを検索して、接続が成功したと確認します。
 
   > [!div class="mx-imgBorder"]
-  > ![成功したログインのスクリーンショット。 「接続が成功しました」という緑色のバナーが、Salesforce インスタンス URL のフィールドの下に表示されます。](media/salesforce-connector/sf5.png)
+  > ![成功したログインのスクリーンショット。 「接続が成功しました」という緑色のバナーが、Salesforce インスタンス URL のフィールドの下に表示されます。](media/salesforce-connector/salesforce-connector-connection-settings.png)
 
-## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
+## <a name="step-4-select-properties"></a>手順 4: プロパティの選択
+
+コネクタでクロールして検索結果に含める Salesforce オブジェクトを選択します。 [連絡先] が選択されている場合は、[アカウント] も自動的に選択されます。
+
+>[!NOTE]
+>フィールドにプロファイルに対してフィールド レベルセキュリティ (FLS) が設定されている場合、コネクタは、その Salesforce 組織のプロファイルに対してそのフィールドを取り込む必要があります。その結果、ユーザーはそれらのフィールドの値を検索したり、結果に表示したりしなかることができます。
+
+## <a name="step-5-manage-search-permissions"></a>手順 5: 検索アクセス許可を管理する
 
 このデータ ソースから検索結果を表示するユーザーを選択する必要があります。 特定のユーザー (Azure Azure Active Directory) AD または非 Azure AD ユーザーに検索結果の表示のみを許可する場合は、ID をマップしてください。
 
-### <a name="step-4a-select-permissions"></a>手順 4.a: アクセス許可の選択
+### <a name="step-5a-select-permissions"></a>手順 5.a: アクセス許可の選択
 
 Salesforce インスタンスからアクセス制御リスト (ACL) を取り込むか、組織内のすべてのユーザーにこのデータ ソースからの検索結果を表示できます。 ACL には、Azure Active Directory (AAD) ID (Azure AD から Salesforce にフェデレーションされているユーザー)、Azure AD 以外の ID (Azure AD で対応する ID を持つネイティブ Salesforce ユーザー)、または両方が含まれます。
 
@@ -123,7 +130,7 @@ Salesforce インスタンスからアクセス制御リスト (ACL) を取り�
 
 Salesforce インスタンスから ACL を取り込み、ID の種類として [非 AAD] を選択した場合は、「Id のマッピング方法については [、「Map your Azure AD Identitys」](map-non-aad.md) を参照してください。
 
-### <a name="step-4b-map-aad-identities"></a>手順 4.b: AAD ID のマップ
+### <a name="step-5b-map-aad-identities"></a>手順 5.b: AAD ID のマップ
 
 Salesforce インスタンスから ACL を取り込み、ID の種類として [AAD] を選択した場合は、「Id のマッピング方法については [、「Map your Azure AD Identitys」](map-aad.md) を参照してください。 Azure AD SSO を設定する方法については、このチュートリアルを参照 [してください](/azure/active-directory/saas-apps/salesforce-tutorial)。
 
@@ -133,11 +140,11 @@ Salesforce インスタンスから ACL を取り込み、ID の種類として 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
-## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
+## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
 各ラベルにソース プロパティを割り当てるには、オプションのメニューから選択します。 この手順は必須ではありませんが、一部のプロパティ ラベルを使用すると、検索の関連性が向上し、エンド ユーザーの検索結果が向上します。 既定では、"Title"、"URL"、"CreatedBy"、"LastModifiedBy" のような一部のラベルには、ソース プロパティが既に割り当て済みです。
 
-## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
+## <a name="step-7-manage-schema"></a>手順 7: スキーマの管理
 
 インデックスを作成するソース プロパティを選択して、検索結果に表示できます。 既定では、接続ウィザードは、一連のソース プロパティに基づいて検索スキーマを選択します。 検索スキーマ ページの各プロパティと属性のチェック ボックスをオンにすると、変更できます。 検索スキーマ属性には、検索、クエリ、取得、絞り込みがあります。
 絞り込みでは、後で検索エクスペリエンスでカスタム絞り込み条件またはフィルターとして使用できるプロパティを定義できます。  
@@ -145,7 +152,7 @@ Salesforce インスタンスから ACL を取り込み、ID の種類として 
 > [!div class="mx-imgBorder"]
 > ![各ソース プロパティのスキーマを選択します。 オプションは、クエリ、検索、取得、絞り込みです。](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>手順 7: 更新スケジュールを設定する
+## <a name="step-8-set-the-refresh-schedule"></a>手順 8: 更新スケジュールを設定する
 
 Salesforce コネクタは現在、フル クロールの更新スケジュールのみをサポートしています。
 
@@ -154,9 +161,15 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
 
 推奨されるスケジュールは、フル クロールの場合は 1 週間です。
 
-## <a name="step-8-review-connection"></a>手順 8: 接続の確認
+## <a name="step-9-review-connection"></a>手順 9: 接続の確認
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
+
+>[!TIP]
+>**既定の結果の種類**
+>* コネクタが発行された後、Salesforce [コネクタは自動的](./customize-search-page.md#step-2-create-the-result-types) に結果の種類を登録します。 結果の種類は、手順 3 で選択したフィールドに基づいて動的に生成された結果レイアウトを使用します。 [](./customize-results-layout.md)
+>* 結果の種類を管理するには、次のページの [**[結果**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)の種類] に [Microsoft 365 管理センター。](https://admin.microsoft.com) 既定の結果の種類には"Default" という名前が `ConnectionId` 付けられます。 たとえば、接続 ID がである場合、結果レイアウトの名前は `Salesforce` "SalesforceDefault" になります。
+>* また、必要に応じて、独自の結果の種類を作成できます。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
@@ -168,21 +181,21 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
 - Salesforce API には、Graph コネクタが使用する既知のバグがあります。この場合、現在、リードのプライベート組織全体の既定値は適用されません。  
 - フィールドにプロファイルに対してフィールド レベルセキュリティ (FLS) が設定されている場合、Graph コネクタは、その Salesforce 組織のプロファイルに対してそのフィールドを取り込む必要があります。その結果、ユーザーはそれらのフィールドの値を検索したり、結果に表示したりしなかることができます。  
 - [スキーマの管理] 画面で、これらの一般的な標準プロパティ名が 1 回表示され、オプションは **クエリ**、**検索**、取得、絞り込み、すべてまたはなしに適用されます。
-    - 名前
+    - Name
     - Url
     - 説明
     - FAX
     - Phone
     - MobilePhone
-    - メール
+    - 電子メール
     - 種類
-    - タイトル
+    - Title
     - AccountId
     - AccountName
     - AccountUrl
     - AccountOwner
     - AccountOwnerUrl
-    - 所有者
+    - Owner
     - OwnerUrl
     - CreatedBy
     - CreatedByUrl

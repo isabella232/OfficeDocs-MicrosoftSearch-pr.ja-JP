@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
+ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230918"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590263"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,10 @@ Microsoft SQL Serverまたは Azure SQL Graph コネクタを使用すると、�
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>コネクタ エージェントGraphインストールする (オンプレミスのコネクタMicrosoft SQL Serverのみ)
 
-オンプレミスのサード パーティ製データにアクセスするには、コネクタ エージェントをインストールして構成Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](on-prem-agent.md)する」を参照してください。  
+オンプレミスのサード パーティ製データにアクセスするには、コネクタ エージェントをインストールして構成Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](on-prem-agent.md)する」を参照してください。
+
+>[!NOTE]
+>Microsoft SQL Server Graph コネクタの構成中に Windows 認証を使用する場合、サインインしようとしているユーザーは、Graph コネクタ エージェントがインストールされているコンピューターに対する対話型ログオン権限を持っている必要があります。 ログオン権限を確認するには [、ログオン ポリシー管理に関](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) するドキュメントを参照してください。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
@@ -220,7 +223,6 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 次SQLコネクタには、プレビュー リリースで次の制限があります。
 
 - Microsoft SQL Serverコネクタ: オンプレミス データベースは、バージョン 2008 以降SQL Server実行する必要があります。
-
 - サブスクリプションMicrosoft 365 Azure サブスクリプション (Azure SQL データベースをホストする) は、同じサブスクリプション内にある必要Azure Active Directory。
 - ACL は、ユーザー プリンシパル名 (UPN)、Azure Active Directory (Azure AD)、または Active Directory セキュリティを使用してのみサポートされます。
 - データベース列内のリッチ コンテンツのインデックス作成はサポートされていません。 このようなコンテンツの例としては、データベース列内のリンクとして存在する HTML、JSON、XML、BLOB、およびドキュメント解析があります。

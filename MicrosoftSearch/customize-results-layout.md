@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アダプティブ カードを使用して、カスタマイズした検索結果を表示するレイアウトを作成する
-ms.openlocfilehash: d29b1a45f11079f4b71f71a387cf43cbf2f48e7d
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 1badb5bb34d746b22de8ddb91cd26c813fe9f67f
+ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031739"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529364"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>検索結果をカスタマイズするためのレイアウトを作成する
@@ -47,53 +47,44 @@ ms.locfileid: "51031739"
 ```json
 {
     "type": "AdaptiveCard",
-    "version": "1.0",
-     "body": [
-{
-
+    "version": "1.3",
+    "body": [
+        {
             "type": "ColumnSet",
-             "columns": [
-                 {
-                     "type": "Column",
-                     "width": 8,
-                     "items": [
-                         {
-                             "type": "TextBlock",
-                             "text": "Contoso Marketing Analysis - Q3 FY18",
-                             "color": "Accent",
-                             "size": "Medium",
-                             "spacing": "None",
-                             "$when": "{title != \"\"}",
-                             "weight": "Bolder"
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Contoso Marketing Analysis - Q3 FY18",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "spacing": "None",
+                            "weight": "Bolder"
                         },
                         {
-                        "type": "TextBlock",  
-                        "text": "https://contoso.com/hr/link",
-                        "spacing": "None",  
-                        "color": "Dark",
-                        "weight": "Bolder"
-
+                            "type": "TextBlock",
+                            "text": "https://contoso.com/hr/link",
+                            "spacing": "None",
+                            "color": "Dark",
+                            "weight": "Bolder"
                         },
-
-                        {  
-                        "type": "TextBlock",
-                        "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",  
-                        "wrap": true,
-                        "maxLines": 2,
-                        "spacing": "Medium"
+                        {
+                            "type": "TextBlock",
+                            "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",
+                            "wrap": true,
+                            "maxLines": 2,
+                            "spacing": "Medium"
                         }
-                        ],
-
+                    ],
                     "horizontalAlignment": "Center",
                     "spacing": "None"
-
                 }
-
             ]
-
         }
-        ],
-
+    ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
@@ -106,51 +97,45 @@ ms.locfileid: "51031739"
 
 ```json
 {
-
     "type": "AdaptiveCard",
-    "version": "1.0",
+    "version": "1.3",
     "body": [
-    {
-    "type": "ColumnSet",
-"columns": [
-
+        {
+            "type": "ColumnSet",
+            "columns": [
                 {
-                "type": "Column",
-                "width": 8,
-                "items": [
-                {
-                "type": "TextBlock",
-                "text": "[{title}]({titleUrl})",
-                "color": "Accent",
-                "size": "Medium",
-                "spacing": "None",
-                "weight": "Bolder"
-
-                 },
-                 {
-                 "type": "TextBlock",
-                 "text": "{link}",
-                 "spacing": "None",
-                 "color": "Dark",
-                 "weight": "Bolder"
-                 },
-                 {
-                 "type": "TextBlock",
-                 "text": "{description}",
-                 "wrap": true,
-                 "maxLines": 2,
-                 "spacing": "Medium"
-                 }
-                 ],
-                 "horizontalAlignment": "Center",
-                 "spacing": "None"
-                 }
-                 ]
-
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "[${title}](${titleUrl})",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "spacing": "None",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${link}",
+                            "spacing": "None",
+                            "color": "Dark",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${description}",
+                            "wrap": true,
+                            "maxLines": 2,
+                            "spacing": "Medium"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "spacing": "None"
+                }
+            ]
         }
-
     ],
-
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
