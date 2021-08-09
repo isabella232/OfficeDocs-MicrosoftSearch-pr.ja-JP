@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Search パブリック プレビュー: 使用条件'
+title: 'Microsoft Searchパブリック プレビュー: 利用規約'
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -11,20 +11,20 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search の Microsoft Graph コネクタパブリック プレビューの法的条件
-ms.openlocfilehash: fde39e4a2a59f99158570f1fbf8afa659e362161
-ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
+description: Microsoft Graphコネクタのパブリック プレビューに関する法的Microsoft Search
+ms.openlocfilehash: e61010447a7eddb63400d1b194a4e6e7f996aec473e576fd8ebbdaf8ff44b555
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099319"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534142"
 ---
 <!---Previous ms.author: anfowler --->
 
 # <a name="microsoft-graph-connectors-terms-of-use"></a>Microsoft Graph コネクタ: 利用規約
 
-Microsoft Graph コネクタの使用は、サードパーティの使用条件の対象となる場合があります。 Microsoft は、第三者との契約の当事者ではない。 サード パーティの使用条件またはサービスに関する懸念事項や質問は、第三者に指示する必要があります。 Microsoft 365 テナントへのデータのインデックス作成は、お客様のデータのデータコントローラーとして行う必要があります。
+Microsoft Graphコネクタの使用は、サードパーティの利用規約の対象となる場合があります。 Microsoft は、第三者との契約の当事者ではない。 サードパーティの用語またはサービスに関する懸念や質問は、第三者に向けられる必要があります。 ユーザーは、データのデータ コントローラーとして、Microsoft 365テナントへのデータのインデックス作成を担当します。
 
-Microsoft は、Microsoft 365 テナントにインデックスを作成する前に、サードパーティのデータに関して一切の表現、保証、保証を行う必要はありません。  Microsoft は、サードパーティデータのインデックス作成中に発生する可能性があるエラーに対して一切の責任を負う必要はありません。  お客様は、サードパーティのプロバイダーから提供されるデータは「現在の形式」で提供され、インデックスに関して、お客様の構成に応じて提供することに同意します。 Microsoft 365 テナントのインデックス付きデータは、[オンライン](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)サービスの使用条件、プライバシーに関する声明[](https://privacy.microsoft.com/privacystatement)、および Microsoft のその他のデータ義務の目的で「顧客データ」と見なされます。
+Microsoft は、お客様のテナントにインデックスを作成する前に、第三者のデータに関連して表明、保証、またはMicrosoft 365するものではありません。  Microsoft は、サードパーティ データのインデックス作成中に発生する可能性があるエラーに対して、一切の責任を負う必要はありません。  お客様は、サード パーティ プロバイダーから提供されたデータが"as is" で提供され、インデックスに関して、構成の対象として提供される点に同意します。 Microsoft 365 テナントのインデックス付きデータは[、Online Services](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)の利用規約、プライバシーに関する声明、および Microsoft[](https://privacy.microsoft.com/privacystatement)のその他のデータ義務の目的で「顧客データ」と見なされます。
 
-Microsoft 365 で顧客データを使用する方法の詳細については、 [オンライン](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) サービスの使用条件とプライバシーに関する声明を [参照してください](https://privacy.microsoft.com/privacystatement)。 データ保護とプライバシーに対する Microsoft の取り組みについて詳しくは、セキュリティ センターをご [覧ください](https://www.microsoft.com/trust-center)。
+顧客データの使用方法の詳細については、「オンライン サービスMicrosoft 365プライバシーに関[](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)する声明」を[参照してください](https://privacy.microsoft.com/privacystatement)。 また、データ保護とプライバシーに対する Microsoft の取り組みについて詳しくは、セキュリティ センターをご [覧ください](https://www.microsoft.com/trust-center)。

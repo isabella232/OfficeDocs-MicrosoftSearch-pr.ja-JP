@@ -1,5 +1,5 @@
 ---
-title: AAD 以外の id のマッピング
+title: AAD 以外の ID のマッピング
 ms.author: monaray
 author: monaray97
 manager: jameslau
@@ -11,83 +11,83 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: AAD 以外の id をマップする手順
-ms.openlocfilehash: cd7d0eb17678d69ec1966e4472b38c1f18c30809
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: AAD 以外の ID をマップする方法の手順
+ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367660"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533571"
 ---
-# <a name="map-your-non-azure-ad-identities"></a>非 Azure AD Id をマップする  
+# <a name="map-your-non-azure-ad-identities"></a>Azure 以外のユーザー id をADする  
 
-この記事では、azure ad id 以外のアクセス制御リスト (ACL) を使用しているユーザーが、それらにスコープ設定されたコネクタ検索結果を表示できるように、azure ad id に非 Azure AD id をマッピングする手順について説明します。
+この記事では、Azure AD 以外の ID を Azure AD 以外の ID にマッピングし、Azure AD 以外の ID を持つアクセス制御リスト (ACL) のユーザーが対象範囲のコネクタ検索結果を表示する手順について説明します。
 
-これらの手順は、Microsoft によって [ServiceNow](servicenow-connector.md) または [Salesforce](salesforce-connector.md) のコネクタを設定している管理者のみが、"このデータソースへのアクセス権を持つユーザーのみ" および "identity type" という名前の "AAD" の検索アクセス許可を使用して設定している場合にのみ関連します。
+これらの手順は、「このデータ ソースにアクセスできるユーザーのみ」と ID の種類が "非 AAD" の検索権限を持つ Microsoft による [ServiceNow](servicenow-connector.md) または [Salesforce](salesforce-connector.md) コネクタを設定している検索管理者にのみ関連します。
 
 >[!NOTE]
->Salesforce コネクタを設定して、[アクセス許可] 画面で [このデータソースおよび id の種類 **AAD** **にアクセスできるユーザーのみ**] を選択する場合は、「azure ad id をマップする方法」の手順については、「 [azure ad identity のマップ](map-aad.md)」の記事を参照してください。  
+>Salesforce コネクタをセットアップし、[検索アクセス許可] 画面で [このデータ ソースと ID タイプ **AAD** にアクセスできるユーザーのみ] を選択する場合は、「Azure AD ID をマップする方法」の記事 [「Azure AD Identity の](map-aad.md)マップ」を参照してください。  
 
-## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>非 Azure AD プロパティをマッピングする手順
+## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Azure 以外のプロパティをマッピングAD手順
 
-### <a name="1-select-an-azure-ad-user-property"></a>1. Azure AD ユーザープロパティを選択する  
+### <a name="1-select-an-azure-ad-user-property"></a>1. Azure ユーザー プロパティAD選択する  
 
-マッピングを作成する Azure AD ユーザーのプロパティを選択できます。 これは、非 Azure AD id をにマップするターゲットプロパティです。  
+マッピングを作成する Azure ADユーザー プロパティを選択できます。 これは、Azure 以外のユーザー ID をマップADプロパティです。  
 
-次のいずれかの Azure AD プロパティを選択できます。
+次のいずれかの Azure プロパティをADできます。
 
 | Azure AD プロパティ    | 定義           | 例         |
 | :------------------- | :------------------- |:--------------- |
-| ユーザー プリンシパル名 (UPN)  | UPN は、UPN プレフィックス (ユーザーアカウント名) と UPN サフィックス (DNS ドメイン名) で構成されます。 プレフィックスは、"@" 記号を使用してサフィックスと共に結合されます。 | us1@contoso.onmicrosoft.com |
-| Azure AD ID                 | 特定のユーザーの Azure AD ID は、ユーザーの一意の GUID です。                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
-| Active Directory のセキュリティ ID (SID)                  | SID (セキュリティ識別子) は、Active Directory がオブジェクトをセキュリティプリンシパルとして識別するために使用する一意の識別子です。                  | S-1-5-21-453406510-812318184-4183662089             |
+| ユーザー プリンシパル名 (UPN)  | UPN は、UPN プレフィックス (ユーザー アカウント名) と UPN サフィックス (ユーザー 名) でDNS ドメインされます。 プレフィックスは、"@" 記号を使用して接尾辞で結合されます。 | us1@contoso.onmicrosoft.com |
+| Azure AD ID                 | 特定のADの Azure ユーザー ID は、ユーザーの一意の GUID です。                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
+| Active Directory セキュリティ ID (SID)                  | SID (セキュリティ識別子) は、Active Directory がオブジェクトをセキュリティ プリンシパルとして識別するために使用する一意の識別子です。                  | S-1-5-21-453406510-812318184-4183662089             |
 
-### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. マッピングする Azure AD 以外のユーザーのプロパティを選択する
+### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. マップするユーザー プロパティAD Azure 以外のユーザー プロパティを選択する
 
-データソースから引き出された非 Azure AD プロパティを選択して、に正規表現を適用することができます。 データソース内のこれらのプロパティの詳細については、「 [ServiceNow](servicenow-connector.md) 」および「 [Salesforce](salesforce-connector.md) 」のページを参照してください。  
+データ ソースからプルされた Azure AD以外のプロパティを選択して、正規表現を適用できます。 データ ソースでこれらのプロパティを検索する場所の詳細については [、「ServiceNow](servicenow-connector.md) と [Salesforce](salesforce-connector.md) のページ」を参照してください。  
 
-ドロップダウンから非 Azure AD ユーザープロパティを選択し、それらのユーザープロパティ値に適用する正規表現を指定できます。 正規表現の詳細については、「 [正規表現の参照]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)」を参照してください。  
+ドロップダウンから Azure 以外のユーザー プロパティAD選択し、それらのユーザー プロパティの値に適用する正規表現を指定できます。 正規表現の詳細については、「正規表現リファレンス [」を参照してください]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)。  
 
-正規表現と、サンプル文字列に適用される出力の例を次に示します。 
+正規表現とその出力をサンプル文字列に適用する例を次に示します。 
 
 | サンプル文字列                  | 正規表現                 | サンプル文字列の正規表現の出力           |
 | :------------------- | :------------------- |:---------------|
 | Alexis Vasquez  | .* | Alexis Vasquez |
 | Alexis Vasquez                 | ..$                 | ez            |
-| Alexis Vasquez                  | (\w +) $                  | Vasquez             |
+| Alexis Vasquez                  | (\w+)$                  | バスケス             |
 
-の式と同じ数の非 Azure AD ユーザープロパティを追加することができます。 最終的な式で保証されている場合は、異なる正規表現を同じユーザープロパティに適用できます。  
+Azure 以外のユーザー プロパティはAD必要な数まで追加できます。 最終的な数式が保証する場合は、同じユーザー プロパティに異なる正規表現を適用できます。  
 
-### <a name="3-create-formula-to-complete-mapping"></a>3. マッピングを完了するための数式を作成します。
+### <a name="3-create-formula-to-complete-mapping"></a>3. マッピングを完了する数式を作成する
 
-Azure 以外の各 AD ユーザープロパティに適用された正規表現の出力を結合して、手順1で選択した Azure AD プロパティを形成できます。
+Azure 以外の各ユーザー プロパティに適用される正規表現の出力AD組み合わせて、手順 1 で選択した Azure AD プロパティを形成できます。
 
-[式] ボックスで、"" は、 {0} 選択した *最初* の非 Azure 広告プロパティに適用された正規表現の出力に対応しています。 " {1} " は、選択した *2 番目* の非 Azure 広告プロパティに適用された正規表現の出力に対応しています。 " {2} " は、 *3 番目* の非 Azure AD プロパティに適用された正規表現の出力に対応しています。  
+数式ボックスの " " は、選択した最初の Azure 以外のプロパティに適用AD {0} に対応します。  " " は、選択した 2 番目の Azure 以外のプロパティに適用AD {1} 出力に対応します。  " は、Azure 以外の 3 番目のプロパティに適用される正規表現AD {2} に対応します。   
 
-次に、サンプルの正規表現出力と数式出力を含む数式の例をいくつか示します。 
+次に、正規表現出力と数式出力のサンプルを含む数式の例を示します。 
 
-| サンプル式                  | {0}サンプルユーザーの値                 | {1}サンプルユーザーの値           | 数式の出力                  |
+| サンプル数式                  | サンプル ユーザー {0} の値                 | サンプル ユーザー {1} の値           | 数式の出力                  |
 | :------------------- | :------------------- |:---------------|:---------------|
-| {0}.{1}@contoso .com  | 担当 | 社員 |firstname.lastname@contoso.com
-| {0}@domain .com                 | userid                 |             |userid@domain.com
+| {0}.{1}@contoso.com  | firstname | lastname |firstname.lastname@contoso.com
+| {0}@domain.com                 | userid                 |             |userid@domain.com
 
-数式を入力した後で、必要に応じて、[ **プレビュー** ] をクリックして、データソースから5つのランダムユーザーのプレビューを表示し、それぞれのユーザーマッピングを適用することができます。 プレビューの出力には、手順2でユーザーが選択した非 Azure AD ユーザープロパティの値と、そのユーザーの手順3で提供された最終的な式の出力が含まれています。 また、「成功」または「失敗」アイコンを使用して、式の出力をテナントの Azure AD ユーザーに解決できるかどうかも示します。  
+数式を指定した後、必要に応じて[プレビュー] をクリックして、それぞれのユーザー マッピングが適用されたデータ ソースから 5 人のランダム ユーザーのプレビューを表示できます。 プレビューの出力には、これらのユーザーに対して手順 2 で選択した Azure AD 以外のユーザー プロパティの値と、そのユーザーの手順 3 で示した最終数式の出力が含まれます。 また、数式の出力を "成功" または "Failed" アイコンを使用して、テナント内の Azure AD ユーザーに解決できるかどうかも示します。  
 
 >[!NOTE]
->[ **プレビュー**] をクリックした後、1つ以上のユーザーマッピングの状態が "Failed" になっている場合でも、接続の作成を続行できます。 プレビューには、5つのランダムユーザーと、データソースからのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされていない場合は、この場合に遭遇する可能性があります。
+>[プレビュー] をクリックした後に、1 つ以上のユーザー マッピングの状態が "Failed" の場合は、接続の作成を続行 **できます**。 プレビューには、データ ソースから 5 人のランダム なユーザーとそのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされない場合は、このケースが発生する可能性があります。
 
-## <a name="sample-non-azure-ad-mapping"></a>サンプルの非 Azure AD マッピング
+## <a name="sample-non-azure-ad-mapping"></a>Azure 以外のユーザー マッピングAD例
 
-サンプルの非 Azure AD マッピングについては、以下のスナップショットを参照してください。
+Azure 以外のマッピングのサンプルについては、以下のスナップショットADしてください。
 
-![非 Azure AD マッピングページに記入する方法のサンプルスナップショット](media/non-aad-mapping.png)
+![Azure 以外のユーザー マッピング ページに入力する方法のADスナップショット](media/non-aad-mapping.png)
 
 ## <a name="limitations"></a>制限事項  
 
-- すべてのユーザーに対して1つのマッピングのみがサポートされます。 条件付きマッピングはサポートされていません。  
+- すべてのユーザーに対してサポートされているマッピングは 1 つのみです。 条件付きマッピングはサポートされていません。  
 
-- 接続が公開されると、マッピングを変更することはできません。  
+- 接続が公開された後は、マッピングを変更できません。  
 
-- 現時点では、非 AAD ユーザープロパティに対する regex ベースの式のみが変換に対してサポートされています。
+- 現在、変換でサポートされているのは、AAD 以外のユーザー プロパティに対する正規表現ベースの式のみです。
 
-- マッピング先として選択できる Azure AD id は3つだけです (UPN、Azure AD ID、および AD SID)。
+- マップできる Azure AD ID は 3 つのみです (UPN、Azure AD ID、および SID ADします。

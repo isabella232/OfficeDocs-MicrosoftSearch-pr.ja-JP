@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: すべての Microsoft Graph コネクタを一覧表示Microsoft Search
-ms.openlocfilehash: 52ba8daea8153144c6591d3aa6151405a47108fd
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: 20bbf17c0d4469d567d746161fb60dc9e3ff0dbc26a00a323b3aa3bb02bb3214
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230903"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533218"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph コネクタ ギャラリー
 

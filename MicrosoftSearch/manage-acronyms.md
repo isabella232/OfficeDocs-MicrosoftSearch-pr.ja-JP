@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: 013510da28599f41c9dc4bf74da99efa2f6c3e97
-ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
+ms.openlocfilehash: 14b46e8f689a4df1e41d1852f49157faf67f7fdece2fa09fb740b5652d719a34
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408716"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532922"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -50,24 +50,24 @@ Microsoft Search のユーザーは [Bing](https://Bing.com)、 [SharePoint](htt
 Microsoft Search は、2 つのデータ ソースをクエリして、頭字語の回答をユーザーの検索に提供します:
 
 1. **管理者が管理します**。 [管理センター](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) の IT 管理者によって提供されます。
-2. **System-curated**. ユーザーの電子メールとドキュメント、および組織内で一般に利用可能なデータから Microsoft Search によって検出されます。
+2. **System-curated**. ユーザーのMicrosoft Searchドキュメント、および組織内で公開されているデータから検出されます。
 
 ### <a name="set-up-admin-curated-acronyms"></a>管理者が指定した頭字語を設定する
 
-検索管理者は、Microsoft Search 管理センターの [[頭](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) 字語] タブに頭字語  [を追加できます](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。 すべての内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 これらの頭字語は、発行済みまたは下書 **き状態に****追加** できます。
+検索管理者は、管理センターの [頭字[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)語] タブに頭字語[Microsoft Search追加できます](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。 すべての内部サイトまたはリポジトリから管理センターに頭字語を追加することができます。 これらの頭字語は、発行済みまたは下書 **き状態に****追加** できます。
 
-**公開状態**。 頭字語は、Microsoft Search を通じて組織のユーザーが使用できます。
+**公開状態**。 頭字語は、組織のユーザーが使用できるデータを使用Microsoft Search。
 
 > [!NOTE]
 > 公開状態に追加された頭字語が Microsoft Search で利用可能になるまで、最大 3 日かかる場合があります。
 
-**下書き状態**。 Microsoft Search で使用できる前に頭字語を確認する場合は、下書き状態で頭字語を追加できます。 下書き状態の頭字語は検索結果に表示されません。 検索結果に表示するには、頭字語を発行済み状態に移動する必要があります。
+**下書き状態**。 頭字語を確認してから、Microsoft Searchで使用する場合は、下書き状態で頭字語を追加できます。 下書き状態の頭字語は検索結果に表示されません。 検索結果に表示するには、頭字語を発行済み状態に移動する必要があります。
 
-**除外された状態**。 Microsoft Search に頭字語が表示されるのを防ぐ場合は、[頭字語を除外する] を使用して追加します。 頭字語が除外されるのを止めるには、除外された頭字語を削除して追加するか、発行済みリストに含める必要があります。
+**除外された状態**。 データに頭字語が表示Microsoft Search場合は、[頭字語を除外する] を使用して追加します。 頭字語が除外されるのを止めるには、除外された頭字語を削除して追加するか、発行済みリストに含める必要があります。
 
 頭字語を個別に追加するか、CSV ファイルに一括インポートできます。 次の表に示すフィールドを使用して CSV ファイルをアップロードします:
 
-| 頭字語 (必須) | 略 (必須) | Url | 説明  | 状態 (必須) | 最終更新日時 | 最終変更者 | Id |
+| 頭字語 (必須) | 略 (必須) | Url | 説明  | 状態 (必須) | 最終更新日時 | 最終変更者 | ID |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
 | *XXX* | *略語のスペル* | *Source* |  | *公開、下書き、または除外* |  |  |  |
 
@@ -85,17 +85,17 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 
 - **下書き**。 下書き状態に頭字語を追加します。
 - **公開**。 公開状態に頭字語を追加して、Microsoft Search で使用できるようにします。
-- **除外します**。 頭字語を除外状態に追加し、Microsoft Search に表示されません。
+- **除外します**。 頭字語を [除外] 状態に追加し、その頭字語が [除外] の状態Microsoft Search。
 
 ### <a name="system-curated-acronyms"></a>System-curated 頭字語
 
-管理者にとって、組織内で使用されているすべての頭字語を回答に追加するのは難しいかもしれません。 この機能により、検索管理者が認識していない頭字語を見つけることができます。 この作業を行うには、Microsoft Search は次のソースから頭字語を検出してキュレートします。
+管理者にとって、組織内で使用されているすべての頭字語を回答に追加するのは難しいかもしれません。 この機能により、検索管理者が認識していない頭字語を見つけることができます。 この作業を行うには、Microsoft Searchの頭字語を検出してキュレートします。
 
 - ユーザーのメール
-- [SharePoint 、Microsoft](https://products.office.com/sharepoint/collaboration) [OneDrive、Microsoft]( https://onedrive.live.com/about/) [OneNote のドキュメント](https://www.onenote.com/)
-- SharePoint、OneDrive、または OneNote でユーザーがアクセスできる組織内のパブリック ドキュメント
+- ドキュメント[](https://products.office.com/sharepoint/collaboration)、SharePoint、Microsoft OneDrive、および[]( https://onedrive.live.com/about/)[Microsoft OneNote](https://www.onenote.com/)
+- ユーザーが組織内のパブリック ドキュメントにアクセスできるドキュメントは、SharePoint、OneDrive、またはOneNote
 
-Microsoft Search では、ドキュメントへのアクセス権とアクセス許可を持つユーザーだけが、ドキュメントから検出された頭字語を確認できます。 ユーザーのメールボックスで頭字語が見つかった場合、その頭字語を表示できるのはそのユーザーのみです。
+Microsoft Searchドキュメントへのアクセス権とアクセス許可を持つユーザーだけが、ドキュメントから検出された頭字語を確認できます。 ユーザーのメールボックスで頭字語が見つかった場合、その頭字語を表示できるのはそのユーザーのみです。
 
 > [!NOTE]
 > システムが指定した頭字語のセットアップは不要です。
@@ -106,23 +106,23 @@ Microsoft Search では、ドキュメントへのアクセス権とアクセス
 
 **A:** 結果のランク付けは、結果が各ユーザーに合わせたものとして、個人ごとに異なる場合があります。 これらのどちらのカテゴリも、常に他のカテゴリよりも優先されます。
 
-**Q: 管理者が指定した頭字語が Microsoft Search で公開された後に表示されるのにどれくらいの時間が必要ですか?**
+**Q: 管理者が指定した頭字語が公開された後に、Microsoft Search表示するにはどのくらいの時間が必要ですか?**
 
-**A:**  発行済み状態に追加された頭字語が Microsoft Search で使用可能になるには、最大 1 日かかる。
+**A:** 発行済み状態に追加された頭字語が、公開済み状態で使用可能になるには、最大で 1 日Microsoft Search。
 
 **Q: ユーザーが頭字語の回答をトリガーする方法**
 
-**A**: 頭字語の回答を取得するには [、Bing、SharePoint、](https://bing.com)または [](https://products.office.com/sharepoint/collaboration)[[365](https://Office.com) Search] ボックスに特定のクエリ Office **入力する必要** があります。
+**A**: 頭字語の回答を取得するには、ユーザーは検索ボックスに特定のクエリ パターン [Bing、SharePoint、](https://bing.com)[または](https://products.office.com/sharepoint/collaboration)Office 365 [](https://Office.com)**する必要** があります。
 
 **Q: 新しい電子メールまたはドキュメントを受信または送信した後に、システムで指定された頭字語が表示されるのにどのくらいの時間が必要ですか?**
 
-**A:** 新しい電子メールまたはドキュメントで見つかった頭字語は、Microsoft 検索結果に表示されるまで最大 7 日かかっています。
+**A:** 新しい電子メールまたはドキュメントで見つかった頭字語は、検索結果に表示するには最大 7 Microsoft Searchします。
 
 **Q: 頭字語が除外され、公開されている場合は、何が起こりますか?**
 
 **A:** 除外された頭字語が優先され、発行された頭字語が検索結果に表示されません。 公開された頭字語は削除も削除もされません。
 
-**Q: 頭字語が Microsoft 検索結果から除外されるのにどのくらいの時間が必要ですか?**
+**Q: 頭字語が結果から除外されるのにMicrosoft Searchですか?**
 
 **A**: 除外された頭字語が検索結果に表示されるのを停止するには、最大で 1 日かかる。
 

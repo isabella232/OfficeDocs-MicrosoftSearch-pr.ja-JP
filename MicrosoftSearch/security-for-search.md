@@ -1,5 +1,5 @@
 ---
-title: Bing での Microsoft Search のセキュリティとプライバシー
+title: セキュリティとプライバシー Microsoft SearchのBing
 ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
@@ -11,61 +11,61 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Bing で Microsoft Search を使用して、承認されたユーザーに情報を提供しながら、会社のデータとエンドユーザーを保護する
-ms.openlocfilehash: 1cc00a3b14b1918903c9aa34a24f13b1761b64b6
-ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
+description: 承認されたユーザーに情報を提供しながら、会社のデータとエンド ユーザーを保護し、Microsoft SearchをBing
+ms.openlocfilehash: 181a06ecb9c009d03c71e3e7f8ecfc7d675faa659967bc6a6c1560513a45a5ac
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711755"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532679"
 ---
-# <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Bing での Microsoft Search のセキュリティとプライバシー
+# <a name="security-and-privacy-for-microsoft-search-in-bing"></a>セキュリティとプライバシー Microsoft SearchのBing
 
-高度なプライバシーとセキュリティ対策により、Bing での Microsoft Search は、ユーザーおよび workplace データを保護します。
+プライバシーとセキュリティ対策の強化により、ユーザー Microsoft Search Bingを保護するのに役立ちます。
 
 ## <a name="secure-by-default"></a>既定のセキュリティ保護
 
-Bing 要求での Microsoft Search は HTTPS を介して行われます。 接続は、セキュリティを強化するためにエンドツーエンドで暗号化されます。
+Microsoft SearchのBing HTTPS 経由で行います。 セキュリティを強化するために、接続はエンドツーエンドで暗号化されます。
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Azure Active Directory による認証と承認
 
-Bing での Microsoft Search の認証は、Azure Active Directory に関連付けられています。 Microsoft Search ユーザーが Bing にアクセスすると、Bing ヘッダーには Microsoft アカウントと職場または学校のアカウントのサインインオプションが表示されます。 ユーザーが対象の参加者であるかどうかを Bing が判断できない場合、ユーザーは [ [Microsoft Search の検索](https://www.bing.com/business/explore)] ページに移動し、自動的に組織のサインインページにリダイレクトされます。
+認証は、Microsoft SearchのBingに関連付Azure Active Directory。 ユーザー Microsoft Searchに移動すると、Bing Bing ヘッダーには、Microsoft アカウントのサインイン オプションと、仕事用または学校用のアカウントが表示されます。 ユーザー Bingが適格な参加者であるかどうかを判断できない場合、ユーザーは[[Microsoft Search](https://www.bing.com/business/explore)の探索] ページに移動して、組織のサインイン ページに自動的にリダイレクトされます。
 
 ユーザーは職場または学校のアカウントを使用する場合にのみ Microsoft Search にアクセスできます。SharePoint or Outlook などの Office 365 サービスにアクセスするときに使用するのと同じ資格情報でサインインする必要があります。個人用の Microsoft アカウントを使用して Microsoft Search にサインインすることはできません。
 
 ## <a name="single-sign-on"></a>シングル サインオン
 
-ユーザーが Outlook や SharePoint などの別のサービスで既に職場または学校のアカウントで認証されている場合は、同じブラウザーで Bing にアクセスすると、同じ職場または学校のアカウントに自動的にサインインします。 また、ユーザーが職場または学校のアカウントからサインアウトすると、そのユーザーは同じブラウザーの他の Microsoft Office サービスから自動的にサインアウトされます。
+Outlook や SharePoint などの別のサービスでユーザーが既に仕事または学校のアカウントで認証されている場合、同じブラウザーで Bing に移動すると、そのユーザーは自動的に同じ仕事または学校のアカウントにサインインします。 また、ユーザーが自分の仕事または学校のアカウントからサインアウトすると、同じブラウザーの他の Microsoft Officeから自動的にサインアウトされます。
   
-## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>ブラウザーから Microsoft cloud と通信する
+## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>ブラウザーから Microsoft クラウドと通信する
 
-ユーザーが職場または学校のアカウントでサインインすると、Bing は必要なクライアントライブラリをブラウザーにダウンロードして、Microsoft 検索結果を有効にします。 その後、ブラウザー内のコードが検索を実行すると、Office 365 cloud を呼び出して作業の結果が得られます。 これを行うために、Microsoft Search では、SSAE 18 SOC2 Type 1 の制御目標に従って運用されている専用の API を使用します。 これは、作業結果自体が Office 365 コアオンラインサービスで処理されたときに、作業の結果自体が影響を受けることはないということです。
+ユーザーが自分の仕事または学校のアカウントでサインインすると、Bing Microsoft Search必要なクライアント ライブラリがブラウザーにダウンロードされます。 次に、検索時に、ブラウザー内のコードがクラウドOffice 365を呼び出して、作業結果を取得します。 これを行うには、Microsoft Search SSAE 18 SOC2 Type 1 の制御目的に従って運用される専用 API を使用します。 つまり、作業結果と作業データは、Office 365 Core Online Services で処理される場合よりも、データ処理制御の目的が厳しくなく、Bing システムを通過しません。
   
 ## <a name="permissions"></a>アクセス許可
 
 SharePoint や OneDrive for Business などの Office 365 ワークロードから取得した作業結果は、ソースでセキュリティによるトリミングを受けます。ユーザーは、Office 365 で見たりアクセスしたりできない Word ドキュメントや PowerPoint プレゼンテーションなどのリソースを見ることはできません。ユーザーは、ユーザー自身のファイルまたはファイル作成者が SharePoint で明示的または (グループ メンバーシップなどを使用して) 暗黙的にユーザーと共有したファイルのみを見ることができます。
 
-## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Bing での Microsoft Search による workplace の検索の保護
+## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft SearchのBingを保護する
 
-ユーザーが Bing の Microsoft Search で検索クエリを入力すると、次の2つの同時検索要求が発生します。
+ユーザーが検索クエリを入力すると、Microsoft SearchにBing 2 つの同時検索要求が発生します。
 
 - 組織の内部リソースの検索。
-- Bing.com からの公開結果を個別に検索します。
+- Bing.com から公開結果を個別に検索します。
 
-Workplace の検索では機密になる場合があるため、Microsoft Search では、Bing.com からのパブリック結果の個別の検索をどのように処理するかを記述する一連の信頼手段が実装されています。
+ワークプレース検索は機密性が高い可能性があるため、Microsoft Search は、Bing.com から公開結果を個別に検索する方法を説明する一連の信頼対策を実装しています。
 
 ### <a name="logging"></a>ログ記録
 
-- Bing トラフィックで Microsoft Search に関連するすべての Bing.com 検索ログは、workplace identity から切り離されます。
-- クエリが特定の組織に固有ではないという確証を得るために、制限または頻度のしきい値が満たされている場合は、プライバシーに関する[声明](https://privacy.microsoft.com/privacystatement)の「検索と人工知能」セクションの説明に従ってクエリが処理されます。 たとえば、このようなクエリを使用して、autosuggest や関連する検索などのパブリック機能をモデル化し、トレーニングします。
+- トラフィックBingのMicrosoft Searchに関連Bingすべての Bing.com 検索ログは、職場の ID から関連付け解除されます。
+- クエリが特定の組織に固有ではないという自信を与える一連の制限または頻度のしきい値が満たされている場合、クエリはプライバシーに関する声明の「検索と人工知能」セクションで説明されているとおりに [処理](https://privacy.microsoft.com/privacystatement)されます。 たとえば、このようなクエリは、自動検索や関連する検索などのパブリック機能のモデル化とトレーニングに使用されます。
 - 一連の制限または頻度のしきい値を満たしていないクエリは、Microsoft Search 以外のパブリック トラフィックとは別に保存されます。
 
 ### <a name="advertising"></a>広告
 
-Workplace search に関連する Bing.com に表示される広告は、検索クエリの内容にのみ関連しています。 広告は、職場 ID に基づいてユーザーをターゲットにすることはありません。
+職場での検索に関連Bing.com に表示される広告は、検索クエリの内容にのみ関連しています。 広告は、職場 ID に基づいてユーザーをターゲットにすることはありません。
 
 ## <a name="gdpr"></a>GDPR
 
-2018年5月21日、Microsoft からの[ブログ投稿](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)では、GDPR 準拠に対するコミットメントが反映されています。また、microsoft が自社の GDPR コンプライアンスの義務を持つビジネスおよび組織をサポートする方法を紹介しています。 詳細については、Microsoft[セキュリティセンターの FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)を参照してください。
+[2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)年 5 月 21 日の Microsoft のブログ投稿には、GDPR コンプライアンスへの取り組みと、企業や組織が独自の GDPR コンプライアンス義務を果たしている方法が反映されています。 詳細については、「Microsoft Trust [Center FAQ」を参照してください](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)。
 
-お客様の内部リソースに対して実行された Microsoft 検索クエリと返される結果は顧客データとみなされるため、[セキュリティセンターの FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)に示されているように、記事28で概説されているプロセッサのコミットメントにも対応しています。 Microsoft Search からパブリック Bing に移行するクエリに関しては、Microsoft はデータコントローラーとしての GDPR 義務に準拠しています。
+Microsoft Searchの内部リソースに対して実行されたクエリと、返される結果は顧客データと見なされ、セキュリティ センターの[FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)に反映される第 28 条に記載されているプロセッサのコミットメントも満たします。 パブリック サーバーに送信されるMicrosoft Searchに関して、Microsoft はデータ 管理者Bing GDPR の義務を遵守します。

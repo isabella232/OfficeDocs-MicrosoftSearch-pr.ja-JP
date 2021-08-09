@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Microsoft Search のブックマークの結果を一括編集するブックマークと方法を作成および更新する
-ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: ブックマークを作成して更新し、ブックマークの結果を一括編集Microsoft Search
+ms.openlocfilehash: 1362082bf33bd4a30ff2ae76e2fa05a3ccd8962c4ef5f5cb15f41fc183d0c4b9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031730"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533806"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -38,37 +38,37 @@ ms.locfileid: "51031730"
 
 ## <a name="create-bookmark-answers"></a>ブックマークの回答を作成する
 
-Microsoft [365 管理](https://admin.microsoft.com/)センターで、[ [ブックマーク](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) ] に移動し、新しいブックマークの作成方法を選択します。
+[ブックマーク[] Microsoft 365 管理センター](https://admin.microsoft.com/)に移動[し、新](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)しいブックマークの作成方法を選択します。
 
 - ブックマークの追加
-- SharePoint の結果をインポートする
+- 検索結果SharePointインポート
 - 既定のブックマークと推奨ブックマークを追加する
 - ブックマークのインポート
 - 推奨ブックマークを発行または確認する
 
 ### <a name="add-bookmarks"></a>ブックマークの追加
 
-検索管理者と編集者は、Microsoft 365 管理センターにブックマークを追加し、下書きに公開または保存できます。 ブックマークを発行すると、すぐに検索インデックスが更新され、ユーザーがすぐに検出できます。 ブックマークを公開する日時を指定して、ブックマークをスケジュールできます。
+検索管理者と編集者は、ユーザーにブックマークを追加Microsoft 365 管理センター、下書きに公開または保存できます。 ブックマークを発行すると、すぐに検索インデックスが更新され、ユーザーがすぐに検出できます。 ブックマークを公開する日時を指定して、ブックマークをスケジュールできます。
 
-- **発行** 済み : ブックマークは、Microsoft Search を通じて組織のユーザーが利用できます。
+- **発行** 済み : ブックマークは、組織のユーザーがアクセスして使用Microsoft Search。
 - **下** 書き : 下書きとして保存されたブックマークは、ユーザーが使用できません。 自分や他の関係者がブックマークを公開する前に確認または更新する場合は、この状態を使用します。
 - **スケジュール**: 指定した日付と時刻に発行されるブックマーク。
 
-Microsoft Search コンテンツ作成者ブラウザー拡張機能を使用すると、ブックマークを簡単に追加できます。 ブラウザー拡張機能をインストールするには、ブックマークとして追加するサイトに移動し、拡張機能で [追加] をクリックします。
+コンテンツ作成者ブラウザー拡張機能Microsoft Searchを使用して、ブックマークを簡単に追加できます。 ブラウザー拡張機能をインストールするには、ブックマークとして追加するサイトに移動し、拡張機能で [追加] をクリックします。
 Edge と Chrome の拡張機能をインストールします。
 
-- Chrome Edge または Chrome の場合: Chrome Web ストアに [移動し、](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) 拡張機能を追加します。
-- 従来のエッジの場合: [Microsoft Store に移動し](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 、拡張機能を追加します。
+- エッジChromium Chrome の場合: Chrome Web ストアに[移動し、](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)拡張機能を追加します。
+- 従来のエッジの場合: [エッジ] に[移動Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)拡張機能を追加します。
 
-### <a name="import-sharepoint-results"></a>SharePoint の結果をインポートする
+### <a name="import-sharepoint-results"></a>検索結果SharePointインポート
 
-組織が SharePoint で昇格した結果を設定している場合は、テナントの昇格された結果から Microsoft Search にタイトル、URL、および説明をインポートし、インポートされたコンテンツをユーザーが利用できます。 ほとんどの場合、SharePoint 結果のインポートには数分かかります。 多数の結果をインポートする場合、最大 48 時間かかる場合があります。 これは、検索結果にすばやく入力し、ユーザーの効率を高くするための簡単な方法です。 関連する検索結果に名前を付け、作成する方法を理解するには、SharePoint の昇格された結果を参照として使用することをお勧めします。
+組織が SharePoint で昇格した結果を設定している場合は、テナントの昇格された結果から Microsoft Search にタイトル、URL、および説明をインポートし、インポートされたコンテンツをユーザーが利用できます。 ほとんどの場合、結果をインポートSharePoint数分かかります。 多数の結果をインポートする場合、最大 48 時間かかる場合があります。 これは、検索結果にすばやく入力し、ユーザーの効率を高くするための簡単な方法です。 関連する検索結果に名前を付SharePoint作成する方法を理解するために、検索結果の昇格された結果を参照として使用することをお勧めします。
 
 ### <a name="add-default-and-suggested-bookmarks"></a>既定のブックマークと推奨ブックマークを追加する
 
 人事、特典、IT サポート、パスワード管理などのブックマークなど、ユーザーが役に立つ可能性がある既定の推奨ブックマークがいくつか含まれています。 これらの推奨ブックマークを確認、更新、発行して、ユーザーに高品質の結果を提供します。
 
-ユーザーは、Microsoft Search のフィードバック リンクを使用して追加を表示するブックマークを提案できます。 推奨事項は、推奨ブックマークとして表示されます。
+ユーザーは、ユーザーにフィードバック リンクを使用して追加を表示するブックマークを提案Microsoft Search。 推奨事項は、推奨ブックマークとして表示されます。
 
 ### <a name="import-bookmarks"></a>ブックマークのインポート
 
@@ -106,15 +106,15 @@ Edge と Chrome の拡張機能をインストールします。
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>推奨ブックマークを発行または確認する
 
-ブックマークの追加に必要な手動の労力を削減するために、Microsoft Search は組織の SharePoint リンクを評価し、ブックマークを推奨できます。 発行する前に確認するか、自動的に発行する設定を行えます。 推奨ブックマークのセットアップは不要で、既定で有効にされ、自動公開に設定されます。 これらの設定をいつでも変更するには、[ブックマークの **管理] を選択** して、[ブックマークの設定] パネルを開きます。
+ブックマークの追加に必要な手動の労力を削減するために、Microsoft Searchのリンクを評価し、ブックマークSharePoint推奨できます。 発行する前に確認するか、自動的に発行する設定を行えます。 推奨ブックマークのセットアップは不要で、既定で有効にされ、自動公開に設定されます。 これらの設定をいつでも変更するには、[ブックマークの **管理] を選択** して、[ブックマークの設定] パネルを開きます。
 
-![Microsoft 365 管理ポータルの推奨ブックマーク設定のスクリーンショット](media/bookmarks-recommendedsettings.png)
+![管理ポータルで推奨されるブックマーク設定Microsoft 365スクリーンショット](media/bookmarks-recommendedsettings.png)
 
-推奨ブックマークが有効になっている場合、おすすめエンジンは組織内の SharePoint サイトを評価してトラフィックの多いリンクを識別します。 最初の評価期間が終了すると、推奨ブックマークが自動発行または推奨ブックマークの一覧に追加されます。 次のサイクル(30 日間の評価期間、その後に推奨ブックマークの自動公開または追加)が開始されます。
+推奨ブックマークが有効になっている場合、おすすめエンジンは組織内SharePointサイトを評価してトラフィックの多いリンクを識別します。 最初の評価期間が終了すると、推奨ブックマークが自動発行または推奨ブックマークの一覧に追加されます。 次のサイクル(30 日間の評価期間、その後に推奨ブックマークの自動公開または追加)が開始されます。
 
 検索管理者または編集者は、これらの自動公開または推奨ブックマークを定期的に確認してください。 また、推奨ブックマークには、既存の発行済みブックマーク、推奨ブックマーク、スケジュール済みブックマーク、除外ブックマークに含まれる URL は含めされません。
 
-アクセス権を持つユーザーだけが作業結果に推奨ブックマークを表示するには、すべての推奨ブックマークに対するアクセス チェック機能が含まれています。 ユーザーは、アクセスできない SharePoint サイトの推奨ブックマークを表示しません。 このアクセス チェックは、推奨されるブックマークごとに [グループ] 設定の [このリンクにアクセスできるユーザーのみ] オプションによって制御されます。
+アクセス権を持つユーザーだけが作業結果に推奨ブックマークを表示するには、すべての推奨ブックマークに対するアクセス チェック機能が含まれています。 ユーザーは、アクセスできないサイトのSharePointブックマークを表示しません。 このアクセス チェックは、推奨されるブックマークごとに [グループ] 設定の [このリンクにアクセスできるユーザーのみ] オプションによって制御されます。
 
 推奨ブックマークまたはグループ設定の URL が変更された場合、アクセス チェックは停止します。
 
@@ -126,21 +126,21 @@ Edge と Chrome の拡張機能をインストールします。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**Q: 発行後にブックマークが Microsoft Search に表示されるのにどれくらいの時間が必要ですか?**
+**Q: ブックマークが公開された後、ブックマークがMicrosoft Search表示されるのにどのくらいの時間が必要ですか?**
 
-**A:**  発行直後に Microsoft Search でブックマークを使用できます。
+**A:** ブックマークは、発行直後Microsoft Searchで使用できます。
 
 **Q: 推奨ブックマークが表示されるのにどれくらいの時間が必要ですか?**
 
-**A:**  推奨ブックマークは、推奨ブックマークと自動公開の両方が有効になっている場合にのみ Microsoft Search に表示されます。 最初の評価期間中、推奨事項エンジンは SharePoint トラフィックを評価して適切なブックマークを識別し、それらを自動公開します。 公開すると、Microsoft Search ですぐに利用できます。
+**A:** 推奨ブックマークは、推奨ブックマークMicrosoft Search自動公開が有効になっている場合にのみ表示されます。 最初の評価期間中、推奨エンジンは適切なブックマークをSharePointし、それらを自動公開するためにトラフィックを評価します。 公開すると、すぐに公開され、Microsoft Search。
 
-**Q: 削除されたブックマークを Microsoft 検索結果から削除するには、どのくらいの時間が必要ですか?**
+**Q: 削除されたブックマークが削除された結果から削除されるのにMicrosoft Searchですか?**
 
 **A**: 削除されたブックマークは、すぐに作業結果から削除されます。
 
-**Q: Microsoft Search は、すべての言語のサイトからのブックマークを推奨しますか?**
+**Q: すべてのMicrosoft Searchサイトからのブックマークを推奨しますか?**
 
-**A**: はい、Microsoft Search は言語に関係なく、任意の内部 SharePoint サイトからのブックマークを推奨できます。
+**A**: はいMicrosoft Search、言語に関係なく、SharePointサイトからブックマークを推奨できます。
 
 **Q: 検索結果で推奨ブックマークの表示を停止できますか?**
 
@@ -160,4 +160,4 @@ Edge と Chrome の拡張機能をインストールします。
 
 **Q: Power アプリのアプリ ID はどこに表示されますか?**
 
-**A**: Power Apps サイトに移動し、アプリの [詳細] ウィンドウを表示します。 アプリ ID の [取得の詳細については、次のリンクを参照してください](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
+**A**: アプリの [Power Apps] に移動し、アプリの [詳細] ウィンドウを表示します。 アプリ ID の [取得の詳細については、次のリンクを参照してください](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。

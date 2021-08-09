@@ -1,5 +1,5 @@
 ---
-title: SharePoint サイトでの検索ボックスの管理
+title: サイト内の検索ボックスSharePointする
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,24 +11,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: SharePoint サイトで検索ボックスのエクスペリエンスをカスタマイズする方法
-ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: サイトで検索ボックスのエクスペリエンスをカスタマイズSharePointする方法
+ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031361"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533583"
 ---
-# <a name="search-box-settings-on-sharepoint-sites"></a>SharePoint サイトの検索ボックスの設定
+# <a name="search-box-settings-on-sharepoint-sites"></a>サイトの検索ボックスSharePoint設定
 
-SharePoint サイトで Microsoft Search をカスタマイズできるいくつかの方法の 1 つは、ニーズに最適な SharePoint サイトのスイート ナビゲーション バーの検索ボックスの動作を調整する方法です。
+SharePoint サイトで Microsoft Search をカスタマイズできるいくつかの方法の 1 つは、SharePoint サイトのスイート ナビゲーション バーの検索ボックスの動作をニーズに合わせて調整する方法です。
 
-その他のカスタマイズ オプションについては [、「Microsoft 検索結果](customize-search-page.md)ページを変更してカスタムの垂直、結果の種類とレイアウトを追加する」、および「カスタム検索結果ページの作成」 [を参照してください](create-search-results-pages.md)。
+その他のカスタマイズ オプション[](customize-search-page.md)については、「Microsoft Searchページを変更してカスタム垂直、結果の種類とレイアウトを追加する」、および「カスタム検索結果ページを作成する」[を参照してください](create-search-results-pages.md)。
 
 > [!NOTE]
 > 現時点では、スイート ナビゲーション バーの検索ボックスは、すべてのユーザーが使用できるとは言え、これらのオプションは現在も設定できます。使用可能になると有効になります。
 
-以下に示すタスクでは、SharePoint PnP PowerShell 拡張機能を使用して PowerShell を使用します。 ここから始める方法について、インストールして詳しい情報を参照 [してください](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 次のコマンドを使用して、サイトまたはサイト コレクションにサインインします。
+以下に示すタスクでは、PnP PowerShell 拡張機能を使用SharePoint PowerShell を使用します。 ここから始める方法について、インストールして詳しい情報を参照 [してください](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 次のコマンドを使用して、サイトまたはサイト コレクションにサインインします。
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>検索範囲の変更
 
-今日 SharePoint Online で新しいサイトを作成し、検索ボックスに入力すると、[Microsoft 検索結果] ページに移動します。 このページには、既定で現在のサイトの結果が表示され、検索範囲を、現在のサイトが関連付けられているハブ (存在する場合) または組織全体に展開できます。
+今日のオンラインで新しいサイトSharePoint作成し、検索ボックスに入力すると、[検索結果] ページMicrosoft Searchされます。 このページには、既定で現在のサイトの結果が表示され、検索範囲を、現在のサイトが関連付けられているハブ (存在する場合) または組織全体に展開できます。
 
 既定では、検索ボックスで使用されるスコープは、サイトの種類によって異なります。
 
@@ -84,11 +84,11 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar Hidden
 
 * この設定は、スイート ナビゲーション バーの検索ボックスにのみ適用されます。 ページ内の検索ボックスや従来のページの検索ボックスには適用されません。
 
-* ナビゲーション バーの検索ボックスを無効にしたら、サイト内の検索機能が必要な場合は、カスタム Web パーツまたは SharePoint Framework 拡張機能を使用して検索ボックスを自分で提供する必要があります。
+* ナビゲーション バーの検索ボックスを無効にしたら、サイトで検索機能を使用する場合は、カスタム Web パーツまたは SharePoint Framework 拡張機能を使用して検索ボックスを提供する必要があります。
 
-* このソリューションでは、サイトのリストとライブラリから検索ボックスも削除されます。 カスタム検索ソリューションでは、サイト全体の検索に加えて、SharePoint リストとライブラリのコンテキスト検索を検討する必要があります。
+* このソリューションでは、サイトのリストとライブラリから検索ボックスも削除されます。 カスタム検索ソリューションでは、サイト全体の検索に加えて、SharePointライブラリのコンテキスト検索を検討する必要があります。
 
-* この設定をドメインのルート サイトに適用すると、SharePoint の開始ページにも検索ボックスが表示されません。
+* この設定をドメインのルート サイトに適用すると、SharePointスタート ページにも検索ボックスが表示されません。
 
 ## <a name="changing-the-hint-displayed-in-the-search-box"></a>検索ボックスに表示されるヒントを変更する
 

@@ -1,5 +1,5 @@
 ---
-title: AAD id のマッピング
+title: AAD ID のマッピング
 ms.author: monaray
 author: monaray97
 manager: jameslau
@@ -11,59 +11,59 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: AAD id をマップする手順
-ms.openlocfilehash: db0378e596c560edebd2ceb942e6327b47a5286b
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: AAD ID をマップする方法の手順
+ms.openlocfilehash: 676e06d4019dabe0f07846dd8918b8070765a7ffd9deb02b11dd68f2014dc7e5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367705"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532811"
 ---
-# <a name="map-your-azure-ad-identities"></a>Azure AD Id をマップする  
+# <a name="map-your-azure-ad-identities"></a>Azure AD の ID をマッピング  
 
-この記事では、azure ad id をデータソースの一意識別子 (非 Azure AD id) にマッピングする手順について説明します。これにより、非 Azure AD id を使用したアクセス制御リスト (ACL) 内のユーザーは、それらにスコープ設定されたコネクタ検索結果を表示できるようになります。
+この記事では、Azure AD ID をデータ ソースの一意の識別子 (Azure AD 以外の ID) にマッピングし、Azure AD 以外の ID を持つアクセス制御リスト (ACL) のユーザーが対象範囲のコネクタ検索結果を確認する手順について説明します。
 
-これらの手順は、"このデータソースにアクセスできるユーザーのみ" AAD "の検索アクセス許可を使用して、Microsoft によって [Salesforce](salesforce-connector.md) コネクタを設定する検索管理者にのみ関連しています。 次の手順では、Azure AD ユーザーのプロパティをユーザーの **フェデレーション id** にマップする方法について説明します。
+これらの手順は、"このデータ ソースへのアクセス権を持つユーザーのみ" と ID の種類 "AAD" の検索権限を持つ Microsoft による [Salesforce](salesforce-connector.md) コネクタを設定している検索管理者にのみ関連します。 次の手順では、Azure のユーザー プロパティをユーザー ADフェデレーション ID にマップする方法 **について説明します**。
 
 >[!NOTE]
->[Salesforce コネクタ](salesforce-connector.md)を設定し、[アクセス許可] 画面で **AAD 以外** のユーザーに対してこのデータソースおよび id の種類 **へのアクセス権を持つユーザーのみ** を選択する場合は、非 azure ad id をマップする手順については、「 [azure ad の id をマップ](map-non-aad.md)する」の記事を参照してください。  
+>[Salesforce](salesforce-connector.md)コネクタを設定し、[検索アクセス許可] 画面で [このデータ ソースとID タイプにアクセスできるユーザーのみ] を選択する場合は、Azure 以外の AD ID をマップする方法の手順については、「Map your [Azure AD Identitys」](map-non-aad.md)の記事を参照してください。  
 
-## <a name="steps-for-mapping-your-azure-ad-properties"></a>Azure AD プロパティをマッピングする手順
+## <a name="steps-for-mapping-your-azure-ad-properties"></a>Azure のプロパティをマッピングAD手順
 
-### <a name="1-select-azure-ad-user-properties-to-map"></a>1. マッピングする Azure AD ユーザーのプロパティを選択する
+### <a name="1-select-azure-ad-user-properties-to-map"></a>1. マップする Azure ADユーザー プロパティを選択します。
 
-フェデレーション ID にマップする必要がある Azure AD プロパティを選択できます。
+フェデレーション ID にマップする必要AD Azure プロパティを選択できます。
 
-ドロップダウンから Azure AD ユーザーのプロパティを選択できます。 組織のフェデレーション ID マッピングを作成するためにこれらのプロパティが必要な場合は、Azure AD ユーザーのプロパティをいくつでも追加できます。
+ドロップダウンから Azure ADユーザー プロパティを選択できます。 組織のフェデレーション ID マッピングADこれらのプロパティが必要な場合は、必要な数の Azure ユーザー プロパティを追加することもできます。
 
-### <a name="2-create-formula-to-complete-mapping"></a>2. マッピングを完了するための数式を作成します。
+### <a name="2-create-formula-to-complete-mapping"></a>2. マッピングを完了する数式を作成する
 
-Azure AD ユーザーのプロパティの値を組み合わせて、一意のフェデレーション ID を形成することができます。
+Azure のユーザー プロパティの値を組みAD一意のフェデレーション ID を形成できます。
 
-[式] ボックスで、"" は、 {0} 選択した *最初* の Azure AD プロパティに対応します。 " {1} " は、選択した *2 番目* の Azure AD プロパティに対応します。 " {2} " は *3 番目* の Azure AD プロパティに対応します。以下同様になります。  
+数式ボックスの " {0} " は、選択した最初の Azure ADプロパティに対応します。 " {1} " は、選択した *2* 番目の Azure ADプロパティに対応します。 " {2} は、3番目の Azure ADプロパティに対応します。  
 
-次に、サンプルの正規表現出力と数式出力を含む数式の例をいくつか示します。
+次に、正規表現出力と数式出力のサンプルを含む数式の例を示します。
 
-| サンプル式                  | {0}サンプルユーザーのプロパティの値                 | {1}サンプルユーザーのプロパティの値           | 数式の出力                  |
+| サンプル数式                  | サンプル ユーザーの {0} プロパティの値                 | サンプル ユーザーの {1} プロパティの値           | 数式の出力                  |
 | :------------------- | :------------------- |:---------------|:---------------|
-| {0}.{1}@contoso .com  | 担当 | 社員 |firstname.lastname@contoso.com
-| {0}@domain .com                 | userid                 |             |userid@domain.com
+| {0}.{1}@contoso.com  | firstname | lastname |firstname.lastname@contoso.com
+| {0}@domain.com                 | userid                 |             |userid@domain.com
 
-数式を入力した後で、必要に応じて、[ **プレビュー** ] をクリックして、データソースから5つのランダムユーザーのプレビューを表示し、それぞれのユーザーマッピングを適用することができます。 プレビューの出力には、手順1でユーザーが選択した Azure AD ユーザープロパティの値と、そのユーザーの手順2で提供された最終的な式の出力が含まれています。 また、「成功」または「失敗」アイコンを使用して、式の出力をテナントの Azure AD ユーザーに解決できるかどうかも示します。  
+数式を指定した後、必要に応じて[プレビュー] をクリックして、それぞれのユーザー マッピングが適用されたデータ ソースから 5 人のランダム ユーザーのプレビューを表示できます。 プレビューの出力には、手順 1 で選択した Azure AD ユーザー プロパティの値と、そのユーザーの手順 2 で示した最終数式の出力が含まれます。 また、数式の出力を "成功" または "Failed" アイコンを使用して、テナント内の Azure AD ユーザーに解決できるかどうかも示します。  
 
 >[!NOTE]
->[ **プレビュー**] をクリックした後、1つ以上のユーザーマッピングの状態が "Failed" になっている場合でも、接続の作成を続行できます。 プレビューには、5つのランダムユーザーと、データソースからのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされていない場合は、この場合に遭遇する可能性があります。
+>[プレビュー] をクリックした後に、1 つ以上のユーザー マッピングの状態が "Failed" の場合は、接続の作成を続行 **できます**。 プレビューには、データ ソースから 5 人のランダム なユーザーとそのマッピングが表示されます。 指定したマッピングですべてのユーザーがマップされない場合は、このケースが発生する可能性があります。
 
-## <a name="sample-azure-ad-mapping"></a>Azure AD マッピングの例
+## <a name="sample-azure-ad-mapping"></a>Azure のサンプル ADマッピング
 
-Azure AD マッピングの例については、以下のスナップショットを参照してください。
+Azure のマッピングのサンプルについては、以下のスナップショットADしてください。
 
-![Azure AD マッピングページに記入する方法のサンプルスナップショット](media/aad-mapping.png)
+![Azure の [マッピング] ページに入力する方法のADスナップショット](media/aad-mapping.png)
 
 ## <a name="limitations"></a>制限事項  
 
-- すべてのユーザーに対して1つのマッピングのみがサポートされます。 条件付きマッピングはサポートされていません。  
+- すべてのユーザーに対してサポートされているマッピングは 1 つのみです。 条件付きマッピングはサポートされていません。  
 
-- 接続が公開されると、マッピングを変更することはできません。  
+- 接続が公開された後は、マッピングを変更できません。  
 
-- Azure ad ユーザープロパティに対して Regex ベースの式を使用することは、Azure AD からフェデレーション ID への変換ではサポートされていません。
+- Azure のユーザー プロパティに対AD正規表現ベースの式は、Azure のフェデレーション ID 変換ADサポートされていません。

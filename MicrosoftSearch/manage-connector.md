@@ -1,5 +1,5 @@
 ---
-title: Microsoft 検索Graphコネクタを管理する
+title: Microsoft Graph コネクタの管理Microsoft Search
 ms.author: mecampos
 author: monaray97
 manager: mnirkhe
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft 検索用の microsoft Graphコネクタを管理します。
-ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
-ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
+description: Microsoft Graph コネクタを管理Microsoft Search。
+ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52325170"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532911"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -28,11 +28,11 @@ ms.locfileid: "52325170"
 
 ## <a name="connection-operations"></a>接続操作
 
-管理センターの[[コネクタ]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) [タブMicrosoft 365移動します](https://admin.microsoft.com)。
+[コネクタ][タブの [コネクタ](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)] タブに[移動](https://admin.microsoft.com)Microsoft 365 管理センター。
 
-コネクタの種類ごとに、Microsoft 365[管理センターは](https://admin.microsoft.com)、次の表に示す操作をサポートします。
+コネクタの種類ごとに[、次Microsoft 365 管理センター](https://admin.microsoft.com)に示す操作がサポートされます。
 
-Operation | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
+操作 | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
 --- | --- | ---
 接続の追加 | :heavy_check_mark: (「セットアップの概要[」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:
@@ -41,7 +41,7 @@ Operation | Microsoft 提供の Graph コネクタ | パートナーまたはGra
 
 ## <a name="monitor-your-connection-state"></a>接続状態を監視する
 
-接続を作成すると、Microsoft Search ページの [コネクタ]タブに処理されたアイテムの数 **が表示** されます。 最初のフル クロールが正常に完了すると、定期的な増分クロールの進行状況が表示されます。 このページでは、コネクタの毎日の操作とログとエラー履歴の概要について説明します。
+接続を作成すると、処理されたアイテムの数が [コネクタ]タブの [コネクタ]**ページにMicrosoft Search** されます。 最初のフル クロールが正常に完了すると、定期的な増分クロールの進行状況が表示されます。 このページでは、コネクタの毎日の操作とログとエラー履歴の概要について説明します。
 
 5 つの状態が各接続 **に対して [状態** ] 列に表示されます。
 
@@ -70,8 +70,8 @@ Operation | Microsoft 提供の Graph コネクタ | パートナーまたはGra
 状態 | クォータ使用率レベル
 --- | --- 
 標準 | 0-79%
-高い | 80-89%
-重大 | 90%-99%
+高 | 80-89%
+クリティカル | 90%-99%
 Full | 100%
 
 <!-- 

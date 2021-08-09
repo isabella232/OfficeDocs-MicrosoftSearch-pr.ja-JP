@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
-ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
+ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463228"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533067"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 

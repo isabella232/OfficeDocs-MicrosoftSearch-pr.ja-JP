@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: イントラネット サイトまたはページに検索ボックスを追加することで、関連する検索候補を取得し、Microsoft Search検索結果を迅速に検索できます。
-ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+ms.openlocfilehash: f11fcbeee23346041e4ebc720e4256d3aba29d57bed9266ed04bb02ee31c2ada
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449063"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533397"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>イントラネット サイトに検索ボックス追加する
 

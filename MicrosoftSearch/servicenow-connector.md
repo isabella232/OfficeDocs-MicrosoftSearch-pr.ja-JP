@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search Graph ServiceNow Graphコネクタ
+title: ServiceNow GraphコネクタMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,26 +12,26 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search の ServiceNow Graphコネクタをセットアップする
-ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
-ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
+description: サービスの ServiceNow Graph コネクタをMicrosoft Search
+ms.openlocfilehash: 11abe956e624fa23cd19e2dfc2ae9a4af31a0f81407f6e2c5672723c5fdfc8b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879310"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534133"
 ---
 <!---Previous ms.author: kam1 --->
 
 
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph コネクタ
 
-Microsoft Graph コネクタ for ServiceNow を使用すると、組織内のすべてのユーザーに表示される、または組織内のユーザー条件のアクセス許可で制限されているナレッジ ベースの記事にインデックスを作成できます。 ServiceNow からコネクタとインデックス コンテンツを構成した後、エンド ユーザーは任意の Microsoft Search クライアントからそれらの記事を検索できます。  
+Microsoft Graph コネクタ for ServiceNow を使用すると、組織内のすべてのユーザーに表示される、または組織内のユーザー条件のアクセス許可で制限されているナレッジ ベースの記事にインデックスを作成できます。 ServiceNow からコネクタとインデックス コンテンツを構成した後、エンド ユーザーは任意のクライアントからそれらの記事Microsoft Searchできます。  
 
 この記事は、Microsoft 365管理者または ServiceNow サーバー コネクタを構成、実行、および監視するGraphです。 この記事では、「コネクタ コネクタのセットアップ」に記載されている一般的Graph[補足](configure-connector.md)します。 まだ実行していない場合は、「コネクタのセットアップ」の記事Graph一般的なセットアップ プロセスを理解してください。
 
 セットアップ プロセスの各手順は、トラブルシューティングと制限事項に関する情報を含む ServiceNow Graph コネクタにのみ適用される一般的なセットアップ手順または他の手順に従う必要があるというメモ[](#troubleshooting)と共に[](#limitations)、以下に示します。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: 管理センター GraphコネクタをMicrosoft 365します。
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター。
 一般的なセットアップ手順に従います。
 
 ## <a name="step-2-name-the-connection"></a>手順 2: 接続に名前を付けています。
@@ -41,9 +41,9 @@ Microsoft Graph コネクタ for ServiceNow を使用すると、組織内のす
 ## <a name="step-3-connection-settings"></a>手順 3: 接続設定
 ServiceNow データに接続するには、組織の ServiceNow インスタンス **URL が必要です**。 通常、組織の ServiceNow インスタンス URL は、組織 **https:// &lt;>.service-now.com のように表示されます**。 
 
-この URL と共に、ServiceNow への接続をセットアップするサービス アカウントと、更新スケジュールに基づいて Microsoft Search がナレッジ記事を定期的に更新できるようにするサービス アカウントが必要になります。  サービス アカウントでは、さまざまなエンティティを正常にクロールするには、次の **ServiceNow** テーブル レコードへの読み取りアクセスが必要です。
+この URL と共に、ServiceNow への接続をセットアップするサービス アカウントと、Microsoft Search が更新スケジュールに基づいてナレッジ記事を定期的に更新できるようにする必要があります。  サービス アカウントでは、さまざまなエンティティを正常にクロールするには、次の **ServiceNow** テーブル レコードへの読み取りアクセスが必要です。
 
-**機能** | **読み取りアクセス必須テーブル** | **説明**
+**機能** | **読み取りアクセス必須テーブル** | **Description**
 --- | --- | ---
 すべてのユーザーが利用できるナレッジ 記事の <em>インデックスを作成する</em> | kb_knowledge | ナレッジ記事をクロールする場合
 ユーザー条件のアクセス許可のインデックスとサポート | kb_uc_can_read_mtom | Whoナレッジ ベースを読み取る
@@ -56,7 +56,7 @@ ServiceNow データに接続するには、組織の ServiceNow インスタン
 | | user_criteria | ユーザー条件のアクセス許可の読み取り
 | | kb_knowledge_base | ナレッジ ベース情報の読み取り
 
-Microsoft Search **との接続に使用する** サービス アカウントの役割を作成して割り当てできます。 [ServiceNow アカウントの役割を割り当てる方法について学習します](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 テーブルへの読み取りアクセスは、作成された役割に割り当てることができます。 テーブル レコードへの読み取りアクセスを設定する方法については、「テーブル レコードの [セキュリティ保護」を参照してください](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
+サービス アカウント **への接続に使用** するサービス アカウントの役割を作成して割り当Microsoft Search。 [ServiceNow アカウントの役割を割り当てる方法について学習します](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 テーブルへの読み取りアクセスは、作成された役割に割り当てることができます。 テーブル レコードへの読み取りアクセスを設定する方法については、「テーブル レコードの [セキュリティ保護」を参照してください](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
 
 
 >[!NOTE]
@@ -74,7 +74,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 
 ## <a name="step-32-servicenow-oauth"></a>手順 3.2: ServiceNow OAuth
 
-認証に ServiceNow OAuth を使用するには、ServiceNow 管理者が ServiceNow インスタンスでエンドポイントをプロビジョニングして、Microsoft Search アプリがアクセスできる必要があります。 詳細については、ServiceNow のドキュメントの「クライアントがインスタンスにアクセス [する](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) エンドポイントを作成する」を参照してください。
+認証に ServiceNow OAuth を使用するには、ServiceNow 管理者が ServiceNow インスタンスでエンドポイントをプロビジョニングし、Microsoft Search アプリがアクセスできる必要があります。 詳細については、ServiceNow のドキュメントの「クライアントがインスタンスにアクセス [する](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) エンドポイントを作成する」を参照してください。
 
 次の表に、エンドポイント作成フォームに入力する方法のガイダンスを示します。
 
@@ -82,7 +82,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 --- | --- | ---
 名前 | OAuth アクセスが必要なアプリケーションを識別する一意の値。 | Microsoft Search
 クライアント ID | アプリケーションの読み取り専用で自動生成された一意の ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 該当なし
-クライアント シークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Search は互いに通信を承認します。 | シークレットをパスワードとして扱って、セキュリティのベスト プラクティスに従います。
+クライアント シークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Searchの通信を承認できます。 | シークレットをパスワードとして扱って、セキュリティのベスト プラクティスに従います。
 リダイレクト URL | 承認サーバーがリダイレクトする必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 ロゴ URL | アプリケーション ロゴのイメージを含む URL。 | 該当なし
 アクティブ | チェック ボックスをオンにして、アプリケーション レジストリをアクティブにします。 | アクティブに設定する
@@ -134,7 +134,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 --- | ---
 ディレクトリ ID (テナント ID) | 手順 3.a から、Azure Active Directoryテナントの一意の ID。
 アプリケーション ID (クライアント ID) | 手順 3.a で登録されているアプリケーションの一意の ID。
-クライアントの秘密情報 | アプリケーションの秘密キー (手順 3.b から)。 パスワードのように扱います。
+クライアント シークレット | アプリケーションの秘密キー (手順 3.b から)。 パスワードのように扱います。
 サービス プリンシパル ID | サービスとして実行されているアプリケーションの ID。 (手順 3.c から)
 
 ### <a name="step-334-register-servicenow-application"></a>手順 3.3.4: ServiceNow アプリケーションの登録
@@ -149,7 +149,7 @@ ServiceNow インスタンスには、次の構成が必要です。
    --- | --- | ---
    名前 | OAuth OIDC エンティティを識別する一意の名前。 | Azure AD
    クライアント ID | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 手順 3.a のアプリケーション (クライアント) ID
-   クライアントの秘密情報 | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント シークレット。 | 手順 3.b のクライアント シークレット
+   クライアント シークレット | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント シークレット。 | 手順 3.b のクライアント シークレット
 
    その他の値はすべて既定で指定できます。
 

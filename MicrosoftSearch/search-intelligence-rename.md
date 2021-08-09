@@ -1,5 +1,5 @@
 ---
-title: 検索 & インテリジェンスの概要
+title: 検索機能インテリジェンス&紹介
 ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
@@ -12,30 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 管理ナビゲーションで Microsoft Search の名前を変更し & インテリジェンスを検索する
-ms.openlocfilehash: 272bcd95a701c0e86c6296f2945ec5080c0ab287
-ms.sourcegitcommit: 404a4c9125f10235675b318f0dcf22742e7a7f4b
+description: 管理者Microsoft Searchの名前を [検索] インテリジェンスに&する
+ms.openlocfilehash: b0a5912ba02c74daffe677f3fbd22c0fb3df12289f155ad4beef69484771fcf3
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868722"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533970"
 ---
-# <a name="search--intelligence"></a>検索 & インテリジェンス
+# <a name="search--intelligence"></a>検索&インテリジェンス
 
-Microsoft search administration は現在、microsoft [365 管理センター](https://admin.microsoft.com)の [**設定**] の [  >  **[microsoft search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)** ] の下にあります。 ナビゲーションを **[検索 & インテリジェンス](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)に変更しています。**
+Microsoft Search管理は、現在、次 [のMicrosoft 365 管理センターに](https://admin.microsoft.com)**設定Microsoft Search。**  >  **[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)** ナビゲーションの名前を [検索] インテリジェンス **[に&しています](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。**
 
 > [!Important]
-> この変更により、2020年10月1日にお客様へのロールアウトが始まり、何週間にわたってもすべてのお客様に届けられるようになります。
+> この変更は、2020 年 10 月 1 日に顧客に公開され始め、数週間以内にすべての顧客に届きます。
 
 ## <a name="why-we-are-making-this-change"></a>この変更を行う理由
 
-Microsoft Search を使用すると、ユーザーが必要な情報をすばやく検索できるようになるため、組織の生産性が向上します。 Microsoft Search の向上と進化を続けていく中で、情報開示の範囲を超えて知識管理、タスクの完了、プライバシー制御などの分野に移行する機能と交差しています。
-お客様との連携によって得られたことは、多くの場合、これらの分野で管理を行う人々は同じ人物であるということです。
+Microsoft Search必要な情報を迅速に見つけ出し、組織の生産性を向上させることができます。 情報の発見を超えて知識Microsoft Search、タスクの完了、プライバシー制御などの領域に向けて機能を拡張し、進化し続けています。
+お客様との仕事から学んだことは、これらの分野で管理を行う人々は、ほとんどの場合、同じ人物です。
 
-中核となる原則の1つは、テクノロジではなく、ユーザーやエクスペリエンスに関する管理を整理することです。 これは、エクスペリエンスにわたる一連の管理者コントロールと組み合わせて、ここで提供されています。
+当社の主要な原則の 1 つは、テクノロジではなく、人と経験に関する管理を整理する方法です。 これは、エクスペリエンスにまたがる一連の管理コントロールと組み合わせて、ここに私たちを連れて来たのです。
 
-今後は、この名前変更を使用して、今後の週、月、および今後の知識管理を含むようになる & インテリジェンスを検索することができます。
+今後は、この名前の変更から検索&インテリジェンスに変更され、今後数週間、数か月、それ以降にナレッジ管理などの情報が含まれます。
 
-## <a name="no-change-in-the-brand"></a>ブランドに変更はありません。
+## <a name="no-change-in-the-brand"></a>ブランドに変更はありません
 
-Navigation の変更は、Microsoft Search 製品やブランドの変更を反映していません。また、関連する製品とテクノロジを将来統合するための場所を提供するように設計されています。
+ナビゲーションの変更は、Microsoft Search 製品やブランドの変更を表すのではなく、関連する製品やテクノロジを将来統合する場所を提供するように設計されています。

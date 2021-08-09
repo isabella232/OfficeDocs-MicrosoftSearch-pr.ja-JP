@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: レポートとデータPower BI検索結果に表示する方法を管理する
-ms.openlocfilehash: 4b2251bdb8039c25fb1ec5290f3374a9f4eb3fd1
-ms.sourcegitcommit: 4b72a31910753d46373a829a64ffec77fe6bc855
+ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547702"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533622"
 ---
 # <a name="manage-power-bi-answers"></a>回答Power BI管理する
 
-ユーザーが情報に基づいた意思決定を行う際に必要なデータと分析を簡単に見つけやすくするために、Microsoft Search では、ダッシュボードとレポートのPower BI追加しました。 次に、検索の利点のPower BI示します。
+ユーザーが情報に基づいた意思決定を行う際に必要なデータと分析を簡単に見つけやすくするために、Microsoft Search はダッシュボードとレポートのPower BI追加しました。 次に、検索の利点のPower BI示します。
 
 * **使いやすい:** このすぐに使用できる検索エクスペリエンスは、ユーザーが組織全体のダッシュボードPower BIレポートを簡単かつ迅速に見つけるのに役立ちます。
 * **よりリッチなコンテンツ:** 検索結果をよりPower BIするには、コンテンツの種類 (ダッシュボードやレポート) や、そのコンテンツを所有するチームまたはユーザーなどの重要な情報が含まれます。
@@ -31,7 +31,7 @@ ms.locfileid: "52547702"
 
 ## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft Search ユーザーは、Power BI 検索ボックス、Windows、SharePoint、Office 365、およびBing。 ユーザーは、次のようなクエリを使用してレポートとダッシュボードを検索できます。
+Microsoft Searchユーザーは、Power BI 検索ボックス、Windows、SharePoint、Office 365、およびBing。 ユーザーは、次のようなクエリを使用してレポートとダッシュボードを検索できます。
 
 * Power BIについて`<topic>`
 * Power BIの場合`<topic>`
@@ -57,7 +57,7 @@ Power BIの結果は既定で有効になっています。 管理者Power BIい
 
 **Q: 既定Power BI検索は有効になっていますか?**
 
-**A:** うん。 Power BIは Microsoft Search で既定で有効になっています。 この機能には、テナント管理者が初めてセットアップする必要はありません。
+**A:** うん。 Power BIの検索は既定で有効Microsoft Search。 この機能には、テナント管理者が初めてセットアップする必要はありません。
 
 **Q: 特定Power BIユーザーに対して検索を有効または無効にできますか?**
 
@@ -69,11 +69,11 @@ Power BIの結果は既定で有効になっています。 管理者Power BIい
 
 **Q: ライセンスを持Power BI場合、検索結果ページが表示Power BIですか?**
 
-**A:** いいえ。 検索ユーザーがユーザー ライセンスを持Power BI場合Power BI検索結果ページは Microsoft 検索結果に表示されません。
+**A:** いいえ。 検索ユーザーがユーザー ライセンスを持Power BI場合Power BI検索結果ページは検索結果にMicrosoft Searchされません。
 
 **Q: アクセスできないPower BI検索結果が表示されますか?**
 
-**A:** いいえ。 Microsoft Search は、アクセスできるPower BI結果のみを返します。
+**A:** いいえ。 Microsoft Searchアクセス権を持つPower BI結果のみを返します。
 
 **Q: 検索結果 (Power BIの種類やレポートの所有者など) をカスタマイズできますか?**
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用 MediaWiki Graph コネクタ
+title: MediaWiki GraphコネクタMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,30 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search の MediaWiki Graph コネクタをセットアップする
-ms.openlocfilehash: 5922cf76aa112430f9f6e857066acd054182058c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: ユーザーの MediaWiki GraphコネクタをMicrosoft Search
+ms.openlocfilehash: fff24ce918e3eab6a50d78977749a030ef17d0aef235e6d98e02bdf54fc63a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031694"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532697"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="mediawiki-graph-connector"></a>MediaWiki Graph コネクタ
 
-MediaWiki Graph コネクタを使用すると、組織は MediaWiki ソフトウェアを使用して作成された Wiki からデータを検出してインデックスを作成できます。 このコネクタは、指定されたコンテンツを Microsoft Search にインデックス付けし、インデックスを最新の状態に保つために定期的なクロールをサポートします。
+MediaWiki Graphコネクタを使用すると、組織は MediaWiki ソフトウェアを使用して作成された Wiki からデータを検出してインデックスを作成できます。 このコネクタは、指定されたコンテンツMicrosoft Searchインデックスを作成し、インデックスを最新の状態に保つために定期的なクロールをサポートします。
 
 > [!NOTE]
-> Graph コネクタ [**のセットアップの一**](configure-connector.md) 般的な手順については、Graph コネクタのセットアップに関する記事をご覧ください。
+> 一般的な [**コネクタのセットアップGraph**](configure-connector.md) Graphについては、「Graphコネクタのセットアップ」をご覧ください。
 
-この記事は、MediaWiki Graph コネクタを構成、実行、および監視するユーザーを対象とします。 これは、一般的なセットアップ プロセスを補足し、MediaWiki Graph コネクタにのみ適用される手順を示します。 この記事には、制限に関する [情報も含まれています](#limitations)。
+この記事は、MediaWiki コネクタを構成、実行、および監視するGraphです。 一般的なセットアップ プロセスを補足し、MediaWiki コネクタにのみ適用される手順をGraphします。 この記事には、制限に関する [情報も含まれています](#limitations)。
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -85,6 +85,6 @@ MediaWiki コネクタは、すべてのユーザーに表示される検索ア�
 MediaWiki コネクタには、プレビュー リリースで次の制限があります。
 
 * クラウドベースの Wiki のみをサポートします。
-* Azure Active Directory または Azure 認証を使用して、Basic または OAuth 2.0 のみをサポートします。
+* 基本認証または OAuth 2.0 のみをサポートし、Azure Active Directoryまたは Azure 認証をサポートします。
 * インデックス作成の名前空間の選択はサポートされていません。 Main、Category、および File 名前空間のみをインデックス化します。
 * アクセス制御リスト (ACL) はサポートされていません。 したがって、インデックス付きページは組織内のすべてのユーザーに表示されます。

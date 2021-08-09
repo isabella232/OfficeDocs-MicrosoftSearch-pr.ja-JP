@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: Windows 10 ユーザーに対して Microsoft Search と Office 365 にサインインを求めるメッセージが表示される回数を減らします
-ms.openlocfilehash: 9fa7e067a5d72b7044981491f8526e6de727cfae
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d3628503c9150c1d71b4d390a9e9c34f5e6faedfac4e33c44cdd038f90d591d0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626893"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534115"
 ---
 # <a name="test-single-sign-on"></a>シングル サインオンのテスト
 

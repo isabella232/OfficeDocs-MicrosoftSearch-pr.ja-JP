@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search のファイル共有グラフ コネクタ
+title: ファイル共有GraphコネクタMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,28 +13,28 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Microsoft Search のファイル共有グラフ コネクタをセットアップする
-ms.openlocfilehash: 792e853e5d2b7a23835dc031ff4ba4c09d619f9c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: ファイル共有コネクタをGraphするMicrosoft Search
+ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031613"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533028"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>ファイル共有グラフ コネクタ
+# <a name="file-share-graph-connector"></a>ファイル共有Graphコネクタ
 
-ファイル共有グラフ コネクタを使用すると、組織内のユーザーはオンプレミスの Windows ファイル共有を検索できます。
+[ファイル共有] Graphコネクタを使用すると、組織内のユーザーがオンプレミスのファイル共有Windows検索できます。
 
 > [!NOTE]
-> グラフ コネクタ [**の一般的なセットアップ**](configure-connector.md) プロセスについて詳しくは、Graph コネクタのセットアップに関する記事をご覧ください。
+> コネクタの [**セットアッププロセスの一Graphについては**](configure-connector.md)、「Graph」を参照してください。
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
-### <a name="install-the-graph-connector-agent"></a>Graph コネクタ エージェントのインストール
+### <a name="install-the-graph-connector-agent"></a>コネクタ エージェントGraphインストールする
 
-Windows ファイル共有のインデックスを作成するには、Graph コネクタ エージェントをインストールして登録する必要があります。 詳細については [、「Graph コネクタ エージェントのインストール](on-prem-agent.md) 」を参照してください。  
+ファイル共有にインデックスWindowsするには、コネクタ エージェントをインストールして登録Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](graph-connector-agent.md)する」を参照してください。  
 
 ### <a name="content-requirements"></a>コンテンツ要件
 
@@ -46,7 +46,7 @@ Windows ファイル共有のインデックスを作成するには、Graph コ
 
 サポートされるファイルの最大サイズは 100 MB です。 100 MB を超えるファイルはインデックス付けされません。 処理後の最大サイズ制限は 4 MB です。 ファイルのサイズが 4 MB に達すると、処理が停止します。 したがって、ファイルに存在する一部の語句が検索に使用できない場合があります。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -58,7 +58,7 @@ Windows ファイル共有のインデックスを作成するには、Graph コ
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
-[データ **ソースへの接続] ページで、[** ファイル共有] **を** 選択し、名前、接続 ID、および説明を指定します。 次のページで、ファイル共有へのパスを指定し、以前にインストールした Graph コネクタ エージェントを選択します。 ファイル共有内のすべてのファイルへの読み取りアクセス権を持つ [Microsoft Windows](https://microsoft.com/windows) ユーザー アカウントの資格情報を入力します。
+[データ **ソースConnect] ページで**、[**ファイル** 共有] を選択し、名前、接続 ID、および説明を指定します。 次のページで、ファイル共有へのパスを指定し、以前にインストールしたコネクタ エージェントGraph選択します。 ファイル共有内のすべてのファイルへの読みWindowsアクセス権を持つ[Microsoft](https://microsoft.com/windows)ユーザー アカウントの資格情報を入力します。
 
 ### <a name="preserve-last-access-time"></a>最後のアクセス時間を保持する
 

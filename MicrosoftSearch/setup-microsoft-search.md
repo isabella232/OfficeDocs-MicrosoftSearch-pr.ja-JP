@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search を初めてセットアップする。
-ms.openlocfilehash: 98499c2df1d8d732cdc1961116cafaaffeb4c5d6
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 9a52695f3a7494b27849ff21798302777716b9bda755ff372e605ec45a6d94b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031667"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534124"
 ---
 # <a name="set-up-microsoft-search"></a>Microsoft Search のセットアップ
 
-Microsoft Search は、ユーザーがファイルやドキュメント、内部サイトやビジネス ツール、人とグループ、場所と指示、会話や回答などの情報を見つけるのに役立つユーザーフレンドリーなインターフェイスを提供します。 これは、電子メール、ファイル、SharePoint ファイル、OneDrive コンテンツ、その他の共有リソースを含むすべてのデータ ソースに安全にアクセスすることで行います。 Bing の Microsoft Search を使用すると、インターネットから検索結果を取得することもできます。
+Microsoft Searchは、ユーザーがファイルやドキュメント、内部サイトやビジネス ツール、人とグループ、場所と指示、会話や回答などの情報を見つけるのに役立つユーザーフレンドリーなインターフェイスを提供します。 これは、メール、ファイル、SharePoint ファイル、OneDrive コンテンツ、その他の共有リソースなど、すべてのデータ ソースに安全にアクセスすることで行います。 このMicrosoft SearchをBing、インターネットから検索結果を取得することもできます。
 
 Microsoft Search の機能の詳細については、「[Microsoft Search の概要](overview-microsoft-search.md)」を参照してください。
 
 ## <a name="get-started"></a>はじめに
 
-Microsoft Search は Microsoft 365 の一部であり、この機能をサポートしているすべての Microsoft アプリに対して既定で有効になっています。 セットアップは必要ありませんが、基本的な管理タスクを通じて Microsoft Search の全体的なエクスペリエンスを向上できます。
+Microsoft Search は Microsoft 365 の一部であり、この機能をサポートしているすべての Microsoft アプリに対して既定で有効になっています。 セットアップは必要ありませんが、基本的な管理タスクを通Microsoft Search全体のエクスペリエンスを向上できます。
 
 Microsoft Search の管理は、Microsoft 365 管理センターから行います。
 
-1. Microsoft 365 管理センターで、[設定検索] に移動 **し**、&  >  [**します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。
+1. [Microsoft 365 管理センター検索] に移動 **設定**  >  [**インテリジェンス&します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。
 
 管理者として、効率的でユーザー フレンドリな Microsoft Search の操作性を組織内で実現するために、いくつかの点を考慮する必要があります。
 
@@ -48,16 +48,16 @@ Search 管理者は、エンド ユーザーの検索エクスペリエンスに
 
 ## <a name="step-2-create-answers"></a>手順 2: 回答を作成する
 
-Microsoft Search では、ユーザーのために堅牢な検索環境を構築するために使用できるツールを管理者に提供しています。 Microsoft Search では、管理者は 3 つの異なる検索コンテンツを使用して、より良い検索エクスペリエンスを実現し、コンテンツの "検索可能性" を向上させるために作成できます。
+Microsoft Search では、ユーザーのために堅牢な検索環境を構築するために使用できるツールを管理者に提供しています。 管理者Microsoft Search、3 つの異なる検索コンテンツを作成して、より良い検索エクスペリエンスを実現し、コンテンツの "検索可能性" を向上できます。
 
 ブックマークは、最も一般的に使用される回答の種類です。 ユーザーのクエリに最適な結果を検索結果の上部に昇格し、ユーザーが探している情報を簡単に見つけやすくします。
-すべてのユーザーが利用できる情報コンテンツ。たとえば、会社に関する情報、Windows のヘルプ、アプリOfficeなどです。組織内のユーザーが通常、毎日の作業で検索するコンテンツ。 従業員の福利厚生、時間と経費のレポート、発注書の発行、IT サービスからのヘルプの入手など、業務関連の一般的な検索項目です。
+すべてのユーザーが利用できる情報コンテンツ。たとえば、会社に関する情報、アプリやアプリWindows Officeヘルプなどです。組織内のユーザーが通常、毎日の作業で検索するコンテンツ。 従業員の福利厚生、時間と経費のレポート、発注書の発行、IT サービスからのヘルプの入手など、業務関連の一般的な検索項目です。
 
 回答の作成と管理については、「コンテンツを計画 [する」を参照してください](plan-your-content.md)。
 
 ## <a name="next-steps"></a>次の手順
 
-ユーザーが Microsoft Search を使用する方法の詳細については、次の記事を参照してください。
+ユーザーがアプリを使用する方法の詳細については、次Microsoft Search記事を参照してください。
 
 - [Office の Microsoft Search で必要な情報を見つける](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Office 365 トレーニング センター](https://support.office.com/office-training-center)

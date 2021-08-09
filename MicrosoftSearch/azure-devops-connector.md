@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Graphのコネクタ
+title: Azure DevOps GraphコネクタMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Search のAzure DevOps Graphコネクタをセットアップする
-ms.openlocfilehash: bfe04a022360a968424b673ad03ba05f27c8c333
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: ユーザー用のAzure DevOps GraphコネクタをMicrosoft Search
+ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720954"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533346"
 ---
 <!---Previous ms.author: shgrover --->
 
 # <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph コネクタ (プレビュー)
 
-このAzure DevOps Graphコネクタを使用すると、組織は、そのサービスのインスタンス内の作業項目Azure DevOpsできます。 コネクタとインデックス コンテンツを構成した後、Azure DevOpsユーザーは Microsoft Search でそれらのアイテムを検索できます。
+このAzure DevOps Graphコネクタを使用すると、組織は、そのサービスのインスタンス内の作業項目Azure DevOpsできます。 コネクタとインデックス コンテンツを構成した後、エンド Azure DevOpsは、コネクタ内のそれらのアイテムをMicrosoft Search。
 
 > [!NOTE]
 > 一般的な [**コネクタのセットアップGraph**](configure-connector.md) Graphについては、「Graphコネクタのセットアップ」をご覧ください。
@@ -38,7 +38,7 @@ ms.locfileid: "52720954"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: 管理センター GraphコネクタをMicrosoft 365する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -56,7 +56,7 @@ instructions.-->
 
 ### <a name="register-an-app"></a>アプリを登録します
 
-Microsoft Search アプリがインスタンスAzure DevOpsアクセスできるよう、アプリをアプリに登録します。 詳細については、「アプリの登録Azure DevOpsドキュメント」[を参照してください](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
+アプリをアプリに登録Azure DevOps、Microsoft Searchインスタンスにアクセスできます。 詳細については、「アプリの登録Azure DevOpsドキュメント」[を参照してください](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
 
 次の表に、アプリ登録フォームに入力する方法に関するガイダンスを示します。
 
@@ -78,7 +78,7 @@ Microsoft Search アプリがインスタンスAzure DevOpsアクセスできる
 
 ### <a name="connection-settings"></a>接続設定
 
-Microsoft Search アプリをアプリに登録Azure DevOps、接続設定の手順を完了できます。 組織名、アプリ ID、およびクライアント シークレットを入力します。
+アプリを Microsoft Search登録Azure DevOps、接続設定の手順を完了できます。 組織名、アプリ ID、およびクライアント シークレットを入力します。
 
 ![接続アプリケーション 設定](media/ADO_Connection_settings_2.png)
 
@@ -120,7 +120,7 @@ Microsoft Search アプリをアプリに登録Azure DevOps、接続設定の手
 >[!TIP]
 >**既定の結果の種類**
 >* コネクタAzure DevOps発行すると、[結果の種類](./customize-search-page.md#step-2-create-the-result-types)が自動的に登録されます。 結果の種類は、手順 3 で選択したフィールドに基づいて動的に生成された結果レイアウトを使用します。 [](./customize-results-layout.md) 
->* 結果の種類は、管理センターの [**[**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)結果の種類] に移動Microsoft 365 [管理できます](https://admin.microsoft.com)。 既定の結果の種類には"Default" という名前が `ConnectionId` 付けられます。 たとえば、接続 ID がである場合、結果レイアウトの名前は `AzureDevOps` "AzureDevOpsDefault" になります。
+>* 結果の種類を管理するには、次のページの [**[結果**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)の種類] に [Microsoft 365 管理センター。](https://admin.microsoft.com) 既定の結果の種類には"Default" という名前が `ConnectionId` 付けられます。 たとえば、接続 ID がである場合、結果レイアウトの名前は `AzureDevOps` "AzureDevOpsDefault" になります。
 >* また、必要に応じて、独自の結果の種類を作成できます。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

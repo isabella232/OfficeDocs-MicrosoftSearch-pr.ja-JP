@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Microsoft Search を使用して会社の既定の検索エンジンとして Bing を設定する方法について取り上げます。
-ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031757"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534196"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Bing を既定の検索エンジンにする
   
@@ -42,11 +42,11 @@ Bing を規定の検索エンジンとして設定しても、Microsoft Edge で
 4. 作成された GPO を適切なドメインにリンクさせて適用します。
 
 
-## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Windows 10 バージョン 1507 以降の Google Chrome
+## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>バージョン 1507 Windows 10以降の Google Chrome
 
 ユーザーは、このポリシーを設定後に既定の検索エンジンを変更することはできません。
   
-Chrome には、Google Chrome Enterprise ヘルプから ADMX ファイルの形式でダウンロードできるグループ ポリシー設定の独自のセット [が付属しています](https://support.google.com/chrome/a/answer/187202)。
+Chrome には[、Google Chrome](https://support.google.com/chrome/a/answer/187202)から ADMX ファイルの形式でダウンロードできるグループ ポリシー設定の独自のセットEnterpriseがあります。
   
 ドメイン コントローラー上の ADMX ファイルの中央ストアにテンプレート ファイルをコピーします。 詳細については [、「ADMX ファイルを使用Domain-Based GPO の編集」を参照してください](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 コントローラーの中央ストアは、次の名前付け規則を持つフォルダーです **。%systemroot%\sysvol<\\ \> \policyes\PolicyDefinitions**
   

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Salesforce Graph コネクタをセットアップMicrosoft Search
-ms.openlocfilehash: b0b3ba0e41c0e28cac15f4fed491ac8507aa0e59
-ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
+ms.openlocfilehash: f63dacd4e1c7da7d8eac53bc04bcbd108182df132c2e1fa61bdc2ffd0a549d2b
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53529384"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532724"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -181,21 +181,21 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
 - Salesforce API には、Graph コネクタが使用する既知のバグがあります。この場合、現在、リードのプライベート組織全体の既定値は適用されません。  
 - フィールドにプロファイルに対してフィールド レベルセキュリティ (FLS) が設定されている場合、Graph コネクタは、その Salesforce 組織のプロファイルに対してそのフィールドを取り込む必要があります。その結果、ユーザーはそれらのフィールドの値を検索したり、結果に表示したりしなかることができます。  
 - [スキーマの管理] 画面で、これらの一般的な標準プロパティ名が 1 回表示され、オプションは **クエリ**、**検索**、取得、絞り込み、すべてまたはなしに適用されます。
-    - Name
+    - 名前
     - Url
     - 説明
     - FAX
     - Phone
     - MobilePhone
     - 電子メール
-    - 種類
-    - Title
+    - 型
+    - タイトル
     - AccountId
     - AccountName
     - AccountUrl
     - AccountOwner
     - AccountOwnerUrl
-    - Owner
+    - 所有者
     - OwnerUrl
     - CreatedBy
     - CreatedByUrl

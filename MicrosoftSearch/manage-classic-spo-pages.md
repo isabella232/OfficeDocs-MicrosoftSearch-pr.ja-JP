@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online と Microsoft Search のクラシック ページ
+title: '[オンライン] および [SharePoint] のクラシック ページMicrosoft Search'
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,23 +11,23 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 従来の SharePoint ページでの Microsoft Search の使用
-ms.openlocfilehash: 33215c730d34c14f8ce1d55e93730615688f1e2a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 従来Microsoft SearchページでのSharePointの使用
+ms.openlocfilehash: 187a8c78b9f1b78cf1c5ad04ede91a38fe88759d34037226949a441034cb13b9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031433"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533601"
 ---
-# <a name="classic-pages-and-microsoft-search"></a>クラシック ページと Microsoft Search
+# <a name="classic-pages-and-microsoft-search"></a>従来のページとMicrosoft Search
 
-モダン サイトより前に作成された SharePoint サイトでは、従来の検索ボックスと従来の検索結果エクスペリエンスが使用されます。 Microsoft Search を使用するモダン検索エクスペリエンスの使用を開始するために、従来のページを既定で使用する機能を展開します。これは、関連性の高いパーソナライズされた結果を提供します。
+SharePoint以前に作成されたサイトでは、従来の検索ボックスと従来の検索結果エクスペリエンスが使用されます。 従来のページを既定で展開し、Microsoft Search を使用する最新の検索エクスペリエンスの使用を開始します。これは、関連性の高いパーソナライズされた結果を提供します。
 
-従来のサイトを含むすべてのサイトでは Microsoft Search の使用をお勧めしますが、クラシック サイトでカスタム マスター ページを使用している場合や、従来の検索結果エクスペリエンスをカスタマイズした場合は、これらのカスタマイズを自動的に検出し、Microsoft Search に切り替える必要があります。
+従来Microsoft Searchを含むすべてのサイトに対して使用をお勧めしますが、クラシック サイトでカスタム マスター ページを使用している場合や、従来の検索結果エクスペリエンスをカスタマイズした場合は、これらのカスタマイズを自動的に検出し、Microsoft Search に切り替える必要があります。
 
-## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>Microsoft Search に自動的に切り替える従来のサイト
+## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>従来のサイトに自動的に切り替Microsoft Search
 
-以下のすべてが当てはまる場合、従来のサイトでは Microsoft Search の使用が開始されます。
+従来のサイトでは、次Microsoft Searchに当てはまる場合は、そのサイトの使用が開始されます。
 
 * サイトはチーム サイト テンプレート (STS#0 や STS#1 など) に基づいて作成されます。
 * サイトに発行機能が有効になっていません。
@@ -36,7 +36,7 @@ ms.locfileid: "51031433"
 * 既定の結果ソースには、サイトまたはサイト コレクションのカスタム結果の種類はありません。
 * 以下で説明する *SearchBoxInNavBar* 設定を使用して、サイトまたはサイト コレクションがスイッチからオプトアウトされません。
 
-Microsoft Search への切り替え後、サイト内のクラシック ページがスイート ナビゲーション バーに検索ボックスを表示し始め、クラシック検索ボックスをページから削除します。 次に、ユーザーが用語を検索すると、Microsoft Search の最新の検索エクスペリエンスを使用して結果が表示されます。
+サイト内のクラシック Microsoft Searchに切り替えると、スイート ナビゲーション バーに検索ボックスが表示され、従来の検索ボックスがページから削除されます。 次に、ユーザーが用語を検索すると、最新の検索エクスペリエンスを使用して検索結果が表示Microsoft Search。
 
 ## <a name="staying-with-the-classic-search-experience"></a>従来の検索エクスペリエンスを利用する
 
@@ -44,7 +44,7 @@ Microsoft Search への切り替え後、サイト内のクラシック ペー�
 
 このコマンドは、スイッチが発生する前、または発生した後にいつでも使用できます。そのため、以前の検索エクスペリエンスに簡単に戻って操作できます。
 
-以下のコマンドを実行するには、PowerShell と SharePoint PnP PowerShell 拡張機能を使用します。 ここから始める方法について、インストールして詳しい情報を参照 [してください](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 次のコマンドを使用して、サイトまたはサイト コレクションにサインインします。
+以下のコマンドを実行するには、PnP PowerShell 拡張機能を使用SharePoint PowerShell を使用します。 ここから始める方法について、インストールして詳しい情報を参照 [してください](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 次のコマンドを使用して、サイトまたはサイト コレクションにサインインします。
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -65,9 +65,9 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar ModernOnly
 # ModernOnly | Inherit
 ```
 
-## <a name="opting-into-microsoft-search"></a>Microsoft Search のオプトイン
+## <a name="opting-into-microsoft-search"></a>オプトイン Microsoft Search
 
-上記の条件を満たしていないサイト、または従来のサイト コレクション内の特定のサイトに対して、Microsoft Search エクスペリエンスを手動で有効にできます。
+上記の条件を満たしていないサイト、または従来のサイト コレクション内の特定のサイトの場合は、手動で Microsoft Search エクスペリエンスを有効にできます。
 
 特定のサイトのこの設定を変更するには、次のコマンドを使用します。
 
@@ -84,4 +84,4 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar AllPages
 ```
 
 > [!NOTE]
-> チーム サイトまたは発行サイト ("STS"、"CMSPUBLISHING"、"BLANKINTERNET" および "GROUP" を含むテンプレート ID) に対してのみ Microsoft Search を手動で有効にできます。
+> チーム サイトMicrosoft Search発行サイト ("STS"、"CMSPUBLISHING"、"BLANKINTERNET" および "GROUP" を含むテンプレート ID) に対してのみ手動で有効にできます。

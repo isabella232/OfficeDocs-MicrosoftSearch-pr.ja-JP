@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online でカスタム検索結果ページを作成する
+title: オンラインでカスタム検索結果ページをSharePointする
 ms.author: jeffkizn
 author: jeffkizn
 manager: jeffkizn
@@ -7,35 +7,35 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
-description: SharePoint Online サイトの独自の検索結果ページを作成する
-ms.openlocfilehash: b5abb25f15795389dd8b6d5683ac336af7422e0a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: オンライン サイト用の独自の検索結果ページSharePoint作成する
+ms.openlocfilehash: 40944ef1eef7df41cd610b9f4abd037afe91dd8972a1a875901cecbac8756eb4
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031640"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533157"
 ---
-# <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>SharePoint Online でカスタム検索結果ページを作成する
+# <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>オンラインでカスタム検索結果ページをSharePointする
 
-SharePoint で検索エクスペリエンスをカスタマイズする 1 つの方法は、サイトのカスタム検索結果ページを作成することです。 これにより、Microsoft 検索結果ページの既定ではなく、作成したページを使用できます。 これにより、検索結果エクスペリエンスがユーザーに対してどのように表示されるのか、より柔軟に対応できます。
+サイトの検索エクスペリエンスをカスタマイズする 1 SharePointサイトのカスタム検索結果ページを作成することです。 これにより、検索結果ページの既定ではなく、作成したページMicrosoft Searchできます。 これにより、検索結果エクスペリエンスがユーザーに対してどのように表示されるのか、より柔軟に対応できます。
 
 >[!NOTE]
-> 既定で使用可能な既定の Microsoft 検索結果ページに変更を加える場合は、「検索結果のカスタマイズ」 [ページをご覧ください](customize-search-page.md)。
+> 既定で使用できる既定のMicrosoft Searchページに変更を加える場合は、「検索結果のカスタマイズ」[ページを参照してください](customize-search-page.md)。
 
 カスタム結果ページを使用すると、組織のニーズをサポートする検索結果のレイアウトとデザインを制御するために使用できる新しいページを作成できます。 SharePoint Patterns and Practices コミュニティの任意の組み込み Web パーツ、オープンソース検索 Web パーツ、および SharePoint Framework を使用して開発したカスタム Web パーツを使用できます。
 
 ## <a name="configure-a-results-page"></a>結果ページの構成
 
-SharePoint Online でカスタム結果ページを構成するには、次の手順に従います。
+オンラインでカスタム結果ページを構成するにはSharePoint手順に従います。
 
-1. カスタム結果ページを構成するサイトを参照し、[サイトの設定] >[検索設定] > **移動します**。
+1. カスタム結果ページを構成するサイトを参照し、[サイト コレクション] ページ設定 >[検索] 設定 >**に設定。**
 
-2. [検索設定] で、[親と同じ結果ページ設定を使用する]から選択を解除し、[カスタム結果ページにクエリを送信する] を選択し、[結果] ページの URL に値 **を指定します**。 次に、変更を保存します。 ここで使用する URL は、カスタム結果ページとして使用するために作成したページ用である必要があります。
+2. [検索設定で、[親と同じ結果ページ設定を使用する] から選択を解除し、[カスタム結果ページにクエリを送信する] を選択し、[結果] ページの URL に値 **を指定します**。 次に、変更を保存します。 ここで使用する URL は、カスタム結果ページとして使用するために作成したページ用である必要があります。
 
 >[!NOTE]
 > カスタム結果ページは、サイトと同じドメイン上にある必要がありますが、同じサイト コレクション内に存在する必要はない。  
 
-または、[サイトの設定] ページを使用する代わりに [、Set-PnPSearchSettings SharePoint PnP PowerShell](/powershell/module/sharepoint-pnp/set-pnpsearchsettings?view=sharepoint-ps) コマンドを使用して値を設定することもできます。
+または[、Set-PnPSearchSettings SharePoint PnP PowerShell](/powershell/module/sharepoint-pnp/set-pnpsearchsettings?view=sharepoint-ps)コマンドを使用して、[サイト] ページを使用する代わりに値設定することもできます。
 
 設定が完了すると、ページの上部のナビゲーション バーに表示される Microsoft Search ボックスを使用して検索すると、カスタム検索結果ページが表示され、サイト ページまたはサイトのホーム ページから検索を入力するときに使用されます。 リスト、ライブラリ、またはサイト コンテンツ ページ内で検索する場合は使用されません。 リンクを使用して、リストとライブラリの検索結果から検索を展開して、カスタム結果ページに移動できます。
 
@@ -45,12 +45,12 @@ SharePoint Online でカスタム結果ページを構成するには、次の�
 
 ページ レイアウトを設定するには、-LayoutType HeaderlessSearchResults で [Set-PnPClientSidePageSharePoint PnP PowerShell](/powershell/module/sharepoint-pnp/set-pnpclientsidepage?view=sharepoint-ps) コマンドを使用できます。
 
-## <a name="use-sharepoint-framework-query-extensions"></a>SharePoint Framework クエリ拡張機能の使用
+## <a name="use-sharepoint-framework-query-extensions"></a>クエリ拡張機能SharePoint Framework使用する
 
-カスタム検索結果ページでは [、SharePoint Framework クエリ](/sharepoint/dev/spfx/building-search-extensions) 拡張機能を使用して、検索エンジンに送信される前にクエリを変更することもできます。
+カスタム検索結果ページでは、検索エンジンにSharePoint Frameworkクエリ[](/sharepoint/dev/spfx/building-search-extensions)拡張機能を使用してクエリを変更することもできます。
 
 ## <a name="additional-resources"></a>その他のリソース
 
 カスタム結果ページの詳細については [、「Ignite 2019 Search Customization and Development session」を参照してください](https://myignite.techcommunity.microsoft.com/sessions/85238?source=sessions)。
 
-オープン ソース プロジェクトの場合は、Microsoft Search API の使用を開始し、カスタマイズと拡張性のサンプルを追加するには [、GitHub の Microsoft Search を参照してください](https://github.com/microsoft-search)。
+オープン ソース プロジェクトの場合は、Microsoft Search API の使用を開始し、カスタマイズと拡張性のサンプルを追加するには、Microsoft Search[を参照GitHub。](https://github.com/microsoft-search)

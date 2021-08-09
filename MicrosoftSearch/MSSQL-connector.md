@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
-ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
+ms.openlocfilehash: ed9284de968921f40003e011348e3e6d4321b59d86207b6c7d054765c6837a1e
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590263"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533511"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,7 @@ Microsoft SQL Serverまたは Azure SQL Graph コネクタを使用すると、�
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>コネクタ エージェントGraphインストールする (オンプレミスのコネクタMicrosoft SQL Serverのみ)
 
-オンプレミスのサード パーティ製データにアクセスするには、コネクタ エージェントをインストールして構成Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](on-prem-agent.md)する」を参照してください。
+オンプレミスのサード パーティ製データにアクセスするには、コネクタ エージェントをインストールして構成Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](graph-connector-agent.md)する」を参照してください。
 
 >[!NOTE]
 >Microsoft SQL Server Graph コネクタの構成中に Windows 認証を使用する場合、サインインしようとしているユーザーは、Graph コネクタ エージェントがインストールされているコンピューターに対する対話型ログオン権限を持っている必要があります。 ログオン権限を確認するには [、ログオン ポリシー管理に関](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) するドキュメントを参照してください。
@@ -82,7 +82,7 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 セキュリティを強化するには、Azure サーバーまたはデータベースの IP ファイアウォールSQL Server構成できます。 IP ファイアウォールルールの設定の詳細については、IP ファイアウォールルールに関する [ドキュメントを参照してください](/azure/azure-sql/database/firewall-configure)。 ファイアウォール設定に次のクライアント IP 範囲を追加します。
 
-| 地域 | IP 範囲 |
+| Region | IP 範囲 |
 | ------------ | ------------ |
 | NAM | 52.250.92.252/30, 52.224.250.216/30 |
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |

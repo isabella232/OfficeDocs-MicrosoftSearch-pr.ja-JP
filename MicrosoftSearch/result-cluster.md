@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: コネクタの結果クラスター エクスペリエンスの詳細
-ms.openlocfilehash: ae5528f2e12c9e331b66e821f2a9c03947d788df
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 912e27942e9ae3bfef874ae66227880af676b7a1a28449cc82ae8fc02f4446c0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031775"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533979"
 ---
-# <a name="graph-connectors-result-cluster"></a>グラフ コネクタの結果クラスター
+# <a name="graph-connectors-result-cluster"></a>Graphコネクタの結果クラスター
 
-## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>Graph コネクタの結果クラスターの概要 (プレビュー)  
+## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>コネクタの結果Graphクラスターの概要 (プレビュー)  
 
-Graph コネクタの結果クラスターを使用すると、企業は既定のビューでサード パーティのデータ ソースからコンテンツを検索できます。[すべて] タブ (SharePoint、Office.com、および Bing の Microsoft Search)。
+Graph コネクタの結果クラスターを使用すると、企業は既定のビューでサード パーティのデータ ソースからコンテンツを検索できます。SharePoint、Office.com、および Bing の Microsoft Search タブ。
 
 結果クラスターは、ユーザーがすべてのサード パーティコンテンツを 1 か所で検出するのに役立ちます。 結果クラスターに表示される結果は、検索の垂直方向の構成に基づいてグループ化されます。
 
@@ -45,18 +45,18 @@ Graph コネクタの結果クラスターを使用すると、企業は既定�
 
 組織レベルでエクスペリエンスを有効にする手順は次のとおりです。
 
-1. Microsoft [365 管理センターで、[](https://admin.microsoft.com)バーティカル] [**に移動します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)。
+1. [バーティ [Microsoft 365 管理センター](https://admin.microsoft.com)に [**移動します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)。
 2. [すべての垂直 **] を** 選択し、[コネクタの **結果を表示する] を有効にします**。 
 
 
-SharePoint サイト レベルでエクスペリエンスを有効にする手順は次のとおりです。
+次の手順に従って、サイト レベルでエクスペリエンスSharePointします。
 
-1. 結果クラスター エクスペリエンスが必要な SharePoint サイトで、[設定] に **移動します**。
+1. 結果クラスター SharePointするサイトで、次のページに **設定。**
 2. [サイト情報 **] [** > **すべてのサイト設定を表示する] に移動します**。
-3. [Microsoft Search] セクションに移動し、[このサイト コレクション **の Microsoft Search の構成] を選択します**。
+3. [サイト コレクション] セクションMicrosoft Search、このサイト コレクション **の [Microsoft Search構成] を選択します**。
 4. ナビゲーション ウィンドウで、[カスタム エクスペリエンス] に **移動し**、[垂直] **を選択します**。
 5. [すべての垂直 **] を** 選択し、[コネクタの **結果を表示する] を有効にします**。
 
 ## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>有効にした後で、結果クラスター エクスペリエンスを表示する
 
-結果クラスター エクスペリエンスを有効にした後、表示には最大で 12 時間かかる場合があります。 エクスペリエンスがすぐに必要な場合は、sharePoint の URL に *cacheClear=true* を追加し、Office。
+結果クラスター エクスペリエンスを有効にした後、表示には最大で 12 時間かかる場合があります。 エクスペリエンスがすぐに必要な場合は、キャッシュの URL に *cacheClear=true* を追加SharePointし、Office。

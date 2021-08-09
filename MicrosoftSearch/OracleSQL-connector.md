@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search SQL Oracle のグラフ コネクタ
+title: Oracle SQL Graph コネクタMicrosoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,32 +13,32 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Microsoft Search 用の Oracle SQLグラフ コネクタをセットアップします。
-ms.openlocfilehash: 7ad3d03c73ce051c43f3b3ea094130a837d3177f
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Oracle SQL Graph コネクタをセットアップMicrosoft Search。
+ms.openlocfilehash: 5c45998796a606c61f1fa4a63693fe7a32bb8da7a5267bd1456452ed4872dc84
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031424"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533448"
 ---
 <!---Previous ms.author:vivg --->
 
-# <a name="oracle-sql-graph-connector"></a>Oracle SQL グラフ コネクタ
+# <a name="oracle-sql-graph-connector"></a>Oracle SQL Graph コネクタ
 
-Oracle SQL グラフ コネクタを使用すると、組織はオンプレミスの Oracle データベースからデータを検出してインデックスを作成できます。 コネクタは、指定されたコンテンツを Microsoft Search にインデックス付けします。 ソース データを使用してインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 Oracle SQLコネクタを使用すると、特定のユーザーの検索結果へのアクセスを制限できます。
+Oracle SQL Graphコネクタを使用すると、組織はオンプレミスの Oracle データベースからデータを検出してインデックスを作成できます。 コネクタは、指定したコンテンツにインデックスを付け、Microsoft Search。 ソース データを使用してインデックスを最新の状態に保つために、定期的なフル クロールと増分クロールをサポートします。 Oracle SQLコネクタを使用すると、特定のユーザーの検索結果へのアクセスを制限できます。
 
 > [!NOTE]
-> Graph コネクタ [**のセットアップの一**](configure-connector.md) 般的な手順については、Graph コネクタのセットアップに関する記事をご覧ください。
+> 一般的な [**コネクタのセットアップGraph**](configure-connector.md) Graphについては、「Graphコネクタのセットアップ」をご覧ください。
 
-この記事は、Oracle データ グラフ コネクタを構成、実行、および監視するSQLです。 これは、一般的なセットアップ プロセスを補足し、Oracle SQL Graph コネクタにのみ適用される手順を示します。 この記事には、トラブルシューティングと [制限事項に関](#troubleshooting) する情報 [も含まれています](#limitations)。
+この記事は、Oracle デバイス コネクタを構成、実行、および監視するSQL Graphです。 これは、一般的なセットアップ プロセスを補足し、Oracle コネクタとコネクタにのみ適用されるSQL Graphします。 この記事には、トラブルシューティングと [制限事項に関](#troubleshooting) する情報 [も含まれています](#limitations)。
 
 ## <a name="before-you-get-started"></a>使用を開始する前に
 
-### <a name="install-the-graph-connector-agent"></a>Graph コネクタ エージェントのインストール
+### <a name="install-the-graph-connector-agent"></a>コネクタ エージェントGraphインストールする
 
-オンプレミスのサードパーティ データにアクセスするには、Graph コネクタ エージェントをインストールして構成する必要があります。 詳細については [、「Graph コネクタ エージェントのインストール](on-prem-agent.md) 」を参照してください。  
+オンプレミスのサード パーティ製データにアクセスするには、コネクタ エージェントをインストールして構成Graph必要があります。 詳細については[、「Graphコネクタ エージェントをインストール](graph-connector-agent.md)する」を参照してください。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Microsoft 365 管理センターに Graph コネクタを追加する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -50,18 +50,18 @@ Oracle SQL グラフ コネクタを使用すると、組織はオンプレミ�
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
-Oracle SQLコネクタをデータ ソースに接続するには、クロールするデータベース サーバーとオンプレミスの Graph コネクタ エージェントを構成する必要があります。 その後、必要な認証方法でデータベースに接続できます。
+Oracle SQL コネクタをデータ ソースに接続するには、クロールするデータベース サーバーとオンプレミスのコネクタ エージェントを構成Graph必要があります。 その後、必要な認証方法でデータベースに接続できます。
 
 Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、およびパスワードと共に、ホスト名、ポート、およびサービス (データベース) 名を指定する必要があります。
 
 > [!NOTE]
-> コネクタを接続するには、データベースで Oracle データベース バージョン 11g 以降を実行する必要があります。 コネクタは、Windows、Linux、Azure VM プラットフォームでホストされる Oracle データベースをサポートします。
+> コネクタを接続するには、データベースで Oracle データベース バージョン 11g 以降を実行する必要があります。 コネクタは、ユーザー、Linux、および Azure VM Windowsホストされる Oracle データベースをサポートします。
 
-データベース コンテンツを検索するには、コネクタを構成するときにSQLクエリを指定する必要があります。 これらのSQLクエリでは、インデックスを作成するデータベース列 (つまり、ソース プロパティ) に名前を付け、すべての列を取得するために実行する必要がある SQL 結合を含む必要があります。 検索結果へのアクセスを制限するには、コネクタを構成するときに、アクセス制御リスト (ACL) をSQLクエリ内で指定する必要があります。
+データベース コンテンツを検索するには、コネクタを構成するときにSQLクエリを指定する必要があります。 これらのSQLクエリでは、インデックスを作成するデータベース列 (つまり、ソース プロパティ) に名前を付け、すべての列を取得するために実行する必要がある SQL 結合を含む必要があります。 検索結果へのアクセスを制限するには、コネクタを構成するときに、アクセス制御リスト (ACL) SQLクエリ内で指定する必要があります。
 
 ## <a name="step-3a-full-crawl-required"></a>手順 3a: フル クロール (必須)
 
-この手順では、データベースのフル クロールSQLクエリを構成します。 フル クロールでは、クエリ、検索、または取得のオプションを選択するすべての列または **プロパティが** 選択 **されます**。 ACL 列を指定して、検索結果へのアクセスを特定のユーザーまたはグループに制限することもできます。
+この手順では、データベースのフル クロールSQL実行するクエリを構成します。 フル クロールでは、クエリ、検索、または取得のオプションを選択するすべての列または **プロパティが** 選択 **されます**。 ACL 列を指定して、検索結果へのアクセスを特定のユーザーまたはグループに制限することもできます。
 
 > [!Tip]
 > 必要なすべての列を取得するには、複数のテーブルを結合できます。
@@ -87,7 +87,7 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 
 ### <a name="supported-data-types"></a>サポートされているデータ型
 
-次の表に、Oracle コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされる Microsoft Graph コネクタのデータ型の詳細については、プロパティ リソースの種類に関する [ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+次の表に、Oracle コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされている Microsoft Graph コネクタの詳細については、プロパティ リソースの種類に関する[ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | カテゴリ | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
@@ -130,14 +130,14 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 ACL として使用するには、次の ID の種類がサポートされています。
 
 * **ユーザー プリンシパル名 (UPN)**: ユーザー プリンシパル名 (UPN) は、電子メール アドレス形式のシステム ユーザーの名前です。 UPN (たとえば、john.doe@domain.com) は、ユーザー名 (ログオン名)、区切り記号 (@ 記号)、およびドメイン名 (UPN サフィックス) で構成されます。
-* **Azure Active Directory (AAD) ID**: Azure AD では、すべてのユーザーまたはグループに、'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' のようなオブジェクト ID があります。
+* **Azure Active Directory (AAD) ID**: Azure AD では、すべてのユーザーまたはグループに'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' のようなオブジェクト ID があります。
 * **Active Directory (AD)** セキュリティ ID : オンプレミスの AD セットアップでは、すべてのユーザーとグループに、'S-1-5-21-3878594291-2115959936-132693609-65242.
 
 ![アクセス制御リストを構成するための検索アクセス許可設定](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>手順 3b: 増分クロール (オプション)
 
-このオプションの手順では、データベースSQL増分クロールを実行するためのクエリを提供します。 このクエリを使用すると、SQLコネクタによって、前回の増分クロール以降のデータに対する変更が決定されます。 フル クロールと同様に、クエリ、検索、または **取得のオプション****の間** で **選択します**。 フル クロール クエリで指定したのと同じ ACL 列のセットを指定します。
+このオプションの手順では、データベースSQLを実行するためのクエリを提供します。 このクエリを使用すると、SQLコネクタによって、前回の増分クロール以降のデータに対する変更が決定されます。 フル クロールと同様に、クエリ、検索、または **取得のオプション****の間** で **選択します**。 フル クロール クエリで指定したのと同じ ACL 列のセットを指定します。
 
 次の図のコンポーネントは、1 つの例外を除き、フル クロール コンポーネントに似たものとなります。 この場合、「ModifiedDateTime」は選択された透かし列です。 フル クロール [の手順を確認して](#step-3a-full-crawl-required) 、増分クロール クエリを記述する方法を説明し、例として次のイメージを参照してください。
 
@@ -161,7 +161,7 @@ ACL として使用するには、次の ID の種類がサポートされてい
 
 Oracle SQL コネクタは、フル クロールと増分クロールの両方の更新スケジュールをサポートします。 両方を設定することをお勧めします。
 
-完全クロール スケジュールでは、以前に Microsoft Search インデックスに同期された削除済み行と、同期フィルターから移動した行が検索されます。 最初にデータベースに接続すると、フル クロールが実行され、フル クロール クエリから取得された行すべてが同期されます。 新しい行を同期して更新するには、増分クロールをスケジュールする必要があります。
+フル クロール スケジュールでは、以前に同期された削除済み行と、Microsoft Searchフィルターから移動した行が検索されます。 最初にデータベースに接続すると、フル クロールが実行され、フル クロール クエリから取得された行すべてが同期されます。 新しい行を同期して更新するには、増分クロールをスケジュールする必要があります。
 
 ## <a name="step-8-review-connection"></a>手順 8: 接続の確認
 

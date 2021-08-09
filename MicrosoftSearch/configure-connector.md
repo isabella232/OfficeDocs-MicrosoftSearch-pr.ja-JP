@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 用の Microsoft Graphコネクタを構成する
+title: Microsoft が構築したコネクタGraph構成Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,31 +12,31 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft によるGraphコネクタのセットアップの概要
-ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: Microsoft による Graph コネクタの設定の概要
+ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720945"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533324"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft によるGraphコネクタのセットアップの概要 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft による Graph コネクタの設定の概要 
 
-この記事では、Microsoft が管理センターで Graph コネクタをセットアップするために必要Microsoft 365[を示します](https://admin.microsoft.com)。 基本的なプロセスには、以下のステップが含まれます。  
+この記事では、Microsoft によるコネクタのセットアップに必要Graph基本的なプロセス[について説明](https://admin.microsoft.com)Microsoft 365 管理センター。 基本的なプロセスには、以下のステップが含まれます。  
 <!---Add links to each section in the doc--->
 
-1. [管理センター GraphコネクタをMicrosoft 365する](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
-2. [接続に名前を付け](#step-2-name-the-connection)
-3. [接続設定の構成](#step-3-configure-the-connection-settings)
+1. [Microsoft 365 管理センターで Graph コネクタを追加する](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+2. [接続に名前を指定する](#step-2-name-the-connection)
+3. [接続設定を構成する](#step-3-configure-the-connection-settings)
 4. [検索のアクセス許可を管理する](#step-4-manage-search-permissions)
-5. [プロパティ ラベルの割り当て](#step-5-assign-property-labels)
+5. [プロパティ ラベルを割り当てる](#step-5-assign-property-labels)
 6. [スキーマを管理する](#step-6-manage-schema)
-7. [更新設定](#step-7-refresh-settings)
-8. [接続の確認](#step-8-review-connection)
+7. [設定を更新する](#step-7-refresh-settings)
+8. [接続を確認する](#step-8-review-connection)
 
 この記事には、トラブルシューティング、制限事項、および次の手順に関する情報も含まれています。
 
@@ -51,11 +51,11 @@ ms.locfileid: "52720945"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: 管理センター GraphコネクタをMicrosoft 365する
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>手順 1: Graphコネクタを追加Microsoft 365 管理センター
 
 以下の手順を実行して、Microsoft が構築したコネクタGraphします。
 
-1. 管理センターで管理者アカウント[にサインインMicrosoft 365します](https://admin.microsoft.com)。
+1. [アカウント] で管理者アカウント[にサインインMicrosoft 365 管理センター。](https://admin.microsoft.com)
 
 2. ナビゲーション ウィンドウで、[検索] を選択 **設定** し、[検索] を選択&**します**。 [コネクタ] [タブを選択します](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
@@ -133,12 +133,12 @@ Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azur
 
 検索スキーマ属性には、クエリ、 **検索**、 **取得**、絞り込 **み** などのオプション **があります**。 次の表に、Microsoft がコネクタでサポートする各Graphを示し、その機能について説明します。
 
-検索スキーマ属性 | 機能 | 例
+検索スキーマ属性 | 職務 | 例
 --- | --- | ---
 SEARCH | プロパティのテキスト コンテンツを検索可能にする。 プロパティの内容は、フルテキスト インデックスに含まれます。 | プロパティが **title** の場合は、テキスト **または** Enterpriseの単語を含む **Enterpriseを返** します。
 QUERY | 特定のプロパティの一致をクエリで検索します。 その後、クエリでプロパティ名をプログラムまたは動詞で指定できます。 |  Title プロパティ **をクエリ** できる場合は、**クエリ Title: Enterprise** サポートされます。
 RETRIEVE | 検索可能なプロパティのみを結果の種類で使用し、検索結果に表示できます。 |
-REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同様に使用できます。 | 接続のセットアップ中に[](custom-filters.md)絞り込みプロパティがマークされている場合、組織内のユーザーは検索結果ページの URL でフィルター処理できます
+REFINE | 絞り込みオプションは、[検索結果] ページMicrosoft Search使用できます。 | 接続のセットアップ中に[](custom-filters.md)絞り込みプロパティがマークされている場合、組織内のユーザーは検索結果ページの URL でフィルター処理できます
 
 ファイル共有コネクタを除くすべてのコネクタでは、ユーザー設定の種類を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティの一覧にマップされた検索スキーマが必要です。 接続ウィザードでは、選択したソース プロパティのセットに基づいて検索スキーマが自動的に選択されます。 このスキーマを変更するには、検索スキーマ ページの各プロパティと属性のチェック ボックスをオンにします。
 
@@ -160,7 +160,7 @@ REFINE | 絞り込みオプションは、Microsoft 検索結果ページと同�
 
 ## <a name="step-7-refresh-settings"></a>手順 7: 設定の更新
 
-更新間隔は、データ ソースと Microsoft Search の間でデータを同期する頻度を決定します。 データ ソースの種類ごとに、データの変更頻度と変更の種類に基づいて、最適な更新スケジュールのセットが異なります。
+更新間隔は、データ ソースとデータ ソースの間でデータを同期する頻度をMicrosoft Search。 データ ソースの種類ごとに、データの変更頻度と変更の種類に基づいて、最適な更新スケジュールのセットが異なります。
 
 更新間隔には、完全更新と増分更新の2種類がありますが、一部のデータ ソースでは増分更新を使用できません。
 
