@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
-ms.openlocfilehash: a7f2fe8b5278df9368c3036895450a74ad7eae8a644aedc147fb16dd0efdd46e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 42bcdfbd8d2b00a54a1fa73c41331bb36cc90e3c903ad52cb7b37888a4fb317e
+ms.sourcegitcommit: cd773596e613bf9a8d64990807c1078d8953cda1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533184"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57801959"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -103,7 +103,7 @@ Microsoft Graphおよび Microsoft Search API は一般に使用できるが、�
 * [Azure DevOps コネクタ](azure-devops-connector.md)
 * [Salesforce コネクタ](salesforce-connector.md)
 * [ソース ACL を使用](servicenow-connector.md) する検索アクセス許可を持つ ServiceNow コネクタ
-* [結果のクラスターを管理する](result-cluster.md)
+* [カスタム フィルターを管理する](custom-filters.md)
 * [垂直の複数の接続](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>検索結果をカスタマイズおよび構成する方法
