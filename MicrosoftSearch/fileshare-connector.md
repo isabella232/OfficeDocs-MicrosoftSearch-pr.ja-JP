@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: ファイル共有コネクタをGraphするMicrosoft Search
-ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
+ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533028"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57823017"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -64,7 +64,27 @@ ms.locfileid: "54533028"
 
 コネクタがファイルをクロールしようとすると、そのメタデータ内の "最終アクセス時刻" フィールドが更新されます。 アーカイブソリューションとバックアップ ソリューションのフィールドに依存し、コネクタがアクセスするときに更新しない場合は、[詳細設定] ページでこのオプション **を構成** できます。
 
-## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
+## <a name="step-4-limits-for-file-indexing"></a>手順 4: ファイルのインデックス作成の制限
+
+ファイル共有接続を構成する場合、管理者はファイルとフォルダーのインデックス作成を制限できます。 これを行う方法は複数あります。
+
+#### <a name="based-on-file-types"></a>ファイルの種類に基づく
+
+これらの形式のテキストコンテンツだけがインデックス付けされます。DOC、DOCM、DOCX、DOTX、EML、HTML、MHT、MHTML、MSG、OBS、OBT、ODP、ODS、ODT、1、PDF、POT、PPS、PPTM、PPTX、TXT、XLB、XLC、XLSB、XLSX、XLT、XLT、XLX、XML、XPS。 この形式に属していないマルチメディア ファイルとファイルの場合、唯一のメタデータがインデックス付けされます。
+
+#### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>最終変更日または最終変更後の日数に基づく
+
+#### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>インデックス作成を制限するファイル/フォルダーまたは正規表現の完全なネットワーク パス 
+
+ネットワーク パスでは、次のような特殊文字の前にエスケープ文字 ( \\ ) を使用します \\ 。 例: パス CONTOSO FILE SHAREDFOLDER の場合、正しい入力方法 \\ \\ \\ は CONTOSO FILE \\ \\ \\ \\ \\ \\ \\ \\ \\ SHAREDFOLDER です
+
+正規表現を記述するルールについては、こちらを参照 [してください。](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
+
+管理者は、制限ルールに例外を与える機能も持っています。 例外ルールの優先度は、制限ルールよりも優先されます。 同様の方法で、インデックス作成に含めるアイテムのフォルダー/ファイル パスを指定することで例外を定義できます。
+
+![制限と例外](media/file-connector/ExclusionRule.png)
+
+## <a name="step-5-manage-search-permissions"></a>手順 5: 検索アクセス許可を管理する
 
 [検索アクセス許可の管理] ページで目的のオプションを選択することにより、Share Access Control Lists または New Technology File System (NTFS) Access Control Lists に基づいて任意のファイルを検索するアクセス許可を制限できます。  これらのアクセス制御リストで提供されるユーザー アカウントとグループは、Active Directory (AD) によって管理する必要があります。 ユーザー アカウント管理に他のシステムを使用している場合は、[すべてのユーザー] オプションを選択して、ユーザーがアクセス制限なしですべてのファイルを検索できます。 ただし、ユーザーがファイルを開く場合は、ソースで設定されたアクセス制御が適用されます。
 
@@ -74,22 +94,22 @@ ms.locfileid: "54533028"
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
-## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
+## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
+## <a name="step-7-manage-schema"></a>手順 7: スキーマの管理
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a>手順 7: 更新設定を選択する
+## <a name="step-8-choose-refresh-settings"></a>手順 8: 更新設定を選択する
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a>手順 8: 接続の確認
+## <a name="step-9-review-connection"></a>手順 9: 接続の確認
 
 一般的なセットアップ [手順に従います](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
