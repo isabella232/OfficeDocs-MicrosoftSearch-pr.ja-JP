@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: ファイル共有コネクタをGraphするMicrosoft Search
-ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
-ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
+ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57823017"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235907"
 ---
 <!---Previous ms.author: rusamai --->
 

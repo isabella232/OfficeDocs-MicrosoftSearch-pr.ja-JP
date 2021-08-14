@@ -1,8 +1,8 @@
 ---
 title: コネクタの結果クラスター
-ms.author: manusi
-author: manusi
-manager: ruppala
+ms.author: masingh
+author: maheshsinghania
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: コネクタの結果クラスター エクスペリエンスの詳細
-ms.openlocfilehash: 912e27942e9ae3bfef874ae66227880af676b7a1a28449cc82ae8fc02f4446c0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: c90cc98415be6a42d32b646894cb04305ecb6542
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533979"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235885"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graphコネクタの結果クラスター
 
-## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>コネクタの結果Graphクラスターの概要 (プレビュー)  
+## <a name="overview-of-the-graph-connectors-result-cluster"></a>コネクタの結果Graphクラスターの概要  
 
 Graph コネクタの結果クラスターを使用すると、企業は既定のビューでサード パーティのデータ ソースからコンテンツを検索できます。SharePoint、Office.com、および Bing の Microsoft Search タブ。
 
@@ -35,28 +35,27 @@ Graph コネクタの結果クラスターを使用すると、企業は既定�
 
 結果クラスターが表示される頻度は、構成する検索バーティカルの数やコンテンツの種類などの要因によって異なります。 結果クラスターを操作または無視することで、ユーザーは時間の間にトリガーを調整するヒントを暗黙的に提供します。
 
-結果クラスターに表示されるコネクタ アイテムの検索結果エクスペリエンスでは、ユーザーが定義 [した結果の種類](./customize-search-page.md#create-your-own-result-type) を使用します。 結果の種類が構成されていない場合は、 [システムによって生成されたレイアウトが](./customize-search-page.md#default-search-result-layout) 使用されます。 
+結果クラスターに表示されるコネクタ アイテムの検索結果エクスペリエンスでは、ユーザーが定義 [した結果の種類](./customize-search-page.md#create-your-own-result-type) を使用します。 結果の種類が構成されていない場合は、 [システムによって生成されたレイアウトが](./customize-search-page.md#default-search-result-layout) 使用されます。
 
-検索結果のタイトルとして "title" プロパティ、検索の説明として "content" プロパティを使用することをお勧めします。 これにより、結果クラスターの正確なトリガーとクラスター内の最も関連性の高い結果を通じて、ユーザーにとって最適なエクスペリエンスが提供されます。 
+検索結果のタイトルとして "title" プロパティ、検索の説明として "content" プロパティを使用することをお勧めします。 これにより、結果クラスターの正確なトリガーとクラスター内の最も関連性の高い結果を通じて、ユーザーにとって最適なエクスペリエンスが提供されます。
 
-## <a name="enable-result-clusters"></a>結果クラスターを有効にする
+結果クラスターは、[すべての垂直] のページの中央に表示されます。 たとえば、"MediaWiki" 垂直からの結果クラスターが下に表示されます。
+
+![MediaWiki 結果クラスターの例](media/result-cluster/result-cluster-example.png)
+
+## <a name="result-clusters-default-settings"></a>結果クラスターの既定の設定
   
-結果のクラスター エクスペリエンスは既定で無効になっています。  
+結果のクラスター エクスペリエンスは既定でオンになっています。  
 
-組織レベルでエクスペリエンスを有効にする手順は次のとおりです。
+無効にする場合は、次の手順に従って組織レベルでのエクスペリエンスをオフにします。
 
 1. [バーティ [Microsoft 365 管理センター](https://admin.microsoft.com)に [**移動します**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)。
-2. [すべての垂直 **] を** 選択し、[コネクタの **結果を表示する] を有効にします**。 
-
+1. [すべての垂直 **] を** 選択し、[コネクタの **結果を非表示にする] を有効にします**。
 
 次の手順に従って、サイト レベルでエクスペリエンスSharePointします。
 
-1. 結果クラスター SharePointするサイトで、次のページに **設定。**
+1. サイトの **設定** に移動SharePointします。
 2. [サイト情報 **] [** > **すべてのサイト設定を表示する] に移動します**。
 3. [サイト コレクション] セクションMicrosoft Search、このサイト コレクション **の [Microsoft Search構成] を選択します**。
 4. ナビゲーション ウィンドウで、[カスタム エクスペリエンス] に **移動し**、[垂直] **を選択します**。
-5. [すべての垂直 **] を** 選択し、[コネクタの **結果を表示する] を有効にします**。
-
-## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>有効にした後で、結果クラスター エクスペリエンスを表示する
-
-結果クラスター エクスペリエンスを有効にした後、表示には最大で 12 時間かかる場合があります。 エクスペリエンスがすぐに必要な場合は、キャッシュの URL に *cacheClear=true* を追加SharePointし、Office。
+5. [すべての垂直 **] を** 選択し、[コネクタの **結果を非表示にする] を有効にします**。

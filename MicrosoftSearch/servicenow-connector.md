@@ -1,8 +1,8 @@
 ---
 title: ServiceNow GraphコネクタMicrosoft Search
-ms.author: mecampos
-author: mecampos
-manager: umas
+ms.author: kam1
+author: TheKarthikeyan
+manager: harshkum
 audience: Admin
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: サービスの ServiceNow Graph コネクタをMicrosoft Search
-ms.openlocfilehash: 11abe956e624fa23cd19e2dfc2ae9a4af31a0f81407f6e2c5672723c5fdfc8b5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b07776dfd6e2ae8ae87b43ac61e9f92495311ca8
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534133"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235881"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -26,6 +26,10 @@ ms.locfileid: "54534133"
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph コネクタ
 
 Microsoft Graph コネクタ for ServiceNow を使用すると、組織内のすべてのユーザーに表示される、または組織内のユーザー条件のアクセス許可で制限されているナレッジ ベースの記事にインデックスを作成できます。 ServiceNow からコネクタとインデックス コンテンツを構成した後、エンド ユーザーは任意のクライアントからそれらの記事Microsoft Searchできます。  
+
+また、次の[ビデオを参照して](https://www.youtube.com/watch?v=TVSkJpk1RiE)、検索アクセス許可を管理Graphコネクタの機能の詳細について説明します。
+
+[![ServiceNow 用 Microsoft Graph コネクタでの検索アクセス許可の管理](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 この記事は、Microsoft 365管理者または ServiceNow サーバー コネクタを構成、実行、および監視するGraphです。 この記事では、「コネクタ コネクタのセットアップ」に記載されている一般的Graph[補足](configure-connector.md)します。 まだ実行していない場合は、「コネクタのセットアップ」の記事Graph一般的なセットアップ プロセスを理解してください。
 
@@ -43,7 +47,7 @@ ServiceNow データに接続するには、組織の ServiceNow インスタン
 
 この URL と共に、ServiceNow への接続をセットアップするサービス アカウントと、Microsoft Search が更新スケジュールに基づいてナレッジ記事を定期的に更新できるようにする必要があります。  サービス アカウントでは、さまざまなエンティティを正常にクロールするには、次の **ServiceNow** テーブル レコードへの読み取りアクセスが必要です。
 
-**機能** | **読み取りアクセス必須テーブル** | **Description**
+**機能** | **読み取りアクセス必須テーブル** | **説明**
 --- | --- | ---
 すべてのユーザーが利用できるナレッジ 記事の <em>インデックスを作成する</em> | kb_knowledge | ナレッジ記事をクロールする場合
 ユーザー条件のアクセス許可のインデックスとサポート | kb_uc_can_read_mtom | Whoナレッジ ベースを読み取る
@@ -85,7 +89,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 クライアント シークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Searchの通信を承認できます。 | シークレットをパスワードとして扱って、セキュリティのベスト プラクティスに従います。
 リダイレクト URL | 承認サーバーがリダイレクトする必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 ロゴ URL | アプリケーション ロゴのイメージを含む URL。 | 該当なし
-アクティブ | チェック ボックスをオンにして、アプリケーション レジストリをアクティブにします。 | アクティブに設定する
+Active | チェック ボックスをオンにして、アプリケーション レジストリをアクティブにします。 | アクティブに設定する
 トークンのライフスパンの更新 | 更新トークンが有効な秒の数。 既定では、更新トークンの有効期限は 100 日 (8,640,000 秒) です。 | 31,536,000 (1 年)
 アクセス トークンのライフスパン | アクセス トークンが有効な秒の数。 | 43,200 (12 時間)
 
@@ -134,7 +138,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 --- | ---
 ディレクトリ ID (テナント ID) | 手順 3.a から、Azure Active Directoryテナントの一意の ID。
 アプリケーション ID (クライアント ID) | 手順 3.a で登録されているアプリケーションの一意の ID。
-クライアント シークレット | アプリケーションの秘密キー (手順 3.b から)。 パスワードのように扱います。
+クライアントの秘密情報 | アプリケーションの秘密キー (手順 3.b から)。 パスワードのように扱います。
 サービス プリンシパル ID | サービスとして実行されているアプリケーションの ID。 (手順 3.c から)
 
 ### <a name="step-334-register-servicenow-application"></a>手順 3.3.4: ServiceNow アプリケーションの登録
@@ -149,7 +153,7 @@ ServiceNow インスタンスには、次の構成が必要です。
    --- | --- | ---
    名前 | OAuth OIDC エンティティを識別する一意の名前。 | Azure AD
    クライアント ID | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 手順 3.a のアプリケーション (クライアント) ID
-   クライアント シークレット | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント シークレット。 | 手順 3.b のクライアント シークレット
+   クライアントの秘密情報 | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント シークレット。 | 手順 3.b のクライアント シークレット
 
    その他の値はすべて既定で指定できます。
 
@@ -202,9 +206,6 @@ ServiceNow コネクタは、[すべてのユーザー]または [このデー�
 
 ServiceNow Graph コネクタは、高度なスクリプトを使用せずに既定のユーザー条件のアクセス許可をサポートします。 コネクタが高度なスクリプトでユーザー条件を検出すると、そのユーザー条件を使用しているすべてのデータが検索結果に表示されません。
 
->[!NOTE]
->[この **データ ソースにアクセスできるユーザーのみ] を選択するには、** テナントで対象のリリース更新プログラムを有効にします。 ターゲット リリースの設定の詳細については [、「Setup Targeted release options」を参照してください。](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
-
 [このデータソースへのアクセス権を持つユーザーのみ] を選択する場合は、ServiceNow インスタンスに Azure Active Directory (AAD) プロビジョニングされたユーザーまたは非 AAD ユーザーが含まれるかどうかをさらに選択する必要があります。
 
 >[!NOTE]
@@ -212,9 +213,6 @@ ServiceNow Graph コネクタは、高度なスクリプトを使用せずに既
 
 ID の種類に対して "非 AAD" を選択した場合は、「Id のマッピング方法については、「Map your [Azure AD Id」](map-non-aad.md) を参照してください。 
 
-検索アクセス許可の管理の詳細については、次のビデオを参照してください。
-
-[![ServiceNow 用 Microsoft Graph コネクタでの検索アクセス許可の管理](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 ## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
@@ -266,5 +264,7 @@ PROD | 北アメリカ | 52.250.92.252/30, 52.224.250.216/30
 PROD | ヨーロッパ | 20.54.41.208/30, 51.105.159.88/30 
 PROD | アジア太平洋 | 52.139.188.212/30, 20.43.146.44/30 
 
+#### <a name="23-access-permissions-not-working-as-expected"></a>2.3. アクセス許可が期待通り動作しない
+検索結果に適用されるアクセス許可に不一致が見られた場合は、ナレッジ ベースと記事へのアクセスを管理する際のユーザー条件に関するアクセス フロー グラフ [を確認します](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)。
 
 その他の問題がある場合、またはフィードバックを提供する場合は、お問い [合わせ aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)

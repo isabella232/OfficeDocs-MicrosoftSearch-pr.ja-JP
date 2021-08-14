@@ -17,7 +17,7 @@
 ### [コネクタ ギャラリー](connectors-gallery.md)
 ### Microsoft 提供の設定コネクタ
 #### [セットアップの概要](configure-connector.md)
-#### [グラフ コネクタ エージェントを設定する](on-prem-agent.md)
+#### [グラフ コネクタ エージェントを設定する](graph-connector-agent.md)
 #### [Azure AD 以外の ID をマップする](map-non-aad.md)
 #### [Azure AD の ID をマップする](map-aad.md)
 #### コネクタ固有情報

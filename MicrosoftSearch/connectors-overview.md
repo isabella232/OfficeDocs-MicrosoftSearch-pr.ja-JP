@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
-ms.openlocfilehash: 42bcdfbd8d2b00a54a1fa73c41331bb36cc90e3c903ad52cb7b37888a4fb317e
-ms.sourcegitcommit: cd773596e613bf9a8d64990807c1078d8953cda1
+ms.openlocfilehash: 8b7c4545022765a5e903f2ba98490dae0cd40e85
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57801959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235862"
 ---
 <!---Previous ms.author: monaray --->
 

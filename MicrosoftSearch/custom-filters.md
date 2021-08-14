@@ -12,18 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: カスタム フィルターを管理する
-ms.openlocfilehash: 339c7e96a00860a044a4e1af7382932f8e440e01b8b6d12445c24c1ea9b8cad0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 256cf9748aa3050aacf48c3562f6f84b4ba2e460
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533130"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235925"
 ---
 # <a name="manage-custom-filters"></a>カスタム フィルターを管理する
 
 フィルターを使用して、ユーザー エクスペリエンスMicrosoft Searchできます。 フィルターを使用すると、ユーザーは検索クエリから一連の結果をすばやく絞り込みます。
 
 カスタム フィルターは、接続プロパティに基づいて垂直方向の内部に作成できます。 たとえば、垂直方向の内部に **ServiceNow** 接続の発行済み On フィルターを作成できます。
+
+> [!NOTE]
+> カスタム フィルターは、現在、ターゲット リリースの管理者とエンド ユーザーのプレビュー中です。 プレビューの詳細については [、「Connectors preview features」を参照してください](connectors-overview.md#what-are-the-preview-features)。
 
 ## <a name="create-a-filter-in-an-organizational-level-vertical"></a>組織レベルの垂直方向にフィルターを作成する
 
@@ -42,10 +45,10 @@ Microsoft 検索でフィルターを作成するには、次の手順を実行�
     - コネクタソースのプロパティへのエイリアスにフィルターを作成できます
     - 垂直に複数の接続がある場合は、これらの接続間で共通のフィルターを作成できます。 これは、異なる接続間でソース プロパティをエイリアスする共通のエイリアスにフィルターを作成することで実行できます。 たとえば、次のようにエイリアスを作成することで、ServiceNow と Jira 接続全体で作成者フィルターを作成できます。
 
-    | Connection | プロパティ | エイリアス |
+    | Connection | プロパティ | Alias |
     | --- | --- | --- |
     | 今すぐサービス | 所有者 | Author |
-    | Jira | 発行者 | Author |
+    | Jira | Publisher | Author |
 
 1. フィルターは垂直のスコープ内に存在します。
 

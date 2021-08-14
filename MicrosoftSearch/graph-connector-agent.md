@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-prem Agent
-ms.openlocfilehash: a17ad4637f7618a6f1109fb5de177c9a673a4fa6b791711e807107676749ccc5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235941"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph コネクタ エージェント
 

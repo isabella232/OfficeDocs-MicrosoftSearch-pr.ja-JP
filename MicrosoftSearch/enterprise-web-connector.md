@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Web サイトのEnterpriseコネクタGraph設定Microsoft Search
-ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533083"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235937"
 ---
 <!---Previous ms.author: monaray --->
 

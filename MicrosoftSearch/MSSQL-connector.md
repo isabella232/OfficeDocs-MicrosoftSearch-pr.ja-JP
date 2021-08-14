@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: ed9284de968921f40003e011348e3e6d4321b59d86207b6c7d054765c6837a1e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9e8a9784c139873b4584f9be0a42e51f101bd7d6
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533511"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58236033"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -120,11 +120,11 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 次の表は、MS SQLおよび Azure SQL コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされている Microsoft Graph コネクタの詳細については、プロパティ リソースの種類に関する[ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
-| カテゴリ | ソース データ型 | データ型のインデックス作成 |
+| Category | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
 | 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
-| 正確な数値 | bigint <br> 整数 <br> smallint <br> tinyint | int64 |
-| 正確な数値 | ビット | ブール値 |
+| 正確な数値 | bigint <br> int <br> smallint <br> tinyint | int64 |
+| 正確な数値 | ビット | boolean |
 | 近似数値 | 浮動小数点数 <br> 本当の | double |
 | 文字の文字列 | char <br> varchar <br> text | string |
 | Unicode 文字の文字列 | nchar <br> nvarchar <br> ntext | string |

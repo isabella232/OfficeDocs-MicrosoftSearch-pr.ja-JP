@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Oracle SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: 5c45998796a606c61f1fa4a63693fe7a32bb8da7a5267bd1456452ed4872dc84
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58236013"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -89,7 +89,7 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 
 次の表に、Oracle コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされている Microsoft Graph コネクタの詳細については、プロパティ リソースの種類に関する[ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
-| カテゴリ | ソース データ型 | データ型のインデックス作成 |
+| Category | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
 | 数値データ型 | NUMBER(p,0) | int64 (p <= 18) <br> double (p > 18) |
 | 浮動小数点数のデータ型 | NUMBER(p,s) <br> FLOAT(p) | double |

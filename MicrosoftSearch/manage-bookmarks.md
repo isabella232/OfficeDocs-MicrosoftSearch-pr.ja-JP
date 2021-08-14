@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークを作成して更新し、ブックマークの結果を一括編集Microsoft Search
-ms.openlocfilehash: 1362082bf33bd4a30ff2ae76e2fa05a3ccd8962c4ef5f5cb15f41fc183d0c4b9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533806"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235956"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -54,11 +54,7 @@ ms.locfileid: "54533806"
 - **下** 書き : 下書きとして保存されたブックマークは、ユーザーが使用できません。 自分や他の関係者がブックマークを公開する前に確認または更新する場合は、この状態を使用します。
 - **スケジュール**: 指定した日付と時刻に発行されるブックマーク。
 
-コンテンツ作成者ブラウザー拡張機能Microsoft Searchを使用して、ブックマークを簡単に追加できます。 ブラウザー拡張機能をインストールするには、ブックマークとして追加するサイトに移動し、拡張機能で [追加] をクリックします。
-Edge と Chrome の拡張機能をインストールします。
-
-- エッジChromium Chrome の場合: Chrome Web ストアに[移動し、](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)拡張機能を追加します。
-- 従来のエッジの場合: [エッジ] に[移動Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)拡張機能を追加します。
+コンテンツ作成者ブラウザー拡張機能Microsoft Searchを使用して、ブックマークを簡単に追加できます。 ブックマークとして追加するサイトに移動し、拡張機能で [追加] をクリックします。 Chrome または Google Chrome Microsoft Edge拡張機能をインストールするには[、Chrome Web](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)ストアに移動してブラウザーに追加します。
 
 ### <a name="import-sharepoint-results"></a>検索結果SharePointインポート
 
