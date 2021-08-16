@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 検索カテゴリを追加し、検索結果をカスタマイズする
-ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 440b9afbbeb4c4cd86b2b9f67443e644c36ce042
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533067"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340080"
 ---
 # <a name="customize-the-search-results-page"></a>検索結果ページをカスタマイズする
 
@@ -39,7 +39,7 @@ Microsoft Search 結果ページの上部には、タブが表示される行が
 複数のコネクタ ソースからの検索結果を垂直方向の検索で表示できます。 これにより、検索結果ページを設計する柔軟性が向上します。 垂直セットアップの既存の管理エクスペリエンスでは、"コンテンツ ソース" ステップで複数の接続を選択できます。
 可能な限り多くのセマンティック ラベルを正確に任命すると、このエクスペリエンスが強化されます。 スキーマの定義と取り込み時にセマンティック ラベルを追加できます。
 
-[セ](configure-connector.md#step-5-assign-property-labels) マンティック ラベルを作成および管理する方法に関する追加情報を次に示します。
+[セ](configure-connector.md#step-6-assign-property-labels) マンティック ラベルを作成および管理する方法に関する追加情報を次に示します。
 
 > [!NOTE]
 > 垂直の複数の接続が現在プレビュー中です。 プレビューの詳細については [、「Connectors preview features」を参照してください](connectors-overview.md#what-are-the-preview-features)。
@@ -180,9 +180,9 @@ KQL では、プロファイル クエリ [変数を使用](#profile-query-varia
 
 | #         | 構文 |  戻り値  |
 | --------- | ------ | --- |
-| 1    | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
-| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} 電子メールはオブジェクトなので、これは解決できません。|
-| 3    | {?MyProperty:{Profile.emails}}  |  メールはオブジェクトなので、これは解決しない。 "? 演算子は、解決しないクエリ変数を無視します。 この変数は、クエリ スタックの下にさらに渡されると削除されます。   |
+| 1     | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 2  | MyProperty:{Profile.emails}   |    {Profile.emails} 電子メールはオブジェクトなので、これは解決できません。|
+| 3     | {?MyProperty:{Profile.emails}}  |  メールはオブジェクトなので、これは解決しない。 "? 演算子は、解決しないクエリ変数を無視します。 この変数は、クエリ スタックの下にさらに渡されると削除されます。   |
 | 4  | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
 
 > [!NOTE]

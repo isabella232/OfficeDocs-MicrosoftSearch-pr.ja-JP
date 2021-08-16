@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft による Graph コネクタの設定の概要
-ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533324"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340089"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -32,11 +32,12 @@ ms.locfileid: "54533324"
 1. [Microsoft 365 管理センターで Graph コネクタを追加する](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [接続に名前を指定する](#step-2-name-the-connection)
 3. [接続設定を構成する](#step-3-configure-the-connection-settings)
-4. [検索のアクセス許可を管理する](#step-4-manage-search-permissions)
-5. [プロパティ ラベルを割り当てる](#step-5-assign-property-labels)
-6. [スキーマを管理する](#step-6-manage-schema)
-7. [設定を更新する](#step-7-refresh-settings)
-8. [接続を確認する](#step-8-review-connection)
+4. [プロパティの選択](#step-4-select-properties)
+5. [検索のアクセス許可を管理する](#step-5-manage-search-permissions)
+6. [プロパティ ラベルを割り当てる](#step-6-assign-property-labels)
+7. [スキーマを管理する](#step-7-manage-schema)
+8. [設定を更新する](#step-8-refresh-settings)
+9. [接続を確認する](#step-9-review-connection)
 
 この記事には、トラブルシューティング、制限事項、および次の手順に関する情報も含まれています。
 
@@ -57,7 +58,7 @@ ms.locfileid: "54533324"
 
 1. [アカウント] で管理者アカウント[にサインインMicrosoft 365 管理センター。](https://admin.microsoft.com)
 
-2. ナビゲーション ウィンドウで、[検索] を選択 **設定** し、[検索] を選択&**します**。 [コネクタ] [タブを選択します](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+2. ナビゲーション ウィンドウで、[検索] を選択 **設定** し、[検索] を選択&**します**。 [データ ソース [] タブを選択します](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
 3. **[+追加]** を選択し、使用可能なオプションのメニューから選択したデータ ソースを選択します。
 
@@ -74,24 +75,33 @@ ms.locfileid: "54533324"
 * Name (必須)
 * 接続 ID (必須)
 * 説明 (省略可能)
+* [選択] チェック ボックス (必須)
 
 接続 ID は、コネクタの暗黙的なプロパティを作成します。 英数字のみを含み、最大 32 文字にする必要があります。
 
 ## <a name="step-3-configure-the-connection-settings"></a>手順 3: 接続設定を構成する
 
-接続設定を構成するプロセスは、データ ソースの種類によって異なります。 セットアップ プロセスでこの手順を完了するには、テナントに追加するデータ ソースの種類に関するコネクタ固有の情報を参照してください。  
+接続設定を構成するプロセスは、データ ソースの種類によって異なります。 セットアップ プロセス [でこの手順を](/microsoftsearch/servicenow-connector#step-31-basic-authentication) 完了するには、テナントに追加するデータ ソースの種類に関するコネクタ固有の情報を参照してください。  
 
 オンプレミス データ ソースへの接続の詳細については、「オンプレミス データ ゲートウェイのインストール [」を参照してください](/data-integration/gateway/service-gateway-install)。
 
-## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
+## <a name="step-4-select-properties"></a>手順 4: プロパティの選択
 
-アクセス制御リスト (ACL) は、組織内のユーザーがデータの各アイテムにアクセスできるかどうかを決定します。  
+ユーザーがインデックスを作成するプロパティを選択Microsoft Search。 
+
+ServiceNow クエリを使用すると、データがインデックス化される前にデータをフィルター処理Microsoft Search。これにより、検索できるデータを詳細に制御できます。 ServiceNow クエリの詳細については、「ServiceNow クエリについて [」を参照してください](https://go.microsoft.com/fwlink/?linkid=2151447)。 
+
+## <a name="step-5-manage-search-permissions"></a>手順 5: 検索アクセス許可を管理する
+
+アクセス制御リスト (ACL) は、組織内のユーザーが各アイテムにアクセスできるかどうかを決定します。  
 
 Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azure-data-lake-connector.md)のような一部のコネクタは、Azure Active Directory [(Azure AD)](/azure/active-directory/) ACL をネイティブにサポートします。
 
 [ServiceNow、Azure DevOps、Salesforce](servicenow-connector.md)[などの](azure-devops-connector.md)他のコネクタは[、Azure](salesforce-connector.md)以外のユーザーとグループAD同期をサポートします。  
 
-## <a name="step-5-assign-property-labels"></a>手順 5: プロパティ ラベルを割り当てる
+[すべてのユーザー] を選択すると、組織内のすべてのユーザーが、このデータ ソースの検索結果を表示できます。
+
+## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
 セマンティック ラベルは、[プロパティ ラベルの割り当て] ページでソース プロパティに割り当てることができます。 ラベルは、意味的な意味を提供する Microsoft によって提供される既知のタグです。 これらの機能を使用すると、Microsoft は、拡張検索、Microsoft 365、インテリジェント検出など、さまざまなエクスペリエンスにコネクタ データを統合できます。  
 
@@ -101,13 +111,13 @@ Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azur
 --- | ---  
 **title** | 検索やその他のエクスペリエンスに表示するアイテムのタイトル
 **url** | ソース システム内のアイテムのターゲット URL
-**createdBy** | アイテムを作成したユーザーの名前
-**lastModifiedBy** | アイテムを最近編集したユーザーの名前
-**authors** | アイテムに参加/共同作業を行ったユーザーの名前
-**createdDateTime** | アイテムが作成されたのは、いつ
-**lastModifiedDateTime** | アイテムが最近編集された場合
-**fileName** | ファイル アイテムの名前
-**FileExtension** | ファイル アイテムの種類 (.pdf .word など)
+**Created By** | アイテムを作成したユーザーの名前
+**最終更新者** | アイテムを最近編集したユーザーの名前
+**Authors** | アイテムに参加/共同作業を行ったユーザーの名前
+**作成された日付時刻** | アイテムが作成されたのは、いつ
+**最終更新日時** | アイテムが最近編集された場合
+**ファイル名** | ファイル アイテムの名前
+**ファイル拡張子** | ファイル アイテムの種類 (.pdf .word など)
 
 このページのプロパティは、データ ソースに基づいて事前に選択されますが、特定のラベルに適した別のプロパティがある場合は、この選択を変更できます。  
 
@@ -115,7 +125,7 @@ Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azur
 
 ラベルを正しくマッピングしないと、検索エクスペリエンスが低下します。 一部のラベルにプロパティが割り当てられていない場合は問題ありません。  
 
-## <a name="step-6-manage-schema"></a>手順 6: スキーマを管理する
+## <a name="step-7-manage-schema"></a>手順 7: スキーマの管理
 
 ### <a name="content-property"></a>Content プロパティ
 
@@ -133,7 +143,7 @@ Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azur
 
 検索スキーマ属性には、クエリ、 **検索**、 **取得**、絞り込 **み** などのオプション **があります**。 次の表に、Microsoft がコネクタでサポートする各Graphを示し、その機能について説明します。
 
-検索スキーマ属性 | 職務 | 例
+検索スキーマ属性 | 関数 | 例
 --- | --- | ---
 SEARCH | プロパティのテキスト コンテンツを検索可能にする。 プロパティの内容は、フルテキスト インデックスに含まれます。 | プロパティが **title** の場合は、テキスト **または** Enterpriseの単語を含む **Enterpriseを返** します。
 QUERY | 特定のプロパティの一致をクエリで検索します。 その後、クエリでプロパティ名をプログラムまたは動詞で指定できます。 |  Title プロパティ **をクエリ** できる場合は、**クエリ Title: Enterprise** サポートされます。
@@ -158,7 +168,7 @@ REFINE | 絞り込みオプションは、[検索結果] ページMicrosoft Sear
 > [!NOTE]
 > 接続を作成した後は **、スキーマを** 変更できます。 これを行うには、接続を削除して新しい接続を作成する必要があります。
 
-## <a name="step-7-refresh-settings"></a>手順 7: 設定の更新
+## <a name="step-8-refresh-settings"></a>手順 8: 設定の更新
 
 更新間隔は、データ ソースとデータ ソースの間でデータを同期する頻度をMicrosoft Search。 データ ソースの種類ごとに、データの変更頻度と変更の種類に基づいて、最適な更新スケジュールのセットが異なります。
 
@@ -181,7 +191,7 @@ REFINE | 絞り込みオプションは、[検索結果] ページMicrosoft Sear
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>手順 8: 接続の確認
+## <a name="step-9-review-connection"></a>手順 9: 接続の確認
 
 接続を完了する前に、必要に応じて構成全体を確認し、設定を編集できます。 **まだデータ ソースのコネクタ固有の情報を読み取っていない場合は、必ずお読みください。** 接続 **を完了する準備** ができたら、[更新の完了] を選択します。
 

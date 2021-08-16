@@ -12,14 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: On-prem Agent
-ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235941"
+ms.locfileid: "58340098"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph コネクタ エージェント
 
@@ -45,6 +44,8 @@ ms.locfileid: "58235941"
 4. https://<span>gcs.office.</span>com/
 5. https://<span>graph.microsoft.</span>com/
 
+>[!NOTE]
+>プロキシ認証はサポートされていません。 環境に認証が必要なプロキシがある場合は、コネクタ エージェントがプロキシをバイパスできます。
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>エージェント用のアプリを作成および構成する  
 
@@ -147,6 +148,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 ### <a name="installation-failure"></a>インストールエラー
+
 インストールに失敗した場合は、msiexec /i "\GcaInstaller.msi" <path to msi> /L*V " \install.log" を実行してインストール ログ <destination path> を確認します。 エラーが解決できない場合は、ログを使用して MicrosoftGraphConnectorsFeedback@service.microsoft.com サポートにアクセスします。
 
 ### <a name="registration-failure"></a>登録エラー
