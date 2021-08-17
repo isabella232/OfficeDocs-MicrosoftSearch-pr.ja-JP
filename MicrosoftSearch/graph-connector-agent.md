@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: On-prem Agent
-ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
+ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340098"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58363243"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph コネクタ エージェント
 
@@ -141,15 +141,17 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 6. 証明書を右クリックし、[すべてのタスクの **プライベート キー** の  >  **管理] オプションを選択** します。
 
-7. [アクセス許可] ダイアログで、[追加] オプションを選択します。 ユーザー選択ダイアログで、NT **Service\GcaHostService と** 書き込み **、[OK] をクリックします**。 [名前の確認] **ボタンをクリック** しない。
+7. [アクセス許可] ダイアログで、[追加] オプションを選択します。 新しいウィンドウがポップアップします。 [場所] オプションを選択します。 表示されている場所の一覧からエージェントがインストールされているコンピューターを選択し **、[OK] をクリックします**。
 
-8. [アクセス許可] ダイアログで [ok] をクリックします。 エージェント コンピューターが、証明書を使用してトークンを生成するようにエージェントが構成されました。
+8. ユーザー選択ダイアログで、NT **Service\GcaHostService と** 書き込み **、[OK] をクリックします**。 [名前の確認] **ボタンをクリック** しない。
+
+9. [アクセス許可] ダイアログで [ok] をクリックします。 エージェント コンピューターが、証明書を使用してトークンを生成するようにエージェントが構成されました。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 ### <a name="installation-failure"></a>インストールエラー
 
-インストールに失敗した場合は、msiexec /i "\GcaInstaller.msi" <path to msi> /L*V " \install.log" を実行してインストール ログ <destination path> を確認します。 エラーが解決できない場合は、ログを使用して MicrosoftGraphConnectorsFeedback@service.microsoft.com サポートにアクセスします。
+インストールに失敗した場合は、msiexec/i "msi >\GcaInstaller.msi への < パス" /L*V "< 宛先パス >\install.log" を実行してインストール ログを確認します。 エラーが解決できない場合は、ログを使用して MicrosoftGraphConnectorsFeedback@service.microsoft.com サポートにアクセスします。
 
 ### <a name="registration-failure"></a>登録エラー
 
