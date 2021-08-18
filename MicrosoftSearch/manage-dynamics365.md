@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: 検索結果での Dynamics 365 コンテンツの表示方法を管理する
-ms.openlocfilehash: 65d6d27028f46751270cb3a50a154063de4fbab72d917f94aa8925693ac9ea2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
+ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533653"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380035"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 フェデレーション検索 (プレビュー)
 
@@ -25,7 +25,7 @@ ms.locfileid: "54533653"
 * システム境界から離れきらないデータ
 * 組織がクラウドにインデックスを作成したくない、事前に保存された機密データ
 
-フェデレーション検索接続を介してアクセスされるデータは、フェデレーション検索接続でインデックスMicrosoft Search。 また、Microsoft の組み込みコネクタを使用すると、フェデレーション検索接続を簡単にセットアップできます。 Dynamics 365 コネクタは現在プレビュー中です。 プレビューへの参加に興味がある場合は、次のページ[aka.ms/D365FederationSearchPreview。](https://aka.ms/D365FederationSearchPreview)
+フェデレーション検索接続を介してアクセスされるデータは、フェデレーション検索接続でインデックスMicrosoft Search。 また、Microsoft の組み込みコネクタを使用すると、フェデレーション検索接続を簡単にセットアップできます。 Dynamics 365 コネクタは現在プレビュー中です。 プレビューへの参加に興味がある場合は、次のページ[aka.ms/D365FederationSearchPreview。](https://aka.ms/D365FederationSearchPreview) リリースの時間枠については、「ロードマップ」[をMicrosoft Searchしてください](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)。
 
 ## <a name="dynamics-365-federation-connector"></a>Dynamics 365 フェデレーション コネクタ
 
