@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: 9e8a9784c139873b4584f9be0a42e51f101bd7d6
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: f80e3e1b86a120981c4dafd95715c00cd766f5e9
+ms.sourcegitcommit: 17cc660ec51bea11ab65f62655584c65c84a1d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58236033"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58406947"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -75,14 +75,15 @@ Azure SQL コネクタの場合は、アプリがインデックス作成Azure A
 
 Microsoft SQL Serverコネクタをデータ ソースに接続するには、クロールするデータベース サーバーと on-prem エージェントを構成する必要があります。 その後、必要な認証方法でデータベースに接続できます。
 
-> [!NOTE] 
-> データベースを接続するにはSQL Serverバージョン 2008 以降Microsoft SQL Server実行する必要があります。
+> [!NOTE]
+> - データベースを接続するにはSQL Serverバージョン 2008 以降Microsoft SQL Server実行する必要があります。
+> - Azure SQL グラフ コネクタでは、同じテナント内の Azure SQL インスタンスからの取[](/azure/active-directory/develop/quickstart-create-new-tenant)り込みのみを許可Microsoft 365。 テナント間のデータ フローはサポートされていません。
 
 Azure SQLコネクタの場合は、接続先のサーバー名または IP アドレスのみを指定する必要があります。 Azure SQLコネクタは、データベースAzure Active Directory接続するための Open ID 接続 (OIDC) 認証のみをサポートします。
 
 セキュリティを強化するには、Azure サーバーまたはデータベースの IP ファイアウォールSQL Server構成できます。 IP ファイアウォールルールの設定の詳細については、IP ファイアウォールルールに関する [ドキュメントを参照してください](/azure/azure-sql/database/firewall-configure)。 ファイアウォール設定に次のクライアント IP 範囲を追加します。
 
-| Region | IP 範囲 |
+| 地域 | IP 範囲 |
 | ------------ | ------------ |
 | NAM | 52.250.92.252/30, 52.224.250.216/30 |
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
@@ -105,6 +106,8 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 次のクエリ例に示すように、データ列を選択します。 `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
+このコネクタではSQL SELECT 句で英数字以外の列名を使用することはできません。 エイリアスを使用して、列名から英数字以外の文字を削除します。 例 - SELECT *column_name* AS *columnName*
+
 検索結果へのアクセスを管理するには、クエリで 1 つ以上の ACL 列を指定できます。 このSQLを使用すると、レコード レベルごとにアクセスを制御できます。 テーブル内のすべてのレコードに対して同じアクセス制御を使用できます。 ACL 情報が別のテーブルに格納されている場合は、クエリでそれらのテーブルとの結合を行う必要がある場合があります。
 
 上記のクエリで各 ACL 列を使用する方法を以下に示します。 次の一覧では、4 つのアクセス **制御メカニズムについて説明します**。
@@ -120,7 +123,7 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 次の表は、MS SQLおよび Azure SQL コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされている Microsoft Graph コネクタの詳細については、プロパティ リソースの種類に関する[ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
-| Category | ソース データ型 | データ型のインデックス作成 |
+| カテゴリ | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
 | 日時 | date <br> 日付型 <br> datetime2 <br> smalldatetime | 日付型 |
 | 正確な数値 | bigint <br> int <br> smallint <br> tinyint | int64 |
@@ -217,6 +220,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 | 構成手順 | エラー メッセージ | 考えられる理由 |
 | ------------ | ------------ | ------------ |
 | フル クロール | `Error from database server: A transport level error has occurred when receiving results from the server.` | このエラーは、ネットワークの問題が原因で発生します。 Microsoft ネットワーク モニターを使用してネットワーク ログを確認し [、Microsoft](https://www.microsoft.com/download/details.aspx?id=4865) カスタマー サポートに問い合わせください。 |
+| フル クロール | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | SELECT 句の列名では、英数字以外の文字 (アンダースコアなど) は使用できません。 エイリアスを使用して列の名前を変更し、英数字以外の文字を削除します (例 - AS columnName column_name選択)。 |
 
 ## <a name="limitations"></a>制限事項
 

@@ -13,15 +13,13 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph コネクタを管理Microsoft Search。
-ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 0a4165af84cc11fbba4239f0204a3a7f3ce4fb25
+ms.sourcegitcommit: d276bfd1e03d1cdc1f51f70368df333da1d0111a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532911"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58408210"
 ---
-<!-- markdownlint-disable no-inline-html -->
-
 # <a name="monitor-your-connections"></a>接続を監視する
 
 コネクタにアクセスして管理するには、テナントの検索管理者として指定されている必要があります。 テナント管理者に問い合わせて、検索管理者の役割を準備します。
@@ -32,7 +30,7 @@ ms.locfileid: "54532911"
 
 コネクタの種類ごとに[、次Microsoft 365 管理センター](https://admin.microsoft.com)に示す操作がサポートされます。
 
-操作 | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
+操作​​ | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
 --- | --- | ---
 接続の追加 | :heavy_check_mark: (「セットアップの概要[」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:
@@ -59,24 +57,16 @@ ms.locfileid: "54532911"
 
 使用可能なインデックスクォータと使用量は、コネクタのランディング ページに表示されます。
 
-![インデックス クォータ使用率バー](media/quota_utilization.png)
- 
->[!NOTE]
->プレビュー期間中、すべての組織がコネクタを試Graph、すべての接続で最大 200 万アイテムの無料の固定クォータが提供されました。 Graphコネクタが一般に利用可能になると、プレビューで Graph コネクタを使用している組織の無料クォータは 2021 年 4 月 1 日に期限切れになります。
->Microsoft が[Graph"Preview"](./connectors-overview.md)というラベルのコネクタは、組織の合計課金インデックス クォータに含まれません。 ただし、組織に対して構成できる最大接続数 10 と、組織が接続間でインデックスを作成できる最大 700 万アイテムの数にカウントされます。各接続は 700,000 アイテムに制限されます。 
+:::image type="content" alt-text="インデックス クォータ使用率バー。" source="media/quota_utilization.png" lightbox="media/quota_utilization.png":::
 
 クォータ使用率バーは、組織によるクォータの消費に基づいてさまざまな状態を示します。
 
 状態 | クォータ使用率レベル
 --- | --- 
 標準 | 0-79%
-高 | 80-89%
-クリティカル | 90%-99%
+高い | 80-89%
+致命的 | 90%-99%
 Full | 100%
-
-<!-- 
-![Quota utilization levels](media/connectors-quota-utilization-levels.png)
--->
 
 インデックスが作成されたアイテムの数も、接続ごとに表示されます。 各接続によってインデックス付けされたアイテムの数は、組織で使用可能な合計クォータに貢献します。
 
@@ -92,4 +82,4 @@ Full | 100%
 
 * コンテンツが取り込み過ぎた接続を特定し、それらを更新して、割り当て量を設定するためにインデックスを作成する項目が少なすぎます。 接続を更新するには、削除して、少ないアイテムをもたらす新しい取り込みフィルターを使用して新しい接続を作成する必要があります。
 
-* 1 つ以上の接続を完全に削除する
+* 1 つ以上の接続を完全に削除します。
