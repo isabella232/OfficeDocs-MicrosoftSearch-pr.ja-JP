@@ -1,0 +1,81 @@
+## YamlMime:Hub
+title: Microsoft Searchのドキュメント
+summary: 組織Microsoft Search関連性の高い検索結果を提供することで、生産性を向上させる方法を管理します。
+metadata:
+  title: Microsoft Searchドキュメント
+  description: Microsoft Search、組織に関連性の高い検索結果を提供することで、生産性を向上させ、時間を節約できます。
+  ms.service: mssearch
+  ms.topic: landing-page
+  author: jeffkizn
+  ms.author: jeffkizn
+  ms.date: 05/29/2020
+highlightedContent:
+  items:
+    - title: 詳細については、Microsoft Search
+      itemType: overview
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/'
+    - title: Microsoft Searchロードマップ
+      itemType: reference
+      url: 'https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Microsoft%20Search'
+    - title: 導入リソース
+      itemType: get-started
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/#adoption'
+    - title: Microsoft Search YouTube のページ
+      itemType: video
+      url: 'https://www.youtube.com/channel/UC-d4Q5pvRf6IVJuWY8wpAFw/'
+additionalContent:
+  sections:
+    - title: 管理
+      items:
+        - title: Microsoft Search管理者の設定
+          links:
+            - text: 一般的な概要
+              url: overview-microsoft-search.md
+            - text: Microsoft Search のセットアップ
+              url: setup-microsoft-search.md
+            - text: よく寄せられる質問
+              url: faqs.md
+        - title: ユーザーから分析情報を取得する
+          links:
+            - text: 使用状況レポートの検索
+              url: usage-reports.md
+            - text: ユーザーからのフィードバックを表示する
+              url: manage-feedback.md
+        - title: 回答の提供
+          links:
+            - text: ブックマークの管理
+              url: manage-bookmarks.md
+            - text: 頭字語の管理
+              url: manage-acronyms.md
+            - text: 間取図を管理する
+              url: manage-floorplans.md
+            - text: 場所の管理
+              url: manage-locations.md
+            - text: 管理Power BI
+              url: manage-powerbi.md
+            - text: Q&A の管理
+              url: manage-qas.md
+        - title: データ ソースの管理
+          links:
+            - text: Graphコネクタの概要
+              url: connectors-overview.md
+            - text: セットアップ Graph コネクタ
+              url: configure-connector.md
+            - text: フェデレーション コネクタの管理
+              url: manage-dynamics365.md
+        - title: エンド ユーザー UX のカスタマイズ
+          links:
+            - text: 業界および結果の種類を管理する
+              url: customize-search-page.md
+            - text: SERP レイアウトのカスタマイズ
+              url: customize-results-layout.md
+            - text: フィルターの管理
+              url: custom-filters.md
+            - text: 結果クラスターの管理
+              url: result-cluster.md
+        - title: 検索クライアント
+          links:
+            - text: Microsoft SearchのSharePoint
+              url: get-started-search-in-sharepoint-online.md
+            - text: Microsoft SearchのMicrosoft SearchについてBing
+              url: security-for-search.md
