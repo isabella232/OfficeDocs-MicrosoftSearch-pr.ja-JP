@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: サービスの ServiceNow Graph コネクタをMicrosoft Search
-ms.openlocfilehash: b07776dfd6e2ae8ae87b43ac61e9f92495311ca8
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: fccae6c2a007470eb9ef56130cb952158c01610c
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235881"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701914"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -29,7 +29,7 @@ Microsoft Graph コネクタ for ServiceNow を使用すると、組織内のす
 
 また、次の[ビデオを参照して](https://www.youtube.com/watch?v=TVSkJpk1RiE)、検索アクセス許可を管理Graphコネクタの機能の詳細について説明します。
 
-[![ServiceNow 用 Microsoft Graph コネクタでの検索アクセス許可の管理](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
+[![Microsoft Graph コネクタ for ServiceNow での検索アクセス許可の管理。](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 この記事は、Microsoft 365管理者または ServiceNow サーバー コネクタを構成、実行、および監視するGraphです。 この記事では、「コネクタ コネクタのセットアップ」に記載されている一般的Graph[補足](configure-connector.md)します。 まだ実行していない場合は、「コネクタのセットアップ」の記事Graph一般的なセットアップ プロセスを理解してください。
 
@@ -82,7 +82,7 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 
 次の表に、エンドポイント作成フォームに入力する方法のガイダンスを示します。
 
-フィールド | 説明 | 推奨値 
+Field | 説明 | 推奨値 
 --- | --- | ---
 名前 | OAuth アクセスが必要なアプリケーションを識別する一意の値。 | Microsoft Search
 クライアント ID | アプリケーションの読み取り専用で自動生成された一意の ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 該当なし
@@ -149,7 +149,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 2. 次の表に、OIDC プロバイダー登録フォームに入力する方法のガイダンスを示します。
 
-   フィールド | 説明 | 推奨値
+   Field | 説明 | 推奨値
    --- | --- | ---
    名前 | OAuth OIDC エンティティを識別する一意の名前。 | Azure AD
    クライアント ID | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 手順 3.a のアプリケーション (クライアント) ID
@@ -161,7 +161,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 4. 次の表に、OIDC プロバイダー構成フォームに入力する方法のガイダンスを示します。
 
-   フィールド | 推奨値
+   Field | 推奨値
    --- | ---
    OIDC プロバイダー |  Azure AD
    OIDC メタデータ URL | URL は \: 、/.well known/openid-configuration login.microsoftonline.com/<https //login.microsoftonline.com/<tenandId">形式である必要があります。 <br/>手順 3.a から "tenantID" をディレクトリ (テナント) ID に置き換えてください。
@@ -179,7 +179,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 次の表は、ServiceNow ユーザー アカウントの登録に記入する方法に関するガイダンスを示しています。
 
-フィールド | 推奨値
+Field | 推奨値
 --- | ---
 ユーザー ID | 手順 3.c のサービス プリンシパル ID
 Web サービス アクセスのみ | Checked

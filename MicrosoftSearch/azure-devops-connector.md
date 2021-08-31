@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: ユーザー用のAzure DevOps GraphコネクタをMicrosoft Search
-ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533346"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701392"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -66,7 +66,7 @@ instructions.-->
 | アプリケーション名     | 承認するアプリケーションを識別する一意の値。    | Microsoft Search     |
 | アプリケーション Web サイト  | コネクタのセットアップ中にアプリケーション インスタンスへのアクセスを要求Azure DevOpsの URL。 (必須)。  | https://<span>gcs.office.</span>com/
 | 承認コールバック URL        | 承認サーバーがリダイレクトする必要なコールバック URL。 | https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback|
-| 承認済みスコープ | アプリケーションのアクセス範囲 | ID (読み取り)、ワーク アイテム (読み取り)、変数グループ (読み取り)、Projectチーム (読み取り)、Graph (読み取り) の範囲を選択します。|
+| 承認済みスコープ | アプリケーションのアクセス範囲 | 次のスコープを選択します。ID (読み取り)、ワーク アイテム (読み取り)、変数グループ (読み取り)、Project とチーム (読み取り)、Graph (読み取り)、Analytics (読み取り)|
 
 >[!IMPORTANT]
 >アプリに対して選択する承認済みスコープは、上記の範囲と完全に一致する必要があります。 リスト内のいずれかの承認済みスコープを省略するか、別のスコープを追加すると、承認は失敗します。
@@ -80,7 +80,7 @@ instructions.-->
 
 アプリを Microsoft Search登録Azure DevOps、接続設定の手順を完了できます。 組織名、アプリ ID、およびクライアント シークレットを入力します。
 
-![接続アプリケーション 設定](media/ADO_Connection_settings_2.png)
+![接続アプリケーション 設定。](media/ADO_Connection_settings_2.png)
 
 ### <a name="configure-data-select-projects-and-fields"></a>データの構成: プロジェクトとフィールドの選択
 
@@ -90,11 +90,11 @@ instructions.-->
 
 個々のプロジェクトを選択すると、それらのプロジェクトの作業項目だけがインデックス化されます。
 
-![データの構成](media/ADO_Configure_data.png)
+![データを構成します。](media/ADO_Configure_data.png)
 
 次に、接続でこれらのフィールドのデータにインデックスを付け、プレビューするフィールドを選択してから、次に進みます。
 
-![プロパティの選択](media/ADO_choose_properties.png)
+![プロパティを選択します。](media/ADO_choose_properties.png)
 
 ## <a name="step-4-manage-search-permissions"></a>手順 4: 検索アクセス許可を管理する
 
@@ -119,15 +119,19 @@ instructions.-->
 
 >[!TIP]
 >**既定の結果の種類**
->* コネクタAzure DevOps発行すると、[結果の種類](./customize-search-page.md#step-2-create-the-result-types)が自動的に登録されます。 結果の種類は、手順 3 で選択したフィールドに基づいて動的に生成された結果レイアウトを使用します。 [](./customize-results-layout.md) 
+>* コネクタAzure DevOps発行すると、[結果の種類](./customize-search-page.md#step-2-create-result-types)が自動的に登録されます。 結果の種類は、手順 3 で選択したフィールドに基づいて動的に生成された結果レイアウトを使用します。 [](./customize-results-layout.md) 
 >* 結果の種類を管理するには、次のページの [**[結果**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)の種類] に [Microsoft 365 管理センター。](https://admin.microsoft.com) 既定の結果の種類には"Default" という名前が `ConnectionId` 付けられます。 たとえば、接続 ID がである場合、結果レイアウトの名前は `AzureDevOps` "AzureDevOpsDefault" になります。
 >* また、必要に応じて、独自の結果の種類を作成できます。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-<!---## Troubleshooting-->
-<!---Insert troubleshooting recommendations for this data source-->
+## <a name="troubleshooting"></a>トラブルシューティング
+次に示すのは、コネクタの構成中に発生する一般的なエラーとその考えられる理由です。
+
+| 構成手順 | エラー メッセージ | 考えられる理由 |
+| ------------ | ------------ | ------------ |
+|  | `The account associated with the connector doesn't have permission to access the item.` | 登録されたアプリには、必要な OAuth スコープはありません。 (注 - 2021 年 8 月 31 日に新しい OAuth スコープ要件 'Analytics:read' が導入されました)  |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

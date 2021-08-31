@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: ブックマークを作成して更新し、ブックマークの結果を一括編集Microsoft Search
-ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235956"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470241"
 ---
 # <a name="manage-bookmarks"></a>ブックマークの管理
 
@@ -104,7 +104,7 @@ ms.locfileid: "58235956"
 
 ブックマークの追加に必要な手動の労力を削減するために、Microsoft Searchのリンクを評価し、ブックマークSharePoint推奨できます。 発行する前に確認するか、自動的に発行する設定を行えます。 推奨ブックマークのセットアップは不要で、既定で有効にされ、自動公開に設定されます。 これらの設定をいつでも変更するには、[ブックマークの **管理] を選択** して、[ブックマークの設定] パネルを開きます。
 
-![管理ポータルで推奨されるブックマーク設定Microsoft 365スクリーンショット](media/bookmarks-recommendedsettings.png)
+![管理ポータルで推奨されるブックマーク設定Microsoft 365スクリーンショット。](media/bookmarks-recommendedsettings.png)
 
 推奨ブックマークが有効になっている場合、おすすめエンジンは組織内SharePointサイトを評価してトラフィックの多いリンクを識別します。 最初の評価期間が終了すると、推奨ブックマークが自動発行または推奨ブックマークの一覧に追加されます。 次のサイクル(30 日間の評価期間、その後に推奨ブックマークの自動公開または追加)が開始されます。
 

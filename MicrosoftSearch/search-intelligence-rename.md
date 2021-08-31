@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: 管理者Microsoft Searchの名前を [検索] インテリジェンスに&する
-ms.openlocfilehash: b0a5912ba02c74daffe677f3fbd22c0fb3df12289f155ad4beef69484771fcf3
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: a2dc33751e8888a57c60c3d9a88694ecefd8313d
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533970"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701923"
 ---
 # <a name="search--intelligence"></a>検索&インテリジェンス
 

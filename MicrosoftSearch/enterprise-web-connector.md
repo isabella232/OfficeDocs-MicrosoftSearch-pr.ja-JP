@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Web サイトのEnterpriseコネクタGraph設定Microsoft Search
-ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235937"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469980"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -64,7 +64,7 @@ URL フィールドを使用して、クロールする Web サイトのルー�
 Web サイトに動的コンテンツ (たとえば、Confluence や Unily のようなコンテンツ管理システムに含まれる Web ページ) が含まれている場合は、動的クローラーを有効にできます。 有効にするには、[動的サイトの **クロールを有効にする] を選択します**。 クローラは、クロールを開始する前に動的コンテンツのレンダリングを待機します。
 
 > [!div class="mx-imgBorder"]
-> ![Web コネクタの [接続設定] ウィンドウEnterpriseスクリーンショット](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+> ![Web コネクタの [接続設定] ウィンドウEnterpriseスクリーンショット。](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
 
 チェック ボックスに加えて、次の 3 つのオプション フィールドを使用できます。
 

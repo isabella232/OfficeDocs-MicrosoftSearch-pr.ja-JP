@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Salesforce Graph コネクタをセットアップMicrosoft Search
-ms.openlocfilehash: f63dacd4e1c7da7d8eac53bc04bcbd108182df132c2e1fa61bdc2ffd0a549d2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ea8de1b33787e9c08e50e99ace0afaa83e75394d
+ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532724"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58639581"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -75,7 +75,7 @@ Salesforce インスタンスに接続するには、OAuth 認証用の Salesfor
     - 更新トークン ポリシーの場合、[更新トークン **は失効するまで有効です] を選択します。**
 
   > [!div class="mx-imgBorder"]
-  > !["Refresh token is valid is valid until revoked" という名前の Refresh Token Policy を選択します。](media/salesforce-connector/oauthpolicies.png)
+  > !["Refresh token is valid is valid until revoked " という名前の Refresh Token Policy を選択します。](media/salesforce-connector/oauthpolicies.png)
 
 これで、Microsoft 365 管理[センター](https://admin.microsoft.com/)を使用して、コネクタのセットアップ プロセスの残りのGraphできます。
 
@@ -167,7 +167,7 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
 
 >[!TIP]
 >**既定の結果の種類**
->* コネクタが発行された後、Salesforce [コネクタは自動的](./customize-search-page.md#step-2-create-the-result-types) に結果の種類を登録します。 結果の種類は、手順 3 で選択したフィールドに基づいて動的に生成された結果レイアウトを使用します。 [](./customize-results-layout.md)
+>* コネクタが発行された後、Salesforce [コネクタは自動的](./customize-search-page.md#step-2-create-result-types) に結果の種類を登録します。 結果の種類は、手順 3 で選択したフィールドに基づいて動的に生成された結果レイアウトを使用します。 [](./customize-results-layout.md)
 >* 結果の種類を管理するには、次のページの [**[結果**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)の種類] に [Microsoft 365 管理センター。](https://admin.microsoft.com) 既定の結果の種類には"Default" という名前が `ConnectionId` 付けられます。 たとえば、接続 ID がである場合、結果レイアウトの名前は `Salesforce` "SalesforceDefault" になります。
 >* また、必要に応じて、独自の結果の種類を作成できます。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -187,15 +187,15 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
     - FAX
     - Phone
     - MobilePhone
-    - 電子メール
-    - 型
-    - タイトル
+    - メール
+    - Type
+    - 役職
     - AccountId
     - AccountName
     - AccountUrl
     - AccountOwner
     - AccountOwnerUrl
-    - 所有者
+    - Owner
     - OwnerUrl
     - CreatedBy
     - CreatedByUrl

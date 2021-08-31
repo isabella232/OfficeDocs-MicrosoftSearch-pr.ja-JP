@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: サービスの概要、Microsoft Search、サポートするアプリの概要をMicrosoft Search。
-ms.openlocfilehash: 8992f9683bd2ad72d7084ff6fb2dcd08dc7d14ef6307161a69f7b54d6d150bd6
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534014"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701942"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search の概要
 
@@ -32,17 +32,17 @@ Microsoft Searchは、ユーザーが既に作業しているアプリでタス�
 
 ## <a name="what-users-see"></a>ユーザーに対する表示
 
-この[Bing、](https://bing.com)ユーザーは Web 検索と同じ検索ボックスを使用します。 アプリのOffice、ユーザーはヘッダー バー Microsoft Searchボックスを見つける。 次のように表示されます。
+この[Bing、](https://bing.com)ユーザーは Web 検索と同じ検索ボックスを使用します。 アプリのOffice、ユーザーはヘッダー バー Microsoft Searchボックスを見つける。 次のようになります：
 
-![ヘッダー バーに Microsoft Search ボックスが表示されているアプリ ウィンドウのスクリーン ショット](media/Headings_520.png)
+![ヘッダー バーに [Microsoft Search] ボックスを含むアプリ ウィンドウのスクリーンショット。](media/Headings_520.png)
 
 ユーザーが [検索] ボックス **をクリック** すると、検索結果は、Office 365 での以前のアクティビティに基づいて、および組織内で傾向にあるコンテンツに基づいて表示されます。 最近作業していたファイル、最近使用したコマンド、および共同作業を行うユーザーは、検索で考慮されるアクティビティの例です。 ユーザーが [検索] ボックスに入力 **を開始** すると、候補の結果が更新されます。 ユーザーは、[検索] ボックスから検索結果を **右に開** きます。 次に、検索の例を示[SharePoint。](http://sharepoint.com/)
 
-![クエリと候補の検索結果が表示されている Microsoft Search ボックスのスクリーンショット](media/SERP_text_520.png)
+![クエリと候補の結果Microsoft Searchボックスのスクリーンショット。](media/SERP_text_520.png)
 
 検索ボックスの候補がユーザーが探している情報ではない場合は、 **結果** の完全な一覧が開きます。 アイテムを最後に変更したユーザー、アイテムの場所、アイテムの場所などのメタデータを使用し、アイテムをプレビューして、アイテムが何を探しているのかを判断できます。
 
-![Microsoft Search の結果ページのスクリーンショット](media/search_box.png)
+![[結果] ページMicrosoft Searchスクリーンショット。](media/search_box.png)
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft Search のメリット
 

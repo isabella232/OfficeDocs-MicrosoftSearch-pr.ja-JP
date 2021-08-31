@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 使用状況Microsoft Search確認する
-ms.openlocfilehash: 9798cdaf0f88ca2f247bb8d10fce526f07adbabc1bbe5566eaddfc071346f751
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533118"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701455"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search利用状況レポート
 
@@ -33,7 +33,7 @@ Microsoft Search[使用状況](https://admin.microsoft.com/Adminportal/Home?#/Mi
 このページの以前のバージョンには、Microsoft Search.com のBing検索Bing含まれていました。 このデータは、これらのレポートに統合されました。ページの下部にあるリンクをクリックして、ページのトップ クエリとインプレッション配布Bingを表示 **できます。** このリンクと古いページは近日削除されます。
 
 > [!div class="mx-imgBorder"]
-> ![使用状況レポートのダッシュボードの検索](media/usage-reports/usage_reports_v2.png)
+> ![使用状況レポートのダッシュボードを検索します。](media/usage-reports/usage_reports_v2.png)
 
 ## <a name="overview-of-search-reports"></a>検索レポートの概要
 

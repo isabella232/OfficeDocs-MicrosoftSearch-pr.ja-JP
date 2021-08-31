@@ -6,18 +6,18 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: '[オンライン] で組織のMicrosoft SearchをSharePointする'
-ms.openlocfilehash: ec1686937b835abaac46e2a67e9a3a16ac672a35bce87f47ea1fa59fe0f59f1f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b506c2259b514b604f4285d3ec8351ce9ac860db
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533925"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702131"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>SharePoint で Microsoft Search の使用を開始する
 

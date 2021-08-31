@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft Graph コネクタを管理Microsoft Search。
-ms.openlocfilehash: 0a4165af84cc11fbba4239f0204a3a7f3ce4fb25
-ms.sourcegitcommit: d276bfd1e03d1cdc1f51f70368df333da1d0111a
+ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58408210"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702050"
 ---
 # <a name="monitor-your-connections"></a>接続を監視する
 
@@ -30,7 +30,7 @@ ms.locfileid: "58408210"
 
 コネクタの種類ごとに[、次Microsoft 365 管理センター](https://admin.microsoft.com)に示す操作がサポートされます。
 
-操作​​ | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
+Operation | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
 --- | --- | ---
 接続の追加 | :heavy_check_mark: (「セットアップの概要[」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:
@@ -64,7 +64,7 @@ ms.locfileid: "58408210"
 状態 | クォータ使用率レベル
 --- | --- 
 標準 | 0-79%
-高い | 80-89%
+高 | 80-89%
 致命的 | 90%-99%
 Full | 100%
 

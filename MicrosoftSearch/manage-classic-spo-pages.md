@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 従来Microsoft SearchページでのSharePointの使用
-ms.openlocfilehash: 187a8c78b9f1b78cf1c5ad04ede91a38fe88759d34037226949a441034cb13b9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533601"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702041"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>従来のページとMicrosoft Search
 

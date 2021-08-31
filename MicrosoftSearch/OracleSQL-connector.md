@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Oracle SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58236013"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701428"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -66,7 +66,7 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 > [!Tip]
 > 必要なすべての列を取得するには、複数のテーブルを結合できます。
 
-![サンプル プロパティを含む OrderTable と AclTable を示すスクリプト](media/MSSQL-fullcrawl.png)
+![サンプル プロパティを含む OrderTable と AclTable を示すスクリプト。](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>データ列の選択 (必須) 列と ACL 列 (オプション)
 
@@ -83,13 +83,13 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 * **DeniedUsers**: このオプションは、検索結果にアクセスできないユーザーの一覧を指定します。 次の例では、ユーザー john@contoso.com および keith@contoso.com OrderId = 13 のレコードにアクセスできないのに対し、他のすべてのユーザーは、このレコードにアクセスできます。
 * **DeniedGroups**: このオプションは、検索結果にアクセスできないユーザーのグループを指定します。 次の例では、グループ engg-team@contoso.com グループ pm-team@contoso.com OrderId = 15 のレコードにアクセスすることはできませんが、他のすべてのユーザーは、このレコードにアクセスできます。  
 
-![サンプル プロパティを含む OrderTable および AclTable を示すサンプル データ](media/MSSQL-ACL1.png)
+![サンプル プロパティを含む OrderTable と AclTable を示すサンプル データ。](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>サポートされているデータ型
 
 次の表に、Oracle コネクタでサポートされているデータ型SQL示します。 この表では、サポートされているデータ型のインデックスデータ型SQL示します。 インデックス作成でサポートされている Microsoft Graph コネクタの詳細については、プロパティ リソースの種類に関する[ドキュメントを参照してください](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
-| Category | ソース データ型 | データ型のインデックス作成 |
+| カテゴリ | ソース データ型 | データ型のインデックス作成 |
 | ------------ | ------------ | ------------ |
 | 数値データ型 | NUMBER(p,0) | int64 (p <= 18) <br> double (p > 18) |
 | 浮動小数点数のデータ型 | NUMBER(p,s) <br> FLOAT(p) | double |
@@ -111,7 +111,7 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 
 次の図に示す構成では `CreatedDateTime` 、選択した透かし列です。 行の最初のバッチをフェッチするには、透かし列のデータ型を指定します。 この場合、データ型は `DateTime` .
 
-![透かし列の構成](media/MSSQL-watermark.png)
+![透かし列の構成。](media/MSSQL-watermark.png)
 
 最初のクエリでは、"CreatedDateTime > 1753 00:00:00" (DateTime データ型の最小値) を使用して、最初の **N** 行数をフェッチします。 最初のバッチがフェッチされた後、行を昇順に並べ替えた場合、バッチで返される最高値はチェックポイント `CreatedDateTime` として保存されます。 たとえば、2019 年 3 月 1 日 03:00:00:00 です。 次に、 **クエリ** で "CreatedDateTime > 2019 年 3 月 1 日 03:00:00" を使用して、N 行の次のバッチをフェッチします。
 
@@ -119,7 +119,7 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 
 データベース内のソフト削除された行のインデックス作成を除外するには、その行が削除されたかどうかを示す、削除可能な列名と値を指定します。
 
-![ソフト削除の設定: "Soft delete column" と "削除された行を示すソフト削除列の値"](media/MSSQL-softdelete.png)
+![ソフト削除の設定: "Soft delete column" と "削除された行を示す削除の値" 列。](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>フル クロール: 検索アクセス許可を管理する
 
@@ -133,7 +133,7 @@ ACL として使用するには、次の ID の種類がサポートされてい
 * **Azure Active Directory (AAD) ID**: Azure AD では、すべてのユーザーまたはグループに'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' のようなオブジェクト ID があります。
 * **Active Directory (AD)** セキュリティ ID : オンプレミスの AD セットアップでは、すべてのユーザーとグループに、'S-1-5-21-3878594291-2115959936-132693609-65242.
 
-![アクセス制御リストを構成するための検索アクセス許可設定](media/MSSQL-ACL2.png)
+![アクセス制御リストを構成するための検索アクセス許可設定。](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>手順 3b: 増分クロール (オプション)
 

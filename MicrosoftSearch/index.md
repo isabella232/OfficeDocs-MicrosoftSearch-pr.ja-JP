@@ -7,19 +7,19 @@ ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft Search は、組織にとってより関連性の高い検索結果を提供し、生産性の向上や時間の節約につながるエンタープライズ検索を可能にします
-ms.openlocfilehash: 15c209942e413d2dded067be9bd447d644f8a9cedd6e58f61d1a2526a9d220ab
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 380d7145281241d49c27be5967f982ce995ee377
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533866"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702122"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="microsoft-search"></a>Microsoft Search

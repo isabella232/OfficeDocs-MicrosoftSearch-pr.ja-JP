@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft による Graph コネクタの設定の概要
-ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: 3b8ae9068b445e09f2df95fb5b29feb5ec3af74b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340089"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701878"
 ---
 <!-- Previous ms.author: monaray -->
 

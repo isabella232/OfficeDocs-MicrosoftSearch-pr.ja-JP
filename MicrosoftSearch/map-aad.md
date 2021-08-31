@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: AAD ID をマップする方法の手順
-ms.openlocfilehash: 676e06d4019dabe0f07846dd8918b8070765a7ffd9deb02b11dd68f2014dc7e5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 69d4164e6d0acc245eee5c631db39ed7fb178325
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532811"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470298"
 ---
 # <a name="map-your-azure-ad-identities"></a>Azure AD の ID をマッピング  
 
@@ -58,7 +58,7 @@ Azure のユーザー プロパティの値を組みAD一意のフェデレー�
 
 Azure のマッピングのサンプルについては、以下のスナップショットADしてください。
 
-![Azure の [マッピング] ページに入力する方法のADスナップショット](media/aad-mapping.png)
+![Azure の [マッピング] ページに入力する方法のADスナップショットです。](media/aad-mapping.png)
 
 ## <a name="limitations"></a>制限事項  
 

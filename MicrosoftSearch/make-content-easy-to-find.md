@@ -6,18 +6,18 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: ブックマーク、場所、Q&A 項目を作成して、組織のコンテンツを簡単に見つけられるようにします。
-ms.openlocfilehash: 0cf3152e7fb47f0cb1b1fa3fe0df43645a2536e171fd8211050a1773ec86a490
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532941"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702077"
 ---
 # <a name="make-content-easy-to-find"></a>簡単に見つけられるコンテンツ
 
@@ -86,7 +86,7 @@ HTML コンテンツを使用するか、回答または説明に HTML タグを
 > [!Note]
 > テンプレート ファイルにエラーがある場合&Q ファイルをインポートできない。 エラーを防ぐには、インポート ファイルが適切に書式設定され、必要なすべての情報が含まれています。 インポート エラーを防止する方法の [詳細を参照してください](#prevent-import-errors)。
 
-## <a name="locations"></a>Locations
+## <a name="locations"></a>場所
 
 [ [場所] を](manage-locations.md)使用すると、ユーザーはアドレスを検索し、組織の建物を検索できます。 場所 **機能は** 、オフィス、キャンパス、および建物の正確な場所と、ルート案内とナビゲーションを提供します。 最適な結果を得る場合、管理者は組織のすべての重要な場所を組織の重要な場所に追加Microsoft Search。 Bookmarks [および](manage-bookmarks.md) Q&[A とは異なり](manage-qas.md)、Locations インデックスは直ちに更新されません。 検索結果に新しい場所または変更された場所が表示されるには数時間かかる場合があります。
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: 検索結果での Dynamics 365 コンテンツの表示方法を管理する
-ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
-ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
+ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380035"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470232"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 フェデレーション検索 (プレビュー)
 
@@ -49,7 +49,7 @@ Dynamics 365 の回答は、SharePoint Online、Bing、および Office を含�
 
 結果をクリックまたはタップすると、Dynamics 365 が開き、詳細情報が表示されます。
 
-:::image type="content" alt-text="Dynamics 365 の詳細ページのスクリーンショット" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
+:::image type="content" alt-text="Dynamics 365 の詳細ページのスクリーンショット。" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
 ユーザーが検索を開始する場所に関係なく、ユーザーのエクスペリエンスは一貫性があり、最も関連性の高い Dynamics 365 の結果をすばやく見つけるのに役立ちます。 デモについては、Microsoft ビルド 2021 ビデオをご覧ください。
 
@@ -97,6 +97,6 @@ Dynamics 365 の結果を検索する際に、自然言語クエリと製品Micr
 
 7. [保存 **] を** 選択して、接続のセットアップを完了します。
 
-:::image type="content" alt-text="画面の Dynamics 365 セットアップ パネルのスクリーンショットMicrosoft 365 管理センター" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="次のページの Dynamics 365 セットアップ パネルMicrosoft 365 管理センター。" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 セットアップが完了すると、Dynamics 365 の回答と垂直は、有効な Dynamics 365 ライセンスを持ち、接続されている Dynamics 365 環境へのアクセス権を持つユーザーにのみ表示されます。 これらの設定に戻り、接続エンドポイント環境を変更したり、接続を非アクティブ化したりすることもできます。

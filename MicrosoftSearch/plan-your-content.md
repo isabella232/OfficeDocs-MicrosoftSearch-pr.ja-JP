@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Microsoft Search を使用して、その他のリソースに頼らずに質の高いコンテンツを提供します
-ms.openlocfilehash: 3b22fcc8bd1f399baf5879fa1eb7461a58c5165e6b9f6f5c39ff4c154eaba98a
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 4382bac3ab8833cc8967e9ebb7ea607bdfcef7f1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532688"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702222"
 ---
 # <a name="plan-your-content"></a>コンテンツの計画
 

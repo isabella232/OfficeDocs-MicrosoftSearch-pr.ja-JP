@@ -6,18 +6,18 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: コネクタの詳細とエラー
-ms.openlocfilehash: f7ae7f66aa1ec00c3178bec91b15304459666d5e
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235948"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701383"
 ---
 <!-- markdownlint-disable no-inline-html -->
 

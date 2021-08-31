@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: ユーザー用に Atlassian Jira Graph コネクタをMicrosoft Search
-ms.openlocfilehash: 6023e8ec4539bd37358a3e801ef81947fe9f87ff38736344347d5634d0527753
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533691"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702095"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph コネクタ (プレビュー)
 

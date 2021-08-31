@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: Windows 10 ユーザーに対して Microsoft Search と Office 365 にサインインを求めるメッセージが表示される回数を減らします
-ms.openlocfilehash: d3628503c9150c1d71b4d390a9e9c34f5e6faedfac4e33c44cdd038f90d591d0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ab4e9c8c3fc8f89abf60c9aa09671105e7c40451
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534115"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701419"
 ---
 # <a name="test-single-sign-on"></a>シングル サインオンのテスト
 

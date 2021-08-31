@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: On-prem Agent
-ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
-ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
+ms.openlocfilehash: 4b9dddba7741388f2e6c96510e5f41b196def330
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58363243"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469962"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph コネクタ エージェント
 
@@ -123,7 +123,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 3. アプリ **の登録を開** き、 **ナビゲーション ウィンドウから [** 証明書とシークレット] を選択します。 証明書の拇印をコピーします。
 
-:::image type="content" alt-text="左側のウィンドウで [証明書とシークレット] が選択されている場合の thumbrint 証明書の一覧" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+:::image type="content" alt-text="左側のウィンドウで [証明書とシークレット] が選択されている場合の拇印証明書の一覧。" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### <a name="step-3-assign-the-certificate-to-the-agent"></a>手順 3: 証明書をエージェントに割り当てる
 

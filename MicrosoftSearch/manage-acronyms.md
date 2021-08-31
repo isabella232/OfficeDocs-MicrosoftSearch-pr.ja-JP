@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search で頭字語の回答を作成および更新する
-ms.openlocfilehash: 14b46e8f689a4df1e41d1852f49157faf67f7fdece2fa09fb740b5652d719a34
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 3b0f87fb252c3e88160f1b3753aad09b1e3f5083
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532922"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470250"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Microsoft Search で頭字語の回答を管理する
 
@@ -27,7 +27,7 @@ ms.locfileid: "54532922"
 
 ## <a name="what-users-experience"></a>ユーザーのエクスぺリエンス
 
-Microsoft Search のユーザーは [Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)および[Office 365](https://Office.com)の頭字語を使用して、定義を入手できます。 **[検索]** ボックスで、次の例のようにクエリを入力します:
+Microsoft Searchユーザーは、Bing [、SharePoint、Office 365、Outlook on the web、Outlook](https://products.office.com/sharepoint/collaboration)Mobile (Android)、および[Teams](https://Bing.com)Mobile (iOS と Android) の頭字語で定義を取得できます。 [](https://Office.com) **[検索]** ボックスで、次の例のようにクエリを入力します:
 
 - *What is* DNN
 - *Define* DNN
@@ -59,7 +59,7 @@ Microsoft Search は、2 つのデータ ソースをクエリして、頭字語
 **公開状態**。 頭字語は、組織のユーザーが使用できるデータを使用Microsoft Search。
 
 > [!NOTE]
-> 公開状態に追加された頭字語が Microsoft Search で利用可能になるまで、最大 3 日かかる場合があります。
+> 発行済み状態に追加された頭字語が、公開済み状態で使用可能になるには、最大で 1 日Microsoft Search。
 
 **下書き状態**。 頭字語を確認してから、Microsoft Searchで使用する場合は、下書き状態で頭字語を追加できます。 下書き状態の頭字語は検索結果に表示されません。 検索結果に表示するには、頭字語を発行済み状態に移動する必要があります。
 
@@ -106,13 +106,17 @@ Microsoft Searchドキュメントへのアクセス権とアクセス許可を�
 
 **A:** 結果のランク付けは、結果が各ユーザーに合わせたものとして、個人ごとに異なる場合があります。 これらのどちらのカテゴリも、常に他のカテゴリよりも優先されます。
 
+**Q: ユーザーが頭字語の回答をトリガーする方法**
+
+**A:** 頭字語の回答を取得するには、Bing、SharePoint、Office 365、Outlook on the web、Outlook Mobile (Android)、または [Teams](https://bing.com)Mobile (iOS および **Android)** 検索ボックスに特定のクエリ パターンを入力する必要があります。 [](https://products.office.com/sharepoint/collaboration) [](https://Office.com)
+
+**Q: ユーザーは検索時に頭字語を入力できますか?**
+
+**A:** このBing、ユーザーは頭字語を検索するだけで頭字語の回答を見つけ、キーワードは必要なくなりました。 この同じエクスペリエンスは、フェーズ内の他のMicrosoft Searchに対して有効になります。
+
 **Q: 管理者が指定した頭字語が公開された後に、Microsoft Search表示するにはどのくらいの時間が必要ですか?**
 
 **A:** 発行済み状態に追加された頭字語が、公開済み状態で使用可能になるには、最大で 1 日Microsoft Search。
-
-**Q: ユーザーが頭字語の回答をトリガーする方法**
-
-**A**: 頭字語の回答を取得するには、ユーザーは検索ボックスに特定のクエリ パターン [Bing、SharePoint、](https://bing.com)[または](https://products.office.com/sharepoint/collaboration)Office 365 [](https://Office.com)**する必要** があります。
 
 **Q: 新しい電子メールまたはドキュメントを受信または送信した後に、システムで指定された頭字語が表示されるのにどのくらいの時間が必要ですか?**
 
@@ -124,7 +128,7 @@ Microsoft Searchドキュメントへのアクセス権とアクセス許可を�
 
 **Q: 頭字語が結果から除外されるのにMicrosoft Searchですか?**
 
-**A**: 除外された頭字語が検索結果に表示されるのを停止するには、最大で 1 日かかる。
+**A:** 除外された頭字語が検索結果に表示されるのを停止するには、最大で 1 日かかる。
 
 **Q: システムで指定された頭字語の場合、ドキュメントは特定の形式である必要がありますか?**
 
@@ -132,9 +136,9 @@ Microsoft Searchドキュメントへのアクセス権とアクセス許可を�
 
 **Q: Microsoft は、すべての言語のドキュメントから頭字語を検出しますか?**
 
-**A**: Microsoft では、英語、スペイン語、フランス語、イタリア語、ドイツ語、ポルトガル語のドキュメントからのシステムキュアの頭字語のみをサポートしています。 その他の言語のサポートは段階的に追加されます。
+**A:** Microsoft では、英語、スペイン語、フランス語、イタリア語、ドイツ語、ポルトガル語のドキュメントからのシステムキュキュアされた頭字語のみをサポートしています。 その他の言語のサポートは段階的に追加されます。
 
 **Q: 組織がシステムで指定された頭字語を表示しない場合は、どうしますか。検索結果にこの種類の頭字語が表示されるのを停止できますか?**
 
-**A**: 検索結果にシステムで指定された頭字語を表示するをオフにする場合は、「ビジネス製品のサポートに問い合わせ」の指示に従って、カスタマー サポート [チケットを作成します](/microsoft-365/admin/contact-support-for-business-products)。
+**A:** 検索結果にシステムで指定された頭字語を表示するをオフにする場合は、「ビジネス製品のサポートに問い合わせ」の指示に従ってカスタマー サポート チケット [を作成します](/microsoft-365/admin/contact-support-for-business-products)。
 サポート チケットを作成した後、システムでキュアされた頭字語が検索結果に表示されるのを停止するには、最大 48 時間かかります。

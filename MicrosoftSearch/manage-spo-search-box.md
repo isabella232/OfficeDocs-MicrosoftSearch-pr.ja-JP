@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: サイトで検索ボックスのエクスペリエンスをカスタマイズSharePointする方法
-ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533583"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701978"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>サイトの検索ボックスSharePoint設定
 

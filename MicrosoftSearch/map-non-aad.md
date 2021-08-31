@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: AAD 以外の ID をマップする方法の手順
-ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533571"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701960"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Azure 以外のユーザー id をADする  
 
@@ -80,7 +80,7 @@ Azure 以外の各ユーザー プロパティに適用される正規表現の�
 
 Azure 以外のマッピングのサンプルについては、以下のスナップショットADしてください。
 
-![Azure 以外のユーザー マッピング ページに入力する方法のADスナップショット](media/non-aad-mapping.png)
+![Azure 以外のユーザー マッピング ページに入力する方法のADです。](media/non-aad-mapping.png)
 
 ## <a name="limitations"></a>制限事項  
 

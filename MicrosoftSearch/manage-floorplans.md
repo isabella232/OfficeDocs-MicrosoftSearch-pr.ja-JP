@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: フロア プラン機能は、Microsoft Search内のユーザー、オフィス、その他の設備を見つけるのに役立ちます。
-ms.openlocfilehash: 6ca32db0afafe328d872b87c2ba7ebf5bee40148ae8aea089e097a3b6ec4dedf
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533757"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470025"
 ---
 # <a name="manage-floor-plans"></a>間取図を管理する
 
@@ -43,7 +43,7 @@ ms.locfileid: "54533757"
 
 |**ルーム ラベルを含むテキスト ラベル**|**テキスト ラベルが部屋ラベルなし**|**テキスト ラベルなし**|
 |:-----:|:-----:|:-----:|
-|![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
+|![floorplans-textandroomlabels.png。](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
 DWG ファイル [の表示](#frequently-asked-questions) と更新については、「FAQ」セクションを参照してください。
 
@@ -54,7 +54,7 @@ DWG ファイル [の表示](#frequently-asked-questions) と更新について�
 組織内の各ユーザーのオフィスの場所を追加または更新します。 ユーザー プロファイルのオフィスの場所は、Microsoft 365 管理センターで[](https://admin.microsoft.com)変更するか、オンプレミスの Active Directory を変更して、ユーザープロファイルに同期Azure Active Directory。 *PhysicalDeliveryOfficeName* は、オフィスの場所に使用されるフィールドです。 部屋のラベルにフロア番号が含されていない場合は、「FAQ」のヒントを参照してください。
 
 この例では、Allan のオフィスは、2 号館の 1 階の 1173 号室にあります。
-![floorplans-userlestview.png](media/floorplans-userlistview.png)
+![floorplans-userlestview.png。](media/floorplans-userlistview.png)
 
 > [!NOTE]
 > 間取りを検索するときに更新されたオフィスの場所を表示するには、各フロアで少なくとも **10** 人のオフィスの場所を更新する必要があります。
@@ -63,13 +63,13 @@ DWG ファイル [の表示](#frequently-asked-questions) と更新について�
 
 **[Microsoft Search** を使用して、ユーザーを検索し、自分のオフィスの場所が正しく表示されていることを確認します。 場所を更新したばかりの場合は、検索結果に更新プログラムが表示されるまで **最大 72** 時間待機する必要があります。
 
-![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
+![floorplans-peoplecard.png。](media/floorplans-peoplecard.png)
 
 ### <a name="step-5-add-building-locations"></a>手順 5: 建物の場所を追加する
 
 間取り図では [、場所を使用](manage-locations.md) して建物を定義します。 [場所] [Microsoft 365 管理センター](https://admin.microsoft.com)移動し、[[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)追加] を **選択します**。 建物の名前、住所、キーワードを入力します。 必要な数の建物を追加します。
 
-![floorplans-locations.png](media/floorplans-locations.png)
+![floorplans-locations.png。](media/floorplans-locations.png)
 
 場所の詳細については、「場所の管理 [」を参照してください。](manage-locations.md)
 
@@ -79,7 +79,7 @@ DWG ファイル [の表示](#frequently-asked-questions) と更新について�
 
 管理 [センターで、[](https://admin.microsoft.com)フロア プラン] [**に移動し**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)、[開始する] **を選択します**。 この通知が表示されていない場合、この手順は組織で既に完了しています
 
-![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
+![floorplans_hydrationstep.png。](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>手順 7: アップロード計画を作成する
 
@@ -99,13 +99,13 @@ DWG ファイル [の表示](#frequently-asked-questions) と更新について�
 > [!NOTE]
 > **間取りが公開されるには 48 時間かかります。** その後、同僚のオフィスを検索すると、以下のような間取り図の結果が表示されます。
 
-![floorplans-officelocation.png](media/floorplans-officelocation.png)
+![floorplans-officelocation.png。](media/floorplans-officelocation.png)
 
 ### <a name="step-8-optional-specify-location-patterns"></a>手順 8: (オプション) 場所のパターンを指定する
 
 間取り図をアップロードすると、テキスト ラベルがユーザーのプロファイル内のオフィスの場所と比較されます。 一致が 10 未満の場合は、[場所パターンの **指定** ] 画面が表示されます。 場所パターンは、オフィスの場所から床、翼、および部屋の情報を抽出するために使用されます。
 
-![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
+![floorplans-locationpattern.png。](media/floorplans-locationpattern.png)
 
 必要な部屋のみ、床と翼はオプションで、必要に応じて場所をスキップできます。
 
@@ -166,6 +166,6 @@ DWG ファイル [の表示](#frequently-asked-questions) と更新について�
 
 たとえば、部屋番号が含まれるが、フロア番号がない DWG ファイルは、次のようになります。
 
-![floorplans-nofloors.png](media/floorplans-nofloors.png)
+![floorplans-nofloors.png。](media/floorplans-nofloors.png)
 
 ユーザーのプロファイルのオフィスの場所は 2/1175 で、'2' は建物コード、'1' はフロア番号、'175' は部屋番号である必要があります。

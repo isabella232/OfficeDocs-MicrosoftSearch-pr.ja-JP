@@ -6,18 +6,18 @@ manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft Graphコネクタのパブリック プレビューに関する法的Microsoft Search
-ms.openlocfilehash: e61010447a7eddb63400d1b194a4e6e7f996aec473e576fd8ebbdaf8ff44b555
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5230048ad0eb52353621dbfcecc74fd8f4d2f0a6
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534142"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701896"
 ---
 <!---Previous ms.author: anfowler --->
 

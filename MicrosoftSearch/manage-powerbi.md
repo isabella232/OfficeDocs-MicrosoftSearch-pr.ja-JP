@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: レポートとデータPower BI検索結果に表示する方法を管理する
-ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 951b1849cd3c9f60e93c98bde189eef85680b372
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533622"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470259"
 ---
 # <a name="manage-power-bi-answers"></a>回答Power BI管理する
 
@@ -42,13 +42,13 @@ Microsoft Searchユーザーは、Power BI 検索ボックス、Windows、ShareP
 
 上記の例では、営業、利用状況、容量、2021、Q1 など、探している情報に置き換え、Power BI からの関連する結果 `<topic>` を確認します。
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="回答と垂直方向のセルPower BIスクリーンショット" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="回答と垂直方向に表示Power BI S SERP のスクリーンショット。" border="true":::
 
 ## <a name="turn-power-bi-search-on-or-off"></a>検索Power BIオンまたはオフにする
 
 Power BIの結果は既定で有効になっています。 管理者Power BIいつでも無効にできます。 管理者ポータルPower BIに移動し、[テナントのグローバル検索を使用する] **Power BIします。** 詳細については、「管理ポータルでの[管理Power BI」を参照してください](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)。
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="回答のオン/オフを切りPower BIする設定のスクリーンショット" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="回答のオン/オフを切りPower BI設定のスクリーンショット。" border="true":::
 
 > [!NOTE]
 > Microsoft Search を使用する場合、Power BI から返される検索クエリと結果は、Power BI テナント データの場所とは異なる地域または地域で処理される場合があります。

@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: ユーザーからのフィードバックを確認し、Microsoft Search
-ms.openlocfilehash: ab6f25a8454c1c1e61488179107b3bbec96ef099d29afcce1f303a7f3e7c39e1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 8b512f0bbfe5c72ff1a7a2296b0b76c5430e082f
+ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532892"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58528985"
 ---
 # <a name="managing-user-feedback"></a>ユーザー フィードバックの管理
 
@@ -30,7 +29,7 @@ ms.locfileid: "54532892"
 
 組織内のユーザーがユーザーを使用Microsoft Searchエクスペリエンスに関するフィードバックを受け取る場合があります。 結果ページのフィードバック リンクをクリックすると、フィードバックを分類し、追加のコメントを含めることができます。
 
-![グローバル フィードバック フォーム](media/feedback/feedback-global-dialog.png)
+![グローバル フィードバック フォーム。](media/feedback/feedback-global-dialog.png)
 
 ユーザーは、クエリや他の診断情報をカテゴリやコメントと共に Microsoft に送信することもできます。 [プライバシーの詳細](https://privacy.microsoft.com/en-US/privacystatement) と、このデータの保護方法について説明します。 診断データには、製品の改善のためにフィードバック アイテムを使用するために Microsoft が必要とする最も重要な情報が含まれている。
 
@@ -45,6 +44,9 @@ ms.locfileid: "54532892"
 フィードバック リストの上にある検索ボックスを使用して、特定のクエリに関するフィードバックを検索できます。
 
 フィードバック リストの [Verbatim] 列には、コメントや提案も含まれるユーザーのフィードバックが示されます。 クエリを読み取る場合は、クエリをクリックして [詳細] パネル **を開** きます。
+
+>[!NOTE]
+>管理者とエンド ユーザーの検索エクスペリエンス全体にわたる最初のロールアウトでは、フィードバック アイテムが管理ポータルに表示されるまでに最大 2 週間かかる場合があります。
 
 ## <a name="update-feedback-state"></a>フィードバックの状態を更新する
 

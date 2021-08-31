@@ -6,19 +6,19 @@ manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: Microsoft Search を使用して、会社の既定のホーム ページとして Bing を設定する方法について説明します。
-ms.openlocfilehash: 1ec0ffc097324b3c2d985f6eada4fb3fa3b079b7caab9d6af0e4073c4d91b562
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 745e4a81e4b53ff88b612cd19295cb89dc041ddc
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534166"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701446"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Bing.com を既定のホーム ページにする
 
@@ -85,7 +85,7 @@ ms.locfileid: "54534166"
     
 5. **F8** キーを押して、構成を行う前にすべての設定を無効にします。画面は次のようになります。 
     
-    ![Internet Explorer 10 プロパティのダイアログ](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
+    ![Internet Explorer 10[プロパティ] ダイアログ。](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
 6. ホーム ページの設定で **F6** キーを押して、「`https://www.bing.com/business?form=BFBSPR`」と入力します。
     

@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: f80e3e1b86a120981c4dafd95715c00cd766f5e9
-ms.sourcegitcommit: 17cc660ec51bea11ab65f62655584c65c84a1d79
+ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58406947"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701437"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -98,7 +98,7 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 > [!Tip]
 > 必要なすべての列を取得するには、複数のテーブルを結合できます。
 
-![サンプル プロパティを含む OrderTable と AclTable を示すスクリプト](media/MSSQL-fullcrawl.png)
+![サンプル プロパティを含む OrderTable と AclTable を示すスクリプト。](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>データ列の選択 (必須) 列と ACL 列 (オプション)
 
@@ -117,7 +117,7 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 - **DeniedUsers**: この列は、検索結果にアクセスできないユーザーの一覧を指定します。 次の例では、ユーザー john@contoso.com および keith@contoso.com OrderId = 13 のレコードにアクセスできないのに対し、他のすべてのユーザーは、このレコードにアクセスできます。
 - **DeniedGroups**: この列は、検索結果にアクセスできないユーザーのグループを指定します。 次の例では、グループ engg-team@contoso.com グループ pm-team@contoso.com OrderId = 15 のレコードにアクセスすることはできませんが、他のすべてのユーザーは、このレコードにアクセスできます。  
 
-![サンプル プロパティを含む OrderTable および AclTable を示すサンプル データ](media/MSSQL-ACL1.png)
+![サンプル プロパティを含む OrderTable と AclTable を示すサンプル データ。](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>サポートされているデータ型
 
@@ -146,7 +146,7 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 次の図に示す構成では `CreatedDateTime` 、選択した透かし列です。 行の最初のバッチをフェッチするには、透かし列のデータ型を指定します。 この場合、データ型は `DateTime` .
 
-![透かし列の構成](media/MSSQL-watermark.png)
+![透かし列の構成。](media/MSSQL-watermark.png)
 
 最初のクエリでは、"CreatedDateTime > 1753 00:00:00" (DateTime データ型の最小値) を使用して、最初の **N** 行数をフェッチします。 最初のバッチがフェッチされた後、行を昇順に並べ替えた場合、バッチで返される最高値はチェックポイント `CreatedDateTime` として保存されます。 たとえば、2019 年 3 月 1 日 03:00:00:00 です。 次に、 **クエリ** で "CreatedDateTime > 2019 年 3 月 1 日 03:00:00" を使用して、N 行の次のバッチをフェッチします。
 
@@ -154,7 +154,7 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 
 データベース内のソフト削除された行のインデックス作成を除外するには、その行が削除されたかどうかを示す、削除可能な列名と値を指定します。
 
-![ソフト削除の設定: "Soft delete column" と "削除された行を示すソフト削除列の値"](media/MSSQL-softdelete.png)
+![ソフト削除の設定: "Soft delete column" と "削除された行を示す削除の値" 列。](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>フル クロール: 検索アクセス許可を管理する
 
@@ -168,7 +168,7 @@ ACL として使用するには、次の ID の種類がサポートされてい
 - **Azure Active Directory (AAD) ID**: Azure AD では、すべてのユーザーまたはグループに'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' のようなオブジェクト ID があります。
 - **Active Directory (AD)** セキュリティ ID : オンプレミスの AD セットアップでは、すべてのユーザーとグループに、'S-1-5-21-3878594291-2115959936-132693609-65242.
 
-![アクセス制御リストを構成するための検索アクセス許可設定](media/MSSQL-ACL2.png)
+![アクセス制御リストを構成するための検索アクセス許可設定。](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>手順 3b: 増分クロール (オプション)
 

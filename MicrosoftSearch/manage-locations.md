@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過と共に、場所の情報の状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。
-ms.openlocfilehash: 5e9d88fc08458e928e52988124ee94c60829c7bb71ed13f8534b71ca08e2d50c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 0c93e29c8c899a4b70a30cf97354cf00fc19667f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532877"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701996"
 ---
 # <a name="manage-locations"></a>場所の管理
 

@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
-ms.openlocfilehash: 8b7c4545022765a5e903f2ba98490dae0cd40e85
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: e1aea93c927d933a63c3eb0456bb18d3f99e9291
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235862"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702213"
 ---
 <!---Previous ms.author: monaray --->
 

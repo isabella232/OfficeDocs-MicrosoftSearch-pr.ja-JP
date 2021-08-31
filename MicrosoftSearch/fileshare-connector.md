@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: ファイル共有コネクタをGraphするMicrosoft Search
-ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235907"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469953"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -82,7 +82,7 @@ ms.locfileid: "58235907"
 
 管理者は、制限ルールに例外を与える機能も持っています。 例外ルールの優先度は、制限ルールよりも優先されます。 同様の方法で、インデックス作成に含めるアイテムのフォルダー/ファイル パスを指定することで例外を定義できます。
 
-![制限と例外](media/file-connector/ExclusionRule.png)
+![制限と例外。](media/file-connector/ExclusionRule.png)
 
 ## <a name="step-5-manage-search-permissions"></a>手順 5: 検索アクセス許可を管理する
 
@@ -92,7 +92,7 @@ ms.locfileid: "58235907"
 
 [ACL の共有] を選択できるのは、指定した共有パスが UNC パス形式に従う場合のみです。 UNC 形式のパスを作成するには、[共有] オプションの [高度な共有] に進む必要があります。
 
-![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
+![Advanced_sharing。](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-6-assign-property-labels"></a>手順 6: プロパティ ラベルを割り当てる
 
