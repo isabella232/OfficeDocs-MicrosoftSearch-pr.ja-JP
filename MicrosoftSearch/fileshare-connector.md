@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: ファイル共有コネクタをGraphするMicrosoft Search
-ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469953"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702149"
 ---
 <!---Previous ms.author: rusamai --->
 

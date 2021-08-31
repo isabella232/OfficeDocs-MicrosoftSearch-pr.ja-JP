@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 使用状況Microsoft Search確認する
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: b20045fc3cec609a1c2ad5e3e51655f1f2f24986
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701455"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470392"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search利用状況レポート
 

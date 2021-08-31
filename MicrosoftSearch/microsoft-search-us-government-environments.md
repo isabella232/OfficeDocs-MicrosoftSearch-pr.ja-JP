@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 米国政府機関向けMicrosoft Searchユーザー向け機能の可用性の詳細
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27444de7994c77ff3f95e9a90e917ea20f3cea68
-ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
+ms.openlocfilehash: cf8614d156202b3620eb595818a0e26c2200c77d
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58529037"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702240"
 ---
 # <a name="microsoft-search-for-us-government-environments"></a>Microsoft Search環境向け
 

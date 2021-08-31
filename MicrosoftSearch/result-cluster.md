@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: コネクタの結果クラスター エクスペリエンスの詳細
-ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: cfb7df9046074fd5126ca0ccc59e24ac4eef8a92
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701932"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470325"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graphコネクタの結果クラスター
 

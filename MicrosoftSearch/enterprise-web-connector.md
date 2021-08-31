@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Web サイトのEnterpriseコネクタGraph設定Microsoft Search
-ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469980"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702167"
 ---
 <!---Previous ms.author: monaray --->
 

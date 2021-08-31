@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: On-prem Agent
-ms.openlocfilehash: 4b9dddba7741388f2e6c96510e5f41b196def330
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469962"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702140"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph コネクタ エージェント
 

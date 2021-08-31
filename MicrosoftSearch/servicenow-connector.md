@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: サービスの ServiceNow Graph コネクタをMicrosoft Search
-ms.openlocfilehash: fccae6c2a007470eb9ef56130cb952158c01610c
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 2ad75820fde0b9282ac14b64730b69704f199fc6
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701914"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470383"
 ---
 <!---Previous ms.author: kam1 --->
 

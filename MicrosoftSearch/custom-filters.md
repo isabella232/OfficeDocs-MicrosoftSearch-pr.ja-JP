@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: SERP で使用するフィルターを管理する
-ms.openlocfilehash: da8c93f4faef7d52862db7464f61fd8e2cbd9fdf
-ms.sourcegitcommit: b69da84c97ea14fd4706d24522a1e324b6798f91
+ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58674778"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702195"
 ---
 # <a name="manage-filters"></a>フィルターの管理
 
