@@ -1,0 +1,116 @@
+- name: Microsoft Search の計画
+  items:
+    - name: 概要
+      href: overview-microsoft-search.md
+    - name: セットアップ
+      href: setup-microsoft-search.md
+    - name: よく寄せられる質問
+      href: faqs.md
+- name: 分析情報を取得する
+  items:
+    - name: 利用状況レポートを表示する
+      href: usage-reports.md
+    - name: フィードバックの管理
+      href: manage-feedback.md
+- name: 回答の提供
+  items:
+    - name: コンテンツの計画
+      href: plan-your-content.md
+    - name: 頭字語
+      href: manage-acronyms.md
+    - name: ブックマーク
+      href: manage-bookmarks.md
+    - name: フロア設計
+      href: manage-floorplans.md
+    - name: 場所
+      href: manage-locations.md
+    - name: Power BI
+      href: manage-powerbi.md
+    - name: Q&A
+      href: manage-qas.md
+- name: データ ソース
+  items:
+    - name: Graph コネクタ
+      items:
+        - name: 概要
+          href: connectors-overview.md
+        - name: コネクタ ギャラリー
+          href: connectors-gallery.md
+        - name: Microsoft 提供の設定コネクタ
+          items:
+            - name: セットアップの概要
+              href: configure-connector.md
+            - name: グラフ コネクタ エージェントを設定する
+              href: graph-connector-agent.md
+            - name: Azure AD 以外の ID をマップする
+              href: map-non-aad.md
+            - name: Azure AD の ID をマップする
+              href: map-aad.md
+            - name: コネクタ固有情報
+              items:
+                - name: Azure Data Lake Storage Gen2
+                  href: azure-data-lake-connector.md
+                - name: Azure DevOps (プレビュー)
+                  href: azure-devops-connector.md
+                - name: Azure SQL および Microsoft SQL Server
+                  href: MSSQL-connector.md
+                - name: 大企業の Web サイト
+                  href: enterprise-web-connector.md
+                - name: ファイル共有
+                  href: fileshare-connector.md
+                - name: MediaWiki
+                  href: mediawiki-connector.md
+                - name: Oracle SQL
+                  href: OracleSQL-connector.md
+                - name: Salesforce
+                  href: salesforce-connector.md
+                - name: ServiceNow
+                  href: servicenow-connector.md
+        - name: 接続を管理する
+          items:
+            - name: 接続を監視する
+              href: manage-connector.md
+            - name: 接続の詳細とエラーを表示する
+              href: connector-details-errors.md
+        - name: ライセンス
+          href: licensing.md
+        - name: 利用規約
+          href: terms-of-use.md
+    - name: フェデレーション コネクタ
+      items:
+        - name: Dynamics 365
+          href: manage-dynamics365.md
+- name: カスタマイズと構成
+  items:
+    - name: 業界および結果の種類を管理する
+      href: customize-search-page.md
+    - name: 検索結果のレイアウトを管理する
+      href: customize-results-layout.md
+    - name: 結果のクラスターを管理する
+      href: result-cluster.md
+    - name: フィルターの管理
+      href: custom-filters.md
+    - name: SharePoint での Microsoft Search
+      items:
+        - name: 概要
+          href: get-started-search-in-sharepoint-online.md
+        - name: カスタム検索結果ページを作成する
+          href: create-search-results-pages.md
+        - name: 検索ボックスの設定を管理する
+          href: manage-spo-search-box.md
+        - name: 'クラッシック ページで Microsoft Search を使用する '
+          href: manage-classic-spo-pages.md
+    - name: Bing での Microsoft Search
+      items:
+        - name: セキュリティとプライバシー
+          href: security-for-search.md
+        - name: イントラネット サイトに検索ボックス追加する
+          href: add-a-search-box-to-your-intranet-site.md
+        - name: Microsoft Edge を既定のブラウザーにする
+          href: /deployedge/edge-default-browser
+        - name: Bing を既定の検索エンジンにする
+          href: set-default-search-engine.md
+        - name: Bing.com を既定のホーム ページにする
+          href: set-default-homepage.md
+        - name: ユーザー導入ガイド
+          href: user-adoption-guide.md
