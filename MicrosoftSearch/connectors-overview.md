@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
-ms.openlocfilehash: e1aea93c927d933a63c3eb0456bb18d3f99e9291
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 0d0a1a89edfbcba0fed167c8b3f7bb2166da9439
+ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702213"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923145"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -71,7 +71,7 @@ Microsoft によって作成されたコネクタを使用して、次のデー�
 * [MediaWiki](mediawiki-connector.md)
 * [ファイル共有](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce (プレビュー)](salesforce-connector.md)
+* [Salesforce ](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 [Microsoft Graph コネクタ ギャラリーには](https://www.microsoft.com/microsoft-search/connectors)、これらの各コネクタの簡単な説明が含まれている。 これらのデータ ソースの 1 つをテナントに接続する準備が整っている場合は、[](configure-connector.md)データ ソースに適用される [Microsoft によるセットアップ コネクタ] セクションのセットアップの概要と他の記事を必ずお読みください。
@@ -101,8 +101,6 @@ Microsoft Graphおよび Microsoft Search API は一般に使用できるが、�
 プレビューのコネクタと機能のセットは次のとおりです。
 
 * [Azure DevOps コネクタ](azure-devops-connector.md)
-* [Salesforce コネクタ](salesforce-connector.md)
-* [ソース ACL を使用](servicenow-connector.md) する検索アクセス許可を持つ ServiceNow コネクタ
 * [カスタム フィルターを管理する](custom-filters.md)
 * [垂直の複数の接続](customize-search-page.md#multiple-connections-in-a-vertical)
 

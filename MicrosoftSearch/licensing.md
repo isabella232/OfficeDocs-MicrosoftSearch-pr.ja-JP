@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graphコネクタのライセンス要件と価格Microsoft Search
-ms.openlocfilehash: df91bb0ae68dd86d61855eed6d70a09ed0986800
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
+ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702086"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923154"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -70,3 +70,4 @@ Microsoft アカウント マネージャー Graph連絡を取る、または次
 
 > [!NOTE]
 > 現在、Microsoft Graph コネクタは、最大 700 万アイテムの合計インデックス クォータのみをサポートしています。これには、Microsoft 365 または Office 365 E5 ライセンスにバンドルされている組み込みのクォータが含まれます。 このプラットフォームは、将来、より高い制限をサポートします。 不明な点がある場合は、Microsoft サポートまたは Microsoft アカウント マネージャーにお問い合わせください。
+> プレビュー コネクタは、コネクタが一般に使用可能になると、インデックス クォータの合計にカウントされ始めるので、クォータにはカウントされません。
