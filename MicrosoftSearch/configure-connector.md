@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft による Graph コネクタの設定の概要
-ms.openlocfilehash: 3b8ae9068b445e09f2df95fb5b29feb5ec3af74b
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701878"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973606"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "58701878"
 3. **[+追加]** を選択し、使用可能なオプションのメニューから選択したデータ ソースを選択します。
 
    > [!div class="mx-imgBorder"]
-   > ![使用できるデータ ソースは、ADLS Gen2、Enterprise Web サイト、Microsoft SQL サーバー、Azure SQL、Oracle SQL データベース、ServiceNow、ファイル共有、Azure DevOps、および MediaWiki です。](media/add-connector.png)
+   > ![利用可能なデータ ソースは、ADLS Gen2、Enterprise Web サイト、Microsoft SQL サーバー、Azure SQL、Oracle SQL データベース、ServiceNow ナレッジ、ServiceNow カタログ、ファイル共有、Azure DevOps、および MediaWiki です。](media/add-connector.png)
 
 > [!NOTE]
 > 各テナントに最大 10 個Graph接続を追加できます。
@@ -97,7 +97,7 @@ ServiceNow クエリを使用すると、データがインデックス化され
 
 Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azure-data-lake-connector.md)のような一部のコネクタは、Azure Active Directory [(Azure AD)](/azure/active-directory/) ACL をネイティブにサポートします。
 
-[ServiceNow、Azure DevOps、Salesforce](servicenow-connector.md)[などの](azure-devops-connector.md)他のコネクタは[、Azure](salesforce-connector.md)以外のユーザーとグループAD同期をサポートします。  
+[ServiceNow ナレッジ、ServiceNow](servicenow-knowledge-connector.md)[カタログ](servicenow-catalog-connector.md)[、Azure DevOps、Salesforce](azure-devops-connector.md)などの他のコネクタでは[、Azure](salesforce-connector.md)以外のユーザーとグループAD同期がサポートされています。  
 
 [すべてのユーザー] を選択すると、組織内のすべてのユーザーが、このデータ ソースの検索結果を表示できます。
 

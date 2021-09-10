@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: すべての Microsoft Graph コネクタを一覧表示Microsoft Search
-ms.openlocfilehash: 26e0450c7fa714f91a998a333d719d09bdc2a92f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 57bb36d398c261d8df7b8dcf2b2301b35e30bc96
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702231"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973812"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph コネクタ ギャラリー
 
-[Microsoft Graph コネクタ](http://www.microsoft.com/microsoft-search/connectors)ギャラリーには、Microsoft とパートナーによって作成された各コネクタの簡単な説明と、各パートナーの Web サイトへのリンクが含まれています。
+[Microsoft Graph コネクタ](https://www.microsoft.com/microsoft-search/connectors)ギャラリーには、Microsoft とパートナーによって作成された各コネクタの簡単な説明と、各パートナーの Web サイトへのリンクが含まれています。
 
-現在利用可能なコネクタが 100 を超える場合は、Azure サービス、Box、MediaWiki、ServiceNow、SalesForce、Google サービス、MediaWiki など、一般的な Microsoft や非 Microsoft サービス に接続できます。
+現在利用可能なコネクタが 100 を超える場合は、Azure サービス、Box、Confluence、MediaWiki、ServiceNow、SalesForce、Google サービス、MediaWiki など、一般的な Microsoft および非 Microsoft サービス に接続できます。
 
 今すぐ[Microsoft Graph コネクタ ギャラリーにアクセス](http://www.microsoft.com/microsoft-search/connectors)し、必要なすべての情報を見つける。
 

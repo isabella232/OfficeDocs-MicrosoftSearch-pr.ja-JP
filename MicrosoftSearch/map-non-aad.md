@@ -6,24 +6,24 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: AAD 以外の ID をマップする方法の手順
-ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470307"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973454"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Azure 以外のユーザー id をADする  
 
 この記事では、Azure AD 以外の ID を Azure AD 以外の ID にマッピングし、Azure AD 以外の ID を持つアクセス制御リスト (ACL) のユーザーが対象範囲のコネクタ検索結果を表示する手順について説明します。
 
-これらの手順は、「このデータ ソースにアクセスできるユーザーのみ」と ID の種類が "非 AAD" の検索権限を持つ Microsoft による [ServiceNow](servicenow-connector.md) または [Salesforce](salesforce-connector.md) コネクタを設定している検索管理者にのみ関連します。
+これらの手順は、「このデータ ソースにアクセスできるユーザーのみ」および ID タイプ "Non-AAD" の検索権限を持つ Microsoft による[Confluence](confluence-cloud-connector.md) [Cloud、ServiceNow Knowledge、ServiceNow](servicenow-knowledge-connector.md) [Catalog、](servicenow-catalog-connector.md)[または Salesforce](salesforce-connector.md)コネクタを設定している検索管理者にのみ関連します。
 
 >[!NOTE]
 >Salesforce コネクタをセットアップし、[検索アクセス許可] 画面で [このデータ ソースと ID タイプ **AAD** にアクセスできるユーザーのみ] を選択する場合は、「Azure AD ID をマップする方法」の記事 [「Azure AD Identity の](map-aad.md)マップ」を参照してください。  
@@ -44,9 +44,9 @@ ms.locfileid: "58470307"
 
 ### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. マップするユーザー プロパティAD Azure 以外のユーザー プロパティを選択する
 
-データ ソースからプルされた Azure AD以外のプロパティを選択して、正規表現を適用できます。 データ ソースでこれらのプロパティを検索する場所の詳細については [、「ServiceNow](servicenow-connector.md) と [Salesforce](salesforce-connector.md) のページ」を参照してください。  
+データ ソースからプルされた Azure AD以外のプロパティを選択して、正規表現を適用できます。 データ ソースでこれらのプロパティを検索する場所の詳細については [、「Confluence Cloud](confluence-cloud-connector.md) [、ServiceNow Knowledge、ServiceNow](servicenow-knowledge-connector.md) [Catalog、Salesforce](servicenow-catalog-connector.md) ページ」を [参照](salesforce-connector.md) してください。  
 
-ドロップダウンから Azure 以外のユーザー プロパティAD選択し、それらのユーザー プロパティの値に適用する正規表現を指定できます。 正規表現の詳細については、「正規表現リファレンス [」を参照してください]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)。  
+ドロップダウンから Azure 以外のユーザー プロパティAD選択し、それらのユーザー プロパティの値に適用する正規表現を指定できます。
 
 正規表現とその出力をサンプル文字列に適用する例を次に示します。 
 

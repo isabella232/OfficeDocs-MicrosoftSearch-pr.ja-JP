@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Salesforce Graph コネクタをセットアップMicrosoft Search
 ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701869"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973558"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -188,7 +188,7 @@ Salesforce コネクタは現在、フル クロールの更新スケジュー�
     - Phone
     - MobilePhone
     - メール
-    - 種類
+    - 型
     - 役職
     - AccountId
     - AccountName

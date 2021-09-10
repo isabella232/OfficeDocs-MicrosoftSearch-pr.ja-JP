@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Oracle SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470016"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973582"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -95,7 +95,7 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 | 浮動小数点数のデータ型 | NUMBER(p,s) <br> FLOAT(p) | double |
 | 日付データ型 | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | 日付型 |
 | 文字データ型 | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LONG <br> CLOB <br> NCLOB | string |
-| Unicode 文字のデータ型 | NCHAR <br> NVARCHAR | string |
+| Unicode 文字のデータ型 | NCHAR <br> NVARCHAR | 文字列 |
 | RowID データ型 | ROWID <br> UROWID | string |
 
 現在直接サポートされていない他のデータ型では、列をサポートされているデータ型に明示的にキャストする必要があります。

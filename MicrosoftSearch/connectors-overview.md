@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
-ms.openlocfilehash: 0d0a1a89edfbcba0fed167c8b3f7bb2166da9439
-ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
+ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923145"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973605"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -67,12 +67,15 @@ Microsoft によって作成されたコネクタを使用して、次のデー�
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL および Microsoft SQL Server](MSSQL-connector.md)
+* [Confluence Cloud (プレビュー)](confluence-cloud-connector.md)
 * [大企業の Web サイト](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [ファイル共有](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce ](salesforce-connector.md)
-* [ServiceNow](servicenow-connector.md)
+* [Salesforce](salesforce-connector.md)
+* [ServiceNow ナレッジ](servicenow-knowledge-connector.md)
+* [ServiceNow カタログ (プレビュー)](servicenow-catalog-connector.md)
+
 
 [Microsoft Graph コネクタ ギャラリーには](https://www.microsoft.com/microsoft-search/connectors)、これらの各コネクタの簡単な説明が含まれている。 これらのデータ ソースの 1 つをテナントに接続する準備が整っている場合は、[](configure-connector.md)データ ソースに適用される [Microsoft によるセットアップ コネクタ] セクションのセットアップの概要と他の記事を必ずお読みください。
 
@@ -101,6 +104,8 @@ Microsoft Graphおよび Microsoft Search API は一般に使用できるが、�
 プレビューのコネクタと機能のセットは次のとおりです。
 
 * [Azure DevOps コネクタ](azure-devops-connector.md)
+* [Confluence クラウド コネクタ](confluence-cloud-connector.md)
+* [ServiceNow カタログ コネクタ](servicenow-catalog-connector.md)
 * [カスタム フィルターを管理する](custom-filters.md)
 * [垂直の複数の接続](customize-search-page.md#multiple-connections-in-a-vertical)
 

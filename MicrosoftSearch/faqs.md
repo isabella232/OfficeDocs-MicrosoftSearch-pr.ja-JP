@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: エンタープライズ検索と Microsoft Search についてよく寄せられる質問に対する回答です
 ms.openlocfilehash: 8b4de717ab63af8842dc86135748e551ff386a2a
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702158"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973700"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>よく寄せられる質問

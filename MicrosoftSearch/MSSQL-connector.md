@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Azure SQLおよび Microsoft SQL Graph コネクタをセットアップMicrosoft Search。
-ms.openlocfilehash: a60c8a038790bb4a08189c48675d315b06a6e0f7
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470007"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973599"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -130,8 +130,8 @@ Azure SQLコネクタの場合は、接続先のサーバー名または IP ア�
 | 正確な数値 | ビット | boolean |
 | 近似数値 | 浮動小数点数 <br> 本当の | double |
 | 文字の文字列 | char <br> varchar <br> text | string |
-| Unicode 文字の文字列 | nchar <br> nvarchar <br> ntext | string |
-| その他のデータ型 | uniqueidentifier | string |
+| Unicode 文字の文字列 | nchar <br> nvarchar <br> ntext | 文字列 |
+| その他のデータ型 | uniqueidentifier | 文字列 |
 
 現在直接サポートされていない他のデータ型では、列をサポートされているデータ型に明示的にキャストする必要があります。
 

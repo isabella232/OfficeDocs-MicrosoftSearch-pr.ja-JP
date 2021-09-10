@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: ユーザー用のAzure DevOps GraphコネクタをMicrosoft Search
-ms.openlocfilehash: 9c3c5d994f8470cdd70dc07445ede2c74f688383
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639572"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973557"
 ---
 <!---Previous ms.author: shgrover --->
 

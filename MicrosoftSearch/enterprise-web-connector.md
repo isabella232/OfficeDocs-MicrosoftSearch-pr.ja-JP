@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Web サイトのEnterpriseコネクタGraph設定Microsoft Search
 ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702167"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973594"
 ---
 <!---Previous ms.author: monaray --->
 

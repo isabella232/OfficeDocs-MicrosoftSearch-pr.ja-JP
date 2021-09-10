@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Microsoft Graphコネクタのライセンス要件と価格Microsoft Search
 ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
-ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923154"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973546"
 ---
 <!---Previous ms.author: rusamai --->
 

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: ユーザーからのフィードバックを確認し、Microsoft Search
 ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702014"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973692"
 ---
 # <a name="managing-user-feedback"></a>ユーザー フィードバックの管理
 

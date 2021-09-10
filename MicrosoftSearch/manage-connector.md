@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Microsoft Graph コネクタを管理Microsoft Search。
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702050"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973575"
 ---
 # <a name="monitor-your-connections"></a>接続を監視する
 
@@ -65,7 +65,7 @@ Operation | Microsoft 提供の Graph コネクタ | パートナーまたはGra
 --- | --- 
 標準 | 0-79%
 高 | 80-89%
-致命的 | 90%-99%
+クリティカル | 90%-99%
 Full | 100%
 
 インデックスが作成されたアイテムの数も、接続ごとに表示されます。 各接続によってインデックス付けされたアイテムの数は、組織で使用可能な合計クォータに貢献します。

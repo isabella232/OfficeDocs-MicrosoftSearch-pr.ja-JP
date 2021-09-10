@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: コネクタの詳細とエラー
 ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701383"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973796"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "58701383"
 値 | 説明
 --- | ---
 **で完了** | 前回のクロールが完了した日時
-**型** | 増分クロールまたはフル クロール
+**Type** | 増分クロールまたはフル クロール
 **Duration** | 最後のクロールが完了した時間
 **成功** | 前回のクロールで正常に取り込まれたアイテムの数
 **エラー** | 前回のクロールでエラーが発生したアイテムの数

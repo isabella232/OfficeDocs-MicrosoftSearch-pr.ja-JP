@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: フロア プラン機能は、Microsoft Search内のユーザー、オフィス、その他の設備を見つけるのに役立ちます。
 ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702023"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973716"
 ---
 # <a name="manage-floor-plans"></a>間取図を管理する
 
@@ -115,7 +115,7 @@ DWG ファイル [の表示](#frequently-asked-questions) と更新について�
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-|**手順**|**エラー メッセージ**|**型**|**操作**|
+|**手順**|**エラー メッセージ**|**Type**|**操作**|
 |:-----|:-----|:-----|:-----|
 |アップロード間取り図|CC_1.dwg を読み取りできません。 間取り図を再アップロードまたは削除してください。|Error|ファイルのアップロードを再試行してください。 それでも問題が生じなかった場合は、ファイルを削除してやり直してください。|
 |アップロード間取り図|CC_1.dwg という名前の 2 つのファイルがあります。 そのうちの 1 つを削除するか、別の名前で再アップロードしてください。|Error|ファイル名が正しくない場合は、フロアまたはウィングの情報を追加してファイル名を一意にしてから、ファイルを再度アップロードします。 誤って同じファイルを 2 回追加した場合は、削除してください。|

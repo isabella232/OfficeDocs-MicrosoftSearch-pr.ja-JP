@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 時間の経過と共に、場所の情報の状態やコンテンツを更新して、関連性の高い状態を維持することが必要になる場合があります。
 ms.openlocfilehash: 0c93e29c8c899a4b70a30cf97354cf00fc19667f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701996"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973723"
 ---
 # <a name="manage-locations"></a>場所の管理
 
