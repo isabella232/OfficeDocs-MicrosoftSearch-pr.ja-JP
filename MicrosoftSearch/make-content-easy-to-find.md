@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: ブックマーク、場所、Q&A 項目を作成して、組織のコンテンツを簡単に見つけられるようにします。
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973724"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375858"
 ---
 # <a name="make-content-easy-to-find"></a>簡単に見つけられるコンテンツ
 
@@ -90,7 +90,7 @@ HTML コンテンツを使用するか、回答または説明に HTML タグを
 
 [ [場所] を](manage-locations.md)使用すると、ユーザーはアドレスを検索し、組織の建物を検索できます。 場所 **機能は** 、オフィス、キャンパス、および建物の正確な場所と、ルート案内とナビゲーションを提供します。 最適な結果を得る場合、管理者は組織のすべての重要な場所を組織の重要な場所に追加Microsoft Search。 Bookmarks [および](manage-bookmarks.md) Q&[A とは異なり](manage-qas.md)、Locations インデックスは直ちに更新されません。 検索結果に新しい場所または変更された場所が表示されるには数時間かかる場合があります。
 
-## <a name="get-started"></a>開始する
+## <a name="get-started"></a>作業の開始
 ユーザーに必要な情報を確認し、その情報を簡単に見つけやすくするには、次の方法を試してください。
 
 - イントラネットの検索ログを使用して、トラフィックが最も多いサイトやページを判別する。

@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: アプリケーションの Confluence Cloud Graph コネクタをMicrosoft Search
 ms.openlocfilehash: baf6139257c8bf8e40bc997e2a408efb4fc2549f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973446"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376236"
 ---
 <!---Previous ms.author: kam1 --->
 

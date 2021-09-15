@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Microsoft Graph コネクタを管理Microsoft Search。
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973575"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334535"
 ---
 # <a name="monitor-your-connections"></a>接続を監視する
 
@@ -30,7 +30,7 @@ ms.locfileid: "58973575"
 
 コネクタの種類ごとに[、次Microsoft 365 管理センター](https://admin.microsoft.com)に示す操作がサポートされます。
 
-Operation | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
+操作 | Microsoft 提供の Graph コネクタ | パートナーまたはGraphコネクタ
 --- | --- | ---
 接続の追加 | :heavy_check_mark: (「セットアップの概要[」を参照)](configure-connector.md) | :x: (パートナーまたはカスタムビルドのコネクタ管理者 UX を参照)
 接続を削除する | :heavy_check_mark: | :heavy_check_mark:

@@ -9,11 +9,11 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: オンライン サイト用の独自の検索結果ページSharePoint作成する
 ms.openlocfilehash: df99287dbdd9a82c1a8bc66b39e67a37fcb22da8
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973781"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376203"
 ---
 # <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>オンラインでカスタム検索結果ページをSharePointする
 

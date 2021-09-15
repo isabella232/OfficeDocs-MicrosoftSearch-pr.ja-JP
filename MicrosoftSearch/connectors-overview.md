@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
 ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973605"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376230"
 ---
 <!---Previous ms.author: monaray --->
 

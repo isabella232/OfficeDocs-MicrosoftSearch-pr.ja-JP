@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: AAD 以外の ID をマップする方法の手順
 ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973454"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334511"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Azure 以外のユーザー id をADする  
 

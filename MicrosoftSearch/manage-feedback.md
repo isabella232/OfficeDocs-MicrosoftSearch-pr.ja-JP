@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーからのフィードバックを確認し、Microsoft Search
-ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.openlocfilehash: db2854205b3006328919e22bd69c11a075ffc15d
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973692"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334523"
 ---
 # <a name="managing-user-feedback"></a>ユーザー フィードバックの管理
 
@@ -66,7 +66,7 @@ ms.locfileid: "58973692"
 
 ## <a name="send-user-feedback-to-microsoft"></a>Microsoft にユーザー フィードバックを送信する
 
-既定では、すべてのユーザー フィードバックが Microsoft に送信され、ユーザーに追加されます。 Microsoft へのフィードバックの送信を停止するには、[ **設定の管理**] をクリックし、[Microsoft にユーザー フィードバックを自動的に送信 **する] チェック ボックス** をオフにします。 この変更を有効にするには、最大 24 時間かかる場合があります。
+既定では、すべてのユーザー フィードバックは、ユーザーに加えて Microsoft に送信されます。 Microsoft へのフィードバックの送信を停止するには、[ **設定の管理**] をクリックし、[Microsoft にユーザー フィードバックを自動的に送信 **する] チェック ボックス** をオフにします。 この変更を有効にするには、最大 24 時間かかる場合があります。
 
 Microsoft にフィードバックを自動的に送信しない場合でも、Microsoft に個別のフィードバックを送信できます。
 

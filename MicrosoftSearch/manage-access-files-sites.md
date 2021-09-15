@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 管理者がサイトとファイルへのアクセスを組織内で適切に制限する方法の概要。
 ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973820"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375844"
 ---
 # <a name="manage-access-to-files-and-sites"></a>ファイルとサイトへのアクセスを管理する
 

@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Azure Data Lake Storage Gen2 GraphをセットアップMicrosoft Search
 ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973552"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376119"
 ---
 <!---Previous ms.author: monaray --->
 

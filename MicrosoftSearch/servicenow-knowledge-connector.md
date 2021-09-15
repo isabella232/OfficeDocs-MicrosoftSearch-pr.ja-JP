@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: サービスの ServiceNow ナレッジ GraphコネクタをMicrosoft Search
 ms.openlocfilehash: 8052571124a74dfa92e5cd81deceee044081ecc1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973545"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376293"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -81,14 +81,14 @@ ServiceNow からコンテンツを認証および同期するには、次の 3 
 
 次の表に、エンドポイント作成フォームに入力する方法のガイダンスを示します。
 
-Field | 説明 | 推奨値 
+フィールド | 説明 | 推奨値 
 --- | --- | ---
 名前 | OAuth アクセスが必要なアプリケーションを識別する一意の値。 | Microsoft Search
 クライアント ID | アプリケーションの読み取り専用で自動生成された一意の ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 該当なし
 クライアント シークレット | この共有シークレット文字列を使用すると、ServiceNow インスタンスと Microsoft Searchの通信を承認できます。 | シークレットをパスワードとして扱って、セキュリティのベスト プラクティスに従います。
 リダイレクト URL | 承認サーバーがリダイレクトする必要なコールバック URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 ロゴ URL | アプリケーション ロゴのイメージを含む URL。 | 該当なし
-Active | チェック ボックスをオンにして、アプリケーション レジストリをアクティブにします。 | アクティブに設定する
+有効 | チェック ボックスをオンにして、アプリケーション レジストリをアクティブにします。 | アクティブに設定する
 トークンのライフスパンの更新 | 更新トークンが有効な秒の数。 既定では、更新トークンの有効期限は 100 日 (8,640,000 秒) です。 | 31,536,000 (1 年)
 アクセス トークンのライフスパン | アクセス トークンが有効な秒の数。 | 43,200 (12 時間)
 
@@ -148,7 +148,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 2. 次の表に、OIDC プロバイダー登録フォームに入力する方法のガイダンスを示します。
 
-   Field | 説明 | 推奨値
+   フィールド | 説明 | 推奨値
    --- | --- | ---
    名前 | OAuth OIDC エンティティを識別する一意の名前。 | Azure AD
    クライアント ID | サードパーティの OAuth OIDC サーバーに登録されているアプリケーションのクライアント ID。 インスタンスは、アクセス トークンを要求するときにクライアント ID を使用します。 | 手順 3.a のアプリケーション (クライアント) ID
@@ -160,7 +160,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 4. 次の表に、OIDC プロバイダー構成フォームに入力する方法のガイダンスを示します。
 
-   Field | 推奨値
+   フィールド | 推奨値
    --- | ---
    OIDC プロバイダー |  Azure AD
    OIDC メタデータ URL | URL は \: 、/.well known/openid-configuration login.microsoftonline.com/<https //login.microsoftonline.com/<tenandId">形式である必要があります。 <br/>手順 3.a から "tenantID" をディレクトリ (テナント) ID に置き換えてください。
@@ -168,7 +168,7 @@ ServiceNow インスタンスには、次の構成が必要です。
    アプリケーション | グローバル
    ユーザークレーム | sub
    ユーザー フィールド | ユーザー ID
-   JTI クレーム検証を有効にする | Disabled
+   JTI クレーム検証を有効にする | 無効
 
 5. [OAuth OIDC エンティティ] フォームの [送信と更新] を選択します。
 
@@ -178,7 +178,7 @@ ServiceNow インスタンスには、次の構成が必要です。
 
 次の表は、ServiceNow ユーザー アカウントの登録に記入する方法に関するガイダンスを示しています。
 
-Field | 推奨値
+フィールド | 推奨値
 --- | ---
 ユーザー ID | 手順 3.c のサービス プリンシパル ID
 Web サービス アクセスのみ | Checked

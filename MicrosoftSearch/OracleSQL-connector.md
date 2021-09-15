@@ -15,11 +15,11 @@ search.appverid:
 ROBOTS: NoIndex
 description: Oracle SQL Graph コネクタをセットアップMicrosoft Search。
 ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973582"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376125"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -94,9 +94,9 @@ Oracle SQL コネクタの場合は、優先認証方法、ユーザー名、お
 | 数値データ型 | NUMBER(p,0) | int64 (p <= 18) <br> double (p > 18) |
 | 浮動小数点数のデータ型 | NUMBER(p,s) <br> FLOAT(p) | double |
 | 日付データ型 | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | 日付型 |
-| 文字データ型 | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LONG <br> CLOB <br> NCLOB | string |
+| 文字データ型 | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LONG <br> CLOB <br> NCLOB | 文字列 |
 | Unicode 文字のデータ型 | NCHAR <br> NVARCHAR | 文字列 |
-| RowID データ型 | ROWID <br> UROWID | string |
+| RowID データ型 | ROWID <br> UROWID | 文字列 |
 
 現在直接サポートされていない他のデータ型では、列をサポートされているデータ型に明示的にキャストする必要があります。
 
