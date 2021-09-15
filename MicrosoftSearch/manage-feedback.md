@@ -17,7 +17,7 @@ ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334523"
+ms.locfileid: "59375479"
 ---
 # <a name="managing-user-feedback"></a>ユーザー フィードバックの管理
 
