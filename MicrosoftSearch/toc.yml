@@ -82,7 +82,7 @@
               href: connector-details-errors.md
         - name: ライセンス
           href: licensing.md
-        - name: 利用規約
+        - name: 使用条件
           href: terms-of-use.md
     - name: フェデレーション コネクタ
       items:
@@ -114,6 +114,8 @@
           href: security-for-search.md
         - name: イントラネット サイトに検索ボックス追加する
           href: add-a-search-box-to-your-intranet-site.md
+        - name: 学校または仕事の検索エクスペリエンスを選択する (プレビュー)
+          href: select-work-school-search-experience.md
         - name: Microsoft Edge を既定のブラウザーにする
           href: /deployedge/edge-default-browser
         - name: Bing を既定の検索エンジンにする

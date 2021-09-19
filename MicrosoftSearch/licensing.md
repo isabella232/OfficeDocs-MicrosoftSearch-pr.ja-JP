@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graphコネクタのライセンス要件と価格Microsoft Search
-ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: d4601e06d49ec860652d42517c79af2343c9b6ec
+ms.sourcegitcommit: bafd15a17ca20bac0f2c5f65e36ef81262eafc06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59376134"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "59448630"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -29,12 +29,15 @@ ms.locfileid: "59376134"
 有効な **Microsoft 365またはOffice 365を使用** すると、検索結果のコネクタからのデータを表示できます。
 
 > [!TIP]
-> **Microsoft Graph コネクタ**& ビバ トピックス 試用版が利用可能です: インデックス クォータを使用できない場合、Microsoft Graph コネクタを試す場合は、Microsoft Viva トピックを使用してプロモーション コードを要求できます [](#microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial)。詳細については、こちらを参照してください。 [](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
+> **Microsoft Graph コネクタ** プロモーション コード : インデックス クォータを使用できない場合、Microsoft Graph コネクタを試す場合は、Microsoft アカウント マネージャーからプロモーション コードを要求できます。 プロモーション コードを使用すると、6 か月の試用版を取得します。
 
 >[!IMPORTANT]
 >Microsoft によるすべてのGraphコネクタは無料です。 ただし、これらのコネクタからコンテンツを取り込むには、十分なインデックス クォータが必要です。
 
 コネクタを使用してコンテンツGraphするには、十分なインデックス クォータが必要です。 Graphのインデックス クォータは、次の方法で使用できます。
+
+- 組み込みのエンタイトルメント
+- アドオン インデックス クォータの購入
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>ライセンスまたはライセンスMicrosoft 365組み込Office 365 E5エンタイトルメント
 
@@ -56,17 +59,6 @@ Microsoft アカウント マネージャー Graph連絡を取る、または次
 3. [**追加のコネクタ容量Graphを選択します**。
 4. [購入 **] を** 選択し、注文の基本設定を完了します。
 5. [今 **すぐチェックアウト] を選択します**。
-
-## <a name="microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial"></a>Microsoft Graphコネクタが試用版でMicrosoft Viva トピックしました
- 新しいビバ トピック試用版では、Microsoft Graphと開発環境および/または実稼働環境のビバ トピックの両方を評価できます。 これは、ビバ トピックへのアクセスに加えて、コネクタの容量が制限されています。
-
-次の 2 つのオプションを使用してGraphコネクタをMicrosoft Viva トピック。
-
-1. **無料試用版を開始し**、25 人のユーザーに対して 1 か月の間にアクセスを取得します。
-
-     [無料[Microsoft Viva トピック]](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)にアクセスし、[無料試用版] オプションを選択します。
-
-2. Microsoft アカウント マネージャーに問い合わせ、試用版の試用版インデックス容量のプロモーション コードを要求Microsoft Viva トピックします。 プロモーション コード **を使用すると、6** か月間、50 人のユーザーにアクセスできます。
 
 > [!NOTE]
 > 現在、Microsoft Graph コネクタは、最大 700 万アイテムの合計インデックス クォータのみをサポートしています。これには、Microsoft 365 または Office 365 E5 ライセンスにバンドルされている組み込みのクォータが含まれます。 このプラットフォームは、将来、より高い制限をサポートします。 不明な点がある場合は、Microsoft サポートまたは Microsoft アカウント マネージャーにお問い合わせください。
