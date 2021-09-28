@@ -7,30 +7,28 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 07/02/2021
+ms.date: 09/24/2021
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 使用状況Microsoft Search確認する
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
+ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59376257"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59940650"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search利用状況レポート
 
-検索利用状況レポートを使用すると、組織内での検索の機能を理解できます。 これらのレポートから生成された分析情報は、コンテンツ[](./make-content-easy-to-find.md)を簡単に見つけてアクションを実行し、ユーザーにとって検索をより便利で楽しいエクスペリエンスにするのに役立ちます。
+検索利用状況レポートを使用すると、組織内での検索の機能を理解できます。 これらのレポートから生成された分析情報は、検索をユーザーにとってより便利で楽しいエクスペリエンスにするアクションを実行するのに役立ちます。
 
 > [!IMPORTANT]
 > Microsoft Searchレポートは現在プレビュー中です
 
 Microsoft Search[使用状況](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)レポートには、SharePoint Home、Office.com、および Bing 検索ボックスで Microsoft Search から実行される検索から生成されたグラフとテーブルが含まれます。 過去 31 日、1 日、または前の年の月次のデータを確認できます。 これらのレポートは展開されているだけなので、履歴データの発生に時間がかかっています。
-
-このページの以前のバージョンには、Microsoft Search.com のBing検索Bing含まれていました。 このデータは、これらのレポートに統合されました。ページの下部にあるリンクをクリックして、ページのトップ クエリとインプレッション配布Bingを表示 **できます。** このリンクと古いページは近日削除されます。
 
 > [!div class="mx-imgBorder"]
 > ![使用状況レポートのダッシュボードを検索します。](media/usage-reports/usage_reports_v2.png)
@@ -53,8 +51,6 @@ Microsoft Search[使用状況](https://admin.microsoft.com/Adminportal/Home?#/Mi
 
 レポートをダウンロードすると、より広範な時間からレポートを表示できます。 ダウンロード矢印をクリックして、 **過去 31** 日または過去 **12 か月を選択します**。 レポートは、スプレッドシートとしてExcelされます。 過去 31 日間を選択した場合、スプレッドシートには各日の個別のタブがあります。 過去 12 か月のダウンロードには、各月のタブがあります。
 
-ユーザーのBingとインプレッション配布レポートを表示するには、ページのリンクをクリックします。
-
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 **過去 31 日間または過去 12 か月を選択した場合、特定の日または特定の月を選択する必要がある理由。**
@@ -63,7 +59,7 @@ Microsoft Search[使用状況](https://admin.microsoft.com/Adminportal/Home?#/Mi
 
 上位、破棄、および失敗したクエリ テーブルには、選択した日または月の結果が表示されます。
 
-**過去 7 日間、過去 30 日間の集計データが表示される場合などです。Bingのトップ クエリ レポートのように?**
+**過去 7 日間、過去 30 日間の集計データがいつ表示されますか。..??**
 
 この種類の集約を検討し、将来のバージョンのこれらのレポートのデータ範囲フィルター処理を簡略化しています。
 
@@ -73,4 +69,4 @@ Microsoft Search[使用状況](https://admin.microsoft.com/Adminportal/Home?#/Mi
 
 **利用状況レポートのその他のフィルター処理が予定されていますか?**
 
-組織のより詳細なレベルで検索の使用状況を知るのに役立つ追加のフィルターに取り組み中です。 たとえば、特定の地域または部署のクエリ ボリュームを表示できます。
+組織のより詳細なレベルで検索の使用状況を知るのに役立つ、より多くのフィルターに取り組しています。 たとえば、特定の地域または部署のクエリ ボリュームを表示できます。
