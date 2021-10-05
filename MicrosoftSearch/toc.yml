@@ -2,7 +2,7 @@
   items:
     - name: 概要
       href: overview-microsoft-search.md
-    - name: セットアップ
+    - name: 設定
       href: setup-microsoft-search.md
     - name: ファイルとサイトへのアクセスを管理する
       href: manage-access-files-sites.md
@@ -82,7 +82,7 @@
               href: connector-details-errors.md
         - name: ライセンス
           href: licensing.md
-        - name: 使用条件
+        - name: 利用規約
           href: terms-of-use.md
     - name: フェデレーション コネクタ
       items:
@@ -110,6 +110,8 @@
           href: manage-classic-spo-pages.md
     - name: Bing での Microsoft Search
       items:
+        - name: 概要
+          href: overview-microsoft-search-bing.md
         - name: セキュリティとプライバシー
           href: security-for-search.md
         - name: イントラネット サイトに検索ボックス追加する
