@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用状況Microsoft Search確認する
-ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
-ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
+ms.openlocfilehash: 1f2afa6e2c7691aa3284ae017913827761981529
+ms.sourcegitcommit: ca6f0488b842e7fc0d98c7b84b2b8bc5817d3e7b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59940650"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60224869"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search利用状況レポート
 
@@ -28,7 +28,7 @@ ms.locfileid: "59940650"
 > [!IMPORTANT]
 > Microsoft Searchレポートは現在プレビュー中です
 
-Microsoft Search[使用状況](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)レポートには、SharePoint Home、Office.com、および Bing 検索ボックスで Microsoft Search から実行される検索から生成されたグラフとテーブルが含まれます。 過去 31 日、1 日、または前の年の月次のデータを確認できます。 これらのレポートは展開されているだけなので、履歴データの発生に時間がかかっています。
+Microsoft Search[利用状況](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)レポートには、SharePoint ホーム (URL が /SharePoint.aspx で終わるサイト)、Office.com、Bing 検索ボックスの Microsoft Search から実行される検索から生成されたグラフとテーブルが含まれます。 過去 31 日、1 日、または前の年の月次のデータを確認できます。 これらのレポートは展開されているだけなので、履歴データの発生に時間がかかっています。
 
 > [!div class="mx-imgBorder"]
 > ![使用状況レポートのダッシュボードを検索します。](media/usage-reports/usage_reports_v2.png)
