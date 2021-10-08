@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft による Graph コネクタの設定の概要
-ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f3e622abbc54103a47a06c587a1d20190639504c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59376131"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238441"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft による Graph コネクタの設定の概要 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft による Graph コネクタの設定の概要
 
 この記事では、Microsoft によるコネクタのセットアップに必要Graph基本的なプロセス[について説明](https://admin.microsoft.com)Microsoft 365 管理センター。 基本的なプロセスには、以下のステップが含まれます。  
 <!---Add links to each section in the doc--->
@@ -87,9 +87,9 @@ ms.locfileid: "59376131"
 
 ## <a name="step-4-select-properties"></a>手順 4: プロパティの選択
 
-ユーザーがインデックスを作成するプロパティを選択Microsoft Search。 
+ユーザーがインデックスを作成するプロパティを選択Microsoft Search。
 
-ServiceNow クエリを使用すると、データがインデックス化される前にデータをフィルター処理Microsoft Search。これにより、検索できるデータを詳細に制御できます。 ServiceNow クエリの詳細については、「ServiceNow クエリについて [」を参照してください](https://go.microsoft.com/fwlink/?linkid=2151447)。 
+ServiceNow クエリを使用すると、データがインデックス化される前にデータをフィルター処理Microsoft Search。これにより、検索できるデータを詳細に制御できます。 ServiceNow クエリの詳細については、「ServiceNow クエリについて [」を参照してください](https://go.microsoft.com/fwlink/?linkid=2151447)。
 
 ## <a name="step-5-manage-search-permissions"></a>手順 5: 検索アクセス許可を管理する
 
@@ -143,7 +143,7 @@ Microsoft SQL[および Azure](MSSQL-connector.md) Data Lake Storage [Gen2](azur
 
 検索スキーマ属性には、クエリ、 **検索**、 **取得**、絞り込 **み** などのオプション **があります**。 次の表に、Microsoft がコネクタでサポートする各Graphを示し、その機能について説明します。
 
-検索スキーマ属性 | 関数 | 例
+検索スキーマ属性 | 職務 | 例
 --- | --- | ---
 SEARCH | プロパティのテキスト コンテンツを検索可能にする。 プロパティの内容は、フルテキスト インデックスに含まれます。 | プロパティが **title** の場合は、テキスト **または** Enterpriseの単語を含む **Enterpriseを返** します。
 QUERY | 特定のプロパティの一致をクエリで検索します。 その後、クエリでプロパティ名をプログラムまたは動詞で指定できます。 |  Title プロパティ **をクエリ** できる場合は、**クエリ Title: Enterprise** サポートされます。
@@ -152,8 +152,7 @@ REFINE | 絞り込みオプションは、[検索結果] ページMicrosoft Sear
 
 ファイル共有コネクタを除くすべてのコネクタでは、ユーザー設定の種類を手動で設定する必要があります。 各フィールドの検索機能をアクティブにするには、プロパティの一覧にマップされた検索スキーマが必要です。 接続ウィザードでは、選択したソース プロパティのセットに基づいて検索スキーマが自動的に選択されます。 このスキーマを変更するには、検索スキーマ ページの各プロパティと属性のチェック ボックスをオンにします。
 
-> [!div class="mx-imgBorder"]
-> ![コネクタのスキーマは、クエリ、検索、および取得関数を追加または削除することでカスタマイズできます。](media/manageschema.png)
+:::image type="content" alt-text="コネクタのスキーマは、クエリ、検索、および取得関数を追加または削除することでカスタマイズできます。" source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>検索スキーマ設定の制限と推奨事項
 
@@ -201,7 +200,7 @@ REFINE | 絞り込みオプションは、[検索結果] ページMicrosoft Sear
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 <!---Insert troubleshooting recommendations for this data source-->
-データ ソースのコネクタ固有の情報を読み取る。 
+データ ソースのコネクタ固有の情報を読み取る。
 
 > [!NOTE]
 > コネクタ固有の記事の中には、この時点でのトラブルシューティングの推奨事項が含まれる場合があります。
@@ -214,4 +213,4 @@ REFINE | 絞り込みオプションは、[検索結果] ページMicrosoft Sear
 
 ## <a name="next-steps"></a>次の手順
 
-接続を公開した後、検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、「検索結果のカスタマイズ [ページ」を参照してください](customize-search-page.md)。
+接続を発行した後、垂直方向と結果の種類を使用して検索結果ページをカスタマイズする必要があります。 検索結果のカスタマイズの詳細については、垂直方向と結果の種類を管理 [する](manage-verticals.md) 方法を [確認できます](manage-result-types.md)。

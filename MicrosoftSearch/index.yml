@@ -65,8 +65,10 @@ additionalContent:
               url: manage-dynamics365.md
         - title: エンド ユーザー UX のカスタマイズ
           links:
-            - text: 業界および結果の種類を管理する
-              url: customize-search-page.md
+            - text: 縦書きを管理する
+              url: manage-verticals.md
+            - text: 検索結果の種類を管理する
+              url: manage-result-types.md
             - text: SERP レイアウトのカスタマイズ
               url: customize-results-layout.md
             - text: フィルターの管理

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph コネクタのMicrosoft Search
-ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 2dec2d17479368bc6d85c0a5bd275461a4114800
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59376230"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238396"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -76,7 +76,6 @@ Microsoft によって作成されたコネクタを使用して、次のデー�
 * [ServiceNow ナレッジ](servicenow-knowledge-connector.md)
 * [ServiceNow カタログ (プレビュー)](servicenow-catalog-connector.md)
 
-
 [Microsoft Graph コネクタ ギャラリーには](https://www.microsoft.com/microsoft-search/connectors)、これらの各コネクタの簡単な説明が含まれている。 これらのデータ ソースの 1 つをテナントに接続する準備が整っている場合は、[](configure-connector.md)データ ソースに適用される [Microsoft によるセットアップ コネクタ] セクションのセットアップの概要と他の記事を必ずお読みください。
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Microsoft Graphパートナーによるコネクタ
@@ -113,7 +112,7 @@ Microsoft Graphおよび Microsoft Search API は一般に使用できるが、�
 
 検索結果をカスタマイズおよび構成するには、さまざまな方法があります。 詳細については、次の記事を参照してください。
 
-* [業界および結果の種類を管理する](customize-search-page.md)
+* [垂直および結果の](manage-verticals.md) 種類 [を管理する](manage-result-types.md)
 * [検索結果のレイアウトを管理する](customize-results-layout.md)
 * [結果のクラスターを管理する](result-cluster.md)
 * [カスタム フィルターを管理する](custom-filters.md)
